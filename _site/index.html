@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    Victor Lai &raquo; Home
+  </title>
+  
+  <!-- Site Author -->
+  <meta name="author" content="Victor Lai" />
+  
+  <!-- Site Description -->
+  <meta name="description" content="Personal website." />
+
+  <!-- Site Viewport -->
+  <meta name="viewport" content="user-scalable=no,width=device-width" />
+
+  <!-- Blog CSS -->
+  <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Yanone+Kaffeesatz" media="projection, screen" rel="stylesheet" type="text/css" />
+  <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
+  <link href="/css/screen.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
+  <link href="/css/custom.css" media="all" rel="stylesheet" type="text/css" />
+
+  <!-- Syntax Highlighting CSS -->
+  <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
+
+  <!-- Fav Icon -->
+  <link href="/favicon.ico" rel="shortcut icon" /> 
+</head>
+
+<body>
+  <div class="container">
+    <header class="span-21 last" id="header">
+      <h1><a href="/" rel="home bookmark">Victor Lai</a></h1>
+    </header>
+
+    <div class="span-16" id="content">
+      
+  <article class="post">
+    <h3><a href="/2012/07/11/counter-memories/" rel="bookmark permalink" title="Permanent link to this post">counter-memories</a></h3>
+
+    <p>
+  Sometimes, the oddest of circumstances makes you remember things you did in 
+  the past, that somehow you forgot over the years. And most of the time, it puts a 
+  really big smile on your face when you remember.
+</p><p> 
+  I was having an innocent argument with an artist about stuff that we've made in the 
+  past. While my friend is clearly the better artist between the two of us, I remembered
+  that I really wanted to be a (graphic) artist at some point in my life. 
+</p><p>
+  My Grade 9 Art mark was an astounding 100, a surprise, even to myself. I think my 
+  Art teacher had a lot of hope in me, and was probably a little heartbroken when me 
+  and my friend (who also got 100), decided not to take Grade 10 Art.
+</p><p>
+  Since Grade 5 or 6, I have always been the biggest Counter-Strike fan, until some 
+  tragic event a couple of years ago that forced me to quit. I played a lot of Counter-Strike, 
+  so I'm pretty sure my 662 HOURS PLAYED on Steam is inaccurate. In my spare time then, 
+  I thought about Counter-Strike a lot. But that's for another time.
+</p><p>
+  One day, I stumbled upon a thriving online game modding community in 
+  <a href='http://www.fpsbanana.com' target='_blank'>FPSBanana</a>. Immediately I was hooked. 
+  The most memorable member was <a href='http://gamebanana.com/members/164481' target='_blank'>Teh Snake</a>.
+  He made so many brilliant and amazing mods, he really was the reason I wanted to go into graphic design.
+</p><p>
+  Eventually, I tried my hand at modding, and upon realizing I had no talent,
+  I tried something much, much easier, and something that brings me joy to see online to this very day.
+</p><p>
+  I made a custom hand skin for CS1.6 and CZ after collaborating with the original owner, Nasaratsu.
+  Here's the <a href='http://gamebanana.com/cscz/skins/48319' target='_blank'>link</a>, and while it's 
+  really bad, I'm still extremely proud of it. Over 6,000 downloads, and 14,000 views. :')
+</p>
+
+    <div class="meta">
+      <div class="published">
+        Published: 2012-07-11
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </article>
+
+  <article class="post">
+    <h3><a href="/2012/04/14/failure/" rel="bookmark permalink" title="Permanent link to this post">failed interview</a></h3>
+
+    <p>I had an interview the other day that really shook me up.</p>
+
+<p>He asked me a question that really made me wonder how much I really knew about programming. I really thought I knew Python (at least somewhat decently), but I understand now there&#8217;s a difference between using a language a few times, and actually knowing the language in and out.</p>
+
+<p>My answer was&#8230; &#8220;crap.&#8221; I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should&#8217;ve known it.</p>
+
+<p>The question was (I think):</p>
+<div class='highlight'><pre><code class='console'><span class='go'>Remove the first letter from each word in the string: &quot;asdf das f po&quot;</span>
+</code></pre>
+</div>
+<p>EDIT(2012-07-16): This was my June attempt.</p>
+<div class='highlight'><pre><code class='python'><span class='c'># removes spaces from string</span>
+
+<span class='n'>line</span> <span class='o'>=</span> <span class='n'>original</span>
+<span class='n'>newline</span> <span class='o'>=</span> <span class='s'>&quot;&quot;</span>
+
+<span class='k'>for</span> <span class='n'>i</span> <span class='ow'>in</span> <span class='n'>line</span><span class='p'>:</span>
+	<span class='k'>if</span> <span class='nb'>ord</span><span class='p'>(</span><span class='n'>i</span><span class='p'>)</span> <span class='o'>!=</span> <span class='p'>(</span><span class='nb'>ord</span><span class='p'>(</span><span class='s'>&#39; &#39;</span><span class='p'>)):</span>
+		<span class='n'>newline</span> <span class='o'>+=</span> <span class='n'>i</span>
+	<span class='k'>else</span><span class='p'>:</span>
+		<span class='k'>pass</span>
+		
+<span class='k'>print</span> <span class='n'>newline</span>
+
+<span class='c'># removes first letter of each word from string &amp; fix spacing</span>
+
+<span class='n'>line</span> <span class='o'>=</span> <span class='n'>original</span>
+<span class='n'>newword</span> <span class='o'>=</span> <span class='s'>&quot;&quot;</span>
+
+<span class='n'>first</span> <span class='o'>=</span> <span class='mi'>1</span>
+
+<span class='n'>newline</span> <span class='o'>=</span> <span class='p'>[]</span>
+
+<span class='k'>for</span> <span class='n'>word</span> <span class='ow'>in</span> <span class='n'>line</span><span class='o'>.</span><span class='n'>split</span><span class='p'>():</span>
+	
+	<span class='k'>for</span> <span class='n'>letter</span> <span class='ow'>in</span> <span class='n'>word</span><span class='p'>:</span>
+		<span class='k'>if</span> <span class='n'>first</span> <span class='o'>!=</span> <span class='mi'>1</span><span class='p'>:</span>
+			<span class='n'>newword</span> <span class='o'>+=</span> <span class='n'>letter</span>
+		<span class='k'>else</span><span class='p'>:</span>
+			<span class='n'>first</span> <span class='o'>=</span> <span class='mi'>0</span>
+			
+	<span class='n'>first</span> <span class='o'>=</span> <span class='mi'>1</span>
+	<span class='n'>newline</span><span class='o'>.</span><span class='n'>append</span><span class='p'>(</span><span class='n'>newword</span><span class='p'>)</span>
+	<span class='n'>newword</span> <span class='o'>=</span> <span class='s'>&quot;&quot;</span>
+
+<span class='n'>output</span> <span class='o'>=</span> <span class='p'>[]</span>
+
+<span class='k'>for</span> <span class='n'>word</span> <span class='ow'>in</span> <span class='n'>newline</span><span class='p'>:</span>
+	<span class='k'>if</span> <span class='n'>word</span> <span class='o'>==</span> <span class='s'>&#39;&#39;</span> <span class='ow'>or</span> <span class='n'>word</span> <span class='o'>==</span> <span class='s'>&#39; &#39;</span><span class='p'>:</span>
+		<span class='k'>pass</span>
+	<span class='k'>else</span><span class='p'>:</span>
+		<span class='n'>output</span><span class='o'>.</span><span class='n'>append</span><span class='p'>(</span><span class='n'>word</span><span class='p'>)</span>
+
+<span class='n'>newline</span> <span class='o'>=</span> <span class='s'>&quot; &quot;</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='n'>output</span><span class='p'>)</span>
+<span class='k'>print</span> <span class='n'>newline</span>
+</code></pre>
+</div>
+<p>EDIT(2012-07-16): Did I realize how bad this was back then? NOOOO. WOW I cannot code. I don&#8217;t know how I made it this far in my coding life. Honest.</p>
+<div class='highlight'><pre><code class='python'><span class='k'>def</span> <span class='nf'>removefirstletter</span><span class='p'>(</span> <span class='nb'>input</span> <span class='p'>):</span>
+	<span class='n'>tokens</span> <span class='o'>=</span> <span class='nb'>input</span><span class='o'>.</span><span class='n'>split</span><span class='p'>()</span>
+	<span class='k'>for</span> <span class='n'>word</span> <span class='ow'>in</span> <span class='nb'>range</span><span class='p'>(</span><span class='nb'>len</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>)):</span>
+		<span class='n'>tokens</span><span class='p'>[</span><span class='n'>word</span><span class='p'>]</span> <span class='o'>=</span> <span class='s'>&quot;&quot;</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='nb'>list</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>[</span><span class='n'>word</span><span class='p'>])[</span><span class='mi'>1</span><span class='p'>:])</span>
+	<span class='k'>return</span> <span class='s'>&quot; &quot;</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>)</span>
+</code></pre>
+</div>
+<p>Easily handles any issue with spacing when you remove the word with one letter.</p>
+
+<p>I&#8217;d like to think I made progress, but this could be done a lot better still. But if I got this far in 3 months, think of the possibilities in a couple years!</p>
+
+    <div class="meta">
+      <div class="published">
+        Published: 2012-04-14
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </article>
+
+  <article class="post">
+    <h3><a href="/2012/02/25/helloworld/" rel="bookmark permalink" title="Permanent link to this post">hello world</a></h3>
+
+    <p>This is my first post, plus an obligatory</p>
+<div class='highlight'><pre><code class='python'><span class='k'>def</span> <span class='nf'>main</span><span class='p'>():</span>
+  <span class='k'>print</span> <span class='s'>&quot;Hello world!&quot;</span>
+
+<span class='k'>if</span> <span class='n'>__name__</span> <span class='o'>==</span> <span class='s'>&quot;__main__&quot;</span><span class='p'>:</span>
+  <span class='n'>main</span><span class='p'>()</span>
+</code></pre>
+</div>
+
+    <div class="meta">
+      <div class="published">
+        Published: 2012-02-25
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </article>
+
+
+<div class="paging">
+  
+  
+
+  <div class="clear"></div>
+</div>
+
+
+    </div>
+
+    <div class="span-5 last" id="sidebar">
+  <div class="sidebarbox">
+    <h4>Navigation</h4>
+    <ul id="pages">
+      <li><a rel="bookmark" title="Home" href="/">/ Home</a></li>
+      <li><a rel="bookmark" title="Archive" href="/archive">/ Archive</a></li>
+      <li><a rel="bookmark" title="Projects" href="/projects">/ Projects</a></li>
+      <li><a rel="bookmark" title="About" href="/about">/ About</a></li>
+    </ul>
+  </div>
+  <div class="sidebarbox">
+    <h4>Networks</h4>
+    <ul>
+      <li><a rel="bookmark" title="GitHub" href="https://github.com/blisse" class="icon-link" id="github-link">GitHub</a></li>
+      <li><a rel="bookmark" title="Twitter" href="http://twitter.com/dBlisse" class="icon-link" id="twitter-link">Twitter</a></li>
+      <li><a rel="bookmark" title="Facebook" href="https://facebook.com/lai.victor.vl" class="icon-link" id="facebook-link">Facebook</a></li>
+	  <li><a rel="bookmark" title="LinkedIn" href="http://ca.linkedin.com/in/laivictor" class="icon-link" id="linkedin-link">LinkedIn</a></li>
+    </ul>
+  </div>
+
+  <div class="sidebarbox">
+    <h4>Contact</h4>
+    <ul>
+      <li><a rel="bookmark" title="Email" href="mailto:lai.victor.vl@gmail.com" class="icon-link" id="gmail-link">Gmail</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <footer class="span-21 last" id="footer">
+  <p>
+    All content copyright &copy; <a href="/about">Victor Lai</a>.
+    Written in mostly valid <a href="" title="Valid HTML5" rel="external" target="_blank">HTML5</a> and <a href="" title="Valid CSS3" rel="external" target="_blank">CSS3</a>.
+  </p>
+  <p>
+    Powered by <a href="http://github.com/mojombo/jekyll" title="The Jekyll (static site generator) code repository"
+    rel="external" target="_blank">Jekyll</a>.
+  </p>
+</footer>
+
+
+  </div>
+</body>
+
+</html>

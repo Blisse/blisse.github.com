@@ -1,0 +1,13 @@
+auto: true
+markdown: maruku
+pygments: true
+permalink: pretty
+url: http://www.laivictor.com
+title: Victor Lai
+description: Personal website.
+author: Victor Lai
+email: lai.victor.vl@gmail.com
+github: blisse
+twitter: dBlisse
+
+paginate: 5

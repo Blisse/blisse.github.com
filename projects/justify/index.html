@@ -1,0 +1,100 @@
+---
+layout: page
+title: Projects
+tab: projects
+---
+
+
+<h3><a href="/">Ridiculous Full Line Justification</a></h3>
+
+<p>
+  Horribly lazy implementation of a line justification program. Done after 2 weeks of C++.
+  Not my best code, but in all my Googling, I haven't found anything that does this.
+</p>
+
+<p>
+  Justifies a file called filenameIn, writing the output to filenameOut. Must take in the 
+  max line size to justify to. Goes through each line, adding spaces until the
+  max line size is reached for that line, then writes to the file.
+</p>
+
+{% highlight java %}
+void justifyLines(string filenameIn, string filenameOut, int max_len)
+{
+    ifstream infile;
+    infile.open(filenameIn.c_str() );
+
+    ofstream outfile;
+    outfile.open(filenameOut.c_str() );
+
+    string string_in;
+    int line_len;
+    int offset;
+
+    int i, k = 0;
+    int oneword = 1;
+
+    while ( getline(infile, string_in) )
+    {
+    	oneword = 1;
+    	line_len = string_in.length();
+		offset = max_len - line_len;
+
+		for ( i=0; i<line_len; i++ )
+		{
+			if ( string_in[i] == ' ' )
+			{
+				oneword = 0;
+			}
+		}
+
+    	if ( !offset )
+    	{
+    		outfile << string_in << endl;
+    	}
+    	else // string_len < max_len
+    	{
+    		if (oneword)
+    		{
+    			outfile << string_in;
+    			while (offset)
+    			{
+    				outfile << " ";
+    				offset--;
+    			}
+    			outfile << endl;
+    		}
+    		else
+    		{
+    			int n = 0;
+				while ( offset )
+				{
+					if ( k > (line_len-1) )
+					{
+						k = 0;
+					}
+
+					if ( string_in[k] == ' ' )
+					{
+						string_in.insert(k," ");
+						k++;
+						while ( string_in[k++] == ' ')
+						{
+						}
+						line_len++;
+						offset--;
+					}
+					k++;
+				}
+				k = 0;
+				outfile << string_in << endl;
+    		}
+
+    	}
+
+    }
+
+    infile.close();
+    outfile.close();
+}
+{% endhighlight %}

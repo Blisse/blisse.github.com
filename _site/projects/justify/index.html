@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    Victor Lai &raquo; Projects
+  </title>
+  
+  <!-- Site Author -->
+  <meta name="author" content="Victor Lai" />
+  
+  <!-- Site Description -->
+  <meta name="description" content="Personal website." />
+
+  <!-- Site Viewport -->
+  <meta name="viewport" content="user-scalable=no,width=device-width" />
+
+  <!-- Blog CSS -->
+  <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Yanone+Kaffeesatz" media="projection, screen" rel="stylesheet" type="text/css" />
+  <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
+  <link href="/css/screen.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
+  <link href="/css/custom.css" media="all" rel="stylesheet" type="text/css" />
+
+  <!-- Syntax Highlighting CSS -->
+  <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
+
+  <!-- Fav Icon -->
+  <link href="/favicon.ico" rel="shortcut icon" /> 
+</head>
+
+<body>
+  <div class="container">
+    <header class="span-21 last" id="header">
+      <h1><a href="/" rel="home bookmark">Victor Lai</a></h1>
+    </header>
+
+    <div class="span-16" id="content">
+      <article class="post">
+  <h2 class="exa01"><a href="/">Blisse</a> / <a href="/Projects">Projects</a></h2>
+
+  <h3><a href="/">Ridiculous Full Line Justification</a></h3>
+
+<p>
+  Horribly lazy implementation of a line justification program. Done after 2 weeks of C++.
+  Not my best code, but in all my Googling, I haven't found anything that does this.
+</p>
+
+<p>
+  Justifies a file called filenameIn, writing the output to filenameOut. Must take in the 
+  max line size to justify to. Goes through each line, adding spaces until the
+  max line size is reached for that line, then writes to the file.
+</p>
+
+<div class="highlight"><pre><code class="java"><span class="kt">void</span> <span class="nf">justifyLines</span><span class="o">(</span><span class="n">string</span> <span class="n">filenameIn</span><span class="o">,</span> <span class="n">string</span> <span class="n">filenameOut</span><span class="o">,</span> <span class="kt">int</span> <span class="n">max_len</span><span class="o">)</span>
+<span class="o">{</span>
+    <span class="n">ifstream</span> <span class="n">infile</span><span class="o">;</span>
+    <span class="n">infile</span><span class="o">.</span><span class="na">open</span><span class="o">(</span><span class="n">filenameIn</span><span class="o">.</span><span class="na">c_str</span><span class="o">()</span> <span class="o">);</span>
+
+    <span class="n">ofstream</span> <span class="n">outfile</span><span class="o">;</span>
+    <span class="n">outfile</span><span class="o">.</span><span class="na">open</span><span class="o">(</span><span class="n">filenameOut</span><span class="o">.</span><span class="na">c_str</span><span class="o">()</span> <span class="o">);</span>
+
+    <span class="n">string</span> <span class="n">string_in</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">line_len</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">offset</span><span class="o">;</span>
+
+    <span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+
+    <span class="k">while</span> <span class="o">(</span> <span class="n">getline</span><span class="o">(</span><span class="n">infile</span><span class="o">,</span> <span class="n">string_in</span><span class="o">)</span> <span class="o">)</span>
+    <span class="o">{</span>
+    	<span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+    	<span class="n">line_len</span> <span class="o">=</span> <span class="n">string_in</span><span class="o">.</span><span class="na">length</span><span class="o">();</span>
+		<span class="n">offset</span> <span class="o">=</span> <span class="n">max_len</span> <span class="o">-</span> <span class="n">line_len</span><span class="o">;</span>
+
+		<span class="k">for</span> <span class="o">(</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">line_len</span><span class="o">;</span> <span class="n">i</span><span class="o">++</span> <span class="o">)</span>
+		<span class="o">{</span>
+			<span class="k">if</span> <span class="o">(</span> <span class="n">string_in</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="o">)</span>
+			<span class="o">{</span>
+				<span class="n">oneword</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+			<span class="o">}</span>
+		<span class="o">}</span>
+
+    	<span class="k">if</span> <span class="o">(</span> <span class="o">!</span><span class="n">offset</span> <span class="o">)</span>
+    	<span class="o">{</span>
+    		<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="o">;</span>
+    	<span class="o">}</span>
+    	<span class="k">else</span> <span class="c1">// string_len &lt; max_len</span>
+    	<span class="o">{</span>
+    		<span class="k">if</span> <span class="o">(</span><span class="n">oneword</span><span class="o">)</span>
+    		<span class="o">{</span>
+    			<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span><span class="o">;</span>
+    			<span class="k">while</span> <span class="o">(</span><span class="n">offset</span><span class="o">)</span>
+    			<span class="o">{</span>
+    				<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span><span class="o">;</span>
+    				<span class="n">offset</span><span class="o">--;</span>
+    			<span class="o">}</span>
+    			<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="o">;</span>
+    		<span class="o">}</span>
+    		<span class="k">else</span>
+    		<span class="o">{</span>
+    			<span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+				<span class="k">while</span> <span class="o">(</span> <span class="n">offset</span> <span class="o">)</span>
+				<span class="o">{</span>
+					<span class="k">if</span> <span class="o">(</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="o">(</span><span class="n">line_len</span><span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">)</span>
+					<span class="o">{</span>
+						<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+					<span class="o">}</span>
+
+					<span class="k">if</span> <span class="o">(</span> <span class="n">string_in</span><span class="o">[</span><span class="n">k</span><span class="o">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="o">)</span>
+					<span class="o">{</span>
+						<span class="n">string_in</span><span class="o">.</span><span class="na">insert</span><span class="o">(</span><span class="n">k</span><span class="o">,</span><span class="s">&quot; &quot;</span><span class="o">);</span>
+						<span class="n">k</span><span class="o">++;</span>
+						<span class="k">while</span> <span class="o">(</span> <span class="n">string_in</span><span class="o">[</span><span class="n">k</span><span class="o">++]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span><span class="o">)</span>
+						<span class="o">{</span>
+						<span class="o">}</span>
+						<span class="n">line_len</span><span class="o">++;</span>
+						<span class="n">offset</span><span class="o">--;</span>
+					<span class="o">}</span>
+					<span class="n">k</span><span class="o">++;</span>
+				<span class="o">}</span>
+				<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+				<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="o">;</span>
+    		<span class="o">}</span>
+
+    	<span class="o">}</span>
+
+    <span class="o">}</span>
+
+    <span class="n">infile</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="n">outfile</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+</article>
+
+
+
+    </div>
+
+    <div class="span-5 last" id="sidebar">
+  <div class="sidebarbox">
+    <h4>Navigation</h4>
+    <ul id="pages">
+      <li><a rel="bookmark" title="Home" href="/">/ Home</a></li>
+      <li><a rel="bookmark" title="Archive" href="/archive">/ Archive</a></li>
+      <li><a rel="bookmark" title="Projects" href="/projects">/ Projects</a></li>
+      <li><a rel="bookmark" title="About" href="/about">/ About</a></li>
+    </ul>
+  </div>
+  <div class="sidebarbox">
+    <h4>Networks</h4>
+    <ul>
+      <li><a rel="bookmark" title="GitHub" href="https://github.com/blisse" class="icon-link" id="github-link">GitHub</a></li>
+      <li><a rel="bookmark" title="Twitter" href="http://twitter.com/dBlisse" class="icon-link" id="twitter-link">Twitter</a></li>
+      <li><a rel="bookmark" title="Facebook" href="https://facebook.com/lai.victor.vl" class="icon-link" id="facebook-link">Facebook</a></li>
+	  <li><a rel="bookmark" title="LinkedIn" href="http://ca.linkedin.com/in/laivictor" class="icon-link" id="linkedin-link">LinkedIn</a></li>
+    </ul>
+  </div>
+
+  <div class="sidebarbox">
+    <h4>Contact</h4>
+    <ul>
+      <li><a rel="bookmark" title="Email" href="mailto:lai.victor.vl@gmail.com" class="icon-link" id="gmail-link">Gmail</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <footer class="span-21 last" id="footer">
+  <p>
+    All content copyright &copy; <a href="/about">Victor Lai</a>.
+    Written in mostly valid <a href="" title="Valid HTML5" rel="external" target="_blank">HTML5</a> and <a href="" title="Valid CSS3" rel="external" target="_blank">CSS3</a>.
+  </p>
+  <p>
+    Powered by <a href="http://github.com/mojombo/jekyll" title="The Jekyll (static site generator) code repository"
+    rel="external" target="_blank">Jekyll</a>.
+  </p>
+</footer>
+
+
+  </div>
+</body>
+
+</html>

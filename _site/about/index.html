@@ -31,22 +31,36 @@
 
 <body>
   <div class="container">
+
     <header class="span-21 last" id="header">
       <h1><a href="/" rel="home bookmark">Victor Lai</a></h1>
     </header>
 
-    <div class="span-16" id="content">
+    <div class="navbar" id="navbar">
+    <ul class="nav">
+      <li class="currentpage"><a rel="bookmark" title="Home" href="/">Home</a></li>
+      <li><a rel="bookmark" title="Archives" href="/archive">Archives</a></li>
+      <li><a rel="bookmark" title="Projects" href="/projects">Projects</a></li>
+      <li><a rel="bookmark" title="About" href="/about">About</a></li>
+    </ul>
+</div>
+
+
+
+
+
+    <div class="span-16" id="content">	
+		<br />
       <article class="post">
-  <h2 class="exa01"><a href="/">Blisse</a> / <a href="/About">About</a></h2>
+  <h2 class="exa01"><a href="/">..</a> / <a href="/About">About</a></h2>
 
   <p>
   Hi, my name is Victor Lai. I'm currently a Software Engineering Undergraduate at the University of Waterloo.
-  This blog features some of my more memorable experiences, in programming or otherwise, and some of my 
-  opinions about anything that happens to interest me. Maybe some of those things will interest you too.   
+  This is where I will collect my thoughts.
 </p>
 
 <p>
-  Blisse (with some variation) is my online handle. Bliss is not only my favourite <a href="http://www.merriam-webster.com/dictionary/bliss" target="_blank">
+  Blisse (with some variation) is my online alias. Bliss is not only my favourite <a href="http://www.merriam-webster.com/dictionary/bliss" target="_blank">
   word</a>, but also one of my favourite <a href="http://www.youtube.com/watch?v=eMqsWc8muj8" target="_blank">songs</a>.
 </p>
 
@@ -61,12 +75,11 @@
 <h2>Copyleft</h2>
 
 <p>
-  This <a href="/">website</a> is built using <a href="http://github.com/mojombo/jekyll"
+  This website is built using <a href="http://github.com/mojombo/jekyll"
   target="_blank">Jekyll</a>, a blog-aware, static site generator written in Ruby.
 
   The <a href="http://en.wikipedia.org/wiki/Source_code" target="_blank">source code</a> used to
-  create this <a href="/" target="_blank">website</a> is publicly available on <a
-  href="http://github.com/Blisse/blisse.github.com" target="_blank">GitHub</a>.
+  create this website is publicly available on <a href="http://github.com/Blisse/blisse.github.com" target="_blank">GitHub</a>.
 </p>
 
 <p>
@@ -82,9 +95,9 @@
   <a href="http://en.wikipedia.org/wiki/Css" target="_blank">CSS</a> (based on files
   taken from <a href="http://github.com/bummercloud" target="_blank">TJ Stein</a>'s
   <a href="http://tjstein.com" target="_blank">website</a> and <a href="http://github.com/benediktmeurer" target="_blank">Benedikt Meurer</a>'s 
-  <a href="http://benediktmeurer.de" target="_blank">website</a>) as you please. The pygments theme was taken from 
+  <a href="http://benediktmeurer.de" target="_blank">website</a>) as you please. The base pygments theme was taken from 
 <a href="https://github.com/mattgraham/Midnight/" target="_blank">Matt Graham</a>. If you do use them, a link back to this
-  <a href="/">website</a> would be appreciated, but is not required.
+  website would be appreciated, but is not required.
 </p>
 
 <h2>Disclaimer</h2>
@@ -94,7 +107,7 @@
 </p>
 
 <p>
-  This <a href="/">website</a> is not responsible for externally hosted material, including linked
+  This website is not responsible for externally hosted material, including linked
   articles, photos or any other media.
 </p>
 
@@ -104,35 +117,6 @@
 
 
     </div>
-
-    <div class="span-5 last" id="sidebar">
-  <div class="sidebarbox">
-    <h4>Navigation</h4>
-    <ul id="pages">
-      <li><a rel="bookmark" title="Home" href="/">/ Home</a></li>
-      <li><a rel="bookmark" title="Archive" href="/archive">/ Archive</a></li>
-      <li><a rel="bookmark" title="Projects" href="/projects">/ Projects</a></li>
-      <li><a rel="bookmark" title="About" href="/about">/ About</a></li>
-    </ul>
-  </div>
-  <div class="sidebarbox">
-    <h4>Networks</h4>
-    <ul>
-      <li><a rel="bookmark" title="GitHub" href="https://github.com/blisse" class="icon-link" id="github-link">GitHub</a></li>
-      <li><a rel="bookmark" title="Twitter" href="http://twitter.com/dBlisse" class="icon-link" id="twitter-link">Twitter</a></li>
-      <li><a rel="bookmark" title="Facebook" href="https://facebook.com/lai.victor.vl" class="icon-link" id="facebook-link">Facebook</a></li>
-	  <li><a rel="bookmark" title="LinkedIn" href="http://ca.linkedin.com/in/laivictor" class="icon-link" id="linkedin-link">LinkedIn</a></li>
-    </ul>
-  </div>
-
-  <div class="sidebarbox">
-    <h4>Contact</h4>
-    <ul>
-      <li><a rel="bookmark" title="Email" href="mailto:lai.victor.vl@gmail.com" class="icon-link" id="gmail-link">Gmail</a></li>
-    </ul>
-  </div>
-</div>
-
 
     <footer class="span-21 last" id="footer">
   <p>
@@ -147,6 +131,39 @@
 
 
   </div>
+	<script type="text/javascript" src="/js/resizebar.js"></script>
+<script type="text/javascript">
+
+$(function() {
+    changeWidth(287);
+ 
+    function changeWidth(menuWidth){
+        var menuItems = $('#navbar li').size();
+        var itemWidth = (menuWidth/menuItems)-2;
+ 
+        $('#navbar').css({'width': menuWidth +'px'});
+        $('#navbar a').css({'width': itemWidth +'px'});
+    }
+});
+
+</script>
+
+
+
+	<script type="text/javascript" src="/js/currentselection.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+var str=location.href.toLowerCase();
+$(".nav li a").each(function() {
+if (str.indexOf(this.href.toLowerCase()) > -1) {
+ $("li.currentpage").removeClass("currentpage");
+$(this).parent().addClass("currentpage");
+}
+ });
+ })
+
+</script>
 </body>
 
 </html>

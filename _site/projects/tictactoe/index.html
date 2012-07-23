@@ -31,13 +31,28 @@
 
 <body>
   <div class="container">
+
     <header class="span-21 last" id="header">
       <h1><a href="/" rel="home bookmark">Victor Lai</a></h1>
     </header>
 
-    <div class="span-16" id="content">
+    <div class="navbar" id="navbar">
+    <ul class="nav">
+      <li class="currentpage"><a rel="bookmark" title="Home" href="/">Home</a></li>
+      <li><a rel="bookmark" title="Archives" href="/archive">Archives</a></li>
+      <li><a rel="bookmark" title="Projects" href="/projects">Projects</a></li>
+      <li><a rel="bookmark" title="About" href="/about">About</a></li>
+    </ul>
+</div>
+
+
+
+
+
+    <div class="span-16" id="content">	
+		<br />
       <article class="post">
-  <h2 class="exa01"><a href="/">Blisse</a> / <a href="/Projects">Projects</a></h2>
+  <h2 class="exa01"><a href="/">..</a> / <a href="/Projects">Projects</a></h2>
 
   <h3><a href="/">Tic-Tac-Toe with OpenGLUT</a></h3>
 
@@ -60,11 +75,8 @@
 </p>
 
 <p>
-  Here's the download link on MediaFire. Please don't hesitate to contact me if it goes down.
-</p>
-
-<p>
-  <a href="http://www.mediafire.com/download.php?sf137c3fuew38q1" target="_blank">Download Here</a>
+  You can find my project 
+  <a href="https://github.com/Blisse/OGLTicTacToe" target="_blank">here</a>.
 </p>
 
 <p>
@@ -80,7 +92,7 @@
 <p>
   As a kid, I never really knew what this was, but when I was deciding what to make this game with, 
   memories of those video settings rushed back at me (I may or may not have been playing Counter-Strike),
-  and I decided to take a farther look at OpenGL. 
+  and I decided to take a farther look at OpenGL, and save DirectX for some other time.
 </p>
 
 <p>
@@ -93,35 +105,6 @@
 
 
     </div>
-
-    <div class="span-5 last" id="sidebar">
-  <div class="sidebarbox">
-    <h4>Navigation</h4>
-    <ul id="pages">
-      <li><a rel="bookmark" title="Home" href="/">/ Home</a></li>
-      <li><a rel="bookmark" title="Archive" href="/archive">/ Archive</a></li>
-      <li><a rel="bookmark" title="Projects" href="/projects">/ Projects</a></li>
-      <li><a rel="bookmark" title="About" href="/about">/ About</a></li>
-    </ul>
-  </div>
-  <div class="sidebarbox">
-    <h4>Networks</h4>
-    <ul>
-      <li><a rel="bookmark" title="GitHub" href="https://github.com/blisse" class="icon-link" id="github-link">GitHub</a></li>
-      <li><a rel="bookmark" title="Twitter" href="http://twitter.com/dBlisse" class="icon-link" id="twitter-link">Twitter</a></li>
-      <li><a rel="bookmark" title="Facebook" href="https://facebook.com/lai.victor.vl" class="icon-link" id="facebook-link">Facebook</a></li>
-	  <li><a rel="bookmark" title="LinkedIn" href="http://ca.linkedin.com/in/laivictor" class="icon-link" id="linkedin-link">LinkedIn</a></li>
-    </ul>
-  </div>
-
-  <div class="sidebarbox">
-    <h4>Contact</h4>
-    <ul>
-      <li><a rel="bookmark" title="Email" href="mailto:lai.victor.vl@gmail.com" class="icon-link" id="gmail-link">Gmail</a></li>
-    </ul>
-  </div>
-</div>
-
 
     <footer class="span-21 last" id="footer">
   <p>
@@ -136,6 +119,39 @@
 
 
   </div>
+	<script type="text/javascript" src="/js/resizebar.js"></script>
+<script type="text/javascript">
+
+$(function() {
+    changeWidth(287);
+ 
+    function changeWidth(menuWidth){
+        var menuItems = $('#navbar li').size();
+        var itemWidth = (menuWidth/menuItems)-2;
+ 
+        $('#navbar').css({'width': menuWidth +'px'});
+        $('#navbar a').css({'width': itemWidth +'px'});
+    }
+});
+
+</script>
+
+
+
+	<script type="text/javascript" src="/js/currentselection.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+var str=location.href.toLowerCase();
+$(".nav li a").each(function() {
+if (str.indexOf(this.href.toLowerCase()) > -1) {
+ $("li.currentpage").removeClass("currentpage");
+$(this).parent().addClass("currentpage");
+}
+ });
+ })
+
+</script>
 </body>
 
 </html>

@@ -4,12 +4,53 @@
  <title>Victor Lai</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-07-20T01:24:16-04:00</updated>
+ <updated>2012-07-23T00:09:32-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
  </author>
 
+ 
+ <entry>
+   <title type="html">just go for it</title>
+   <link href="http://www.laivictor.com/2012/07/20/justgoforit"/>
+   <updated>2012-07-20T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/2012/07/20/justgoforit</id>
+   <content type="html">&lt;p&gt;
+  A little change of tone from my usually more laid back posts.
+&lt;/p&gt;&lt;p&gt;
+  When people ask for motivation, it's really hard to give them a straight answer. 
+  I never had one myself. But recently, I've had some really horrid problems that 
+  left me scratching my head. I couldn't solve it, and there was nothing I could do.
+&lt;/p&gt;&lt;p&gt;
+  But then I came along a couple of really good motivational posts, which really,
+  in essence, told me to do it because failure is not an option. Mediocrity is not an option.
+&lt;/p&gt;&lt;p&gt;
+  And that's what I've always believed in. My motivation was always really, 
+  &quot;Do it because you can. Do it to prove to yourself that you can. 
+  Do it 100% because when it's all over, you're still an insignificant speck,
+  unless your 100% is better than his.&quot; 
+&lt;/p&gt;&lt;p&gt;
+  Talk about an inferiority complex going on here.
+&lt;/p&gt;&lt;p&gt;
+  But I realized, I grew into a habit of accepting mediocrity. It might be because the university 
+  system forces this down our throats a bunch, and some life-changing realizations I've made since 
+  expanding my horizons. And it may be, just because. 
+&lt;/p&gt;&lt;p&gt;
+  I shouldn't be making excuses for my failures, because there isn't time in life to do this.
+&lt;/p&gt;&lt;p&gt;
+  60sec * 60min * 24hr * 365.25days * 100 yrs = NOT ENOUGH
+&lt;/p&gt;&lt;p&gt;
+  Tick. Tock. Tick. Tock. And there goes so much precious time. Not enough time to sit back and 
+  let something like, motivation, run your life. Do it because you can, and because you want to 
+  be the best at it. 
+&lt;/p&gt;&lt;p&gt;
+  Screw motivation. Just go for it.
+&lt;/p&gt;</content>
+   
+   <category term="misc"/>
+   
+ </entry>
  
  <entry>
    <title type="html">counter-memories</title>
@@ -47,15 +88,17 @@
   really bad, I'm still extremely proud of it. Over 6,000 downloads, and 14,000 views. :')
 &lt;/p&gt;</content>
    
-   <category term="memory"/>
+   <category term="memories"/>
+   
+   <category term="counterstrike"/>
    
  </entry>
  
  <entry>
    <title type="html">failed interview</title>
-   <link href="http://www.laivictor.com/2012/04/14/failure"/>
+   <link href="http://www.laivictor.com/2012/04/14/failinterview"/>
    <updated>2012-04-14T00:00:00-04:00</updated>
-   <id>http://www.laivictor.com/2012/04/14/failure</id>
+   <id>http://www.laivictor.com/2012/04/14/failinterview</id>
    <content type="html">&lt;p&gt;I had an interview the other day that really shook me up.&lt;/p&gt;
 
 &lt;p&gt;He asked me a question that really made me wonder how much I really knew about programming. I really thought I knew Python (at least somewhat decently), but I understand now there&amp;#8217;s a difference between using a language a few times, and actually knowing the language in and out.&lt;/p&gt;
@@ -66,7 +109,7 @@
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;Remove the first letter from each word in the string: &amp;quot;asdf das f po&amp;quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;EDIT(2012-07-16): This was my June attempt.&lt;/p&gt;
+&lt;p&gt;EDIT(2012-07-16): This was my March attempt.&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='c'&gt;# removes spaces from string&lt;/span&gt;
 
 &lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
@@ -90,7 +133,6 @@
 &lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
 
 &lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
-	
 	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
 		&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
 			&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt;
@@ -113,9 +155,9 @@
 &lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;EDIT(2012-07-16): Did I realize how bad this was back then? NOOOO. WOW I cannot code. I don&amp;#8217;t know how I made it this far in my coding life. Honest.&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;removefirstletter&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='nb'&gt;input&lt;/span&gt; &lt;span class='p'&gt;):&lt;/span&gt;
-	&lt;span class='n'&gt;tokens&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nb'&gt;input&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
+&lt;p&gt;EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? Wow. Just wow. I don&amp;#8217;t know how I made it this far programming if that was the best I could come up with. Honest.&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;removefirstletter&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt; &lt;span class='p'&gt;):&lt;/span&gt;
+	&lt;span class='n'&gt;tokens&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
 	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='nb'&gt;range&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;len&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
 		&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;list&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;])[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:])&lt;/span&gt;
 	&lt;span class='k'&gt;return&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
@@ -123,9 +165,15 @@
 &lt;/div&gt;
 &lt;p&gt;Easily handles any issue with spacing when you remove the word with one letter.&lt;/p&gt;
 
-&lt;p&gt;I&amp;#8217;d like to think I made progress, but this could be done a lot better still. But if I got this far in 3 months, think of the possibilities in a couple years!&lt;/p&gt;</content>
+&lt;p&gt;The output should be&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;df as o&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;I&amp;#8217;d like to think I made progress, but this could be done a lot better still. But if I got this far in 3 months, I&amp;#8217;m can&amp;#8217;t think of the possibilities in a couple years!&lt;/p&gt;</content>
    
    <category term="fail"/>
+   
+   <category term="interview"/>
    
  </entry>
  

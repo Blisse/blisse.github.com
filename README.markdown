@@ -2,7 +2,8 @@
 
 This is my blog. 
 
-* <a href="http://blisse.github.com" target="_blank">www.laivictor.com</a>
+* <a href="http://www.laivictor.com" target="_blank">www.laivictor.com</a>
+* <a href="http://blisse.github.com" target="_blank">blisse.github.com</a>
 
 It is automatically transformed by <a href="http://github.com/mojombo/jekyll" target="_blank">Jekyll</a> 
 into a static site whenever I push this repository to GitHub.

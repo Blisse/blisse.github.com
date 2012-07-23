@@ -31,17 +31,24 @@
 
 <body>
   <div class="container">
+
     <header class="span-21 last" id="header">
       <h1><a href="/" rel="home bookmark">{{ site.title }}</a></h1>
     </header>
 
-    <div class="span-16" id="content">
+    {% include sidebar.html %}
+
+
+
+    <div class="span-16" id="content">	
+		<br />
       {{ content }}
     </div>
 
-    {% include sidebar.html %}
     {% include footer.html %}
   </div>
+	{% include navbarsize.html %}
+	{% include navbarcurr.html %}
 </body>
 
 </html>

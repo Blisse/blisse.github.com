@@ -31,13 +31,28 @@
 
 <body>
   <div class="container">
+
     <header class="span-21 last" id="header">
       <h1><a href="/" rel="home bookmark">Victor Lai</a></h1>
     </header>
 
-    <div class="span-16" id="content">
+    <div class="navbar" id="navbar">
+    <ul class="nav">
+      <li class="currentpage"><a rel="bookmark" title="Home" href="/">Home</a></li>
+      <li><a rel="bookmark" title="Archives" href="/archive">Archives</a></li>
+      <li><a rel="bookmark" title="Projects" href="/projects">Projects</a></li>
+      <li><a rel="bookmark" title="About" href="/about">About</a></li>
+    </ul>
+</div>
+
+
+
+
+
+    <div class="span-16" id="content">	
+		<br />
       <article class="post">
-  <h3><a href="/2012/04/14/failure/" rel="bookmark permalink" title="Permanent link to this post">failed interview</a></h3>
+  <h3><a href="/2012/04/14/failinterview/" rel="bookmark permalink" title="Permanent link to this post">failed interview</a></h3>
 
   <p>I had an interview the other day that really shook me up.</p>
 
@@ -49,7 +64,7 @@
 <div class='highlight'><pre><code class='console'><span class='go'>Remove the first letter from each word in the string: &quot;asdf das f po&quot;</span>
 </code></pre>
 </div>
-<p>EDIT(2012-07-16): This was my June attempt.</p>
+<p>EDIT(2012-07-16): This was my March attempt.</p>
 <div class='highlight'><pre><code class='python'><span class='c'># removes spaces from string</span>
 
 <span class='n'>line</span> <span class='o'>=</span> <span class='n'>original</span>
@@ -73,7 +88,6 @@
 <span class='n'>newline</span> <span class='o'>=</span> <span class='p'>[]</span>
 
 <span class='k'>for</span> <span class='n'>word</span> <span class='ow'>in</span> <span class='n'>line</span><span class='o'>.</span><span class='n'>split</span><span class='p'>():</span>
-	
 	<span class='k'>for</span> <span class='n'>letter</span> <span class='ow'>in</span> <span class='n'>word</span><span class='p'>:</span>
 		<span class='k'>if</span> <span class='n'>first</span> <span class='o'>!=</span> <span class='mi'>1</span><span class='p'>:</span>
 			<span class='n'>newword</span> <span class='o'>+=</span> <span class='n'>letter</span>
@@ -96,9 +110,9 @@
 <span class='k'>print</span> <span class='n'>newline</span>
 </code></pre>
 </div>
-<p>EDIT(2012-07-16): Did I realize how bad this was back then? NOOOO. WOW I cannot code. I don&#8217;t know how I made it this far in my coding life. Honest.</p>
-<div class='highlight'><pre><code class='python'><span class='k'>def</span> <span class='nf'>removefirstletter</span><span class='p'>(</span> <span class='nb'>input</span> <span class='p'>):</span>
-	<span class='n'>tokens</span> <span class='o'>=</span> <span class='nb'>input</span><span class='o'>.</span><span class='n'>split</span><span class='p'>()</span>
+<p>EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? Wow. Just wow. I don&#8217;t know how I made it this far programming if that was the best I could come up with. Honest.</p>
+<div class='highlight'><pre><code class='python'><span class='k'>def</span> <span class='nf'>removefirstletter</span><span class='p'>(</span> <span class='n'>sentence</span> <span class='p'>):</span>
+	<span class='n'>tokens</span> <span class='o'>=</span> <span class='n'>sentence</span><span class='o'>.</span><span class='n'>split</span><span class='p'>()</span>
 	<span class='k'>for</span> <span class='n'>word</span> <span class='ow'>in</span> <span class='nb'>range</span><span class='p'>(</span><span class='nb'>len</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>)):</span>
 		<span class='n'>tokens</span><span class='p'>[</span><span class='n'>word</span><span class='p'>]</span> <span class='o'>=</span> <span class='s'>&quot;&quot;</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='nb'>list</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>[</span><span class='n'>word</span><span class='p'>])[</span><span class='mi'>1</span><span class='p'>:])</span>
 	<span class='k'>return</span> <span class='s'>&quot; &quot;</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>)</span>
@@ -106,47 +120,22 @@
 </div>
 <p>Easily handles any issue with spacing when you remove the word with one letter.</p>
 
-<p>I&#8217;d like to think I made progress, but this could be done a lot better still. But if I got this far in 3 months, think of the possibilities in a couple years!</p>
+<p>The output should be</p>
+<div class='highlight'><pre><code class='console'><span class='gp'>&gt;</span> <span class='s2'>&quot;df as o&quot;</span>
+</code></pre>
+</div>
+<p>I&#8217;d like to think I made progress, but this could be done a lot better still. But if I got this far in 3 months, I&#8217;m can&#8217;t think of the possibilities in a couple years!</p>
 
   <div class="meta">
     <div class="published">
       Published: 2012-04-14
     </div>
     <div class="permalink">
-      <a class="permalink" href="http://www.laivictor.com/2012/04/14/failure/" rel="bookmark permalink" title="Permalink for failed interview">Permalink</a>
+      <a class="permalink" href="http://www.laivictor.com/2012/04/14/failinterview/" rel="bookmark permalink" title="Permalink for failed interview">Permalink</a>
     </div>
 </article>
 
     </div>
-
-    <div class="span-5 last" id="sidebar">
-  <div class="sidebarbox">
-    <h4>Navigation</h4>
-    <ul id="pages">
-      <li><a rel="bookmark" title="Home" href="/">/ Home</a></li>
-      <li><a rel="bookmark" title="Archive" href="/archive">/ Archive</a></li>
-      <li><a rel="bookmark" title="Projects" href="/projects">/ Projects</a></li>
-      <li><a rel="bookmark" title="About" href="/about">/ About</a></li>
-    </ul>
-  </div>
-  <div class="sidebarbox">
-    <h4>Networks</h4>
-    <ul>
-      <li><a rel="bookmark" title="GitHub" href="https://github.com/blisse" class="icon-link" id="github-link">GitHub</a></li>
-      <li><a rel="bookmark" title="Twitter" href="http://twitter.com/dBlisse" class="icon-link" id="twitter-link">Twitter</a></li>
-      <li><a rel="bookmark" title="Facebook" href="https://facebook.com/lai.victor.vl" class="icon-link" id="facebook-link">Facebook</a></li>
-	  <li><a rel="bookmark" title="LinkedIn" href="http://ca.linkedin.com/in/laivictor" class="icon-link" id="linkedin-link">LinkedIn</a></li>
-    </ul>
-  </div>
-
-  <div class="sidebarbox">
-    <h4>Contact</h4>
-    <ul>
-      <li><a rel="bookmark" title="Email" href="mailto:lai.victor.vl@gmail.com" class="icon-link" id="gmail-link">Gmail</a></li>
-    </ul>
-  </div>
-</div>
-
 
     <footer class="span-21 last" id="footer">
   <p>
@@ -161,6 +150,39 @@
 
 
   </div>
+	<script type="text/javascript" src="/js/resizebar.js"></script>
+<script type="text/javascript">
+
+$(function() {
+    changeWidth(287);
+ 
+    function changeWidth(menuWidth){
+        var menuItems = $('#navbar li').size();
+        var itemWidth = (menuWidth/menuItems)-2;
+ 
+        $('#navbar').css({'width': menuWidth +'px'});
+        $('#navbar a').css({'width': itemWidth +'px'});
+    }
+});
+
+</script>
+
+
+
+	<script type="text/javascript" src="/js/currentselection.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+var str=location.href.toLowerCase();
+$(".nav li a").each(function() {
+if (str.indexOf(this.href.toLowerCase()) > -1) {
+ $("li.currentpage").removeClass("currentpage");
+$(this).parent().addClass("currentpage");
+}
+ });
+ })
+
+</script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 layout: post
 title: failed interview
 date: 2012-04-14
-tags: [fail]
+tags: [fail, interview]
 ---
 
 I had an interview the other day that really shook me up.
@@ -20,7 +20,7 @@ Remove the first letter from each word in the string: "asdf das f po"
 
 {% endhighlight %}
  
-EDIT(2012-07-16): This was my June attempt.
+EDIT(2012-07-16): This was my March attempt.
 
 {% highlight python %}
 
@@ -47,7 +47,6 @@ first = 1
 newline = []
 
 for word in line.split():
-	
 	for letter in word:
 		if first != 1:
 			newword += letter
@@ -72,13 +71,14 @@ print newline
 {% endhighlight %}
 
 
-EDIT(2012-07-16): Did I realize how bad this was back then? 
-NOOOO. WOW I cannot code. I don't know how I made it this far in my coding life. Honest.
+EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
+Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
+come up with. Honest.
 
 {% highlight python %}
 
-def removefirstletter( input ):
-	tokens = input.split()
+def removefirstletter( sentence ):
+	tokens = sentence.split()
 	for word in range(len(tokens)):
 		tokens[word] = "".join(list(tokens[word])[1:])
 	return " ".join(tokens)
@@ -87,4 +87,13 @@ def removefirstletter( input ):
 
 Easily handles any issue with spacing when you remove the word with one letter.
 
-I'd like to think I made progress, but this could be done a lot better still. But if I got this far in 3 months, think of the possibilities in a couple years!
+The output should be 
+
+{% highlight console %}
+
+> "df as o"
+
+{% endhighlight %}
+
+I'd like to think I made progress, but this could be done a lot better still. 
+But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!

@@ -2,7 +2,7 @@
 layout: post
 title: counter-memories
 date: 2012-07-11
-tags: [memory]
+tags: [memories, counterstrike]
 ---
 
 <p>

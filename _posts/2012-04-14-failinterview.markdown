@@ -16,7 +16,8 @@ The question was (I think):
 
 {% highlight console %}
 
-Remove the first letter from each word in the string: "asdf das f po"
+Remove the first letter from each word in the string: 
+> "asdf das f po"
 
 {% endhighlight %}
  

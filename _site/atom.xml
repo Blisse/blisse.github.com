@@ -4,7 +4,7 @@
  <title>Victor Lai</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-07-23T00:09:32-04:00</updated>
+ <updated>2012-07-23T20:18:47-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -106,7 +106,8 @@
 &lt;p&gt;My answer was&amp;#8230; &amp;#8220;crap.&amp;#8221; I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should&amp;#8217;ve known it.&lt;/p&gt;
 
 &lt;p&gt;The question was (I think):&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;Remove the first letter from each word in the string: &amp;quot;asdf das f po&amp;quot;&lt;/span&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;Remove the first letter from each word in the string: &lt;/span&gt;
+&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;asdf das f po&amp;quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;EDIT(2012-07-16): This was my March attempt.&lt;/p&gt;

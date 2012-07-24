@@ -151,7 +151,7 @@ ul.links li.last:after, ul.links li.first:after {
 }
 .navbar ul li a:hover, 
 .navbar ul li a.selected {
-    background-color:#ff9300;
+    background-color:#597A9B;
     color:#fff;
 }
 .navbar ul li a:active {
@@ -164,7 +164,7 @@ ul.nav li.currentpage a {
 }
 ul.nav li.currentpage a:hover, 
 ul.nav li.currentpage a.selected {
-    background-color:#ff9300;
+    background-color:#597A9B;
     color:#fff;
 }
 a.icon-link {

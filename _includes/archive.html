@@ -13,14 +13,14 @@
 		<h3><a href="/archive/#{{ post.date | date:'%B-%Y' }}" name="{{ post.date | date:'%B-%Y' }}">{{ month }}</a></h3>
 			<dl>
 			<dt style="float:left">{{ post.date | date_to_string }}</dt>
-			<dd>&nbsp;&raquo;&nbsp;<a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></dd>
+			<dd>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></dd>
 
 		{% assign last_month = month %}
 		
 	{% else %}
 		
 			<dt style="float:left">{{ post.date | date_to_string }}</dt>
-			<dd>&nbsp;&raquo;&nbsp;<a href="{{ post.id }}" title="{{ post.title }}">{{ post.title }}</a></dd>
+			<dd>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></dd>
 			
 	{% endif %}
 						

@@ -1,7 +1,7 @@
 auto: true
 markdown: maruku
 pygments: true
-permalink: pretty
+permalink: /archive/:year/:month/:day/index.html
 url: http://www.laivictor.com
 title: Victor Lai
 description: Personal website.

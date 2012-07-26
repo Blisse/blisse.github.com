@@ -3,6 +3,7 @@ layout: post
 title: counter-memories
 date: 2012-07-11
 tags: [memories, counterstrike]
+tab: archive
 ---
 
 <p>

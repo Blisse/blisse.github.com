@@ -4,7 +4,7 @@
  <title>Victor Lai</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-07-23T20:18:47-04:00</updated>
+ <updated>2012-07-26T02:18:18-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -12,10 +12,41 @@
 
  
  <entry>
+   <title type="html">magic of dropbox</title>
+   <link href="http://www.laivictor.com/archive/2012/07/26/dropboxmagic"/>
+   <updated>2012-07-26T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/07/26/dropboxmagic</id>
+   <content type="html">&lt;p&gt;
+  I love &lt;a href='www.dropbox.com' target='_blank'&gt;Dropbox&lt;/a&gt;.
+&lt;/p&gt;&lt;p&gt;
+  Because I use some slightly more complicated system with GitHub and Dropbox, 
+  I had to learn some new stuff so that I could upload my website properly to GitHub Pages.
+&lt;/p&gt;&lt;p&gt;
+  In the process of doing so, I actually accidentally deleted my website files, along with the 
+  GitHub repository. I had nothing to roll back to. It was all gone.
+&lt;/p&gt;&lt;p&gt;
+  POOF!
+&lt;/p&gt;&lt;p&gt;
+  But to my joy, I always debated whether to put the website source in my Dropbox, so I could
+  work on it and sync my files from my Windows laptop to my Ubuntu laptop to my Windows desktop 
+  to my work desktop. 
+&lt;/p&gt;&lt;p&gt;
+  When I accidentally deleted my website files, I thank that Dropbox saves a history of your deleted
+  files, so that you can recover them if they go accidentally, and actually use them as a mini-version
+  tracker. Awesome for a free service.
+&lt;/p&gt;&lt;p&gt;
+  Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. Thank you.
+&lt;/p&gt;</content>
+   
+   <category term="utils"/>
+   
+ </entry>
+ 
+ <entry>
    <title type="html">just go for it</title>
-   <link href="http://www.laivictor.com/2012/07/20/justgoforit"/>
+   <link href="http://www.laivictor.com/archive/2012/07/20/justgoforit"/>
    <updated>2012-07-20T00:00:00-04:00</updated>
-   <id>http://www.laivictor.com/2012/07/20/justgoforit</id>
+   <id>http://www.laivictor.com/archive/2012/07/20/justgoforit</id>
    <content type="html">&lt;p&gt;
   A little change of tone from my usually more laid back posts.
 &lt;/p&gt;&lt;p&gt;
@@ -54,9 +85,9 @@
  
  <entry>
    <title type="html">counter-memories</title>
-   <link href="http://www.laivictor.com/2012/07/11/counter-memories"/>
+   <link href="http://www.laivictor.com/archive/2012/07/11/counter-memories"/>
    <updated>2012-07-11T00:00:00-04:00</updated>
-   <id>http://www.laivictor.com/2012/07/11/counter-memories</id>
+   <id>http://www.laivictor.com/archive/2012/07/11/counter-memories</id>
    <content type="html">&lt;p&gt;
   Sometimes, the oddest of circumstances makes you remember things you did in 
   the past, that somehow you forgot over the years. And most of the time, it puts a 
@@ -96,9 +127,9 @@
  
  <entry>
    <title type="html">failed interview</title>
-   <link href="http://www.laivictor.com/2012/04/14/failinterview"/>
+   <link href="http://www.laivictor.com/archive/2012/04/14/failinterview"/>
    <updated>2012-04-14T00:00:00-04:00</updated>
-   <id>http://www.laivictor.com/2012/04/14/failinterview</id>
+   <id>http://www.laivictor.com/archive/2012/04/14/failinterview</id>
    <content type="html">&lt;p&gt;I had an interview the other day that really shook me up.&lt;/p&gt;
 
 &lt;p&gt;He asked me a question that really made me wonder how much I really knew about programming. I really thought I knew Python (at least somewhat decently), but I understand now there&amp;#8217;s a difference between using a language a few times, and actually knowing the language in and out.&lt;/p&gt;
@@ -180,9 +211,9 @@
  
  <entry>
    <title type="html">hello world</title>
-   <link href="http://www.laivictor.com/2012/02/25/helloworld"/>
+   <link href="http://www.laivictor.com/archive/2012/02/25/helloworld"/>
    <updated>2012-02-25T00:00:00-05:00</updated>
-   <id>http://www.laivictor.com/2012/02/25/helloworld</id>
+   <id>http://www.laivictor.com/archive/2012/02/25/helloworld</id>
    <content type="html">&lt;p&gt;This is my first post, plus an obligatory&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;main&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
   &lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;

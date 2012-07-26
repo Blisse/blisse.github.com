@@ -3,6 +3,7 @@ layout: post
 title: failed interview
 date: 2012-04-14
 tags: [fail, interview]
+tab: archive
 ---
 
 I had an interview the other day that really shook me up.

@@ -29,12 +29,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #111111;
-  font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+  font-family: 'Code Bold','Century Gothic', Arial, Helvetica, sans-serif;
   font-weight: normal;
+  font-size:18px;
 }
 
 h1 {
-  font-family: 'Century Gothic', Arial, sans-serif;
+  font-family: 'Nexa Bold', 'Intro', 'Century Gothic', Arial, sans-serif;
   font-size: 4em;
   line-height: 1;
   margin: 15px 0;
@@ -42,13 +43,6 @@ h1 {
 
 h2 {
   font-size: 2em;  
-  margin-bottom: 0.75em;
-  padding-top: 20px;
-}
-
-.exa01 {
-  font-size: 2.5em;
-  color: #ff9300;
   margin-bottom: 0.75em;
   padding-top: 20px;
 }
@@ -100,7 +94,7 @@ p img.right {
 }
 
 a:focus, a:hover {
-  color: #ff9300;
+  border-bottom: 1px solid #ff9300;
 }
 
 a {
@@ -271,8 +265,7 @@ caption {
 }
 
 .last {
-  margin-right: 0;
-  padding-right: 0;
+  padding-right: 5px;
 }
 
 .top {

@@ -7,12 +7,8 @@ tab: archive
 ---
 
 <p>
-  A little change of tone from my usually more laid back posts.
-</p>
-
-<p>
   When people ask for motivation, it's really hard to give them a straight answer. 
-  I never had one myself. But recently, I've had some really horrid problems that 
+  I never had one myself. But recently, I've had some really bad problems that 
   left me scratching my head. I couldn't solve it, and there was nothing I could do.
 </p>
 
@@ -34,8 +30,7 @@ tab: archive
 
 <p>
   But I realized, I grew into a habit of accepting mediocrity. It might be because the university 
-  system forces this down our throats a bunch, and some life-changing realizations I've made since 
-  expanding my horizons. And it may be, just because. 
+  system forces this down our throats a bunch, and some life-changing realizations I've made since. 
 </p>
 
 <p>
@@ -43,15 +38,28 @@ tab: archive
 </p>
 
 <p>
-  60sec * 60min * 24hr * 365.25days * 100 yrs = NOT ENOUGH
+  {% highlight console %}60sec * 60min * 24hr * 365.25days * 100 yrs (if I'm lucky) is NOT ENOUGH.{% endhighlight %}
 </p>
 
 <p>
-  Tick. Tock. Tick. Tock. And there goes so much precious time. Not enough time to sit back and 
-  let something like, motivation, run your life. Do it because you can, and because you want to 
-  be the best at it. 
+  I can't let one little thing set me back so much of that time. Just as much as I can't do something
+  50%, and then complain about it later on.
 </p>
 
 <p>
-  Screw motivation. Just go for it.
+  Screw getting the motivation. I'll just do it.
+</p>
+
+<p>
+	<object width="420" height="315">
+		<param name="movie" value="https://www.youtube.com/v/Sk56VxaeqEQ?version=3&amp;hl=en_US"></param>
+		<param name="allowFullScreen" value="true"></param>
+		<param name="allowscriptaccess" value="always"></param>
+		<embed src="https://www.youtube.com/v/Sk56VxaeqEQ?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+	</object>
+</p>
+
+<p>
+  "You need to ask yourself, 'what are you going to do today,' <br />
+  but more importantly, 'how are you going to do it.'"
 </p>

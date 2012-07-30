@@ -1,9 +1,52 @@
+@font-face {
+  font-family: "Code Bold";
+  src: url("../fonts/CODE Bold.otf");
+}
+@font-face {
+  font-family: "Code Light";
+  src: url("../fonts/CODE Light.otf");
+}
+@font-face {
+  font-family: "Nexa Bold";
+  src: url("../fonts/Nexa Bold.otf");
+}
+@font-face {
+  font-family: "Nexa Light";
+  src: url("../fonts/Nexa Light.otf");
+}
+@font-face {
+  font-family: "Socialico";
+  src: url("../fonts/Socialico.ttf");
+}
+@font-face {
+  font-family: "Young";
+  src: url("../fonts/Young.ttf");
+}
+@font-face {
+  font-family: "Intro line";
+  src: url("../fonts/Intro line.ttf");
+}
+@font-face {
+  font-family: "Intro";
+  src: url("../fonts/Intro.ttf");
+}
+
+
 body {
     text-align: center;
 }
+
+
 .container {
     margin: 10px auto;
+	padding-left: 10px;
+	width: 70%;
+	min-width: 500px;
+	max-width: 800px;
 }
+
+
+
 #header {
     font-size: 1.3em;
     padding: 5px 0;
@@ -16,15 +59,22 @@ body {
 }
 #header h1 a {
     color: #333333;
-    text-decoration: none;
+	border: none;
 }
+
+
 #content {
     text-align: left;
 	position: relative;
 }
+
+
 article {
     margin-right: 0;
 }
+
+
+
 .post {
     font-size: 1.2em;
 }
@@ -58,6 +108,9 @@ article {
 .post .meta a:hover {
     color: #333333;
 }
+
+
+
 ul.pager {
     font-size: 1.1em;
     text-align: center;
@@ -117,6 +170,7 @@ ul.links li.last:after, ul.links li.first:after {
 
 
 .navbar {
+  clear:both;
   background-color: transparent;
   display: block;
   height: 36px;
@@ -147,7 +201,11 @@ ul.links li.last:after, ul.links li.first:after {
   border-bottom:1px transparent;
   outline:none;
   cursor:pointer;
-  overflow:hidden;
+  overflow:hidden;    
+	-webkit-transition: all 150ms ease-in-out 0s;
+    -moz-transition: all 150ms ease-in-out 0s;
+    -o-transition: all 150ms ease-in-out 0s;
+    transition: all 150ms ease-in-out 0s;
 }
 .navbar ul li a:hover, 
 .navbar ul li a.selected {
@@ -167,10 +225,30 @@ ul.nav li.currentpage a.selected {
     background-color:#597A9B;
     color:#fff;
 }
-a.icon-link {
-    padding: 1px 1px 1px 21px;
-    text-align: left;
+
+
+
+.icon {
+	padding: 5px 5px 5px 5px;
+	text-align: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	float: left;
 }
+.icon a.icon-link {
+	font-size: 60px;
+	font-family: Socialico;
+	color: #444;
+    -webkit-transition: all 200ms ease-in-out 0s;
+    -moz-transition: all 200ms ease-in-out 0s;
+    -o-transition: all 200ms ease-in-out 0s;
+    transition: all 200ms ease-in-out 0s;
+}
+.icon a.icon-link:hover {
+	border: none;
+	color: #597A9B;
+}
+	
 a#feed-link {
     background: url("/images/icons.png") no-repeat scroll -9px -8px transparent;
 }
@@ -189,9 +267,39 @@ a#gmail-link {
 a#linkedin-link {
     background: url("/images/icons.png") no-repeat scroll -9px -188px transparent;
 }
-a#ohloh-link {
-    background: url("/images/icons.png") no-repeat scroll -9px -225px transparent;
+
+
+
+
+header h1 a#sitetitle {
+  text-decoration: none;
+  font-decoration: none;
+  background: none;
 }
+h2 a {
+  text-decoration: none;
+  font-decoration: none;
+  background: none;
+}
+h2 a:focus, h2 a:hover {
+  text-decoration: none;
+  font-decoration: none;
+  background: none;
+}
+h3 a {
+  text-decoration: none;
+  font-decoration: none;
+  background: none;
+}
+h3 a:focus, h3 a:hover {
+  text-decoration: none;
+  font-decoration: none;
+  background: none;
+}
+
+
+
+
 .pagination {
     font-size: 1.2em;
     margin: 10px;

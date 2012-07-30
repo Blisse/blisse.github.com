@@ -4,7 +4,7 @@
  <title>Victor Lai</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-07-26T02:18:18-04:00</updated>
+ <updated>2012-07-29T22:40:14-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -12,12 +12,28 @@
 
  
  <entry>
+   <title type="html">reworking site layout</title>
+   <link href="http://www.laivictor.com/archive/2012/07/29/siterestructure"/>
+   <updated>2012-07-29T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/07/29/siterestructure</id>
+   <content type="html">&lt;p&gt;
+  It is ridiculous how hard it is to rework an entire website. Currently, the site is pretty bad
+  for mobile, plus it doesn't act the way I want it when the window is resized. I plan to fix that.
+&lt;/p&gt;&lt;p&gt;
+  Meanwhile, expect a lot more breaking in the future.
+&lt;/p&gt;</content>
+   
+   <category term="site"/>
+   
+ </entry>
+ 
+ <entry>
    <title type="html">magic of dropbox</title>
    <link href="http://www.laivictor.com/archive/2012/07/26/dropboxmagic"/>
    <updated>2012-07-26T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/07/26/dropboxmagic</id>
    <content type="html">&lt;p&gt;
-  I love &lt;a href='www.dropbox.com' target='_blank'&gt;Dropbox&lt;/a&gt;.
+  I love &lt;a href='http://www.dropbox.com' target='_blank'&gt;Dropbox&lt;/a&gt;.
 &lt;/p&gt;&lt;p&gt;
   Because I use some slightly more complicated system with GitHub and Dropbox, 
   I had to learn some new stuff so that I could upload my website properly to GitHub Pages.
@@ -48,10 +64,8 @@
    <updated>2012-07-20T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/07/20/justgoforit</id>
    <content type="html">&lt;p&gt;
-  A little change of tone from my usually more laid back posts.
-&lt;/p&gt;&lt;p&gt;
   When people ask for motivation, it's really hard to give them a straight answer. 
-  I never had one myself. But recently, I've had some really horrid problems that 
+  I never had one myself. But recently, I've had some really bad problems that 
   left me scratching my head. I couldn't solve it, and there was nothing I could do.
 &lt;/p&gt;&lt;p&gt;
   But then I came along a couple of really good motivational posts, which really,
@@ -65,18 +79,30 @@
   Talk about an inferiority complex going on here.
 &lt;/p&gt;&lt;p&gt;
   But I realized, I grew into a habit of accepting mediocrity. It might be because the university 
-  system forces this down our throats a bunch, and some life-changing realizations I've made since 
-  expanding my horizons. And it may be, just because. 
+  system forces this down our throats a bunch, and some life-changing realizations I've made since. 
 &lt;/p&gt;&lt;p&gt;
   I shouldn't be making excuses for my failures, because there isn't time in life to do this.
 &lt;/p&gt;&lt;p&gt;
-  60sec * 60min * 24hr * 365.25days * 100 yrs = NOT ENOUGH
+  
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;60sec * 60min * 24hr * 365.25days * 100 yrs (if I&amp;#39;m lucky) is NOT ENOUGH.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;/p&gt;&lt;p&gt;
-  Tick. Tock. Tick. Tock. And there goes so much precious time. Not enough time to sit back and 
-  let something like, motivation, run your life. Do it because you can, and because you want to 
-  be the best at it. 
+  I can't let one little thing set me back so much of that time. Just as much as I can't do something
+  50%, and then complain about it later on.
 &lt;/p&gt;&lt;p&gt;
-  Screw motivation. Just go for it.
+  Screw getting the motivation. I'll just do it.
+&lt;/p&gt;&lt;p&gt;
+	&lt;object height='315' width='420'&gt;
+		&lt;param name='movie' value='https://www.youtube.com/v/Sk56VxaeqEQ?version=3&amp;amp;hl=en_US' /&gt;
+		&lt;param name='allowFullScreen' value='true' /&gt;
+		&lt;param name='allowscriptaccess' value='always' /&gt;
+		&lt;embed allowfullscreen='true' allowscriptaccess='always' height='315' src='https://www.youtube.com/v/Sk56VxaeqEQ?version=3&amp;amp;hl=en_US' type='application/x-shockwave-flash' width='420' /&gt;
+	&lt;/object&gt;
+&lt;/p&gt;&lt;p&gt;
+  &quot;You need to ask yourself, 'what are you going to do today,' &lt;br /&gt;
+  but more importantly, 'how are you going to do it.'&quot;
 &lt;/p&gt;</content>
    
    <category term="misc"/>

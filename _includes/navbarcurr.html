@@ -1,14 +1,20 @@
 <script type="text/javascript" src="/js/currentselection.js"></script>
 <script type="text/javascript">
 
-$(document).ready(function(){
-var str=location.href.toLowerCase();
-$(".nav li a").each(function() {
-if (str.indexOf(this.href.toLowerCase()) > -1) {
- $("li.currentpage").removeClass("currentpage");
-$(this).parent().addClass("currentpage");
-}
- });
- })
+$(document).ready(
+	function()
+	{
+		var str=location.href.toLowerCase();
+		$(".nav li a").each(
+			function() {
+				if (str.indexOf(this.href.toLowerCase()) > -1) 
+				{
+					$("li.currentpage").removeClass("currentpage");
+					$(this).parent().addClass("currentpage");
+				}
+			}
+		);
+	}
+)
 
 </script>

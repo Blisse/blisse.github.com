@@ -4,10 +4,15 @@
 		{{ post.date | date:'%B %Y' }}
 	{% endcapture %}
 
+	
+	<div class="eight columns">
+
 	{% if last_month != month %}
+
 
 		{% if last_month %}			
 		</dl>
+
 		{% endif %}
 		
 		<h3><a href="/archive/#{{ post.date | date:'%B-%Y' }}" name="{{ post.date | date:'%B-%Y' }}">{{ month }}</a></h3>
@@ -16,12 +21,17 @@
 			<dd>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></dd>
 
 		{% assign last_month = month %}
-		
+
 	{% else %}
-		
+	
+	</div>
+	
 			<dt style="float:left">{{ post.date | date_to_string }}</dt>
 			<dd>&nbsp;&raquo;&nbsp;<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></dd>
-			
+	
+	
+	
 	{% endif %}
-						
+	
+
 {% endfor %}

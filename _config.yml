@@ -3,8 +3,8 @@ markdown: maruku
 pygments: true
 permalink: /archive/:year/:month/:day/index.html
 url: http://www.laivictor.com
-title: Victor Lai
-description: Personal website.
+title: Lai.Victor
+description: 
 author: Victor Lai
 email: lai.victor.vl@gmail.com
 github: blisse

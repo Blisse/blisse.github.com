@@ -1,0 +1,293 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Header
+================================================== */
+
+	.header { padding: 5px 0; text-align: left; }
+	.header h1 { font-weight: bold; margin: 0; padding-top: 15px; }
+	.header h1 a { line-height: 60px; color: #333333; }
+
+/* #Navigation Bar
+================================================== */
+
+
+	.navbar {
+	  background-color: transparent;
+	  display: block;
+	  height: 36px;
+	}
+	.navbar ul {
+	  list-style: none;
+	  list-style-type: none;
+	  margin: 0px;
+	  padding: 0px;
+	}
+	.navbar ul li {
+	  display: inline;
+	  position: relative;
+	}
+	.navbar ul li a {
+	  float:left;
+	  height:34px;
+	  line-height:36px;
+	  text-align:center;
+	  text-decoration:none;
+	  display:block;
+	  font-size:1.2em;
+	  font-weight: normal;
+	  color:#444444;
+	  border-right:1px transparent;
+	  border-left:1px transparent;
+	  border-top:1px transparent;
+	  border-bottom:1px transparent;
+	  outline:none;
+	  cursor:pointer;
+	  overflow:hidden;    
+		-webkit-transition: all 150ms ease-in-out 0s;
+		-moz-transition: all 150ms ease-in-out 0s;
+		-o-transition: all 150ms ease-in-out 0s;
+		transition: all 150ms ease-in-out 0s;
+	}
+	.navbar ul li a:hover, 
+	.navbar ul li a.selected {
+	  background-color:#597A9B;
+	  color:#fff;
+	}
+	.navbar ul li a:active {
+	  background-color:#444;
+	  color:#fff;
+	}
+	ul.nav li.currentpage a {
+	  background-color:#444;
+	  color:#fff;
+	}
+	ul.nav li.currentpage a:hover, 
+	ul.nav li.currentpage a.selected {
+	  background-color:#597A9B;
+	  color:#fff;
+	}
+
+
+/* #Icons
+================================================== */
+
+.icon {
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.icon a.icon-link {
+	font-size: 60px;
+	font-family: Socialico;
+	color: #444;
+    -webkit-transition: all 200ms ease-in-out 0s;
+    -moz-transition: all 200ms ease-in-out 0s;
+    -o-transition: all 200ms ease-in-out 0s;
+    transition: all 200ms ease-in-out 0s;
+}
+.icon a.icon-link:hover {
+	border: none;
+	color: #597A9B;
+}
+
+a#feed-link {
+    background: url("/images/icons.png") no-repeat scroll -9px -8px transparent;
+}
+a#facebook-link {
+    background: url("/images/icons.png") no-repeat scroll -9px -44px transparent;
+}
+a#github-link {
+    background: url("/images/icons.png") no-repeat scroll -9px -117px transparent;
+}
+a#twitter-link {
+    background: url("/images/icons.png") no-repeat scroll -9px -80px transparent;
+}
+a#gmail-link {
+    background: url("/images/icons.png") no-repeat scroll -9px -151px transparent;
+}
+a#linkedin-link {
+    background: url("/images/icons.png") no-repeat scroll -9px -188px transparent;
+}
+
+
+
+/* #Page Styles
+================================================== */
+
+
+	article { margin-right: 0; }
+	article p { text-align: justify; }
+
+	#content { text-align: left; position: relative; }
+
+.post {
+    font-size: 15px;
+}
+.post h3 { margin: 20px 0; }
+.post h3 a { color: #597A9B; }
+.post .postbody {
+    font-family: Georgia,"Times New Roman",serif;
+}
+.post .meta {
+    border-color: #E8E8E8;
+    border-style: double none;
+    border-width: 3px;
+    color: #696969;
+    font-family: georgia;
+    font-size: 100%;
+    font-style: italic;
+    height: 23px;
+    padding: 5px 0;
+}
+.post .meta a {
+    color: #696969;
+    text-decoration: none;
+}
+.post .meta a:hover {
+    color: #333333;
+}
+
+
+
+.paging { font-size: 15px; margin: 10px; }
+.paging a.older { float: right; padding-right: 5px; }
+.paging a.newer { float: left; padding-left: 5px;}
+.paging a.older h3 { color: #597A9B; }
+.paging a.newer h3 { color: #597A9B; }
+
+.permalink {
+    float: right;
+}
+.published {
+    float: left;
+}
+
+
+/* #Footer
+================================================== */
+	
+	#footer {
+		border-color: #E8E8E8;
+		border-style: double;
+		border-width: 3px;
+		color: #696969;
+		font-family: georgia;
+		font-size: 15px;
+		font-style: italic;
+		line-height: 30px;
+		margin-top: 0;
+		padding-top: 25px;
+		position: relative;
+	}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+
+@font-face {
+  font-family: "Code Bold";
+  src: url("../fonts/CODE Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Code Light";
+  src: url("../fonts/CODE Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa Bold";
+  src: url("../fonts/Nexa Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa Light";
+  src: url("../fonts/Nexa Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Socialico";
+  src: url("../fonts/Socialico.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Young";
+  src: url("../fonts/Young.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Intro line";
+  src: url("../fonts/Intro line.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Intro";
+  src: url("../fonts/Intro.ttf");
+  font-weight: normal;
+  font-style: normal;
+}

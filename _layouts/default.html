@@ -16,17 +16,25 @@
   <!-- Site Viewport -->
   <meta name="viewport" content="user-scalable=no,width=device-width" />
 
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
   <!-- Blog CSS -->
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Yanone+Kaffeesatz" media="projection, screen" rel="stylesheet" type="text/css" />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-  <link href="/css/screen.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-  <link href="/css/custom.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/skeleton.css">
+	<link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Fav Icon -->
   <link href="/favicon.ico" rel="shortcut icon" /> 
+
+{% include ga.html %}
+
 </head>
 
 <body>
@@ -34,15 +42,14 @@
 
     {% include navbar.html %}
 
-    <div class="span-16" id="content">	
-	  <br />
+		<br /><br /><br />
       {{ content }}
-    </div>
 
     {% include footer.html %}
   </div>
 	{% include navbarsize.html %}
 	{% include navbarcurr.html %}
+	{% include headersize.html %}
 </body>
 
 </html>

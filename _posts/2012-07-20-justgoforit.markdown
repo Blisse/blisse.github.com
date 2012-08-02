@@ -21,24 +21,17 @@ tab: archive
   And that's what I've always believed in. My motivation was always really, 
   "Do it because you can. Do it to prove to yourself that you can. 
   Do it 100% because when it's all over, you're still an insignificant speck,
-  unless your 100% is better than his." 
-</p>
-
-<p>
-  Talk about an inferiority complex going on here.
+  unless your 100% is better than his." Talk about an inferiority complex going on here.
 </p>
 
 <p>
   But I realized, I grew into a habit of accepting mediocrity. It might be because the university 
   system forces this down our throats a bunch, and some life-changing realizations I've made since. 
-</p>
-
-<p>
   I shouldn't be making excuses for my failures, because there isn't time in life to do this.
 </p>
 
 <p>
-  {% highlight console %}60sec * 60min * 24hr * 365.25days * 100 yrs (if I'm lucky) is NOT ENOUGH.{% endhighlight %}
+  {% highlight console %}60sec * 60min * 24hr * 365.25days * 100 yrs = 3,155,760,000 seconds. Not enough.{% endhighlight %}
 </p>
 
 <p>
@@ -51,12 +44,7 @@ tab: archive
 </p>
 
 <p>
-	<object width="420" height="315">
-		<param name="movie" value="https://www.youtube.com/v/Sk56VxaeqEQ?version=3&amp;hl=en_US"></param>
-		<param name="allowFullScreen" value="true"></param>
-		<param name="allowscriptaccess" value="always"></param>
-		<embed src="https://www.youtube.com/v/Sk56VxaeqEQ?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
-	</object>
+	<a href="http://youtu.be/Sk56VxaeqEQ" target="_blank">The BEST Motivation</a>
 </p>
 
 <p>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: counter-memories
+title: counterstrike & memories
 date: 2012-07-11
 tags: [memories, counterstrike]
 tab: archive

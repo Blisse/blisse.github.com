@@ -51,7 +51,7 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		background: url("/images/bg.jpg") repeat scroll 0 0 #FFFFFF;
+		background: url("/images/body.gif") repeat scroll 0 0 #FFFFFF;
 		font: 14px/21px 'Droid Sans', Arial, Helvetica, sans-serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -60,21 +60,47 @@
 		overflow-y: scroll;
  }
 
+/* #Links
+================================================== */
+
+	a, a:visited { color: #D03945; text-decoration: none; outline: 0; 
+		-webkit-transition: all 150ms ease-in-out 0s;
+		-moz-transition: all 150ms ease-in-out 0s;
+		-o-transition: all 150ms ease-in-out 0s;
+		transition: all 150ms ease-in-out 0s; }
+	a:hover, a:focus { background: #D03945; color: #fff; }
+	p a, p a:visited { line-height: inherit; }
+
 
 /* #Typography
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
 		color: #111111;
 		font-family: 'Code Bold','Century Gothic', Arial, Helvetica, sans-serif;
-		font-weight: normal; }
+		font-weight: normal;
+		text-decoration: none;
+	}
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 a:hover, h1 a.selected { background: none; }
+
+	h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+	h2 a.selected, h3 a.selected, h4 a.selected, h5 a.selected, h6 a.selected 
+		{ color: #AC2832; background: none; text-decoration: none; border-bottom: 1px dotted #D03945;  }
+
 	h1 { font-size: 56px; line-height: 60px; margin-bottom: 14px; font-family: 'Nexa Bold', 'Code Bold','Century Gothic', Arial, Helvetica, sans-serif; }
 	h2 { font-size: 32px; line-height: 40px; margin-bottom: 10px; font-family: 'Code Bold','Century Gothic', Arial, Helvetica, sans-serif; }
-	h3 { color: #597A9B; font-size: 28px; line-height: 34px; margin-bottom: 8px; font-family: 'Intro', 'Code Bold','Century Gothic', Arial, Helvetica, sans-serif; }
+	h3 { color: #666; font-size: 28px; line-height: 34px; margin-bottom: 8px; font-family: 'Intro', 'Code Bold','Century Gothic', Arial, Helvetica, sans-serif; }
 	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; font-family: 'Intro', 'Code Bold','Century Gothic', Arial, Helvetica, sans-serif; }
 	h5 { font-size: 17px; line-height: 24px; }
 	h6 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
+	.firstname { color: #333; display: inline;
+		-webkit-transition: all 250ms ease-in-out 0s;
+		-moz-transition: all 250ms ease-in-out 0s;
+		-o-transition: all 250ms ease-in-out 0s;
+		transition: all 250ms ease-in-out 0s;}
+	.firstname:hover { color: #AC2832; display: inline }
+	.lastname { color: #AC2832; display: inline }
 
 	p { margin: 0 0 20px 0; }
 	p img { margin: 0; }
@@ -111,11 +137,6 @@
 	  visibility: hidden;
 	}
 
-/* #Links
-================================================== */
-	a, a:visited { color: #ff9300; text-decoration: none; outline: 0; }
-	a:hover, a:focus { text-decoration: none; }
-	p a, p a:visited { line-height: inherit; }
 
 
 /* #Lists
@@ -370,8 +391,8 @@
     float: left;
 }
 .older a {
-    color: #597A9B;
+    color: #666;
 }
 .newer a {
-    color: #597A9B;
+    color: #666;
 }

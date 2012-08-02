@@ -1,12 +1,12 @@
 ---
 layout: post
-title: hello world
+title: hello world!
 date: 2012-02-25
 tags: [misc]
 tab: archive
 ---
 
-This is my first post, plus an obligatory
+This is my first post. So, an obligatory
 
 {% highlight python %}
 
@@ -17,3 +17,5 @@ if __name__ == "__main__":
   main()
 
 {% endhighlight %}
+
+Thanks for visiting~

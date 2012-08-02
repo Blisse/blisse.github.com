@@ -1,6 +1,6 @@
 ---
 layout: post
-title: failed interview
+title: first coding interview
 date: 2012-04-14
 tags: [fail, interview]
 tab: archive

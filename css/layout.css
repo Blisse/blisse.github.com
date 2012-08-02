@@ -27,7 +27,6 @@
 /* #Navigation Bar
 ================================================== */
 
-
 	.navbar {
 	  background-color: transparent;
 	  display: block;
@@ -67,7 +66,7 @@
 	}
 	.navbar ul li a:hover, 
 	.navbar ul li a.selected {
-	  background-color:#597A9B;
+	  background-color:#D03945;
 	  color:#fff;
 	}
 	.navbar ul li a:active {
@@ -80,53 +79,9 @@
 	}
 	ul.nav li.currentpage a:hover, 
 	ul.nav li.currentpage a.selected {
-	  background-color:#597A9B;
+	  background-color:#D03945;
 	  color:#fff;
 	}
-
-
-/* #Icons
-================================================== */
-
-.icon {
-	padding: 5px 5px 5px 5px;
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-.icon a.icon-link {
-	font-size: 60px;
-	font-family: Socialico;
-	color: #444;
-    -webkit-transition: all 200ms ease-in-out 0s;
-    -moz-transition: all 200ms ease-in-out 0s;
-    -o-transition: all 200ms ease-in-out 0s;
-    transition: all 200ms ease-in-out 0s;
-}
-.icon a.icon-link:hover {
-	border: none;
-	color: #597A9B;
-}
-
-a#feed-link {
-    background: url("/images/icons.png") no-repeat scroll -9px -8px transparent;
-}
-a#facebook-link {
-    background: url("/images/icons.png") no-repeat scroll -9px -44px transparent;
-}
-a#github-link {
-    background: url("/images/icons.png") no-repeat scroll -9px -117px transparent;
-}
-a#twitter-link {
-    background: url("/images/icons.png") no-repeat scroll -9px -80px transparent;
-}
-a#gmail-link {
-    background: url("/images/icons.png") no-repeat scroll -9px -151px transparent;
-}
-a#linkedin-link {
-    background: url("/images/icons.png") no-repeat scroll -9px -188px transparent;
-}
-
 
 
 /* #Page Styles
@@ -142,27 +97,9 @@ a#linkedin-link {
     font-size: 15px;
 }
 .post h3 { margin: 20px 0; }
-.post h3 a { color: #597A9B; }
+.post h3 a { color: #444; }
 .post .postbody {
     font-family: Georgia,"Times New Roman",serif;
-}
-.post .meta {
-    border-color: #E8E8E8;
-    border-style: double none;
-    border-width: 3px;
-    color: #696969;
-    font-family: georgia;
-    font-size: 100%;
-    font-style: italic;
-    height: 23px;
-    padding: 5px 0;
-}
-.post .meta a {
-    color: #696969;
-    text-decoration: none;
-}
-.post .meta a:hover {
-    color: #333333;
 }
 
 
@@ -170,8 +107,8 @@ a#linkedin-link {
 .paging { font-size: 15px; margin: 10px; }
 .paging a.older { float: right; padding-right: 5px; }
 .paging a.newer { float: left; padding-left: 5px;}
-.paging a.older h3 { color: #597A9B; }
-.paging a.newer h3 { color: #597A9B; }
+.paging a.older h3 { color: #666; }
+.paging a.newer h3 { color: #666; }
 
 .permalink {
     float: right;
@@ -180,6 +117,25 @@ a#linkedin-link {
     float: left;
 }
 
+/* #Icons
+================================================== */
+
+.icon {
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.icon a {
+	color: #444;
+		-webkit-transition: all 250ms ease-in-out 0s;
+		-moz-transition: all 250ms ease-in-out 0s;
+		-o-transition: all 250ms ease-in-out 0s;
+		transition: all 250ms ease-in-out 0s;
+}
+
+.icon a:hover, .icon a.selected { color: #D03945; background: transparent; }
 
 /* #Footer
 ================================================== */

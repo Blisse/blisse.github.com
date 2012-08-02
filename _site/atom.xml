@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Lai.Victor</title>
+ <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-08-01T02:35:51-04:00</updated>
+ <updated>2012-08-02T03:05:59-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -12,7 +12,7 @@
 
  
  <entry>
-   <title type="html">reworking site layout</title>
+   <title type="html">site (re)construction</title>
    <link href="http://www.laivictor.com/archive/2012/07/29/siterestructure"/>
    <updated>2012-07-29T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/07/29/siterestructure</id>
@@ -28,7 +28,7 @@
  </entry>
  
  <entry>
-   <title type="html">magic of dropbox</title>
+   <title type="html">saved by dropbox</title>
    <link href="http://www.laivictor.com/archive/2012/07/26/dropboxmagic"/>
    <updated>2012-07-26T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/07/26/dropboxmagic</id>
@@ -37,17 +37,13 @@
 &lt;/p&gt;&lt;p&gt;
   Because I use some slightly more complicated system with GitHub and Dropbox, 
   I had to learn some new stuff so that I could upload my website properly to GitHub Pages.
-&lt;/p&gt;&lt;p&gt;
-  In the process of doing so, I actually accidentally deleted my website files, along with the 
+  The first time I tried it, I actually deleted my website files, along with the 
   GitHub repository. I had nothing to roll back to. It was all gone.
 &lt;/p&gt;&lt;p&gt;
-  POOF!
-&lt;/p&gt;&lt;p&gt;
   But to my joy, I always debated whether to put the website source in my Dropbox, so I could
-  work on it and sync my files from my Windows laptop to my Ubuntu laptop to my Windows desktop 
-  to my work desktop. 
+  work on it and sync my files across my computers. So I left it on my Dropbox this time.
 &lt;/p&gt;&lt;p&gt;
-  When I accidentally deleted my website files, I thank that Dropbox saves a history of your deleted
+  When I accidentally deleted my website files, I found out that Dropbox saves a history of your deleted
   files, so that you can recover them if they go accidentally, and actually use them as a mini-version
   tracker. Awesome for a free service.
 &lt;/p&gt;&lt;p&gt;
@@ -74,17 +70,14 @@
   And that's what I've always believed in. My motivation was always really, 
   &quot;Do it because you can. Do it to prove to yourself that you can. 
   Do it 100% because when it's all over, you're still an insignificant speck,
-  unless your 100% is better than his.&quot; 
-&lt;/p&gt;&lt;p&gt;
-  Talk about an inferiority complex going on here.
+  unless your 100% is better than his.&quot; Talk about an inferiority complex going on here.
 &lt;/p&gt;&lt;p&gt;
   But I realized, I grew into a habit of accepting mediocrity. It might be because the university 
   system forces this down our throats a bunch, and some life-changing realizations I've made since. 
-&lt;/p&gt;&lt;p&gt;
   I shouldn't be making excuses for my failures, because there isn't time in life to do this.
 &lt;/p&gt;&lt;p&gt;
   
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;60sec * 60min * 24hr * 365.25days * 100 yrs (if I&amp;#39;m lucky) is NOT ENOUGH.&lt;/span&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;60sec * 60min * 24hr * 365.25days * 100 yrs = 3,155,760,000 seconds. Not enough.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -94,12 +87,7 @@
 &lt;/p&gt;&lt;p&gt;
   Screw getting the motivation. I'll just do it.
 &lt;/p&gt;&lt;p&gt;
-	&lt;object height='315' width='420'&gt;
-		&lt;param name='movie' value='https://www.youtube.com/v/Sk56VxaeqEQ?version=3&amp;amp;hl=en_US' /&gt;
-		&lt;param name='allowFullScreen' value='true' /&gt;
-		&lt;param name='allowscriptaccess' value='always' /&gt;
-		&lt;embed allowfullscreen='true' allowscriptaccess='always' height='315' src='https://www.youtube.com/v/Sk56VxaeqEQ?version=3&amp;amp;hl=en_US' type='application/x-shockwave-flash' width='420' /&gt;
-	&lt;/object&gt;
+	&lt;a href='http://youtu.be/Sk56VxaeqEQ' target='_blank'&gt;The BEST Motivation&lt;/a&gt;
 &lt;/p&gt;&lt;p&gt;
   &quot;You need to ask yourself, 'what are you going to do today,' &lt;br /&gt;
   but more importantly, 'how are you going to do it.'&quot;
@@ -110,7 +98,7 @@
  </entry>
  
  <entry>
-   <title type="html">counter-memories</title>
+   <title type="html">counterstrike &amp; memories</title>
    <link href="http://www.laivictor.com/archive/2012/07/11/counter-memories"/>
    <updated>2012-07-11T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/07/11/counter-memories</id>
@@ -152,7 +140,7 @@
  </entry>
  
  <entry>
-   <title type="html">failed interview</title>
+   <title type="html">first coding interview</title>
    <link href="http://www.laivictor.com/archive/2012/04/14/failinterview"/>
    <updated>2012-04-14T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/04/14/failinterview</id>
@@ -236,18 +224,19 @@
  </entry>
  
  <entry>
-   <title type="html">hello world</title>
+   <title type="html">hello world!</title>
    <link href="http://www.laivictor.com/archive/2012/02/25/helloworld"/>
    <updated>2012-02-25T00:00:00-05:00</updated>
    <id>http://www.laivictor.com/archive/2012/02/25/helloworld</id>
-   <content type="html">&lt;p&gt;This is my first post, plus an obligatory&lt;/p&gt;
+   <content type="html">&lt;p&gt;This is my first post. So, an obligatory&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;main&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
   &lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;
 
 &lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;__name__&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
   &lt;span class='n'&gt;main&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content>
+&lt;/div&gt;
+&lt;p&gt;Thanks for visiting~&lt;/p&gt;</content>
    
    <category term="misc"/>
    

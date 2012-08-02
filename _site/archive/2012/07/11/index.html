@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>
-    Lai.Victor &raquo; counter-memories
+    lai.victor &raquo; counterstrike & memories
   </title>
   
   <!-- Site Author -->
@@ -23,9 +23,13 @@
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Yanone+Kaffeesatz" media="projection, screen" rel="stylesheet" type="text/css" />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
-	<link rel="stylesheet" href="/css/base.css">
-	<link rel="stylesheet" href="/css/skeleton.css">
-	<link rel="stylesheet" href="/css/layout.css">
+  <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/layout.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="/css/font-awesome.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
@@ -54,15 +58,16 @@
 
     <div class="eight columns" id="resizer">
 	<div class="header" id="header">
-	<h1><a href="/" rel="home bookmark">LAI.VICTOR</a></h1>
+	<h1><a href="/" rel="home bookmark"><div class="lastname">LAI</div>.<div class="firstname">VICTOR</div></a></h1>
 	</div>
 </div>
 
 <div class="eight columns">
-	<div class="icon">
-	<a class="icon-link" target="_blank" href="http://www.twitter.com/dblisse">l</a>
-	<a class="icon-link" target="_blank" href="http://ca.linkedin.com/in/laivictor">i</a>
-	<a class="icon-link" href="mailto:lai.victor.vl@gmail.com">g</a>
+	<div class="icon" style="font-size: 56px;">
+		<a target="_blank" href="http://www.twitter.com/dblisse"><i class="icon-twitter-sign"></i></a>
+		<a target="_blank" href="http://ca.linkedin.com/in/laivictor"><i class="icon-linkedin-sign"></i></a>
+		<a target="_blank" href="http://www.github.com/Blisse"><i class="icon-github-sign"></i></a>
+		<a href="mailto:lai.victor.vl@gmail.com"><i class="icon-envelope"></i></a>
 	</div>
 </div>
 
@@ -79,8 +84,9 @@
 
 		<br /><br /><br />
       <div class="sixteen columns">
+
 <article class="post">
-  <h3><a href="/archive/2012/07/11/index.html" rel="bookmark permalink" title="Permanent link to this post">counter-memories</a></h3>
+  <h3><a href="/archive/2012/07/11/index.html" rel="bookmark permalink" title="Permanent link to this post">counterstrike & memories</a> /20120711</h3>
 
   <p>
   Sometimes, the oddest of circumstances makes you remember things you did in 
@@ -113,14 +119,11 @@
   really bad, I'm still extremely proud of it. Over 6,000 downloads, and 14,000 views. :')
 </p>
 
-  <div class="meta">
-    <div class="published">
-      Published: 2012-07-11
-    </div>
     <div class="permalink">
-      <a class="permalink" href="http://www.laivictor.com/archive/2012/07/11/index.html" rel="bookmark permalink" title="Permalink for counter-memories">Permalink</a>
+      <a class="permalink" href="http://www.laivictor.com/archive/2012/07/11/index.html" rel="bookmark permalink" title="Permalink for counterstrike & memories">Permalink</a>
     </div>
 </article>
+
 </div>
 
     <div class="sixteen columns">
@@ -191,22 +194,22 @@ $(document).ready(
 					{
 						if ( $(window).width() >= 959 )
 						{
-							$(' #header h1 a ').css('font-size', '85px');
+							$(' #header h1 a ').css('font-size', '84px');
 							$(' #header h1 a ').css('line-height', '90px');
 						}
 						else if ( $(window).width() >= 765 ) 
 						{
-							$(' #header h1 a ').css('font-size', '68px');
+							$(' #header h1 a ').css('font-size', '75px');
 							$(' #header h1 a ').css('line-height', '90px');
 						}
 						else if ( $(window).width() >= 475 ) 
 						{
-							$(' #header h1 a ').css('font-size', '76px');
+							$(' #header h1 a ').css('font-size', '75px');
 							$(' #header h1 a ').css('line-height', '90px');
 						}
 						else
 						{
-							$(' #header h1 a ').css('font-size', '55px');
+							$(' #header h1 a ').css('font-size', '53px');
 							$(' #header h1 a ').css('line-height', '90px');
 						}
 					}
@@ -215,22 +218,22 @@ $(document).ready(
 		);
 		if ( $(window).width() >= 959 )
 		{
-			$(' #header h1 a ').css('font-size', '85px');
+			$(' #header h1 a ').css('font-size', '84px');
 			$(' #header h1 a ').css('line-height', '90px');
 		}
 		else if ( $(window).width() >= 765 ) 
 		{
-			$(' #header h1 a ').css('font-size', '68px');
+			$(' #header h1 a ').css('font-size', '75px');
 			$(' #header h1 a ').css('line-height', '90px');
 		}
 		else if ( $(window).width() >= 475 ) 
 		{
-			$(' #header h1 a ').css('font-size', '76px');
+			$(' #header h1 a ').css('font-size', '75px');
 			$(' #header h1 a ').css('line-height', '90px');
 		}
 		else
 		{
-			$(' #header h1 a ').css('font-size', '55px');
+			$(' #header h1 a ').css('font-size', '53px');
 			$(' #header h1 a ').css('line-height', '90px');
 		}
 	}

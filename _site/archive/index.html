@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>
-    Lai.Victor &raquo; archive
+    lai.victor &raquo; archive
   </title>
   
   <!-- Site Author -->
@@ -23,9 +23,13 @@
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Yanone+Kaffeesatz" media="projection, screen" rel="stylesheet" type="text/css" />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
-	<link rel="stylesheet" href="/css/base.css">
-	<link rel="stylesheet" href="/css/skeleton.css">
-	<link rel="stylesheet" href="/css/layout.css">
+  <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/layout.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="/css/font-awesome.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
@@ -54,15 +58,16 @@
 
     <div class="eight columns" id="resizer">
 	<div class="header" id="header">
-	<h1><a href="/" rel="home bookmark">LAI.VICTOR</a></h1>
+	<h1><a href="/" rel="home bookmark"><div class="lastname">LAI</div>.<div class="firstname">VICTOR</div></a></h1>
 	</div>
 </div>
 
 <div class="eight columns">
-	<div class="icon">
-	<a class="icon-link" target="_blank" href="http://www.twitter.com/dblisse">l</a>
-	<a class="icon-link" target="_blank" href="http://ca.linkedin.com/in/laivictor">i</a>
-	<a class="icon-link" href="mailto:lai.victor.vl@gmail.com">g</a>
+	<div class="icon" style="font-size: 56px;">
+		<a target="_blank" href="http://www.twitter.com/dblisse"><i class="icon-twitter-sign"></i></a>
+		<a target="_blank" href="http://ca.linkedin.com/in/laivictor"><i class="icon-linkedin-sign"></i></a>
+		<a target="_blank" href="http://www.github.com/Blisse"><i class="icon-github-sign"></i></a>
+		<a href="mailto:lai.victor.vl@gmail.com"><i class="icon-envelope"></i></a>
 	</div>
 </div>
 
@@ -99,7 +104,7 @@
 	</a></h3>
 			<dl>
 			<dt style="float:left">29 Jul 2012</dt>
-			<dd>&nbsp;&raquo;&nbsp;<a href="/archive/2012/07/29/index.html" title="reworking site layout">reworking site layout</a></dd>
+			<dd>&nbsp;&raquo;&nbsp;<a href="/archive/2012/07/29/index.html" title="site (re)construction">site (re)construction</a></dd>
 
 		
 
@@ -118,7 +123,7 @@
 	</div>
 	
 			<dt style="float:left">26 Jul 2012</dt>
-			<dd>&nbsp;&raquo;&nbsp;<a href="/archive/2012/07/26/index.html" title="magic of dropbox">magic of dropbox</a></dd>
+			<dd>&nbsp;&raquo;&nbsp;<a href="/archive/2012/07/26/index.html" title="saved by dropbox">saved by dropbox</a></dd>
 	
 	
 	
@@ -156,7 +161,7 @@
 	</div>
 	
 			<dt style="float:left">11 Jul 2012</dt>
-			<dd>&nbsp;&raquo;&nbsp;<a href="/archive/2012/07/11/index.html" title="counter-memories">counter-memories</a></dd>
+			<dd>&nbsp;&raquo;&nbsp;<a href="/archive/2012/07/11/index.html" title="counterstrike & memories">counterstrike & memories</a></dd>
 	
 	
 	
@@ -183,7 +188,7 @@
 	</a></h3>
 			<dl>
 			<dt style="float:left">14 Apr 2012</dt>
-			<dd>&nbsp;&raquo;&nbsp;<a href="/archive/2012/04/14/index.html" title="failed interview">failed interview</a></dd>
+			<dd>&nbsp;&raquo;&nbsp;<a href="/archive/2012/04/14/index.html" title="first coding interview">first coding interview</a></dd>
 
 		
 
@@ -210,7 +215,7 @@
 	</a></h3>
 			<dl>
 			<dt style="float:left">25 Feb 2012</dt>
-			<dd>&nbsp;&raquo;&nbsp;<a href="/archive/2012/02/25/index.html" title="hello world">hello world</a></dd>
+			<dd>&nbsp;&raquo;&nbsp;<a href="/archive/2012/02/25/index.html" title="hello world!">hello world!</a></dd>
 
 		
 
@@ -295,22 +300,22 @@ $(document).ready(
 					{
 						if ( $(window).width() >= 959 )
 						{
-							$(' #header h1 a ').css('font-size', '85px');
+							$(' #header h1 a ').css('font-size', '84px');
 							$(' #header h1 a ').css('line-height', '90px');
 						}
 						else if ( $(window).width() >= 765 ) 
 						{
-							$(' #header h1 a ').css('font-size', '68px');
+							$(' #header h1 a ').css('font-size', '75px');
 							$(' #header h1 a ').css('line-height', '90px');
 						}
 						else if ( $(window).width() >= 475 ) 
 						{
-							$(' #header h1 a ').css('font-size', '76px');
+							$(' #header h1 a ').css('font-size', '75px');
 							$(' #header h1 a ').css('line-height', '90px');
 						}
 						else
 						{
-							$(' #header h1 a ').css('font-size', '55px');
+							$(' #header h1 a ').css('font-size', '53px');
 							$(' #header h1 a ').css('line-height', '90px');
 						}
 					}
@@ -319,22 +324,22 @@ $(document).ready(
 		);
 		if ( $(window).width() >= 959 )
 		{
-			$(' #header h1 a ').css('font-size', '85px');
+			$(' #header h1 a ').css('font-size', '84px');
 			$(' #header h1 a ').css('line-height', '90px');
 		}
 		else if ( $(window).width() >= 765 ) 
 		{
-			$(' #header h1 a ').css('font-size', '68px');
+			$(' #header h1 a ').css('font-size', '75px');
 			$(' #header h1 a ').css('line-height', '90px');
 		}
 		else if ( $(window).width() >= 475 ) 
 		{
-			$(' #header h1 a ').css('font-size', '76px');
+			$(' #header h1 a ').css('font-size', '75px');
 			$(' #header h1 a ').css('line-height', '90px');
 		}
 		else
 		{
-			$(' #header h1 a ').css('font-size', '55px');
+			$(' #header h1 a ').css('font-size', '53px');
 			$(' #header h1 a ').css('line-height', '90px');
 		}
 	}

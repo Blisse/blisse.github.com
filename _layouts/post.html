@@ -2,16 +2,21 @@
 layout: default
 ---
 
-<div class="sixteen columns">
 
-<article class="post">
-  <h3><a href="{{ page.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ page.title }}</a> /{{ page.date | date:'%Y%m%d' }}</h3>
+<div class="container">
 
-  {{ content }}
+	<div class="sixteen columns">
+	<article class="post">
 
-    <div class="permalink">
-      <a class="permalink" href="{{ site.url }}{{ page.url }}" rel="bookmark permalink" title="Permalink for {{ page.title }}">Permalink</a>
-    </div>
-</article>
+	  <h3><a href="{{ page.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ page.title }}</a> /{{ page.date | date:'%Y%m%d' }}</h3>
+
+	  {{ content }}
+
+		<div class="permalink">
+		  <a class="permalink" href="{{ site.url }}{{ page.url }}" rel="bookmark permalink" title="Permalink for {{ page.title }}">Permalink</a>
+		</div>
+
+	</article>
+	</div>
 
 </div>

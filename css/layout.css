@@ -59,10 +59,10 @@
 	  outline:none;
 	  cursor:pointer;
 	  overflow:hidden;    
-		-webkit-transition: all 150ms ease-in-out 0s;
-		-moz-transition: all 150ms ease-in-out 0s;
-		-o-transition: all 150ms ease-in-out 0s;
-		transition: all 150ms ease-in-out 0s;
+		-webkit-transition: all 250ms ease-in-out 0s;
+		-moz-transition: all 250ms ease-in-out 0s;
+		-o-transition: all 250ms ease-in-out 0s;
+		transition: all 250ms ease-in-out 0s;
 	}
 	.navbar ul li a:hover, 
 	.navbar ul li a.selected {
@@ -93,49 +93,38 @@
 
 	#content { text-align: left; position: relative; }
 
-.post {
-    font-size: 15px;
-}
-.post h3 { margin: 20px 0; }
-.post h3 a { color: #444; }
-.post .postbody {
-    font-family: Georgia,"Times New Roman",serif;
-}
+	.post {
+		font-size: 15px;
+	}
+	.post h3 { margin: 20px 0; }
+	.post .postbody {
+		font-family: Georgia,"Times New Roman",serif;
+	}
 
+	.permalink { float: right; }
 
-
-.paging { font-size: 15px; margin: 10px; }
-.paging a.older { float: right; padding-right: 5px; }
-.paging a.newer { float: left; padding-left: 5px;}
-.paging a.older h3 { color: #666; }
-.paging a.newer h3 { color: #666; }
-
-.permalink {
-    float: right;
-}
-.published {
-    float: left;
-}
+	.older { float: right; }
+	.newer { float: left; }
 
 /* #Icons
 ================================================== */
 
-.icon {
-	padding: 5px 5px 5px 5px;
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
+	.icon {
+		padding: 15px 15px 15px 15px;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 25px;
+	}
 
-.icon a {
-	color: #444;
-		-webkit-transition: all 250ms ease-in-out 0s;
-		-moz-transition: all 250ms ease-in-out 0s;
-		-o-transition: all 250ms ease-in-out 0s;
-		transition: all 250ms ease-in-out 0s;
-}
+	.icon a {
+		color: #444;
+			-webkit-transition: all 250ms ease-in-out 0s;
+			-moz-transition: all 250ms ease-in-out 0s;
+			-o-transition: all 250ms ease-in-out 0s;
+			transition: all 250ms ease-in-out 0s;
+	}
 
-.icon a:hover, .icon a.selected { color: #D03945; background: transparent; }
+	.icon a:hover, .icon a.selected { color: #D03945; background: transparent; }
 
 /* #Footer
 ================================================== */

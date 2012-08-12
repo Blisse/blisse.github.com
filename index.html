@@ -4,9 +4,14 @@ title: home
 homepage: true
 ---
 
+</div>
+
+<div class="container">
+
 {% for post in paginator.posts %}
 
 <div class="sixteen columns">
+
 	<article class="post">
 
 		<h3><a href="{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a> /{{ post.date | date:'%Y%m%d' }}</h3>
@@ -18,25 +23,29 @@ homepage: true
 	</article>
 </div>
 
+<hr>
+
 {% endfor %}
 
 
 <div class="sixteen columns">
 
-	<div class="paging">
-		{% if paginator.previous_page %}
-			{% if paginator.previous_page == 1 %}
-				<a href="/" class="newer"><h3>Newer Posts</h3></a>
-			{% else %}
-				<a href="/page{{paginator.previous_page}}" class="newer"><h3>Newer Posts</h3></a>
-			{% endif %}
+	{% if paginator.previous_page %}
+		{% if paginator.previous_page == 1 %}
+			<h5><a href="/" class="newer">newer</a></h3>
+		{% else %}
+			<h5><a href="/page{{paginator.previous_page}}" class="newer">newer</a></h5>
 		{% endif %}
-		{% if paginator.next_page %}
-			<a href="/page{{paginator.next_page}}" class="older"><h3>Older Posts</h3></a></li>
-		{% endif %}
+	{% endif %}
 
-		<div class="clear"></div>
+	{% if paginator.next_page %}
+		<h5><a href="/page{{paginator.next_page}}" class="older">older</a></h5>
+	{% endif %}
 
-	</div>
+	<div class="clear"></div>
+
+</div>
+
+<hr>
 
 </div>

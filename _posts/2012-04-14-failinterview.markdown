@@ -6,6 +6,7 @@ tags: [fail, interview]
 tab: archive
 ---
 
+<p>
 I had an interview the other day that really shook me up.
 
 He asked me a question that really made me wonder how much I really knew about programming. 
@@ -99,3 +100,4 @@ The output should be
 
 I'd like to think I made progress, but this could be done a lot better still. 
 But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
+</p>

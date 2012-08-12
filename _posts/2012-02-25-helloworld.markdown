@@ -6,6 +6,7 @@ tags: [misc]
 tab: archive
 ---
 
+<p>
 This is my first post. So, an obligatory
 
 {% highlight python %}
@@ -19,3 +20,4 @@ if __name__ == "__main__":
 {% endhighlight %}
 
 Thanks for visiting~
+</p>

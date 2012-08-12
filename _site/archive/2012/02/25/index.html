@@ -54,41 +54,48 @@
 </head>
 
 <body>
-  <div class="container">
 
-    <div class="eight columns" id="resizer">
-	<div class="header" id="header">
-	<h1><a href="/" rel="home bookmark"><div class="lastname">LAI</div>.<div class="firstname">VICTOR</div></a></h1>
+    <div class="container">
+	<div class="eight columns" id="resizer">
+		<div class="header" id="header">
+		<h1><a href="/" rel="home bookmark"><div class="lastname">LAI</div>.<div class="firstname">VICTOR</div></a></h1>
+		</div>
+	</div>
+
+	<div class="eight columns">
+		<div class="icon" style="font-size: 48px;">
+			<a target="_blank" href="http://www.twitter.com/dblisse"><i class="icon-twitter-sign"></i></a>
+			<a target="_blank" href="http://ca.linkedin.com/in/laivictor"><i class="icon-linkedin-sign"></i></a>
+			<a target="_blank" href="http://www.github.com/Blisse"><i class="icon-github-sign"></i></a>
+			<a href="mailto:lai.victor.vl@gmail.com"><i class="icon-envelope"></i></a>
+		</div>
+	</div>
+
+	<div class="sixteen columns">
+		<div class="navbar" id="navbar">
+		<ul class="nav">
+		  <li class="currentpage"><a rel="bookmark" title="Home" href="/">Home</a></li>
+		  <li><a rel="bookmark" title="Archive" href="/archive/">Archive</a></li>
+		  <li><a rel="bookmark" title="Projects" href="/projects/">Projects</a></li>
+		  <li><a rel="bookmark" title="About" href="/about/">About</a></li>
+		</ul>
+		</div>
 	</div>
 </div>
 
-<div class="eight columns">
-	<div class="icon" style="font-size: 56px;">
-		<a target="_blank" href="http://www.twitter.com/dblisse"><i class="icon-twitter-sign"></i></a>
-		<a target="_blank" href="http://ca.linkedin.com/in/laivictor"><i class="icon-linkedin-sign"></i></a>
-		<a target="_blank" href="http://www.github.com/Blisse"><i class="icon-github-sign"></i></a>
-		<a href="mailto:lai.victor.vl@gmail.com"><i class="icon-envelope"></i></a>
-	</div>
-</div>
+	<hr>
+    
+	<div class="container">
 
-<div class="sixteen columns">
-	<div class="navbar" id="navbar">
-	<ul class="nav">
-	  <li class="currentpage"><a rel="bookmark" title="Home" href="/">Home</a></li>
-	  <li><a rel="bookmark" title="Archive" href="/archive/">Archive</a></li>
-	  <li><a rel="bookmark" title="Projects" href="/projects/">Projects</a></li>
-	  <li><a rel="bookmark" title="About" href="/about/">About</a></li>
-	</ul>
-	</div>
-</div>
+	<div class="sixteen columns">
+	<article class="post">
 
-		<br /><br /><br />
-      <div class="sixteen columns">
+	  <h3><a href="/archive/2012/02/25/index.html" rel="bookmark permalink" title="Permanent link to this post">hello world!</a> /20120225</h3>
 
-<article class="post">
-  <h3><a href="/archive/2012/02/25/index.html" rel="bookmark permalink" title="Permanent link to this post">hello world!</a> /20120225</h3>
+	  <p>
+This is my first post. So, an obligatory
 
-  <p>This is my first post. So, an obligatory</p>
+
 <div class='highlight'><pre><code class='python'><span class='k'>def</span> <span class='nf'>main</span><span class='p'>():</span>
   <span class='k'>print</span> <span class='s'>&quot;Hello world!&quot;</span>
 
@@ -96,32 +103,41 @@
   <span class='n'>main</span><span class='p'>()</span>
 </code></pre>
 </div>
-<p>Thanks for visiting~</p>
 
-    <div class="permalink">
-      <a class="permalink" href="http://www.laivictor.com/archive/2012/02/25/index.html" rel="bookmark permalink" title="Permalink for hello world!">Permalink</a>
-    </div>
-</article>
+
+Thanks for visiting~
+</p>
+
+		<div class="permalink">
+		  <a class="permalink" href="http://www.laivictor.com/archive/2012/02/25/index.html" rel="bookmark permalink" title="Permalink for hello world!">Permalink</a>
+		</div>
+
+	</article>
+	</div>
 
 </div>
 
-    <div class="sixteen columns">
-<footer id="footer">
-	<center>
+	<hr>
 
-		<p>
-			All content copyright &copy; <a href="/about">Victor Lai</a>. Written in hopefully valid and not broken
-			<a href="" title="Valid HTML5" rel="external" target="_blank">HTML5</a> and 
-			<a href="" title="Valid CSS3" rel="external" target="_blank">CSS3</a>.
-		</p>
-		<p>
-			Powered by <a href="http://github.com/mojombo/jekyll" title="The Jekyll (static site generator) code repository"
-			rel="external" target="_blank">Jekyll</a>.
-		</p>
-	</center>
-</footer>
+    <div class="container">
+	<div class="sixteen columns">
+	<footer id="footer">
+		<center>
+
+			<p>
+				All content copyright &copy; <a href="/about">Victor Lai</a>. Written in hopefully valid and not broken
+				<a href="" title="Valid HTML5" rel="external" target="_blank">HTML5</a> and 
+				<a href="" title="Valid CSS3" rel="external" target="_blank">CSS3</a>.
+			</p>
+			<p>
+				Powered by <a href="http://github.com/mojombo/jekyll" title="The Jekyll (static site generator) code repository"
+				rel="external" target="_blank">Jekyll</a>.
+			</p>
+		</center>
+	</footer>
+	</div>
 </div>
-  </div>
+
 	<script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 
@@ -176,12 +192,12 @@ $(document).ready(
 							$(' #header h1 a ').css('font-size', '84px');
 							$(' #header h1 a ').css('line-height', '90px');
 						}
-						else if ( $(window).width() >= 765 ) 
+						else if ( $(window).width() >= 769 ) 
 						{
-							$(' #header h1 a ').css('font-size', '75px');
+							$(' #header h1 a ').css('font-size', '62px');
 							$(' #header h1 a ').css('line-height', '90px');
 						}
-						else if ( $(window).width() >= 475 ) 
+						else if ( $(window).width() >= 479 ) 
 						{
 							$(' #header h1 a ').css('font-size', '75px');
 							$(' #header h1 a ').css('line-height', '90px');
@@ -200,12 +216,12 @@ $(document).ready(
 			$(' #header h1 a ').css('font-size', '84px');
 			$(' #header h1 a ').css('line-height', '90px');
 		}
-		else if ( $(window).width() >= 765 ) 
+		else if ( $(window).width() >= 769 ) 
 		{
-			$(' #header h1 a ').css('font-size', '75px');
+			$(' #header h1 a ').css('font-size', '62px');
 			$(' #header h1 a ').css('line-height', '90px');
 		}
-		else if ( $(window).width() >= 475 ) 
+		else if ( $(window).width() >= 479 ) 
 		{
 			$(' #header h1 a ').css('font-size', '75px');
 			$(' #header h1 a ').css('line-height', '90px');
@@ -218,6 +234,7 @@ $(document).ready(
 	}
 );
 </script>
+
 </body>
 
 </html>

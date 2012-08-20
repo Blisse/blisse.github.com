@@ -7,7 +7,7 @@ tab: archive
 ---
 
 <p>
-  I love <a href="http://www.dropbox.com" target="_blank">Dropbox</a>.
+  <a href="http://www.dropbox.com" target="_blank">Dropbox</a> is amazing.
 </p>
 
 <p>

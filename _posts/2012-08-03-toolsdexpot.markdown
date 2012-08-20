@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Essential Windows Tools > Dexpot
+title: Tools - Dexpot
 date: 2012-08-03
-tags: [tools, windows]
+tags: [tools]
 ---
 
 <p>

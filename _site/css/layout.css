@@ -17,15 +17,13 @@
 /* #Site Styles
 ================================================== */
 
-/* #Header
-================================================== */
-
-	.header { padding: 5px 0; text-align: left; }
-	.header h1 { font-weight: bold; margin: 0; padding-top: 15px; }
-	.header h1 a { line-height: 60px; color: #333333; }
-
 /* #Navigation Bar
 ================================================== */
+
+
+	#mainheader {
+background: rgb(172,40,50); /* Old browsers */
+}
 
 	.navbar {
 	  background-color: transparent;
@@ -33,16 +31,19 @@
 	  height: 36px;
 	}
 	.navbar ul {
+	  color:#fff;
 	  list-style: none;
 	  list-style-type: none;
 	  margin: 0px;
 	  padding: 0px;
 	}
 	.navbar ul li {
+	  color:#fff;
 	  display: inline;
 	  position: relative;
 	}
 	.navbar ul li a {
+	  color:#fff;
 	  float:left;
 	  height:34px;
 	  line-height:36px;
@@ -51,7 +52,6 @@
 	  display:block;
 	  font-size:1.2em;
 	  font-weight: normal;
-	  color:#444444;
 	  border-right:1px transparent;
 	  border-left:1px transparent;
 	  border-top:1px transparent;
@@ -66,21 +66,21 @@
 	}
 	.navbar ul li a:hover, 
 	.navbar ul li a.selected {
-	  background-color:#D03945;
+	  background-color:#DC6A74;
 	  color:#fff;
 	}
 	.navbar ul li a:active {
-	  background-color:#444;
-	  color:#fff;
+	  background-color:#fff;
+	  color:#AC2832;
 	}
 	ul.nav li.currentpage a {
-	  background-color:#444;
-	  color:#fff;
+	  background-color:#fff;
+	  color:#AC2832;
 	}
 	ul.nav li.currentpage a:hover, 
 	ul.nav li.currentpage a.selected {
-	  background-color:#D03945;
-	  color:#fff;
+	  background-color:#DC6A74;
+	  color:#AC2832;
 	}
 
 
@@ -109,22 +109,23 @@
 /* #Icons
 ================================================== */
 
-	.icon {
+	.icon { 
+		display: inline;
 		padding: 15px 15px 15px 15px;
-		text-align: center;
+		text-align: right;
 		margin-top: 30px;
 		margin-bottom: 25px;
 	}
 
-	.icon a {
-		color: #444;
+	.icon a { 
+		color: #fff; text-decoration: none; background: none; border-bottom: none;
 			-webkit-transition: all 250ms ease-in-out 0s;
 			-moz-transition: all 250ms ease-in-out 0s;
 			-o-transition: all 250ms ease-in-out 0s;
 			transition: all 250ms ease-in-out 0s;
 	}
 
-	.icon a:hover, .icon a.selected { color: #D03945; background: transparent; }
+	.icon a:hover, .icon a.selected { color: #DC6A74; text-decoration: none; background: none; border-bottom: none; }
 
 /* #Footer
 ================================================== */
@@ -225,14 +226,14 @@
 
 @font-face {
   font-family: "Intro line";
-  src: url("../fonts/Intro line.ttf");
+  src: url("../fonts/Intro line.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Intro";
-  src: url("../fonts/Intro.ttf");
+  src: url("../fonts/Intro.otff");
   font-weight: normal;
   font-style: normal;
 }

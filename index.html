@@ -4,8 +4,6 @@ title: home
 homepage: true
 ---
 
-</div>
-
 <div class="container">
 
 {% for post in paginator.posts %}
@@ -14,9 +12,14 @@ homepage: true
 
 	<article class="post">
 
-		<h3><a href="{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a> /{{ post.date | date:'%Y%m%d' }}</h3>
+		<h3><a href="{{ post.url }}" rel="bookmark permalink">{{ post.title }}</a> /{{ post.date | date:'%Y%m%d' }}</h3>
 
 		{{ post.content }}
+		
+		<a href="{{ post.url }}" rel="bookmark permalink">Open in a new page &raquo;</a>
+		
+		<br />
+		<br />
 
 		<div class="clear"></div>
 
@@ -32,20 +35,21 @@ homepage: true
 
 	{% if paginator.previous_page %}
 		{% if paginator.previous_page == 1 %}
-			<h5><a href="/" class="newer">newer</a></h3>
+			<h5><a href="/" class="newer">NEWER</a></h5>
 		{% else %}
-			<h5><a href="/page{{paginator.previous_page}}" class="newer">newer</a></h5>
+			<h5><a href="/page{{paginator.previous_page}}" class="newer">NEWER</a></h5>
 		{% endif %}
 	{% endif %}
 
 	{% if paginator.next_page %}
-		<h5><a href="/page{{paginator.next_page}}" class="older">older</a></h5>
+		<h5><a href="/page{{paginator.next_page}}" class="older">OLDER</a></h5>
 	{% endif %}
 
 	<div class="clear"></div>
 
 </div>
 
-<hr>
+<br />
+<br />
 
 </div>

@@ -21,6 +21,10 @@ tags: [music]
 <p>
   My new cable feels even better. It's completely rubberized, which isn't something I've seen a lot.
   The rubber is really textured, unlike the smooth plasticky rubber on a lot of cables. It's 
-  made by Fender, and says Professional Noiseless Cable on the cable itself. I don't know why that required
-  any notification. Isn't that expected of every cable? Oh well. It feels so nice I don't mind.
+  made by Fender, and says Professional Noiseless Cable on the cable itself. I don't know why that message is required. 
+  Isn't that expected of every cable? 
+</p>
+
+<p>
+  Oh well. It feels so nice I don't mind.
 </p>

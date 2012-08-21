@@ -6,16 +6,16 @@ tags: [tetris, gaming]
 ---
 
 <p>
-  To celebrate me getting level 95 in both Battle 2P and Battle 6P Tetris on Tetris Friends, I've made this post.
+  I recently got to level 95 in Tetris Friends Battle 2P and 6P, so here's some Tetris.
 </p>
 
 <p>
-  <a class="scale-with-grid child-padding" href="http://en.wikipedia.org/wiki/Tetris">Tetris</a> is somewhat of a famous game. Most people who've played it probably first
+  <a href="http://en.wikipedia.org/wiki/Tetris">Tetris</a> is somewhat of a famous game. Most people who've played it probably first
   started on the GameBoy. Maybe something like this.
 </p>
 
 <center>
-<img src="http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png"></img>
+<img src="http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png">
 </center>
 
 <p>
@@ -58,7 +58,7 @@ tags: [tetris, gaming]
 </p>
 
 <center>
-<img class="scale-with-grid child-padding" src="http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg"></img>
+<img class="scale-with-grid child-padding" src="http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg">
 </center>
 
 <p> 

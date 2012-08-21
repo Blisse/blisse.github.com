@@ -83,9 +83,9 @@
 	h1 { font-size: 56px; font-family: 'Nexa Bold', 'Code Bold', 'Intro', Arial, Helvetica, sans-serif; }
 	h2 { font-size: 32px; line-height: 40px; margin-bottom: 10px; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
-	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
-	h5 { font-size: 17px; line-height: 24px; margin-bottom: 2px; }
-	h6 { font-size: 14px; line-height: 21px; margin-bottom: 1px; }
+	h4 { font-size: 24px; line-height: 30px; margin-bottom: 4px; }
+	h5 { font-size: 20px; line-height: 24px; margin-bottom: 2px; }
+	h6 { font-size: 18px; line-height: 21px; margin-bottom: 1px; }
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 	h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited{ 
@@ -109,7 +109,7 @@
 		transition: all 250ms ease-in-out 0s; }
 	a .firstname:hover { color: #DC6A74; text-decoration: none; background: none; display: inline; }
 	
-	.subheader { color: #aaa; }
+	.subheader { color: #111; }
 
 
 

@@ -75,12 +75,12 @@
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
 		color: #111111;
-		font-family: 'Code Bold', 'Nexa Bold', 'Intro', Arial, Helvetica, sans-serif;
+		font-family: 'Code Bold', 'Nexa Bold', Arial, Helvetica, sans-serif;
 		font-weight: normal;
 		text-decoration: none;
 	}
 
-	h1 { font-size: 56px; font-family: 'Nexa Bold', 'Code Bold', 'Intro', Arial, Helvetica, sans-serif; }
+	h1 { font-size: 56px; font-family: 'Nexa Bold', 'Code Bold', Arial, Helvetica, sans-serif; }
 	h2 { font-size: 32px; line-height: 40px; margin-bottom: 10px; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
 	h4 { font-size: 24px; line-height: 30px; margin-bottom: 4px; }
@@ -96,7 +96,7 @@
 	h1 a:hover, h1 a.selected { background: none; }
 
 	.header { display: inline; }
-	#lheight { height: 80px; line-height: 80px; }
+	.lheight { height: 80px; line-height: 80px; display: inline; }
 	a .lastname { color: #333; display: inline; 
 		-webkit-transition: all 250ms ease-in-out 0s;
 		-moz-transition: all 250ms ease-in-out 0s;
@@ -196,6 +196,16 @@
 
 	.parent-padding { padding: 5% 0; }
 	.child-padding { padding: 10% 0; }
+
+	.centered {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.centertext, .centertext p, p.centered {
+		text-align: center;
+	}
 
 
 /* #Buttons

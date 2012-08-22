@@ -14,9 +14,9 @@ tags: [tetris, gaming]
   started on the GameBoy. Maybe something like this.
 </p>
 
-<center>
-<img src="http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png">
-</center>
+<div class="centered">
+<img alt="ye olde Tetris" src="http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png">
+</div>
 
 <p>
   Nowadays, <a href="http://www.tetrisfriends.com/" target="_blank">Tetris Friends</a> is all the rage. 
@@ -58,9 +58,9 @@ tags: [tetris, gaming]
   but play a few times and you'll get the gist of it. Here's a image I found off Google.
 </p>
 
-<center>
-<img class="scale-with-grid child-padding" src="http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg">
-</center>
+<span class="centered">
+<img class="scale-with-grid child-padding" alt="Tetris Battle" src="http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg">
+</span>
 
 <p> 
   Starting off, I was pretty bad, but I knew how to improve, and I set about playing only for that purpose.

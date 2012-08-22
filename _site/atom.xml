@@ -4,7 +4,7 @@
  <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-08-20T23:54:07-04:00</updated>
+ <updated>2012-08-22T02:26:14-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -12,7 +12,7 @@
 
  
  <entry>
-   <title type="html">how tetris battle works</title>
+   <title type="html">how tetris battle works - the style</title>
    <link href="http://www.laivictor.com/archive/2012/08/20/howtetrisworks"/>
    <updated>2012-08-20T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/08/20/howtetrisworks</id>
@@ -30,7 +30,8 @@
   And that's how you realize what's possible moving forward. 
 &lt;/p&gt;&lt;p&gt;
   The 2-line style is the best style to improve, I think. Playing this well will get you from 10-60 easily. The beauty lies in the 2 block empty spaces.
-  When you throw your pieces in there, every piece is guaranteed to 
+  When you throw your pieces in there, every piece is guaranteed to make at least one line, bar the I-piece. This means 7 combos are now available at the minimum,
+  and when you play more, even 13 combos are a possibility when you add in bomb clearing.
 &lt;/p&gt;&lt;p&gt;
   In Tetris, you definitely do not want to make mistakes. A single mistake can throw off your game. Two mistakes in a row 
   will crush you when you're at higher levels. So it's a good idea to start learning proper technique. Lots of players focus on speed
@@ -63,9 +64,9 @@
 &lt;/p&gt;&lt;p&gt;
   &lt;a href='http://en.wikipedia.org/wiki/Tetris'&gt;Tetris&lt;/a&gt; is somewhat of a famous game. Most people who've played it probably first
   started on the GameBoy. Maybe something like this.
-&lt;/p&gt;&lt;center&gt;
-&lt;img src='http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png' /&gt;
-&lt;/center&gt;&lt;p&gt;
+&lt;/p&gt;&lt;div class='centered'&gt;
+&lt;img alt='ye olde Tetris' src='http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png' /&gt;
+&lt;/div&gt;&lt;p&gt;
   Nowadays, &lt;a href='http://www.tetrisfriends.com/' target='_blank'&gt;Tetris Friends&lt;/a&gt; is all the rage. 
   And for good reason.
 &lt;/p&gt;&lt;p&gt;
@@ -91,9 +92,9 @@
   send as many lines as possible to the other player, and hope you KO them more than they do to you. To send lines, you'll have to perform combos, either 
   consecutively or with a T-spin. Along the way, you'll also have to clear the lines that your opponent sends to you by clearing the bombs away. It's complicated,
   but play a few times and you'll get the gist of it. Here's a image I found off Google.
-&lt;/p&gt;&lt;center&gt;
-&lt;img class='scale-with-grid child-padding' src='http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg' /&gt;
-&lt;/center&gt;&lt;p&gt; 
+&lt;/p&gt;&lt;span class='centered'&gt;
+&lt;img alt='Tetris Battle' class='scale-with-grid child-padding' src='http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg' /&gt;
+&lt;/span&gt;&lt;p&gt; 
   Starting off, I was pretty bad, but I knew how to improve, and I set about playing only for that purpose.
   Knowing how to improve is really important. There's a lot of players that are really amazing at some parts of the game, but say, play a bad style, and that hinders
   their improvement. There isn't really an exact skill ceiling for this game since you can play at blistering speeds. But having a bad strategy will harm your development

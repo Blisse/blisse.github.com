@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how tetris battle works
+title: how tetris battle works - the style
 date: 2012-08-20
 tags: [tetris, gaming]
 ---
@@ -25,7 +25,8 @@ tags: [tetris, gaming]
 
 <p>
   The 2-line style is the best style to improve, I think. Playing this well will get you from 10-60 easily. The beauty lies in the 2 block empty spaces.
-  When you throw your pieces in there, every piece is guaranteed to 
+  When you throw your pieces in there, every piece is guaranteed to make at least one line, bar the I-piece. This means 7 combos are now available at the minimum,
+  and when you play more, even 13 combos are a possibility when you add in bomb clearing.
 </p>
 
 <p>

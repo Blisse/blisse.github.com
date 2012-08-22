@@ -22,8 +22,8 @@
 
 
 	#mainheader {
-background: rgb(172,40,50); /* Old browsers */
-}
+	  background: rgb(172,40,50); /* Old browsers */
+	}
 
 	.navbar {
 	  background-color: transparent;
@@ -183,57 +183,78 @@ background: rgb(172,40,50); /* Old browsers */
 
 
 @font-face {
-  font-family: "Code Bold";
-  src: url("../fonts/CODE Bold.otf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Code Bold';
+    src: url('/fonts/codebold.eot');
+    src: url('/fonts/codebold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/codebold.woff') format('woff'),
+         url('/fonts/codebold.ttf') format('truetype'),
+         url('/fonts/codebold.svg#codeboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Code Light";
-  src: url("../fonts/CODE Light.otf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Code Light';
+    src: url('/fonts/codelight.eot');
+    src: url('/fonts/codelight.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/codelight.woff') format('woff'),
+         url('/fonts/codelight.ttf') format('truetype'),
+         url('/fonts/codelight.svg#codelightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Nexa Bold";
-  src: url("../fonts/Nexa Bold.otf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Intro line';
+    src: url('/fonts/introline.eot');
+    src: url('/fonts/introline.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/introline.woff') format('woff'),
+         url('/fonts/introline.ttf') format('truetype'),
+         url('/fonts/introline.svg#introinlineregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Nexa Light";
-  src: url("../fonts/Nexa Light.otf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Intro';
+    src: url('/fonts/intro.eot');
+    src: url('/fonts/intro.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/intro.woff') format('woff'),
+         url('/fonts/intro.ttf') format('truetype'),
+         url('/fonts/intro.svg#introregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Socialico";
-  src: url("../fonts/Socialico.ttf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Nexa Bold';
+    src: url('/fonts/nexabold.eot');
+    src: url('/fonts/nexabold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/nexabold.woff') format('woff'),
+         url('/fonts/nexabold.ttf') format('truetype'),
+         url('/fonts/nexabold-webfont.svg#nexaboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Young";
-  src: url("../fonts/Young.ttf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Nexa Light';
+    src: url('/fonts/nexalight.eot');
+    src: url('/fonts/nexalight.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/nexalight.woff') format('woff'),
+         url('/fonts/nexalight.ttf') format('truetype'),
+         url('/fonts/nexalight.svg#nexalightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Intro line";
-  src: url("../fonts/Intro line.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Intro";
-  src: url("../fonts/Intro.otff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Young';
+    src: url('/fonts/young.eot');
+    src: url('/fonts/young.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/young.woff') format('woff'),
+         url('/fonts/Young.ttf') format('truetype'),
+         url('/fonts/young.svg#youngregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }

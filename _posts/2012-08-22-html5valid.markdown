@@ -1,0 +1,22 @@
+---
+layout: post
+title: hey, i'm HTML5 valid!
+date: 2012-08-22
+tags: [site, milestones]
+---
+
+<p>
+  Just fixed up some of my bad habits in HTML5, and now, I'm HTML5 valid! (according to <a href="http://html5.validator.nu/" target="_blank">validator.nu</a>)
+</p>
+
+<p>
+	<div class="centered">
+		<a href="http://html5.validator.nu/?doc=http%3A%2F%2Fwww.laivictor.com%2F" target="_blank"> 
+		<img class="scale-with-grid" alt="HTML5 valid" src="/images/html5valid.png">
+		</a>
+	</div>
+</p>
+
+<p>
+	Yay! :D
+</p>

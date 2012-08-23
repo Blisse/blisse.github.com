@@ -4,12 +4,35 @@
  <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-08-22T02:26:14-04:00</updated>
+ <updated>2012-08-22T23:15:41-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
  </author>
 
+ 
+ <entry>
+   <title type="html">hey, i'm HTML5 valid!</title>
+   <link href="http://www.laivictor.com/archive/2012/08/22/html5valid"/>
+   <updated>2012-08-22T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/08/22/html5valid</id>
+   <content type="html">&lt;p&gt;
+  Just fixed up some of my bad habits in HTML5, and now, I'm HTML5 valid! (according to &lt;a href='http://html5.validator.nu/' target='_blank'&gt;validator.nu&lt;/a&gt;)
+&lt;/p&gt;&lt;p&gt;
+	&lt;div class='centered'&gt;
+		&lt;a href='http://html5.validator.nu/?doc=http%3A%2F%2Fwww.laivictor.com%2F' target='_blank'&gt; 
+		&lt;img alt='HTML5 valid' class='scale-with-grid' src='/images/html5valid.png' /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/p&gt;&lt;p&gt;
+	Yay! :D
+&lt;/p&gt;</content>
+   
+   <category term="site"/>
+   
+   <category term="milestones"/>
+   
+ </entry>
  
  <entry>
    <title type="html">how tetris battle works - the style</title>

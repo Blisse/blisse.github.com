@@ -1,97 +1,122 @@
 ---
 layout: project
-title: Ridiculously Justified Lines
+title: Justified Lines in C++ 
 tab: justified
 ---
 
 <p>
-  Horribly lazy implementation of a line justification program. Done after 2 weeks of C++.
-  Not my best code, but in all my Googling, I haven't found anything that does this.
+  Pretty direct implementation after my first 2 weeks of C++.
+  Not my best code, but in all my Googling, I haven't found anything that does this as well.
 </p>
 
 <p>
   Justifies a file called filenameIn, writing the output to filenameOut. Must take in the 
-  max line size to justify to. Goes through each line, adding spaces until the
-  max line size is reached for that line, then writes to the file.
+  maximum number of characters of the page. Goes through each line, adding spaces until the
+  the maximum number of characters is reached for that line, then writes to the file and continues.
 </p>
 
-{% highlight java %}
-void justifyLines(string filenameIn, string filenameOut, int max_len)
-{
-    ifstream infile;
-    infile.open(filenameIn.c_str() );
+{% highlight c++ %}
 
-    ofstream outfile;
-    outfile.open(filenameOut.c_str() );
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <istream>
+#include <cstdlib>
 
-    string string_in;
-    int line_len;
-    int offset;
+class LineTools {
 
-    int i, k = 0;
-    int oneword = 1;
+	public:
 
-    while ( getline(infile, string_in) )
-    {
-    	oneword = 1;
-    	line_len = string_in.length();
-		offset = max_len - line_len;
+	void justifyLines(string filenameIn, string filenameOut, int max_len)
+	{
 
-		for ( i=0; i<line_len; i++ )
+		ifstream infile;
+		infile.open(filenameIn.c_str() );
+
+		ofstream outfile;
+		outfile.open(filenameOut.c_str() );
+
+		string string_in;
+		int line_len;
+		int offset;
+
+		int i, k = 0;
+		int oneword = 1;
+
+		while ( getline(infile, string_in) )
 		{
-			if ( string_in[i] == ' ' )
+			oneword = 1;
+			line_len = string_in.length();
+			offset = max_len - line_len;
+
+			for ( i=0; i<line_len; i++ )
 			{
-				oneword = 0;
-			}
-		}
-
-    	if ( !offset )
-    	{
-    		outfile << string_in << endl;
-    	}
-    	else // string_len < max_len
-    	{
-    		if (oneword)
-    		{
-    			outfile << string_in;
-    			while (offset)
-    			{
-    				outfile << " ";
-    				offset--;
-    			}
-    			outfile << endl;
-    		}
-    		else
-    		{
-    			int n = 0;
-				while ( offset )
+				if ( string_in[i] == ' ' )
 				{
-					if ( k > (line_len-1) )
-					{
-						k = 0;
-					}
+					oneword = 0;
+				}
+			}
 
-					if ( string_in[k] == ' ' )
+			if ( !offset )
+			{
+				outfile << string_in << endl;
+			}
+			else // string_len < max_len
+			{
+				if (oneword)
+				{
+					outfile << string_in;
+					while (offset)
 					{
-						string_in.insert(k," ");
-						k++;
-						while ( string_in[k++] == ' ')
-						{
-						}
-						line_len++;
+						outfile << " ";
 						offset--;
 					}
-					k++;
+					outfile << endl;
 				}
-				k = 0;
-				outfile << string_in << endl;
-    		}
+				else
+				{
+					int n = 0;
+					while ( offset )
+					{
+						if ( k > (line_len-1) )
+						{
+							k = 0;
+						}
 
-    	}
+						if ( string_in[k] == ' ' )
+						{
+							string_in.insert(k," ");
+							k++;
+							while ( string_in[k++] == ' ')
+							{
+							}
+							line_len++;
+							offset--;
+						}
+						k++;
+					}
+					k = 0;
+					outfile << string_in << endl;
+				}
 
-    }
+			}
 
-    infile.close();
-    outfile.close();
+		}
+
+		infile.close();
+		outfile.close();
+	}
+
 }
 {% endhighlight %}
+
+<p>
+  I'm welcome to any suggestions on how to improve this, because there's a lot that can be improved.
+  Sadly, this only works for monospaced fonts. I think I would need to analyze the default font style
+  before I can implement this 100%.
+</p>
+
+<p>
+  Depending on how you want to use this, it's probably a good idea to create a method to get the maximum
+  number of characters per line you're aiming for.
+</p>

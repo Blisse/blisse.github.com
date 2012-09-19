@@ -8,12 +8,12 @@ layout: default
 	<div class="sixteen columns">
 	<article class="post">
 
-	  <h3><a href="{{ page.url }}" title="Permanent link to this post">{{ page.title }}</a> /{{ page.date | date:'%Y%m%d' }}</h3>
+		<h3><a href="{{ page.url }}" title="Permanent link to this post">{{ page.title }}</a> /{{ page.date | date:'%Y%m%d' }}</h3>
 
-	  {{ content }}
+		{{ content }}
 
 		<div class="permalink">
-		  <a class="permalink" href="{{ site.url }}{{ page.url }}" title="Permalink for {{ page.title }}">Permalink</a>
+			<a class="permalink" href="{{ site.url }}{{ page.url }}" title="Permalink for {{ page.title }}">Permalink</a>
 		</div>
 
 	</article>

@@ -4,12 +4,101 @@
  <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-08-22T23:46:46-04:00</updated>
+ <updated>2012-09-18T23:01:36-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
  </author>
 
+ 
+ <entry>
+   <title type="html">professionalism in esports</title>
+   <link href="http://www.laivictor.com/archive/2012/09/18/esportsandprofessionalism"/>
+   <updated>2012-09-18T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/09/18/esportsandprofessionalism</id>
+   <content type="html">&lt;p&gt;
+	I'm a big fan of the electronic sports (e-sports) movement. For the last 10 years, gamers have been pushing the idea
+	that gaming isn't that different from soccer or basketball. People who play at an extremely high level, the &quot;professionals&quot;, 
+	deserve a chance to make playing the game a job rather than just a hobby. And it's working.
+&lt;/p&gt;&lt;p&gt;
+	Really it sounds ridiculous, but in Korea, the game Starcraft has over the last 10 years really ingrained itself in 
+	the Korean consciousness. Progamers, as they're called, compete in televised live events, with the top tier earning easily 100K USD,
+	and cheered on by mobs of fans, male and female alike. Yes, these are gamers. 
+&lt;/p&gt;&lt;p&gt;
+	StarCraft 2, the sequel to the iconic StarCraft and Starcraft: Brood War hopes to emulate this success, but now heavily
+	involving the Western audience. Korea was the place to be for StarCraft. The Koreans dominated completely, and they still do in 
+	the sequel. The only difference is that now, they're much more open to the Western competitors, and it's not as one-sided as before.
+&lt;/p&gt;&lt;p&gt;
+	Many, many people really want e-sports to kick off for the West. Hours spent gaming overnight could actually be a productive use of time, 
+	and a promising career. It's a very enviable vision, but it is really hindered by the immature nature of gaming. 
+&lt;/p&gt;&lt;p&gt;
+	Gaming involves, for a large part, having fun. At the highest levels, it doesn't become fun anymore after the 12 hour daily training regime.
+	But for the general Western audience, which already has a low maturity level, the fun is really evident. The commentators for the games who 
+	call out the shots not only look shabby much of the time, but talk casually. The players are immature and the scene is rife with controversy.
+	Hardly the environment for a sport to thrive.
+&lt;/p&gt;&lt;p&gt;
+	The difference? The layer of professionalism that all sports uphold.
+&lt;/p&gt;&lt;p&gt;
+	Commentators do not snigger at the players. They do not obviously favour one side. They do not introduce their pets or their hobbies.
+	Players speak sufficient English. They dress well and handle themselves with care. Image matters, even if some would convince themselves otherwise.
+&lt;/p&gt;&lt;p&gt;
+	Counter-Strike was really the West's copy of StarCraft, on a much much lower scale. Many names are very recognizable to followers, and 
+	many top gamers were involved in the game or with sponsors even after retiring. The difference? They look the part.
+&lt;/p&gt;&lt;p&gt; 
+	&lt;a href='http://youtu.be/VWOIgB37LKQ' target='_blank'&gt;Here&lt;/a&gt; is a nice video of one of the greatest Counter-Strike players, Heaton.
+	While he is undoubtedbly a great gamer, he also looks like a strong role model. &lt;a href='http://white-ra.com/' target='_blank'&gt;White-Ra&lt;/a&gt; is a 
+	great representative of this attitude for StarCraft, highly contrasting from the high profile but more controversial Western figures. He is always 
+	polite, always looks after himself, and always professional. Amazing guy really.
+&lt;/p&gt;&lt;p&gt;
+	And if StarCraft wants to persist, they'll do much better to have people like White-Ra as role models and leaders, because even now, the typical 
+	gamer is still seen as overweight/underweight, disheveled and immature.
+&lt;/p&gt;</content>
+   
+   <category term="esports"/>
+   
+   <category term="starcraft"/>
+   
+   <category term="counterstrike"/>
+   
+ </entry>
+ 
+ <entry>
+   <title type="html">coding from scratch</title>
+   <link href="http://www.laivictor.com/archive/2012/09/08/startingfromscratch"/>
+   <updated>2012-09-08T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/09/08/startingfromscratch</id>
+   <content type="html">&lt;p&gt;
+  I'm working on my Poker game, and it's always the same story.
+&lt;/p&gt;&lt;p&gt;
+  I always find that the hardest part is not the logic, but getting down a 
+  workable and playable structure. I seem to always be torn between optimizing 
+  now so that I don't write horrible code for future me and just getting it down, so
+  it's starting to get really stiffling.
+&lt;/p&gt;&lt;p&gt;
+  I guess my best plan of attack is to just brain storm the entire process out by hand
+  so I can visual the pieces that I need to put in place, and then implement that as soon
+  as possible. I don't think I really need to worry about optimizing now, even if it means 
+  I'll have a harder job in the future. Hey, it'd be good experience.
+&lt;/p&gt;</content>
+   
+   <category term="programming"/>
+   
+ </entry>
+ 
+ <entry>
+   <title type="html">theme fixing</title>
+   <link href="http://www.laivictor.com/archive/2012/09/04/fontreworks"/>
+   <updated>2012-09-04T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/09/04/fontreworks</id>
+   <content type="html">&lt;p&gt;
+  I'm not really a fan of how my css theme is at the moment, so here comes a complete
+  rework of my CSS. Hopefully this won't take too long, but haven't had much time recently. 
+  Here goes nothing!
+&lt;/p&gt;</content>
+   
+   <category term="site"/>
+   
+ </entry>
  
  <entry>
    <title type="html">hey, i'm HTML5 valid!</title>
@@ -291,11 +380,7 @@
   system forces this down our throats a bunch, and some life-changing realizations I've made since. 
   I shouldn't be making excuses for my failures, because there isn't time in life to do this.
 &lt;/p&gt;&lt;p&gt;
-  
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;60sec * 60min * 24hr * 365.25days * 100 yrs = 3,155,760,000 seconds. Not enough.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+  Liquid error: Bad file descriptor
 &lt;/p&gt;&lt;p&gt;
   I can't let one little thing set me back so much of that time. Just as much as I can't do something
   50%, and then complain about it later on.
@@ -369,87 +454,24 @@ My answer was... &quot;crap.&quot; I did not know what to do really, and it cost
 
 The question was (I think): 
 
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;Remove the first letter from each word in the string: &lt;/span&gt;
-&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;asdf das f po&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
  
 EDIT(2012-07-16): This was my March attempt.
 
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='c'&gt;# removes spaces from string&lt;/span&gt;
-
-&lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-	&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='nb'&gt;ord&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;i&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;ord&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
-		&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt;
-	&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;pass&lt;/span&gt;
-		
-&lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
-
-&lt;span class='c'&gt;# removes first letter of each word from string &amp;amp; fix spacing&lt;/span&gt;
-
-&lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
-&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-
-&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;
-
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
-
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
-	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-			&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt;
-		&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-			&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;
-			
-	&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;
-	&lt;span class='n'&gt;newline&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;newword&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-	&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-
-&lt;span class='n'&gt;output&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
-
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-	&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class='ow'&gt;or&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;pass&lt;/span&gt;
-	&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='n'&gt;output&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;output&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-&lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 
 
 EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
 Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
 come up with. Honest.
 
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;removefirstletter&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt; &lt;span class='p'&gt;):&lt;/span&gt;
-	&lt;span class='n'&gt;tokens&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
-	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='nb'&gt;range&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;len&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
-		&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;list&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;])[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:])&lt;/span&gt;
-	&lt;span class='k'&gt;return&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 
 Easily handles any issue with spacing when you remove the word with one letter.
 
 The output should be 
 
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;df as o&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 
 I'd like to think I made progress, but this could be done a lot better still. 
 But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
@@ -469,15 +491,7 @@ But if I got this far in 3 months, I'm can't think of the possibilities in a cou
    <content type="html">&lt;p&gt;
 This is my first post. So, an obligatory
 
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;main&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
-  &lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;
-
-&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;__name__&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-  &lt;span class='n'&gt;main&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 
 Thanks for visiting~
 &lt;/p&gt;</content>

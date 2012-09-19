@@ -34,7 +34,8 @@
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
-		line-height: 1; }
+		margin: 0;
+	}
 	ol, ul {
 		list-style: none; }
 	blockquote, q {
@@ -51,8 +52,14 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		background: url("/images/bg.jpg") repeat scroll 0 0 #FFFFFF;
-		font: 14px/21px 'Droid Sans', Arial, Helvetica, sans-serif;
+	
+		font-family: 'DroidSansRegular', sans-serif;	
+		font-weight: 400;
+		font-style: normal;
+		font-size: 16px;
+		line-height: 1.7em;
+		
+		background: repeat scroll 0 0 #fcfcfc;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
 		overflow-x: hidden;
@@ -63,10 +70,10 @@
 ================================================== */
 
 	a, a:visited { color: #D03945; text-decoration: none; border-bottom: 1px dotted #D03945; 
-		-webkit-transition: all 250ms ease-in-out 0s;
-		-moz-transition: all 250ms ease-in-out 0s;
-		-o-transition: all 250ms ease-in-out 0s;
-		transition: all 250ms ease-in-out 0s; }
+		-webkit-transition: all 100ms ease-in-out 0s;
+		-moz-transition: all 100ms ease-in-out 0s;
+		-o-transition: all 100ms ease-in-out 0s;
+		transition: all 100ms ease-in-out 0s; }
 
 	a:hover, a:focus { background: #D03945; color: #fff; }
 	p a, p a:visited { line-height: inherit; }
@@ -75,12 +82,15 @@
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
 		color: #111111;
-		font-family: 'Code Bold', 'Nexa Bold', Arial, Helvetica, sans-serif;
+		font-size: 125%/1.6;
+		font-family: 'DroidSansRegular', sans-serif;
+		color: #3a3a3a;
+		text-align: justify;
 		font-weight: normal;
 		text-decoration: none;
 	}
 
-	h1 { font-size: 56px; font-family: 'Nexa Bold', 'Code Bold', Arial, Helvetica, sans-serif; }
+	h1 { font-size: 56px; font-family: 'Nexa Bold', Arial, Helvetica, sans-serif; }
 	h2 { font-size: 32px; line-height: 40px; margin-bottom: 10px; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
 	h4 { font-size: 24px; line-height: 30px; margin-bottom: 4px; }
@@ -98,22 +108,22 @@
 	.header { display: inline; }
 	.lheight { height: 80px; line-height: 80px; display: inline; }
 	a .lastname { color: #333; display: inline; 
-		-webkit-transition: all 250ms ease-in-out 0s;
-		-moz-transition: all 250ms ease-in-out 0s;
-		-o-transition: all 250ms ease-in-out 0s;
-		transition: all 250ms ease-in-out 0s; }
+		-webkit-transition: all 100ms ease-in-out 0s;
+		-moz-transition: all 100ms ease-in-out 0s;
+		-o-transition: all 100ms ease-in-out 0s;
+		transition: all 100ms ease-in-out 0s; }
 	a .firstname{ color: #fff; text-decoration: none; background: none; display: inline;		
-		-webkit-transition: all 250ms ease-in-out 0s;
-		-moz-transition: all 250ms ease-in-out 0s;
-		-o-transition: all 250ms ease-in-out 0s;
-		transition: all 250ms ease-in-out 0s; }
+		-webkit-transition: all 100ms ease-in-out 0s;
+		-moz-transition: all 100ms ease-in-out 0s;
+		-o-transition: all 100ms ease-in-out 0s;
+		transition: all 100ms ease-in-out 0s; }
 	a .firstname:hover { color: #DC6A74; text-decoration: none; background: none; display: inline; }
 	
 	.subheader { color: #111; }
 
 
 
-	p { margin: 0 0 20px 0; }
+	p { margin: 0 0 16px 0; }
 	p img { margin: 0; }
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 

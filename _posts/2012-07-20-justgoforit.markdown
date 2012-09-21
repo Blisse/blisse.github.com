@@ -14,40 +14,43 @@ tab: archive
 
 <p>
   But then I came along a couple of really good motivational posts, which really,
-  in essence, told me to do it because failure is not an option. Mediocrity is not an option.
+  in essence, told me to do it because failure is not an option. Mediocrity is not an option. 
+  You don't have the time to be mediocre, because every second spent fixing your mediocrity
+  is a second not spent getting ahead. 
 </p>
 
 <p>
-  And that's what I've always believed in. My motivation was always really, 
-  "Do it because you can. Do it to prove to yourself that you can. 
-  Do it 100% because when it's all over, you're still an insignificant speck,
-  unless your 100% is better than his." Talk about an inferiority complex going on here.
+  My motivation was always really,
+	<blockquote>
+	"Do it because you can. Do it to prove to yourself that you can.
+	Do it 100% because when it's all over, you don't matter unless you're better than the rest."
+	</blockquote>
 </p>
 
 <p>
-  But I realized, I grew into a habit of accepting mediocrity. It might be because the university 
-  system forces this down our throats a bunch, and some life-changing realizations I've made since. 
-  I shouldn't be making excuses for my failures, because there isn't time in life to do this.
+  But as the time passed by, I began to realize that I grew into a habit of.. mediocrity. It might be because the education
+  system doesn't really teach, and some life-changing realizations I've made since. 
+  But I shouldn't be making excuses for my failures, because there isn't time in life to do this.
 </p>
 
 <p>
-  {% highlight console %}60sec * 60min * 24hr * 365.25days * 100 yrs = 3,155,760,000 seconds. Not enough.{% endhighlight %}
-</p>
-
-<p>
-  I can't let one little thing set me back so much of that time. Just as much as I can't do something
+  I can't let one little thing, one little portion of my life, set me back so much of that time. Just as much as I can't do something
   50%, and then complain about it later on.
 </p>
 
 <p>
-  Screw getting the motivation. I'll just do it.
+  Screw the motivation. Just do it.
 </p>
 
 <p>
-	<a href="http://youtu.be/Sk56VxaeqEQ" target="_blank">The BEST Motivation</a>
+  This is a pretty rose-tinted view of it, but a little bit applicable at least. <a href="http://youtu.be/Sk56VxaeqEQ" target="_blank">The Best Motivation</a>
 </p>
 
 <p>
-  "You need to ask yourself, 'what are you going to do today,' <br />
-  but more importantly, 'how are you going to do it.'"
+  My favourite quote?
+	<blockquote>
+	  "You need to ask yourself, 'what are you going to do today,' <br />
+	  but more importantly, 'how are you going to do it.'"
+		<cite>Jaret Grossman</cite>
+	</blockquote>
 </p>

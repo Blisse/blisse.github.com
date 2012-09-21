@@ -4,10 +4,10 @@
 $(document).ready(
 	function()
 	{
-		var str=location.href.toLowerCase();
+		var str=location.href;
 		$(".nav li a").each(
 			function() {
-				if (str.indexOf(this.href.toLowerCase()) > -1) 
+				if (str.indexOf(this.href) > -1) 
 				{
 					$("li.currentpage").removeClass("currentpage");
 					$(this).parent().addClass("currentpage");

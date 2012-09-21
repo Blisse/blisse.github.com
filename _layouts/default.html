@@ -25,6 +25,8 @@
 
   <!-- Base CSS -->
   <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/skeleton.css">
   <link rel="stylesheet" href="/css/layout.css">
 
@@ -37,22 +39,21 @@
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
-{% include ga.html %}
+{% include googleanalytics.html %}
 
 </head>
 
 <body>
 
-    {% include navbar.html %}
+    {% include header.html %}
     
 <br />
 	{{ content }}
 
     {% include footer.html %}
 
-	{% include navbarsize.html %}
-	{% include navbarcurr.html %}
-	{% include headersize.html %}
+	{% include currentpage.html %}
+	{% include resizeheader.html %}
 
 </body>
 

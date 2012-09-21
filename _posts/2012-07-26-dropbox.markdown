@@ -1,0 +1,33 @@
+---
+layout: post
+title: dropbox
+date: 2012-07-26
+tags: [utils]
+tab: archive
+---
+
+<p>
+  <a href="http://www.dropbox.com" target="_blank">Dropbox</a> is an amazing piece of technology.
+  The idea that I can go on any computer and access any files I've put on one folder. Or that
+  I can sync up 4-5 different machines with any of my work so I can stop working on my desktop,
+  pick up my laptop, go to the library and pick up right where I left off. That just blows my mind.
+</p>
+
+<p>
+  I use some slightly confusing system with GitHub and Dropbox, so
+  I had to learn some new stuff so that I could upload my website properly to GitHub Pages.
+  The first time I tried it, I actually deleted my website files, along with the 
+  GitHub repository. I had nothing to roll back to. It was all gone.
+</p>
+
+<p>
+  But I was saved! Before this, I had always debated whether to put the website source files in my Dropbox folder, so I could
+  work on it and sync my files across my computers, or if trying this system was a bit too complicated. Luckily for me, I left it on my Dropbox this time.
+</p>
+
+<p>
+  When I accidentally deleted my website files, I panicked. But I found out that Dropbox saves a history of your deleted
+  files, so that you can recover them if you're messed up accidentally, and actually use them as a mini-version
+  tracker. Awesome for a free service. Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. 
+  Kind of an amazing application.
+</p>

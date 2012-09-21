@@ -6,17 +6,25 @@ homepage: true
 
 <div class="container">
 
+<div class="sixteen columns">
+<h4>Hi!</h4>
+<p>
+	My name is <span class="bold">Victor Lai</span>, and I'm a <i>Software Engineer</i> studying at the University of Waterloo. 
+	This is my blog about all sorts of things.
+</p>
+<br />
+</div>
+
+
 {% for post in paginator.posts %}
 
 <div class="sixteen columns">
 
 	<article class="post">
 
-		<h3><a href="{{ post.url }}" >{{ post.title }}</a> /{{ post.date | date:'%Y%m%d' }}</h3>
+		<h3><a href="{{ post.url }}" >{{ post.title }}</a> //{{ post.date | date:'%Y%m%d' }}</h3>
 
 		{{ post.content }}
-		
-		<a href="{{ post.url }}" >Open in a new page &raquo;</a>
 		
 		<br />
 		<br />
@@ -24,6 +32,7 @@ homepage: true
 		<div class="clear"></div>
 
 	</article>
+
 </div>
 
 <hr>
@@ -37,12 +46,12 @@ homepage: true
 		{% if paginator.previous_page == 1 %}
 			<h5><a href="/" class="newer">NEWER</a></h5>
 		{% else %}
-			<h5><a href="/page{{paginator.previous_page}}" class="newer">NEWER</a></h5>
+			<h5><a href="/page{{paginator.previous_page}}" class="newer">NEWER POSTS</a></h5>
 		{% endif %}
 	{% endif %}
 
 	{% if paginator.next_page %}
-		<h5><a href="/page{{paginator.next_page}}" class="older">OLDER</a></h5>
+		<h5><a href="/page{{paginator.next_page}}" class="older">OLDER POSTS</a></h5>
 	{% endif %}
 
 	<div class="clear"></div>

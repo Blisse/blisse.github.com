@@ -25,6 +25,8 @@
 
   <!-- Base CSS -->
   <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/skeleton.css">
   <link rel="stylesheet" href="/css/layout.css">
 
@@ -55,44 +57,71 @@
 
 <body>
 
-    <div id="mainheader">
-<div class="container">
-	<br />
-	<div class="eight columns" id="resizer">
-		<div class="lheight">
-		<div class="header" id="header">
-		<h1><a href="/"><span class="lastname">LAI</span>.<span class="firstname">VICTOR</span></a></h1>
+    <div id="header">
+	<div class="container">
+		<br />
+		<div class="eight columns">
+			<div id="name"> 
+				<h1>
+					<a href="/">
+						<span id="last">LAI</span>.<span id="first">VICTOR</span>
+					</a>
+				</h1>
+			</div>
 		</div>
-		</div>
-	</div>
 
-	<div class="eight columns">
-		<div class="lheight">
-		<div class="icon" style="font-size: 48px;">
-			<a target="_blank" href="http://www.twitter.com/dblisse"><i class="icon-twitter-sign"></i></a>
-			<a target="_blank" href="http://ca.linkedin.com/in/laivictor"><i class="icon-linkedin-sign"></i></a>
-			<a target="_blank" href="http://www.github.com/Blisse"><i class="icon-github-sign"></i></a>
-			<a href="mailto:lai.victor.vl@gmail.com"><i class="icon-envelope"></i></a>
+		<div class="eight columns center">
+			<div class="icon" style="font-size: 48px;">
+				<a target="_blank" href="http://www.twitter.com/dblisse">
+					<i class="icon-twitter-sign"></i>
+				</a>
+				<a target="_blank" href="http://ca.linkedin.com/in/laivictor">
+					<i class="icon-linkedin-sign"></i>
+				</a>
+				<a target="_blank" href="http://www.github.com/Blisse">
+					<i class="icon-github-sign"></i>
+				</a>
+				<a href="mailto:lai.victor.vl@gmail.com">
+					<i class="icon-envelope"></i>
+				</a>
+			</div>
 		</div>
-		</div>
-	</div>
 
-	<div class="sixteen columns">
-		<div class="navbar" id="navbar">
-		<ul class="nav">
-		  <li class="currentpage"><a href="/">Home</a></li>
-		  <li><a href="/archive/">Archive</a></li>
-		  <li><a href="/projects/">Projects</a></li>
-		  <li><a href="/about/">About</a></li>
-		</ul>
+		<div class="sixteen columns">
+			<div id="nav" class="center">
+				<ul class="nav">
+					<li class="currentpage">
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/archive/">Archive</a>
+					</li>
+					<li>
+						<a href="/projects/">Projects</a>
+					</li>
+					<li>
+						<a href="/about/">About</a>
+					</li>
+				</ul>
+			<br />
+			</div>
+			<br />
 		</div>
 	</div>
-</div>
-<br />
 </div>
     
 <br />
 	<div class="container">
+
+<div class="sixteen columns">
+<h4>Hi!</h4>
+<p>
+	My name is <span class="bold">Victor Lai</span>, and I'm a <i>Software Engineer</i> studying at the University of Waterloo. 
+	This is my blog about all sorts of things.
+</p>
+<br />
+</div>
+
 
 
 
@@ -100,81 +129,56 @@
 
 	<article class="post">
 
-		<h3><a href="/archive/2012/08/19/index.html" >tetris friends does tetris right</a> /20120819</h3>
+		<h3><a href="/archive/2012/08/19/index.html" >tetris friends</a> //20120819</h3>
 
 		<p>
-  I recently got to level 95 in Tetris Friends Battle 2P and 6P, so here's some Tetris.
+  I recently got to level 95 in Tetris Friends Battle 2P and 6P, so here's some Tetris. ^^
 </p><p>
   <a href='http://en.wikipedia.org/wiki/Tetris'>Tetris</a> is somewhat of a famous game. Most people who've played it probably first
   started on the GameBoy. Maybe something like this.
-</p><div class='centered'>
+</p><div class='center'>
 <img alt='ye olde Tetris' src='http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png' />
 </div><p>
   Nowadays, <a href='http://www.tetrisfriends.com/' target='_blank'>Tetris Friends</a> is all the rage. 
   And for good reason.
 </p><p>
-  They sort of have a monopoly on the casual Tetris scene, being the exclusive licensee of Tetris in North America and Europe. They have a dedicated site and an app on Facebook. 
-  And actually, it probably wouldn't be very wrong to say that Tetris Friends is the reason Tetris has experienced a recent resurgence.
+  They have a monopoly on the casual Tetris scene, being the exclusive licensee of Tetris in North America and Europe. They have a dedicated site and a much better app on Facebook. 
+  Actually, it probably wouldn't be very wrong to say that Tetris Friends is the reason Tetris has experienced a recent resurgence.
 </p><p>
   The Tetris Friends has several game modes in both Single Player and Multiplayer. Marathon, where you try to clear as many lines as possible,
   to Sprint 5P, where you play 3 others to finish 40 lines in the fastest time, to Battle 2P, where you battle another player and score KOs. 
-  It's really addicting, very smooth, and just very fun to play. 
+  It's really addicting, smooth, and in general just very fun to play. 
 </p><p>
-  My main experience is with the Multiplayer Battle 2P and 6P modes, so that's where my point of view will be from.
-</p><h4 class='subheader'>History</h4><p>
+  My main experience is with the Multiplayer Battle 2P and 6P modes, so that's where I'll start.
+</p><h4 class='subheader'>My History</h4><p>
   In May, one of my high school friends saw me playing Tetris, and asked me for a match. I hadn't seen him in a while, so why not.
-  In short, he crushed me. Long version? He REALLY crushed me. I actually thought I was decent. He was Level 100, literally a Tetris God (more on that later).
+  In short, he crushed me. Long version? He REALLY crushed me. I actually thought I was decent. He was Level 100, literally a Tetris God.
   I vowed that day to get to a point where I could compete toe-to-toe with him. At least, somewhere toe-to-toe. It was a game, and it was a 
   fun challenge. My favourite kind.
 </p><p>
-  Over the last 3 months, I played Tetris Friends pretty religiously. After work, a couple hours. On the weekends, a couple hours. Nothing too crazy,
-  but it got me really into the game, and to a point where I could see a vast improvement over my nooby self from May. It was very rewarding to realize
-  that putting this effort and determination into something actually paid off. Yay!
+  Over the last 3 months, I played Tetris Friends pretty ritually. After work, a couple hours. On the weekends, a couple hours. Nothing too crazy,
+  but it got me really into the game, and to a point where I could starting seeing a vast improvement over my newbie self from May. It was very rewarding to see
+  this effort and determination turning into something real. Yay!
 </p><p>
   Battle 2P is the most competitive game mode. You play another player from around the world,
-  send as many lines as possible to the other player, and hope you KO them more than they do to you. To send lines, you'll have to perform combos, either 
-  consecutively or with a T-spin. Along the way, you'll also have to clear the lines that your opponent sends to you by clearing the bombs away. It's complicated,
-  but play a few times and you'll get the gist of it. Here's a image I found off Google.
-</p><span class='centered'>
+  send as many lines as possible to the other player, and hope you KO them more than they do to you. To send lines, you'll have to perform combos. 
+  Along the way, you'll also have to clear the lines that your opponent sends to you by clearing the bombs away. It's complicated,
+  but play a few times and you'll get the gist of it. Here's a image I found off Google off a couple of newer players going at it.
+</p><div class='center'>
 <img alt='Tetris Battle' class='scale-with-grid child-padding' src='http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg' />
-</span><p> 
+</div><p> 
   Starting off, I was pretty bad, but I knew how to improve, and I set about playing only for that purpose.
-  Knowing how to improve is really important. There's a lot of players that are really amazing at some parts of the game, but say, play a bad style, and that hinders
+  Knowing how to improve was really important. There's a lot of players that are really amazing at some parts of the game, but say, play a bad style, and that hinders
   their improvement. There isn't really an exact skill ceiling for this game since you can play at blistering speeds. But having a bad strategy will harm your development
-  in the long run.
+  in the long run. I was fortunate enough to be able to visualize this kind of improvement plan for myself, and able to watch it unfold.
 </p><p>
   Most players in the game know of only one way to play. I will refer to this as the 1-line style. Since the game board is 10 spaces across, they'll fill up
   9 of those spaces as high as possible, leaving 1 space at the left or right side, while saving up the I-piece, then drop it once for 
   a Tetris, and again for a Back-to-Back Tetris. This is pretty good for low levels, and solid enough to help develop your building skills. 
-</p><p> 
   But definitely, it's the worst way to play.
-</p><h4 class='subheader'>Pillars</h4><p>
-  Before I move on, I want to focus on some essential "pillars" of playing Battle Tetris. Essentially, a Battle Tetris game consists of these steps.
-
-<br />
-<br />
-
-- Opening <br />
-- Build-up <br />
-- Combos <br />
-- Anticipation <br />
-- Bomb Clearing <br />
-- Ending <br />
-
-<br />
-
-  Well, that's a lot of new stuff. Let's just take a look at the important ones then.
 </p><p>
-  Please disregard the opening (how to start the game), the anticipation (predicting and counter-attacking your opponent),
-  bomb clearing (getting rid of the lines your opponent sent you), and the ending (how to end the game well). They're really more advanced skills,
-  and having solid mechanics in the build-up and combos will definitely be more useful to begin your gaming.
-</p><p>
-  The benefit of having a solid foundation is that you start to become consistent, which is a huge part of Tetris Friends. Suppose you can type at 160wpm if it's your favourite passage.
-  Other times, you'll type at 60wpm because it's not. Well, suddenly that isn't that useful. However, if you develop a strong foundation to begin with, while your maximum isn't going to
-  increase dramatically, you'll pick up your minimum, and slowly move up. That's why we focus on mechanics first, and that can only be built by playing lots of fundamentally correct games.
+  I will save the strategic discussions my next post. And later I'll try to pinpoint in a later exactly why Tetris Friends is so good. From a development point of view of course.
 </p>
-		
-		<a href="/archive/2012/08/19/index.html" >Open in a new page &raquo;</a>
 		
 		<br />
 		<br />
@@ -182,6 +186,7 @@
 		<div class="clear"></div>
 
 	</article>
+
 </div>
 
 <hr>
@@ -192,7 +197,7 @@
 
 	<article class="post">
 
-		<h3><a href="/archive/2012/08/11/index.html" >some cables feel really nice</a> /20120811</h3>
+		<h3><a href="/archive/2012/08/11/index.html" >some cables feel really nice</a> //20120811</h3>
 
 		<p>
   I recently gained possession of a really nice pair of cables. 1/4" male to 1/4" male. Nothing 
@@ -212,14 +217,13 @@
   Oh well. It feels so nice I don't mind.
 </p>
 		
-		<a href="/archive/2012/08/11/index.html" >Open in a new page &raquo;</a>
-		
 		<br />
 		<br />
 
 		<div class="clear"></div>
 
 	</article>
+
 </div>
 
 <hr>
@@ -230,39 +234,45 @@
 
 	<article class="post">
 
-		<h3><a href="/archive/2012/08/03/index.html" >Tools - Dexpot</a> /20120803</h3>
+		<h3><a href="/archive/2012/08/03/index.html" >dexpot</a> //20120803</h3>
 
 		<p>
-  When I first used Ubuntu, I fell in love with graphical 
+  When I first used Ubuntu, I fell in love with their 
   <a href='http://en.wikipedia.org/wiki/Workspace#Graphical_interfaces' target='_blank'>workspaces</a>.
-  The ability to open and manage multiple desktops was a great implementation when you only have one monitor. 
-  The controls were intuitive, the  transitions were clean and delays were non-existent. 
-  It was an amazing discovery.
+  The ability to open and manage multiple desktops very useful when you only have one monitor. 
+  The controls were intuitive, the transitions clean and delays non-existent. 
+  It was a good day.
 </p><p>
   I later found out that Apple's OS X has the Expose and Spaces for their own version of workspaces. 
-  It is noticeably faster, more responsive and applied better features, as expected on the very well 
+  On my sister's MacBook, it is noticeably faster, more responsive and had more features, as expected on the very well 
   designed Mac OS. As a Windows user primarily however, I felt very left out.
 </p><p>
   After a lot of searching, I found the solution. <a href='http://dexpot.de/' target='_blank'>Dexpot</a>
 </p><p>
   They've made a lot of improvements since I've first time I used it, and right now, it's evolved into something
   beautiful. They've added much better taskbar integration, a less buggy multi-monitor support, and much, much better 
-  responsiveness overall. It's a great product with a great team behind it.
+  responsiveness overall. It's a great product with a great team behind it. I'm actually preferring Dexpot to 
+  Ubuntu's workspaces.
 </p><p>
-  Simply put, virtual desktops allow one to swap between screens. 
+  The hotkeys are just more intuitive for one-handed productivity. Hardly anyone keeps both their hands on the keyboard unless they're 
+  working exclusively in the shell. Having one hand on the mouse is a lot more flexible. But Ubuntu requires a WIN+ARROW_KEY press 
+  to swap the workspace. A pretty big waste of time to move one hand over. Dexpot's solution? ALT+NUM. Simple and fast.
 </p><p>
-  The main benefit is clutter. Spacing out several applications over four screens is great, similar to the benefits
-  of using multiple monitors. It means you can categorize your workspaces, one section for reference applications, 
-  one side for working programs, and another area for anything else.
-</p><p>
-  Keeping the programs maximized like this means the program is almost always active. Minimizing and maximizing is 
-  a drag, while with Dexpot or any virtual desktop application, pressing a customized key combination, say ALT+1 or 
-  ALT+2, will swap the active applications to a new set. It's much more convenient.
+  Why use workspaces at all? The main benefit is clutter. Spacing out several applications over four screens is great, 
+  similar to the benefits of using multiple monitors. It means you can categorize your workspaces, one section for reference applications, 
+  one side for working programs, and another area for anything else. I actually use it on my dual monitor setup, and still find it useful.
+  Having workspaces means keeping the programs maximized. Minimizing and maximizing requires a few more clicks, while with any virtual desktop 
+  application, pressing a customized key combination, say ALT+1 or 
+  WIN+DOWN_ARROW, will swap all the active applications to a new set (or carry some over depending on your preferences. It's much more convenient.
 </p><p>
   The difference in productivity is pretty astounding. Give it a go <a href='http://dexpot.de/?id=download' target='_blank'>here</a>.
+</p><p>
+  <blockquote>
+	Everyone agrees, humans have a finite number of key and mouse presses. As programmers, we want to maximize the productivity and number of presses
+	we have. When we constantly move our hand from the keyboard to the mouse, the time waste inbetween eventually becomes a big deal. That's why 
+	we use workspaces. <cite>me</cite>
+  </blockquote>
 </p>
-		
-		<a href="/archive/2012/08/03/index.html" >Open in a new page &raquo;</a>
 		
 		<br />
 		<br />
@@ -270,6 +280,7 @@
 		<div class="clear"></div>
 
 	</article>
+
 </div>
 
 <hr>
@@ -280,7 +291,7 @@
 
 	<article class="post">
 
-		<h3><a href="/archive/2012/07/29/index.html" >site (re)construction</a> /20120729</h3>
+		<h3><a href="/archive/2012/07/29/index.html" >site (re)construction</a> //20120729</h3>
 
 		<p>
   It is ridiculous how hard it is to rework an entire website. Currently, the site is pretty bad
@@ -289,14 +300,13 @@
   Meanwhile, expect a lot more breaking in the future.
 </p>
 		
-		<a href="/archive/2012/07/29/index.html" >Open in a new page &raquo;</a>
-		
 		<br />
 		<br />
 
 		<div class="clear"></div>
 
 	</article>
+
 </div>
 
 <hr>
@@ -307,27 +317,27 @@
 
 	<article class="post">
 
-		<h3><a href="/archive/2012/07/26/index.html" >saved by dropbox</a> /20120726</h3>
+		<h3><a href="/archive/2012/07/26/index.html" >dropbox</a> //20120726</h3>
 
 		<p>
-  <a href='http://www.dropbox.com' target='_blank'>Dropbox</a> is amazing.
+  <a href='http://www.dropbox.com' target='_blank'>Dropbox</a> is an amazing piece of technology.
+  The idea that I can go on any computer and access any files I've put on one folder. Or that
+  I can sync up 4-5 different machines with any of my work so I can stop working on my desktop,
+  pick up my laptop, go to the library and pick up right where I left off. That just blows my mind.
 </p><p>
-  Because I use some slightly more complicated system with GitHub and Dropbox, 
+  I use some slightly confusing system with GitHub and Dropbox, so
   I had to learn some new stuff so that I could upload my website properly to GitHub Pages.
   The first time I tried it, I actually deleted my website files, along with the 
   GitHub repository. I had nothing to roll back to. It was all gone.
 </p><p>
-  But to my joy, I always debated whether to put the website source in my Dropbox, so I could
-  work on it and sync my files across my computers. So I left it on my Dropbox this time.
+  But I was saved! Before this, I had always debated whether to put the website source files in my Dropbox folder, so I could
+  work on it and sync my files across my computers, or if trying this system was a bit too complicated. Luckily for me, I left it on my Dropbox this time.
 </p><p>
-  When I accidentally deleted my website files, I found out that Dropbox saves a history of your deleted
-  files, so that you can recover them if they go accidentally, and actually use them as a mini-version
-  tracker. Awesome for a free service.
-</p><p>
-  Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. Thank you.
+  When I accidentally deleted my website files, I panicked. But I found out that Dropbox saves a history of your deleted
+  files, so that you can recover them if you're messed up accidentally, and actually use them as a mini-version
+  tracker. Awesome for a free service. Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. 
+  Kind of an amazing application.
 </p>
-		
-		<a href="/archive/2012/07/26/index.html" >Open in a new page &raquo;</a>
 		
 		<br />
 		<br />
@@ -335,6 +345,7 @@
 		<div class="clear"></div>
 
 	</article>
+
 </div>
 
 <hr>
@@ -351,7 +362,7 @@
 	
 
 	
-		<h5><a href="/page3" class="older">OLDER</a></h5>
+		<h5><a href="/page3" class="older">OLDER POSTS</a></h5>
 	
 
 	<div class="clear"></div>
@@ -366,39 +377,20 @@
     <div class="container">
 	<div class="sixteen columns">
 	<footer id="footer">
-		<div class="centertext">
-			<p class="centered">
+		<div class="center">
+			<p>
 				All content copyright &copy; <a href="/about">Victor Lai</a>. Written in almost <a href="http://www.laivictor.com/archive/2012/08/22/index.html">valid</a>
-				<a href="http://html5.validator.nu/" title="Valid HTML5" rel="external" target="_blank">HTML5</a> and 
-				<a href="http://jigsaw.w3.org/css-validator/" title="Valid CSS3" rel="external" target="_blank">CSS3</a>.
+				<a href="http://html5.validator.nu/" title="valid HTML5" rel="external" target="_blank">HTML5</a> and 
+				not even close to valid <a href="http://jigsaw.w3.org/css-validator/" title="valid CSS3" rel="external" target="_blank">CSS3</a>.  ^^
 			</p>
-			<p class="centered">
+			<p>
 				Powered by <a href="http://github.com/mojombo/jekyll" title="The Jekyll (static site generator) code repository"
-				rel="external" target="_blank">Jekyll</a>.
+				rel="external" target="_blank">Jekyll</a> and hosted on <a href="http://pages.github.com/">GitHub Pages</a>.
 			</p>
 		</div>
 	</footer>
 	</div>
 </div>
-
-	<script type="text/javascript" src="/js/resizebar.js"></script>
-<script type="text/javascript">
-
-$(function() {
-    changeWidth(310);
- 
-    function changeWidth(menuWidth){
-        var menuItems = $('#navbar li').size();
-        var itemWidth = (menuWidth/menuItems)-2;
- 
-        $('#navbar').css({'width': menuWidth +'px'});
-        $('#navbar a').css({'width': itemWidth +'px'});
-    }
-});
-
-</script>
-
-
 
 	<script type="text/javascript" src="/js/currentselection.js"></script>
 <script type="text/javascript">
@@ -406,10 +398,10 @@ $(function() {
 $(document).ready(
 	function()
 	{
-		var str=location.href.toLowerCase();
+		var str=location.href;
 		$(".nav li a").each(
 			function() {
-				if (str.indexOf(this.href.toLowerCase()) > -1) 
+				if (str.indexOf(this.href) > -1) 
 				{
 					$("li.currentpage").removeClass("currentpage");
 					$(this).parent().addClass("currentpage");
@@ -420,59 +412,140 @@ $(document).ready(
 )
 
 </script>
-	<script type="text/javascript">
+	<script type="text/javascript" src="/js/resizebar.js"></script>
+<script type="text/javascript">
 $(document).ready(
 	function()
 	{
 		$(window).resize(
 			function()
 			{
-				$(' #resizer ').each(
+				$(' #name ').each(
 					function() 
 					{
-						if ( $(window).width() >= 959 )
+						if ( $(window).width() >= 960 )
 						{
 							$(' #header h1 a ').css('font-size', '84px');
-							$(' #header h1 a ').css('line-height', '90px');
+							$(function() {
+								changeWidth(400);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #nav ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#nav').css({'width': menuWidth +'px'});
+									$('#nav a').css({'width': itemWidth +'px'});
+								}
+							});
 						}
-						else if ( $(window).width() >= 769 ) 
-						{
-							$(' #header h1 a ').css('font-size', '62px');
-							$(' #header h1 a ').css('line-height', '90px');
-						}
-						else if ( $(window).width() >= 479 ) 
+						else if ( $(window).width() >= 768 ) 
 						{
 							$(' #header h1 a ').css('font-size', '75px');
-							$(' #header h1 a ').css('line-height', '90px');
+							$(function() {
+								changeWidth(370);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #nav ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#nav').css({'width': menuWidth +'px'});
+									$('#nav a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+						else if ( $(window).width() >= 480 ) 
+						{
+							$(' #header h1 a ').css('font-size', '75px');
+							$(function() {
+								changeWidth(350);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #nav ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#nav').css({'width': menuWidth +'px'});
+									$('#nav a').css({'width': itemWidth +'px'});
+								}
+							});
 						}
 						else
 						{
 							$(' #header h1 a ').css('font-size', '53px');
-							$(' #header h1 a ').css('line-height', '90px');
+							$(function() {
+								changeWidth(310);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #nav ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#nav').css({'width': menuWidth +'px'});
+									$('#nav a').css({'width': itemWidth +'px'});
+								}
+							});
 						}
 					}
 				)
 			}
 		);
-		if ( $(window).width() >= 959 )
+		if ( $(window).width() >= 960 )
 		{
 			$(' #header h1 a ').css('font-size', '84px');
-			$(' #header h1 a ').css('line-height', '90px');
+			$(function() {
+				changeWidth(400);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #nav ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#nav').css({'width': menuWidth +'px'});
+					$('#nav a').css({'width': itemWidth +'px'});
+				}
+			});
 		}
-		else if ( $(window).width() >= 769 ) 
-		{
-			$(' #header h1 a ').css('font-size', '62px');
-			$(' #header h1 a ').css('line-height', '90px');
-		}
-		else if ( $(window).width() >= 479 ) 
+		else if ( $(window).width() >= 768 ) 
 		{
 			$(' #header h1 a ').css('font-size', '75px');
-			$(' #header h1 a ').css('line-height', '90px');
+			$(function() {
+				changeWidth(370);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #nav ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#nav').css({'width': menuWidth +'px'});
+					$('#nav a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+		else if ( $(window).width() >= 480 ) 
+		{
+			$(' #header h1 a ').css('font-size', '75px');
+			$(function() {
+				changeWidth(350);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #nav ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#nav').css({'width': menuWidth +'px'});
+					$('#nav a').css({'width': itemWidth +'px'});
+				}
+			});
 		}
 		else
 		{
 			$(' #header h1 a ').css('font-size', '53px');
-			$(' #header h1 a ').css('line-height', '90px');
+			$(function() {
+				changeWidth(310);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #nav ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#nav').css({'width': menuWidth +'px'});
+					$('#nav a').css({'width': itemWidth +'px'});
+				}
+			});
 		}
 	}
 );

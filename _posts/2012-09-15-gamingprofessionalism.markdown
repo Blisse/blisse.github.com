@@ -58,7 +58,7 @@ tags: [esports, starcraft, counterstrike]
 <p>
   While it's really enticing to have a thriving competitive scene where everyone is judgment-free and accepting of the geeky
   and nerdy tendencies of many gamers, it's important to the mainstream (and the sponsors) that there is some sort of 
-  professional image put forth. That there is some sort of general concensus for gamers to realize this can be your career, your life's work,
-  and take their gaming seriously. Because if you treat video games as only video games, how are you going to convince someone it's also 
-  a sport and your career? 
+  professional image put forth. There must be some agreement between all gamers that gaming can be your career, your life's work;
+  if you take gaming seriously. If you treat video games like just a game, how are you going to convince someone it's also 
+  a sport, and more importantly, how can you convince someone to make it a career? 
 </p>

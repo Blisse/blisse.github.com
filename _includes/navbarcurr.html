@@ -1,0 +1,54 @@
+<script type="text/javascript" src="/js/currentselection.js"></script>
+<script type="text/javascript">
+
+$(document).ready(
+	function()
+	{
+		var curr=window.location.href.toLowerCase();
+		var found=0;
+
+		var div = document.getElementById('nav');
+		var els = div.getElementsByTagName('li');
+		var lin = els.getElementsByTagName('a');
+
+		lin.each(
+			function() 
+			{
+				if (curr.indexOf(this.href.toLowerCase()) > -1)
+				{
+					var elsc = els.getElementsByClassName('currentpage');
+					elsc.each(
+						function() 
+						{
+							this.removeClass("currentpage");
+						}
+					);
+					
+				}
+		
+		
+		$(".nav li a").each(
+			function() {
+				if (curr.indexOf(this.href.toLowerCase()) > -1)
+				{	
+					$("li .currentpage").removeClass("currentpage");
+					$(this).parent().addClass("currentpage");
+					found=1;
+				}
+			}
+		);
+		if (found==1)
+		{
+			$(".nav li a").each(
+				function() {
+					if (this.data=="Home")
+					{
+						$(this).addClass("currentpage");
+					}
+				}
+			);
+		}
+	}
+)
+
+</script>

@@ -37,14 +37,24 @@
 	}
 	table {
 		border-collapse: collapse;
-		border-spacing: 0; 
 	}
+
+
+/* #Text Highlighting
+================================================== */
+
+::selection {
+	background: #91DEBA; /* Safari */
+	}
+::-moz-selection {
+	background: #91DEBA; /* Firefox */
+}
 
 
 /* #Body
 ================================================== */
 	body {		
-		font-family: 'DroidSansRegular', Arial, sans-serif;	
+		font-family: 'DroidSansRegular', 'Droid Sans', Arial, sans-serif;	
 		background: repeat scroll 0 0 #efefef;
 		color: #1a1a1a;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -59,6 +69,12 @@
 
 	.center {
 		text-align: center;
+	}	
+	.left {
+		text-align: left;
+	}	
+	.right {
+		text-align: right;
 	}
 
 	.lheight { 
@@ -111,6 +127,10 @@
 		text-decoration: none;
 	}
 	
+	h1 .center, h2 .center, h3 .center, h4 .center, h5 .center, h6 .center {
+		text-align: center;
+	}
+
 	h1 { font-size: 36px; line-height: 50px; margin-bottom: 16px; }
 	h2 { font-size: 28px; line-height: 40px; margin-bottom: 10px; }
 	h3 { font-size: 24px; line-height: 32px; margin-bottom: 8px; }
@@ -150,25 +170,38 @@
 	blockquote cite:before { content: "\2014 \0020"; }
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
 
-	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+	hr {
+		border: solid #ddd; 
+		border-width: 1px 0 0; 
+		clear: both; 
+		margin: 10px 0 30px; 
+		height: 0; 
+	}
 
 	hr.line {
-	  background: none repeat scroll 0 0 #DDDDDD;
-	  border: medium none;
-	  clear: both;
-	  color: #DDDDDD;
-	  float: none;
-	  height: 1px;
-	  margin: 0 0 1.45em;
-	  width: 100%;
+		background: none repeat scroll 0 0 #DDDDDD;
+		border: medium none;
+		clear: both;
+		color: #DDDDDD;
+		float: none;
+		height: 1px;
+		margin: 0 0 1.45em;
+		width: 100%;
 	}
 
 	hr.space {
-	  background: none repeat scroll 0 0 #FFFFFF;
-	  color: #FFFFFF;
-	  visibility: hidden;
+		background: none repeat scroll 0 0 #FFFFFF;
+		color: #FFFFFF;
+		visibility: hidden;
 	}
 
+	hr.dotted {
+		border: 1px dotted #111;
+	}
+	
+	hr.tight {
+		margin: 1px; 
+	}
 
 /* #Posts
 ================================================== */
@@ -185,22 +218,38 @@
 
 	#content { text-align: left; position: relative; }
 
+	.first-letter { font-size: 125%; }
 
 /* #Lists
 ================================================== */
-	ul, ol { margin-bottom: 0 20px 20px 0; }
+	ul, ol { margin: 0 20px 20px 0; }
 	ul { list-style: none outside; }
 	ol { list-style: decimal; }
+
 	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
 	ul.square { list-style: square outside; }
 	ul.circle { list-style: circle outside; }
 	ul.disc { list-style: disc outside; }
+
 	ul ul, ul ol,
-	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ol ol, ol ul { 
+		margin: 4px 0 5px 30px; 
+		font-size: 90%;  
+	}
+	
 	ul ul li, ul ol li,
-	ol ol li, ol ul li { margin-bottom: 6px; }
-	li { line-height: 18px; margin-bottom: 12px; }
-	ul.large li { line-height: 21px; }
+	ol ol li, ol ul li { 
+		margin-bottom: 6px; 
+	}
+
+	li { 
+		line-height: 18px; 
+		margin-bottom: 12px; 
+	}
+
+	ul.large li { 
+		line-height: 21px; 
+	}
 
 	dl { margin: 0 0 18px; }
 	dd { margin-left: 18px; }
@@ -261,4 +310,28 @@
 	  border-top-left-radius: 7px 7px;
 	  border-top-right-radius: 7px 7px;
 	}
+
+
+/* #Resume-Specific
+================================================= */
+
+	#resume h1 .title {
+		font-size: 44px;
+		font-family: 'Arimo', "DroidSansRegular", "Droid Sans", Arial, sans-serif;
+	}
+
+	#resume .bold {
+		font-family: 'Arial', sans-serif;
+		font-weight: bold;
+	}
+
+	#resume .border-bottom-dotted {
+		border-bottom: 1px dotted #111;
+	}
+
+	#resume .border-bottom-solid {
+		border-bottom: 1px solid #111;
+	}
+
+
 

@@ -1,122 +1,159 @@
 ---
 layout: project
-title: Justified Lines in C++ 
+title: Justifying Lines in C++ 
 tab: justified
 ---
 
 <p>
   Pretty direct implementation after my first 2 weeks of C++.
-  Not my best code, but in all my Googling, I haven't found anything that does this as well.
+  Not my best code, but in all my Googling, I haven't found anything that does this. 
+  Only works with monospaced fonts, of course.
 </p>
 
 <p>
-  Justifies a file called filenameIn, writing the output to filenameOut. Must take in the 
-  maximum number of characters of the page. Goes through each line, adding spaces until the
-  the maximum number of characters is reached for that line, then writes to the file and continues.
+  The code is pretty self evident. Takes in an input file, output file and required length of 
+  all the lines (must be greater than the maximum line length).
 </p>
 
 {% highlight c++ %}
-
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <istream>
 #include <cstdlib>
+#include <string>
+
+using namespace std;
 
 class LineTools {
-
-	public:
-
+public:
 	void justifyLines(string filenameIn, string filenameOut, int max_len)
 	{
-
-		ifstream infile;
-		infile.open(filenameIn.c_str() );
-
-		ofstream outfile;
-		outfile.open(filenameOut.c_str() );
-
-		string string_in;
-		int line_len;
-		int offset;
-
-		int i, k = 0;
-		int oneword = 1;
-
-		while ( getline(infile, string_in) )
+	ifstream infile;
+	infile.open(filenameIn.c_str() );
+	ofstream outfile;
+	outfile.open(filenameOut.c_str() );
+	string string_in;
+	int line_len;
+	int offset;
+	int i, k = 0;
+	int oneword = 1;
+	while ( getline(infile, string_in) )
+	{
+		oneword = 1;
+		line_len = string_in.length();
+		offset = max_len - line_len;
+		for ( i=0; i<line_len; i++ )
 		{
-			oneword = 1;
-			line_len = string_in.length();
-			offset = max_len - line_len;
-
-			for ( i=0; i<line_len; i++ )
+			if ( string_in[i] == ' ' )
 			{
-				if ( string_in[i] == ' ' )
+				oneword = 0;
+			}
+		}
+		if ( !offset )
+		{
+			outfile << string_in << endl;
+		}
+		else // string_len < max_len
+		{
+			if (oneword)
+			{
+				outfile << string_in;
+				while (offset)
 				{
-					oneword = 0;
+					outfile << " ";
+					offset--;
 				}
+				outfile << endl;
 			}
-
-			if ( !offset )
+			else
 			{
-				outfile << string_in << endl;
-			}
-			else // string_len < max_len
-			{
-				if (oneword)
+				int n = 0;
+				while ( offset )
 				{
-					outfile << string_in;
-					while (offset)
+					if ( k > (line_len-1) )
 					{
-						outfile << " ";
+						k = 0;
+					}
+
+					if ( string_in[k] == ' ' )
+					{
+						string_in.insert(k," ");
+						k++;
+						while ( string_in[k++] == ' ')
+						{
+						}
+						line_len++;
 						offset--;
 					}
-					outfile << endl;
+					k++;
 				}
-				else
-				{
-					int n = 0;
-					while ( offset )
-					{
-						if ( k > (line_len-1) )
-						{
-							k = 0;
-						}
-
-						if ( string_in[k] == ' ' )
-						{
-							string_in.insert(k," ");
-							k++;
-							while ( string_in[k++] == ' ')
-							{
-							}
-							line_len++;
-							offset--;
-						}
-						k++;
-					}
-					k = 0;
-					outfile << string_in << endl;
-				}
-
+				k = 0;
+				outfile << string_in << endl;
 			}
-
 		}
-
-		infile.close();
-		outfile.close();
 	}
+	infile.close();
+	outfile.close();
+}
+};
 
+int main( int argc, char* argv[] )
+{
+	if ( argc != 4 )
+	{
+		return 0;
+	}
+	LineTools linetool;
+	linetool.justifyLines(argv[1], argv[2], atoi(argv[3]));
+	return 0;
 }
 {% endhighlight %}
 
 <p>
-  I'm welcome to any suggestions on how to improve this, because there's a lot that can be improved.
-  Sadly, this only works for monospaced fonts. I think I would need to analyze the default font style
-  before I can implement this 100%.
+  Let's give it some input.
 </p>
 
 <p>
-  Depending on how you want to use this, it's probably a good idea to create a method to get the maximum
-  number of characters per line you're aiming for.
+{% highlight console %}
+abcdefghijklmnopqrstuvwxyz
+a ef ijkl op svwxyz
+a cd nopqr z
+{% endhighlight %}
+<p>
+
+<p>
+  And here's the output for "ccfile.o filein.txt fileout.txt 26".
+</p>
+
+</p>
+{% highlight console %}
+abcdefghijklmnopqrstuvwxyz
+a   ef   ijkl   op  svwxyz
+a      cd      nopqr     z
+
+{% endhighlight %}
+</p>
+
+<p>
+  The output for "file.o filein.txt fileout.txt 27" is a bit different.
+</p>
+
+<p>
+{% highlight console %}
+abcdefghijklmnopqrstuvwxyz 
+a   ef   ijkl   op   svwxyz
+a      cd      nopqr      z
+{% endhighlight %}
+</p>
+
+<p>
+  I'm welcome to any suggestions on how to improve this, because there's a lot that can be improved.
+  Sadly, this only works for monospaced fonts. I think I would need to analyze the default font style
+  before I can implement this 100% for all font types. I will look into that for the future.
+</p>
+
+<p>
+  Depending on how it'll be used. it's probably a good idea to create a method to get the maximum
+  number of characters per line.
 </p>

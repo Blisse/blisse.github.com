@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>
-    lai.victor &raquo; Justified Lines in C++
+    lai.victor &raquo; Justifying Lines in C++
   </title>
   
   <!-- Site Author -->
@@ -116,17 +116,17 @@
 	<div class="sixteen columns">
 	  <article class="post">
 
-		<h3><a href="/projects/justified/index.html" title="Permanent link to this post">Justified Lines in C++</a></h3>
+		<h2><a href="/projects/justified/index.html" title="Permanent link to this post">Justifying Lines in C++</a></h2>
 
 		<p>
   Pretty direct implementation after my first 2 weeks of C++.
-  Not my best code, but in all my Googling, I haven't found anything that does this as well.
+  Not my best code, but in all my Googling, I haven't found anything that does this. 
+  Only works with monospaced fonts, of course.
 </p>
 
 <p>
-  Justifies a file called filenameIn, writing the output to filenameOut. Must take in the 
-  maximum number of characters of the page. Goes through each line, adding spaces until the
-  the maximum number of characters is reached for that line, then writes to the file and continues.
+  The code is pretty self evident. Takes in an input file, output file and required length of 
+  all the lines (must be greater than the maximum line length).
 </p>
 
 <div class="highlight"><pre><code class="c"><span class="cp">#include &lt;iostream&gt;</span>
@@ -134,104 +134,141 @@
 <span class="cp">#include &lt;fstream&gt;</span>
 <span class="cp">#include &lt;istream&gt;</span>
 <span class="cp">#include &lt;cstdlib&gt;</span>
+<span class="cp">#include &lt;string&gt;</span>
+
+<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
 
 <span class="n">class</span> <span class="n">LineTools</span> <span class="p">{</span>
-
-	<span class="nl">public:</span>
-
+<span class="nl">public:</span>
 	<span class="kt">void</span> <span class="n">justifyLines</span><span class="p">(</span><span class="n">string</span> <span class="n">filenameIn</span><span class="p">,</span> <span class="n">string</span> <span class="n">filenameOut</span><span class="p">,</span> <span class="kt">int</span> <span class="n">max_len</span><span class="p">)</span>
 	<span class="p">{</span>
-
-		<span class="n">ifstream</span> <span class="n">infile</span><span class="p">;</span>
-		<span class="n">infile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filenameIn</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="p">);</span>
-
-		<span class="n">ofstream</span> <span class="n">outfile</span><span class="p">;</span>
-		<span class="n">outfile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filenameOut</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="p">);</span>
-
-		<span class="n">string</span> <span class="n">string_in</span><span class="p">;</span>
-		<span class="kt">int</span> <span class="n">line_len</span><span class="p">;</span>
-		<span class="kt">int</span> <span class="n">offset</span><span class="p">;</span>
-
-		<span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-		<span class="kt">int</span> <span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-
-		<span class="k">while</span> <span class="p">(</span> <span class="n">getline</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">string_in</span><span class="p">)</span> <span class="p">)</span>
+	<span class="n">ifstream</span> <span class="n">infile</span><span class="p">;</span>
+	<span class="n">infile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filenameIn</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="p">);</span>
+	<span class="n">ofstream</span> <span class="n">outfile</span><span class="p">;</span>
+	<span class="n">outfile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filenameOut</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="p">);</span>
+	<span class="n">string</span> <span class="n">string_in</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">line_len</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">offset</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="k">while</span> <span class="p">(</span> <span class="n">getline</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">string_in</span><span class="p">)</span> <span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+		<span class="n">line_len</span> <span class="o">=</span> <span class="n">string_in</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+		<span class="n">offset</span> <span class="o">=</span> <span class="n">max_len</span> <span class="o">-</span> <span class="n">line_len</span><span class="p">;</span>
+		<span class="k">for</span> <span class="p">(</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">line_len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">)</span>
 		<span class="p">{</span>
-			<span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-			<span class="n">line_len</span> <span class="o">=</span> <span class="n">string_in</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
-			<span class="n">offset</span> <span class="o">=</span> <span class="n">max_len</span> <span class="o">-</span> <span class="n">line_len</span><span class="p">;</span>
-
-			<span class="k">for</span> <span class="p">(</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">line_len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">)</span>
+			<span class="k">if</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="p">)</span>
 			<span class="p">{</span>
-				<span class="k">if</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="p">)</span>
+				<span class="n">oneword</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		<span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">offset</span> <span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="c1">// string_len &lt; max_len</span>
+		<span class="p">{</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">oneword</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span><span class="p">;</span>
+				<span class="k">while</span> <span class="p">(</span><span class="n">offset</span><span class="p">)</span>
 				<span class="p">{</span>
-					<span class="n">oneword</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+					<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+					<span class="n">offset</span><span class="o">--</span><span class="p">;</span>
 				<span class="p">}</span>
+				<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 			<span class="p">}</span>
-
-			<span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">offset</span> <span class="p">)</span>
+			<span class="k">else</span>
 			<span class="p">{</span>
-				<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-			<span class="p">}</span>
-			<span class="k">else</span> <span class="c1">// string_len &lt; max_len</span>
-			<span class="p">{</span>
-				<span class="k">if</span> <span class="p">(</span><span class="n">oneword</span><span class="p">)</span>
+				<span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+				<span class="k">while</span> <span class="p">(</span> <span class="n">offset</span> <span class="p">)</span>
 				<span class="p">{</span>
-					<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span><span class="p">;</span>
-					<span class="k">while</span> <span class="p">(</span><span class="n">offset</span><span class="p">)</span>
+					<span class="k">if</span> <span class="p">(</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">line_len</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
 					<span class="p">{</span>
-						<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+						<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+					<span class="p">}</span>
+
+					<span class="k">if</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="p">)</span>
+					<span class="p">{</span>
+						<span class="n">string_in</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="s">&quot; &quot;</span><span class="p">);</span>
+						<span class="n">k</span><span class="o">++</span><span class="p">;</span>
+						<span class="k">while</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">k</span><span class="o">++</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span><span class="p">)</span>
+						<span class="p">{</span>
+						<span class="p">}</span>
+						<span class="n">line_len</span><span class="o">++</span><span class="p">;</span>
 						<span class="n">offset</span><span class="o">--</span><span class="p">;</span>
 					<span class="p">}</span>
-					<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+					<span class="n">k</span><span class="o">++</span><span class="p">;</span>
 				<span class="p">}</span>
-				<span class="k">else</span>
-				<span class="p">{</span>
-					<span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-					<span class="k">while</span> <span class="p">(</span> <span class="n">offset</span> <span class="p">)</span>
-					<span class="p">{</span>
-						<span class="k">if</span> <span class="p">(</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">line_len</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
-						<span class="p">{</span>
-							<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-						<span class="p">}</span>
-
-						<span class="k">if</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="p">)</span>
-						<span class="p">{</span>
-							<span class="n">string_in</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="s">&quot; &quot;</span><span class="p">);</span>
-							<span class="n">k</span><span class="o">++</span><span class="p">;</span>
-							<span class="k">while</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">k</span><span class="o">++</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span><span class="p">)</span>
-							<span class="p">{</span>
-							<span class="p">}</span>
-							<span class="n">line_len</span><span class="o">++</span><span class="p">;</span>
-							<span class="n">offset</span><span class="o">--</span><span class="p">;</span>
-						<span class="p">}</span>
-						<span class="n">k</span><span class="o">++</span><span class="p">;</span>
-					<span class="p">}</span>
-					<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-					<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-				<span class="p">}</span>
-
+				<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+				<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 			<span class="p">}</span>
-
 		<span class="p">}</span>
-
-		<span class="n">infile</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
-		<span class="n">outfile</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
 	<span class="p">}</span>
+	<span class="n">infile</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+	<span class="n">outfile</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="p">};</span>
 
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[]</span> <span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span> <span class="n">argc</span> <span class="o">!=</span> <span class="mi">4</span> <span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">LineTools</span> <span class="n">linetool</span><span class="p">;</span>
+	<span class="n">linetool</span><span class="p">.</span><span class="n">justifyLines</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]));</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
 </div>
 
 <p>
-  I'm welcome to any suggestions on how to improve this, because there's a lot that can be improved.
-  Sadly, this only works for monospaced fonts. I think I would need to analyze the default font style
-  before I can implement this 100%.
+  Let's give it some input.
 </p>
 
 <p>
-  Depending on how you want to use this, it's probably a good idea to create a method to get the maximum
-  number of characters per line you're aiming for.
+<div class="highlight"><pre><code class="console"><span class="go">abcdefghijklmnopqrstuvwxyz</span>
+<span class="go">a ef ijkl op svwxyz</span>
+<span class="go">a cd nopqr z</span>
+</code></pre>
+</div>
+<p>
+
+<p>
+  And here's the output for "ccfile.o filein.txt fileout.txt 26".
+</p>
+
+</p>
+<div class="highlight"><pre><code class="console"><span class="go">abcdefghijklmnopqrstuvwxyz</span>
+<span class="go">a   ef   ijkl   op  svwxyz</span>
+<span class="go">a      cd      nopqr     z</span>
+</code></pre>
+</div>
+</p>
+
+<p>
+  The output for "file.o filein.txt fileout.txt 27" is a bit different.
+</p>
+
+<p>
+<div class="highlight"><pre><code class="console"><span class="go">abcdefghijklmnopqrstuvwxyz </span>
+<span class="go">a   ef   ijkl   op   svwxyz</span>
+<span class="go">a      cd      nopqr      z</span>
+</code></pre>
+</div>
+</p>
+
+<p>
+  I'm welcome to any suggestions on how to improve this, because there's a lot that can be improved.
+  Sadly, this only works for monospaced fonts. I think I would need to analyze the default font style
+  before I can implement this 100% for all font types. I will look into that for the future.
+</p>
+
+<p>
+  Depending on how it'll be used. it's probably a good idea to create a method to get the maximum
+  number of characters per line.
 </p>
 
 	  </article>

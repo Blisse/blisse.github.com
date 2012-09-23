@@ -251,8 +251,14 @@
 		line-height: 21px; 
 	}
 
-	dl { margin: 0 0 18px; }
-	dd { margin-left: 18px; }
+	dl { 
+		margin: 0 0 18px;
+		font-size: 14px;
+	}
+	dd { 
+		margin-left: 18px;
+		font-size: 14px;
+	}
 
 	ul.pager { font-size: 1.1em; text-align: center; }
 	ul.pager li { display: inline; margin-right: 5px; }

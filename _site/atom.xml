@@ -4,7 +4,7 @@
  <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-09-23T21:31:09-04:00</updated>
+ <updated>2012-09-24T17:34:29-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -190,17 +190,17 @@
 &lt;/p&gt;
 
 &lt;p&gt;
-  It's not to say people were getting the basics wrong. Nope. If we didn't have the advantage of the Internet, and more importantly,
-  information, what normal people would do just seems right. But the innovators didn't only do that. They kept their eyes open. 
-  They noticed the implications, the limits and weaknesses of each style, and kept questioning all their decisions. A revolutionary 
-  way of thinking. 
+  It's not to say people were playing &lt;span class='italics'&gt;wrong&lt;/span&gt;. If we didn't have the advantage of the Internet, and all its
+  information, what normal people would have been doing so far just seems right. But innovators don't think like that. They kept their eyes open. 
+  They noticed the implications, the limits and weaknesses of each style, and kept questioning all their decisions. Certainly a revolutionary 
+  and enviable way of thinking. 
 &lt;/p&gt;
 
 &lt;p&gt;
-  The new generation only play in a single line style. And some get really good with it. But they've been tunnel-visioned into this style.
+  The new generation only play in a one-line style. And some get really good with it. But they've been tunnel-visioned into this style.
   They're not open to new ideas, and they don't have the experience of swapping styles and analyzing their strengths and weaknesses.
-  At low to mid levels of Tetris, combo-ing is the most effective way to play, yet most players don't realize this because they only play
-  their one line style. For fun, that's fine. To get good? We'll need something else.
+  At low to mid-levels of Tetris, combo-ing is the most effective way to play, yet most players don't realize this because they only play
+  their one-line style. For fun, that's fine. To get good? We'll need something else.
 &lt;/p&gt;
 &lt;/div&gt;&lt;div class='three columns'&gt;
 &lt;p&gt;
@@ -252,7 +252,11 @@ four-line
 &lt;/p&gt;
 &lt;/div&gt;&lt;div class='sixteen columns'&gt;
 &lt;p&gt;
-  These are examples of the styles. The standard Tetris grid is 10x20(+2), 10 horizontal. In one-line, one space is left empty and you
+  These are examples of the styles. The standard Tetris grid is 10x20(+2), 10 horizontal. 
+&lt;/p&gt;
+
+&lt;p&gt;
+  To the left, with the one-line style, one space is left empty and you
   build upwards from there. In two-line, two spaces are left empty, and so on. The two-line style is the easiest to play, and easily beats the one-line 
   if you play at the same level. Why? Like I said, combo-ing is the best way to begin, and the two-line is almost a guaranteed combo chain everytime you start.
   Why? Well if you took the time to think about it a bit, it'd make perfect sense. Every single Tetris piece except the I-piece will continue a combo
@@ -261,28 +265,33 @@ four-line
 
 &lt;p&gt;
   The next thing you'll notice is then how high combos are devastating, so you'll want as high a combo as possible. To get that, you'll find it's best to only clear
-  one line when you're combo-ing. Done well enough, you can possibly have a 13-14 consecutive combo, which is very, very strong.
+  one line when you're combo-ing. Done well enough, you can possibly have a 13-14 consecutive combo, which is very, very strong. But to get that, you have to 
+  realize that two-line isn't the only style to play. That's very easy when you have already realized that one-line isn't the only style to play and then 
+  moved on to two-line. But think about all the one-line players who haven't realized this. You have to question yourself at every turn.
 &lt;/p&gt;
 
 &lt;p&gt;
   Playing well doesn't mean you'll perform well however. A large component of improving in Tetris is consistency. There is almost zero room for mistakes.
-  If you do make a mistake, you need to have the foresight to minimize its effects, and fix it, because it is very costly to the consecutive combo-ing if you
-  aren't careful. Multiple mistakes, and you can probably forfeit the game already if you're playing against very high levels. Consistency requires stamina, of course, 
+  And if you do make a mistake, you need to have the foresight to minimize its effects, and fix it, because it is very costly to the consecutive combo-ing if you
+  aren't careful. Multiple mistakes, and you can probably forfeit the game already if you're playing at very high levels. Consistency requires stamina, of course, 
   and you'll notice as you play more, your performance will degrade at times. It's important to take frequent breaks, and eventually you'll notice you can play for 2 hours 
-  without a severe performance degradation. 
+  without severe performance degradation. 
 &lt;/p&gt;
 
 &lt;p&gt;
   Consistency throughout multiple games is important, but also consistency throughout every single game. Play the beginning exactly like how you would play out the
   ending. Calmly and quickly. If you play the entire match at &lt;span class='italics'&gt;your&lt;/span&gt; pace, you won't lose simply because you messed up once. Every portion of 
-  your game will be dangerous. I have been down 2 or 3 KOs multiple times right at the start of the game, but because my pace is very strong, I can came back and win, 
-  simply because I'm playing this strong, fast pace that allows me to not make mistakes, yet not sacrifice attacking potential.
+  your game will be dangerous. I have been down 2 or 3 KOs multiple times right at the start of the game, but I pace myself. I can came back and win,
+  simply because I'm playing this strong, fast pace where I don't make mistakes, yet not sacrifice attacking potential. The pace I set for myself is supremely comfortable
+  because it's the only pace I play at. I don't alternate at random between conservative and aggressive. I don't let my playstyle dictate my pace, as one-line players must do.
+  I don't feel panicked down 0-3 as much as I should because I know if I simply play the style properly, I can come back. Being comfortable is very important.
 &lt;/p&gt;
 
 &lt;p&gt;
-  Eventually you can reach a point where building up your stack is almost done by reflex, and you will notice you have a lot more eye freedom to stare at your opponent's game
-  and &lt;span class='italics'&gt;predict&lt;/span&gt; what he'll do, and then play your own side in anticipation. This is a very strong strategy, and combined with a strong foundation
-  will push you further up. And because you have such a strong foundation already, adding things like prediction or ending strongly will have much more visible effects.
+  Eventually you can reach a point where building up your stack is almost done by reflex, and you will notice you have a lot more freedom and time to stare at your 
+  opponent's game and &lt;span class='italics'&gt;predict&lt;/span&gt; what he'll do, and then play your own side in anticipation. This is a very strong strategy, 
+  and combined with a strong foundation will improve your game dramatically.. And because you have such a strong core already, adding things like 
+  prediction or ending strongly or beginning combos will have much more visible effects.
 &lt;/p&gt;
 &lt;/div&gt;</content>
    

@@ -44,10 +44,10 @@
 ================================================== */
 
 ::selection {
-	background: #91DEBA; /* Safari */
+	background: #bbb; /* Safari */
 	}
 ::-moz-selection {
-	background: #91DEBA; /* Firefox */
+	background: #bbb; /* Firefox */
 }
 
 
@@ -66,6 +66,10 @@
 
 /* #Typography
 ================================================== */
+	
+	.hide {
+		display: none;
+	}
 
 	.center {
 		text-align: center;
@@ -281,6 +285,41 @@
 
 	.parent-padding { padding: 5% 0; }
 	.child-padding { padding: 5% 0; }
+
+
+/* #Fun
+================================================== */
+
+a.tile-button, a.tile-button:visited {
+	width: 104px;
+	height: 104px;
+	background-color:#43C789;
+	padding:10px;
+	position:ansolute;
+	font-family: 'DroidSansRegular', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color: #fff;
+	margin-bottom: 10px;
+	-webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+	-moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+	box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+}
+
+a.tile-button:active, a.tile-button.selected {
+	color: #43C789;
+	-webkit-box-shadow: inset 0px 2px 0px #43C789, 0px 2px 0px #fff;
+	-moz-box-shadow: inset 0px 2px 0px #43C789, 0px 2px 0px #fff;
+	box-shadow: inset 0px 2px 0px #43C789, 0px 2px 0px #fff;
+}
+
+a.tile-button:hover {
+	background-color:#267E55;
+	color: #fff;
+	-webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+	-moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+	box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+}
 
 
 /* #Pygments

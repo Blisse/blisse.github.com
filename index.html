@@ -7,10 +7,12 @@ homepage: true
 <div class="container">
 
 <div class="sixteen columns">
-<h4>Hi!</h4>
 <p>
-	My name is <span class="bold">Victor Lai</span>, and I'm a <i>Software Engineer</i> studying at the University of Waterloo. 
-	This is my blog about all sorts of things.
+{% highlight c++ %}
+/* # Welcome
+Hi! I'm Victor 
+and here I gather my thoughts. */
+{% endhighlight %}
 </p>
 <br />
 </div>
@@ -44,7 +46,7 @@ homepage: true
 
 	{% if paginator.previous_page %}
 		{% if paginator.previous_page == 1 %}
-			<h5><a href="/" class="newer">NEWER</a></h5>
+			<h5><a href="/" class="newer">NEWER POSTS</a></h5>
 		{% else %}
 			<h5><a href="/page{{paginator.previous_page}}" class="newer">NEWER POSTS</a></h5>
 		{% endif %}

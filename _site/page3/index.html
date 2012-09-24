@@ -30,6 +30,9 @@
   <link rel="stylesheet" href="/css/skeleton.css">
   <link rel="stylesheet" href="/css/layout.css">
 
+  <!-- Metro CSS -->
+  <link rel="stylesheet" href="/css/metro.css">
+
   <!-- FontAwesome -->
   <link rel="stylesheet" href="/css/font-awesome.css">
 
@@ -114,10 +117,12 @@
 	<div class="container">
 
 <div class="sixteen columns">
-<h4>Hi!</h4>
 <p>
-	My name is <span class="bold">Victor Lai</span>, and I'm a <i>Software Engineer</i> studying at the University of Waterloo. 
-	This is my blog about all sorts of things.
+<div class="highlight"><pre><code class="c"><span class="cm">/* # Welcome</span>
+<span class="cm">Hi! I&#39;m Victor </span>
+<span class="cm">and here I gather my thoughts. */</span>
+</code></pre>
+</div>
 </p>
 <br />
 </div>
@@ -614,6 +619,13 @@ $(document).ready(
 		}
 	}
 );
+</script>
+	<script type="text/javascript" src="/js/metro.js"></script>
+<script type="text/javascript">
+
+    // apply regular slide universally unless .exclude class is applied 
+    // NOTE: The default options for each liveTile are being pulled from the 'data-' attributes
+    $(".live-tile, .flip-list").not(".exclude").liveTile();
 </script>
 
 </body>

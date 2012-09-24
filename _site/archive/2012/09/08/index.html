@@ -30,6 +30,9 @@
   <link rel="stylesheet" href="/css/skeleton.css">
   <link rel="stylesheet" href="/css/layout.css">
 
+  <!-- Metro CSS -->
+  <link rel="stylesheet" href="/css/metro.css">
+
   <!-- FontAwesome -->
   <link rel="stylesheet" href="/css/font-awesome.css">
 
@@ -313,6 +316,13 @@ $(document).ready(
 		}
 	}
 );
+</script>
+	<script type="text/javascript" src="/js/metro.js"></script>
+<script type="text/javascript">
+
+    // apply regular slide universally unless .exclude class is applied 
+    // NOTE: The default options for each liveTile are being pulled from the 'data-' attributes
+    $(".live-tile, .flip-list").not(".exclude").liveTile();
 </script>
 
 </body>

@@ -24,7 +24,7 @@ tags: [programming]
 <p>
   Using <a href="http://dataurl.net/#dataurlmaker" target="_blank">dataurl.net</a>, you can convert most images to get a 
   Data URL, which you can then link to in your HTML file via
-{% highlight html %}<img src="data:url"></img>{% endhighlight %}
+{% highlight html %}<img src="data:url">{% endhighlight %}
 </p>
 
 <p>

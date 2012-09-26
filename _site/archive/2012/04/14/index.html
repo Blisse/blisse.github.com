@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>
-    lai.victor &raquo; first coding interview
+    lai.victor &raquo; failed interview
   </title>
   
   <!-- Site Author -->
@@ -25,16 +25,13 @@
 
   <!-- Base CSS -->
   <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/header.css">
-  <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/header/header.css">
+  <link rel="stylesheet" href="/css/footer/footer.css">
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
   <link rel="stylesheet" href="/css/layout.css">
 
-  <!-- Metro CSS -->
-  <link rel="stylesheet" href="/css/metro.css">
-
   <!-- FontAwesome -->
-  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
@@ -75,13 +72,13 @@
 
 		<div class="eight columns center">
 			<div class="icon" style="font-size: 48px;">
-				<a target="_blank" href="http://www.twitter.com/dblisse">
+				<a target="_blank" href="http://www.twitter.com/laivictorvl ">
 					<i class="icon-twitter-sign"></i>
 				</a>
 				<a target="_blank" href="http://ca.linkedin.com/in/laivictor">
 					<i class="icon-linkedin-sign"></i>
 				</a>
-				<a target="_blank" href="http://www.github.com/Blisse">
+				<a target="_blank" href="http://www.github.com/blisse">
 					<i class="icon-github-sign"></i>
 				</a>
 				<a href="mailto:lai.victor.vl@gmail.com">
@@ -119,28 +116,20 @@
 	<div class="sixteen columns">
 	<article class="post">
 
-		<h3><a href="/archive/2012/04/14/index.html" title="Permanent link to this post">first coding interview</a> //20120414</h3>
+		<h3><a href="/archive/2012/04/14/index.html" title="Permanent link to this post">failed interview</a> //20120414</h3>
 
-		<p>
-I had an interview the other day that really shook me up.
+		<p>I had an interview the other day that really shook me up.</p>
 
-He asked me a question that really made me wonder how much I really knew about programming. 
-I really thought I knew Python (at least somewhat decently), but I understand now there's a difference between using a language a few times, and actually knowing the language in and out.
+<p>He asked me a question that really made me wonder how much I really knew about programming. I really thought I knew Python (at least somewhat decently), but I understand now there&#8217;s a difference between using a language a few times, and actually knowing the language in and out.</p>
 
-My answer was... "crap." I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should've known it. 
+<p>My answer was&#8230; &#8220;crap.&#8221; I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should&#8217;ve known it.</p>
 
-The question was (I think): 
-
-
+<p>The question was (I think):</p>
 <div class='highlight'><pre><code class='console'><span class='go'>Remove the first letter from each word in the string: </span>
 <span class='gp'>&gt;</span> <span class='s2'>&quot;asdf das f po&quot;</span>
 </code></pre>
 </div>
-
- 
-EDIT(2012-07-16): This was my March attempt.
-
-
+<p>EDIT(2012-07-16): This was my March attempt.</p>
 <div class='highlight'><pre><code class='python'><span class='c'># removes spaces from string</span>
 
 <span class='n'>line</span> <span class='o'>=</span> <span class='n'>original</span>
@@ -186,14 +175,7 @@ EDIT(2012-07-16): This was my March attempt.
 <span class='k'>print</span> <span class='n'>newline</span>
 </code></pre>
 </div>
-
-
-
-EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
-Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
-come up with. Honest.
-
-
+<p>EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? Wow. Just wow. I don&#8217;t know how I made it this far programming if that was the best I could come up with. Honest.</p>
 <div class='highlight'><pre><code class='python'><span class='k'>def</span> <span class='nf'>removefirstletter</span><span class='p'>(</span> <span class='n'>sentence</span> <span class='p'>):</span>
 	<span class='n'>tokens</span> <span class='o'>=</span> <span class='n'>sentence</span><span class='o'>.</span><span class='n'>split</span><span class='p'>()</span>
 	<span class='k'>for</span> <span class='n'>word</span> <span class='ow'>in</span> <span class='nb'>range</span><span class='p'>(</span><span class='nb'>len</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>)):</span>
@@ -201,21 +183,13 @@ come up with. Honest.
 	<span class='k'>return</span> <span class='s'>&quot; &quot;</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>)</span>
 </code></pre>
 </div>
+<p>Easily handles any issue with spacing when you remove the word with one letter.</p>
 
-
-Easily handles any issue with spacing when you remove the word with one letter.
-
-The output should be 
-
-
+<p>The output should be</p>
 <div class='highlight'><pre><code class='console'><span class='gp'>&gt;</span> <span class='s2'>&quot;df as o&quot;</span>
 </code></pre>
 </div>
-
-
-I'd like to think I made progress, but this could be done a lot better still. 
-But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
-</p>
+<p>I&#8217;d like to think I made progress, but this could be done a lot better still. But if I got this far in 3 months, I&#8217;m can&#8217;t think of the possibilities in a couple years!</p>
 
 	</article>
 	</div>
@@ -397,13 +371,6 @@ $(document).ready(
 		}
 	}
 );
-</script>
-	<script type="text/javascript" src="/js/metro.js"></script>
-<script type="text/javascript">
-
-    // apply regular slide universally unless .exclude class is applied 
-    // NOTE: The default options for each liveTile are being pulled from the 'data-' attributes
-    $(".live-tile, .flip-list").not(".exclude").liveTile();
 </script>
 
 </body>

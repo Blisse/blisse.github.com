@@ -4,7 +4,7 @@
  <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-09-24T17:52:48-04:00</updated>
+ <updated>2012-09-26T03:35:32-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -30,7 +30,7 @@
   Using &lt;a href='http://dataurl.net/#dataurlmaker' target='_blank'&gt;dataurl.net&lt;/a&gt;, you can convert most images to get a 
   Data URL, which you can then link to in your HTML file via
 
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;img&lt;/span&gt; &lt;span class='na'&gt;src=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;data:url&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;/img&amp;gt;&lt;/span&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;img&lt;/span&gt; &lt;span class='na'&gt;src=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;data:url&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -436,6 +436,22 @@ four-line
  </entry>
  
  <entry>
+   <title type="html">reworking site layout</title>
+   <link href="http://www.laivictor.com/archive/2012/07/29/siterestructure"/>
+   <updated>2012-07-29T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/07/29/siterestructure</id>
+   <content type="html">&lt;p&gt;
+  It is ridiculous how hard it is to rework an entire website. Currently, the site is pretty bad
+  for mobile, plus it doesn't act the way I want it when the window is resized. I plan to fix that.
+&lt;/p&gt;&lt;p&gt;
+  Meanwhile, expect a lot more breaking in the future.
+&lt;/p&gt;</content>
+   
+   <category term="site"/>
+   
+ </entry>
+ 
+ <entry>
    <title type="html">site (re)construction</title>
    <link href="http://www.laivictor.com/archive/2012/07/29/siterestructure"/>
    <updated>2012-07-29T00:00:00-04:00</updated>
@@ -448,6 +464,37 @@ four-line
 &lt;/p&gt;</content>
    
    <category term="site"/>
+   
+ </entry>
+ 
+ <entry>
+   <title type="html">magic of dropbox</title>
+   <link href="http://www.laivictor.com/archive/2012/07/26/dropboxmagic"/>
+   <updated>2012-07-26T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/07/26/dropboxmagic</id>
+   <content type="html">&lt;p&gt;
+  I love &lt;a href='http://www.dropbox.com' target='_blank'&gt;Dropbox&lt;/a&gt;.
+&lt;/p&gt;&lt;p&gt;
+  Because I use some slightly more complicated system with GitHub and Dropbox, 
+  I had to learn some new stuff so that I could upload my website properly to GitHub Pages.
+&lt;/p&gt;&lt;p&gt;
+  In the process of doing so, I actually accidentally deleted my website files, along with the 
+  GitHub repository. I had nothing to roll back to. It was all gone.
+&lt;/p&gt;&lt;p&gt;
+  POOF!
+&lt;/p&gt;&lt;p&gt;
+  But to my joy, I always debated whether to put the website source in my Dropbox, so I could
+  work on it and sync my files from my Windows laptop to my Ubuntu laptop to my Windows desktop 
+  to my work desktop. 
+&lt;/p&gt;&lt;p&gt;
+  When I accidentally deleted my website files, I thank that Dropbox saves a history of your deleted
+  files, so that you can recover them if they go accidentally, and actually use them as a mini-version
+  tracker. Awesome for a free service.
+&lt;/p&gt;&lt;p&gt;
+  Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. Thank you.
+&lt;/p&gt;</content>
+   
+   <category term="utils"/>
    
  </entry>
  
@@ -525,6 +572,99 @@ four-line
  </entry>
  
  <entry>
+   <title type="html">just go for it</title>
+   <link href="http://www.laivictor.com/archive/2012/07/20/justgoforit"/>
+   <updated>2012-07-20T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/07/20/justgoforit</id>
+   <content type="html">&lt;p&gt;
+  When people ask for motivation, it's really hard to give them a straight answer. 
+  I never had one myself. But recently, I've had some really bad problems that 
+  left me scratching my head. I couldn't solve it, and there was nothing I could do.
+&lt;/p&gt;&lt;p&gt;
+  But then I came along a couple of really good motivational posts, which really,
+  in essence, told me to do it because failure is not an option. Mediocrity is not an option.
+&lt;/p&gt;&lt;p&gt;
+  And that's what I've always believed in. My motivation was always really, 
+  &quot;Do it because you can. Do it to prove to yourself that you can. 
+  Do it 100% because when it's all over, you're still an insignificant speck,
+  unless your 100% is better than his.&quot; 
+&lt;/p&gt;&lt;p&gt;
+  Talk about an inferiority complex going on here.
+&lt;/p&gt;&lt;p&gt;
+  But I realized, I grew into a habit of accepting mediocrity. It might be because the university 
+  system forces this down our throats a bunch, and some life-changing realizations I've made since. 
+&lt;/p&gt;&lt;p&gt;
+  I shouldn't be making excuses for my failures, because there isn't time in life to do this.
+&lt;/p&gt;&lt;p&gt;
+  
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;60sec * 60min * 24hr * 365.25days * 100 yrs (if I&amp;#39;m lucky) is NOT ENOUGH.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;&lt;p&gt;
+  I can't let one little thing set me back so much of that time. Just as much as I can't do something
+  50%, and then complain about it later on.
+&lt;/p&gt;&lt;p&gt;
+  Screw getting the motivation. I'll just do it.
+&lt;/p&gt;&lt;p&gt;
+	&lt;object height='315' width='420'&gt;
+		&lt;param name='movie' value='https://www.youtube.com/v/Sk56VxaeqEQ?version=3&amp;amp;hl=en_US' /&gt;
+		&lt;param name='allowFullScreen' value='true' /&gt;
+		&lt;param name='allowscriptaccess' value='always' /&gt;
+		&lt;embed allowfullscreen='true' allowscriptaccess='always' height='315' src='https://www.youtube.com/v/Sk56VxaeqEQ?version=3&amp;amp;hl=en_US' type='application/x-shockwave-flash' width='420' /&gt;
+	&lt;/object&gt;
+&lt;/p&gt;&lt;p&gt;
+  &quot;You need to ask yourself, 'what are you going to do today,' &lt;br /&gt;
+  but more importantly, 'how are you going to do it.'&quot;
+&lt;/p&gt;</content>
+   
+   <category term="misc"/>
+   
+ </entry>
+ 
+ <entry>
+   <title type="html">counter-memories</title>
+   <link href="http://www.laivictor.com/archive/2012/07/11/counter-memories"/>
+   <updated>2012-07-11T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/07/11/counter-memories</id>
+   <content type="html">&lt;p&gt;
+  Sometimes, the oddest of circumstances makes you remember things you did in 
+  the past, that somehow you forgot over the years. And most of the time, it puts a 
+  really big smile on your face when you remember.
+&lt;/p&gt;&lt;p&gt; 
+  I was having an innocent argument with an artist about stuff that we've made in the 
+  past. While my friend is clearly the better artist between the two of us, I remembered
+  that I really wanted to be a (graphic) artist at some point in my life. 
+&lt;/p&gt;&lt;p&gt;
+  My Grade 9 Art mark was an astounding 100, a surprise, even to myself. I think my 
+  Art teacher had a lot of hope in me, and was probably a little heartbroken when me 
+  and my friend (who also got 100), decided not to take Grade 10 Art.
+&lt;/p&gt;&lt;p&gt;
+  Since Grade 5 or 6, I have always been the biggest Counter-Strike fan, until some 
+  tragic event a couple of years ago that forced me to quit. I played a lot of Counter-Strike, 
+  so I'm pretty sure my 662 HOURS PLAYED on Steam is inaccurate. In my spare time then, 
+  I thought about Counter-Strike a lot. But that's for another time.
+&lt;/p&gt;&lt;p&gt;
+  One day, I stumbled upon a thriving online game modding community in 
+  &lt;a href='http://www.fpsbanana.com' target='_blank'&gt;FPSBanana&lt;/a&gt;. Immediately I was hooked. 
+  The most memorable member was &lt;a href='http://gamebanana.com/members/164481' target='_blank'&gt;Teh Snake&lt;/a&gt;.
+  He made so many brilliant and amazing mods, he really was the reason I wanted to go into graphic design.
+&lt;/p&gt;&lt;p&gt;
+  Eventually, I tried my hand at modding, and upon realizing I had no talent,
+  I tried something much, much easier, and something that brings me joy to see online to this very day.
+&lt;/p&gt;&lt;p&gt;
+  I made a custom hand skin for CS1.6 and CZ after collaborating with the original owner, Nasaratsu.
+  Here's the &lt;a href='http://gamebanana.com/cscz/skins/48319' target='_blank'&gt;link&lt;/a&gt;, and while it's 
+  really bad, I'm still extremely proud of it. Over 6,000 downloads, and 14,000 views. :')
+&lt;/p&gt;</content>
+   
+   <category term="memories"/>
+   
+   <category term="counterstrike"/>
+   
+ </entry>
+ 
+ <entry>
    <title type="html">counterstrike &amp; memories</title>
    <link href="http://www.laivictor.com/archive/2012/07/11/counter-memories"/>
    <updated>2012-07-11T00:00:00-04:00</updated>
@@ -564,6 +704,90 @@ four-line
    <category term="memories"/>
    
    <category term="counterstrike"/>
+   
+ </entry>
+ 
+ <entry>
+   <title type="html">failed interview</title>
+   <link href="http://www.laivictor.com/archive/2012/04/14/failinterview"/>
+   <updated>2012-04-14T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/04/14/failinterview</id>
+   <content type="html">&lt;p&gt;I had an interview the other day that really shook me up.&lt;/p&gt;
+
+&lt;p&gt;He asked me a question that really made me wonder how much I really knew about programming. I really thought I knew Python (at least somewhat decently), but I understand now there&amp;#8217;s a difference between using a language a few times, and actually knowing the language in and out.&lt;/p&gt;
+
+&lt;p&gt;My answer was&amp;#8230; &amp;#8220;crap.&amp;#8221; I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should&amp;#8217;ve known it.&lt;/p&gt;
+
+&lt;p&gt;The question was (I think):&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;Remove the first letter from each word in the string: &lt;/span&gt;
+&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;asdf das f po&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;EDIT(2012-07-16): This was my March attempt.&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='c'&gt;# removes spaces from string&lt;/span&gt;
+
+&lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
+&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+
+&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
+	&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='nb'&gt;ord&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;i&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;ord&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
+		&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt;
+	&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
+		&lt;span class='k'&gt;pass&lt;/span&gt;
+		
+&lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
+
+&lt;span class='c'&gt;# removes first letter of each word from string &amp;amp; fix spacing&lt;/span&gt;
+
+&lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
+&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+
+&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;
+
+&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
+
+&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
+	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
+		&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
+			&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt;
+		&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
+			&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;
+			
+	&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;
+	&lt;span class='n'&gt;newline&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;newword&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+	&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+
+&lt;span class='n'&gt;output&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
+
+&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
+	&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class='ow'&gt;or&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
+		&lt;span class='k'&gt;pass&lt;/span&gt;
+	&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
+		&lt;span class='n'&gt;output&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+
+&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;output&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? Wow. Just wow. I don&amp;#8217;t know how I made it this far programming if that was the best I could come up with. Honest.&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;removefirstletter&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt; &lt;span class='p'&gt;):&lt;/span&gt;
+	&lt;span class='n'&gt;tokens&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
+	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='nb'&gt;range&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;len&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
+		&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;list&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;])[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:])&lt;/span&gt;
+	&lt;span class='k'&gt;return&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Easily handles any issue with spacing when you remove the word with one letter.&lt;/p&gt;
+
+&lt;p&gt;The output should be&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;df as o&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;I&amp;#8217;d like to think I made progress, but this could be done a lot better still. But if I got this far in 3 months, I&amp;#8217;m can&amp;#8217;t think of the possibilities in a couple years!&lt;/p&gt;</content>
+   
+   <category term="fail"/>
+   
+   <category term="interview"/>
    
  </entry>
  
@@ -671,6 +895,24 @@ But if I got this far in 3 months, I'm can't think of the possibilities in a cou
    <category term="fail"/>
    
    <category term="interview"/>
+   
+ </entry>
+ 
+ <entry>
+   <title type="html">hello world</title>
+   <link href="http://www.laivictor.com/archive/2012/02/25/helloworld"/>
+   <updated>2012-02-25T00:00:00-05:00</updated>
+   <id>http://www.laivictor.com/archive/2012/02/25/helloworld</id>
+   <content type="html">&lt;p&gt;This is my first post, plus an obligatory&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;main&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
+  &lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;
+
+&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;__name__&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
+  &lt;span class='n'&gt;main&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content>
+   
+   <category term="misc"/>
    
  </entry>
  

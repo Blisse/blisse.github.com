@@ -20,7 +20,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Blog CSS -->
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Arimo' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
   <!-- Base CSS -->
@@ -129,111 +131,14 @@
   all the lines (must be greater than the maximum line length).
 </p>
 
-<div class="highlight"><pre><code class="c"><span class="cp">#include &lt;iostream&gt;</span>
-<span class="cp">#include &lt;string&gt;</span>
-<span class="cp">#include &lt;fstream&gt;</span>
-<span class="cp">#include &lt;istream&gt;</span>
-<span class="cp">#include &lt;cstdlib&gt;</span>
-<span class="cp">#include &lt;string&gt;</span>
-
-<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="n">class</span> <span class="n">LineTools</span> <span class="p">{</span>
-<span class="nl">public:</span>
-	<span class="kt">void</span> <span class="n">justifyLines</span><span class="p">(</span><span class="n">string</span> <span class="n">filenameIn</span><span class="p">,</span> <span class="n">string</span> <span class="n">filenameOut</span><span class="p">,</span> <span class="kt">int</span> <span class="n">max_len</span><span class="p">)</span>
-	<span class="p">{</span>
-	<span class="n">ifstream</span> <span class="n">infile</span><span class="p">;</span>
-	<span class="n">infile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filenameIn</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="p">);</span>
-	<span class="n">ofstream</span> <span class="n">outfile</span><span class="p">;</span>
-	<span class="n">outfile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filenameOut</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="p">);</span>
-	<span class="n">string</span> <span class="n">string_in</span><span class="p">;</span>
-	<span class="kt">int</span> <span class="n">line_len</span><span class="p">;</span>
-	<span class="kt">int</span> <span class="n">offset</span><span class="p">;</span>
-	<span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-	<span class="kt">int</span> <span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-	<span class="k">while</span> <span class="p">(</span> <span class="n">getline</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">string_in</span><span class="p">)</span> <span class="p">)</span>
-	<span class="p">{</span>
-		<span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-		<span class="n">line_len</span> <span class="o">=</span> <span class="n">string_in</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
-		<span class="n">offset</span> <span class="o">=</span> <span class="n">max_len</span> <span class="o">-</span> <span class="n">line_len</span><span class="p">;</span>
-		<span class="k">for</span> <span class="p">(</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">line_len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">)</span>
-		<span class="p">{</span>
-			<span class="k">if</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="p">)</span>
-			<span class="p">{</span>
-				<span class="n">oneword</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-			<span class="p">}</span>
-		<span class="p">}</span>
-		<span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">offset</span> <span class="p">)</span>
-		<span class="p">{</span>
-			<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-		<span class="p">}</span>
-		<span class="k">else</span> <span class="c1">// string_len &lt; max_len</span>
-		<span class="p">{</span>
-			<span class="k">if</span> <span class="p">(</span><span class="n">oneword</span><span class="p">)</span>
-			<span class="p">{</span>
-				<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span><span class="p">;</span>
-				<span class="k">while</span> <span class="p">(</span><span class="n">offset</span><span class="p">)</span>
-				<span class="p">{</span>
-					<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
-					<span class="n">offset</span><span class="o">--</span><span class="p">;</span>
-				<span class="p">}</span>
-				<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-			<span class="p">}</span>
-			<span class="k">else</span>
-			<span class="p">{</span>
-				<span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-				<span class="k">while</span> <span class="p">(</span> <span class="n">offset</span> <span class="p">)</span>
-				<span class="p">{</span>
-					<span class="k">if</span> <span class="p">(</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">line_len</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
-					<span class="p">{</span>
-						<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-					<span class="p">}</span>
-
-					<span class="k">if</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="p">)</span>
-					<span class="p">{</span>
-						<span class="n">string_in</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="s">&quot; &quot;</span><span class="p">);</span>
-						<span class="n">k</span><span class="o">++</span><span class="p">;</span>
-						<span class="k">while</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">k</span><span class="o">++</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span><span class="p">)</span>
-						<span class="p">{</span>
-						<span class="p">}</span>
-						<span class="n">line_len</span><span class="o">++</span><span class="p">;</span>
-						<span class="n">offset</span><span class="o">--</span><span class="p">;</span>
-					<span class="p">}</span>
-					<span class="n">k</span><span class="o">++</span><span class="p">;</span>
-				<span class="p">}</span>
-				<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-				<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-			<span class="p">}</span>
-		<span class="p">}</span>
-	<span class="p">}</span>
-	<span class="n">infile</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
-	<span class="n">outfile</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
-<span class="p">}</span>
-<span class="p">};</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[]</span> <span class="p">)</span>
-<span class="p">{</span>
-	<span class="k">if</span> <span class="p">(</span> <span class="n">argc</span> <span class="o">!=</span> <span class="mi">4</span> <span class="p">)</span>
-	<span class="p">{</span>
-		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-	<span class="p">}</span>
-	<span class="n">LineTools</span> <span class="n">linetool</span><span class="p">;</span>
-	<span class="n">linetool</span><span class="p">.</span><span class="n">justifyLines</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]));</span>
-	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
+Liquid error: Bad file descriptor
 
 <p>
   Let's give it some input.
 </p>
 
 <p>
-<div class="highlight"><pre><code class="console"><span class="go">abcdefghijklmnopqrstuvwxyz</span>
-<span class="go">a ef ijkl op svwxyz</span>
-<span class="go">a cd nopqr z</span>
-</code></pre>
-</div>
+Liquid error: Bad file descriptor
 <p>
 
 <p>
@@ -241,11 +146,7 @@
 </p>
 
 </p>
-<div class="highlight"><pre><code class="console"><span class="go">abcdefghijklmnopqrstuvwxyz</span>
-<span class="go">a   ef   ijkl   op  svwxyz</span>
-<span class="go">a      cd      nopqr     z</span>
-</code></pre>
-</div>
+Liquid error: Bad file descriptor
 </p>
 
 <p>
@@ -253,11 +154,7 @@
 </p>
 
 <p>
-<div class="highlight"><pre><code class="console"><span class="go">abcdefghijklmnopqrstuvwxyz </span>
-<span class="go">a   ef   ijkl   op   svwxyz</span>
-<span class="go">a      cd      nopqr      z</span>
-</code></pre>
-</div>
+Liquid error: Bad file descriptor
 </p>
 
 <p>

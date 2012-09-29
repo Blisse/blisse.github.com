@@ -1,7 +1,7 @@
 .rg-image-wrapper{
 	position:relative;
 	padding:20px 30px;
-	background:transparent url(../images/black.png) repeat top left;
+	background:transparent url(/images/site/black.png) repeat top left;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
@@ -20,7 +20,7 @@
 	position:absolute;
 	top:0px;
 	left:0px;
-	background:#000 url(../images/nav.png) no-repeat -20% 50%;
+	background:#000 url(/images/site/nav.png) no-repeat -20% 50%;
 	width:28px;
 	height:100%;
 	text-indent:-9000px;
@@ -64,7 +64,7 @@
 	width:16px;
 	height:16px;
 	margin-right:3px;
-	background:#464646 url(../images/views.png) no-repeat top left;
+	background:#464646 url(/images/site/views.png) no-repeat top left;
 	border:3px solid #464646;
 	opacity:0.8;
 }
@@ -87,7 +87,7 @@
 	position:absolute;
 	top:50%;
 	left:50%;
-	background:#000 url(../images/ajax-loader.gif) no-repeat center center;
+	background:#000 url(/images/site/ajax-loader.gif) no-repeat center center;
 	margin:-23px 0px 0px -23px;
 	z-index:100;
 	-moz-border-radius: 10px;

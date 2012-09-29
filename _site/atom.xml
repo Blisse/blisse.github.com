@@ -4,12 +4,45 @@
  <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-09-26T03:35:32-04:00</updated>
+ <updated>2012-09-29T02:02:19-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
  </author>
 
+ 
+ <entry>
+   <title type="html">production mode</title>
+   <link href="http://www.laivictor.com/archive/2012/09/29/productionmode"/>
+   <updated>2012-09-29T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/09/29/productionmode</id>
+   <content type="html">&lt;p&gt;
+  Eventually, I want to get this website to some sort of, &quot;production mode&quot;,
+  where I can stop focussing on creating content for this site, learning 
+  HTML5/CSS3/JavaScript, and instead begin focussing on blogging. 
+&lt;/p&gt;&lt;p&gt;
+  It's been great experience learning how to program for the future in a sense, because
+  I have to constantly make sure my CSS3 is readible for me to make super fast adjustments
+  later on, or that my site layout makes sense so that finding files is simple. 
+  Hopefully, I'll be able to apply these skills to my future development posts. 
+&lt;/p&gt;&lt;p&gt;
+  However, I am very glad to be learning all of these new programming tools, Jekyll, Git,
+  Liquid, Markdown, Pygments, jQuery and many more. I really want to experience all of the
+  development, the programming, the tools, the add-ons around me, but there isn't enough
+  time. I really want to bunk down these next 7 months, study hard and work hard so I can
+  do all of these things that I want to do, like program a Flash UI for my Cowon J3,
+  or add some Windows 8 no-longer-Metro-style tiles and icons to my website. 
+&lt;/p&gt;&lt;p&gt;
+  In the meantime, I'll be working hard to post some more content on this site. Upcoming? 
+  A gallery of the site's &quot;aesthetic&quot; progression, Windows 8 tiles, and a multi-level
+  navigation menu! Also, hopefully I'll figure out a way to make a nice mobile version.
+  The current site is just skeleton'd into the correct proportions at the moment. Nothing 
+  really &quot;mobile&quot;. But I'll fix that.
+&lt;/p&gt;</content>
+   
+   <category term="site"/>
+   
+ </entry>
  
  <entry>
    <title type="html">data URL images</title>
@@ -29,11 +62,7 @@
 &lt;/p&gt;&lt;p&gt;
   Using &lt;a href='http://dataurl.net/#dataurlmaker' target='_blank'&gt;dataurl.net&lt;/a&gt;, you can convert most images to get a 
   Data URL, which you can then link to in your HTML file via
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;img&lt;/span&gt; &lt;span class='na'&gt;src=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;data:url&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 &lt;/p&gt;&lt;p&gt;
   It's a pretty nifty little piece of code.
 &lt;/p&gt;&lt;p&gt;
@@ -205,50 +234,22 @@
 &lt;/div&gt;&lt;div class='three columns'&gt;
 &lt;p&gt;
 one-line
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;_#########&lt;/span&gt;
-&lt;span class='go'&gt;_#########&lt;/span&gt;
-&lt;span class='go'&gt;_#########&lt;/span&gt;
-&lt;span class='go'&gt;_#########&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 &lt;/p&gt;
 &lt;/div&gt;&lt;div class='three columns'&gt;
 &lt;p&gt;
 two-line
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;__######&lt;/span&gt;
-&lt;span class='go'&gt;__######&lt;/span&gt;
-&lt;span class='go'&gt;__######&lt;/span&gt;
-&lt;span class='go'&gt;__######&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 &lt;/p&gt;
 &lt;/div&gt;&lt;div class='three columns'&gt;
 &lt;p&gt;
 three-line
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;___######&lt;/span&gt;
-&lt;span class='go'&gt;___######&lt;/span&gt;
-&lt;span class='go'&gt;___######&lt;/span&gt;
-&lt;span class='go'&gt;___######&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 &lt;/p&gt;
 &lt;/div&gt;&lt;div class='three columns'&gt;
 &lt;p&gt;
 four-line
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;____######&lt;/span&gt;
-&lt;span class='go'&gt;____######&lt;/span&gt;
-&lt;span class='go'&gt;____######&lt;/span&gt;
-&lt;span class='go'&gt;____######&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 &lt;/p&gt;
 &lt;/div&gt;&lt;div class='sixteen columns'&gt;
 &lt;p&gt;
@@ -436,7 +437,7 @@ four-line
  </entry>
  
  <entry>
-   <title type="html">reworking site layout</title>
+   <title type="html">site (re)construction</title>
    <link href="http://www.laivictor.com/archive/2012/07/29/siterestructure"/>
    <updated>2012-07-29T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/07/29/siterestructure</id>
@@ -452,7 +453,7 @@ four-line
  </entry>
  
  <entry>
-   <title type="html">site (re)construction</title>
+   <title type="html">reworking site layout</title>
    <link href="http://www.laivictor.com/archive/2012/07/29/siterestructure"/>
    <updated>2012-07-29T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/07/29/siterestructure</id>
@@ -596,11 +597,7 @@ four-line
 &lt;/p&gt;&lt;p&gt;
   I shouldn't be making excuses for my failures, because there isn't time in life to do this.
 &lt;/p&gt;&lt;p&gt;
-  
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;60sec * 60min * 24hr * 365.25days * 100 yrs (if I&amp;#39;m lucky) is NOT ENOUGH.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+  Liquid error: Bad file descriptor
 &lt;/p&gt;&lt;p&gt;
   I can't let one little thing set me back so much of that time. Just as much as I can't do something
   50%, and then complain about it later on.
@@ -719,70 +716,23 @@ four-line
 &lt;p&gt;My answer was&amp;#8230; &amp;#8220;crap.&amp;#8221; I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should&amp;#8217;ve known it.&lt;/p&gt;
 
 &lt;p&gt;The question was (I think):&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;Remove the first letter from each word in the string: &lt;/span&gt;
-&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;asdf das f po&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+
+&lt;p&gt;Liquid error: Bad file descriptor&lt;/p&gt;
+
 &lt;p&gt;EDIT(2012-07-16): This was my March attempt.&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='c'&gt;# removes spaces from string&lt;/span&gt;
 
-&lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;p&gt;Liquid error: Bad file descriptor&lt;/p&gt;
 
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-	&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='nb'&gt;ord&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;i&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;ord&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
-		&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt;
-	&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;pass&lt;/span&gt;
-		
-&lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
-
-&lt;span class='c'&gt;# removes first letter of each word from string &amp;amp; fix spacing&lt;/span&gt;
-
-&lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
-&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-
-&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;
-
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
-
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
-	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-			&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt;
-		&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-			&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;
-			
-	&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;
-	&lt;span class='n'&gt;newline&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;newword&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-	&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-
-&lt;span class='n'&gt;output&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
-
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-	&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class='ow'&gt;or&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;pass&lt;/span&gt;
-	&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='n'&gt;output&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;output&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-&lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? Wow. Just wow. I don&amp;#8217;t know how I made it this far programming if that was the best I could come up with. Honest.&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;removefirstletter&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt; &lt;span class='p'&gt;):&lt;/span&gt;
-	&lt;span class='n'&gt;tokens&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
-	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='nb'&gt;range&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;len&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
-		&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;list&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;])[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:])&lt;/span&gt;
-	&lt;span class='k'&gt;return&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+
+&lt;p&gt;Liquid error: Bad file descriptor&lt;/p&gt;
+
 &lt;p&gt;Easily handles any issue with spacing when you remove the word with one letter.&lt;/p&gt;
 
 &lt;p&gt;The output should be&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;df as o&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+
+&lt;p&gt;Liquid error: Bad file descriptor&lt;/p&gt;
+
 &lt;p&gt;I&amp;#8217;d like to think I made progress, but this could be done a lot better still. But if I got this far in 3 months, I&amp;#8217;m can&amp;#8217;t think of the possibilities in a couple years!&lt;/p&gt;</content>
    
    <category term="fail"/>
@@ -806,87 +756,24 @@ My answer was... &quot;crap.&quot; I did not know what to do really, and it cost
 
 The question was (I think): 
 
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;Remove the first letter from each word in the string: &lt;/span&gt;
-&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;asdf das f po&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
  
 EDIT(2012-07-16): This was my March attempt.
 
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='c'&gt;# removes spaces from string&lt;/span&gt;
-
-&lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-	&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='nb'&gt;ord&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;i&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;ord&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
-		&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt;
-	&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;pass&lt;/span&gt;
-		
-&lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
-
-&lt;span class='c'&gt;# removes first letter of each word from string &amp;amp; fix spacing&lt;/span&gt;
-
-&lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
-&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-
-&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;
-
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
-
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
-	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-			&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt;
-		&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-			&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;
-			
-	&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;
-	&lt;span class='n'&gt;newline&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;newword&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-	&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-
-&lt;span class='n'&gt;output&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
-
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-	&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class='ow'&gt;or&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;pass&lt;/span&gt;
-	&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='n'&gt;output&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;output&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-&lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 
 
 EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
 Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
 come up with. Honest.
 
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;removefirstletter&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt; &lt;span class='p'&gt;):&lt;/span&gt;
-	&lt;span class='n'&gt;tokens&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
-	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='nb'&gt;range&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;len&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
-		&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;list&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;])[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:])&lt;/span&gt;
-	&lt;span class='k'&gt;return&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 
 Easily handles any issue with spacing when you remove the word with one letter.
 
 The output should be 
 
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;df as o&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 
 I'd like to think I made progress, but this could be done a lot better still. 
 But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
@@ -904,13 +791,8 @@ But if I got this far in 3 months, I'm can't think of the possibilities in a cou
    <updated>2012-02-25T00:00:00-05:00</updated>
    <id>http://www.laivictor.com/archive/2012/02/25/helloworld</id>
    <content type="html">&lt;p&gt;This is my first post, plus an obligatory&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;main&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
-  &lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;
 
-&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;__name__&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-  &lt;span class='n'&gt;main&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content>
+&lt;p&gt;Liquid error: Bad file descriptor&lt;/p&gt;</content>
    
    <category term="misc"/>
    
@@ -924,15 +806,7 @@ But if I got this far in 3 months, I'm can't think of the possibilities in a cou
    <content type="html">&lt;p&gt;
 This is my first post. So, an obligatory
 
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;main&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
-  &lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;
-
-&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;__name__&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-  &lt;span class='n'&gt;main&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
+Liquid error: Bad file descriptor
 
 Thanks for visiting~
 &lt;/p&gt;</content>

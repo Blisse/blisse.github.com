@@ -207,6 +207,36 @@
 		margin: 1px; 
 	}
 
+	.Tangerine {
+		font-family: 'Tangerine', 'DroidSansRegular', Arial;
+		font-size: 24px;
+	}	
+	
+	.CodeBold {
+		font-family: 'Code Bold', 'DroidSansRegular', Arial;
+		font-size: 24px;
+	}	
+
+	.BlackJack {
+		font-family: 'Black Jack', 'DroidSansRegular', Arial;
+		font-size: 24px;
+	}	
+
+	.Casper {
+		font-family: 'Casper', 'DroidSansRegular', Arial;
+		font-size: 24px;
+	}
+
+	.Sreda {
+		font-family: 'Sreda', 'DroidSansRegular', Arial;
+		font-size: 24px;
+	}
+
+	.Windsong {
+		font-family: 'Windsong', 'DroidSansRegular', Arial;
+		font-size: 24px;
+	}
+
 /* #Posts
 ================================================== */
 
@@ -285,42 +315,6 @@
 
 	.parent-padding { padding: 5% 0; }
 	.child-padding { padding: 5% 0; }
-
-
-/* #Fun
-================================================== */
-
-a.tile-button, a.tile-button:visited {
-	width: 104px;
-	height: 104px;
-	background-color:#43C789;
-	padding:10px;
-	position:ansolute;
-	font-family: 'DroidSansRegular', sans-serif;
-	font-size:12px;
-	text-decoration:none;
-	color: #fff;
-	margin-bottom: 10px;
-	-webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
-	-moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
-	box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
-}
-
-a.tile-button:active, a.tile-button.selected {
-	color: #43C789;
-	-webkit-box-shadow: inset 0px 2px 0px #43C789, 0px 2px 0px #fff;
-	-moz-box-shadow: inset 0px 2px 0px #43C789, 0px 2px 0px #fff;
-	box-shadow: inset 0px 2px 0px #43C789, 0px 2px 0px #fff;
-}
-
-a.tile-button:hover {
-	background-color:#267E55;
-	color: #fff;
-	-webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
-	-moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
-	box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
-}
-
 
 /* #Pygments
 ================================================== */

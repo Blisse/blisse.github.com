@@ -54,7 +54,7 @@
 /* #Body
 ================================================== */
 	body {		
-		font-family: 'DroidSansRegular', 'Droid Sans', Arial, sans-serif;	
+		font-family: 'PT Sans Narrow', 'DroidSansRegular', 'Droid Sans', Arial, sans-serif;	
 		background: repeat scroll 0 0 #efefef;
 		color: #1a1a1a;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */

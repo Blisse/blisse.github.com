@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>
-    lai.victor &raquo; hello world
+    lai.victor &raquo; hello world!
   </title>
   
   <!-- Site Author -->
@@ -23,6 +23,7 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
   <!-- Base CSS -->
@@ -92,16 +93,16 @@
 		<div class="sixteen columns">
 			<div id="nav" class="center">
 				<ul class="nav">
-					<li class="currentpage">
+					<li class="">
 						<a href="/">Home</a>
 					</li>
-					<li>
-						<a href="/archive/">Archive</a>
+					<li class="">
+						<a href="/blog/">Blog</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="/projects/">Projects</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="/about/">About</a>
 					</li>
 				</ul>
@@ -118,11 +119,23 @@
 	<div class="sixteen columns">
 	<article class="post">
 
-		<h3><a href="/archive/2012/02/25/index.html" title="Permanent link to this post">hello world</a> //20120225</h3>
+		<h3><a href="/archive/2012/02/25/index.html" title="Permanent link to this post">hello world!</a> //20120225</h3>
 
-		<p>This is my first post, plus an obligatory</p>
+		<p>
+This is my first post. So, an obligatory
 
-<p>Liquid error: Bad file descriptor</p>
+
+<div class='highlight'><pre><code class='python'><span class='k'>def</span> <span class='nf'>main</span><span class='p'>():</span>
+  <span class='k'>print</span> <span class='s'>&quot;Hello world!&quot;</span>
+
+<span class='k'>if</span> <span class='n'>__name__</span> <span class='o'>==</span> <span class='s'>&quot;__main__&quot;</span><span class='p'>:</span>
+  <span class='n'>main</span><span class='p'>()</span>
+</code></pre>
+</div>
+
+
+Thanks for visiting~
+</p>
 
 	</article>
 	</div>
@@ -147,26 +160,6 @@
 	</div>
 </div>
 
-	<script type="text/javascript" src="/js/currentselection.js"></script>
-<script type="text/javascript">
-
-$(document).ready(
-	function()
-	{
-		var str=location.href;
-		$(".nav li a").each(
-			function() {
-				if (str.indexOf(this.href) > -1) 
-				{
-					$("li.currentpage").removeClass("currentpage");
-					$(this).parent().addClass("currentpage");
-				}
-			}
-		);
-	}
-)
-
-</script>
 	<script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 $(document).ready(

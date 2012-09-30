@@ -23,6 +23,7 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
   <!-- Base CSS -->
@@ -92,16 +93,16 @@
 		<div class="sixteen columns">
 			<div id="nav" class="center">
 				<ul class="nav">
-					<li class="currentpage">
+					<li class="">
 						<a href="/">Home</a>
 					</li>
-					<li>
-						<a href="/archive/">Archive</a>
+					<li class="">
+						<a href="/blog/">Blog</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="/projects/">Projects</a>
 					</li>
-					<li>
+					<li class="currentpage">
 						<a href="/about/">About</a>
 					</li>
 				</ul>
@@ -116,7 +117,7 @@
 	<div class="container">
 	<article class="post">
 
-  <div class="container">
+<div class="container">
 	<div class="four columns center">
 		<br />
 		<br />
@@ -124,8 +125,6 @@
 		<a href="/about/resume" class="tile-button">Resume</a>
 		<br />
 		<br />	
-		<br />
-		<br />
 	</div>
 	<div class="twelve columns">
 		<p>
@@ -170,6 +169,7 @@
 				&nbsp;&nbsp;&#9642;&nbsp;<a href="http://fontfabric.com/" target="_blank">Fontfabric</a><br />
 				&nbsp;&nbsp;&#9642;&nbsp;<a href="http://abduzeedo.com/" target="_blank">abduzeedo</a><br />
 				&nbsp;&nbsp;&#9642;&nbsp;<a href="https://github.com/dhgamache" target="_blank">Dave Gamache</a>'s <a href="http://www.getskeleton.com" target="_blank">Skeleton theme</a><br />
+				&nbsp;&nbsp;&#9642;&nbsp;<a href="http://marcwhitbread.com/" target="_blank">Marc Whitbread</a>'s <a href="http://www.getskeleton.com" target="_blank">iosSlider</a><br />
 		</p>
 	</div>
 
@@ -214,26 +214,6 @@
 	</div>
 </div>
 
-	<script type="text/javascript" src="/js/currentselection.js"></script>
-<script type="text/javascript">
-
-$(document).ready(
-	function()
-	{
-		var str=location.href;
-		$(".nav li a").each(
-			function() {
-				if (str.indexOf(this.href) > -1) 
-				{
-					$("li.currentpage").removeClass("currentpage");
-					$(this).parent().addClass("currentpage");
-				}
-			}
-		);
-	}
-)
-
-</script>
 	<script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 $(document).ready(

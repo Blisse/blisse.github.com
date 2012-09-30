@@ -23,6 +23,7 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
   <!-- Base CSS -->
@@ -92,16 +93,16 @@
 		<div class="sixteen columns">
 			<div id="nav" class="center">
 				<ul class="nav">
-					<li class="currentpage">
+					<li class="">
 						<a href="/">Home</a>
 					</li>
-					<li>
-						<a href="/archive/">Archive</a>
+					<li class="">
+						<a href="/blog/">Blog</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="/projects/">Projects</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="/about/">About</a>
 					</li>
 				</ul>
@@ -133,7 +134,11 @@
 </p><p>
   Using <a href='http://dataurl.net/#dataurlmaker' target='_blank'>dataurl.net</a>, you can convert most images to get a 
   Data URL, which you can then link to in your HTML file via
-Liquid error: Bad file descriptor
+
+<div class='highlight'><pre><code class='html'><span class='nt'>&lt;img</span> <span class='na'>src=</span><span class='s'>&quot;data:url&quot;</span><span class='nt'>&gt;</span>
+</code></pre>
+</div>
+
 </p><p>
   It's a pretty nifty little piece of code.
 </p><p>
@@ -163,26 +168,6 @@ Liquid error: Bad file descriptor
 	</div>
 </div>
 
-	<script type="text/javascript" src="/js/currentselection.js"></script>
-<script type="text/javascript">
-
-$(document).ready(
-	function()
-	{
-		var str=location.href;
-		$(".nav li a").each(
-			function() {
-				if (str.indexOf(this.href) > -1) 
-				{
-					$("li.currentpage").removeClass("currentpage");
-					$(this).parent().addClass("currentpage");
-				}
-			}
-		);
-	}
-)
-
-</script>
 	<script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 $(document).ready(

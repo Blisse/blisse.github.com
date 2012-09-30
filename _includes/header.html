@@ -31,16 +31,16 @@
 		<div class="sixteen columns">
 			<div id="nav" class="center">
 				<ul class="nav">
-					<li class="currentpage">
+					<li {% if page.title == "home" %}class="currentpage"{% else %}class=""{% endif %}>
 						<a href="/">Home</a>
 					</li>
-					<li>
-						<a href="/archive/">Archive</a>
+					<li {% if page.title == "blog" %}class="currentpage"{% else %}class=""{% endif %}>
+						<a href="/blog/">Blog</a>
 					</li>
-					<li>
+					<li {% if page.title == "project" %}class="currentpage"{% else %}class=""{% endif %}>
 						<a href="/projects/">Projects</a>
 					</li>
-					<li>
+					<li {% if page.title == "about" %}class="currentpage"{% else %}class=""{% endif %}>
 						<a href="/about/">About</a>
 					</li>
 				</ul>

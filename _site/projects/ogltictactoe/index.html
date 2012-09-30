@@ -23,6 +23,7 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
   <!-- Base CSS -->
@@ -92,16 +93,16 @@
 		<div class="sixteen columns">
 			<div id="nav" class="center">
 				<ul class="nav">
-					<li class="currentpage">
+					<li class="">
 						<a href="/">Home</a>
 					</li>
-					<li>
-						<a href="/archive/">Archive</a>
+					<li class="">
+						<a href="/blog/">Blog</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="/projects/">Projects</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="/about/">About</a>
 					</li>
 				</ul>
@@ -194,26 +195,6 @@
 	</div>
 </div>
 
-	<script type="text/javascript" src="/js/currentselection.js"></script>
-<script type="text/javascript">
-
-$(document).ready(
-	function()
-	{
-		var str=location.href;
-		$(".nav li a").each(
-			function() {
-				if (str.indexOf(this.href) > -1) 
-				{
-					$("li.currentpage").removeClass("currentpage");
-					$(this).parent().addClass("currentpage");
-				}
-			}
-		);
-	}
-)
-
-</script>
 	<script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 $(document).ready(

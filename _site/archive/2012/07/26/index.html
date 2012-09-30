@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>
-    lai.victor &raquo; magic of dropbox
+    lai.victor &raquo; dropbox
   </title>
   
   <!-- Site Author -->
@@ -23,6 +23,7 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
   <!-- Base CSS -->
@@ -92,16 +93,16 @@
 		<div class="sixteen columns">
 			<div id="nav" class="center">
 				<ul class="nav">
-					<li class="currentpage">
+					<li class="">
 						<a href="/">Home</a>
 					</li>
-					<li>
-						<a href="/archive/">Archive</a>
+					<li class="">
+						<a href="/blog/">Blog</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="/projects/">Projects</a>
 					</li>
-					<li>
+					<li class="">
 						<a href="/about/">About</a>
 					</li>
 				</ul>
@@ -118,28 +119,26 @@
 	<div class="sixteen columns">
 	<article class="post">
 
-		<h3><a href="/archive/2012/07/26/index.html" title="Permanent link to this post">magic of dropbox</a> //20120726</h3>
+		<h3><a href="/archive/2012/07/26/index.html" title="Permanent link to this post">dropbox</a> //20120726</h3>
 
 		<p>
-  I love <a href='http://www.dropbox.com' target='_blank'>Dropbox</a>.
+  <a href='http://www.dropbox.com' target='_blank'>Dropbox</a> is an amazing piece of technology.
+  The idea that I can go on any computer and access any files I've put on one folder. Or that
+  I can sync up 4-5 different machines with any of my work so I can stop working on my desktop,
+  pick up my laptop, go to the library and pick up right where I left off. That just blows my mind.
 </p><p>
-  Because I use some slightly more complicated system with GitHub and Dropbox, 
+  I use some slightly confusing system with GitHub and Dropbox, so
   I had to learn some new stuff so that I could upload my website properly to GitHub Pages.
-</p><p>
-  In the process of doing so, I actually accidentally deleted my website files, along with the 
+  The first time I tried it, I actually deleted my website files, along with the 
   GitHub repository. I had nothing to roll back to. It was all gone.
 </p><p>
-  POOF!
+  But I was saved! Before this, I had always debated whether to put the website source files in my Dropbox folder, so I could
+  work on it and sync my files across my computers, or if trying this system was a bit too complicated. Luckily for me, I left it on my Dropbox this time.
 </p><p>
-  But to my joy, I always debated whether to put the website source in my Dropbox, so I could
-  work on it and sync my files from my Windows laptop to my Ubuntu laptop to my Windows desktop 
-  to my work desktop. 
-</p><p>
-  When I accidentally deleted my website files, I thank that Dropbox saves a history of your deleted
-  files, so that you can recover them if they go accidentally, and actually use them as a mini-version
-  tracker. Awesome for a free service.
-</p><p>
-  Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. Thank you.
+  When I accidentally deleted my website files, I panicked. But I found out that Dropbox saves a history of your deleted
+  files, so that you can recover them if you're messed up accidentally, and actually use them as a mini-version
+  tracker. Awesome for a free service. Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. 
+  Kind of an amazing application.
 </p>
 
 	</article>
@@ -165,26 +164,6 @@
 	</div>
 </div>
 
-	<script type="text/javascript" src="/js/currentselection.js"></script>
-<script type="text/javascript">
-
-$(document).ready(
-	function()
-	{
-		var str=location.href;
-		$(".nav li a").each(
-			function() {
-				if (str.indexOf(this.href) > -1) 
-				{
-					$("li.currentpage").removeClass("currentpage");
-					$(this).parent().addClass("currentpage");
-				}
-			}
-		);
-	}
-)
-
-</script>
 	<script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 $(document).ready(

@@ -10,5 +10,5 @@ email: lai.victor.vl@gmail.com
 github: blisse
 twitter: laivictorvl
 linkedin: laivictor
-
-paginate: 5
+exclude: ['README.markdown', '.gitignore']
+paginate: 500

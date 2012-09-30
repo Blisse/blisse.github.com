@@ -3,7 +3,7 @@
 ================================================== */
 
 	#header {
-		background: #43C789;
+		background: #1F1F1F;
 	}
 
 /* Navigation Bar */
@@ -48,7 +48,7 @@
 /* Navigation Item */
 	#header #nav ul li a,
 	#header #nav ul li a:visited {
-	  background-color:#43C789;
+	  background-color:#1F1F1F;
 	  color:#fff;
 	  border-bottom: none;
 	}
@@ -56,24 +56,24 @@
 /* Hover over Navigation Item */
 	#header #nav ul li a:hover, 
 	#header #nav ul li a.selected {
-	  background-color:#267E55;
-	  color:#43C789;
+	  background-color:#3D3D3D;
+	  color:#fff;
 	  border-bottom: none;
 	}
 
 /* Current Page */
 	#header #nav ul li.currentpage a,
 	#header #nav ul li.currentpage a:visited{
-	  background-color:#fff;
-	  color:#43C789;
+	  background-color:#474747;
+	  color:#fff;
 	  border-bottom: none;
 	}
 
 /* Hover over Current Page */
 	#header #nav ul li.currentpage a:hover, 
 	#header #nav ul li.currentpage a.selected {
-		background-color:#267E55;
-		color:#43C789;
+		background-color:#3D3D3D;
+		color:#fff;
 	  border-bottom: none;
 	}
 

@@ -3,6 +3,7 @@ layout: post
 title: tetris basics
 date: 2012-08-20
 tags: [tetris, gaming]
+div: false
 ---
 
 <div class="sixteen columns">
@@ -43,51 +44,44 @@ tags: [tetris, gaming]
 </p>
 </div>
 
+<div class="eight columns">
+{% highlight console %}
+:: one-line
+_#########
+_#########
+_#########
+_#########
+{% endhighlight %}
+</div>
 
+<div class="eight columns">
+{% highlight console %}
+:: two-line
+__######
+__######
+__######
+__######
+{% endhighlight %}
+</div>
 
-<div class="three columns">
-<p>
-one-line
+<div class="eight columns">
 {% highlight console %}
-_#########
-_#########
-_#########
-_#########
+:: three-line
+___######
+___######
+___######
+___######
 {% endhighlight %}
-</p>
 </div>
-<div class="three columns">
-<p>
-two-line
+
+<div class="eight columns">
 {% highlight console %}
-__######
-__######
-__######
-__######
-{% endhighlight %}
-</p>
-</div>
-<div class="three columns">
-<p>
-three-line
-{% highlight console %}
-___######
-___######
-___######
-___######
-{% endhighlight %}
-</p>
-</div>
-<div class="three columns">
-<p>
-four-line
-{% highlight console %}
+:: four-line
 ____######
 ____######
 ____######
 ____######
 {% endhighlight %}
-</p>
 </div>
 
 <div class="sixteen columns">

@@ -41,6 +41,17 @@
 
 {% include googleanalytics.html %}
 
+
+<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.dimensions.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.content-player.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/site.js" type="text/javascript" charset="utf-8"></script>
+
+  {% include resizemainmenu.html %}
+  {% include resizesubmenu.html %} 
+
 </head>
 
 <body>
@@ -51,9 +62,6 @@
 	{{ content }}
 
     {% include footer.html %}
-
-  {% include resizemainmenu.html %}
-  {% include resizesubmenu.html %}
 
 </body>
 

@@ -23,7 +23,7 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
   <!-- Base CSS -->
@@ -91,8 +91,8 @@
 		</div>
 
 		<div class="sixteen columns">
-			<div id="nav" class="center">
-				<ul class="nav">
+			<div id="mainmenu" class="center">
+				<ul>
 					<li class="">
 						<a href="/">Home</a>
 					</li>
@@ -106,8 +106,12 @@
 						<a href="/about/">About</a>
 					</li>
 				</ul>
-			<br />
 			</div>
+
+			
+
+
+
 			<br />
 		</div>
 	</div>
@@ -122,24 +126,41 @@
 		<h3><a href="/archive/2012/07/26/index.html" title="Permanent link to this post">dropbox</a> //20120726</h3>
 
 		<p>
-  <a href='http://www.dropbox.com' target='_blank'>Dropbox</a> is an amazing piece of technology.
+  <a href="http://www.dropbox.com" target="_blank">Dropbox</a> is an amazing piece of technology.
   The idea that I can go on any computer and access any files I've put on one folder. Or that
   I can sync up 4-5 different machines with any of my work so I can stop working on my desktop,
   pick up my laptop, go to the library and pick up right where I left off. That just blows my mind.
-</p><p>
+</p>
+
+
+
+
+<p>
   I use some slightly confusing system with GitHub and Dropbox, so
   I had to learn some new stuff so that I could upload my website properly to GitHub Pages.
   The first time I tried it, I actually deleted my website files, along with the 
   GitHub repository. I had nothing to roll back to. It was all gone.
-</p><p>
+</p>
+
+
+
+
+<p>
   But I was saved! Before this, I had always debated whether to put the website source files in my Dropbox folder, so I could
   work on it and sync my files across my computers, or if trying this system was a bit too complicated. Luckily for me, I left it on my Dropbox this time.
-</p><p>
+</p>
+
+
+
+
+<p>
   When I accidentally deleted my website files, I panicked. But I found out that Dropbox saves a history of your deleted
   files, so that you can recover them if you're messed up accidentally, and actually use them as a mini-version
   tracker. Awesome for a free service. Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. 
   Kind of an amazing application.
 </p>
+
+
 
 	</article>
 	</div>
@@ -164,7 +185,7 @@
 	</div>
 </div>
 
-	<script type="text/javascript" src="/js/resizebar.js"></script>
+  <script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 $(document).ready(
 	function()
@@ -182,11 +203,11 @@ $(document).ready(
 								changeWidth(400);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -197,11 +218,11 @@ $(document).ready(
 								changeWidth(370);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -212,11 +233,11 @@ $(document).ready(
 								changeWidth(350);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -227,11 +248,11 @@ $(document).ready(
 								changeWidth(310);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -246,11 +267,11 @@ $(document).ready(
 				changeWidth(400);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}
@@ -261,11 +282,11 @@ $(document).ready(
 				changeWidth(370);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}
@@ -276,11 +297,11 @@ $(document).ready(
 				changeWidth(350);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}
@@ -291,11 +312,149 @@ $(document).ready(
 				changeWidth(310);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+	}
+);
+</script>
+  <script type="text/javascript" src="/js/resizebar.js"></script>
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$(window).resize(
+			function()
+			{
+				$(' #name ').each(
+					function() 
+					{
+						if ( $(window).width() >= 960 )
+						{
+							$(' #header h1 a ').css('font-size', '84px');
+							$(function() {
+								changeWidth(200);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+						else if ( $(window).width() >= 768 ) 
+						{
+							$(' #header h1 a ').css('font-size', '75px');
+							$(function() {
+								changeWidth(170);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+						else if ( $(window).width() >= 480 ) 
+						{
+							$(' #header h1 a ').css('font-size', '75px');
+							$(function() {
+								changeWidth(140);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+						else
+						{
+							$(' #header h1 a ').css('font-size', '53px');
+							$(function() {
+								changeWidth(120);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+					}
+				)
+			}
+		);
+		if ( $(window).width() >= 960 )
+		{
+			$(' #header h1 a ').css('font-size', '84px');
+			$(function() {
+				changeWidth(200);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+		else if ( $(window).width() >= 768 ) 
+		{
+			$(' #header h1 a ').css('font-size', '75px');
+			$(function() {
+				changeWidth(185);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+		else if ( $(window).width() >= 480 ) 
+		{
+			$(' #header h1 a ').css('font-size', '75px');
+			$(function() {
+				changeWidth(175);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+		else
+		{
+			$(' #header h1 a ').css('font-size', '53px');
+			$(function() {
+				changeWidth(155);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}

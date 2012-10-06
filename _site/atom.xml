@@ -4,12 +4,132 @@
  <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-09-30T03:11:00-04:00</updated>
+ <updated>2012-10-06T02:18:49-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
  </author>
 
+ 
+ <entry>
+   <title type="html">word scores</title>
+   <link href="http://www.laivictor.com/archive/2012/10/05/wordscores"/>
+   <updated>2012-10-05T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/10/05/wordscores</id>
+   <content type="html">&lt;p&gt; &lt;img src=&quot;http://i.imgur.com/OBg92.jpg&quot; alt=&quot;1..26 for a..z&quot; class=&quot;scale-with-grid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;
+  From the inspiration above, I decided to check out what words actually fit this definition. Sorry for the Comic Sans in the image, though.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  First, I'll define 
+&lt;/p&gt;
+
+
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;word_score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chars&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;
+  Here's what that looks like in code.
+&lt;/p&gt;
+
+
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt; 
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;inspect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;string&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;write_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;output.txt&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;exceptions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inspect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;word_to_number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lower_range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;upper_range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# enforce lower case input parameter&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;character&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ascii_lowercase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;character&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ascii_lowercase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;character&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lower_range&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;upper_range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;read_dictionary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dictionary_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dictionary_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readlines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word_to_number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dict_walk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;directories&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;files&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;walk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dictionary&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dictionary&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;exceptions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Checking&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dictionary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;read_dictionary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abspath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dictionary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Done!&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;output.txt&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;w&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;output.txt&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;w&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dict_walk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;.&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;
+  Not as pretty as it could be, but it works fairly well.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  Ignoring non-ASCII characters, I get 6771 matches for words that total to 100. 
+  'Inefficient' appears on there, so I habve proven that first image is false via contradiction.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  Other interesting words that appear for word_score == 100 are:
+    &lt;ul class=&quot;square&quot;&gt;
+      &lt;li&gt;maximize
+      &lt;li&gt;analysis
+      &lt;li&gt;attitude //good thing it does
+      &lt;li&gt;excellent
+      &lt;li&gt;culture
+      &lt;li&gt;hospital
+      &lt;li&gt;printer
+      &lt;li&gt;personal
+      &lt;li&gt;telephone
+      &lt;li&gt;lightning
+      &lt;li&gt;unavailable
+      &lt;li&gt;chimpanzee
+      &lt;li&gt;theists
+      &lt;li&gt;egotistical
+      &lt;li&gt;hiroshima
+    &lt;/ul&gt;
+    
+&lt;/p&gt;
+
+</content>
+   
+   <category term="programming"/>
+   
+ </entry>
  
  <entry>
    <title type="html">production mode</title>
@@ -20,25 +140,36 @@
   Eventually, I want to get this website to some sort of, &quot;production mode&quot;,
   where I can stop focussing on creating content for this site, learning 
   HTML5/CSS3/JavaScript, and instead begin focussing on blogging. 
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;
   It's been great experience learning how to program for the future in a sense, because
   I have to constantly make sure my CSS3 is readible for me to make super fast adjustments
   later on, or that my site layout makes sense so that finding files is simple. 
   Hopefully, I'll be able to apply these skills to my future development posts. 
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;
   However, I am very glad to be learning all of these new programming tools, Jekyll, Git,
   Liquid, Markdown, Pygments, jQuery and many more. I really want to experience all of the
   development, the programming, the tools, the add-ons around me, but there isn't enough
   time. I really want to bunk down these next 7 months, study hard and work hard so I can
   do all of these things that I want to do, like program a Flash UI for my Cowon J3,
   or add some Windows 8 no-longer-Metro-style tiles and icons to my website. 
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;
   In the meantime, I'll be working hard to post some more content on this site. Upcoming? 
   A gallery of the site's &quot;aesthetic&quot; progression, Windows 8 tiles, and a multi-level
   navigation menu! Also, hopefully I'll figure out a way to make a nice mobile version.
   The current site is just skeleton'd into the correct proportions at the moment. Nothing 
   really &quot;mobile&quot;. But I'll fix that.
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+</content>
    
    <category term="site"/>
    
@@ -50,28 +181,62 @@
    <updated>2012-09-22T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/09/22/dataurls</id>
    <content type="html">&lt;p&gt;
-  &lt;img alt='VICTOR LAI' class='scale-with-grid' src='data:image/png;base64,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' /&gt;
-&lt;/p&gt;&lt;p&gt;
+  Here's something cool.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  &lt;img class=&quot;scale-with-grid&quot; src=&quot;data:image/png;base64,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&quot; alt=&quot;VICTOR LAI&quot; /&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   So, that looks like any image file, no? Actually, if you look at its source, it's really just a big line of text.
   I can't say I know too much about what's really behind it, but the line of text is a data URL, developed for the Data URI scheme (Uniform Resource Identifier scheme), which
-  according to &lt;a href='http://en.wikipedia.org/wiki/Data_URI_scheme' target='_blank'&gt;wikipedia&lt;/a&gt;, was made specifically for 
+  according to &lt;a href=&quot;http://en.wikipedia.org/wiki/Data_URI_scheme&quot; target=&quot;_blank&quot;&gt;wikipedia&lt;/a&gt;, was made specifically for 
   embedding images in a single file, rather than using conventional external images.
-&lt;/p&gt;&lt;p&gt;
-  Reading a bit more, a uniform resource identifiy is a string of characters that identifies a name or resource. 
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  Reading a bit more, a uniform resource identifier is a string of characters that identifies a name or resource. 
   So a filepath will do, but also the Data URL, which breaks the resource data into a base64-encoded string.
-&lt;/p&gt;&lt;p&gt;
-  Using &lt;a href='http://dataurl.net/#dataurlmaker' target='_blank'&gt;dataurl.net&lt;/a&gt;, you can convert most images to get a 
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  Using &lt;a href=&quot;http://dataurl.net/#dataurlmaker&quot; target=&quot;_blank&quot;&gt;dataurl.net&lt;/a&gt;, you can convert most images to get a 
   Data URL, which you can then link to in your HTML file via
 
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;img&lt;/span&gt; &lt;span class='na'&gt;src=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;data:url&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;data:url&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   It's a pretty nifty little piece of code.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   In other news, the new site is up and running. I think it's a bit better than before.
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+</content>
    
    <category term="programming"/>
    
@@ -86,45 +251,82 @@
   I really like gaming. There is something beautiful about immersing yourself completely in the game.
   Losing yourself completely in this reality, and escaping the physical world. It is the same feeling I 
   try to get to when I'm listening to music. Bliss.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   Lately, I've been following the emerging e-sports scene; gamers pushing towards making gaming a sport, 
   a thriving, sustainable industry with actual careers. The main game responsible? StarCraft.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   For the last 14 years, StarCraft and StarCraft:Brood War (I will refer to both as just BW), has been a huge 
   commercial success. But only in South Korea, where the best progamers compete in packed stadiums in front of
   screaming Korean fangirls, for huge grand prizes and honour, in two competitive proleagues, with top
   salaries in the 100K's. That's just, ridiculous to think about, but it's happened.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   But this success was not met across the globe. While the Korean community thrived, the Western community was much 
   more recluse. StarCraft wasn't as big; actually, Counter-Strike was the thing. But there were many strong contenders
   underground, who moved to Korea to train with the best. The Western scene was okay, but left much to be desired
   for the players.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   With the launch of StarCraft 2 (SC2), Blizzard, the developers, decided to take the huge success of BW and expand it across 
   the globe; the push for e-sports began. 2 years later, it's really obvious how much of an impact this has had. 
   Competitive gaming has become mainstream. Popularized by League of Legends, Defense of the Ancients 1 and 2, 
   Heroes of Newerth, Call of Duty, Halo, and StarCraft 2, gamers across the globe have ridiculously easier access to these games.
   It's easy to talk to a few friends about what's going on in the competitive scene, participate in some fantasy leagues, and even
   attend live events. 
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   So what's missing for the Western world? Taking a look at Korean BW, and European Counter-Strike, you can see
   something that's really surprising. Gamers, and the people around them, are surprisingly professional. Not only 
   in actions, but appearance. Most people still have the idea that gaming is only for 'nerds'. And currently, it's hard
   to disagree with them. While the competitive scenes have a fair share of exceptions, they are still the exception. 
   It is difficult for the mainstream society to enjoy watching a scrawny, freckled teenager with mismatched clothes win 
   several thousand dollars, as bad as that sounds. Western society has this huge emphasis on appearance that many gamers lack.
-&lt;/p&gt;&lt;p&gt;
-  However, it doesn't have to be that way. &lt;a href='http://youtu.be/VWOIgB37LKQ' target='_blank'&gt;This&lt;/a&gt; is SK|HeatoN, who was
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  However, it doesn't have to be that way. &lt;a href=&quot;http://youtu.be/VWOIgB37LKQ&quot; target=&quot;_blank&quot;&gt;This&lt;/a&gt; is SK|HeatoN, who was
   part of a very successful Counter-Strike team. And he looks and acts perfectly. If you watch Korean BW on television (yes, this exists),
   you'll see the commentators are exactly like that as well. Casual, yet professional. Same with the players, respectful and professional.
   Some of the players have even modeled. Image sells.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   While it's really enticing to have a thriving competitive scene where everyone is judgment-free and accepting of the geeky
   and nerdy tendencies of many gamers, it's important to the mainstream (and the sponsors) that there is some sort of 
   professional image put forth. There must be some agreement between all gamers that gaming can be your career, your life's work;
   if you take gaming seriously. If you treat video games like just a game, how are you going to convince someone it's also 
   a sport, and more importantly, how can you convince someone to make it a career? 
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+</content>
    
    <category term="esports"/>
    
@@ -141,18 +343,32 @@
    <id>http://www.laivictor.com/archive/2012/09/08/codersblock</id>
    <content type="html">&lt;p&gt;
   I'm working on my Poker game, and it's always the same story.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   I always find that the hardest part is not the logic, but getting it playable. 
   I seem to always be torn between optimizing now so that I don't write horrible 
   code for future me to debug, and just getting it down. It's starting to get really annoying. 
   It's like some form of writer's block; for programmers. There's just so much I want to do
   and so little time to do it, I'm stuck deciding what to do instead of just going for it.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   I think my best plan of attack is to just make it playable as soon 
   as possible. I don't think I should worry about optimizing now, even if it means 
   I'll have a harder job in the future. Hey, it'd be good experience to weed through really,
   really bad code.
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+
+
+</content>
    
    <category term="programming"/>
    
@@ -167,7 +383,9 @@
   I'm not really a fan of how my css theme is at the moment, so here comes a complete
   rework of all my CSS. Hopefully this won't take too long, but haven't had much time recently. 
   Here goes nothing!
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+</content>
    
    <category term="site"/>
    
@@ -179,14 +397,26 @@
    <updated>2012-08-22T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/08/22/html5valid</id>
    <content type="html">&lt;p&gt;
-  Just fixed up some of my bad habits in HTML5, and now, I'm HTML5 &lt;a href='http://html5.validator.nu/?doc=http%3A%2F%2Fwww.laivictor.com%2F' target='_blank'&gt;valid&lt;/a&gt;! (according to &lt;a href='http://html5.validator.nu/' target='_blank'&gt;validator.nu&lt;/a&gt;)
-&lt;/p&gt;&lt;p&gt;
-	&lt;div class='center'&gt;
-		&lt;img alt='HTML5 valid' class='scale-with-grid' src='/images/html5valid.png' /&gt;
-	&lt;/div&gt;
-&lt;/p&gt;&lt;p&gt;
-	Yay! :D
-&lt;/p&gt;</content>
+  Just fixed up some of my bad habits in HTML5, and now, I'm HTML5 &lt;a href=&quot;http://html5.validator.nu/?doc=http%3A%2F%2Fwww.laivictor.com%2F&quot; target=&quot;_blank&quot;&gt;valid&lt;/a&gt;! (according to &lt;a href=&quot;http://html5.validator.nu/&quot; target=&quot;_blank&quot;&gt;validator.nu&lt;/a&gt;)
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    &lt;div class=&quot;center&quot;&gt;
+        &lt;img class=&quot;scale-with-grid&quot; alt=&quot;HTML5 valid&quot; src=&quot;/images/html5valid.png&quot;&gt;
+    &lt;/div&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    Yay! :D
+&lt;/p&gt;
+
+</content>
    
    <category term="site"/>
    
@@ -199,7 +429,7 @@
    <link href="http://www.laivictor.com/archive/2012/08/20/tetrisbasics"/>
    <updated>2012-08-20T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/08/20/tetrisbasics</id>
-   <content type="html">&lt;div class='sixteen columns'&gt;
+   <content type="html">&lt;div class=&quot;sixteen columns&quot;&gt;
 &lt;p&gt;
   I don't know who said it, but it's true. If you want to get better, more often than not you'll have to do worse.
 &lt;/p&gt;
@@ -223,7 +453,7 @@
 &lt;/p&gt;
 
 &lt;p&gt;
-  It's not to say people were playing &lt;span class='italics'&gt;wrong&lt;/span&gt;. If we didn't have the advantage of the Internet, and all its
+  It's not to say people were playing &lt;span class=&quot;italics&quot;&gt;wrong&lt;/span&gt;. If we didn't have the advantage of the Internet, and all its
   information, what normal people would have been doing so far just seems right. But innovators don't think like that. They kept their eyes open. 
   They noticed the implications, the limits and weaknesses of each style, and kept questioning all their decisions. Certainly a revolutionary 
   and enviable way of thinking. 
@@ -235,55 +465,72 @@
   At low to mid-levels of Tetris, combo-ing is the most effective way to play, yet most players don't realize this because they only play
   their one-line style. For fun, that's fine. To get good? We'll need something else.
 &lt;/p&gt;
-&lt;/div&gt;&lt;div class='three columns'&gt;
-&lt;p&gt;
-one-line
+&lt;/div&gt;
 
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;_#########&lt;/span&gt;
-&lt;span class='go'&gt;_#########&lt;/span&gt;
-&lt;span class='go'&gt;_#########&lt;/span&gt;
-&lt;span class='go'&gt;_#########&lt;/span&gt;
+
+
+
+&lt;div class=&quot;eight columns&quot;&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;:: one-line&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;_#########&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;_#########&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;_#########&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;_#########&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;/p&gt;
-&lt;/div&gt;&lt;div class='three columns'&gt;
-&lt;p&gt;
-two-line
+&lt;/div&gt;
 
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;__######&lt;/span&gt;
-&lt;span class='go'&gt;__######&lt;/span&gt;
-&lt;span class='go'&gt;__######&lt;/span&gt;
-&lt;span class='go'&gt;__######&lt;/span&gt;
+
+
+
+&lt;div class=&quot;eight columns&quot;&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;:: two-line&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;__######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;__######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;__######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;__######&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;/p&gt;
-&lt;/div&gt;&lt;div class='three columns'&gt;
-&lt;p&gt;
-three-line
+&lt;/div&gt;
 
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;___######&lt;/span&gt;
-&lt;span class='go'&gt;___######&lt;/span&gt;
-&lt;span class='go'&gt;___######&lt;/span&gt;
-&lt;span class='go'&gt;___######&lt;/span&gt;
+
+
+
+&lt;div class=&quot;eight columns&quot;&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;:: three-line&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;___######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;___######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;___######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;___######&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;/p&gt;
-&lt;/div&gt;&lt;div class='three columns'&gt;
-&lt;p&gt;
-four-line
+&lt;/div&gt;
 
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;____######&lt;/span&gt;
-&lt;span class='go'&gt;____######&lt;/span&gt;
-&lt;span class='go'&gt;____######&lt;/span&gt;
-&lt;span class='go'&gt;____######&lt;/span&gt;
+
+
+
+&lt;div class=&quot;eight columns&quot;&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;:: four-line&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;____######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;____######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;____######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;____######&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;/p&gt;
-&lt;/div&gt;&lt;div class='sixteen columns'&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&quot;sixteen columns&quot;&gt;
 &lt;p&gt;
   These are examples of the styles. The standard Tetris grid is 10x20(+2), 10 horizontal. 
 &lt;/p&gt;
@@ -313,7 +560,7 @@ four-line
 
 &lt;p&gt;
   Consistency throughout multiple games is important, but also consistency throughout every single game. Play the beginning exactly like how you would play out the
-  ending. Calmly and quickly. If you play the entire match at &lt;span class='italics'&gt;your&lt;/span&gt; pace, you won't lose simply because you messed up once. Every portion of 
+  ending. Calmly and quickly. If you play the entire match at &lt;span class=&quot;italics&quot;&gt;your&lt;/span&gt; pace, you won't lose simply because you messed up once. Every portion of 
   your game will be dangerous. I have been down 2 or 3 KOs multiple times right at the start of the game, but I pace myself. I can came back and win,
   simply because I'm playing this strong, fast pace where I don't make mistakes, yet not sacrifice attacking potential. The pace I set for myself is supremely comfortable
   because it's the only pace I play at. I don't alternate at random between conservative and aggressive. I don't let my playstyle dictate my pace, as one-line players must do.
@@ -322,11 +569,13 @@ four-line
 
 &lt;p&gt;
   Eventually you can reach a point where building up your stack is almost done by reflex, and you will notice you have a lot more freedom and time to stare at your 
-  opponent's game and &lt;span class='italics'&gt;predict&lt;/span&gt; what he'll do, and then play your own side in anticipation. This is a very strong strategy, 
+  opponent's game and &lt;span class=&quot;italics&quot;&gt;predict&lt;/span&gt; what he'll do, and then play your own side in anticipation. This is a very strong strategy, 
   and combined with a strong foundation will improve your game dramatically.. And because you have such a strong core already, adding things like 
   prediction or ending strongly or beginning combos will have much more visible effects.
 &lt;/p&gt;
-&lt;/div&gt;</content>
+&lt;/div&gt;
+
+</content>
    
    <category term="tetris"/>
    
@@ -341,52 +590,124 @@ four-line
    <id>http://www.laivictor.com/archive/2012/08/19/tetrisfriends</id>
    <content type="html">&lt;p&gt;
   I recently got to level 95 in Tetris Friends Battle 2P and 6P, so here's some Tetris. ^^
-&lt;/p&gt;&lt;p&gt;
-  &lt;a href='http://en.wikipedia.org/wiki/Tetris'&gt;Tetris&lt;/a&gt; is somewhat of a famous game. Most people who've played it probably first
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  &lt;a href=&quot;http://en.wikipedia.org/wiki/Tetris&quot;&gt;Tetris&lt;/a&gt; is somewhat of a famous game. Most people who've played it probably first
   started on the GameBoy. Maybe something like this.
-&lt;/p&gt;&lt;div class='center'&gt;
-&lt;img alt='ye olde Tetris' src='http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png' /&gt;
-&lt;/div&gt;&lt;p&gt;
-  Nowadays, &lt;a href='http://www.tetrisfriends.com/' target='_blank'&gt;Tetris Friends&lt;/a&gt; is all the rage. 
+&lt;/p&gt;
+
+
+
+
+&lt;div class=&quot;center&quot;&gt;
+&lt;img alt=&quot;ye olde Tetris&quot; src=&quot;http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png&quot;&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;
+  Nowadays, &lt;a href=&quot;http://www.tetrisfriends.com/&quot; target=&quot;_blank&quot;&gt;Tetris Friends&lt;/a&gt; is all the rage. 
   And for good reason.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   They have a monopoly on the casual Tetris scene, being the exclusive licensee of Tetris in North America and Europe. They have a dedicated site and a much better app on Facebook. 
   Actually, it probably wouldn't be very wrong to say that Tetris Friends is the reason Tetris has experienced a recent resurgence.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   The Tetris Friends has several game modes in both Single Player and Multiplayer. Marathon, where you try to clear as many lines as possible,
   to Sprint 5P, where you play 3 others to finish 40 lines in the fastest time, to Battle 2P, where you battle another player and score KOs. 
   It's really addicting, smooth, and in general just very fun to play. 
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   My main experience is with the Multiplayer Battle 2P and 6P modes, so that's where I'll start.
-&lt;/p&gt;&lt;h4 class='subheader'&gt;My History&lt;/h4&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;h4 class=&quot;subheader&quot;&gt;My History&lt;/h4&gt;
+
+
+
+
+&lt;p&gt;
   In May, one of my high school friends saw me playing Tetris, and asked me for a match. I hadn't seen him in a while, so why not.
   In short, he crushed me. Long version? He REALLY crushed me. I actually thought I was decent. He was Level 100, literally a Tetris God.
   I vowed that day to get to a point where I could compete toe-to-toe with him. At least, somewhere toe-to-toe. It was a game, and it was a 
   fun challenge. My favourite kind.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   Over the last 3 months, I played Tetris Friends pretty ritually. After work, a couple hours. On the weekends, a couple hours. Nothing too crazy,
   but it got me really into the game, and to a point where I could starting seeing a vast improvement over my newbie self from May. It was very rewarding to see
   this effort and determination turning into something real. Yay!
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   Battle 2P is the most competitive game mode. You play another player from around the world,
   send as many lines as possible to the other player, and hope you KO them more than they do to you. To send lines, you'll have to perform combos. 
   Along the way, you'll also have to clear the lines that your opponent sends to you by clearing the bombs away. It's complicated,
   but play a few times and you'll get the gist of it. Here's a image I found off Google off a couple of newer players going at it.
-&lt;/p&gt;&lt;div class='center'&gt;
-&lt;img alt='Tetris Battle' class='scale-with-grid child-padding' src='http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg' /&gt;
-&lt;/div&gt;&lt;p&gt; 
+&lt;/p&gt;
+
+
+
+
+&lt;div class=&quot;center&quot;&gt;
+&lt;img class=&quot;scale-with-grid child-padding&quot; alt=&quot;Tetris Battle&quot; src=&quot;http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg&quot;&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt; 
   Starting off, I was pretty bad, but I knew how to improve, and I set about playing only for that purpose.
   Knowing how to improve was really important. There's a lot of players that are really amazing at some parts of the game, but say, play a bad style, and that hinders
   their improvement. There isn't really an exact skill ceiling for this game since you can play at blistering speeds. But having a bad strategy will harm your development
   in the long run. I was fortunate enough to be able to visualize this kind of improvement plan for myself, and able to watch it unfold.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   Most players in the game know of only one way to play. I will refer to this as the 1-line style. Since the game board is 10 spaces across, they'll fill up
   9 of those spaces as high as possible, leaving 1 space at the left or right side, while saving up the I-piece, then drop it once for 
   a Tetris, and again for a Back-to-Back Tetris. This is pretty good for low levels, and solid enough to help develop your building skills. 
   But definitely, it's the worst way to play.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   I will save the strategic discussions my next post. And later I'll try to pinpoint in a later exactly why Tetris Friends is so good. From a development point of view of course.
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+</content>
    
    <category term="tetris"/>
    
@@ -402,20 +723,37 @@ four-line
    <content type="html">&lt;p&gt;
   I recently gained possession of a really nice pair of cables. 1/4&quot; male to 1/4&quot; male. Nothing 
   special really, except the cable feels really nice.
-&lt;/p&gt;&lt;p&gt; 
-  I have a pair of &lt;a href='http://www.moon-audio.com/audio-cables/moon-audio-headphone-cables/moon-audio-blue-dragon-headphone-cable.html'&gt;Blue Dragon&lt;/a&gt; cables from Moon-Audio. Apparently it's surrounded by Kevlar
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt; 
+  I have a pair of &lt;a href=&quot;http://www.moon-audio.com/audio-cables/moon-audio-headphone-cables/moon-audio-blue-dragon-headphone-cable.html&quot;&gt;Blue Dragon&lt;/a&gt; cables from Moon-Audio. Apparently it's surrounded by Kevlar
   and Teflon tape. Yum. That link isn't the same pair, but it's close. It feels like a really high quality 
-  braided cable. All newer Razer peripherals come braided with a &lt;a href='http://cdn.theendearingdesigner.com/wp-content/uploads/2011/12/Razer-Naga-Gaming-Mouse-Review14.jpg'&gt;cloth like material&lt;/a&gt;. 
+  braided cable. All newer Razer peripherals come braided with a &lt;a href=&quot;http://cdn.theendearingdesigner.com/wp-content/uploads/2011/12/Razer-Naga-Gaming-Mouse-Review14.jpg&quot;&gt;cloth like material&lt;/a&gt;. 
   It feels nice, but the Blue Dragon cable is less flexible, with a really strong and plasticky feel. 
   It feels amazing.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   My new cable feels even better. It's completely rubberized, which isn't something I've seen a lot.
   The rubber is really textured, unlike the smooth plasticky rubber on a lot of cables. It's 
   made by Fender, and says Professional Noiseless Cable on the cable itself. I don't know why that message is required. 
   Isn't that expected of every cable? 
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   Oh well. It feels so nice I don't mind.
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+</content>
    
    <category term="music"/>
    
@@ -428,41 +766,78 @@ four-line
    <id>http://www.laivictor.com/archive/2012/08/03/dexpot</id>
    <content type="html">&lt;p&gt;
   When I first used Ubuntu, I fell in love with their 
-  &lt;a href='http://en.wikipedia.org/wiki/Workspace#Graphical_interfaces' target='_blank'&gt;workspaces&lt;/a&gt;.
+  &lt;a href=&quot;http://en.wikipedia.org/wiki/Workspace#Graphical_interfaces&quot; target=&quot;_blank&quot;&gt;workspaces&lt;/a&gt;.
   The ability to open and manage multiple desktops very useful when you only have one monitor. 
   The controls were intuitive, the transitions clean and delays non-existent. 
   It was a good day.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   I later found out that Apple's OS X has the Expose and Spaces for their own version of workspaces. 
   On my sister's MacBook, it is noticeably faster, more responsive and had more features, as expected on the very well 
   designed Mac OS. As a Windows user primarily however, I felt very left out.
-&lt;/p&gt;&lt;p&gt;
-  After a lot of searching, I found the solution. &lt;a href='http://dexpot.de/' target='_blank'&gt;Dexpot&lt;/a&gt;
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  After a lot of searching, I found the solution. &lt;a href=&quot;http://dexpot.de/&quot; target=&quot;_blank&quot;&gt;Dexpot&lt;/a&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   They've made a lot of improvements since I've first time I used it, and right now, it's evolved into something
   beautiful. They've added much better taskbar integration, a less buggy multi-monitor support, and much, much better 
   responsiveness overall. It's a great product with a great team behind it. I'm actually preferring Dexpot to 
   Ubuntu's workspaces.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   The hotkeys are just more intuitive for one-handed productivity. Hardly anyone keeps both their hands on the keyboard unless they're 
   working exclusively in the shell. Having one hand on the mouse is a lot more flexible. But Ubuntu requires a WIN+ARROW_KEY press 
   to swap the workspace. A pretty big waste of time to move one hand over. Dexpot's solution? ALT+NUM. Simple and fast.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   Why use workspaces at all? The main benefit is clutter. Spacing out several applications over four screens is great, 
   similar to the benefits of using multiple monitors. It means you can categorize your workspaces, one section for reference applications, 
   one side for working programs, and another area for anything else. I actually use it on my dual monitor setup, and still find it useful.
   Having workspaces means keeping the programs maximized. Minimizing and maximizing requires a few more clicks, while with any virtual desktop 
   application, pressing a customized key combination, say ALT+1 or 
   WIN+DOWN_ARROW, will swap all the active applications to a new set (or carry some over depending on your preferences. It's much more convenient.
-&lt;/p&gt;&lt;p&gt;
-  The difference in productivity is pretty astounding. Give it a go &lt;a href='http://dexpot.de/?id=download' target='_blank'&gt;here&lt;/a&gt;.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  The difference in productivity is pretty astounding. Give it a go &lt;a href=&quot;http://dexpot.de/?id=download&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   &lt;blockquote&gt;
-	Everyone agrees, humans have a finite number of key and mouse presses. As programmers, we want to maximize the productivity and number of presses
-	we have. When we constantly move our hand from the keyboard to the mouse, the time waste inbetween eventually becomes a big deal. That's why 
-	we use workspaces. &lt;cite&gt;me&lt;/cite&gt;
+    Everyone agrees, humans have a finite number of key and mouse presses. As programmers, we want to maximize the productivity and number of presses
+    we have. When we constantly move our hand from the keyboard to the mouse, the time waste inbetween eventually becomes a big deal. That's why 
+    we use workspaces. &lt;cite&gt;me&lt;/cite&gt;
   &lt;/blockquote&gt;
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+</content>
    
    <category term="tools"/>
    
@@ -476,9 +851,16 @@ four-line
    <content type="html">&lt;p&gt;
   It is ridiculous how hard it is to rework an entire website. Currently, the site is pretty bad
   for mobile, plus it doesn't act the way I want it when the window is resized. I plan to fix that.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   Meanwhile, expect a lot more breaking in the future.
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+</content>
    
    <category term="site"/>
    
@@ -490,24 +872,41 @@ four-line
    <updated>2012-07-26T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/07/26/dropbox</id>
    <content type="html">&lt;p&gt;
-  &lt;a href='http://www.dropbox.com' target='_blank'&gt;Dropbox&lt;/a&gt; is an amazing piece of technology.
+  &lt;a href=&quot;http://www.dropbox.com&quot; target=&quot;_blank&quot;&gt;Dropbox&lt;/a&gt; is an amazing piece of technology.
   The idea that I can go on any computer and access any files I've put on one folder. Or that
   I can sync up 4-5 different machines with any of my work so I can stop working on my desktop,
   pick up my laptop, go to the library and pick up right where I left off. That just blows my mind.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   I use some slightly confusing system with GitHub and Dropbox, so
   I had to learn some new stuff so that I could upload my website properly to GitHub Pages.
   The first time I tried it, I actually deleted my website files, along with the 
   GitHub repository. I had nothing to roll back to. It was all gone.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   But I was saved! Before this, I had always debated whether to put the website source files in my Dropbox folder, so I could
   work on it and sync my files across my computers, or if trying this system was a bit too complicated. Luckily for me, I left it on my Dropbox this time.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   When I accidentally deleted my website files, I panicked. But I found out that Dropbox saves a history of your deleted
   files, so that you can recover them if you're messed up accidentally, and actually use them as a mini-version
   tracker. Awesome for a free service. Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. 
   Kind of an amazing application.
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+</content>
    
    <category term="utils"/>
    
@@ -522,36 +921,73 @@ four-line
   When people ask for motivation, it's really hard to give them a straight answer. 
   I never had one myself. But recently, I've had some really bad problems that 
   left me scratching my head. I couldn't solve it, and there was nothing I could do.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   But then I came along a couple of really good motivational posts, which really,
   in essence, told me to do it because failure is not an option. Mediocrity is not an option. 
   You don't have the time to be mediocre, because every second spent fixing your mediocrity
   is a second not spent getting ahead. 
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   My motivation was always really,
-	&lt;blockquote&gt;
-	&quot;Do it because you can. Do it to prove to yourself that you can.
-	Do it 100% because when it's all over, you don't matter unless you're better than the rest.&quot;
-	&lt;/blockquote&gt;
-&lt;/p&gt;&lt;p&gt;
+    &lt;blockquote&gt;
+    &quot;Do it because you can. Do it to prove to yourself that you can.
+    Do it 100% because when it's all over, you don't matter unless you're better than the rest.&quot;
+    &lt;/blockquote&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   But as the time passed by, I began to realize that I grew into a habit of.. mediocrity. It might be because the education
   system doesn't really teach, and some life-changing realizations I've made since. 
   But I shouldn't be making excuses for my failures, because there isn't time in life to do this.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   I can't let one little thing, one little portion of my life, set me back so much of that time. Just as much as I can't do something
   50%, and then complain about it later on.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   Screw the motivation. Just do it.
-&lt;/p&gt;&lt;p&gt;
-  This is a pretty rose-tinted view of it, but a little bit applicable at least. &lt;a href='http://youtu.be/Sk56VxaeqEQ' target='_blank'&gt;The Best Motivation&lt;/a&gt;
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  This is a pretty rose-tinted view of it, but a little bit applicable at least. &lt;a href=&quot;http://youtu.be/Sk56VxaeqEQ&quot; target=&quot;_blank&quot;&gt;The Best Motivation&lt;/a&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   My favourite quote?
-	&lt;blockquote&gt;
-	  &quot;You need to ask yourself, 'what are you going to do today,' &lt;br /&gt;
-	  but more importantly, 'how are you going to do it.'&quot;
-		&lt;cite&gt;Jaret Grossman&lt;/cite&gt;
-	&lt;/blockquote&gt;
-&lt;/p&gt;</content>
+    &lt;blockquote&gt;
+      &quot;You need to ask yourself, 'what are you going to do today,' &lt;br /&gt;
+      but more importantly, 'how are you going to do it.'&quot;
+        &lt;cite&gt;Jaret Grossman&lt;/cite&gt;
+    &lt;/blockquote&gt;
+&lt;/p&gt;
+
+</content>
    
    <category term="misc"/>
    
@@ -566,33 +1002,65 @@ four-line
   Sometimes, the oddest of circumstances makes you remember things you did in 
   the past, that somehow you forgot over the years. And most of the time, it puts a 
   really big smile on your face when you think about how simple times were.
-&lt;/p&gt;&lt;p&gt; 
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt; 
   I was having an innocent argument with an artist about stuff that we've made in the 
   past. While my friend is clearly the better artist between the two of us, I remembered
   that I really wanted to be a (graphic) artist at some point in my life.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   Since Grade 5 or 6, I have always been the biggest Counter-Strike fan, until some 
   tragic event a couple of years ago that forced me to quit. I played a lot of Counter-Strike, 
   so I'm pretty sure my 662 HOURS PLAYED on Steam is inaccurate. In my spare time then, 
   I thought about Counter-Strike a lot. Fiddled with the backend graphics; new scripts, new models,
   new decals. 
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   My Grade 9 Art mark was an astounding 100, a surprise, even to myself. I think my 
   Art teacher had a lot of hope in me, and was probably a little heartbroken when me 
   and my friend (who also got 100), decided not to take Grade 10 Art.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   I had before stumbled upon a thriving online game modding community in 
-  &lt;a href='http://www.fpsbanana.com' target='_blank'&gt;FPSBanana&lt;/a&gt;. I was hooked.
-  I vividly remember seeing &lt;a href='http://gamebanana.com/members/164481' target='_blank'&gt;Teh Snake&lt;/a&gt;.
+  &lt;a href=&quot;http://www.fpsbanana.com&quot; target=&quot;_blank&quot;&gt;FPSBanana&lt;/a&gt;. I was hooked.
+  I vividly remember seeing &lt;a href=&quot;http://gamebanana.com/members/164481&quot; target=&quot;_blank&quot;&gt;Teh Snake&lt;/a&gt;.
   He made many brilliant and amazing mods, and quite possibly the reason I wanted to go into graphic design.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   Eventually, I tried my hand at modding, and upon realizing I hadn't the talent or the experience,
   I tried something much, much easier, and something that brings me a little bit of joy to see online now.
-&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
   I made a custom hand skin for Counter-Strike after collaborating a bit with the original owner, Nasaratsu.
-  Here's the &lt;a href='http://gamebanana.com/cscz/skins/48319' target='_blank'&gt;link&lt;/a&gt;, and while it's 
+  Here's the &lt;a href=&quot;http://gamebanana.com/cscz/skins/48319&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;, and while it's 
   really bad, I'm still extremely proud of it. Over 6,000 downloads, and 14,000 views. :')
-&lt;/p&gt;</content>
+&lt;/p&gt;
+
+</content>
    
    <category term="memories"/>
    
@@ -606,100 +1074,125 @@ four-line
    <updated>2012-04-14T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/04/14/failinterview</id>
    <content type="html">&lt;p&gt;
-I had an interview the other day that really shook me up.
+    I had an interview the other day that really shook me up.
 
-He asked me a question that really made me wonder how much I really knew about programming. 
-I really thought I knew Python (at least somewhat decently), but I understand now there's a difference between using a language a few times, and actually knowing the language in and out.
+    He asked me a question that really made me wonder how much I really knew about programming. 
+    I really thought I knew Python (at least somewhat decently), but I understand now there's a difference between using a language a few times, and actually knowing the language in and out.
 
-My answer was... &quot;crap.&quot; I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should've known it. 
+    My answer was... &quot;crap.&quot; I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should've known it. 
 
-The question was (I think): 
-
-
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='go'&gt;Remove the first letter from each word in the string: &lt;/span&gt;
-&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;asdf das f po&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
- 
-EDIT(2012-07-16): This was my March attempt.
+    The question was (I think): 
+&lt;/p&gt;
 
 
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='c'&gt;# removes spaces from string&lt;/span&gt;
 
-&lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
 
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-	&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='nb'&gt;ord&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;i&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;ord&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
-		&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;i&lt;/span&gt;
-	&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;pass&lt;/span&gt;
-		
-&lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
-
-&lt;span class='c'&gt;# removes first letter of each word from string &amp;amp; fix spacing&lt;/span&gt;
-
-&lt;span class='n'&gt;line&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;original&lt;/span&gt;
-&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-
-&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;
-
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
-
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;line&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
-	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;!=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-			&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;+=&lt;/span&gt; &lt;span class='n'&gt;letter&lt;/span&gt;
-		&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-			&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;
-			
-	&lt;span class='n'&gt;first&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;1&lt;/span&gt;
-	&lt;span class='n'&gt;newline&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;newword&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-	&lt;span class='n'&gt;newword&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-
-&lt;span class='n'&gt;output&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;[]&lt;/span&gt;
-
-&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-	&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class='ow'&gt;or&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='k'&gt;pass&lt;/span&gt;
-	&lt;span class='k'&gt;else&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-		&lt;span class='n'&gt;output&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;append&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-
-&lt;span class='n'&gt;newline&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;output&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-&lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='n'&gt;newline&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;Remove the first letter from each word in the string: &lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;asdf das f po&amp;quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 
 
-EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
-Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
-come up with. Honest.
+
+&lt;p&gt;
+    EDIT(2012-07-16): This was my March attempt.
+&lt;/p&gt;
 
 
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;removefirstletter&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt; &lt;span class='p'&gt;):&lt;/span&gt;
-	&lt;span class='n'&gt;tokens&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;sentence&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;split&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
-	&lt;span class='k'&gt;for&lt;/span&gt; &lt;span class='n'&gt;word&lt;/span&gt; &lt;span class='ow'&gt;in&lt;/span&gt; &lt;span class='nb'&gt;range&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;len&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)):&lt;/span&gt;
-		&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;list&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;word&lt;/span&gt;&lt;span class='p'&gt;])[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;:])&lt;/span&gt;
-	&lt;span class='k'&gt;return&lt;/span&gt; &lt;span class='s'&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='n'&gt;join&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;tokens&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# removes spaces from string&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;original&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+        
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# removes first letter of each word from string and fixes spacing&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;original&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;newword&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;first&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;first&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;newword&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;first&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+            
+    &lt;span class=&quot;n&quot;&gt;first&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newword&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;newword&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 
-Easily handles any issue with spacing when you remove the word with one letter.
-
-The output should be 
 
 
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='console'&gt;&lt;span class='gp'&gt;&amp;gt;&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;df as o&amp;quot;&lt;/span&gt;
+&lt;p&gt;
+    EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
+    Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
+    come up with. Honest.
+&lt;/p&gt;
+
+
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;removefirstletter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sentence&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;tokens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sentence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:])&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 
-I'd like to think I made progress, but this could be done a lot better still. 
-But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
-&lt;/p&gt;</content>
+
+
+&lt;p&gt;
+    Easily handles any issue with spacing when you remove the word with one letter.
+
+    The output should be 
+&lt;/p&gt;
+
+
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;df as o&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p&gt;
+    I'd like to think I made progress, but this could be done a lot better still. 
+    But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
+&lt;/p&gt;
+
+</content>
    
    <category term="fail"/>
    
@@ -713,20 +1206,28 @@ But if I got this far in 3 months, I'm can't think of the possibilities in a cou
    <updated>2012-02-25T00:00:00-05:00</updated>
    <id>http://www.laivictor.com/archive/2012/02/25/helloworld</id>
    <content type="html">&lt;p&gt;
-This is my first post. So, an obligatory
+    This is my first post. So, an obligatory
+&lt;/p&gt;
 
 
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='k'&gt;def&lt;/span&gt; &lt;span class='nf'&gt;main&lt;/span&gt;&lt;span class='p'&gt;():&lt;/span&gt;
-  &lt;span class='k'&gt;print&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;
 
-&lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='n'&gt;__name__&lt;/span&gt; &lt;span class='o'&gt;==&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;
-  &lt;span class='n'&gt;main&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 
-Thanks for visiting~
-&lt;/p&gt;</content>
+
+
+&lt;p&gt;
+    Thanks for visiting~
+&lt;/p&gt;
+
+</content>
    
    <category term="misc"/>
    

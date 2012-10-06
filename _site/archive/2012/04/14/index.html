@@ -23,7 +23,7 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
   <!-- Base CSS -->
@@ -91,8 +91,8 @@
 		</div>
 
 		<div class="sixteen columns">
-			<div id="nav" class="center">
-				<ul class="nav">
+			<div id="mainmenu" class="center">
+				<ul>
 					<li class="">
 						<a href="/">Home</a>
 					</li>
@@ -106,8 +106,12 @@
 						<a href="/about/">About</a>
 					</li>
 				</ul>
-			<br />
 			</div>
+
+			
+
+
+
 			<br />
 		</div>
 	</div>
@@ -122,100 +126,125 @@
 		<h3><a href="/archive/2012/04/14/index.html" title="Permanent link to this post">first coding interview</a> //20120414</h3>
 
 		<p>
-I had an interview the other day that really shook me up.
+    I had an interview the other day that really shook me up.
 
-He asked me a question that really made me wonder how much I really knew about programming. 
-I really thought I knew Python (at least somewhat decently), but I understand now there's a difference between using a language a few times, and actually knowing the language in and out.
+    He asked me a question that really made me wonder how much I really knew about programming. 
+    I really thought I knew Python (at least somewhat decently), but I understand now there's a difference between using a language a few times, and actually knowing the language in and out.
 
-My answer was... "crap." I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should've known it. 
+    My answer was... "crap." I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should've known it. 
 
-The question was (I think): 
-
-
-<div class='highlight'><pre><code class='console'><span class='go'>Remove the first letter from each word in the string: </span>
-<span class='gp'>&gt;</span> <span class='s2'>&quot;asdf das f po&quot;</span>
-</code></pre>
-</div>
-
- 
-EDIT(2012-07-16): This was my March attempt.
-
-
-<div class='highlight'><pre><code class='python'><span class='c'># removes spaces from string</span>
-
-<span class='n'>line</span> <span class='o'>=</span> <span class='n'>original</span>
-<span class='n'>newline</span> <span class='o'>=</span> <span class='s'>&quot;&quot;</span>
-
-<span class='k'>for</span> <span class='n'>i</span> <span class='ow'>in</span> <span class='n'>line</span><span class='p'>:</span>
-	<span class='k'>if</span> <span class='nb'>ord</span><span class='p'>(</span><span class='n'>i</span><span class='p'>)</span> <span class='o'>!=</span> <span class='p'>(</span><span class='nb'>ord</span><span class='p'>(</span><span class='s'>&#39; &#39;</span><span class='p'>)):</span>
-		<span class='n'>newline</span> <span class='o'>+=</span> <span class='n'>i</span>
-	<span class='k'>else</span><span class='p'>:</span>
-		<span class='k'>pass</span>
-		
-<span class='k'>print</span> <span class='n'>newline</span>
-
-<span class='c'># removes first letter of each word from string &amp; fix spacing</span>
-
-<span class='n'>line</span> <span class='o'>=</span> <span class='n'>original</span>
-<span class='n'>newword</span> <span class='o'>=</span> <span class='s'>&quot;&quot;</span>
-
-<span class='n'>first</span> <span class='o'>=</span> <span class='mi'>1</span>
-
-<span class='n'>newline</span> <span class='o'>=</span> <span class='p'>[]</span>
-
-<span class='k'>for</span> <span class='n'>word</span> <span class='ow'>in</span> <span class='n'>line</span><span class='o'>.</span><span class='n'>split</span><span class='p'>():</span>
-	<span class='k'>for</span> <span class='n'>letter</span> <span class='ow'>in</span> <span class='n'>word</span><span class='p'>:</span>
-		<span class='k'>if</span> <span class='n'>first</span> <span class='o'>!=</span> <span class='mi'>1</span><span class='p'>:</span>
-			<span class='n'>newword</span> <span class='o'>+=</span> <span class='n'>letter</span>
-		<span class='k'>else</span><span class='p'>:</span>
-			<span class='n'>first</span> <span class='o'>=</span> <span class='mi'>0</span>
-			
-	<span class='n'>first</span> <span class='o'>=</span> <span class='mi'>1</span>
-	<span class='n'>newline</span><span class='o'>.</span><span class='n'>append</span><span class='p'>(</span><span class='n'>newword</span><span class='p'>)</span>
-	<span class='n'>newword</span> <span class='o'>=</span> <span class='s'>&quot;&quot;</span>
-
-<span class='n'>output</span> <span class='o'>=</span> <span class='p'>[]</span>
-
-<span class='k'>for</span> <span class='n'>word</span> <span class='ow'>in</span> <span class='n'>newline</span><span class='p'>:</span>
-	<span class='k'>if</span> <span class='n'>word</span> <span class='o'>==</span> <span class='s'>&#39;&#39;</span> <span class='ow'>or</span> <span class='n'>word</span> <span class='o'>==</span> <span class='s'>&#39; &#39;</span><span class='p'>:</span>
-		<span class='k'>pass</span>
-	<span class='k'>else</span><span class='p'>:</span>
-		<span class='n'>output</span><span class='o'>.</span><span class='n'>append</span><span class='p'>(</span><span class='n'>word</span><span class='p'>)</span>
-
-<span class='n'>newline</span> <span class='o'>=</span> <span class='s'>&quot; &quot;</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='n'>output</span><span class='p'>)</span>
-<span class='k'>print</span> <span class='n'>newline</span>
-</code></pre>
-</div>
-
-
-
-EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
-Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
-come up with. Honest.
-
-
-<div class='highlight'><pre><code class='python'><span class='k'>def</span> <span class='nf'>removefirstletter</span><span class='p'>(</span> <span class='n'>sentence</span> <span class='p'>):</span>
-	<span class='n'>tokens</span> <span class='o'>=</span> <span class='n'>sentence</span><span class='o'>.</span><span class='n'>split</span><span class='p'>()</span>
-	<span class='k'>for</span> <span class='n'>word</span> <span class='ow'>in</span> <span class='nb'>range</span><span class='p'>(</span><span class='nb'>len</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>)):</span>
-		<span class='n'>tokens</span><span class='p'>[</span><span class='n'>word</span><span class='p'>]</span> <span class='o'>=</span> <span class='s'>&quot;&quot;</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='nb'>list</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>[</span><span class='n'>word</span><span class='p'>])[</span><span class='mi'>1</span><span class='p'>:])</span>
-	<span class='k'>return</span> <span class='s'>&quot; &quot;</span><span class='o'>.</span><span class='n'>join</span><span class='p'>(</span><span class='n'>tokens</span><span class='p'>)</span>
-</code></pre>
-</div>
-
-
-Easily handles any issue with spacing when you remove the word with one letter.
-
-The output should be 
-
-
-<div class='highlight'><pre><code class='console'><span class='gp'>&gt;</span> <span class='s2'>&quot;df as o&quot;</span>
-</code></pre>
-</div>
-
-
-I'd like to think I made progress, but this could be done a lot better still. 
-But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
+    The question was (I think): 
 </p>
+
+
+
+
+<div class="highlight"><pre><code class="console"><span class="go">Remove the first letter from each word in the string: </span>
+<span class="gp">&gt;</span> <span class="s2">&quot;asdf das f po&quot;</span>
+</code></pre>
+</div>
+
+
+
+
+<p>
+    EDIT(2012-07-16): This was my March attempt.
+</p>
+
+
+
+
+<div class="highlight"><pre><code class="python"><span class="c"># removes spaces from string</span>
+
+<span class="n">line</span> <span class="o">=</span> <span class="n">original</span>
+<span class="n">newline</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">ord</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">!=</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">)):</span>
+        <span class="n">newline</span> <span class="o">+=</span> <span class="n">i</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+        
+<span class="k">print</span> <span class="n">newline</span>
+
+<span class="c"># removes first letter of each word from string and fixes spacing</span>
+
+<span class="n">line</span> <span class="o">=</span> <span class="n">original</span>
+<span class="n">newword</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+
+<span class="n">first</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">newline</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">first</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">newword</span> <span class="o">+=</span> <span class="n">letter</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">first</span> <span class="o">=</span> <span class="mi">0</span>
+            
+    <span class="n">first</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">newline</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newword</span><span class="p">)</span>
+    <span class="n">newword</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">newline</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">word</span> <span class="o">==</span> <span class="s">&#39;&#39;</span> <span class="ow">or</span> <span class="n">word</span> <span class="o">==</span> <span class="s">&#39; &#39;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+
+<span class="n">newline</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">newline</span>
+</code></pre>
+</div>
+
+
+
+
+<p>
+    EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
+    Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
+    come up with. Honest.
+</p>
+
+
+
+
+<div class="highlight"><pre><code class="python"><span class="k">def</span> <span class="nf">removefirstletter</span><span class="p">(</span> <span class="n">sentence</span> <span class="p">):</span>
+    <span class="n">tokens</span> <span class="o">=</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)):</span>
+        <span class="n">tokens</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">tokens</span><span class="p">[</span><span class="n">word</span><span class="p">])[</span><span class="mi">1</span><span class="p">:])</span>
+    <span class="k">return</span> <span class="s">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
+</code></pre>
+</div>
+
+
+
+
+<p>
+    Easily handles any issue with spacing when you remove the word with one letter.
+
+    The output should be 
+</p>
+
+
+
+
+<div class="highlight"><pre><code class="console"><span class="gp">&gt;</span> <span class="s2">&quot;df as o&quot;</span>
+</code></pre>
+</div>
+
+
+
+
+<p>
+    I'd like to think I made progress, but this could be done a lot better still. 
+    But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
+</p>
+
+
 
 	</article>
 	</div>
@@ -240,7 +269,7 @@ But if I got this far in 3 months, I'm can't think of the possibilities in a cou
 	</div>
 </div>
 
-	<script type="text/javascript" src="/js/resizebar.js"></script>
+  <script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 $(document).ready(
 	function()
@@ -258,11 +287,11 @@ $(document).ready(
 								changeWidth(400);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -273,11 +302,11 @@ $(document).ready(
 								changeWidth(370);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -288,11 +317,11 @@ $(document).ready(
 								changeWidth(350);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -303,11 +332,11 @@ $(document).ready(
 								changeWidth(310);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -322,11 +351,11 @@ $(document).ready(
 				changeWidth(400);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}
@@ -337,11 +366,11 @@ $(document).ready(
 				changeWidth(370);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}
@@ -352,11 +381,11 @@ $(document).ready(
 				changeWidth(350);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}
@@ -367,11 +396,149 @@ $(document).ready(
 				changeWidth(310);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+	}
+);
+</script>
+  <script type="text/javascript" src="/js/resizebar.js"></script>
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$(window).resize(
+			function()
+			{
+				$(' #name ').each(
+					function() 
+					{
+						if ( $(window).width() >= 960 )
+						{
+							$(' #header h1 a ').css('font-size', '84px');
+							$(function() {
+								changeWidth(200);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+						else if ( $(window).width() >= 768 ) 
+						{
+							$(' #header h1 a ').css('font-size', '75px');
+							$(function() {
+								changeWidth(170);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+						else if ( $(window).width() >= 480 ) 
+						{
+							$(' #header h1 a ').css('font-size', '75px');
+							$(function() {
+								changeWidth(140);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+						else
+						{
+							$(' #header h1 a ').css('font-size', '53px');
+							$(function() {
+								changeWidth(120);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+					}
+				)
+			}
+		);
+		if ( $(window).width() >= 960 )
+		{
+			$(' #header h1 a ').css('font-size', '84px');
+			$(function() {
+				changeWidth(200);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+		else if ( $(window).width() >= 768 ) 
+		{
+			$(' #header h1 a ').css('font-size', '75px');
+			$(function() {
+				changeWidth(185);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+		else if ( $(window).width() >= 480 ) 
+		{
+			$(' #header h1 a ').css('font-size', '75px');
+			$(function() {
+				changeWidth(175);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+		else
+		{
+			$(' #header h1 a ').css('font-size', '53px');
+			$(function() {
+				changeWidth(155);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}

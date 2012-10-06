@@ -29,23 +29,63 @@
 		</div>
 
 		<div class="sixteen columns">
-			<div id="nav" class="center">
-				<ul class="nav">
-					<li {% if page.title == "home" %}class="currentpage"{% else %}class=""{% endif %}>
+			<div id="mainmenu" class="center">
+				<ul>
+					<li {% if page.main == "home" %}class="currentpage"{% else %}class=""{% endif %}>
 						<a href="/">Home</a>
 					</li>
-					<li {% if page.title == "blog" %}class="currentpage"{% else %}class=""{% endif %}>
+					<li {% if page.main == "blog" %}class="currentpage"{% else %}class=""{% endif %}>
 						<a href="/blog/">Blog</a>
 					</li>
-					<li {% if page.title == "project" %}class="currentpage"{% else %}class=""{% endif %}>
+					<li {% if page.main == "projects" %}class="currentpage"{% else %}class=""{% endif %}>
 						<a href="/projects/">Projects</a>
 					</li>
-					<li {% if page.title == "about" %}class="currentpage"{% else %}class=""{% endif %}>
+					<li {% if page.main == "about" %}class="currentpage"{% else %}class=""{% endif %}>
 						<a href="/about/">About</a>
+					</li>
+				</ul>
+			</div>
+
+			{% if page.main == "blog" %}
+			<div id="submenu" class="center">
+				<ul>
+					<li {% if page.sub == "all" %}class="currentpage"{% else %}class=""{% endif %}>
+						<a href="/blog/">Posts</a>
+					</li>
+					<li {% if page.sub == "archive" %}class="currentpage"{% else %}class=""{% endif %}>
+						<a href="/archive/">Archives</a>
 					</li>
 				</ul>
 			<br />
 			</div>
+			{% elsif page.main == "projects" %}
+			<div id="submenu" class="center">
+				<ul>
+					<li {% if page.sub == "listing" %}class="currentpage"{% else %}class=""{% endif %}>
+						<a href="/Projects/">Listing</a>
+					</li>
+					<li {% if page.sub == "github" %}class="currentpage"{% else %}class=""{% endif %}>
+						<a href="https://github.com/blisse">Github</a>
+					</li>
+				</ul>
+			<br />
+			</div>
+			{% elsif page.main == "about" %}
+			<div id="submenu" class="center">
+				<ul>
+					<li {% if page.sub == "me" %}class="currentpage"{% else %}class=""{% endif %}>
+						<a href="/about/">Me</a>
+					</li>
+					<li {% if page.sub == "resume" %}class="currentpage"{% else %}class=""{% endif %}>
+						<a href="/about/resume">Resume</a>
+					</li>
+				</ul>
+			<br />
+			</div>
+			{% else %}{% endif %}
+
+
+
 			<br />
 		</div>
 	</div>

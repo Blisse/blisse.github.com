@@ -7,14 +7,16 @@ tab: archive
 ---
 
 <p>
-I had an interview the other day that really shook me up.
+	I had an interview the other day that really shook me up.
 
-He asked me a question that really made me wonder how much I really knew about programming. 
-I really thought I knew Python (at least somewhat decently), but I understand now there's a difference between using a language a few times, and actually knowing the language in and out.
+	He asked me a question that really made me wonder how much I really knew about programming. 
+	I really thought I knew Python (at least somewhat decently), but I understand now there's a difference between using a language a few times, and actually knowing the language in and out.
 
-My answer was... "crap." I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should've known it. 
+	My answer was... "crap." I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should've known it. 
 
-The question was (I think): 
+	The question was (I think): 
+</p>
+
 
 {% highlight console %}
 
@@ -22,8 +24,11 @@ Remove the first letter from each word in the string:
 > "asdf das f po"
 
 {% endhighlight %}
- 
-EDIT(2012-07-16): This was my March attempt.
+
+<p>
+	EDIT(2012-07-16): This was my March attempt.
+</p>
+
 
 {% highlight python %}
 
@@ -40,7 +45,7 @@ for i in line:
 		
 print newline
 
-# removes first letter of each word from string & fix spacing
+# removes first letter of each word from string and fixes spacing
 
 line = original
 newword = ""
@@ -73,10 +78,11 @@ print newline
 
 {% endhighlight %}
 
-
-EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
-Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
-come up with. Honest.
+<p>
+	EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
+	Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
+	come up with. Honest.
+</p>
 
 {% highlight python %}
 
@@ -88,9 +94,11 @@ def removefirstletter( sentence ):
 
 {% endhighlight %}
 
-Easily handles any issue with spacing when you remove the word with one letter.
+<p>
+	Easily handles any issue with spacing when you remove the word with one letter.
 
-The output should be 
+	The output should be 
+</p>
 
 {% highlight console %}
 
@@ -98,6 +106,7 @@ The output should be
 
 {% endhighlight %}
 
-I'd like to think I made progress, but this could be done a lot better still. 
-But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
+<p>
+	I'd like to think I made progress, but this could be done a lot better still. 
+	But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
 </p>

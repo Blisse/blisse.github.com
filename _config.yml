@@ -1,5 +1,5 @@
 auto: true
-markdown: maruku
+markdown: rdiscount
 pygments: true
 permalink: /archive/:year/:month/:day/index.html
 url: http://www.laivictor.com

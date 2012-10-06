@@ -1,36 +1,42 @@
 ---
 layout: default
 title: blog
+main: blog
+sub: all
 ---
+
 
 <div class="container">
 
-	<div class="sixteen columns">
-		<p>
-			<blockquote>
-				Plug in to disconnect.
-			</blockquote>
-		</p>
-		<br />
-	</div>
-
 	{% for post in paginator.posts %}
 
-	<div class="sixteen columns">
-		<article class="post">
-			<h2><a href="{{ post.url }}" >{{ post.title }}</a> //{{ post.date | date:'%Y%m%d' }} </h2>
+	<article class="post">
+
+		<div class="sixteen columns">
+			<h2><a href="{{ post.url }}" >{{ post.title }}</a> <span class="no-wrap">// {{ post.date | date:'%Y%m%d' }}</span></h2>
+		</div>
+
+		{% if post.div == false %}<div>{% else %}<div class="sixteen columns">{% endif %}
 
 			{{ post.content }}
 			
 			<br />
 			<br />
 
-			<div class="clear"></div>
-		</article>
-	</div>
-	<hr>
+			<hr class="line">
+		
+		</div>
 
+	</article>
+
+		
 	{% endfor %}
+
+</div>
+
+	<hr class="line">
+
+<div class="container">
 
 	<div class="sixteen columns">
 		{% if paginator.previous_page %}

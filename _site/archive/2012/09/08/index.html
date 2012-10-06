@@ -23,7 +23,7 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
   <!-- Base CSS -->
@@ -91,8 +91,8 @@
 		</div>
 
 		<div class="sixteen columns">
-			<div id="nav" class="center">
-				<ul class="nav">
+			<div id="mainmenu" class="center">
+				<ul>
 					<li class="">
 						<a href="/">Home</a>
 					</li>
@@ -106,8 +106,12 @@
 						<a href="/about/">About</a>
 					</li>
 				</ul>
-			<br />
 			</div>
+
+			
+
+
+
 			<br />
 		</div>
 	</div>
@@ -123,18 +127,32 @@
 
 		<p>
   I'm working on my Poker game, and it's always the same story.
-</p><p>
+</p>
+
+
+
+
+<p>
   I always find that the hardest part is not the logic, but getting it playable. 
   I seem to always be torn between optimizing now so that I don't write horrible 
   code for future me to debug, and just getting it down. It's starting to get really annoying. 
   It's like some form of writer's block; for programmers. There's just so much I want to do
   and so little time to do it, I'm stuck deciding what to do instead of just going for it.
-</p><p>
+</p>
+
+
+
+
+<p>
   I think my best plan of attack is to just make it playable as soon 
   as possible. I don't think I should worry about optimizing now, even if it means 
   I'll have a harder job in the future. Hey, it'd be good experience to weed through really,
   really bad code.
 </p>
+
+
+
+
 
 	</article>
 	</div>
@@ -159,7 +177,7 @@
 	</div>
 </div>
 
-	<script type="text/javascript" src="/js/resizebar.js"></script>
+  <script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 $(document).ready(
 	function()
@@ -177,11 +195,11 @@ $(document).ready(
 								changeWidth(400);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -192,11 +210,11 @@ $(document).ready(
 								changeWidth(370);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -207,11 +225,11 @@ $(document).ready(
 								changeWidth(350);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -222,11 +240,11 @@ $(document).ready(
 								changeWidth(310);
 							 
 								function changeWidth(menuWidth){
-									var menuItems = $('#header #nav ul li').size();
+									var menuItems = $('#header #mainmenu ul li').size();
 									var itemWidth = (menuWidth/menuItems)-2;
 							 
-									$('#nav').css({'width': menuWidth +'px'});
-									$('#nav a').css({'width': itemWidth +'px'});
+									$('#mainmenu').css({'width': menuWidth +'px'});
+									$('#mainmenu a').css({'width': itemWidth +'px'});
 								}
 							});
 						}
@@ -241,11 +259,11 @@ $(document).ready(
 				changeWidth(400);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}
@@ -256,11 +274,11 @@ $(document).ready(
 				changeWidth(370);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}
@@ -271,11 +289,11 @@ $(document).ready(
 				changeWidth(350);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}
@@ -286,11 +304,149 @@ $(document).ready(
 				changeWidth(310);
 			 
 				function changeWidth(menuWidth){
-					var menuItems = $('#header #nav ul li').size();
+					var menuItems = $('#header #mainmenu ul li').size();
 					var itemWidth = (menuWidth/menuItems)-2;
 			 
-					$('#nav').css({'width': menuWidth +'px'});
-					$('#nav a').css({'width': itemWidth +'px'});
+					$('#mainmenu').css({'width': menuWidth +'px'});
+					$('#mainmenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+	}
+);
+</script>
+  <script type="text/javascript" src="/js/resizebar.js"></script>
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$(window).resize(
+			function()
+			{
+				$(' #name ').each(
+					function() 
+					{
+						if ( $(window).width() >= 960 )
+						{
+							$(' #header h1 a ').css('font-size', '84px');
+							$(function() {
+								changeWidth(200);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+						else if ( $(window).width() >= 768 ) 
+						{
+							$(' #header h1 a ').css('font-size', '75px');
+							$(function() {
+								changeWidth(170);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+						else if ( $(window).width() >= 480 ) 
+						{
+							$(' #header h1 a ').css('font-size', '75px');
+							$(function() {
+								changeWidth(140);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+						else
+						{
+							$(' #header h1 a ').css('font-size', '53px');
+							$(function() {
+								changeWidth(120);
+							 
+								function changeWidth(menuWidth){
+									var menuItems = $('#header #submenu ul li').size();
+									var itemWidth = (menuWidth/menuItems)-2;
+							 
+									$('#submenu').css({'width': menuWidth +'px'});
+									$('#submenu a').css({'width': itemWidth +'px'});
+								}
+							});
+						}
+					}
+				)
+			}
+		);
+		if ( $(window).width() >= 960 )
+		{
+			$(' #header h1 a ').css('font-size', '84px');
+			$(function() {
+				changeWidth(200);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+		else if ( $(window).width() >= 768 ) 
+		{
+			$(' #header h1 a ').css('font-size', '75px');
+			$(function() {
+				changeWidth(185);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+		else if ( $(window).width() >= 480 ) 
+		{
+			$(' #header h1 a ').css('font-size', '75px');
+			$(function() {
+				changeWidth(175);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
+				}
+			});
+		}
+		else
+		{
+			$(' #header h1 a ').css('font-size', '53px');
+			$(function() {
+				changeWidth(155);
+			 
+				function changeWidth(menuWidth){
+					var menuItems = $('#header #submenu ul li').size();
+					var itemWidth = (menuWidth/menuItems)-2;
+			 
+					$('#submenu').css({'width': menuWidth +'px'});
+					$('#submenu a').css({'width': itemWidth +'px'});
 				}
 			});
 		}

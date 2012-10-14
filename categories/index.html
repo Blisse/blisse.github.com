@@ -1,0 +1,40 @@
+---
+layout: default
+title: categories
+main: blog
+sub: categories
+---
+
+<div class="container">
+
+	<div class="sixteen columns">
+
+		<ul class="square">
+		{% for tag in site.tags %}
+			<li><h3>{{ tag[0] }}</h3></li>
+
+			<ul class="disc">
+			{% for page in site.posts %}
+
+				{% for cat in page.tags %}
+
+					{% if cat == tag[0] %}
+
+						<li><h4>{{ page.title }}</h4></li>
+
+					{% endif %}
+
+				{% endfor %}
+
+			{% endfor %}
+			</ul>
+
+			<br />
+
+
+		{% endfor %}
+		</ul>
+
+	</div>
+
+</div>

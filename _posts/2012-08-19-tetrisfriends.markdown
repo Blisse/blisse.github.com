@@ -2,7 +2,7 @@
 layout: post
 title: tetris friends
 date: 2012-08-19
-tags: [tetris, gaming]
+tags: [gaming]
 ---
 
 <p>

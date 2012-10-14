@@ -2,7 +2,7 @@
 layout: post
 title: tetris basics
 date: 2012-08-20
-tags: [tetris, gaming]
+tags: [gaming]
 div: false
 ---
 

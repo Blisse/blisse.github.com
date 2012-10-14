@@ -28,66 +28,66 @@ tags: [programming]
 
 import os, inspect, string
 write_file = "output.txt"
-exceptions = [write_file, inspect.stack()[0][1]]
+current_file = "sumofletters.py"
+exceptions = [write_file, current_file]
 
-def word_to_number(word,lower_range,upper_range): # enforce lower case input parameter
-  s = 0
-  for character in list(word):
-    if string.ascii_lowercase.find(character) != -1: s += string.ascii_lowercase.find(character)+1
-    else: pass
-  if s>=lower_range and s<upper_range:
-    return s
-  return -1
+output = open(write_file,'w').close()
+output = open(write_file,'a')
 
-def read_dictionary(dictionary_path):
-  return [ word for word in open(dictionary_path).readlines() if word_to_number(word,100,101) != -1]
+def word_score_list(word):
+  return [ (string.ascii_lowercase.find(character)+1) for character in list(word) ]
 
-def dict_walk(current_path):
-  s = []
+def word_score(word): # user-enforce lower case word parameter
+  return sum(word_score_list(word))
+
+def select_word(word, lower_range, upper_range):
+  if len(word) > 2:
+    if list(word)[-2] == "'" and list(word)[-1] == "s": return False
+  if word_score(word) >= lower_range and word_score(word) < upper_range: return True
+  return False
+
+def walk_words(dictionary_path, lower_range, upper_range):
+  for word in open(dictionary_path).readlines():
+    word = word.strip().lower() 
+    if select_word(word, lower_range, upper_range) == True:
+      output.write( str( ( word, word_score_list(word) ) ).strip("()") + "\n" )
+
+def walk_dictionaries(current_path, lower_range, upper_range):
   for root, directories, files in os.walk(current_path):
     for dictionary in files:
       if dictionary not in exceptions:
-        print "Checking", os.path.join(root,dictionary)
-        s += read_dictionary(os.path.abspath(os.path.join(root, dictionary)))
+        dictionary_path = os.path.abspath(os.path.join(root,dictionary))
+        print "Checking", dictionary_path
+        walk_words(dictionary_path, lower_range, upper_range)
   print "Done!"
-  return s
 
 def main():
-  output = open("output.txt",'w').close()
-  output = open("output.txt",'w')
-  output.write("".join(dict_walk(".")))
+  walk_dictionaries(".", 100, 101)
+  output.close()
 
 if __name__ == "__main__":
   main()
+
 {% endhighlight %}
 
 <p>
-  Not as pretty as it could be, but it works fairly well.
+  Not as pretty as it could be, but it works fairly well. <a href="http://pastebin.com/aySiHjUW">Here's the result from my pastebin.</a>
 </p>
 
 <p>
-  Ignoring non-ASCII characters, I get 6771 matches for words that total to 100. 
-  'Inefficient' appears on there, so I habve proven that first image is false via contradiction.
+  Ignoring non-ASCII characters, I get 5340 matches for words that total to 100. 
+  'Inefficient' appears on there, so I have proven that first image is false with this contradiction.
 </p>
 
 <p>
   Other interesting words that appear for word_score == 100 are:
     <ul class="square">
-      <li>maximize
-      <li>analysis
-      <li>attitude //good thing it does
       <li>excellent
-      <li>culture
-      <li>hospital
-      <li>printer
-      <li>personal
-      <li>telephone
-      <li>lightning
-      <li>unavailable
-      <li>chimpanzee
-      <li>theists
-      <li>egotistical
-      <li>hiroshima
+      <li>snobbery
+      <li>socialism
+      <li>reengineer
+      <li>practicing
+      <li>defeminized
     </ul>
     
 </p>

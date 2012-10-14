@@ -3,7 +3,6 @@ layout: post
 title: site (re)construction
 date: 2012-07-29
 tags: [site]
-tab: archive
 ---
 
 <p>

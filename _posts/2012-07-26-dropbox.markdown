@@ -1,9 +1,8 @@
 ---
 layout: post
-title: dropbox
+title: Dropbox
 date: 2012-07-26
-tags: [utils]
-tab: archive
+tags: [utilities]
 ---
 
 <p>

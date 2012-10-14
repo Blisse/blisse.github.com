@@ -2,7 +2,7 @@
 layout: post
 title: gaming professionalism
 date: 2012-09-15
-tags: [esports, starcraft, counterstrike]
+tags: [gaming]
 ---
 
 <p>

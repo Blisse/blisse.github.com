@@ -4,12 +4,93 @@
  <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-10-11T01:44:14-04:00</updated>
+ <updated>2012-10-18T20:29:22-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
  </author>
 
+ 
+ <entry>
+   <title type="html">chairs at E5</title>
+   <link href="http://www.laivictor.com/archive/2012/10/14/chairsate5"/>
+   <updated>2012-10-14T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/10/14/chairsate5</id>
+   <content type="html">&lt;p&gt;
+    My university is decently funded, so across the campus, there are a lot of lab stations where groups of students can sit by a computer and work on
+    their assignments, or for those without a computer at home, just surf the web freely. Everyday, the most popular lab areas are always nearly full. Students can bring their laptops and set up a little study area around one of the lab computers, or take a small island of tables and work in a group. It's pretty convenient.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    I sometimes visit these labs when I'm tired of working at home as well. I enjoy the environment and atmosphere. Kind of a quiet respect for everyone around, with a couple exceptions every once in a while. They bolt the machines and monitors to the tables, so I can't hook the monitor to my laptop for the dual screens, but it's not that much of a loss with workspaces or &lt;a href=&quot;http://localhost:4000/archive/2012/08/03/index.html&quot;&gt;Dexpot&lt;/a&gt;. However, something always bugs me when I'm at the labs, and today I realized what it was.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    &lt;h3&gt;The chairs are too low (or the tables are too high).&lt;/h3&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    I didn't think I would notice, but I did. Ergonomics have always been a concern of mine. I thought I had RSI a couple years ago when I had constant aching around my wrists. It turned out my wrists were just digging into the edge of the table too much. But it made me much more aware of how my desk layout worked, and how my body was positioned throughout the day.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    Thus, I can safely say that the tables and chairs in the common lab room is hideous for your posture. According to all these sources, and more, your arm should form an angle greater than 90 degrees at the elbow, and the upper arm should be horizontal to the floor. Your legs should be flat on the floor, and your back to the chair. And many more tips. Guess how many of these sites the desks at Engineering 5 would pass?
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    &lt;ul class=&quot;disc&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;http://orthoinfo.aaos.org/topic.cfm?topic=a00261&quot;&gt;American Academy or Orthopaedic Surgeons&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.osha.gov/SLTC/etools/computerworkstations/positions.html&quot;&gt;United States Department of Labor - Occupational Safety &amp;amp; Health Administration&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://web.princeton.edu/sites/ehs/healthsafetyguide/a4.htm&quot;&gt;Princeton&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.thehumansolution.com/ergonomic-office-desk-chair-keyboard-height-calculator.html&quot;&gt;The Human Solution&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://uk.answers.yahoo.com/question/index?qid=20071002014548AA9ccJm&quot;&gt;Yahoo Answers&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://askville.amazon.com/proper-height-chair-keyboard-monitor-incredible-stiff-neck-working-online/AnswerViewer.do?requestId=3132080&quot;&gt;Askville at Amazon&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.backdesigns.com/Desk-work-surface-height-W144.aspx&quot;&gt;Back Designs&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.healthycomputing.com/office/setup/chair/&quot;&gt;Healthy Computing&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.leeds.ac.uk/lsmp/healthadvice/computerergonomics/computergonomics.htm&quot;&gt;Leeds&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://ergonomics.about.com/od/office/ss/computer_setup_6.htm&quot;&gt;About.com&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.ergonomics.com.au/pages/400_useful_info/420_how_to_sit.htm&quot;&gt;Ergonomics.com.au&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.ergonomics-info.com/posture-at-a-computer.html&quot;&gt;Ergonomics-info&lt;/a&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.codinghorror.com/blog/2007/08/computer-workstation-ergonomics.html&quot;&gt;&lt;span class=&quot;italics&quot;&gt;Jeff Atwood!&lt;/span&gt;&lt;/a&gt;
+    &lt;/ul&gt;
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    None. Absolutely.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+     That's it then. I guess I will have to see what rooms actually condone proper ergonomics. Along the way I might creep some people out, but alas some things must be sacrificed in the sake of the science. *cough* I'll keep you posted after I scour UWaterloo. 
+&lt;/p&gt;
+
+</content>
+   
+   <category term="rant"/>
+   
+   <category term="school"/>
+   
+ </entry>
  
  <entry>
    <title type="html">word scores</title>
@@ -136,7 +217,7 @@
    <updated>2012-10-05T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/10/05/rdiscount</id>
    <content type="html">&lt;p&gt;
-    So apparently [Maruku](http://maruku.rubyforge.org/changelog.html#stable) hasn't been developed in over 3 years. The last GEM release was [version 0.6.0 in 2009-05-04](http://maruku.rubyforge.org/changelog.html#stable). 
+    So apparently &lt;a href=&quot;http://maruku.rubyforge.org/changelog.html#stable&quot;&gt;Maruku&lt;/a&gt; hasn't been developed in over 3 years. The last GEM release was &lt;a href=&quot;http://maruku.rubyforge.org/changelog.html#stable&quot;&gt;version 0.6.0 in 2009-05-04&lt;/a&gt;. 
 &lt;/p&gt;
 
 
@@ -1165,7 +1246,7 @@
 
 
 &lt;p&gt;
-    EDIT(2012-07-16): How did I not realize how bad this was back when I wrote it? 
+    EDIT //20120716): How did I not realize how bad this was back when I wrote it? 
     Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
     come up with. Honest.
 &lt;/p&gt;

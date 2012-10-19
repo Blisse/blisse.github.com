@@ -56,7 +56,6 @@
 						<a href="/archive/">Archives</a>
 					</li>
 				</ul>
-			<br />
 			</div>
 			{% elsif page.main == "projects" %}
 			<div id="submenu" class="center">
@@ -67,8 +66,10 @@
 					<li {% if page.sub == "github" %}class="currentpage"{% else %}class=""{% endif %}>
 						<a href="https://github.com/blisse">Github</a>
 					</li>
+					<li {% if page.sub == "github" %}class="currentpage"{% else %}class=""{% endif %}>
+						<a href="https://github.com/blisse">Github</a>
+					</li>
 				</ul>
-			<br />
 			</div>
 			{% elsif page.main == "about" %}
 			<div id="submenu" class="center">
@@ -80,12 +81,8 @@
 						<a href="/about/resume">Resume</a>
 					</li>
 				</ul>
-			<br />
 			</div>
 			{% else %}{% endif %}
-
-
-
 			<br />
 		</div>
 	</div>

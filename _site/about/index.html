@@ -24,6 +24,8 @@
 <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
 
   <!-- Base CSS -->
@@ -60,7 +62,7 @@
 
 <body>
 
-    <div id="header">
+<div id="header">
 	<div class="container">
 		<br />
 		<div class="eight columns">
@@ -118,19 +120,15 @@
 						<a href="/about/resume">Resume</a>
 					</li>
 				</ul>
-			<br />
 			</div>
 			
-
-
-
 			<br />
 		</div>
 	</div>
 </div>
-    
+
 <br />
-	<div class="container">
+<div class="container">
 	<article class="post">
 
 <div class="container">
@@ -211,7 +209,7 @@
 
 
 
-    <div class="container">
+<div class="container">
 	<div class="sixteen columns">
 	<footer id="footer">
 		<div class="center">
@@ -229,285 +227,154 @@
 	</div>
 </div>
 
-  <script type="text/javascript" src="/js/resizebar.js"></script>
+<script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
-//940px
-//748px
-//420px
-//300px
+function changeMainWidth(menuWidth){
+	var menuItems = $('#header #mainmenu ul li').size();
+	var itemWidth = (menuWidth/menuItems);
+
+	$('#mainmenu').css({'width': menuWidth +'px'});
+	$('#mainmenu a').css({'width': itemWidth +'px'});
+}
 $(document).ready(
 	function()
 	{
 		$(window).resize(
 			function()
 			{
-				$(' #name ').each(
-					function() 
-					{
-						if ( $(window).width() >= 960 )
-						{
-							$(' #header h1 a ').css('font-size', '84px');
-							$(function() {
-								changeWidth(400);
-							 
-								function changeWidth(menuWidth){
-									var menuItems = $('#header #mainmenu ul li').size();
-									var itemWidth = (menuWidth/menuItems);
-							 
-									$('#mainmenu').css({'width': menuWidth +'px'});
-									$('#mainmenu a').css({'width': itemWidth +'px'});
-								}
-							});
-						}
-						else if ( $(window).width() >= 768 ) 
-						{
-							$(' #header h1 a ').css('font-size', '75px');
-							$(function() {
-								changeWidth(360);
-							 
-								function changeWidth(menuWidth){
-									var menuItems = $('#header #mainmenu ul li').size();
-									var itemWidth = (menuWidth/menuItems);
-							 
-									$('#mainmenu').css({'width': menuWidth +'px'});
-									$('#mainmenu a').css({'width': itemWidth +'px'});
-								}
-							});
-						}
-						else if ( $(window).width() >= 480 ) 
-						{
-							$(' #header h1 a ').css('font-size', '75px');
-							$(function() {
-								changeWidth(320);
-							 
-								function changeWidth(menuWidth){
-									var menuItems = $('#header #mainmenu ul li').size();
-									var itemWidth = (menuWidth/menuItems);
-							 
-									$('#mainmenu').css({'width': menuWidth +'px'});
-									$('#mainmenu a').css({'width': itemWidth +'px'});
-								}
-							});
-						}
-						else
-						{
-							$(' #header h1 a ').css('font-size', '53px');
-							$(function() {
-								changeWidth(300);
-							 
-								function changeWidth(menuWidth){
-									var menuItems = $('#header #mainmenu ul li').size();
-									var itemWidth = (menuWidth/menuItems);
-							 
-									$('#mainmenu').css({'width': menuWidth +'px'});
-									$('#mainmenu a').css({'width': itemWidth +'px'});
-								}
-							});
-						}
-					}
-				)
+				if ( $(window).width() >= 960 )
+				{
+					$(' #header h1 a ').css('font-size', '84px');
+					$(function() {
+						changeMainWidth(400);			
+					});
+				}
+				else if ( $(window).width() >= 768 ) 
+				{
+					$(' #header h1 a ').css('font-size', '75px');
+					$(function() {
+						changeMainWidth(360);
+					});
+				}
+				else if ( $(window).width() >= 480 ) 
+				{
+					$(' #header h1 a ').css('font-size', '75px');
+					$(function() {
+						changeMainWidth(320);
+					});
+				}
+				else
+				{
+					$(' #header h1 a ').css('font-size', '53px');
+					$(function() {
+						changeMainWidth(300);
+					});
+				}
 			}
 		);
 		if ( $(window).width() >= 960 )
 		{
 			$(' #header h1 a ').css('font-size', '84px');
 			$(function() {
-				changeWidth(400);
-			 
-				function changeWidth(menuWidth){
-					var menuItems = $('#header #mainmenu ul li').size();
-					var itemWidth = (menuWidth/menuItems);
-			 
-					$('#mainmenu').css({'width': menuWidth +'px'});
-					$('#mainmenu a').css({'width': itemWidth +'px'});
-				}
+				changeMainWidth(400);
 			});
 		}
 		else if ( $(window).width() >= 768 ) 
 		{
 			$(' #header h1 a ').css('font-size', '75px');
 			$(function() {
-				changeWidth(360);
-			 
-				function changeWidth(menuWidth){
-					var menuItems = $('#header #mainmenu ul li').size();
-					var itemWidth = (menuWidth/menuItems);
-			 
-					$('#mainmenu').css({'width': menuWidth +'px'});
-					$('#mainmenu a').css({'width': itemWidth +'px'});
-				}
+				changeMainWidth(360);
 			});
 		}
 		else if ( $(window).width() >= 480 ) 
 		{
 			$(' #header h1 a ').css('font-size', '75px');
 			$(function() {
-				changeWidth(320);
-			 
-				function changeWidth(menuWidth){
-					var menuItems = $('#header #mainmenu ul li').size();
-					var itemWidth = (menuWidth/menuItems);
-			 
-					$('#mainmenu').css({'width': menuWidth +'px'});
-					$('#mainmenu a').css({'width': itemWidth +'px'});
-				}
+				changeMainWidth(320);
 			});
 		}
 		else
 		{
 			$(' #header h1 a ').css('font-size', '53px');
 			$(function() {
-				changeWidth(300);
-			 
-				function changeWidth(menuWidth){
-					var menuItems = $('#header #mainmenu ul li').size();
-					var itemWidth = (menuWidth/menuItems);
-			 
-					$('#mainmenu').css({'width': menuWidth +'px'});
-					$('#mainmenu a').css({'width': itemWidth +'px'});
-				}
+				changeMainWidth(300);
 			});
 		}
 	}
 );
 </script>
-  <script type="text/javascript" src="/js/resizebar.js"></script>
+
 <script type="text/javascript">
-//940px
-//748px
-//420px
-//300px
+var len_submenu = document.getElementById('submenu').getElementsByTagName('li').length;
+function changeSubWidth(menuWidth){
+	var menuItems = $('#header #submenu ul li').size();
+	var itemWidth = (menuWidth/menuItems);
+
+	$('#submenu').css({'width': menuWidth +'px'});
+	$('#submenu a').css({'width': itemWidth +'px'});
+}
 $(document).ready(
 	function()
 	{
 		$(window).resize(
 			function()
 			{
-				$(' #name ').each(
-					function() 
-					{
-						if ( $(window).width() >= 960 )
-						{
-							$(' #header h1 a ').css('font-size', '84px');
-							$(function() {
-								changeWidth(200);
-							 
-								function changeWidth(menuWidth){
-									var menuItems = $('#header #submenu ul li').size();
-									var itemWidth = (menuWidth/menuItems);
-							 
-									$('#submenu').css({'width': menuWidth +'px'});
-									$('#submenu a').css({'width': itemWidth +'px'});
-								}
-							});
-						}
-						else if ( $(window).width() >= 768 ) 
-						{
-							$(' #header h1 a ').css('font-size', '75px');
-							$(function() {
-								changeWidth(180);
-							 
-								function changeWidth(menuWidth){
-									var menuItems = $('#header #submenu ul li').size();
-									var itemWidth = (menuWidth/menuItems);
-							 
-									$('#submenu').css({'width': menuWidth +'px'});
-									$('#submenu a').css({'width': itemWidth +'px'});
-								}
-							});
-						}
-						else if ( $(window).width() >= 480 ) 
-						{
-							$(' #header h1 a ').css('font-size', '75px');
-							$(function() {
-								changeWidth(160);
-							 
-								function changeWidth(menuWidth){
-									var menuItems = $('#header #submenu ul li').size();
-									var itemWidth = (menuWidth/menuItems);
-							 
-									$('#submenu').css({'width': menuWidth +'px'});
-									$('#submenu a').css({'width': itemWidth +'px'});
-								}
-							});
-						}
-						else
-						{
-							$(' #header h1 a ').css('font-size', '53px');
-							$(function() {
-								changeWidth(150);
-							 
-								function changeWidth(menuWidth){
-									var menuItems = $('#header #submenu ul li').size();
-									var itemWidth = (menuWidth/menuItems);
-							 
-									$('#submenu').css({'width': menuWidth +'px'});
-									$('#submenu a').css({'width': itemWidth +'px'});
-								}
-							});
-						}
-					}
-				)
+				if ( $(window).width() >= 960 )
+				{
+					$(' #header h1 a ').css('font-size', '84px');
+					$(function() {
+						changeSubWidth(len_submenu * 100);
+					});
+				}
+				else if ( $(window).width() >= 768 ) 
+				{
+					$(' #header h1 a ').css('font-size', '75px');
+					$(function() {
+						changeSubWidth(len_submenu * 90);
+					});
+				}
+				else if ( $(window).width() >= 480 ) 
+				{
+					$(' #header h1 a ').css('font-size', '75px');
+					$(function() {
+						changeSubWidth(len_submenu * 80);
+					});
+				}
+				else
+				{
+					$(' #header h1 a ').css('font-size', '53px');
+					$(function() {
+						changeSubWidth(len_submenu * 75);
+					});
+				}
 			}
 		);
 		if ( $(window).width() >= 960 )
 		{
 			$(' #header h1 a ').css('font-size', '84px');
 			$(function() {
-				changeWidth(200);
-			 
-				function changeWidth(menuWidth){
-					var menuItems = $('#header #submenu ul li').size();
-					var itemWidth = (menuWidth/menuItems);
-			 
-					$('#submenu').css({'width': menuWidth +'px'});
-					$('#submenu a').css({'width': itemWidth +'px'});
-				}
+				changeSubWidth(len_submenu * 100);
 			});
 		}
 		else if ( $(window).width() >= 768 ) 
 		{
 			$(' #header h1 a ').css('font-size', '75px');
 			$(function() {
-				changeWidth(180);
-			 
-				function changeWidth(menuWidth){
-					var menuItems = $('#header #submenu ul li').size();
-					var itemWidth = (menuWidth/menuItems);
-			 
-					$('#submenu').css({'width': menuWidth +'px'});
-					$('#submenu a').css({'width': itemWidth +'px'});
-				}
+				changeSubWidth(len_submenu * 90);
 			});
 		}
 		else if ( $(window).width() >= 480 ) 
 		{
 			$(' #header h1 a ').css('font-size', '75px');
 			$(function() {
-				changeWidth(160);
-			 
-				function changeWidth(menuWidth){
-					var menuItems = $('#header #submenu ul li').size();
-					var itemWidth = (menuWidth/menuItems);
-			 
-					$('#submenu').css({'width': menuWidth +'px'});
-					$('#submenu a').css({'width': itemWidth +'px'});
-				}
+				changeSubWidth(len_submenu * 80);
 			});
 		}
 		else
 		{
 			$(' #header h1 a ').css('font-size', '53px');
 			$(function() {
-				changeWidth(150);
-			 
-				function changeWidth(menuWidth){
-					var menuItems = $('#header #submenu ul li').size();
-					var itemWidth = (menuWidth/menuItems);
-			 
-					$('#submenu').css({'width': menuWidth +'px'});
-					$('#submenu a').css({'width': itemWidth +'px'});
-				}
+				changeSubWidth(len_submenu * 75);
 			});
 		}
 	}

@@ -1,0 +1,53 @@
+---
+layout: post
+title: chairs at E5
+date: 2012-10-14
+tags: [rant, school]
+---
+
+<p>
+	My university is decently funded, so across the campus, there are a lot of lab stations where groups of students can sit by a computer and work on
+	their assignments, or for those without a computer at home, just surf the web freely. Everyday, the most popular lab areas are always nearly full. Students can bring their laptops and set up a little study area around one of the lab computers, or take a small island of tables and work in a group. It's pretty convenient.
+</p>
+
+<p>
+	I sometimes visit these labs when I'm tired of working at home as well. I enjoy the environment and atmosphere. Kind of a quiet respect for everyone around, with a couple exceptions every once in a while. They bolt the machines and monitors to the tables, so I can't hook the monitor to my laptop for the dual screens, but it's not that much of a loss with workspaces or <a href="http://localhost:4000/archive/2012/08/03/index.html">Dexpot</a>. However, something always bugs me when I'm at the labs, and today I realized what it was.
+</p>
+
+<p>
+	<h3>The chairs are too low (or the tables are too high).</h3>
+</p>
+
+<p>
+	I didn't think I would notice, but I did. Ergonomics have always been a concern of mine. I thought I had RSI a couple years ago when I had constant aching around my wrists. It turned out my wrists were just digging into the edge of the table too much. But it made me much more aware of how my desk layout worked, and how my body was positioned throughout the day.
+</p>
+
+<p>
+	Thus, I can safely say that the tables and chairs in the common lab room is hideous for your posture. According to all these sources, and more, your arm should form an angle greater than 90 degrees at the elbow, and the upper arm should be horizontal to the floor. Your legs should be flat on the floor, and your back to the chair. And many more tips. Guess how many of these sites the desks at Engineering 5 would pass?
+</p>
+
+<p>
+	<ul class="disc">
+		<li><a href="http://orthoinfo.aaos.org/topic.cfm?topic=a00261">American Academy or Orthopaedic Surgeons</a>
+		<li><a href="http://www.osha.gov/SLTC/etools/computerworkstations/positions.html">United States Department of Labor - Occupational Safety &amp; Health Administration</a>
+		<li><a href="http://web.princeton.edu/sites/ehs/healthsafetyguide/a4.htm">Princeton</a>
+		<li><a href="http://www.thehumansolution.com/ergonomic-office-desk-chair-keyboard-height-calculator.html">The Human Solution</a>
+		<li><a href="http://uk.answers.yahoo.com/question/index?qid=20071002014548AA9ccJm">Yahoo Answers</a>
+		<li><a href="http://askville.amazon.com/proper-height-chair-keyboard-monitor-incredible-stiff-neck-working-online/AnswerViewer.do?requestId=3132080">Askville at Amazon</a>
+		<li><a href="http://www.backdesigns.com/Desk-work-surface-height-W144.aspx">Back Designs</a>
+		<li><a href="http://www.healthycomputing.com/office/setup/chair/">Healthy Computing</a>
+		<li><a href="http://www.leeds.ac.uk/lsmp/healthadvice/computerergonomics/computergonomics.htm">Leeds</a>
+		<li><a href="http://ergonomics.about.com/od/office/ss/computer_setup_6.htm">About.com</a>
+		<li><a href="http://www.ergonomics.com.au/pages/400_useful_info/420_how_to_sit.htm">Ergonomics.com.au</a>
+		<li><a href="http://www.ergonomics-info.com/posture-at-a-computer.html">Ergonomics-info</a>
+		<li><a href="http://www.codinghorror.com/blog/2007/08/computer-workstation-ergonomics.html"><span class="italics">Jeff Atwood!</span></a>
+	</ul>
+</p>
+
+<p>
+	None. Absolutely.
+</p>
+
+<p>
+	 That's it then. I guess I will have to see what rooms actually condone proper ergonomics. Along the way I might creep some people out, but alas some things must be sacrificed in the sake of the science. *cough* I'll keep you posted after I scour UWaterloo. 
+</p>

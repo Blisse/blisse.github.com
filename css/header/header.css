@@ -49,32 +49,32 @@
 /* Navigation Item */
 	#header #mainmenu ul li a,
 	#header #mainmenu ul li a:visited {
-	  background-color:#1F1F1F;
-	  color:#fff;
+	  background-color: #1F1F1F;
+	  color :#fff;
 	  border-bottom: none;
 	}
 
 /* Hover over Navigation Item */
 	#header #mainmenu ul li a:hover, 
 	#header #mainmenu ul li a.selected {
-	  background-color:#3D3D3D;
-	  color:#fff;
+	  background-color: #3D3D3D;
+	  color: #fff;
 	  border-bottom: none;
 	}
 
 /* Current Page */
 	#header #mainmenu ul li.currentpage a,
 	#header #mainmenu ul li.currentpage a:visited{
-	  background-color:#474747;
-	  color:#fff;
+	  background-color: #267E55;
+	  color: #fff;
 	  border-bottom: none;
 	}
 
 /* Hover over Current Page */
 	#header #mainmenu ul li.currentpage a:hover, 
 	#header #mainmenu ul li.currentpage a.selected {
-		background-color:#3D3D3D;
-		color:#fff;
+		background-color: #267E55;
+		color: #1F1F1F;
 	  	border-bottom: none;
 	}	
 

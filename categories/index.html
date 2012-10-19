@@ -7,11 +7,11 @@ sub: categories
 
 <div class="container">
 
-	<div class="sixteen columns">
+	{% for tag in site.tags %}
 
-		<ul class="square">
-		{% for tag in site.tags %}
-			<li><h3>{{ tag[0] }}</h3></li>
+	<div class="eight columns">
+
+			<h3>{{ tag[0] }}</h3>
 
 			<ul class="disc">
 			{% for page in site.posts %}
@@ -20,7 +20,7 @@ sub: categories
 
 					{% if cat == tag[0] %}
 
-						<li><h4>{{ page.title }}</h4></li>
+						<li><h5><a href="page.url">{{ page.title }}</a></h5></li>
 
 					{% endif %}
 
@@ -31,10 +31,8 @@ sub: categories
 
 			<br />
 
-
-		{% endfor %}
-		</ul>
-
 	</div>
+
+	{% endfor %}
 
 </div>

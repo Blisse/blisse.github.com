@@ -6,7 +6,7 @@ tags: [site]
 ---
 
 <p>
-	So apparently [Maruku](http://maruku.rubyforge.org/changelog.html#stable) hasn't been developed in over 3 years. The last GEM release was [version 0.6.0 in 2009-05-04](http://maruku.rubyforge.org/changelog.html#stable). 
+	So apparently <a href="http://maruku.rubyforge.org/changelog.html#stable">Maruku</a> hasn't been developed in over 3 years. The last GEM release was <a href="http://maruku.rubyforge.org/changelog.html#stable">version 0.6.0 in 2009-05-04</a>. 
 </p>
 
 <p>

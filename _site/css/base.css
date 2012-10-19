@@ -39,18 +39,6 @@
 		border-collapse: collapse;
 	}
 
-
-/* #Text Highlighting
-================================================== */
-
-::selection {
-	background: #cccccc; /* Safari */
-	}
-::-moz-selection {
-	background: #cccccc; /* Firefox */
-}
-
-
 /* #Body
 ================================================== */
 	body {		
@@ -93,7 +81,7 @@
 	}	
 
 	a, a:visited {
-		color: #43C789;
+		color: #216E4A;
 		border-bottom: 1px solid transparent;
 		text-decoration: none;
 	}	
@@ -104,8 +92,8 @@
 	}
 
 	p {	
-		margin: 0 0 14px 0;
-		font-family: 'DroidSansRegular', Arial, sans-serif;	
+		margin: 0 0 16px 0;
+		font-family: 'PT Sans', 'DroidSansRegular', Arial, sans-serif;	
 		font-weight: 400;
 		font-style: normal;
 		font-size: 14px;
@@ -115,7 +103,7 @@
 	p img { margin: 0; }
 
 	p a, p a:visited { 
-		color: #43C789;
+		color: #216E4A;
 		text-decoration: none;
 	}
 
@@ -130,7 +118,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		font-size: 125%/1.6;
-		font-family: 'DroidSansRegular', 'Nexa Light', Arial, sans-serif;
+		font-family: 'Open Sans', 'DroidSansRegular', 'Nexa Light', Arial, sans-serif;
 		color: #333;
 		text-align: left;
 		font-weight: normal;
@@ -141,16 +129,16 @@
 		text-align: center;
 	}
 
-	h1 { font-size: 36px; line-height: 50px; margin-bottom: 16px; }
-	h2 { font-size: 28px; line-height: 40px; margin-bottom: 10px; }
-	h3 { font-size: 24px; line-height: 32px; margin-bottom: 8px; }
-	h4 { font-size: 18px; line-height: 24px; margin-bottom: 4px; }
-	h5 { font-size: 16px; line-height: 20px; margin-bottom: 2px; }
-	h6 { font-size: 14px; line-height: 16px; margin-bottom: 1px; }
+	h1 { font-size: 48px; line-height: 50px; margin-bottom: 16px; }
+	h2 { font-size: 40px; line-height: 46px; margin-bottom: 10px; }
+	h3 { font-size: 32px; line-height: 36px; margin-bottom: 8px; }
+	h4 { font-size: 28px; line-height: 32px; margin-bottom: 4px; }
+	h5 { font-size: 24px; line-height: 28px; margin-bottom: 2px; }
+	h6 { font-size: 18px; line-height: 24px; margin-bottom: 1px; }
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 	h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited { 
-		color: #43C789;
+		color: #216E4A;
 		text-decoration: none;
 		-webkit-transition: all 100ms ease-in-out 0s;
 		-moz-transition: all 100ms ease-in-out 0s;

@@ -7,7 +7,7 @@
     lai.victor &raquo; about
   </title>
   
-  <!-- Site Author -->
+    <!-- Site Author -->
   <meta name="author" content="Victor Lai" />
   
   <!-- Site Description -->
@@ -20,13 +20,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Blog CSS -->
+  <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
+
+  <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-  <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
 
   <!-- Base CSS -->
   <link rel="stylesheet" href="/css/base.css">
@@ -41,10 +44,14 @@
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
+  <!-- Personal - Tiles -->
+  <link rel="stylesheet" href="/css/tiles/tiles.css">
+
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
-<script type="text/javascript">
+  <!-- Google Analytics -->
+  <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-33478809-1']);
@@ -56,7 +63,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+</script>  
 
 </head>
 
@@ -126,21 +133,18 @@
 		</div>
 	</div>
 </div>
-
 <br />
 <div class="container">
 	<article class="post">
 
 <div class="container">
-	<div class="four columns center">
-		<br />
-		<br />
-		<br />
-		<a href="/about/resume" class="tile-button">Resume</a>
-		<br />
-		<br />	
+	<div class="sixteen columns center">
+
 	</div>
-	<div class="twelve columns">
+	<div class="three columns center">
+		<a href="/about/resume">resume</a>
+	</div>
+	<div class="thirteen columns">
 		<p>
 		  Hi! I'm Victor Lai, a Software Engineering Undergraduate studying at the University of Waterloo. I am passionate about simple, functional
 		  and aesthetically pleasing design. I love solving problems, programming or otherwise, and fiddling or learning about all sorts of 
@@ -226,7 +230,6 @@
 	</footer>
 	</div>
 </div>
-
 <script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 function changeMainWidth(menuWidth){
@@ -303,15 +306,18 @@ $(document).ready(
 	}
 );
 </script>
-
+<script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
-var len_submenu = document.getElementById('submenu').getElementsByTagName('li').length;
 function changeSubWidth(menuWidth){
 	var menuItems = $('#header #submenu ul li').size();
 	var itemWidth = (menuWidth/menuItems);
 
 	$('#submenu').css({'width': menuWidth +'px'});
 	$('#submenu a').css({'width': itemWidth +'px'});
+}
+var len_submenu;
+if(document.getElementById('submenu')){
+	len_submenu = document.getElementById('submenu').getElementsByTagName('li').length;
 }
 $(document).ready(
 	function()
@@ -380,7 +386,6 @@ $(document).ready(
 	}
 );
 </script>
-
 </body>
 
 </html>

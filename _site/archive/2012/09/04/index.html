@@ -7,7 +7,7 @@
     lai.victor &raquo; theme fixing
   </title>
   
-  <!-- Site Author -->
+    <!-- Site Author -->
   <meta name="author" content="Victor Lai" />
   
   <!-- Site Description -->
@@ -20,13 +20,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Blog CSS -->
+  <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
+
+  <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-  <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
 
   <!-- Base CSS -->
   <link rel="stylesheet" href="/css/base.css">
@@ -41,10 +44,14 @@
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
+  <!-- Personal - Tiles -->
+  <link rel="stylesheet" href="/css/tiles/tiles.css">
+
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
-<script type="text/javascript">
+  <!-- Google Analytics -->
+  <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-33478809-1']);
@@ -56,7 +63,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+</script>  
 
 </head>
 
@@ -98,7 +105,7 @@
 					<li class="">
 						<a href="/">Home</a>
 					</li>
-					<li class="">
+					<li class="currentpage">
 						<a href="/blog/">Blog</a>
 					</li>
 					<li class="">
@@ -111,18 +118,28 @@
 			</div>
 
 			
+			<div id="submenu" class="center">
+				<ul>
+					<li class="">
+						<a href="/blog/">Posts</a>
+					</li>
+					<li class="currentpage">
+						<a href="/archive/">Archives</a>
+					</li>
+				</ul>
+			</div>
+			
 			<br />
 		</div>
 	</div>
 </div>
-
 <br />
 <div class="container">
 
 	<div class="sixteen columns">
 	<article class="post">
 
-		<h3><a href="/archive/2012/09/04/index.html" title="Permanent link to this post">theme fixing</a> //20120904</h3>
+		<h3 class="sourcesans"><a href="/archive/2012/09/04/index.html" title="Permanent link to this post">theme fixing</a> //20120904</h3>
 
 		<p>
   I'm not really a fan of how my css theme is at the moment, so here comes a complete
@@ -154,7 +171,6 @@
 	</footer>
 	</div>
 </div>
-
 <script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
 function changeMainWidth(menuWidth){
@@ -231,15 +247,18 @@ $(document).ready(
 	}
 );
 </script>
-
+<script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
-var len_submenu = document.getElementById('submenu').getElementsByTagName('li').length;
 function changeSubWidth(menuWidth){
 	var menuItems = $('#header #submenu ul li').size();
 	var itemWidth = (menuWidth/menuItems);
 
 	$('#submenu').css({'width': menuWidth +'px'});
 	$('#submenu a').css({'width': itemWidth +'px'});
+}
+var len_submenu;
+if(document.getElementById('submenu')){
+	len_submenu = document.getElementById('submenu').getElementsByTagName('li').length;
 }
 $(document).ready(
 	function()
@@ -308,7 +327,6 @@ $(document).ready(
 	}
 );
 </script>
-
 </body>
 
 </html>

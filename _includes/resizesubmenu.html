@@ -1,12 +1,15 @@
-
+<script type="text/javascript" src="/js/resizebar.js"></script>
 <script type="text/javascript">
-var len_submenu = document.getElementById('submenu').getElementsByTagName('li').length;
 function changeSubWidth(menuWidth){
 	var menuItems = $('#header #submenu ul li').size();
 	var itemWidth = (menuWidth/menuItems);
 
 	$('#submenu').css({'width': menuWidth +'px'});
 	$('#submenu a').css({'width': itemWidth +'px'});
+}
+var len_submenu;
+if(document.getElementById('submenu')){
+	len_submenu = document.getElementById('submenu').getElementsByTagName('li').length;
 }
 $(document).ready(
 	function()

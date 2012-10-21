@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8" />
-  <title>
-    {{ site.title }}{%if page.title%} &raquo; {{ page.title }}{%endif%}
-  </title>
-  
   <!-- Site Author -->
   <meta name="author" content="{{ site.author }}" />
   
@@ -20,8 +11,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Blog CSS -->
-  {% include googlefonts.html %}
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
+
+  <!-- Blog Fonts -->
+  {% include googlefonts.html %}
 
   <!-- Base CSS -->
   <link rel="stylesheet" href="/css/base.css">
@@ -36,33 +29,11 @@
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
+  <!-- Personal - Tiles -->
+  <link rel="stylesheet" href="/css/tiles/tiles.css">
+
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
-{% include googleanalytics.html %}
-
-
-<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="/js/jquery.dimensions.js" type="text/javascript" charset="utf-8"></script>
-<script src="/js/jquery.content-player.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="/js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
-<script src="/js/site.js" type="text/javascript" charset="utf-8"></script>
-
-  {% include resizemainmenu.html %}
-  {% include resizesubmenu.html %} 
-
-</head>
-
-<body>
-
-    {% include header.html %}
-    
-<br />
-	{{ content }}
-
-    {% include footer.html %}
-
-</body>
-
-</html>
+  <!-- Google Analytics -->
+  {% include googleanalytics.html %}

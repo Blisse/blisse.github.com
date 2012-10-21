@@ -9,9 +9,9 @@ sub: categories
 
 	{% for tag in site.tags %}
 
-	<div class="eight columns">
+	<div class="four columns">
 
-			<h3>{{ tag[0] }}</h3>
+			<h4>{{ tag[0] }}</h4>
 
 			<ul class="disc">
 			{% for page in site.posts %}
@@ -20,7 +20,9 @@ sub: categories
 
 					{% if cat == tag[0] %}
 
-						<li><h5><a href="page.url">{{ page.title }}</a></h5></li>
+						<li><a href="{{ page.url }}">{{ page.title }}</a> 
+							<span class="no-wrap">// {{ page.date | date:'%Y%m%d' }}</span>
+						</li>
 
 					{% endif %}
 

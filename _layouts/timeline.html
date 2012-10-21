@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    {{ site.title }}{%if page.title%} &raquo; {{ page.title }}{%endif%}
+  </title>
+  
+  {% include standardhead.html %}
+
+<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+{% include header.html %}
+<br />
+{{ content }}
+
+{% include footer.html %}
+{% include resizemainmenu.html %}
+{% include resizesubmenu.html %}
+</body>
+
+</html>

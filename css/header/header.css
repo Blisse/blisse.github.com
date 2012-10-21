@@ -57,7 +57,7 @@
 /* Hover over Navigation Item */
 	#header #mainmenu ul li a:hover, 
 	#header #mainmenu ul li a.selected {
-	  background-color: #3D3D3D;
+	  background-color: #1C5E3F;
 	  color: #fff;
 	  border-bottom: none;
 	}

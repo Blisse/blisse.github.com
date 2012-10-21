@@ -1,5 +1,7 @@
 ---
 layout: default
+main: blog
+sub: archive
 ---
 
 <div class="container">
@@ -7,7 +9,7 @@ layout: default
 	<div class="sixteen columns">
 	<article class="post">
 
-		<h3><a href="{{ page.url }}" title="Permanent link to this post">{{ page.title }}</a> //{{ page.date | date:'%Y%m%d' }}</h3>
+		<h3 class="sourcesans"><a href="{{ page.url }}" title="Permanent link to this post">{{ page.title }}</a> //{{ page.date | date:'%Y%m%d' }}</h3>
 
 		{{ content }}
 

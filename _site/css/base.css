@@ -93,7 +93,7 @@
 
 	p {	
 		margin: 0 0 16px 0;
-		font-family: 'PT Sans', 'DroidSansRegular', Arial, sans-serif;	
+		font-family: 'Open Sans', 'PT Sans', 'DroidSansRegular', Arial, sans-serif;	
 		font-weight: 400;
 		font-style: normal;
 		font-size: 14px;
@@ -201,35 +201,54 @@
 		margin: 1px; 
 	}
 
-	.Tangerine {
-		font-family: 'Tangerine', 'DroidSansRegular', Arial;
-		font-size: 24px;
-	}	
-	
-	.CodeBold {
-		font-family: 'Code Bold', 'DroidSansRegular', Arial;
-		font-size: 24px;
-	}	
+/* #Font-specific
+================================================== */
 
-	.BlackJack {
-		font-family: 'Black Jack', 'DroidSansRegular', Arial;
-		font-size: 24px;
-	}	
-
-	.Casper {
-		font-family: 'Casper', 'DroidSansRegular', Arial;
+	.size-18 {
+		font-size: 18px;
+	}
+	.size-24 {
 		font-size: 24px;
 	}
-
-	.Sreda {
-		font-family: 'Sreda', 'DroidSansRegular', Arial;
-		font-size: 24px;
+	.size-32 {
+		font-size: 32px;
+	}
+	.size-36 {
+		font-size: 36px;
 	}
 
-	.Windsong {
-		font-family: 'Windsong', 'DroidSansRegular', Arial;
-		font-size: 24px;
+	.tangerine {
+	    font-family: 'Tangerine';
 	}
+
+	.casper {
+	    font-family: 'Casper';
+	}
+
+	.codebold {
+	    font-family: 'Code Bold';
+	}
+
+	.droidserif {
+	    font-family: 'Droid Serif';
+	}
+
+	.codebold {
+	    font-family: 'Code Bold';
+	}
+
+	.sourcesans {
+	    font-family: 'Source Sans Pro';
+	}
+
+	.sourcecode {
+	    font-family: 'Source Code Pro';
+	}
+
+	.inconsolata {
+	    font-family: 'Inconsolata';
+	}
+
 
 /* #Posts
 ================================================== */
@@ -281,14 +300,14 @@
 
 	dl { 
 		margin: 0 0 18px;
-		font-size: 16px;
+		font-size: 18px;
 	}
 	dd { 
 		margin-left: 18px;
-		font-size: 16px;
+		font-size: 18px;
 	}
 	dt{
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	ul.pager { font-size: 1.1em; text-align: center; }
@@ -334,7 +353,7 @@
 	  border: 1px solid #D8D8DC;
 	  color: #000;
 	  display: block;
-	  font-family: "Menlo","Monaco","Consolas", Lucida Console, Consolas, Monaco, monospace !important;
+	  font-family: "sourcecode", "Menlo","Monaco","Consolas", Lucida Console, Consolas, Monaco, monospace !important;
 	  font-size: 12px;
 	  line-height: 1.6em;
 	  margin: 0 0 1.5em;

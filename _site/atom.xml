@@ -4,12 +4,61 @@
  <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-10-20T05:19:22-04:00</updated>
+ <updated>2012-10-25T06:28:16-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
  </author>
 
+ 
+ <entry>
+   <title type="html">cs241 merl file linker</title>
+   <link href="http://www.laivictor.com/archive/2012/10/25/merllinker"/>
+   <updated>2012-10-25T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/10/25/merllinker</id>
+   <content type="html">&lt;p&gt;
+    For an assignment in my CS241 class, we had to link two merl files by hand. I didn't want to do this, but I didn't understand the concept of linking MERL files well enough to write a linker for them. I finished the assignment by hand, but after doing that, I could finally complete the linker I wrote for it.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    I really enjoyed writing it, because it looked very fun to implement an algorithm with classes like this, even though my solution is very primitive.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    I found out a slightly annoying limitation of Python. Apparently I can't directly read the merl file, so my program's input is a .xdd file. The entire program can be run by the following commands.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;xxd -c 4 file1.merl &amp;gt; file1.xxd&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;xxd -c 4 file2.merl &amp;gt; file2.xxd&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;python linker.py file1.xxd file2.xxd output.txt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    You can find the code on my GitHub file, &lt;a href=&quot;https://github.com/Blisse/MERL-Linker&quot;&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+</content>
+   
+   <category term="school"/>
+   
+ </entry>
  
  <entry>
    <title type="html">chairs at E5</title>

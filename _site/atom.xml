@@ -4,7 +4,7 @@
  <title>lai.victor</title>
  <link href="" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-10-25T06:28:16-04:00</updated>
+ <updated>2012-10-30T01:32:41-04:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -17,7 +17,7 @@
    <updated>2012-10-25T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/10/25/merllinker</id>
    <content type="html">&lt;p&gt;
-    For an assignment in my CS241 class, we had to link two merl files by hand. I didn't want to do this, but I didn't understand the concept of linking MERL files well enough to write a linker for them. I finished the assignment by hand, but after doing that, I could finally complete the linker I wrote for it.
+    For an assignment in my CS241 class, we had to link two &lt;a href=&quot;https://www.student.cs.uwaterloo.ca/~cs241/merl/merl.html&quot;&gt;MERL files&lt;/a&gt; by hand. I didn't want to do this, but I didn't understand the concept of linking MERL files well enough to write a linker for them. I finished the assignment by hand, but after doing that, I could finally complete the linker I wrote for it.
 &lt;/p&gt;
 
 
@@ -31,7 +31,7 @@
 
 
 &lt;p&gt;
-    I found out a slightly annoying limitation of Python. Apparently I can't directly read the merl file, so my program's input is a .xdd file. The entire program can be run by the following commands.
+    I found out a slightly annoying limitation of Python that I must look for a solution around in the future. Apparently I can't directly read the MERL file, so my program's input is a .xdd file. The entire program can only be run following conversion of the MERL file to a binary string.
 &lt;/p&gt;
 
 
@@ -51,7 +51,7 @@
 
 
 &lt;p&gt;
-    You can find the code on my GitHub file, &lt;a href=&quot;https://github.com/Blisse/MERL-Linker&quot;&gt;here&lt;/a&gt;.
+    I put the code up &lt;a href=&quot;https://github.com/Blisse/MERL-Linker&quot;&gt;here&lt;/a&gt;.
 &lt;/p&gt;
 
 </content>
@@ -81,9 +81,11 @@
 
 
 &lt;p&gt;
-    &lt;h4&gt;
-        Either the chairs are too low, or the tables are too high.
-    &lt;/h4&gt;
+    &lt;div class=&quot;subheader&quot;&gt;
+        &lt;h4&gt;
+            Either the chairs are too low, or the tables are too high.
+        &lt;/h4&gt;
+    &lt;/div&gt;
 &lt;/p&gt;
 
 
@@ -125,9 +127,13 @@
 
 
 &lt;p&gt;
-    &lt;h5&gt;
-        Guess how many sites recommend sitting in the position the E5 lab promotes? None.
-    &lt;/h5&gt;
+    &lt;div class=&quot;subheader&quot;&gt;
+        &lt;h5&gt;
+            Guess how many sites recommend sitting in the position the E5 lab promotes? 
+            &lt;br/&gt;
+            &lt;br/&gt;None.
+        &lt;/h5&gt;
+    &lt;/div&gt;
 &lt;/p&gt;
 
 
@@ -1297,7 +1303,7 @@
 
 
 &lt;p&gt;
-    EDIT //20120716): How did I not realize how bad this was back when I wrote it? 
+    EDIT [20120716]: How did I not realize how bad this was back when I wrote it? 
     Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
     come up with. Honest.
 &lt;/p&gt;

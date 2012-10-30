@@ -6,7 +6,7 @@ tags: [school]
 ---
 
 <p>
-	For an assignment in my CS241 class, we had to link two merl files by hand. I didn't want to do this, but I didn't understand the concept of linking MERL files well enough to write a linker for them. I finished the assignment by hand, but after doing that, I could finally complete the linker I wrote for it.
+	For an assignment in my CS241 class, we had to link two <a href="https://www.student.cs.uwaterloo.ca/~cs241/merl/merl.html">MERL files</a> by hand. I didn't want to do this, but I didn't understand the concept of linking MERL files well enough to write a linker for them. I finished the assignment by hand, but after doing that, I could finally complete the linker I wrote for it.
 </p>
 
 <p>
@@ -14,7 +14,7 @@ tags: [school]
 </p>
 
 <p>
-	I found out a slightly annoying limitation of Python. Apparently I can't directly read the merl file, so my program's input is a .xdd file. The entire program can be run by the following commands.
+	I found out a slightly annoying limitation of Python that I must look for a solution around in the future. Apparently I can't directly read the MERL file, so my program's input is a .xdd file. The entire program can only be run following conversion of the MERL file to a binary string.
 </p>
 
 <p>
@@ -26,5 +26,5 @@ python linker.py file1.xxd file2.xxd output.txt
 </p>
 
 <p>
-	You can find the code on my GitHub file, <a href="https://github.com/Blisse/MERL-Linker">here</a>.
+	I put the code up <a href="https://github.com/Blisse/MERL-Linker">here</a>.
 </p>

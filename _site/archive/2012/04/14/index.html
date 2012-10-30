@@ -220,7 +220,7 @@
 
 
 <p>
-    EDIT //20120716): How did I not realize how bad this was back when I wrote it? 
+    EDIT [20120716]: How did I not realize how bad this was back when I wrote it? 
     Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
     come up with. Honest.
 </p>
@@ -293,68 +293,73 @@ function changeMainWidth(menuWidth){
 	$('#mainmenu').css({'width': menuWidth +'px'});
 	$('#mainmenu a').css({'width': itemWidth +'px'});
 }
+
+var len_mainmenu;
+if(document.getElementById('mainmenu')){
+	len_mainmenu = document.getElementById('mainmenu').getElementsByTagName('li').length;
+}
 $(document).ready(
 	function()
 	{
 		$(window).resize(
 			function()
 			{
-				if ( $(window).width() >= 960 )
+				if ( $(window).width() - 30 >= 960 )
 				{
 					$(' #header h1 a ').css('font-size', '84px');
 					$(function() {
-						changeMainWidth(400);			
+						changeMainWidth(len_mainmenu * 105);
 					});
 				}
-				else if ( $(window).width() >= 768 ) 
+				else if ( $(window).width() - 30 >= 768 ) 
 				{
 					$(' #header h1 a ').css('font-size', '75px');
 					$(function() {
-						changeMainWidth(360);
+						changeMainWidth(len_mainmenu * 105);
 					});
 				}
-				else if ( $(window).width() >= 480 ) 
+				else if ( $(window).width() - 30 >= 480 ) 
 				{
 					$(' #header h1 a ').css('font-size', '75px');
 					$(function() {
-						changeMainWidth(320);
+						changeMainWidth(len_mainmenu * 105);
 					});
 				}
 				else
 				{
 					$(' #header h1 a ').css('font-size', '53px');
 					$(function() {
-						changeMainWidth(300);
+						changeMainWidth(len_mainmenu * 75);
 					});
 				}
 			}
 		);
-		if ( $(window).width() >= 960 )
+		if ( $(window).width() - 30 >= 960 )
 		{
 			$(' #header h1 a ').css('font-size', '84px');
 			$(function() {
-				changeMainWidth(400);
+				changeMainWidth(len_mainmenu * 105);
 			});
 		}
-		else if ( $(window).width() >= 768 ) 
+		else if ( $(window).width() - 30 >= 768 ) 
 		{
 			$(' #header h1 a ').css('font-size', '75px');
 			$(function() {
-				changeMainWidth(360);
+				changeMainWidth(len_mainmenu * 105);
 			});
 		}
-		else if ( $(window).width() >= 480 ) 
+		else if ( $(window).width() - 30 >= 480 ) 
 		{
 			$(' #header h1 a ').css('font-size', '75px');
 			$(function() {
-				changeMainWidth(320);
+				changeMainWidth(len_mainmenu * 105);
 			});
 		}
 		else
 		{
 			$(' #header h1 a ').css('font-size', '53px');
 			$(function() {
-				changeMainWidth(300);
+				changeMainWidth(len_mainmenu * 75);
 			});
 		}
 	}
@@ -379,60 +384,52 @@ $(document).ready(
 		$(window).resize(
 			function()
 			{
-				if ( $(window).width() >= 960 )
+				if ( $(window).width() - 30 >= 960 )
 				{
-					$(' #header h1 a ').css('font-size', '84px');
 					$(function() {
-						changeSubWidth(len_submenu * 100);
+						changeSubWidth(len_submenu * 105);
 					});
 				}
-				else if ( $(window).width() >= 768 ) 
+				else if ( $(window).width() - 30 >= 768 ) 
 				{
-					$(' #header h1 a ').css('font-size', '75px');
 					$(function() {
-						changeSubWidth(len_submenu * 90);
+						changeSubWidth(len_submenu * 105);
 					});
 				}
-				else if ( $(window).width() >= 480 ) 
+				else if ( $(window).width() - 30 >= 480 ) 
 				{
-					$(' #header h1 a ').css('font-size', '75px');
 					$(function() {
-						changeSubWidth(len_submenu * 80);
+						changeSubWidth(len_submenu * 105);
 					});
 				}
 				else
 				{
-					$(' #header h1 a ').css('font-size', '53px');
 					$(function() {
 						changeSubWidth(len_submenu * 75);
 					});
 				}
 			}
 		);
-		if ( $(window).width() >= 960 )
+		if ( $(window).width() - 30 >= 960 )
 		{
-			$(' #header h1 a ').css('font-size', '84px');
 			$(function() {
-				changeSubWidth(len_submenu * 100);
+				changeSubWidth(len_submenu * 105);
 			});
 		}
-		else if ( $(window).width() >= 768 ) 
+		else if ( $(window).width() - 30 >= 768 ) 
 		{
-			$(' #header h1 a ').css('font-size', '75px');
 			$(function() {
-				changeSubWidth(len_submenu * 90);
+				changeSubWidth(len_submenu * 105);
 			});
 		}
-		else if ( $(window).width() >= 480 ) 
+		else if ( $(window).width() - 30 >= 480 ) 
 		{
-			$(' #header h1 a ').css('font-size', '75px');
 			$(function() {
-				changeSubWidth(len_submenu * 80);
+				changeSubWidth(len_submenu * 105);
 			});
 		}
 		else
 		{
-			$(' #header h1 a ').css('font-size', '53px');
 			$(function() {
 				changeSubWidth(len_submenu * 75);
 			});

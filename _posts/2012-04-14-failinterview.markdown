@@ -78,7 +78,7 @@ print newline
 {% endhighlight %}
 
 <p>
-	EDIT //20120716): How did I not realize how bad this was back when I wrote it? 
+	EDIT [20120716]: How did I not realize how bad this was back when I wrote it? 
 	Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
 	come up with. Honest.
 </p>

@@ -165,7 +165,7 @@
 		font-weight: bold;
 	}
 
-	blockquote, blockquote p { font-size: 21px; line-height: 28px; color: #333; font-style: italic; }
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #333; font-style: italic; }
 	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
 	blockquote cite { display: block; font-size: 12px; color: #333; }
 	blockquote cite:before { content: "\2014 \0020"; }

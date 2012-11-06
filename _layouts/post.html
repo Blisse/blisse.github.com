@@ -7,13 +7,20 @@ sub: archive
 <div class="container">
 
 	<div class="sixteen columns">
-	<article class="post">
 
-		<h3 class="sourcesans"><a href="{{ page.url }}" title="Permanent link to this post">{{ page.title }}</a> //{{ page.date | date:'%Y%m%d' }}</h3>
+		<article class="post">
 
-		{{ content }}
+			<h2 class="casper no-vertical-margins">
+				<a href="{{ page.url }}">
+					<span class="h2-hover">{{ page.title }}</span> 
+					<span class="h2-nohover no-wrap">// {{ page.date | date:'%Y%m%d' }}</span>
+				</a>
+			</h2>
 
-	</article>
+			{{ content }}
+
+		</article>
+
 	</div>
 
 </div>

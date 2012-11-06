@@ -5,7 +5,9 @@ date: 2012-10-05
 tags: [programming]
 ---
 
+<p>
  <img src="http://i.imgur.com/OBg92.jpg" alt="1..26 for a..z" class="scale-with-grid" /> 
+</p>
 
 <p>
   From the inspiration above, I decided to check out what words actually fit this definition. Sorry for the Comic Sans in the image, though.
@@ -15,15 +17,18 @@ tags: [programming]
   First, I'll define 
 </p>
 
+<p>
 {% highlight python %}
   def chars = map ( [char for char in word], range(1,26+1))
   def word_score = sum ( char for char in chars )
 {% endhighlight %}
+</p>
 
 <p>
   Here's what that looks like in code.
 </p>
 
+<p>
 {% highlight python %} 
 
 import os, inspect, string
@@ -69,6 +74,7 @@ if __name__ == "__main__":
   main()
 
 {% endhighlight %}
+</p>
 
 <p>
   Not as pretty as it could be, but it works fairly well. <a href="http://pastebin.com/aySiHjUW">Here's the result from my pastebin.</a>
@@ -89,5 +95,4 @@ if __name__ == "__main__":
       <li>practicing
       <li>defeminized
     </ul>
-    
 </p>

@@ -1,0 +1,25 @@
+
+/* #Resume
+================================================= */
+
+	#resume{
+		font-size: 16px;
+	}
+
+	#resume h1 .title {
+		font-size: 44px;
+		font-family: 'Arimo', "DroidSansRegular", "Droid Sans", Arial, sans-serif;
+	}
+
+	#resume .bold {
+		font-family: 'Arial', sans-serif;
+		font-weight: bold;
+	}
+
+	#resume .border-bottom-dotted {
+		border-bottom: 1px dotted #111;
+	}
+
+	#resume .border-bottom-solid {
+		border-bottom: 1px solid #111;
+	}

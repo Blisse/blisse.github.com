@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>lai.victor</title>
- <link href="" rel="self"/>
+ <link href="http://www.laivictor.com/atom.xml" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-10-30T01:32:41-04:00</updated>
+ <updated>2012-11-05T23:11:15-05:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -12,26 +12,26 @@
 
  
  <entry>
-   <title type="html">cs241 merl file linker</title>
+   <title type="html">CS241 MERL file linker</title>
    <link href="http://www.laivictor.com/archive/2012/10/25/merllinker"/>
    <updated>2012-10-25T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/10/25/merllinker</id>
    <content type="html">&lt;p&gt;
-    For an assignment in my CS241 class, we had to link two &lt;a href=&quot;https://www.student.cs.uwaterloo.ca/~cs241/merl/merl.html&quot;&gt;MERL files&lt;/a&gt; by hand. I didn't want to do this, but I didn't understand the concept of linking MERL files well enough to write a linker for them. I finished the assignment by hand, but after doing that, I could finally complete the linker I wrote for it.
+    For an assignment in my CS241 class, we had to link two &lt;a href=&quot;https://www.student.cs.uwaterloo.ca/~cs241/merl/merl.html&quot;&gt;MERL files&lt;/a&gt; by hand. I didn't want to do this, but I didn't understand the concept of linking MERL files well enough to program a linker to do it for me. I finished the assignment by hand, and after doing that, I could finally complete this linker I was working on. It was an interesting lesson to learn.
 &lt;/p&gt;
 
 
 
 
 &lt;p&gt;
-    I really enjoyed writing it, because it looked very fun to implement an algorithm with classes like this, even though my solution is very primitive.
+    I really enjoyed writing the linker, because it was fun to implement an algorithm to parse the input the output with classes, even though my solution is very primitive.
 &lt;/p&gt;
 
 
 
 
 &lt;p&gt;
-    I found out a slightly annoying limitation of Python that I must look for a solution around in the future. Apparently I can't directly read the MERL file, so my program's input is a .xdd file. The entire program can only be run following conversion of the MERL file to a binary string.
+    I found out a slightly annoying limitation of Python that I must look for a solution around in the future. Apparently I can't directly read the MERL file directly, so my program's input has to be an xdd file, after running the UNIX xxd utility. Annoying, but I will live with it in the meantime.
 &lt;/p&gt;
 
 
@@ -82,9 +82,7 @@
 
 &lt;p&gt;
     &lt;div class=&quot;subheader&quot;&gt;
-        &lt;h4&gt;
-            Either the chairs are too low, or the tables are too high.
-        &lt;/h4&gt;
+        Either the chairs are too low, or the tables are too high.
     &lt;/div&gt;
 &lt;/p&gt;
 
@@ -128,11 +126,9 @@
 
 &lt;p&gt;
     &lt;div class=&quot;subheader&quot;&gt;
-        &lt;h5&gt;
-            Guess how many sites recommend sitting in the position the E5 lab promotes? 
-            &lt;br/&gt;
-            &lt;br/&gt;None.
-        &lt;/h5&gt;
+        Guess how many sites recommend sitting in the position the E5 lab promotes? 
+        &lt;br/&gt;...
+        &lt;br/&gt;None.
     &lt;/div&gt;
 &lt;/p&gt;
 
@@ -178,7 +174,12 @@
    <link href="http://www.laivictor.com/archive/2012/10/05/wordscores"/>
    <updated>2012-10-05T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/10/05/wordscores</id>
-   <content type="html">&lt;p&gt; &lt;img src=&quot;http://i.imgur.com/OBg92.jpg&quot; alt=&quot;1..26 for a..z&quot; class=&quot;scale-with-grid&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;
+ &lt;img src=&quot;http://i.imgur.com/OBg92.jpg&quot; alt=&quot;1..26 for a..z&quot; class=&quot;scale-with-grid&quot; /&gt; 
+&lt;/p&gt;
+
+
+
 
 &lt;p&gt;
   From the inspiration above, I decided to check out what words actually fit this definition. Sorry for the Comic Sans in the image, though.
@@ -194,10 +195,14 @@
 
 
 
+&lt;p&gt;
+
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;word_score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chars&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;/p&gt;
 
 
 
@@ -208,6 +213,8 @@
 
 
 
+
+&lt;p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt; 
 
@@ -255,6 +262,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;/p&gt;
+
 
 
 
@@ -283,7 +292,6 @@
       &lt;li&gt;practicing
       &lt;li&gt;defeminized
     &lt;/ul&gt;
-    
 &lt;/p&gt;
 
 </content>
@@ -758,9 +766,11 @@
 
 
 
+&lt;p&gt;
 &lt;div class=&quot;center&quot;&gt;
 &lt;img alt=&quot;ye olde Tetris&quot; src=&quot;http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png&quot;&gt;
 &lt;/div&gt;
+&lt;/p&gt;
 
 
 
@@ -797,7 +807,9 @@
 
 
 
+&lt;p&gt;
 &lt;h4 class=&quot;subheader&quot;&gt;My History&lt;/h4&gt;
+&lt;/p&gt;
 
 
 
@@ -831,12 +843,14 @@
 
 
 
+&lt;p&gt;
 &lt;div class=&quot;center&quot;&gt;
 &lt;img class=&quot;scale-with-grid child-padding&quot; alt=&quot;Tetris Battle&quot; src=&quot;http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg&quot;&gt;
 &lt;/div&gt;
+&lt;/p&gt;
 
 
-
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt; 
   Starting off, I was pretty bad, but I knew how to improve, and I set about playing only for that purpose.
@@ -1238,10 +1252,14 @@
 
 
 
+&lt;p&gt;
+
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;Remove the first letter from each word in the string: &lt;/span&gt;
 &lt;span class=&quot;gp&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;asdf das f po&amp;quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;/p&gt;
 
 
 
@@ -1252,6 +1270,8 @@
 
 
 
+
+&lt;p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# removes spaces from string&lt;/span&gt;
 
@@ -1299,6 +1319,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;/p&gt;
+
 
 
 
@@ -1311,6 +1333,8 @@
 
 
 
+&lt;p&gt;
+
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;removefirstletter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sentence&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;tokens&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sentence&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
@@ -1318,6 +1342,8 @@
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;/p&gt;
 
 
 
@@ -1331,9 +1357,13 @@
 
 
 
+&lt;p&gt;
+
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;df as o&amp;quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;/p&gt;
 
 
 
@@ -1363,6 +1393,8 @@
 
 
 
+&lt;p&gt;
+
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;
 
@@ -1370,6 +1402,8 @@
   &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;/p&gt;
 
 
 

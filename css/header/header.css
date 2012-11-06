@@ -1,213 +1,261 @@
-
 /* #Header
 ================================================== */
 
-	#header {
-		background: #1F1F1F;
-	}
 
-/* Navigation Bar */
-
-	#header #mainmenu {
-		background-color: transparent;
-		display: block;
+	#links {
+		font-size: 28px;
 		height: 32px;
-		width: 400px;
-	}
-
-	#header #mainmenu ul {
-		list-style: none;
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
-	}
-
-	#header #mainmenu ul li {
-		display: inline;
-		position: relative;
-	}
-
-	#header #mainmenu ul li a {
-		float:left;
-		height: 30px;
-		line-height: 32px;
-		text-align: center;
-		text-decoration: none;
 		display: block;
-		font-weight: normal;
-		border: 2 2 2 2 transparent;
-		outline: none;
-		cursor: pointer;
-		overflow: hidden;    
-		-webkit-transition: all 100ms ease-in-out 0s;
-		-moz-transition: all 100ms ease-in-out 0s;
-		-o-transition: all 100ms ease-in-out 0s;
-		transition: all 100ms ease-in-out 0s;
-	  	border-bottom: none;
-	}
-
-/* Navigation Item */
-	#header #mainmenu ul li a,
-	#header #mainmenu ul li a:visited {
-	  background-color: #1F1F1F;
-	  color :#fff;
-	  border-bottom: none;
-	}
-
-/* Hover over Navigation Item */
-	#header #mainmenu ul li a:hover, 
-	#header #mainmenu ul li a.selected {
-	  background-color: #1C5E3F;
-	  color: #fff;
-	  border-bottom: none;
-	}
-
-/* Current Page */
-	#header #mainmenu ul li.currentpage a,
-	#header #mainmenu ul li.currentpage a:visited{
-	  background-color: #267E55;
-	  color: #fff;
-	  border-bottom: none;
-	}
-
-/* Hover over Current Page */
-	#header #mainmenu ul li.currentpage a:hover, 
-	#header #mainmenu ul li.currentpage a.selected {
-		background-color: #267E55;
-		color: #1F1F1F;
-	  	border-bottom: none;
-	}	
-
-
-
-/* Sub-navigation menu */
-
-	#header #submenu {
-		background-color: transparent;
-		display: block;
-		height: 32px;
-		width: 200px;
-	}
-
-	#header #submenu ul {
-		list-style: none;
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
-	}
-
-	#header #submenu ul li {
-		display: inline;
-		position: relative;
-	}
-
-	#header #submenu ul li a {
-		float:left;
-		height: 30px;
-		line-height: 32px;
-		text-align: center;
-		text-decoration: none;
-		display: block;
-		font-weight: normal;
-		border: 2 2 2 2 transparent;
-		outline: none;
-		cursor: pointer;
-		overflow: hidden;    
-		-webkit-transition: all 100ms ease-in-out 0s;
-		-moz-transition: all 100ms ease-in-out 0s;
-		-o-transition: all 100ms ease-in-out 0s;
-		transition: all 100ms ease-in-out 0s;
-	  	border-bottom: none;
-	}
-
-/* Navigation Item */
-	#header #submenu ul li a,
-	#header #submenu ul li a:visited {
-	  background-color:#1F1F1F;
-	  color:#fff;
-	  border-bottom: none;
-	}
-
-/* Hover over Navigation Item */
-	#header #submenu ul li a:hover, 
-	#header #submenu ul li a.selected {
-	  background-color:#3D3D3D;
-	  color:#fff;
-	  border-bottom: none;
-	}
-
-/* Current Page */
-	#header #submenu ul li.currentpage a,
-	#header #submenu ul li.currentpage a:visited{
-	  background-color:#474747;
-	  color:#fff;
-	  border-bottom: none;
-	}
-
-/* Hover over Current Page */
-	#header #submenu ul li.currentpage a:hover, 
-	#header #submenu ul li.currentpage a.selected {
-		background-color:#3D3D3D;
-		color:#fff;
-	  	border-bottom: none;
-	}
-
-
-
-/* Name */
-
-	#header #name h1 a,
-	#header #name h1 a:visited {
-		color: #267E55;
-		font-size: 56px; 
-		line-height: 90px; 
-		margin-bottom: 16px; 
-		display: inline;
-		text-decoration:none;
-		font-family: 'Nexa Bold', Arial, Helvetica, sans-serif;
-	}
-
-	#header #name h1 a:hover,
-	#header #name h1 a.selected {
-		border-bottom: 2px solid #267E55;
-	}
-
-	#header #name a #last {
-		color: #267E55;
-	}
-
-	#header #name a #first {
-		color: #fff;
-		text-decoration:none;
-		background: none;
-	}
-
-	#header #name a #first:hover {
-		color: #267E55;
-		text-decoration: none;
-		background: none;
-		display:inline;
-	}
-
-	#header .icon { 
-		display: inline;
-		padding: 15px 15px 15px 15px;
+		padding: 5px;
 		text-align: right;
-		margin-top: 30px;
-		margin-bottom: 25px;
+		vertical-align: center;
+		min-width: 300px;
+		margin-bottom: 10px;
 	}
 
-	#header .icon a { 
-		color: #fff; text-decoration: none; background: none; border-bottom: none;
-		-webkit-transition: all 100ms ease-in-out 0s;
-		-moz-transition: all 100ms ease-in-out 0s;
-		-o-transition: all 100ms ease-in-out 0s;
-		transition: all 100ms ease-in-out 0s;
+	#links a, 
+	#links a:visited { 
+		color: #BCBCBC;
+		text-decoration: none;
 	}
 
-	#header .icon a:hover, .icon a.selected { 
-		color: #267E55; 
-		text-decoration: none; 
-		background: none; 
-		border-bottom: none; 
+	#links a:hover, 
+	#links a.hover, 
+	#links a.selected { 
+		color: #FF9900;
+		text-decoration: none;
+		border-bottom-color: transparent;
 	}
+
+	header {
+		margin: 0;
+		border: 0px;
+		background: #1A1A1A;
+		border-bottom: none;
+		position: relative;
+		vertical-align: middle;
+		font-size: 14px/24px;
+		font-family: "PT Sans Narrow", Verdana, sans-serif;
+	}
+
+	header #name {
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	header #name a {
+		margin: 0;
+		padding: 0;
+		color: #FF9900;
+		text-align: left;
+		font-family: 'Nexa Bold', 'Arial', sans-serif;
+		border-bottom: 4px solid #FF9900;
+	}
+
+	header #name a #last {
+		color: #FF9900;
+	}
+
+	header #name a #first {
+		color: #E9E9E9;
+	}
+
+	header #name a:hover > #first {
+		color: #3299BB;
+	}
+
+	header #name a:hover #first {
+		color: #3299BB;
+	}
+
+    @media only screen and (min-width: 960px) {
+    	header #name a {
+    		font-size: 64px;
+    		padding-right: 28px;
+			border-bottom: 0;
+			border-right: 4px solid #FF9900;
+    	}
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+    	header #name a {
+    		font-size: 60px;
+			border-bottom: 0;
+			padding-right: 10px;
+			border-right: 4px solid #FF9900;
+    	}
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+    	header #name a {
+    		font-size: 74px;
+    		text-align: center;
+    	}
+    }
+
+    @media only screen and (max-width: 479px) {
+    	header #name a {
+    		font-size: 53px;
+    	}
+    }
+
+	header #nav {
+		color: #E9E9E9;
+		height: 64px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		right: 0;
+		text-align: right;
+		float: right;
+	}
+
+	header #nav * {
+		margin: 0;
+		padding: 0;
+	}
+
+	header #nav ul,
+	header #nav ul li,
+	header #nav ul ul {
+		text-align: center;
+		list-style: none;
+		line-height: 30px;
+		vertical-align: middle;
+		-webkit-transition: all 150ms ease-in-out 0s;
+		-moz-transition: all 150ms ease-in-out 0s;
+		-o-transition: all 150ms ease-in-out 0s;
+		transition: all 150ms ease-in-out 0s;
+	}
+
+	header #nav ul {
+		vertical-align: text-bottom;
+		position: relative;
+		z-index: 100;
+		float: left;
+		display: block;
+		height: 32px;
+	}
+
+	header #nav ul li {
+		background-color: #1A1A1A;
+		width: 75px;
+		float: left;
+		display: block;
+		height: 32px;
+	}
+
+	header #nav ul li.hover,
+	header #nav ul li:hover {
+		position: static;
+		cursor: default;
+	}
+
+	header #nav ul li a {
+		border-bottom: none;
+		display: block;
+		height: 32px;
+		color: #E9E9E9;
+	}
+
+	header #nav ul li a:hover,
+	header #nav ul li a.hover {
+		border-bottom: none;
+	}
+
+	header #nav ul li ul {
+		visibility: hidden;
+		position: absolute;
+		left: 0;
+		z-index: 200;
+	}
+	
+	header #nav ul li.currentpage > ul {
+		visibility: visible;
+		z-index: 300;
+	}
+
+	header #nav ul li.hover > ul,
+	header #nav ul li:hover > ul {
+		visibility: visible;
+		z-index: 400;
+	}
+
+	header #nav ul li.currentpage {
+		background-color: #FF9900;
+	}
+
+	header #nav ul li.currentpage a {
+		color: #1A1A1A;
+	}
+
+	header #nav ul li.hover,
+	header #nav ul li:hover {
+		background-color: #E9E9E9;
+	}
+
+	header #nav ul li a {
+		color: #E9E9E9;
+	}
+
+	header #nav ul li.hover a,
+	header #nav ul li:hover a {
+		color: #1A1A1A;
+	}
+
+	header #nav ul li.hover ul li a,
+	header #nav ul li:hover ul li a {
+		color: #FF9900;
+	}
+
+	header #nav ul li.currentpage ul li a {
+		color: #FF9900;
+	}
+
+	header #nav ul li ul li.currentpage {
+		background-color: #E9E9E9;
+	}
+
+	header #nav ul li ul li.currentpage a {
+		color: #1A1A1A;
+	}
+
+	header #nav ul li ul li.hover,
+	header #nav ul li ul li:hover {
+		background-color: #3299BB;
+	}
+
+	header #nav ul li ul li.hover a,
+	header #nav ul li ul li:hover a {
+		color: #E9E9E9;
+	}
+
+	header #nav ul li ul li.empty.hover,
+	header #nav ul li ul li.empty:hover {
+		background-color: #1A1A1A;
+	}
+
+
+    @media only screen and (min-width: 960px) {
+    	header #nav ul li {
+    		width: 100px;
+    	}
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+    	header #nav ul li {
+    		width: 85px;
+    	}
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+    	header #nav ul li {
+    		width: 105px;
+    	}
+    }
+
+    @media only screen and (max-width: 479px) {
+    	header #nav ul li {
+    		width: 75px;
+    	}
+    }

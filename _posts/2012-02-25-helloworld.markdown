@@ -9,6 +9,7 @@ tags: [site, milestones]
 	This is my first post. So, an obligatory
 </p>
 
+<p>
 {% highlight python %}
 
 def main():
@@ -18,6 +19,7 @@ if __name__ == "__main__":
   main()
 
 {% endhighlight %}
+</p>
 
 <p>
 	Thanks for visiting~

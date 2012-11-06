@@ -4,7 +4,22 @@ title: archive
 main: blog
 sub: archive
 ---
+
 {% assign posts = site.posts %}
 
-	{% include archive.html %}
-
+<div class="container">
+	<div class="sixteen columns" id="archive">
+		<ul class="no-margins">
+			{% for post in site.posts %}
+			<li>
+				<h3>
+					<a href="{{ post.url }}">
+						<span class="h3-nohover">{{ post.date | date: "%Y%m%d"  }} </span>
+						<span class="h3-hover">&raquo; {{ post.title }}</span>
+					</a>
+				</h3>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

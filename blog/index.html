@@ -13,26 +13,24 @@ sub: all
 	<article class="post">
 
 		<div class="sixteen columns">
-			<h2 class="casper"><a href="{{ post.url }}">{{ post.title }}</a> <span class="no-wrap">// {{ post.date | date:'%Y%m%d' }}</span></h2>
+			<h2 class="no-vertical-margins">
+				<a href="{{ post.url }}">
+					<span class="h2-hover">{{ post.title }}</span> 
+					<span class="h2-nohover no-wrap">// {{ post.date | date:'%Y%m%d' }}</span>
+				</a>
+			</h2>
 		</div>
-
 		{% if post.div == false %}<div>{% else %}<div class="sixteen columns">{% endif %}
-
 			{{ post.content }}
-			
-			<br />
-			<br />
-
-			<hr class="line">
-		
 		</div>
-
 	</article>
-
-		
+			<br />
+			<hr class="line">
 	{% endfor %}
 
 </div>
+
+<!--
 
 <hr class="line">
 
@@ -57,3 +55,5 @@ sub: all
 	<br />
 
 </div>
+
+--> 

@@ -16,9 +16,7 @@ tags: [personal, school]
 
 <p>
 	<div class="subheader">
-		<h4>
-			Either the chairs are too low, or the tables are too high.
-		</h4>
+		Either the chairs are too low, or the tables are too high.
 	</div>
 </p>
 
@@ -50,11 +48,9 @@ tags: [personal, school]
 
 <p>
 	<div class="subheader">
-		<h5>
-			Guess how many sites recommend sitting in the position the E5 lab promotes? 
-			<br/>
-			<br/>None.
-		</h5>
+		Guess how many sites recommend sitting in the position the E5 lab promotes? 
+		<br/>...
+		<br/>None.
 	</div>
 </p>
 

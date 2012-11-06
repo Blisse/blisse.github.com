@@ -8,25 +8,6 @@
 */
 
 
-/* #Media Queries
-================================================== */
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
-
-
 /* #Font-Face
 ================================================== */
 /* 	This is the proper syntax for an @font-face file
@@ -76,23 +57,82 @@
 }
 
 @font-face {
-    font-family: 'Casper';
-    src: url('casper-webfont.eot');
-    src: url('casper-webfont.eot?#iefix') format('embedded-opentype'),
-         url('casper-webfont.woff') format('woff'),
-         url('casper-webfont.ttf') format('truetype'),
-         url('casper-webfont.svg#casperregular') format('svg');
+    font-family: 'Code Bold';
+    src: url('/fonts/code_bold-webfont.eot');
+    src: url('/fonts/code_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/code_bold-webfont.woff') format('woff'),
+         url('/fonts/code_bold-webfont.ttf') format('truetype'),
+         url('/fonts/code_bold-webfont.svg#code_boldregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Code Bold';
-    src: url('code_bold-webfont.eot');
-    src: url('code_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('code_bold-webfont.woff') format('woff'),
-         url('code_bold-webfont.ttf') format('truetype'),
-         url('code_bold-webfont.svg#code_boldregular') format('svg');
+    font-family: 'Liberation Sans';
+    src: url('/fonts/liberationsans-regular-webfont.eot');
+    src: url('/fonts/liberationsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/liberationsans-regular-webfont.woff') format('woff'),
+         url('/fonts/liberationsans-regular-webfont.ttf') format('truetype'),
+         url('/fonts/liberationsans-regular-webfont.svg#liberation_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
+
+@font-face {
+    font-family: 'Museo Slab';
+    src: url('/fonts/museo_slab_300-webfont.eot');
+    src: url('/fonts/museo_slab_300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/museo_slab_300-webfont.woff') format('woff'),
+         url('/fonts/museo_slab_300-webfont.ttf') format('truetype'),
+         url('/fonts/museo_slab_300-webfont.svg#museo_slab_300regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('/fonts/museosans_300-webfont.eot');
+    src: url('/fonts/museosans_300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/museosans_300-webfont.woff') format('woff'),
+         url('/fonts/museosans_300-webfont.ttf') format('truetype'),
+         url('/fonts/museosans_300-webfont.svg#museo_sans_500regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* #Fonts
+================================================== */
+
+    .tangerine {
+        font-family: 'Tangerine';
+    }
+
+    .codebold {
+        font-family: 'Code Bold';
+    }
+
+    .droidserif {
+        font-family: 'Droid Serif';
+    }
+
+    .droidsans {
+        font-family: 'DroidSansRegular';
+    }
+
+    .codebold {
+        font-family: 'Code Bold';
+    }
+
+    .sourcesans {
+        font-family: 'Source Sans Pro';
+    }
+
+    .sourcecode {
+        font-family: 'Source Code Pro';
+    }
+
+    .inconsolata {
+        font-family: 'Inconsolata';
+    }

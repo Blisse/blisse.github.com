@@ -16,19 +16,20 @@ tags: [learning, school]
 	The question was (I think): 
 </p>
 
-
+<p>
 {% highlight console %}
 
 Remove the first letter from each word in the string: 
 > "asdf das f po"
 
 {% endhighlight %}
+</p>
 
 <p>
 	EDIT(2012-07-16): This was my March attempt.
 </p>
 
-
+<p>
 {% highlight python %}
 
 # removes spaces from string
@@ -76,6 +77,7 @@ newline = " ".join(output)
 print newline
 
 {% endhighlight %}
+</p>
 
 <p>
 	EDIT [20120716]: How did I not realize how bad this was back when I wrote it? 
@@ -83,6 +85,7 @@ print newline
 	come up with. Honest.
 </p>
 
+<p>
 {% highlight python %}
 
 def removefirstletter( sentence ):
@@ -92,6 +95,7 @@ def removefirstletter( sentence ):
 	return " ".join(tokens)
 
 {% endhighlight %}
+</p>
 
 <p>
 	Easily handles any issue with spacing when you remove the word with one letter.
@@ -99,11 +103,13 @@ def removefirstletter( sentence ):
 	The output should be 
 </p>
 
+<p>
 {% highlight console %}
 
 > "df as o"
 
 {% endhighlight %}
+</p>
 
 <p>
 	I'd like to think I made progress, but this could be done a lot better still. 

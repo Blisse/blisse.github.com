@@ -14,9 +14,11 @@ tags: [gaming]
   started on the GameBoy. Maybe something like this.
 </p>
 
+<p>
 <div class="center">
 <img alt="ye olde Tetris" src="http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png">
 </div>
+</p>
 
 <p>
   Nowadays, <a href="http://www.tetrisfriends.com/" target="_blank">Tetris Friends</a> is all the rage. 
@@ -38,7 +40,9 @@ tags: [gaming]
   My main experience is with the Multiplayer Battle 2P and 6P modes, so that's where I'll start.
 </p>
 
+<p>
 <h4 class="subheader">My History</h4>
+</p>
 
 <p>
   In May, one of my high school friends saw me playing Tetris, and asked me for a match. I hadn't seen him in a while, so why not.
@@ -60,9 +64,11 @@ tags: [gaming]
   but play a few times and you'll get the gist of it. Here's a image I found off Google off a couple of newer players going at it.
 </p>
 
+<p>
 <div class="center">
 <img class="scale-with-grid child-padding" alt="Tetris Battle" src="http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg">
 </div>
+</p> 
 
 <p> 
   Starting off, I was pretty bad, but I knew how to improve, and I set about playing only for that purpose.

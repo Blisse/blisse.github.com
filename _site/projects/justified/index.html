@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>
@@ -21,12 +20,9 @@
 
   <!-- Blog CSS -->
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-
+  
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
@@ -35,18 +31,17 @@
   <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/header/header.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-
+  
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
@@ -64,9 +59,19 @@
   })();
 
 </script>-->
-
-  <script src="/js/jquery-1.8.2.js"></script>  
-
+  
+  
+  <!-- Skeleton -->
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  
+  
+  <!-- JQuery 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
+  
+  
+  
+  
 </head>
 
 <body>
@@ -131,8 +136,10 @@
 						 >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li 
+									class=""
+								 >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li 
 									class=""
@@ -207,176 +214,25 @@
 
 <br />
 
-<div class="container">
-
-	<div class="sixteen columns">
-	  <article class="post">
-	  	
-			<h2 class="casper no-vertical-margins">
+<article class="project">
+	<div class="container">
+		<div class="sixteen columns">
+			<h2 class="no-vertical-margins">
 				<a href="/projects/justified/index.html" title="Permanent link to this post">
 					<span class="h2-hover">Justifying Lines in C++</span>
 				</a>
 			</h2>
-
-		<p>
-  Pretty direct implementation after my first 2 weeks of C++.
-  Not my best code, but in all my Googling, I haven't found anything that does this. 
-  Only works with monospaced fonts, of course.
-</p>
-
-<p>
-  The code is pretty self commenting. Takes in an input file, output file and required length of 
-  all the lines (must be greater than the maximum line length).
-</p>
-
-<p>
-<div class="highlight"><pre><code class="java"><span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">iostream</span><span class="o">&gt;</span>
-<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span>
-<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">fstream</span><span class="o">&gt;</span>
-<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">istream</span><span class="o">&gt;</span>
-<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">cstdlib</span><span class="o">&gt;</span>
-<span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span>
-
-<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="o">;</span>
-
-<span class="kd">class</span> <span class="nc">LineTools</span> <span class="o">{</span>
-<span class="kd">public</span><span class="o">:</span>
-<span class="kt">void</span> <span class="nf">justifyLines</span><span class="o">(</span><span class="n">string</span> <span class="n">filenameIn</span><span class="o">,</span> <span class="n">string</span> <span class="n">filenameOut</span><span class="o">,</span> <span class="kt">int</span> <span class="n">max_len</span><span class="o">)</span>
-<span class="o">{</span>
-<span class="n">ifstream</span> <span class="n">infile</span><span class="o">;</span>
-<span class="n">infile</span><span class="o">.</span><span class="na">open</span><span class="o">(</span><span class="n">filenameIn</span><span class="o">.</span><span class="na">c_str</span><span class="o">()</span> <span class="o">);</span>
-<span class="n">ofstream</span> <span class="n">outfile</span><span class="o">;</span>
-<span class="n">outfile</span><span class="o">.</span><span class="na">open</span><span class="o">(</span><span class="n">filenameOut</span><span class="o">.</span><span class="na">c_str</span><span class="o">()</span> <span class="o">);</span>
-<span class="n">string</span> <span class="n">string_in</span><span class="o">;</span>
-<span class="kt">int</span> <span class="n">line_len</span><span class="o">;</span>
-<span class="kt">int</span> <span class="n">offset</span><span class="o">;</span>
-<span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-<span class="kt">int</span> <span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
-<span class="k">while</span> <span class="o">(</span> <span class="n">getline</span><span class="o">(</span><span class="n">infile</span><span class="o">,</span> <span class="n">string_in</span><span class="o">)</span> <span class="o">)</span>
-<span class="o">{</span>
-	<span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
-	<span class="n">line_len</span> <span class="o">=</span> <span class="n">string_in</span><span class="o">.</span><span class="na">length</span><span class="o">();</span>
-	<span class="n">offset</span> <span class="o">=</span> <span class="n">max_len</span> <span class="o">-</span> <span class="n">line_len</span><span class="o">;</span>
-	<span class="k">for</span> <span class="o">(</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">line_len</span><span class="o">;</span> <span class="n">i</span><span class="o">++</span> <span class="o">)</span>
-	<span class="o">{</span>
-		<span class="k">if</span> <span class="o">(</span> <span class="n">string_in</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="o">)</span>
-		<span class="o">{</span>
-			<span class="n">oneword</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-		<span class="o">}</span>
-	<span class="o">}</span>
-	<span class="k">if</span> <span class="o">(</span> <span class="o">!</span><span class="n">offset</span> <span class="o">)</span>
-	<span class="o">{</span>
-		<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="o">;</span>
-	<span class="o">}</span>
-	<span class="k">else</span> <span class="c1">// string_len &lt; max_len</span>
-	<span class="o">{</span>
-		<span class="k">if</span> <span class="o">(</span><span class="n">oneword</span><span class="o">)</span>
-		<span class="o">{</span>
-			<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span><span class="o">;</span>
-			<span class="k">while</span> <span class="o">(</span><span class="n">offset</span><span class="o">)</span>
-			<span class="o">{</span>
-				<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span><span class="o">;</span>
-				<span class="n">offset</span><span class="o">--;</span>
-			<span class="o">}</span>
-			<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="o">;</span>
-		<span class="o">}</span>
-		<span class="k">else</span>
-		<span class="o">{</span>
-			<span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-			<span class="k">while</span> <span class="o">(</span> <span class="n">offset</span> <span class="o">)</span>
-			<span class="o">{</span>
-				<span class="k">if</span> <span class="o">(</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="o">(</span><span class="n">line_len</span><span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">)</span>
-				<span class="o">{</span>
-					<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-				<span class="o">}</span>
-
-				<span class="k">if</span> <span class="o">(</span> <span class="n">string_in</span><span class="o">[</span><span class="n">k</span><span class="o">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="o">)</span>
-				<span class="o">{</span>
-					<span class="n">string_in</span><span class="o">.</span><span class="na">insert</span><span class="o">(</span><span class="n">k</span><span class="o">,</span><span class="s">&quot; &quot;</span><span class="o">);</span>
-					<span class="n">k</span><span class="o">++;</span>
-					<span class="k">while</span> <span class="o">(</span> <span class="n">string_in</span><span class="o">[</span><span class="n">k</span><span class="o">++]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span><span class="o">)</span>
-					<span class="o">{</span>
-					<span class="o">}</span>
-					<span class="n">line_len</span><span class="o">++;</span>
-					<span class="n">offset</span><span class="o">--;</span>
-				<span class="o">}</span>
-				<span class="n">k</span><span class="o">++;</span>
-			<span class="o">}</span>
-			<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-			<span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="o">;</span>
-		<span class="o">}</span>
-	<span class="o">}</span>
-<span class="o">}</span>
-<span class="n">infile</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
-<span class="n">outfile</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
-<span class="o">}</span>
-<span class="o">};</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="o">(</span> <span class="kt">int</span> <span class="n">argc</span><span class="o">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="o">[]</span> <span class="o">)</span>
-<span class="o">{</span>
-	<span class="k">if</span> <span class="o">(</span> <span class="n">argc</span> <span class="o">!=</span> <span class="mi">4</span> <span class="o">)</span>
-	<span class="o">{</span>
-		<span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
-	<span class="o">}</span>
-	<span class="n">LineTools</span> <span class="n">linetool</span><span class="o">;</span>
-	<span class="n">linetool</span><span class="o">.</span><span class="na">justifyLines</span><span class="o">(</span><span class="n">argv</span><span class="o">[</span><span class="mi">1</span><span class="o">],</span> <span class="n">argv</span><span class="o">[</span><span class="mi">2</span><span class="o">],</span> <span class="n">atoi</span><span class="o">(</span><span class="n">argv</span><span class="o">[</span><span class="mi">3</span><span class="o">]));</span>
-	<span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
-<span class="o">}</span>
-</code></pre>
+		</div>
+	</div>        
 </div>
-</p>
-
-<p>
-  Let's give it some input.
-</p>
-
-<p>
-<div class="highlight"><pre><code class="console"><span class="go">abcdefghijklmnopqrstuvwxyz</span>
-<span class="go">a ef ijkl op svwxyz</span>
-<span class="go">a cd nopqr z</span>
-</code></pre>
-</div>
-<p>
-
-<p>
-  And here's the output for "ccfile.o filein.txt fileout.txt 26".
-</p>
-
-</p>
-<div class="highlight"><pre><code class="console"><span class="go">abcdefghijklmnopqrstuvwxyz</span>
-<span class="go">a   ef   ijkl   op  svwxyz</span>
-<span class="go">a      cd      nopqr     z</span>
-</code></pre>
-</div>
-</p>
-
-<p>
-  The output for "file.o filein.txt fileout.txt 27" is a bit different.
-</p>
-
-<p>
-<div class="highlight"><pre><code class="console"><span class="go">abcdefghijklmnopqrstuvwxyz </span>
-<span class="go">a   ef   ijkl   op   svwxyz</span>
-<span class="go">a      cd      nopqr      z</span>
-</code></pre>
-</div>
-</p>
-
-<p>
-  I'm welcome to any suggestions on how to improve this, because there's a lot that can be improved.
-  Sadly, this only works for monospaced fonts. I think I would need to analyze the default font style
-  before I can implement this 100% for all font types. I will look into that for the future.
-</p>
-
-<p>
-  Depending on how it'll be used. it's probably a good idea to create a method to get the maximum
-  number of characters per line.
-</p>
-
-	  </article>
+<div class="container">
+	<div class="sixteen columns">
+		
+		
+        
 	</div>
-
 </div>
+
 
 <div class="container">
 	<div class="sixteen columns">
@@ -393,9 +249,6 @@
 	</footer>
 	</div>
 </div>
-
-<script src="/js/tiles.js"></script>
-
 </body>
 
 </html>

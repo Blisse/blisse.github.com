@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>
@@ -21,12 +20,9 @@
 
   <!-- Blog CSS -->
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-
+  
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
@@ -35,18 +31,17 @@
   <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/header/header.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-
+  
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
@@ -64,9 +59,19 @@
   })();
 
 </script>-->
-
-  <script src="/js/jquery-1.8.2.js"></script>  
-
+  
+  
+  <!-- Skeleton -->
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  
+  
+  <!-- JQuery 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
+  
+  
+  
+  
 </head>
 
 <body>
@@ -131,8 +136,10 @@
 						 >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li 
+									class=""
+								 >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li 
 									class=""
@@ -208,15 +215,13 @@
 <br />
 
 <div class="container">
-	<article class="post">
-
 	<div class="container">
 	<div class="sixteen columns">
 		<p>
-		  Hi! I'm Victor Lai, a Software Engineering Undergraduate studying at the University of Waterloo. I am approaching my second year of programming, but I am quick to learn and eager to try, well, just about anything, and always to expand my horizons. I love solving problems, programming or otherwise, and learning about all sorts of technologies, whether it involves my personalized computer, my audiophile audio system, or as they show up on HackerNews.
+		  Hi! I'm Victor Lai, a Software Engineering Undergraduate studying at the University of Waterloo. It is my second year of programming, but I am quick to learn and eager to try, well, just about anything, and always to expand my horizons. I love solving problems, programming or otherwise, and learning about all sorts of technologies, whether it involves my personalized computer, my audiophile audio system, or as they show up on HackerNews.
 		</p>
 		<p>
-		  I am passionate about simple, functional and aesthetically pleasing design, and live with the belief that if I make something I enjoy using, I am sure someone else will enjoy it as well.
+		  I am passionate about simple, functional and aesthetically pleasing design, and program with the belief that if I make something I enjoy using, I am sure someone else will enjoy it as well.
 		</p>
 		<p> 
 		  Bliss \'blis\ is not only my favourite <a href="http://www.merriam-webster.com/dictionary/bliss" target="_blank">
@@ -224,8 +229,8 @@
 		</p>
 	</div>
 
-	<div class="six columns">
-		<h3>Copyleft</h3>
+	<div class="ten columns">
+		<h2><a href="http://en.wikipedia.org/wiki/Copyleft">Copyleft</a></h2>
 
 		<p>
 		  This website is built using <a href="http://github.com/mojombo/jekyll"
@@ -242,25 +247,37 @@
 		</p>
 	</div>
 
-	<div class="four columns parent-padding">
+	<div class="six columns parent-padding">
 		<img class="scale-with-grid child-padding" alt="Bliss" src="/images/bliss.jpg">
 	</div>
 
-	<div class="six columns">
-		<h3>Design References</h3>
-		<p>
-			&nbsp;&nbsp;&#9642;&nbsp;<a href="https://github.com/tjstein" target="_blank">TJ Stein</a>'s <a href="http://tjstein.com" target="_blank">website</a><br />
-			&nbsp;&nbsp;&#9642;&nbsp;<a href="https://github.com/bmeurer" target="_blank">Benedikt Meurer</a>'s <a href="http://benediktmeurer.de" target="_blank">website</a><br />
-			&nbsp;&nbsp;&#9642;&nbsp;<a href="https://github.com/mattgraham/Midnight/" target="_blank">Midnight</a>'s Pygments <a href="https://github.com/mattgraham/Midnight/blob/master/stylesheets/pygment_trac.css" target="_blank">theme</a><br />
-			&nbsp;&nbsp;&#9642;&nbsp;<a href="http://fontfabric.com/" target="_blank">Fontfabric</a><br />
-			&nbsp;&nbsp;&#9642;&nbsp;<a href="http://abduzeedo.com/" target="_blank">abduzeedo</a><br />
-			&nbsp;&nbsp;&#9642;&nbsp;<a href="https://github.com/dhgamache" target="_blank">Dave Gamache</a>'s <a href="http://www.getskeleton.com" target="_blank">Skeleton theme</a><br />
-		</p>
+	<div class="sixteen columns">
+		<h2>Design References</h2>
+		<ul class="square">
+			<li>
+				TJ Stein's <a href="http://tjstein.com" target="_blank">website</a> and Benedikt Meurer's <a href="http://benediktmeurer.de" target="_blank">website</a> contributed hugely to my initial website. I have since restructured the code to my own, but I am indebted to them.
+			</li>
+			<li>
+				<a href="https://github.com/mattgraham/Midnight/" target="_blank">Matt Graham</a>'s Pygments <a href="https://github.com/mattgraham/Midnight/blob/master/stylesheets/pygment_trac.css" target="_blank">theme</a> is essentially my code theme. It's simply amazing.
+			</li>
+			<li>
+				<a href="http://fontfabric.com/" target="_blank">Fontfabric</a> and <a href="http://www.google.com/webfonts">Google Fonts</a> provide me with most of my fonts.
+			</li>
+			<li>
+				<a href="http://abduzeedo.com/" target="_blank">abduzeedo</a> is a daily source for creativity.
+			</li>
+			<li>
+				<a href="http://tympanus.net/codrops/">Codrops</a> is an excellent resource for web design patterns and tutorials.
+			</li>
+			<li>
+				<a href="https://github.com/dhgamache" target="_blank">Dave Gamache</a>'s <a href="http://www.getskeleton.com" target="_blank">Skeleton theme</a> provides me with the amazing multi-platform grid layout.
+			</li>
+		</ul>
 	</div>
 
 
 	<div class="sixteen columns">
-		<h3>Disclaimer</h3>
+		<h2>Disclaimer</h2>
 
 		<p>
 		  The opinions expressed herein are my own personal opinions and do not represent my employer's view in any way.
@@ -268,16 +285,15 @@
 		  articles, photos or any other media.
 		</p>
 
-		<h3>Contact</h3>
+		<h2>Contact</h2>
 
 		<p>
 		  If you want to contact me, send me a message at <a href="mailto:lai.victor.vl@gmail.com">lai.victor.vl@gmail.com</a>.
 		</p>
 	</div>
 </div>
-
-	</article>
 </div>
+
 
 
 
@@ -296,9 +312,6 @@
 	</footer>
 	</div>
 </div>
-
-<script src="/js/tiles.js"></script>
-
 </body>
 
 </html>

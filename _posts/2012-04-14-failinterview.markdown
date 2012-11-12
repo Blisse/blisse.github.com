@@ -2,7 +2,8 @@
 layout: post
 title: first coding interview
 date: 2012-04-14
-tags: [learning, school]
+tags: [life, school]
+comments: true
 ---
 
 <p>

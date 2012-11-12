@@ -2,7 +2,9 @@
 layout: post
 title: Dexpot
 date: 2012-08-03
-tags: [utilities]
+tags: [productivity]
+description: a fully featured, highly customizable virtual workspaces application.
+comments: true
 ---
 
 <p>
@@ -50,9 +52,12 @@ tags: [utilities]
 </p>
 
 <p>
-  <blockquote>
-	Everyone agrees, humans have a finite number of key and mouse presses. As programmers, we want to maximize the productivity and number of presses
-	we have. When we constantly move our hand from the keyboard to the mouse, the time waste inbetween eventually becomes a big deal. That's why 
-	we use workspaces. <cite>me</cite>
-  </blockquote>
+    <blockquote>
+      <p>
+        We all have a finite number of keyboard presses in our lifetime, so we should do our best to increase the output of each press.
+      </p>
+      <p>
+        We should try to do as much as we can with as little effort as we can manage, so we don't waste our valuable keypresses doing something that could've been done easier.
+      </p>
+    </blockquote>
 </p>

@@ -32,22 +32,22 @@
 
     /* Base Grid */
     .container .one.column,
-    .container .one.columns                     { width: 60px;  }
-    .container .two.columns                     { width: 120px; }
-    .container .three.columns                   { width: 180px; }
-    .container .four.columns                    { width: 240px; }
-    .container .five.columns                    { width: 300px; }
-    .container .six.columns                     { width: 320px; }
-    .container .seven.columns                   { width: 360px; }
-    .container .eight.columns                   { width: 400px; }
-    .container .nine.columns                    { width: 440px; }
-    .container .ten.columns                     { width: 480px; }
-    .container .eleven.columns                  { width: 500px; }
-    .container .twelve.columns                  { width: 540px; }
-    .container .thirteen.columns                { width: 620px; }
-    .container .fourteen.columns                { width: 680px; }
-    .container .fifteen.columns                 { width: 740px; }
-    .container .sixteen.columns                 { width: 800px; }
+    .container .one.columns                     { width: 40px;  }
+    .container .two.columns                     { width: 100px; }
+    .container .three.columns                   { width: 160px; }
+    .container .four.columns                    { width: 220px; }
+    .container .five.columns                    { width: 280px; }
+    .container .six.columns                     { width: 340px; }
+    .container .seven.columns                   { width: 400px; }
+    .container .eight.columns                   { width: 460px; }
+    .container .nine.columns                    { width: 520px; }
+    .container .ten.columns                     { width: 580px; }
+    .container .eleven.columns                  { width: 640px; }
+    .container .twelve.columns                  { width: 700px; }
+    .container .thirteen.columns                { width: 760px; }
+    .container .fourteen.columns                { width: 820px; }
+    .container .fifteen.columns                 { width: 880px; }
+    .container .sixteen.columns                 { width: 940px; }
 
     .container .one-third.column                { width: 300px; }
     .container .two-thirds.column               { width: 620px; }

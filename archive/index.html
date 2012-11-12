@@ -8,18 +8,15 @@ sub: archive
 {% assign posts = site.posts %}
 
 <div class="container">
+	{% for post in site.posts %}
 	<div class="sixteen columns" id="archive">
-		<ul class="no-margins">
-			{% for post in site.posts %}
-			<li>
-				<h3>
-					<a href="{{ post.url }}">
-						<span class="h3-nohover">{{ post.date | date: "%Y%m%d"  }} </span>
-						<span class="h3-hover">&raquo; {{ post.title }}</span>
-					</a>
-				</h3>
-			</li>
-			{% endfor %}
-		</ul>
+		<h3>
+			<a href="{{ post.url }}" class="block">
+				<span class="h3-nohover">{{ post.date | date: "%Y%m%d"  }} </span>
+				<span class="h3-hover">&nbsp;&raquo; {{ post.title }}&nbsp;</span>
+				<span class="h3-nohover no-wrap float-right font-size-18">about {{ post.tags | array_to_sentence_string }}.</span>
+			</a>
+		</h3>
 	</div>
+	{% endfor %}
 </div>

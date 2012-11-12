@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>
@@ -21,12 +20,9 @@
 
   <!-- Blog CSS -->
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-
+  
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
@@ -35,18 +31,17 @@
   <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/header/header.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-
+  
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
@@ -64,9 +59,19 @@
   })();
 
 </script>-->
-
-  <script src="/js/jquery-1.8.2.js"></script>  
-
+  
+  
+  <!-- Skeleton -->
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  
+  
+  <!-- JQuery 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
+  
+  
+  
+  
 </head>
 
 <body>
@@ -131,8 +136,10 @@
 						 >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li 
+									class=""
+								 >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li 
 									class=""
@@ -208,19 +215,49 @@
 <br />
 
 <div class="container">
+	<div class="twelve columns">
+		<p class="landing-l1">
+			19-year-old Undergraduate <span class="tangerine in-line-block font-size-36">Software Engineer</span>
+			studying at the University of Waterloo,
+			passionate about learning, challenging myself,
+			and not afraid of pushing my limits.
+		</p>
+	</div>
+	<div class="twelve columns">
+		<p>
+			When I'm not coding, I am <code>gaming</code>,
+			learning the <code>guitar</code>,
+			practicing <code>Kendo</code> or <code>Badminton</code>,
+			going for a <code>run</code> or
+			listening to <code>music</code>. 
+		</p>
+	</div>
+</div>	
+		
+<div class="container">
 	<div class="sixteen columns">
 		<p>
 			<blockquote>
 				<p>
-					Never give up.
+					Never give up in yourself. 
 				</p>
-				<cite>Common Sense</cite>
 			</blockquote>
 		</p>
 		<p>
 			<blockquote>
 				<p>
-				When given a choice, choose the thing that scares you a little. If it's 100% safe, it's holding you back.
+					There is no time management in my opinion. What it is, take all the stuff that gets you away from work, and just get rid of it. What I find is ... that a lot of people are finding something to do that's not doing homework or drawing or painting or something, and maybe that comes from maybe looking at Facebook or playing a video game, eating too long.
+				</p>
+				<p>
+					That's not time management, that's wasting time. That's doing something you shouldn't be doing. You should know if you are going on Facebook for half an hour, that's not work. If I eat for too long, that's not work. Especially if you are a student, if you are student, you shouldn't do any of this stuff. You are paying tuition to go a school, why would you not do schoolwork?
+				</p>
+				<cite>Feng Zhu</cite>
+			</blockquote>
+		</p>
+		<p>
+			<blockquote>
+				<p>
+					When given a choice, choose the thing that scares you a little. If it's 100% safe, it's holding you back.
 				</p>
 				<cite>Jeff Atwood</cite>
 			</blockquote>
@@ -231,12 +268,12 @@
 					There once was an inflatable boy and an inflatable girl. They went to an inflatable school, where all the teachers were inflatable, all the buildings were inflatable, and all the students were inflatable.
 				</p>
 				<p>
-				One day, the inflatable boy wondered - well, what if the whole world's inflatable? And what if everyone's inflatable and deflatable? And you know when you inflate someone, because they go like this *happy face, rises up a bit* and you know when you deflate someone, because they go like this *sad face, droops down* 
+					One day, the inflatable boy wondered - well, what if the whole world's inflatable? And what if everyone's inflatable and deflatable? And you know when you inflate someone, because they go like this *happy face, rises up a bit* and you know when you deflate someone, because they go like this *sad face, droops down* 
 				</p>
 				<p>
 					And maybe, if you inflate lots of people - maybe then you know you've lived a good life. And maybe....maybe, if you can still inflate people after you're gone, then you've lived an even better one.
 				</p>
-				<cite>Adam Hills</cite>
+				<cite>Adam ills</cite>
 			</blockquote>
 		</p>
 		<p>
@@ -258,6 +295,7 @@
 	</div>
 </div>
 
+
 <div class="container">
 	<div class="sixteen columns">
 	<footer id="footer">
@@ -273,9 +311,6 @@
 	</footer>
 	</div>
 </div>
-
-<script src="/js/tiles.js"></script>
-
 </body>
 
 </html>

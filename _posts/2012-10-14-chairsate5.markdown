@@ -2,7 +2,8 @@
 layout: post
 title: chairs at E5
 date: 2012-10-14
-tags: [personal, school]
+tags: [life, school]
+comments: true
 ---
 
 <p>
@@ -29,20 +30,20 @@ tags: [personal, school]
 </p>
 
 <p>
-	<ul class="disc">
-		<li><a href="http://orthoinfo.aaos.org/topic.cfm?topic=a00261">American Academy of Orthopaedic Surgeons</a>
-		<li><a href="http://www.osha.gov/SLTC/etools/computerworkstations/positions.html">United States Department of Labor - Occupational Safety &amp; Health Administration</a>
-		<li><a href="http://web.princeton.edu/sites/ehs/healthsafetyguide/a4.htm">Princeton</a>
-		<li><a href="http://www.thehumansolution.com/ergonomic-office-desk-chair-keyboard-height-calculator.html">The Human Solution</a>
-		<li><a href="http://uk.answers.yahoo.com/question/index?qid=20071002014548AA9ccJm">Yahoo Answers</a>
-		<li><a href="http://askville.amazon.com/proper-height-chair-keyboard-monitor-incredible-stiff-neck-working-online/AnswerViewer.do?requestId=3132080">Askville at Amazon</a>
-		<li><a href="http://www.backdesigns.com/Desk-work-surface-height-W144.aspx">Back Designs</a>
-		<li><a href="http://www.healthycomputing.com/office/setup/chair/">Healthy Computing</a>
-		<li><a href="http://www.leeds.ac.uk/lsmp/healthadvice/computerergonomics/computergonomics.htm">Leeds</a>
-		<li><a href="http://ergonomics.about.com/od/office/ss/computer_setup_6.htm">About.com</a>
-		<li><a href="http://www.ergonomics.com.au/pages/400_useful_info/420_how_to_sit.htm">Ergonomics.com.au</a>
-		<li><a href="http://www.ergonomics-info.com/posture-at-a-computer.html">Ergonomics-info</a>
-		<li><a href="http://www.codinghorror.com/blog/2007/08/computer-workstation-ergonomics.html"><span class="italics">Jeff Atwood!</span></a>
+	<ul class="square">
+		<li><a href="http://orthoinfo.aaos.org/topic.cfm?topic=a00261">American Academy of Orthopaedic Surgeons</a></li>
+		<li><a href="http://www.osha.gov/SLTC/etools/computerworkstations/positions.html">United States Department of Labor - Occupational Safety &amp; Health Administration</a></li>
+		<li><a href="http://web.princeton.edu/sites/ehs/healthsafetyguide/a4.htm">Princeton</a></li>
+		<li><a href="http://www.thehumansolution.com/ergonomic-office-desk-chair-keyboard-height-calculator.html">The Human Solution</a></li>
+		<li><a href="http://uk.answers.yahoo.com/question/index?qid=20071002014548AA9ccJm">Yahoo Answers</a></li>
+		<li><a href="http://askville.amazon.com/proper-height-chair-keyboard-monitor-incredible-stiff-neck-working-online/AnswerViewer.do?requestId=3132080">Askville at Amazon</a></li>
+		<li><a href="http://www.backdesigns.com/Desk-work-surface-height-W144.aspx">Back Designs</a></li>
+		<li><a href="http://www.healthycomputing.com/office/setup/chair/">Healthy Computing</a></li>
+		<li><a href="http://www.leeds.ac.uk/lsmp/healthadvice/computerergonomics/computergonomics.htm">Leeds</a></li>
+		<li><a href="http://ergonomics.about.com/od/office/ss/computer_setup_6.htm">About.com</a></li>
+		<li><a href="http://www.ergonomics.com.au/pages/400_useful_info/420_how_to_sit.htm">Ergonomics.com.au</a></li>
+		<li><a href="http://www.ergonomics-info.com/posture-at-a-computer.html">Ergonomics-info</a></li>
+		<li><a href="http://www.codinghorror.com/blog/2007/08/computer-workstation-ergonomics.html"><span class="italics">Jeff Atwood!</span></a></li>
 	</ul>
 </p>
 

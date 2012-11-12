@@ -1,65 +1,96 @@
 ---
 layout: project
-title: Tic-Tac-Toe with OpenGLUT
+title: Tic-Tac-Toe in OpenGL
 main: projects
 sub: listing
 ---
 
-<p>
-  This is a 99% complete tic-tac-toe game I made in OpenGL with OpenGLUT.
-  I say it's 99% because I haven't implemented keyboard actions beyond quitting via ESC,
-  and I don't plan to. This is enough for a small taste of OpenGL, and while 
-  there was a lot to learn, it just never felt right to program in.
-</p>
+<div class="in-line section">
+  <div class="container">
+    <div class="sixteen columns">
+      &nbsp;
+    </div> 
+  </div>
 
-<p>
-  OpenGL relies heavily on matrices to draw onto the screen, something that I'm not 
-  familiar with at all. My implementation of it is extremely simple, and most of all, 2D.
-<p>
+  <div class="container division">
+    <div class="three columns header">
+      TOOLS
+    </div>
+    <div class="thirteen columns details">
+      C++</br>
+      OpenGLUT - OpenGL API Extension<br/>
+    </div>
+  </div>
 
-<p>
-  <h3>Motivation</h3>
-</p>
+  <div class="container">
+    <div class="sixteen columns">
+      &nbsp;
+    </div> 
+  </div>
 
-<p> 
-  The basic game for a programmer is a console tic-tac-toe games, which really isn't 
-  that hard. So why don't I step it up a notch? I learn OpenGL, I include 3 levels of 
-  AI difficulty and the ability to select X or O. I'm pretty happy with the end result, knowledge and program-wise.
-</p>
+  <div class="container division">
+    <div class="three columns header">
+      CONCEPTS
+    </div>
+    <div class="thirteen columns details">
+      State Machines<br/>
+    </div>
+  </div>
+</div>
 
-<p>
-  You can find my project 
-  <a href="https://github.com/Blisse/OGLTicTacToe" target="_blank">here</a>.
-</p>
+<div class="container">
+  <div class="sixteen columns">
+    &nbsp;
+  </div> 
+</div>
 
-<p>
-  <h3>D3D v. OpenGL</h3>
-</p>
+<div class="container">
+  <div class="sixteen columns">
+    <p>
+      The first game most people make is usually the classic Tic-Tac-Toe. When I started my first Tic-Tac-Toe game in Python, I had no idea what to do, because it was so conceptually different from what I am used to. Input comes from the hands, not from the keyboard. Typing '4' or '5' to take the center piece or even '2 2', makes no sense for an actual game. Because I had not learned about PyGame yet, I looked back at what input I actually knew, and took a stab at OpenGL.
+    </p>
+    <p>
+      My first encounter with OpenGL was from my Counter-Strike days, where my tinkering with the in-game configurations and macros made me notice the subtle <code class="in-line">D3D</code> and <code class="in-line">OpenGL</code> options. I never really understood these terms, except that they had something to do with graphics, so I tried to fix slightly.
+    </p>
 
-<p>
-  OpenGL was always really interesting to me, partially because of my long time playing Counter-Strike.
-  Because I am a tinkerer, I always venture into the game settings to take a look at what options are available..
-  A very interesting observation I remember, is that there were at least two options in the video settings. D3D and OpenGL.
-</p>
+    <p>
+      <h3>Process</h3>
+    <p>
 
-<p>
-  As a kid, I never really knew what they were, but one day when I had some free time to think about what to program, all
-  these thoughts of Counter-Strike rushed back at me, and I decided to take a farther look at OpenGL solutions.
-  This is the result, and I will save DirectX for another time.
-</p>
+    <p>
+      Using a finite state machine, as I had learned in the previous term, I wrote out a basic layout of how the state progression works in a game.
+    </p>
 
-<p>
-  I now realize that there was and still is a huge debate between using the two API's, and while I'm 
-  not entirely sure exactly what's going on, I still find it very interesting, and maybe you will 
-  <a href="http://user.xmission.com/~legalize/d3d-vs-opengl.html" target="_blank">too</a>. DirectX is winning by 
-  a huge margin though at the moment because of how hard Microsoft has pushed it forward, though some believe
-  if we had only gone OpenGL to begin with, our rendering technology would be leaps and bounds where it is today.
-</p>
+    <p>
+      <code class="block">STARTMENU -> GAME -> RESULTS -> STARTMENU</code>
+    </p>
 
-<p>
-  EDIT [20121026]: <a href="http://programmers.stackexchange.com/questions/60544/why-do-game-developers-prefer-windows/88055#88055">Why Do Game Developers Prefer Windows</a>
-</p>
+    <p>
+      Something like that, and progression through the states became simply reading a bunch of if statements. It was really cool to see something like that actually work.
+    </p>
 
-<p>
-  This is an amazing explanation of the development of DirectX against OpenGL. 
-</p>
+    <p>
+      The rest of the implementation went by pretty normally. I noticed something that made checking the grid for winning a lot easier. If I created a vector that stored the 8 3-number combinations that need to be checked, I could just iterate through the vector to pass through the entire grid, and if I wanted to randomize things a bit, so for my A.I., I could just randomize that vector. This was a refreshing take for checking for a Tic-Tac-Toe winner.
+    </p>
+
+    <p>
+      After I had the board set-up fully, and an actual game available, creating the three A.I. levels was the fun part. Using wikipedia's <a href="http://en.wikipedia.org/wiki/Tic-tac-toe#Strategy">Tic-Tac-Toe strategy</a> and randomizing it a bit, along with some other custom pieces, I created a Level 3 A.I. that never loses, even if it goes second. Toning down the difficulty simply required stripping the more advanced move algorithms, while the Level 1 A.I. played randomly unless it could win or block. Simple, but fun to code.
+    </p>
+
+    <p>
+      <h3>DirectX v. OpenGL</h3>
+    </p>
+
+    <p>
+      There is actually a lot of debate over OpenGL versus DirectX. Because I saw them around a lot in Counter-Strike, it really interested me to take a look into the craziness that is the WinAPI.
+    </p>
+
+    <p>
+      I encountered this post, <a href="http://programmers.stackexchange.com/questions/60544/why-do-game-developers-prefer-windows/88055#88055">Why Do Game Developers Prefer Windows</a>, which was a really great read, not to mention a good look into the history of OpenGL and the history of WinAPI.
+    </p>
+
+    <p>
+      I also saw this post, <a href="http://user.xmission.com/~legalize/d3d-vs-opengl.html" target="_blank">D3D vs OpenGL</a>, which looks like the general consensus of programmers in that field. While OpenGL is more 'open', and therefore can support better and more advanced features, because Microsoft pushed DirectX so heavily, we are stuck with the good, but not best.
+    </p>
+  </div>
+</div>

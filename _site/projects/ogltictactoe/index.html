@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>
-    lai.victor &raquo; Tic-Tac-Toe with OpenGLUT
+    lai.victor &raquo; Tic-Tac-Toe in OpenGL
   </title>
   
     <!-- Site Author -->
@@ -21,12 +20,9 @@
 
   <!-- Blog CSS -->
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-
+  
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
@@ -35,18 +31,17 @@
   <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/header/header.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-
+  
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
@@ -64,9 +59,19 @@
   })();
 
 </script>-->
-
-  <script src="/js/jquery-1.8.2.js"></script>  
-
+  
+  
+  <!-- Skeleton -->
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  
+  
+  <!-- JQuery 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
+  
+  
+  
+  
 </head>
 
 <body>
@@ -131,8 +136,10 @@
 						 >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li 
+									class=""
+								 >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li 
 									class=""
@@ -207,80 +214,25 @@
 
 <br />
 
-<div class="container">
-
-	<div class="sixteen columns">
-	  <article class="post">
-	  	
-			<h2 class="casper no-vertical-margins">
+<article class="project">
+	<div class="container">
+		<div class="sixteen columns">
+			<h2 class="no-vertical-margins">
 				<a href="/projects/ogltictactoe/index.html" title="Permanent link to this post">
-					<span class="h2-hover">Tic-Tac-Toe with OpenGLUT</span>
+					<span class="h2-hover">Tic-Tac-Toe in OpenGL</span>
 				</a>
 			</h2>
-
-		<p>
-  This is a 99% complete tic-tac-toe game I made in OpenGL with OpenGLUT.
-  I say it's 99% because I haven't implemented keyboard actions beyond quitting via ESC,
-  and I don't plan to. This is enough for a small taste of OpenGL, and while 
-  there was a lot to learn, it just never felt right to program in.
-</p>
-
-<p>
-  OpenGL relies heavily on matrices to draw onto the screen, something that I'm not 
-  familiar with at all. My implementation of it is extremely simple, and most of all, 2D.
-<p>
-
-<p>
-  <h3>Motivation</h3>
-</p>
-
-<p> 
-  The basic game for a programmer is a console tic-tac-toe games, which really isn't 
-  that hard. So why don't I step it up a notch? I learn OpenGL, I include 3 levels of 
-  AI difficulty and the ability to select X or O. I'm pretty happy with the end result, knowledge and program-wise.
-</p>
-
-<p>
-  You can find my project 
-  <a href="https://github.com/Blisse/OGLTicTacToe" target="_blank">here</a>.
-</p>
-
-<p>
-  <h3>D3D v. OpenGL</h3>
-</p>
-
-<p>
-  OpenGL was always really interesting to me, partially because of my long time playing Counter-Strike.
-  Because I am a tinkerer, I always venture into the game settings to take a look at what options are available..
-  A very interesting observation I remember, is that there were at least two options in the video settings. D3D and OpenGL.
-</p>
-
-<p>
-  As a kid, I never really knew what they were, but one day when I had some free time to think about what to program, all
-  these thoughts of Counter-Strike rushed back at me, and I decided to take a farther look at OpenGL solutions.
-  This is the result, and I will save DirectX for another time.
-</p>
-
-<p>
-  I now realize that there was and still is a huge debate between using the two API's, and while I'm 
-  not entirely sure exactly what's going on, I still find it very interesting, and maybe you will 
-  <a href="http://user.xmission.com/~legalize/d3d-vs-opengl.html" target="_blank">too</a>. DirectX is winning by 
-  a huge margin though at the moment because of how hard Microsoft has pushed it forward, though some believe
-  if we had only gone OpenGL to begin with, our rendering technology would be leaps and bounds where it is today.
-</p>
-
-<p>
-  EDIT [20121026]: <a href="http://programmers.stackexchange.com/questions/60544/why-do-game-developers-prefer-windows/88055#88055">Why Do Game Developers Prefer Windows</a>
-</p>
-
-<p>
-  This is an amazing explanation of the development of DirectX against OpenGL. 
-</p>
-
-	  </article>
-	</div>
-
+		</div>
+	</div>        
 </div>
+<div class="container">
+	<div class="sixteen columns">
+		
+		
+        
+	</div>
+</div>
+
 
 <div class="container">
 	<div class="sixteen columns">
@@ -297,9 +249,6 @@
 	</footer>
 	</div>
 </div>
-
-<script src="/js/tiles.js"></script>
-
 </body>
 
 </html>

@@ -5,19 +5,48 @@ main: projects
 sub: listing
 ---
 
-<p>
-  Pretty direct implementation after my first 2 weeks of C++.
-  Not my best code, but in all my Googling, I haven't found anything that does this. 
-  Only works with monospaced fonts, of course.
-</p>
+<div class="in-line section">
+  <div class="container">
+    <div class="sixteen columns">
+      &nbsp;
+    </div> 
+  </div>
 
-<p>
-  The code is pretty self commenting. Takes in an input file, output file and required length of 
-  all the lines (must be greater than the maximum line length).
-</p>
+  <div class="container division">
+    <div class="three columns header">
+      TOOLS
+    </div>
+    <div class="thirteen columns details">
+      C++</br>
+    </div>
+  </div>
 
-<p>
-{% highlight java %}
+  <div class="container">
+    <div class="sixteen columns">
+      &nbsp;
+    </div> 
+  </div>
+</div>
+
+<div class="container">
+	<div class="sixteen columns">
+	    <p>
+	      <h3>Description</h3>
+	    </p>
+	    <p>
+	      This is a C++ command line application that reads in an inputfile and a line length, justifies the text in the input file and writes it to the outputfile.
+	    </p>
+	    <p>
+	      <h3>Motivation</h3>
+	    </p>
+	    <p>
+	    	I couldn't find this code outside in the Internet, and this was required for an assignment, so I put it up here. Nothing too advanced was used, as the implementation is pretty straightforward.
+		</p>
+		<p>
+			<h3>Code</h3>
+		</p>
+		<p>
+{% highlight c++ %}
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -29,134 +58,121 @@ using namespace std;
 
 class LineTools {
 public:
-void justifyLines(string filenameIn, string filenameOut, int max_len)
-{
-ifstream infile;
-infile.open(filenameIn.c_str() );
-ofstream outfile;
-outfile.open(filenameOut.c_str() );
-string string_in;
-int line_len;
-int offset;
-int i, k = 0;
-int oneword = 1;
-while ( getline(infile, string_in) )
-{
-	oneword = 1;
-	line_len = string_in.length();
-	offset = max_len - line_len;
-	for ( i=0; i<line_len; i++ )
-	{
-		if ( string_in[i] == ' ' )
-		{
-			oneword = 0;
-		}
-	}
-	if ( !offset )
-	{
-		outfile << string_in << endl;
-	}
-	else // string_len < max_len
-	{
-		if (oneword)
-		{
-			outfile << string_in;
-			while (offset)
-			{
-				outfile << " ";
-				offset--;
-			}
-			outfile << endl;
-		}
-		else
-		{
-			int n = 0;
-			while ( offset )
-			{
-				if ( k > (line_len-1) )
-				{
-					k = 0;
-				}
+  void justifyLines(string filenameIn, string filenameOut, int max_len)
+  {
+    ifstream infile;
+    infile.open(filenameIn.c_str() );
+    ofstream outfile;
+    outfile.open(filenameOut.c_str() );
+    string string_in;
+    int line_len;
+    int offset;
+    int i, k = 0;
+    int oneword = 1;
+    while ( getline(infile, string_in) )
+    {
+      oneword = 1;
+      line_len = string_in.length();
+      offset = max_len - line_len;
+      for ( i=0; i<line_len; i++ )
+      {
+        if ( string_in[i] == ' ' )
+        {
+          oneword = 0;
+        }
+      }
+      if ( !offset )
+      {
+        outfile << string_in << endl;
+      }
+      else // string_len < max_len
+      {
+        if (oneword)
+        {
+          outfile << string_in;
+          while (offset)
+          {
+            outfile << " ";
+            offset--;
+          }
+          outfile << endl;
+        }
+        else
+        {
+          int n = 0;
+          while ( offset )
+          {
+            if ( k > (line_len-1) )
+            {
+              k = 0;
+            }
 
-				if ( string_in[k] == ' ' )
-				{
-					string_in.insert(k," ");
-					k++;
-					while ( string_in[k++] == ' ')
-					{
-					}
-					line_len++;
-					offset--;
-				}
-				k++;
-			}
-			k = 0;
-			outfile << string_in << endl;
-		}
-	}
-}
-infile.close();
-outfile.close();
-}
+            if ( string_in[k] == ' ' )
+            {
+              string_in.insert(k," ");
+              k++;
+              while ( string_in[k++] == ' ')
+              {
+              }
+              line_len++;
+              offset--;
+            }
+            k++;
+          }
+          k = 0;
+          outfile << string_in << endl;
+        }
+      }
+    }
+    infile.close();
+    outfile.close();
+  }
 };
 
 int main( int argc, char* argv[] )
 {
-	if ( argc != 4 )
-	{
-		return 0;
-	}
-	LineTools linetool;
-	linetool.justifyLines(argv[1], argv[2], atoi(argv[3]));
-	return 0;
+  if ( argc != 4 )
+  {
+    return 0;
+  }
+  LineTools linetool;
+  linetool.justifyLines(argv[1], argv[2], atoi(argv[3]));
+  return 0;
 }
 {% endhighlight %}
-</p>
-
-<p>
-  Let's give it some input.
-</p>
-
-<p>
+		</p>
+		<p>
+			This is how it can be run.
+		</p>
+		<p>
 {% highlight console %}
+; cat filein.txt
 abcdefghijklmnopqrstuvwxyz
 a ef ijkl op svwxyz
 a cd nopqr z
-{% endhighlight %}
-<p>
 
-<p>
-  And here's the output for "ccfile.o filein.txt fileout.txt 26".
-</p>
-
-</p>
-{% highlight console %}
+; file.o filein.txt fileout.txt 26
+; cat fileout.txt
 abcdefghijklmnopqrstuvwxyz
 a   ef   ijkl   op  svwxyz
 a      cd      nopqr     z
 
-{% endhighlight %}
-</p>
-
-<p>
-  The output for "file.o filein.txt fileout.txt 27" is a bit different.
-</p>
-
-<p>
-{% highlight console %}
+; file.o filein.txt fileout.txt 27
+; cat fileout.txt
 abcdefghijklmnopqrstuvwxyz 
 a   ef   ijkl   op   svwxyz
 a      cd      nopqr      z
 {% endhighlight %}
-</p>
+		</p>
 
-<p>
-  I'm welcome to any suggestions on how to improve this, because there's a lot that can be improved.
-  Sadly, this only works for monospaced fonts. I think I would need to analyze the default font style
-  before I can implement this 100% for all font types. I will look into that for the future.
-</p>
-
-<p>
-  Depending on how it'll be used. it's probably a good idea to create a method to get the maximum
-  number of characters per line.
-</p>
+		<p>
+			<h3>Remarks</h3>
+		</p>
+		<p>
+			In the future, I should definitely add a method for it to accept from the console either no maximum line length, or a value, so that it can justify either types.
+		</p>
+		<p>
+			A limitation I hate about this algorithm is that it cannot differentiate between monospaced and regular fonts. In fact, it works only for monospaced fonts. I want to see in the future if I can find a way to determine the font and justify accordingly, and somewhat reproduce the line algorithms text editors use.
+		</p>
+	</div>
+</div>

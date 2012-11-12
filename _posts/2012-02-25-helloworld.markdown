@@ -2,7 +2,7 @@
 layout: post
 title: hello world!
 date: 2012-02-25
-tags: [site, milestones]
+tags: [this site, milestones]
 ---
 
 <p>

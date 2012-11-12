@@ -4,12 +4,27 @@
  <title>lai.victor</title>
  <link href="http://www.laivictor.com/atom.xml" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-11-05T23:11:15-05:00</updated>
+ <updated>2012-11-12T17:13:25-05:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
  </author>
 
+ 
+ <entry>
+   <title type="html">massive reorganization</title>
+   <link href="http://www.laivictor.com/archive/2012/11/05/massivereorganization"/>
+   <updated>2012-11-05T00:00:00-05:00</updated>
+   <id>http://www.laivictor.com/archive/2012/11/05/massivereorganization</id>
+   <content type="html">&lt;p&gt;
+    In the process of a massive reorganization of my site at the moment. I hope you enjoy the new themes, the new categories, and new layout. I will also be working on quite a few new features, and combining some of my posts into new sections and categories. :)
+&lt;/p&gt;
+
+</content>
+   
+   <category term="this site"/>
+   
+ </entry>
  
  <entry>
    <title type="html">CS241 MERL file linker</title>
@@ -104,20 +119,20 @@
 
 
 &lt;p&gt;
-    &lt;ul class=&quot;disc&quot;&gt;
-        &lt;li&gt;&lt;a href=&quot;http://orthoinfo.aaos.org/topic.cfm?topic=a00261&quot;&gt;American Academy of Orthopaedic Surgeons&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.osha.gov/SLTC/etools/computerworkstations/positions.html&quot;&gt;United States Department of Labor - Occupational Safety &amp;amp; Health Administration&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://web.princeton.edu/sites/ehs/healthsafetyguide/a4.htm&quot;&gt;Princeton&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.thehumansolution.com/ergonomic-office-desk-chair-keyboard-height-calculator.html&quot;&gt;The Human Solution&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://uk.answers.yahoo.com/question/index?qid=20071002014548AA9ccJm&quot;&gt;Yahoo Answers&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://askville.amazon.com/proper-height-chair-keyboard-monitor-incredible-stiff-neck-working-online/AnswerViewer.do?requestId=3132080&quot;&gt;Askville at Amazon&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.backdesigns.com/Desk-work-surface-height-W144.aspx&quot;&gt;Back Designs&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.healthycomputing.com/office/setup/chair/&quot;&gt;Healthy Computing&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.leeds.ac.uk/lsmp/healthadvice/computerergonomics/computergonomics.htm&quot;&gt;Leeds&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://ergonomics.about.com/od/office/ss/computer_setup_6.htm&quot;&gt;About.com&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.ergonomics.com.au/pages/400_useful_info/420_how_to_sit.htm&quot;&gt;Ergonomics.com.au&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.ergonomics-info.com/posture-at-a-computer.html&quot;&gt;Ergonomics-info&lt;/a&gt;
-        &lt;li&gt;&lt;a href=&quot;http://www.codinghorror.com/blog/2007/08/computer-workstation-ergonomics.html&quot;&gt;&lt;span class=&quot;italics&quot;&gt;Jeff Atwood!&lt;/span&gt;&lt;/a&gt;
+    &lt;ul class=&quot;square&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;http://orthoinfo.aaos.org/topic.cfm?topic=a00261&quot;&gt;American Academy of Orthopaedic Surgeons&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.osha.gov/SLTC/etools/computerworkstations/positions.html&quot;&gt;United States Department of Labor - Occupational Safety &amp;amp; Health Administration&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://web.princeton.edu/sites/ehs/healthsafetyguide/a4.htm&quot;&gt;Princeton&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.thehumansolution.com/ergonomic-office-desk-chair-keyboard-height-calculator.html&quot;&gt;The Human Solution&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://uk.answers.yahoo.com/question/index?qid=20071002014548AA9ccJm&quot;&gt;Yahoo Answers&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://askville.amazon.com/proper-height-chair-keyboard-monitor-incredible-stiff-neck-working-online/AnswerViewer.do?requestId=3132080&quot;&gt;Askville at Amazon&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.backdesigns.com/Desk-work-surface-height-W144.aspx&quot;&gt;Back Designs&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.healthycomputing.com/office/setup/chair/&quot;&gt;Healthy Computing&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.leeds.ac.uk/lsmp/healthadvice/computerergonomics/computergonomics.htm&quot;&gt;Leeds&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://ergonomics.about.com/od/office/ss/computer_setup_6.htm&quot;&gt;About.com&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.ergonomics.com.au/pages/400_useful_info/420_how_to_sit.htm&quot;&gt;Ergonomics.com.au&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.ergonomics-info.com/posture-at-a-computer.html&quot;&gt;Ergonomics-info&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;http://www.codinghorror.com/blog/2007/08/computer-workstation-ergonomics.html&quot;&gt;&lt;span class=&quot;italics&quot;&gt;Jeff Atwood!&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/p&gt;
 
@@ -141,7 +156,7 @@
 
 </content>
    
-   <category term="personal"/>
+   <category term="life"/>
    
    <category term="school"/>
    
@@ -165,7 +180,7 @@
 
 </content>
    
-   <category term="site"/>
+   <category term="this site"/>
    
  </entry>
  
@@ -285,62 +300,18 @@
 &lt;p&gt;
   Other interesting words that appear for word_score == 100 are:
     &lt;ul class=&quot;square&quot;&gt;
-      &lt;li&gt;excellent
-      &lt;li&gt;snobbery
-      &lt;li&gt;socialism
-      &lt;li&gt;reengineer
-      &lt;li&gt;practicing
-      &lt;li&gt;defeminized
+      &lt;li&gt;excellent&lt;/li&gt;
+      &lt;li&gt;snobbery&lt;/li&gt;
+      &lt;li&gt;socialism&lt;/li&gt;
+      &lt;li&gt;reengineer&lt;/li&gt;
+      &lt;li&gt;practicing&lt;/li&gt;
+      &lt;li&gt;defeminized&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/p&gt;
 
 </content>
    
    <category term="programming"/>
-   
- </entry>
- 
- <entry>
-   <title type="html">production mode</title>
-   <link href="http://www.laivictor.com/archive/2012/09/29/productionmode"/>
-   <updated>2012-09-29T00:00:00-04:00</updated>
-   <id>http://www.laivictor.com/archive/2012/09/29/productionmode</id>
-   <content type="html">&lt;p&gt;
-  Eventually, I want to get this website to some sort of, &quot;production mode&quot;,
-  where I can stop focussing on creating content for this site, learning 
-  HTML5/CSS3/JavaScript, and instead begin focussing on blogging. 
-&lt;/p&gt;
-
-
-&lt;p&gt;
-  It's been great experience learning how to program for the future in a sense, because
-  I have to constantly make sure my CSS3 is readible for me to make super fast adjustments
-  later on, or that my site layout makes sense so that finding files is simple. 
-  Hopefully, I'll be able to apply these skills to my future development posts. 
-&lt;/p&gt;
-
-
-&lt;p&gt;
-  However, I am very glad to be learning all of these new programming tools, Jekyll, Git,
-  Liquid, Markdown, Pygments, jQuery and many more. I really want to experience all of the
-  development, the programming, the tools, the add-ons around me, but there isn't enough
-  time. I really want to bunk down these next 7 months, study hard and work hard so I can
-  do all of these things that I want to do, like program a Flash UI for my Cowon J3,
-  or add some Windows 8 no-longer-Metro-style tiles and icons to my website. 
-&lt;/p&gt;
-
-
-&lt;p&gt;
-  In the meantime, I'll be working hard to post some more content on this site. Upcoming? 
-  A gallery of the site's &quot;aesthetic&quot; progression, Windows 8 tiles, and a multi-level
-  navigation menu! Also, hopefully I'll figure out a way to make a nice mobile version.
-  The current site is just skeleton'd into the correct proportions at the moment. Nothing 
-  really &quot;mobile&quot;. But I'll fix that.
-&lt;/p&gt;
-
-</content>
-   
-   <category term="site"/>
    
  </entry>
  
@@ -407,7 +378,7 @@
 
 </content>
    
-   <category term="programming"/>
+   <category term="technology"/>
    
  </entry>
  
@@ -540,23 +511,6 @@
  </entry>
  
  <entry>
-   <title type="html">theme fixing</title>
-   <link href="http://www.laivictor.com/archive/2012/09/04/themereworks"/>
-   <updated>2012-09-04T00:00:00-04:00</updated>
-   <id>http://www.laivictor.com/archive/2012/09/04/themereworks</id>
-   <content type="html">&lt;p&gt;
-  I'm not really a fan of how my css theme is at the moment, so here comes a complete
-  rework of all my CSS. Hopefully this won't take too long, but haven't had much time recently. 
-  Here goes nothing!
-&lt;/p&gt;
-
-</content>
-   
-   <category term="site"/>
-   
- </entry>
- 
- <entry>
    <title type="html">hey, i'm HTML5 valid!</title>
    <link href="http://www.laivictor.com/archive/2012/08/22/html5valid"/>
    <updated>2012-08-22T00:00:00-04:00</updated>
@@ -583,7 +537,7 @@
 
 </content>
    
-   <category term="site"/>
+   <category term="this site"/>
    
    <category term="milestones"/>
    
@@ -747,134 +701,139 @@
  </entry>
  
  <entry>
-   <title type="html">tetris friends</title>
-   <link href="http://www.laivictor.com/archive/2012/08/19/tetrisfriends"/>
-   <updated>2012-08-19T00:00:00-04:00</updated>
-   <id>http://www.laivictor.com/archive/2012/08/19/tetrisfriends</id>
-   <content type="html">&lt;p&gt;
-  I recently got to level 95 in Tetris Friends Battle 2P and 6P, so here's some Tetris. ^^
-&lt;/p&gt;
+   <title type="html">tetris</title>
+   <link href="http://www.laivictor.com/archive/2012/08/18/tetris"/>
+   <updated>2012-08-18T00:00:00-04:00</updated>
+   <id>http://www.laivictor.com/archive/2012/08/18/tetris</id>
+   <content type="html">&lt;div class=&quot;sixteen columns&quot;&gt;
+    &lt;p&gt;
+        I recently achieved my 3 month goal of getting to level 95 in Tetris Friends Battle, so here's some Tetris. ^^
+    &lt;/p&gt;
 
+    &lt;p&gt;
+        &lt;h3&gt;Tetris&lt;/h3&gt;
+    &lt;/p&gt;
 
+    &lt;p&gt;
+        Tetris is played all around the world, with good reason. It's very addictive, easily accessible to all ages, has a high skill ceiling for improvement and the Tetris &lt;span class=&quot;italics&quot;&gt;tune&lt;/span&gt; is just plain catchy. It has become one of those words that everyone knows, regardless of culture, race, age or job. 
+    &lt;/p&gt;
 
+    &lt;p&gt;
+        However, you can easily when Tetris can become a monotonous grind. While the levelling system pushes the speed of the game up, the skill ceiling and time commitment goes exponentially up with no other gains, other than the joy of being really good. Which is sometimes enough. But over time, this monotonous grind loses the casual base. Sure, every once in a while you'll squeek out a quick Tetris game since it's good for your health. Once and done for a while, though.
+    &lt;/p&gt;
 
-&lt;p&gt;
-  &lt;a href=&quot;http://en.wikipedia.org/wiki/Tetris&quot;&gt;Tetris&lt;/a&gt; is somewhat of a famous game. Most people who've played it probably first
-  started on the GameBoy. Maybe something like this.
-&lt;/p&gt;
+    &lt;p&gt;
+        But enter Tetris Friends.
+    &lt;/p&gt;
+        
+    &lt;p&gt;
+        &lt;a href=&quot;http://www.tetrisfriends.com/&quot; target=&quot;_blank&quot;&gt;Tetris Friends&lt;/a&gt; hit the world via Facebook, and it spread like wildfire in its first few years. Now, it has seemed to die down, but it took the great Tetris formula, kept all the fun of stacking blocks, added enough social and game elements to cause Tetris's recent resurgence.
+    &lt;/p&gt;
 
+    &lt;p&gt;
+        It actually wouldn't be wrong to say Tetris Friends is a strong reason as to why Tetris is still on a lot of people's minds.
+    &lt;/p&gt;
+        
+    &lt;p&gt;
+        &lt;h3&gt;What makes a Tetris&lt;/h3&gt;
+    &lt;/p&gt;
+        
+    &lt;p&gt;
+        Because Tetris has become so mainstream, a lot of its meaning has been lost. The basics of the game are very easy to pick up, but there are a lot of nuances different versions have added that people say improve or detract from the game. I tend to think most of them improved upon an already winning formula.
+    &lt;/p&gt;
 
+    &lt;p&gt;
+        The point of regular Tetris is to finish the game. Many variants set the bar at level 20. Some have a limitless mode. More hardcore clones like ones posted on Youtube go invincibly fast, then turn off the pieces so you play blind and by memory. 
+    &lt;/p&gt;
 
+    &lt;p&gt;
+        The end goal is always to get the highest score possible. How? To make lots and lots of Tetrises. In the world of stacking and clearing size-4 blocks, a Tetris is clearing 4 lines at the same time with the 'I' block.
+    &lt;/p&gt;
 
-&lt;p&gt;
-&lt;div class=&quot;center&quot;&gt;
-&lt;img alt=&quot;ye olde Tetris&quot; src=&quot;http://upload.wikimedia.org/wikipedia/en/4/4a/GB_Tetris.png&quot;&gt;
+    &lt;p&gt;
+        An equally viable method is to get lots of T-spins, which involve making a spin left or spin right in the half second when the block is about to drop onto the stack.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        These are really simple concepts. T-spin was not in the original Tetris, but you can imagine how much more depth it brings to the game.
+        Tetris Friends does even more to this formula.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        &lt;h3&gt;What makes a Tetris friendly?&lt;/h3&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        While T-spins and Tetrises have become fundamental to the game, they don't add the much needed 'game' elements that makes a game really successful. Being a puzzle game is often enough to garner interest, but what really pushed Tetris into the mainstream is really making it more friendly to new players by introducing a lot of new, cool and most importantly fun elements.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        &lt;h5&gt;Facebook Integration&lt;/h5&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        Perhaps the most important element of Tetris Friend's success is their integration into Facebook. Recently passing 1 billion users, Facebook is by far the most successful and widespread social platform. By integrating an application successfully into Facebook's network, you can interact with all those users, which is a huge market and makes the game very accessible compared to client downloads.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        &lt;h5&gt;Game Modes&lt;/h5&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        Tetris Friends put a bunch of game modes on the grid, and made them accessible to a lot of people very easily with their integration with Facebook.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        Sprint races players against other players to see who can clear the fastest 40 lines. Marathon is like limitless mode, but amplifies the speed and point progression a lot better than other game variants do. Battle 2P and 6P pits players against players in a refreshing take on the Tetris formula. These modes work heavily to improve the replayability of the game by switching up the skills required to succeed in each, and expand the skill sets of the players.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        But what game modes do is simply reward and spread player improvement equally. While Battle 2P is always the premier game mode, being good at any of the game modes automatically makes you better in other game modes, and this adds to the time spent in each mode. Get good at Sprint and suddenly you'll want to be as good in Batle 2P as you are in Sprint. Which brings me to my next point.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        &lt;h5&gt;Rankings&lt;/h5&gt;
+    &lt;/p&gt;
+            
+    &lt;p&gt;
+        Basic Tetris has no metric on where your skill level stands. While you can judge a fair bit by saying, &quot;Oh, I can't beat level 14&quot;, beyond these generic statements you have no information. 
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        By including this ranking solution, you can suddenly compare yourself to your friends: boast, cry, whatever. You have a standard, physical goal to work towards. You have a lot more concrete information to judge your own performance in that you're weak in sprints, but good at battles.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        My personal favourite element of their ranking system is that it makes you feel good.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        If you keep track of the labels they have defined for the ranking system, you will notice it is always positive. And this is amazing in keeping you interested. Do you want to be called a Hero? Or a Rookie? Tetris God? Grandmaster? Star? It's amazing how they decided to keep the attitude positive like this.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        Some people will argue that it hides information a lot more, but in reality, good players don't care about their label. They don't even care about the number. But improving or stalled players don't need to feel bad about being stuck at the Grandmaster level this way.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        Plus, the name obscures the fact that the skill level is dramatically higher at the top levels. An extremely interesting observation I found with Starcraft is that the professional gamers, the highest tier of players, are at a skill level way beyond even the top players. If you are familiar with the Starcraft 2 rankings, it goes &lt;br/&gt;&lt;code class=&quot;in-line center&quot;&gt; Bronze &lt; Silver &lt; Gold &lt; Platinum &lt; Diamond &lt; Masters &lt; Grandmasters &lt;/code&gt;&lt;br/&gt; where Grandmaster represents the top 200 players, and Masters represents the top 2% of the Diamond ranking. In this same example, you can easily see how someone in Diamond who is not award of Masters may think that he is one of the best players, and this makes him continue playing. The same thing applies in Tetris Friends.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        &lt;h5&gt;Rewards&lt;/h5&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        And then adding rewards keep you coming back to the game. A really annoying, yet smart decision was to include a slot system where you opened more slots the more consecutive days you played. Diabolical yes. Smart yes. And running these slots more meant you got more Tetris money to spend for Tetris: adding skins, getting slight gaming tweaks.
+         Rewards keep you coming back to play more.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+        Tetris Friends just does so many things right, it's very easy to see how it has become so successful. However, it will need to continue to innovate and improve the user experience, because being a Tetris clone, there is definitely a limit to how many blocks casual gamers can handle stacking.
+    &lt;/p&gt;
 &lt;/div&gt;
-&lt;/p&gt;
 
 
-
-
-&lt;p&gt;
-  Nowadays, &lt;a href=&quot;http://www.tetrisfriends.com/&quot; target=&quot;_blank&quot;&gt;Tetris Friends&lt;/a&gt; is all the rage. 
-  And for good reason.
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-  They have a monopoly on the casual Tetris scene, being the exclusive licensee of Tetris in North America and Europe. They have a dedicated site and a much better app on Facebook. 
-  Actually, it probably wouldn't be very wrong to say that Tetris Friends is the reason Tetris has experienced a recent resurgence.
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-  The Tetris Friends has several game modes in both Single Player and Multiplayer. Marathon, where you try to clear as many lines as possible,
-  to Sprint 5P, where you play 3 others to finish 40 lines in the fastest time, to Battle 2P, where you battle another player and score KOs. 
-  It's really addicting, smooth, and in general just very fun to play. 
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-  My main experience is with the Multiplayer Battle 2P and 6P modes, so that's where I'll start.
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-&lt;h4 class=&quot;subheader&quot;&gt;My History&lt;/h4&gt;
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-  In May, one of my high school friends saw me playing Tetris, and asked me for a match. I hadn't seen him in a while, so why not.
-  In short, he crushed me. Long version? He REALLY crushed me. I actually thought I was decent. He was Level 100, literally a Tetris God.
-  I vowed that day to get to a point where I could compete toe-to-toe with him. At least, somewhere toe-to-toe. It was a game, and it was a 
-  fun challenge. My favourite kind.
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-  Over the last 3 months, I played Tetris Friends pretty ritually. After work, a couple hours. On the weekends, a couple hours. Nothing too crazy,
-  but it got me really into the game, and to a point where I could starting seeing a vast improvement over my newbie self from May. It was very rewarding to see
-  this effort and determination turning into something real. Yay!
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-  Battle 2P is the most competitive game mode. You play another player from around the world,
-  send as many lines as possible to the other player, and hope you KO them more than they do to you. To send lines, you'll have to perform combos. 
-  Along the way, you'll also have to clear the lines that your opponent sends to you by clearing the bombs away. It's complicated,
-  but play a few times and you'll get the gist of it. Here's a image I found off Google off a couple of newer players going at it.
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-&lt;div class=&quot;center&quot;&gt;
-&lt;img class=&quot;scale-with-grid child-padding&quot; alt=&quot;Tetris Battle&quot; src=&quot;http://i.ytimg.com/vi/AHdBNRff2AY/0.jpg&quot;&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt; 
-  Starting off, I was pretty bad, but I knew how to improve, and I set about playing only for that purpose.
-  Knowing how to improve was really important. There's a lot of players that are really amazing at some parts of the game, but say, play a bad style, and that hinders
-  their improvement. There isn't really an exact skill ceiling for this game since you can play at blistering speeds. But having a bad strategy will harm your development
-  in the long run. I was fortunate enough to be able to visualize this kind of improvement plan for myself, and able to watch it unfold.
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-  Most players in the game know of only one way to play. I will refer to this as the 1-line style. Since the game board is 10 spaces across, they'll fill up
-  9 of those spaces as high as possible, leaving 1 space at the left or right side, while saving up the I-piece, then drop it once for 
-  a Tetris, and again for a Back-to-Back Tetris. This is pretty good for low levels, and solid enough to help develop your building skills. 
-  But definitely, it's the worst way to play.
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-  I will save the strategic discussions my next post. And later I'll try to pinpoint in a later exactly why Tetris Friends is so good. From a development point of view of course.
-&lt;/p&gt;
 
 </content>
    
@@ -997,39 +956,19 @@
 
 
 &lt;p&gt;
-  &lt;blockquote&gt;
-    Everyone agrees, humans have a finite number of key and mouse presses. As programmers, we want to maximize the productivity and number of presses
-    we have. When we constantly move our hand from the keyboard to the mouse, the time waste inbetween eventually becomes a big deal. That's why 
-    we use workspaces. &lt;cite&gt;me&lt;/cite&gt;
-  &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        We all have a finite number of keyboard presses in our lifetime, so we should do our best to increase the output of each press.
+      &lt;/p&gt;
+      &lt;p&gt;
+        We should try to do as much as we can with as little effort as we can manage, so we don't waste our valuable keypresses doing something that could've been done easier.
+      &lt;/p&gt;
+    &lt;/blockquote&gt;
 &lt;/p&gt;
 
 </content>
    
-   <category term="utilities"/>
-   
- </entry>
- 
- <entry>
-   <title type="html">site (re)construction</title>
-   <link href="http://www.laivictor.com/archive/2012/07/29/siterestructure"/>
-   <updated>2012-07-29T00:00:00-04:00</updated>
-   <id>http://www.laivictor.com/archive/2012/07/29/siterestructure</id>
-   <content type="html">&lt;p&gt;
-  It is ridiculous how hard it is to rework an entire website. Currently, the site is pretty bad
-  for mobile, plus it doesn't act the way I want it when the window is resized. I plan to fix that.
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-  Meanwhile, expect a lot more breaking in the future.
-&lt;/p&gt;
-
-</content>
-   
-   <category term="site"/>
+   <category term="productivity"/>
    
  </entry>
  
@@ -1039,10 +978,21 @@
    <updated>2012-07-26T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/07/26/dropbox</id>
    <content type="html">&lt;p&gt;
-  &lt;a href=&quot;http://www.dropbox.com&quot; target=&quot;_blank&quot;&gt;Dropbox&lt;/a&gt; is an amazing piece of technology.
-  The idea that I can go on any computer and access any files I've put on one folder. Or that
-  I can sync up 4-5 different machines with any of my work so I can stop working on my desktop,
-  pick up my laptop, go to the library and pick up right where I left off. That just blows my mind.
+  &lt;a href=&quot;http://www.dropbox.com&quot; target=&quot;_blank&quot;&gt;Dropbox&lt;/a&gt; just saved me weeks of pain, so here it goes.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  If the Dropbox introduction video doesn't convince you, here is my real world use of Dropbox.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  I'm a University student that lives away from home. I decided to bring my desktop to my new residence. 
 &lt;/p&gt;
 
 
@@ -1075,7 +1025,7 @@
 
 </content>
    
-   <category term="utilities"/>
+   <category term="productivity"/>
    
  </entry>
  
@@ -1156,7 +1106,7 @@
 
 </content>
    
-   <category term="personal"/>
+   <category term="life"/>
    
  </entry>
  
@@ -1375,7 +1325,7 @@
 
 </content>
    
-   <category term="learning"/>
+   <category term="life"/>
    
    <category term="school"/>
    
@@ -1414,7 +1364,7 @@
 
 </content>
    
-   <category term="site"/>
+   <category term="this site"/>
    
    <category term="milestones"/>
    

@@ -2,7 +2,7 @@
 layout: post
 title: just go for it
 date: 2012-07-20
-tags: [personal]
+tags: [life]
 ---
 
 <p>

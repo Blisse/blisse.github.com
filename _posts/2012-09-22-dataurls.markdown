@@ -2,7 +2,8 @@
 layout: post
 title: data URL images
 date: 2012-09-22
-tags: [programming]
+tags: [technology]
+comments: true
 ---
 
 <p>

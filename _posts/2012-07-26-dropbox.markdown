@@ -2,14 +2,22 @@
 layout: post
 title: Dropbox
 date: 2012-07-26
-tags: [utilities]
+tags: [productivity]
+description: an online file storage and synchronization service.
+comments: true
 ---
 
 <p>
-  <a href="http://www.dropbox.com" target="_blank">Dropbox</a> is an amazing piece of technology.
-  The idea that I can go on any computer and access any files I've put on one folder. Or that
-  I can sync up 4-5 different machines with any of my work so I can stop working on my desktop,
-  pick up my laptop, go to the library and pick up right where I left off. That just blows my mind.
+  <a href="http://www.dropbox.com" target="_blank">Dropbox</a> just saved me weeks of pain, so here it goes.
+</p>
+
+<p>
+  If the Dropbox introduction video doesn't convince you, here is my real world use of Dropbox.
+</p>
+
+
+<p>
+  I'm a University student that lives away from home. I decided to bring my desktop to my new residence. 
 </p>
 
 <p>

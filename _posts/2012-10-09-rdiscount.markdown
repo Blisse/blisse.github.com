@@ -2,7 +2,7 @@
 layout: post
 title: moved to rdiscount
 date: 2012-10-09
-tags: [site]
+tags: [this site]
 ---
 
 <p>

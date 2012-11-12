@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>
@@ -21,12 +20,9 @@
 
   <!-- Blog CSS -->
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-
+  
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
@@ -35,18 +31,17 @@
   <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/header/header.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-
+  
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
@@ -64,9 +59,19 @@
   })();
 
 </script>-->
-
-  <script src="/js/jquery-1.8.2.js"></script>  
-
+  
+  
+  <!-- Skeleton -->
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  
+  
+  <!-- JQuery 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
+  
+  
+  
+  
 </head>
 
 <body>
@@ -131,8 +136,10 @@
 						 >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li 
+									class=""
+								 >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li 
 									class=""
@@ -208,19 +215,20 @@
 <br />
 
 <div class="container">
-
 	<div class="sixteen columns">
-
-		<article class="post">
-
-			<h2 class="casper no-vertical-margins">
-				<a href="/archive/2012/08/03/index.html">
-					<span class="h2-hover">Dexpot</span> 
-					<span class="h2-nohover no-wrap">// 20120803</span>
-				</a>
-			</h2>
-
-			<p>
+		<h2 class="no-vertical-margins">
+			<a href="/archive/2012/08/03/index.html">
+				<span class="h2-hover">Dexpot</span> 
+				<span class="h2-nohover no-wrap">// 20120803</span>
+			</a>
+		</h2>
+	</div>
+</div>
+<div class="container">
+	
+	<div class="sixteen columns">
+	
+		<p>
   When I first used Ubuntu, I fell in love with their 
   <a href="http://en.wikipedia.org/wiki/Workspace#Graphical_interfaces" target="_blank">workspaces</a>.
   The ability to open and manage multiple desktops very useful when you only have one monitor. 
@@ -228,24 +236,15 @@
   It was a good day.
 </p>
 
-
-
-
 <p>
   I later found out that Apple's OS X has the Expose and Spaces for their own version of workspaces. 
   On my sister's MacBook, it is noticeably faster, more responsive and had more features, as expected on the very well 
   designed Mac OS. As a Windows user primarily however, I felt very left out.
 </p>
 
-
-
-
 <p>
   After a lot of searching, I found the solution. <a href="http://dexpot.de/" target="_blank">Dexpot</a>
 </p>
-
-
-
 
 <p>
   They've made a lot of improvements since I've first time I used it, and right now, it's evolved into something
@@ -254,17 +253,11 @@
   Ubuntu's workspaces.
 </p>
 
-
-
-
 <p>
   The hotkeys are just more intuitive for one-handed productivity. Hardly anyone keeps both their hands on the keyboard unless they're 
   working exclusively in the shell. Having one hand on the mouse is a lot more flexible. But Ubuntu requires a WIN+ARROW_KEY press 
   to swap the workspace. A pretty big waste of time to move one hand over. Dexpot's solution? ALT+NUM. Simple and fast.
 </p>
-
-
-
 
 <p>
   Why use workspaces at all? The main benefit is clutter. Spacing out several applications over four screens is great, 
@@ -275,31 +268,48 @@
   WIN+DOWN_ARROW, will swap all the active applications to a new set (or carry some over depending on your preferences. It's much more convenient.
 </p>
 
-
-
-
 <p>
   The difference in productivity is pretty astounding. Give it a go <a href="http://dexpot.de/?id=download" target="_blank">here</a>.
 </p>
 
-
-
-
 <p>
-  <blockquote>
-    Everyone agrees, humans have a finite number of key and mouse presses. As programmers, we want to maximize the productivity and number of presses
-    we have. When we constantly move our hand from the keyboard to the mouse, the time waste inbetween eventually becomes a big deal. That's why 
-    we use workspaces. <cite>me</cite>
-  </blockquote>
+    <blockquote>
+      <p>
+        We all have a finite number of keyboard presses in our lifetime, so we should do our best to increase the output of each press.
+      </p>
+      <p>
+        We should try to do as much as we can with as little effort as we can manage, so we don't waste our valuable keypresses doing something that could've been done easier.
+      </p>
+    </blockquote>
 </p>
-
-
-
-		</article>
-
 	</div>
-
 </div>
+<div class="container">
+	<div class="sixteen columns">
+		
+		
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'laivictor'; // required: replace example with your forum shortname
+    var disqus_developer = 1;
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+        
+	</div>
+</div>
+
 
 <div class="container">
 	<div class="sixteen columns">
@@ -316,9 +326,6 @@
 	</footer>
 	</div>
 </div>
-
-<script src="/js/tiles.js"></script>
-
 </body>
 
 </html>

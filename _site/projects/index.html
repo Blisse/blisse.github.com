@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>
@@ -21,12 +20,9 @@
 
   <!-- Blog CSS -->
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-
+  
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
@@ -35,18 +31,17 @@
   <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/header/header.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-
+  
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
@@ -64,9 +59,19 @@
   })();
 
 </script>-->
-
-  <script src="/js/jquery-1.8.2.js"></script>  
-
+  
+  
+  <!-- Skeleton -->
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  
+  
+  <!-- JQuery 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
+  
+  
+  
+  
 </head>
 
 <body>
@@ -131,8 +136,10 @@
 						 >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li 
+									class=""
+								 >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li 
 									class=""
@@ -208,8 +215,6 @@
 <br />
 
 <div class="container">
-	<article class="post">
-
 	<div class="container">
 	<div class="sixteen columns">
 		<p>
@@ -219,32 +224,31 @@
 		<p>
 			<h2>
 				<a href="/projects/ogltictactoe/">
-					<span class="h2-hover">Tic-Tac-Toe in OpenGLUT</span>
+					<span class="h2-hover">OpenGL <span class="no-wrap">Tic-Tac-Toe</span></span>
 				</a>
 			</h2>
 		</p>
 
 		<p>
-			I always looked at my console tic-tac-toe implementations with such disdain, mainly because you can't point and click to place down a piece. I decided one day to do something about that, and while I'm trying something new, might as well try something REALLY new, and go take a giant peek at one of those things I never really understood, OpenGL.
+			Replacing the standard console tic-tac-toe games with something a bit nicer looking.
 		</p>
 
 		<p>
 			<h2>
 				<a href="/projects/justified/">
-					<span class="h2-hover">Justifying Lines in C++</span>
+					<span class="h2-hover">C++ Monospaced Full Justification</span>
 				</a>
 			</h2>
 		</p>
 
 		<p>
-			This was an problem in my introduction to programming class. I searched online for something like this, but nothing else existed, so here's mine. The logic is very simple, though the steps are pretty hard to follow. I wish I could have taken advantage of the String search methods, but they proved too complex at the time of writing this.
+			Couldn't find this kind of solution online anywhere, so here goes nothing!
 		</p>
 	</div>
 </div>
 
-
-	</article>
 </div>
+
 
 
 
@@ -263,9 +267,6 @@
 	</footer>
 	</div>
 </div>
-
-<script src="/js/tiles.js"></script>
-
 </body>
 
 </html>

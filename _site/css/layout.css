@@ -68,18 +68,6 @@
 }
 
 @font-face {
-    font-family: 'Liberation Sans';
-    src: url('/fonts/liberationsans-regular-webfont.eot');
-    src: url('/fonts/liberationsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/liberationsans-regular-webfont.woff') format('woff'),
-         url('/fonts/liberationsans-regular-webfont.ttf') format('truetype'),
-         url('/fonts/liberationsans-regular-webfont.svg#liberation_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: 'Museo Slab';
     src: url('/fonts/museo_slab_300-webfont.eot');
     src: url('/fonts/museo_slab_300-webfont.eot?#iefix') format('embedded-opentype'),
@@ -113,16 +101,8 @@
         font-family: 'Code Bold';
     }
 
-    .droidserif {
-        font-family: 'Droid Serif';
-    }
-
     .droidsans {
         font-family: 'DroidSansRegular';
-    }
-
-    .codebold {
-        font-family: 'Code Bold';
     }
 
     .sourcesans {

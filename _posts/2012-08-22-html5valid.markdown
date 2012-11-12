@@ -2,7 +2,7 @@
 layout: post
 title: hey, i'm HTML5 valid!
 date: 2012-08-22
-tags: [site, milestones]
+tags: [this site, milestones]
 ---
 
 <p>

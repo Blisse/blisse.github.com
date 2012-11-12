@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>
@@ -21,12 +20,9 @@
 
   <!-- Blog CSS -->
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-
+  
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
@@ -35,18 +31,17 @@
   <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/header/header.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-
+  
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
@@ -64,9 +59,19 @@
   })();
 
 </script>-->
-
-  <script src="/js/jquery-1.8.2.js"></script>  
-
+  
+  
+  <!-- Skeleton -->
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  
+  
+  <!-- JQuery 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
+  
+  
+  
+  
 </head>
 
 <body>
@@ -131,8 +136,10 @@
 						 >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li 
+									class=""
+								 >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li 
 									class=""
@@ -208,19 +215,20 @@
 <br />
 
 <div class="container">
-
 	<div class="sixteen columns">
-
-		<article class="post">
-
-			<h2 class="casper no-vertical-margins">
-				<a href="/archive/2012/08/20/index.html">
-					<span class="h2-hover">tetris basics</span> 
-					<span class="h2-nohover no-wrap">// 20120820</span>
-				</a>
-			</h2>
-
-			<div class="sixteen columns">
+		<h2 class="no-vertical-margins">
+			<a href="/archive/2012/08/20/index.html">
+				<span class="h2-hover">tetris basics</span> 
+				<span class="h2-nohover no-wrap">// 20120820</span>
+			</a>
+		</h2>
+	</div>
+</div>
+<div class="container">
+	
+	<div>
+	
+		<div class="sixteen columns">
 <p>
   I don't know who said it, but it's true. If you want to get better, more often than not you'll have to do worse.
 </p>
@@ -258,68 +266,45 @@
 </p>
 </div>
 
-
-
+<div class="eight columns">
+{% highlight console %}
+:: one-line
+_#########
+_#########
+_#########
+_#########
+{% endhighlight %}
+</div>
 
 <div class="eight columns">
-
-<div class="highlight"><pre><code class="console"><span class="go">:: one-line</span>
-<span class="go">_#########</span>
-<span class="go">_#########</span>
-<span class="go">_#########</span>
-<span class="go">_#########</span>
-</code></pre>
+{% highlight console %}
+:: two-line
+__######
+__######
+__######
+__######
+{% endhighlight %}
 </div>
-
-</div>
-
-
-
 
 <div class="eight columns">
-
-<div class="highlight"><pre><code class="console"><span class="go">:: two-line</span>
-<span class="go">__######</span>
-<span class="go">__######</span>
-<span class="go">__######</span>
-<span class="go">__######</span>
-</code></pre>
+{% highlight console %}
+:: three-line
+___######
+___######
+___######
+___######
+{% endhighlight %}
 </div>
-
-</div>
-
-
-
 
 <div class="eight columns">
-
-<div class="highlight"><pre><code class="console"><span class="go">:: three-line</span>
-<span class="go">___######</span>
-<span class="go">___######</span>
-<span class="go">___######</span>
-<span class="go">___######</span>
-</code></pre>
+{% highlight console %}
+:: four-line
+____######
+____######
+____######
+____######
+{% endhighlight %}
 </div>
-
-</div>
-
-
-
-
-<div class="eight columns">
-
-<div class="highlight"><pre><code class="console"><span class="go">:: four-line</span>
-<span class="go">____######</span>
-<span class="go">____######</span>
-<span class="go">____######</span>
-<span class="go">____######</span>
-</code></pre>
-</div>
-
-</div>
-
-
-
 
 <div class="sixteen columns">
 <p>
@@ -366,13 +351,16 @@
 </p>
 </div>
 
-
-
-		</article>
-
 	</div>
-
 </div>
+<div class="container">
+	<div class="sixteen columns">
+		
+		
+        
+	</div>
+</div>
+
 
 <div class="container">
 	<div class="sixteen columns">
@@ -389,9 +377,6 @@
 	</footer>
 	</div>
 </div>
-
-<script src="/js/tiles.js"></script>
-
 </body>
 
 </html>

@@ -3,6 +3,7 @@ layout: post
 title: word scores
 date: 2012-10-05
 tags: [programming]
+comments: true
 ---
 
 <p>
@@ -88,11 +89,11 @@ if __name__ == "__main__":
 <p>
   Other interesting words that appear for word_score == 100 are:
     <ul class="square">
-      <li>excellent
-      <li>snobbery
-      <li>socialism
-      <li>reengineer
-      <li>practicing
-      <li>defeminized
+      <li>excellent</li>
+      <li>snobbery</li>
+      <li>socialism</li>
+      <li>reengineer</li>
+      <li>practicing</li>
+      <li>defeminized</li>
     </ul>
 </p>

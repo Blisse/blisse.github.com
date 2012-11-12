@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>
@@ -21,12 +20,9 @@
 
   <!-- Blog CSS -->
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-
+  
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
@@ -35,18 +31,17 @@
   <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/header/header.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-
+  
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
@@ -64,9 +59,19 @@
   })();
 
 </script>-->
-
-  <script src="/js/jquery-1.8.2.js"></script>  
-
+  
+  
+  <!-- Skeleton -->
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  
+  
+  <!-- JQuery 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
+  
+  
+  
+  
 </head>
 
 <body>
@@ -131,8 +136,10 @@
 						 >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li 
+									class=""
+								 >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li 
 									class=""
@@ -208,27 +215,31 @@
 <br />
 
 <div class="container">
-
 	<div class="sixteen columns">
+		<h2 class="no-vertical-margins">
+			<a href="/archive/2012/07/26/index.html">
+				<span class="h2-hover">Dropbox</span> 
+				<span class="h2-nohover no-wrap">// 20120726</span>
+			</a>
+		</h2>
+	</div>
+</div>
+<div class="container">
+	
+	<div class="sixteen columns">
+	
+		<p>
+  <a href="http://www.dropbox.com" target="_blank">Dropbox</a> just saved me weeks of pain, so here it goes.
+</p>
 
-		<article class="post">
-
-			<h2 class="casper no-vertical-margins">
-				<a href="/archive/2012/07/26/index.html">
-					<span class="h2-hover">Dropbox</span> 
-					<span class="h2-nohover no-wrap">// 20120726</span>
-				</a>
-			</h2>
-
-			<p>
-  <a href="http://www.dropbox.com" target="_blank">Dropbox</a> is an amazing piece of technology.
-  The idea that I can go on any computer and access any files I've put on one folder. Or that
-  I can sync up 4-5 different machines with any of my work so I can stop working on my desktop,
-  pick up my laptop, go to the library and pick up right where I left off. That just blows my mind.
+<p>
+  If the Dropbox introduction video doesn't convince you, here is my real world use of Dropbox.
 </p>
 
 
-
+<p>
+  I'm a University student that lives away from home. I decided to bring my desktop to my new residence. 
+</p>
 
 <p>
   I use some slightly confusing system with GitHub and Dropbox, so
@@ -237,16 +248,10 @@
   GitHub repository. I had nothing to roll back to. It was all gone.
 </p>
 
-
-
-
 <p>
   But I was saved! Before this, I had always debated whether to put the website source files in my Dropbox folder, so I could
   work on it and sync my files across my computers, or if trying this system was a bit too complicated. Luckily for me, I left it on my Dropbox this time.
 </p>
-
-
-
 
 <p>
   When I accidentally deleted my website files, I panicked. But I found out that Dropbox saves a history of your deleted
@@ -254,14 +259,34 @@
   tracker. Awesome for a free service. Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. 
   Kind of an amazing application.
 </p>
-
-
-
-		</article>
-
 	</div>
-
 </div>
+<div class="container">
+	<div class="sixteen columns">
+		
+		
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'laivictor'; // required: replace example with your forum shortname
+    var disqus_developer = 1;
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+        
+	</div>
+</div>
+
 
 <div class="container">
 	<div class="sixteen columns">
@@ -278,9 +303,6 @@
 	</footer>
 	</div>
 </div>
-
-<script src="/js/tiles.js"></script>
-
 </body>
 
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>
@@ -21,12 +20,9 @@
 
   <!-- Blog CSS -->
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-
+  
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
@@ -35,18 +31,17 @@
   <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/header/header.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-
+  
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
@@ -64,9 +59,19 @@
   })();
 
 </script>-->
-
-  <script src="/js/jquery-1.8.2.js"></script>  
-
+  
+  
+  <!-- Skeleton -->
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  
+  
+  <!-- JQuery 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
+  
+  
+  
+  
 </head>
 
 <body>
@@ -131,8 +136,10 @@
 						 >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li 
+									class=""
+								 >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li 
 									class=""
@@ -208,24 +215,22 @@
 <br />
 
 <div class="container">
-
 	<div class="sixteen columns">
-
-		<article class="post">
-
-			<h2 class="casper no-vertical-margins">
-				<a href="/archive/2012/09/08/index.html">
-					<span class="h2-hover">coders' block</span> 
-					<span class="h2-nohover no-wrap">// 20120908</span>
-				</a>
-			</h2>
-
-			<p>
+		<h2 class="no-vertical-margins">
+			<a href="/archive/2012/09/08/index.html">
+				<span class="h2-hover">coders' block</span> 
+				<span class="h2-nohover no-wrap">// 20120908</span>
+			</a>
+		</h2>
+	</div>
+</div>
+<div class="container">
+	
+	<div class="sixteen columns">
+	
+		<p>
   I'm working on my Poker game, and it's always the same story.
 </p>
-
-
-
 
 <p>
   I always find that the hardest part is not the logic, but getting it playable. 
@@ -235,25 +240,23 @@
   and so little time to do it, I'm stuck deciding what to do instead of just going for it.
 </p>
 
-
-
-
 <p>
   I think my best plan of attack is to just make it playable as soon 
   as possible. I don't think I should worry about optimizing now, even if it means 
   I'll have a harder job in the future. Hey, it'd be good experience to weed through really,
   really bad code.
 </p>
-
-
-
-
-
-		</article>
-
+  
 	</div>
-
 </div>
+<div class="container">
+	<div class="sixteen columns">
+		
+		
+        
+	</div>
+</div>
+
 
 <div class="container">
 	<div class="sixteen columns">
@@ -270,9 +273,6 @@
 	</footer>
 	</div>
 </div>
-
-<script src="/js/tiles.js"></script>
-
 </body>
 
 </html>

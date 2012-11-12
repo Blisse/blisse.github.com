@@ -6,30 +6,39 @@ sub: all
 ---
 
 
+{% for post in paginator.posts %}
+
 <div class="container">
+	<div class="sixteen columns">
+		<h2 class="no-vertical-margins">
+			<a href="{{ post.url }}">
+				<span class="h2-hover">{{ post.title }}</span> 
+				<span class="h2-nohover no-wrap">// {{ post.date | date:'%Y%m%d' }}</span>
+			</a>
+		</h2>
+	</div>
+	<div class="sixteen columns">
+		<span class="disabled font-size-18 float-right">about {{ post.tags | array_to_sentence_string }}.</span>
+	</div>
+</div>
+<div class="container">
+	{% if post.div == false %}
+	<div>
+	{% else %}
+	<div class="sixteen columns">
+	{% endif %}
+		{{ post.content }}
+	</div>
 
-	{% for post in paginator.posts %}
-
-	<article class="post">
-
-		<div class="sixteen columns">
-			<h2 class="no-vertical-margins">
-				<a href="{{ post.url }}">
-					<span class="h2-hover">{{ post.title }}</span> 
-					<span class="h2-nohover no-wrap">// {{ post.date | date:'%Y%m%d' }}</span>
-				</a>
-			</h2>
-		</div>
-		{% if post.div == false %}<div>{% else %}<div class="sixteen columns">{% endif %}
-			{{ post.content }}
-		</div>
-	</article>
-			<br />
-			<hr class="line">
-	{% endfor %}
-
+	<div class="sixteen columns">
+		<p>
+			<a href="#" class="float-right no-under">Top</a>
+		</p>
+		<hr class="line">
+	</div>
 </div>
 
+{% endfor %}
 <!--
 
 <hr class="line">

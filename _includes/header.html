@@ -62,8 +62,12 @@
 						{% endif %} >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li {% if page.sub == "highlights" %}
+									class="currentpage"
+								{% else %}
+									class=""
+								{% endif %} >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li {% if page.sub == "all" %}
 									class="currentpage"

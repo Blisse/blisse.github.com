@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <title>
@@ -21,12 +20,9 @@
 
   <!-- Blog CSS -->
   <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-
+  
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Inconsolata' rel='stylesheet' type='text/css'>
@@ -35,18 +31,17 @@
   <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
 
   <!-- Base CSS -->
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/header/header.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/css/layout.css">
 
   <!-- Syntax Highlighting CSS -->
   <link href="/css/syntax.css" rel="stylesheet" type="text/css" />
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-
+  
   <!-- Fav Icon -->
   <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
@@ -64,9 +59,19 @@
   })();
 
 </script>-->
-
-  <script src="/js/jquery-1.8.2.js"></script>  
-
+  
+  
+  <!-- Skeleton -->
+  <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  
+  
+  <!-- JQuery 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
+  
+  
+  
+  
 </head>
 
 <body>
@@ -131,8 +136,10 @@
 						 >
 						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
 						<ul>
-							<li class="empty">
-								&nbsp;
+							<li 
+									class=""
+								 >
+								<a href="/highlights/">Highlights</a>
 							</li>
 							<li 
 									class=""
@@ -208,160 +215,157 @@
 <br />
 
 <div class="container">
-
 	<div class="sixteen columns">
-
-		<article class="post">
-
-			<h2 class="casper no-vertical-margins">
-				<a href="/archive/2012/04/14/index.html">
-					<span class="h2-hover">first coding interview</span> 
-					<span class="h2-nohover no-wrap">// 20120414</span>
-				</a>
-			</h2>
-
-			<p>
-    I had an interview the other day that really shook me up.
-
-    He asked me a question that really made me wonder how much I really knew about programming. 
-    I really thought I knew Python (at least somewhat decently), but I understand now there's a difference between using a language a few times, and actually knowing the language in and out.
-
-    My answer was... "crap." I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should've known it. 
-
-    The question was (I think): 
-</p>
-
-
-
-
-<p>
-
-<div class="highlight"><pre><code class="console"><span class="go">Remove the first letter from each word in the string: </span>
-<span class="gp">&gt;</span> <span class="s2">&quot;asdf das f po&quot;</span>
-</code></pre>
-</div>
-
-</p>
-
-
-
-
-<p>
-    EDIT(2012-07-16): This was my March attempt.
-</p>
-
-
-
-
-<p>
-
-<div class="highlight"><pre><code class="python"><span class="c"># removes spaces from string</span>
-
-<span class="n">line</span> <span class="o">=</span> <span class="n">original</span>
-<span class="n">newline</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
-    <span class="k">if</span> <span class="nb">ord</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">!=</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">)):</span>
-        <span class="n">newline</span> <span class="o">+=</span> <span class="n">i</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">pass</span>
-        
-<span class="k">print</span> <span class="n">newline</span>
-
-<span class="c"># removes first letter of each word from string and fixes spacing</span>
-
-<span class="n">line</span> <span class="o">=</span> <span class="n">original</span>
-<span class="n">newword</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-
-<span class="n">first</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="n">newline</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">first</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">newword</span> <span class="o">+=</span> <span class="n">letter</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">first</span> <span class="o">=</span> <span class="mi">0</span>
-            
-    <span class="n">first</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">newline</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newword</span><span class="p">)</span>
-    <span class="n">newword</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-
-<span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">newline</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">word</span> <span class="o">==</span> <span class="s">&#39;&#39;</span> <span class="ow">or</span> <span class="n">word</span> <span class="o">==</span> <span class="s">&#39; &#39;</span><span class="p">:</span>
-        <span class="k">pass</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
-
-<span class="n">newline</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
-<span class="k">print</span> <span class="n">newline</span>
-</code></pre>
-</div>
-
-</p>
-
-
-
-
-<p>
-    EDIT [20120716]: How did I not realize how bad this was back when I wrote it? 
-    Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
-    come up with. Honest.
-</p>
-
-
-
-
-<p>
-
-<div class="highlight"><pre><code class="python"><span class="k">def</span> <span class="nf">removefirstletter</span><span class="p">(</span> <span class="n">sentence</span> <span class="p">):</span>
-    <span class="n">tokens</span> <span class="o">=</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)):</span>
-        <span class="n">tokens</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">tokens</span><span class="p">[</span><span class="n">word</span><span class="p">])[</span><span class="mi">1</span><span class="p">:])</span>
-    <span class="k">return</span> <span class="s">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
-</code></pre>
-</div>
-
-</p>
-
-
-
-
-<p>
-    Easily handles any issue with spacing when you remove the word with one letter.
-
-    The output should be 
-</p>
-
-
-
-
-<p>
-
-<div class="highlight"><pre><code class="console"><span class="gp">&gt;</span> <span class="s2">&quot;df as o&quot;</span>
-</code></pre>
-</div>
-
-</p>
-
-
-
-
-<p>
-    I'd like to think I made progress, but this could be done a lot better still. 
-    But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
-</p>
-
-
-
-		</article>
-
+		<h2 class="no-vertical-margins">
+			<a href="/archive/2012/04/14/index.html">
+				<span class="h2-hover">first coding interview</span> 
+				<span class="h2-nohover no-wrap">// 20120414</span>
+			</a>
+		</h2>
 	</div>
-
 </div>
+<div class="container">
+	
+	<div class="sixteen columns">
+	
+		<p>
+	I had an interview the other day that really shook me up.
+
+	He asked me a question that really made me wonder how much I really knew about programming. 
+	I really thought I knew Python (at least somewhat decently), but I understand now there's a difference between using a language a few times, and actually knowing the language in and out.
+
+	My answer was... "crap." I did not know what to do really, and it cost me the interview. I was ashamed, and now that I try it, I should've known it. 
+
+	The question was (I think): 
+</p>
+
+<p>
+{% highlight console %}
+
+Remove the first letter from each word in the string: 
+> "asdf das f po"
+
+{% endhighlight %}
+</p>
+
+<p>
+	EDIT(2012-07-16): This was my March attempt.
+</p>
+
+<p>
+{% highlight python %}
+
+# removes spaces from string
+
+line = original
+newline = ""
+
+for i in line:
+	if ord(i) != (ord(' ')):
+		newline += i
+	else:
+		pass
+		
+print newline
+
+# removes first letter of each word from string and fixes spacing
+
+line = original
+newword = ""
+
+first = 1
+
+newline = []
+
+for word in line.split():
+	for letter in word:
+		if first != 1:
+			newword += letter
+		else:
+			first = 0
+			
+	first = 1
+	newline.append(newword)
+	newword = ""
+
+output = []
+
+for word in newline:
+	if word == '' or word == ' ':
+		pass
+	else:
+		output.append(word)
+
+newline = " ".join(output)
+print newline
+
+{% endhighlight %}
+</p>
+
+<p>
+	EDIT [20120716]: How did I not realize how bad this was back when I wrote it? 
+	Wow. Just wow. I don't know how I made it this far programming if that was the best I could 
+	come up with. Honest.
+</p>
+
+<p>
+{% highlight python %}
+
+def removefirstletter( sentence ):
+	tokens = sentence.split()
+	for word in range(len(tokens)):
+		tokens[word] = "".join(list(tokens[word])[1:])
+	return " ".join(tokens)
+
+{% endhighlight %}
+</p>
+
+<p>
+	Easily handles any issue with spacing when you remove the word with one letter.
+
+	The output should be 
+</p>
+
+<p>
+{% highlight console %}
+
+> "df as o"
+
+{% endhighlight %}
+</p>
+
+<p>
+	I'd like to think I made progress, but this could be done a lot better still. 
+	But if I got this far in 3 months, I'm can't think of the possibilities in a couple years!
+</p>
+	</div>
+</div>
+<div class="container">
+	<div class="sixteen columns">
+		
+		
+		
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'laivictor'; // required: replace example with your forum shortname
+    var disqus_developer = 1;
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+        
+	</div>
+</div>
+
 
 <div class="container">
 	<div class="sixteen columns">
@@ -378,9 +382,6 @@
 	</footer>
 	</div>
 </div>
-
-<script src="/js/tiles.js"></script>
-
 </body>
 
 </html>

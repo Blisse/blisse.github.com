@@ -1,4 +1,3 @@
-auto: true
 markdown: rdiscount
 pygments: true
 permalink: /archive/:year/:month/:day/index.html
@@ -11,5 +10,4 @@ email: lai.victor.vl@gmail.com
 github: blisse
 twitter: laivictorvl
 linkedin: laivictor
-exclude: ['README.markdown', '.gitignore']
-paginate: 50000
+paginate: 5000

@@ -5,14 +5,13 @@ main: blog
 sub: all
 ---
 
-
 {% for post in paginator.posts %}
 
 <div class="container">
 	<div class="sixteen columns">
 		<h2 class="no-vertical-margins">
 			<a href="{{ post.url }}">
-				<span class="h2-hover">{{ post.title }}</span> 
+				<span class="h2-hover">{{ post.title }}</span>
 				<span class="h2-nohover no-wrap">// {{ post.date | date:'%Y%m%d' }}</span>
 			</a>
 		</h2>
@@ -21,48 +20,28 @@ sub: all
 		<span class="disabled font-size-18 float-right">about {{ post.tags | array_to_sentence_string }}.</span>
 	</div>
 </div>
-<div class="container">
-	{% if post.div == false %}
-	<div>
-	{% else %}
-	<div class="sixteen columns">
-	{% endif %}
-		{{ post.content }}
-	</div>
 
+{% if post.div == false %}
+<div>
+	<div>
+{% else %}
+<div class="container">
 	<div class="sixteen columns">
+{% endif %}
+		{{ post.content | markdownify}}
+	</div>
+</div>
+<div class="container">
+	<div class="sixteen columns">
+		{% if post.comments %}
 		<p>
-			<a href="#" class="float-right no-under">Top</a>
+			<a href="{{ post.url }}" class="float-right no-under">Discuss</a>
 		</p>
+		{% endif %}
+
 		<hr class="line">
+		<hr class="clear">
 	</div>
 </div>
 
 {% endfor %}
-<!--
-
-<hr class="line">
-
-<div class="container">
-
-	<div class="sixteen columns">
-		{% if paginator.previous_page %}
-			{% if paginator.previous_page == 1 %}
-				<h5><a href="/blog/" class="newer">NEWER POSTS</a></h5>
-			{% else %}
-				<h5><a href="/blog/{{paginator.previous_page}}" class="newer">NEWER POSTS</a></h5>
-			{% endif %}
-		{% endif %}
-		{% if paginator.next_page %}
-			<h5><a href="/blog/{{paginator.next_page}}" class="older">OLDER POSTS</a></h5>
-		{% endif %}
-		<div class="clear"></div>
-
-	</div>
-
-	<br />
-	<br />
-
-</div>
-
---> 

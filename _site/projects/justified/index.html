@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>
-    lai.victor &raquo; Justifying Lines in C++
-  </title>
-  
-    <!-- Site Author -->
+	<meta charset="UTF-8" />
+	<title>
+		lai.victor &raquo; Justifying Lines in C++
+	</title>
+
+	  <!-- Site Author -->
   <meta name="author" content="Victor Lai" />
-  
+
   <!-- Site Description -->
   <meta name="description" content="" />
 
@@ -19,8 +19,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Blog CSS -->
-  <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" /> 
-  
+  <link href="/css/reset.css" media="projection,screen" rel="stylesheet" type="text/css" />
+
   <!-- Blog Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;v1' rel='stylesheet' type='text/css' />
@@ -41,11 +41,11 @@
 
   <!-- Personal - Tiles -->
   <link rel="stylesheet" href="/css/tiles/tiles.css">
-  
-  <!-- Fav Icon -->
-  <link href="/images/favicon.ico" rel="shortcut icon" /> 
 
-  <!-- Google Analytics 
+  <!-- Fav Icon -->
+  <link href="/images/favicon.ico" rel="shortcut icon" />
+
+  <!-- Google Analytics
   <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -59,26 +59,29 @@
   })();
 
 </script>-->
-  
-  
+
   <!-- Skeleton -->
   <link rel="stylesheet" href="/css/skeleton/skeleton.css">
-  
-  
-  <!-- JQuery 
-<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.min.js"></script> -->
-  
-  
-  
-  
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+  <!-- fancyBox -->
+  <link rel="stylesheet" href="/css/fancybox/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+
+  <!-- fancyBox helpers - button, thumbnail and/or media -->
+  <script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/js/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+  <script type="text/javascript" src="/js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
 </head>
 
 <body>
 
-
-
-<header>	
+	<header>	
 	<div class="container">
 		<br/>
 		<div class="eight columns">
@@ -112,10 +115,12 @@
 		<div class="eight columns">
 			<div id="nav">
 				<ul>
-					<li 
-							class=""
-						 >
-						<a href="/">Home</a>
+					
+					<li>
+					
+						<a href="/">
+							Home
+						</a>
 						<ul>
 							<li class="empty">
 								&nbsp;
@@ -131,60 +136,49 @@
 							</li>
 						</ul>
 					</li>
-					<li 
-							class="dir"
-						 >
-						<a href="/blog/">Blog <i class="icon-caret-down"></i></a>
+					
+					<li class="dir">
+					
+						<a href="/blog/">
+							Blog <i class="icon-caret-down"></i>
+						</a>
 						<ul>
-							<li 
-									class=""
-								 >
-								<a href="/highlights/">Highlights</a>
+							
+							<li>
+							
+								<a href="/highlights/">
+									Highlights
+								</a>
 							</li>
-							<li 
-									class=""
-								 >
-								<a href="/blog/">Posts</a>
+							
+							<li  class="">
+							
+								<a href="/blog/">
+									Posts
+								</a>
 							</li>
-							<li 
-									class=""
-								 >
-								<a href="/archive/">Archives</a>
+							
+							<li class="">
+							
+								<a href="/archive/">
+									Archives
+								</a>
 							</li>
-							<li 
-									class=""
-								 >
-								<a href="/productivity/">Productivity</a>
+							
+							<li class="">
+							
+								<a href="/productivity/">
+									Productivity
+								</a>
 							</li>
 						</ul>
 					</li>
-					<li 
-							class="currentpage dir"
-						 >
-						<a href="/projects/">Projects <i class="icon-caret-down"></i></a>
-						<ul>
-							<li class="empty">
-								&nbsp;
-							</li>
-							<li class="empty">
-								&nbsp;
-							</li>
-							<li 
-									class="currentpage"
-								 >
-								<a href="/projects/">Completed</a>
-							</li>
-							<li 
-									class=""
-								 >
-								<a href="/site/">Site</a>
-							</li>
-						</ul>
-					</li>
-					<li 
-							class="dir"
-						 >
-						<a href="/about/">About <i class="icon-caret-down"></i></a>
+							
+					<li class="currentpage dir"> 
+					
+ 						<a href="/projects/">
+ 							Projects <i class="icon-caret-down"></i>
+ 						</a>
 						<ul>
 							<li class="empty">
 								&nbsp;
@@ -192,29 +186,62 @@
 							<li class="empty">
 								&nbsp;
 							</li>
-							<li 
-									class=""
-								 >
-								<a href="/about/resume">Resume</a>
+							
+							<li	class="currentpage">
+							
+								<a href="/projects/">
+									Completed
+								</a>
 							</li>
-							<li 
-									class=""
-								 >
-								<a href="/about/">Me</a>
+							
+							<li class="">
+							
+								<a href="/site/">
+									Site
+								</a>
 							</li>
 						</ul>
 					</li>
-				</ul>
-			</nav>
-		</div> <!-- / div 8 columns -->
+					
+					<li class="dir">
+					
+						<a href="/about/">
+							About <i class="icon-caret-down"></i>
+						</a>
+						<ul>
+							<li class="empty">
+								&nbsp;
+							</li>
+							<li class="empty">
+								&nbsp;
+							</li>
+							
+							<li class="">
+							
+								<a href="/about/resume">
+									Resume
+								</a>
+							</li>
+							
+							<li class="">
+							
+								<a href="/about/">
+									Me
+								</a> 
+							</li> 
+						</ul> 
+					</li> 
+				</ul> 
+			</div> <!-- / div nav --> 
+		</div> <!-- / div 8 columns --> 
+		<br />
+		<br />
 	</div> <!-- / div container -->
-	<br />
-	<br />
 </header>
 
-<br />
+	<br />
 
-<article class="project">
+	<article class="project">
 	<div class="container">
 		<div class="sixteen columns">
 			<h2 class="no-vertical-margins">
@@ -223,32 +250,227 @@
 				</a>
 			</h2>
 		</div>
-	</div>        
-</div>
-<div class="container">
-	<div class="sixteen columns">
-		
-		
-        
 	</div>
 </div>
 
+<div class="in-line section">
+  <div class="container">
+    <div class="sixteen columns">
+      &nbsp;
+    </div>
+  </div>
+
+  <div class="container division">
+    <div class="three columns header">
+      TOOLS
+    </div>
+    <div class="thirteen columns details">
+      C++</br>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sixteen columns">
+      &nbsp;
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container">
+    <div class="sixteen columns">
+   <p>
+     <h4>Description</h4>
+   </p>
+   <p>
+     This is a C++ command line application that reads in an inputfile and a line length, justifies the text in the input file and writes it to the outputfile.
+   </p>
+   <p>
+     <h4>Motivation</h4>
+   </p>
+   <p>
+    I couldn't find this code outside in the Internet, and this was required for an assignment, so I put it up here. Nothing too advanced was used, as the implementation is pretty straightforward.
+   </p>
+   <p>
+    <h4>Code</h4>
+   </p>
+     <p>
+<div class="highlight"><pre><code class="c"><span class="cp">#include &lt;iostream&gt;</span>
+<span class="cp">#include &lt;string&gt;</span>
+<span class="cp">#include &lt;fstream&gt;</span>
+<span class="cp">#include &lt;istream&gt;</span>
+<span class="cp">#include &lt;cstdlib&gt;</span>
+<span class="cp">#include &lt;string&gt;</span>
+
+<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="n">class</span> <span class="n">LineTools</span> <span class="p">{</span>
+<span class="nl">public:</span>
+  <span class="kt">void</span> <span class="n">justifyLines</span><span class="p">(</span><span class="n">string</span> <span class="n">filenameIn</span><span class="p">,</span> <span class="n">string</span> <span class="n">filenameOut</span><span class="p">,</span> <span class="kt">int</span> <span class="n">max_len</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">ifstream</span> <span class="n">infile</span><span class="p">;</span>
+    <span class="n">infile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filenameIn</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="p">);</span>
+    <span class="n">ofstream</span> <span class="n">outfile</span><span class="p">;</span>
+    <span class="n">outfile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">filenameOut</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="p">);</span>
+    <span class="n">string</span> <span class="n">string_in</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">line_len</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">offset</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span> <span class="n">getline</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">string_in</span><span class="p">)</span> <span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">oneword</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+      <span class="n">line_len</span> <span class="o">=</span> <span class="n">string_in</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+      <span class="n">offset</span> <span class="o">=</span> <span class="n">max_len</span> <span class="o">-</span> <span class="n">line_len</span><span class="p">;</span>
+      <span class="k">for</span> <span class="p">(</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">line_len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">)</span>
+      <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="p">)</span>
+        <span class="p">{</span>
+          <span class="n">oneword</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">offset</span> <span class="p">)</span>
+      <span class="p">{</span>
+        <span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">else</span> <span class="c1">// string_len &lt; max_len</span>
+      <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">oneword</span><span class="p">)</span>
+        <span class="p">{</span>
+          <span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span><span class="p">;</span>
+          <span class="k">while</span> <span class="p">(</span><span class="n">offset</span><span class="p">)</span>
+          <span class="p">{</span>
+            <span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+            <span class="n">offset</span><span class="o">--</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+          <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+          <span class="k">while</span> <span class="p">(</span> <span class="n">offset</span> <span class="p">)</span>
+          <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">line_len</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+            <span class="p">{</span>
+              <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span> <span class="p">)</span>
+            <span class="p">{</span>
+              <span class="n">string_in</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="s">&quot; &quot;</span><span class="p">);</span>
+              <span class="n">k</span><span class="o">++</span><span class="p">;</span>
+              <span class="k">while</span> <span class="p">(</span> <span class="n">string_in</span><span class="p">[</span><span class="n">k</span><span class="o">++</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span><span class="p">)</span>
+              <span class="p">{</span>
+              <span class="p">}</span>
+              <span class="n">line_len</span><span class="o">++</span><span class="p">;</span>
+              <span class="n">offset</span><span class="o">--</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">k</span><span class="o">++</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+          <span class="n">outfile</span> <span class="o">&lt;&lt;</span> <span class="n">string_in</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">infile</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+    <span class="n">outfile</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[]</span> <span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="n">argc</span> <span class="o">!=</span> <span class="mi">4</span> <span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">LineTools</span> <span class="n">linetool</span><span class="p">;</span>
+  <span class="n">linetool</span><span class="p">.</span><span class="n">justifyLines</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">atoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]));</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+        </p>
+        <p>
+            This is how it can be run.
+        </p>
+        <p>
+<div class="highlight"><pre><code class="console"><span class="go">; cat filein.txt</span>
+<span class="go">abcdefghijklmnopqrstuvwxyz</span>
+<span class="go">a ef ijkl op svwxyz</span>
+<span class="go">a cd nopqr z</span>
+
+<span class="go">; file.o filein.txt fileout.txt 26</span>
+<span class="go">; cat fileout.txt</span>
+<span class="go">abcdefghijklmnopqrstuvwxyz</span>
+<span class="go">a   ef   ijkl   op  svwxyz</span>
+<span class="go">a      cd      nopqr     z</span>
+
+<span class="go">; file.o filein.txt fileout.txt 27</span>
+<span class="go">; cat fileout.txt</span>
+<span class="go">abcdefghijklmnopqrstuvwxyz</span>
+<span class="go">a   ef   ijkl   op   svwxyz</span>
+<span class="go">a      cd      nopqr      z</span>
+</code></pre>
+</div>
+        </p>
+
+        <p>
+            <h4>Remarks</h4>
+        </p>
+        <p>
+            In the future, I should definitely add a method for it to accept from the console either no maximum line length, or a value, so that it can justify either types.
+        </p>
+        <p>
+            A limitation I hate about this algorithm is that it cannot differentiate between monospaced and regular fonts. In fact, it works only for monospaced fonts. I want to see in the future if I can find a way to determine the font and justify accordingly, and somewhat reproduce the line algorithms text editors use.
+        </p>
+    </div>
+</div>
+
+
 
 <div class="container">
 	<div class="sixteen columns">
-	<footer id="footer">
-		<div class="center">
-			<p>
-				All content copyright &copy; <a href="/about">Victor Lai</a>. Written in almost <a href="http://www.laivictor.com/archive/2012/08/22/index.html">valid</a> <a href="http://html5.validator.nu/" title="valid HTML5" rel="external" target="_blank">HTML5</a> and <a href="http://jigsaw.w3.org/css-validator/" title="valid CSS3" rel="external" target="_blank">CSS3</a>. 
-			</p>
-			<p>
-				Powered by <a href="http://github.com/mojombo/jekyll" title="The Jekyll (static site generator) code repository"
-				rel="external" target="_blank">Jekyll</a> and hosted on <a href="http://pages.github.com/">GitHub Pages</a>.
-			</p>
-		</div>
-	</footer>
+
+		
+
+</div>
+</div>
+
+
+	<div class="container">
+	<div class="sixteen columns">
+		<footer id="footer">
+			<div class="center">
+				<p>
+					All content copyright &copy; <a href="/about">Victor Lai</a>. Written in almost <a href="http://www.laivictor.com/archive/2012/08/22/index.html">valid</a> <a href="http://html5.validator.nu/" title="valid HTML5" rel="external" target="_blank">HTML5</a> and <a href="http://jigsaw.w3.org/css-validator/" title="valid CSS3" rel="external" target="_blank">CSS3</a>. 
+				</p>
+				<p>
+					Powered by <a href="http://github.com/mojombo/jekyll" title="The Jekyll (static site generator) code repository"
+					rel="external" target="_blank">Jekyll</a> and hosted on <a href="http://pages.github.com/">GitHub Pages</a>.
+				</p>
+			</div>
+		</footer>
 	</div>
 </div>
+	<script type="text/javascript">
+$(document).ready(function() {
+    $(".fancybox").fancybox({
+        prevEffect  : 'none',
+        nextEffect  : 'none',
+        helpers : {
+            title   : {
+                type: 'outside'
+            },
+            thumbs  : {
+                width   : 50,
+                height  : 50
+            }
+        }
+    });
+});
+</script>
 </body>
 
 </html>

@@ -38,6 +38,5 @@ ehthumbs.db
 Thumbs.db
 
 .git
-_site/
 site-master.sublime-project
 site-master.sublime-workspace

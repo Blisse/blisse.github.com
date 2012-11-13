@@ -7,16 +7,16 @@ sub: archive
 
 {% assign posts = site.posts %}
 
-<div class="container">
-	{% for post in site.posts %}
-	<div class="sixteen columns" id="archive">
+<div class="container" id="archive">
+	<div class="sixteen columns">
+		{% for post in site.posts %}
 		<h3>
 			<a href="{{ post.url }}" class="block">
-				<span class="h3-nohover">{{ post.date | date: "%Y%m%d"  }} </span>
-				<span class="h3-hover">&nbsp;&raquo; {{ post.title }}&nbsp;</span>
-				<span class="h3-nohover no-wrap float-right font-size-18">about {{ post.tags | array_to_sentence_string }}.</span>
+				<span class="h3-nohover date">{{ post.date | date: "%Y%m%d" }}</span>
+				<span class="h3-hover">&nbsp;&raquo;&nbsp;{{ post.title }}&nbsp;</span>
+				<span class="h3-nohover no-wrap float-right font-size-14">about {{ post.tags | array_to_sentence_string }}.</span>
 			</a>
 		</h3>
+		{% endfor %}
 	</div>
-	{% endfor %}
 </div>

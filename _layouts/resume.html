@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>
-    {{ site.title }}{%if page.title%} &raquo; {{ page.title }}{%endif%}
-  </title>
-  
-  {% include standardhead.html %}  
+	<meta charset="UTF-8" />
+	<title>
+		{{ site.title }}{%if page.title%} &raquo; {{ page.title }}{%endif%}
+	</title>
+	
+	{% include standardhead.html %}  
 
 </head>
 
 <body>
 
-{% include header.html %}
-    
-<br />
+	{% include header.html %}
+	
+	<br />
 
-<article class="post">
+	<article class="post">
 
-{{ content }}
+		{{ content }}
 
-</article>
+	</article>
 
-{% include footer.html %}
+	{% include footer.html %}
 
 </body>
 

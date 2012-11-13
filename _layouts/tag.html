@@ -8,39 +8,39 @@ tab: archive
 
 	{% for post in posts %}
 
-		{% capture month %}
-			{{ post.date | date:'%B %Y' }}
-		{% endcapture %}
+	{% capture month %}
+	{{ post.date | date:'%B %Y' }}
+	{% endcapture %}
 
-		
-		<div class="sixteen columns">
+	
+	<div class="sixteen columns">
 
 		{% if last_month != month %}
 
 
-			{% if last_month %}			
-			</dl>
+		{% if last_month %}			
+	</dl>
 
-			{% endif %}
-			
-			<h3 class="sourcesans">{{ month }}</h3>
-				<dl>
-				<dt style="float:left">{{ post.date | date: "%Y%m%d" }}</dt>
-				<dd>&nbsp;//&nbsp;<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></dd>
+	{% endif %}
+	
+	<h3 class="sourcesans">{{ month }}</h3>
+	<dl>
+		<dt style="float:left">{{ post.date | date: "%Y%m%d" }}</dt>
+		<dd>&nbsp;//&nbsp;<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></dd>
 
-			{% assign last_month = month %}
+		{% assign last_month = month %}
 
 		{% else %}
 		
-		</div>
-		
-				<dt style="float:left">{{ post.date | date: "%Y%m%d" }}</dt>
-				<dd>&nbsp;//&nbsp;<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></dd>
-		
-		
-		
-		{% endif %}
-		
+	</div>
+	
+	<dt style="float:left">{{ post.date | date: "%Y%m%d" }}</dt>
+	<dd>&nbsp;//&nbsp;<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></dd>
+	
+	
+	
+	{% endif %}
+	
 
 	{% endfor %}
 

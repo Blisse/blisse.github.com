@@ -4,7 +4,7 @@
  <title>lai.victor</title>
  <link href="http://www.laivictor.com/atom.xml" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-11-12T17:13:25-05:00</updated>
+ <updated>2012-11-13T08:00:48-05:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -12,17 +12,38 @@
 
  
  <entry>
-   <title type="html">massive reorganization</title>
-   <link href="http://www.laivictor.com/archive/2012/11/05/massivereorganization"/>
-   <updated>2012-11-05T00:00:00-05:00</updated>
-   <id>http://www.laivictor.com/archive/2012/11/05/massivereorganization</id>
+   <title type="html">on teamliquid attack</title>
+   <link href="http://www.laivictor.com/archive/2012/11/12/teamliquidattack"/>
+   <updated>2012-11-12T00:00:00-05:00</updated>
+   <id>http://www.laivictor.com/archive/2012/11/12/teamliquidattack</id>
    <content type="html">&lt;p&gt;
-    In the process of a massive reorganization of my site at the moment. I hope you enjoy the new themes, the new categories, and new layout. I will also be working on quite a few new features, and combining some of my posts into new sections and categories. :)
+    Awesome! I was a bit busy with school work a couple weeks ago, but I managed to watch the &lt;a href=&quot;http://wiki.teamliquid.net/starcraft2/TeamLiquid:_Attack!&quot;&gt;TeamLiquid Attack!&lt;/a&gt; episode with &lt;a href=&quot;http://white-ra.com/&quot;&gt;White-Ra&lt;/a&gt;. 
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    TeamLiquid Attack! is a Starcraft show where professional Starcraft gamers come play against community members as a sort of fan service. Guest casters, usually other community members, stream the matches to the community. If you want to play against them, you have to guess a trivia question they ask on the stream, or be really really lucky.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    &lt;a href=&quot;http://youtu.be/Mg19xi2vERA?t=33m49s&quot;&gt;Here I am&lt;/a&gt; in the final game, a 3v3 against iNcontroL, CatZ and White-Ra. I'm the Zerg who kills the Probe. :D
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+    I was actually too nervous during the entire game because I was freaking out from playing since I never win anything. I think I was screaming like a fangirl the entire time. It was so awesome. 
 &lt;/p&gt;
 
 </content>
    
-   <category term="this site"/>
+   <category term="gaming"/>
    
  </entry>
  
@@ -159,28 +180,6 @@
    <category term="life"/>
    
    <category term="school"/>
-   
- </entry>
- 
- <entry>
-   <title type="html">moved to rdiscount</title>
-   <link href="http://www.laivictor.com/archive/2012/10/09/rdiscount"/>
-   <updated>2012-10-09T00:00:00-04:00</updated>
-   <id>http://www.laivictor.com/archive/2012/10/09/rdiscount</id>
-   <content type="html">&lt;p&gt;
-    So apparently &lt;a href=&quot;http://maruku.rubyforge.org/changelog.html#stable&quot;&gt;Maruku&lt;/a&gt; hasn't been developed in over 3 years. The last GEM release was &lt;a href=&quot;http://maruku.rubyforge.org/changelog.html#stable&quot;&gt;version 0.6.0 in 2009-05-04&lt;/a&gt;. 
-&lt;/p&gt;
-
-
-
-
-&lt;p&gt;
-    So I've been using an outdated markdown parser for the last half year on this blog. Joy. Moved immediately to RDiscount, and it's fixed the most annoying bug from Maruku: my code doesn't display tabs as 8 spaces anymore. Looks a lot cleaner, I think.
-&lt;/p&gt;
-
-</content>
-   
-   <category term="this site"/>
    
  </entry>
  
@@ -548,150 +547,141 @@
    <link href="http://www.laivictor.com/archive/2012/08/20/tetrisbasics"/>
    <updated>2012-08-20T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/08/20/tetrisbasics</id>
-   <content type="html">&lt;div class=&quot;sixteen columns&quot;&gt;
-&lt;p&gt;
-  I don't know who said it, but it's true. If you want to get better, more often than not you'll have to do worse.
-&lt;/p&gt;
+   <content type="html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;sixteen columns&quot;&gt;
+    &lt;p&gt;
+      I don't know who said it, but it's true. If you want to get better, more often than not you'll have to do worse.
+    &lt;/p&gt;
 
-&lt;p&gt;
-  The exact reason? People are bad. A pretty pessimistic view, but completely justified. Since our birth, we're are
-  bombarded with a lot of information, especially so in this day and age. And it's our job to filter out what's good and
-  what's bad. However, sometimes before we realize it, we'll have made this decision unconsciously. Perhaps you played a game for 
-  a long time without a good strategy guide. Or perhaps you learned math one way instead of another. 
-&lt;/p&gt;
+    &lt;p&gt;
+      The exact reason? People are bad. A pretty pessimistic view, but completely justified. Since our birth, we're are
+      bombarded with a lot of information, especially so in this day and age. And it's our job to filter out what's good and
+      what's bad. However, sometimes before we realize it, we'll have made this decision unconsciously. Perhaps you played a game for 
+      a long time without a good strategy guide. Or perhaps you learned math one way instead of another. 
+    &lt;/p&gt;
 
-&lt;p&gt;
-  Then you've used this 'bad style' for 5-10 years, and it's so ingrained into your being that you don't even think about why
-  you do it this way and what other ways there are. When you realize you've been doing it wrong the entire time, it takes a 
-  tremendous amount of effort to break your old habits and rewire that muscle memory. 
-&lt;/p&gt;
+    &lt;p&gt;
+      Then you've used this 'bad style' for 5-10 years, and it's so ingrained into your being that you don't even think about why
+      you do it this way and what other ways there are. When you realize you've been doing it wrong the entire time, it takes a 
+      tremendous amount of effort to break your old habits and rewire that muscle memory. 
+    &lt;/p&gt;
 
-&lt;p&gt;
-  So when you are able to see directly where you want to go &lt;b&gt;right&lt;/b&gt; from the beginning, and visualize the route you're going to take, and
-  actually have that happening to you, it gives you a huge advantage over others. At least, it gave me a big advantage.
-&lt;/p&gt;
+    &lt;p&gt;
+      So when you are able to see directly where you want to go &lt;b&gt;right&lt;/b&gt; from the beginning, and visualize the route you're going to take, and
+      actually have that happening to you, it gives you a huge advantage over others. At least, it gave me a big advantage.
+    &lt;/p&gt;
 
-&lt;p&gt;
-  It's not to say people were playing &lt;span class=&quot;italics&quot;&gt;wrong&lt;/span&gt;. If we didn't have the advantage of the Internet, and all its
-  information, what normal people would have been doing so far just seems right. But innovators don't think like that. They kept their eyes open. 
-  They noticed the implications, the limits and weaknesses of each style, and kept questioning all their decisions. Certainly a revolutionary 
-  and enviable way of thinking. 
-&lt;/p&gt;
+    &lt;p&gt;
+      It's not to say people were playing &lt;span class=&quot;italics&quot;&gt;wrong&lt;/span&gt;. If we didn't have the advantage of the Internet, and all its
+      information, what normal people would have been doing so far just seems right. But innovators don't think like that. They kept their eyes open. 
+      They noticed the implications, the limits and weaknesses of each style, and kept questioning all their decisions. Certainly a revolutionary 
+      and enviable way of thinking. 
+    &lt;/p&gt;
 
-&lt;p&gt;
-  The new generation only play in a one-line style. And some get really good with it. But they've been tunnel-visioned into this style.
-  They're not open to new ideas, and they don't have the experience of swapping styles and analyzing their strengths and weaknesses.
-  At low to mid-levels of Tetris, combo-ing is the most effective way to play, yet most players don't realize this because they only play
-  their one-line style. For fun, that's fine. To get good? We'll need something else.
-&lt;/p&gt;
-&lt;/div&gt;
+    &lt;p&gt;
+      The new generation only play in a one-line style. And some get really good with it. But they've been tunnel-visioned into this style.
+      They're not open to new ideas, and they don't have the experience of swapping styles and analyzing their strengths and weaknesses.
+      At low to mid-levels of Tetris, combo-ing is the most effective way to play, yet most players don't realize this because they only play
+      their one-line style. For fun, that's fine. To get good? We'll need something else.
+    &lt;/p&gt;
+  &lt;/div&gt;
 
-
-
-
-&lt;div class=&quot;eight columns&quot;&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;:: one-line&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;_#########&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;_#########&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;_#########&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;_#########&lt;/span&gt;
+  &lt;div class=&quot;eight columns&quot;&gt;
+    
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;    :: one-line&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    _#########&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    _#########&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    _#########&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    _#########&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
+  &lt;/div&gt;
 
-
-
-
-&lt;div class=&quot;eight columns&quot;&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;:: two-line&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;__######&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;__######&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;__######&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;__######&lt;/span&gt;
+  &lt;div class=&quot;eight columns&quot;&gt;
+    
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;    :: two-line&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    __######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    __######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    __######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    __######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
+  &lt;/div&gt;
 
-
-
-
-&lt;div class=&quot;eight columns&quot;&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;:: three-line&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;___######&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;___######&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;___######&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;___######&lt;/span&gt;
+  &lt;div class=&quot;eight columns&quot;&gt;
+    
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;    :: three-line&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    ___######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    ___######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    ___######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    ___######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
+  &lt;/div&gt;
 
-
-
-
-&lt;div class=&quot;eight columns&quot;&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;:: four-line&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;____######&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;____######&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;____######&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;____######&lt;/span&gt;
+  &lt;div class=&quot;eight columns&quot;&gt;
+    
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;    :: four-line&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    ____######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    ____######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    ____######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    ____######&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;    &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
+  &lt;/div&gt;
 
+  &lt;div class=&quot;sixteen columns&quot;&gt;
+    &lt;p&gt;
+      These are examples of the styles. The standard Tetris grid is 10x20(+2), 10 horizontal. 
+    &lt;/p&gt;
 
+    &lt;p&gt;
+      To the left, with the one-line style, one space is left empty and you
+      build upwards from there. In two-line, two spaces are left empty, and so on. The two-line style is the easiest to play, and easily beats the one-line 
+      if you play at the same level. Why? Like I said, combo-ing is the best way to begin, and the two-line is almost a guaranteed combo chain everytime you start.
+      Why? Well if you took the time to think about it a bit, it'd make perfect sense. Every single Tetris piece except the I-piece will continue a combo
+      if you drop it in the 2-block wide hole because every block except the I-piece has a width of 2 somewhere.
+    &lt;/p&gt;
 
+    &lt;p&gt;
+      The next thing you'll notice is then how high combos are devastating, so you'll want as high a combo as possible. To get that, you'll find it's best to only clear
+      one line when you're combo-ing. Done well enough, you can possibly have a 13-14 consecutive combo, which is very, very strong. But to get that, you have to 
+      realize that two-line isn't the only style to play. That's very easy when you have already realized that one-line isn't the only style to play and then 
+      moved on to two-line. But think about all the one-line players who haven't realized this. You have to question yourself at every turn.
+    &lt;/p&gt;
 
-&lt;div class=&quot;sixteen columns&quot;&gt;
-&lt;p&gt;
-  These are examples of the styles. The standard Tetris grid is 10x20(+2), 10 horizontal. 
-&lt;/p&gt;
+    &lt;p&gt;
+      Playing well doesn't mean you'll perform well however. A large component of improving in Tetris is consistency. There is almost zero room for mistakes.
+      And if you do make a mistake, you need to have the foresight to minimize its effects, and fix it, because it is very costly to the consecutive combo-ing if you
+      aren't careful. Multiple mistakes, and you can probably forfeit the game already if you're playing at very high levels. Consistency requires stamina, of course, 
+      and you'll notice as you play more, your performance will degrade at times. It's important to take frequent breaks, and eventually you'll notice you can play for 2 hours 
+      without severe performance degradation. 
+    &lt;/p&gt;
 
-&lt;p&gt;
-  To the left, with the one-line style, one space is left empty and you
-  build upwards from there. In two-line, two spaces are left empty, and so on. The two-line style is the easiest to play, and easily beats the one-line 
-  if you play at the same level. Why? Like I said, combo-ing is the best way to begin, and the two-line is almost a guaranteed combo chain everytime you start.
-  Why? Well if you took the time to think about it a bit, it'd make perfect sense. Every single Tetris piece except the I-piece will continue a combo
-  if you drop it in the 2-block wide hole because every block except the I-piece has a width of 2 somewhere.
-&lt;/p&gt;
+    &lt;p&gt;
+      Consistency throughout multiple games is important, but also consistency throughout every single game. Play the beginning exactly like how you would play out the
+      ending. Calmly and quickly. If you play the entire match at &lt;span class=&quot;italics&quot;&gt;your&lt;/span&gt; pace, you won't lose simply because you messed up once. Every portion of 
+      your game will be dangerous. I have been down 2 or 3 KOs multiple times right at the start of the game, but I pace myself. I can came back and win,
+      simply because I'm playing this strong, fast pace where I don't make mistakes, yet not sacrifice attacking potential. The pace I set for myself is supremely comfortable
+      because it's the only pace I play at. I don't alternate at random between conservative and aggressive. I don't let my playstyle dictate my pace, as one-line players must do.
+      I don't feel panicked down 0-3 as much as I should because I know if I simply play the style properly, I can come back. Being comfortable is very important.
+    &lt;/p&gt;
 
-&lt;p&gt;
-  The next thing you'll notice is then how high combos are devastating, so you'll want as high a combo as possible. To get that, you'll find it's best to only clear
-  one line when you're combo-ing. Done well enough, you can possibly have a 13-14 consecutive combo, which is very, very strong. But to get that, you have to 
-  realize that two-line isn't the only style to play. That's very easy when you have already realized that one-line isn't the only style to play and then 
-  moved on to two-line. But think about all the one-line players who haven't realized this. You have to question yourself at every turn.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Playing well doesn't mean you'll perform well however. A large component of improving in Tetris is consistency. There is almost zero room for mistakes.
-  And if you do make a mistake, you need to have the foresight to minimize its effects, and fix it, because it is very costly to the consecutive combo-ing if you
-  aren't careful. Multiple mistakes, and you can probably forfeit the game already if you're playing at very high levels. Consistency requires stamina, of course, 
-  and you'll notice as you play more, your performance will degrade at times. It's important to take frequent breaks, and eventually you'll notice you can play for 2 hours 
-  without severe performance degradation. 
-&lt;/p&gt;
-
-&lt;p&gt;
-  Consistency throughout multiple games is important, but also consistency throughout every single game. Play the beginning exactly like how you would play out the
-  ending. Calmly and quickly. If you play the entire match at &lt;span class=&quot;italics&quot;&gt;your&lt;/span&gt; pace, you won't lose simply because you messed up once. Every portion of 
-  your game will be dangerous. I have been down 2 or 3 KOs multiple times right at the start of the game, but I pace myself. I can came back and win,
-  simply because I'm playing this strong, fast pace where I don't make mistakes, yet not sacrifice attacking potential. The pace I set for myself is supremely comfortable
-  because it's the only pace I play at. I don't alternate at random between conservative and aggressive. I don't let my playstyle dictate my pace, as one-line players must do.
-  I don't feel panicked down 0-3 as much as I should because I know if I simply play the style properly, I can come back. Being comfortable is very important.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Eventually you can reach a point where building up your stack is almost done by reflex, and you will notice you have a lot more freedom and time to stare at your 
-  opponent's game and &lt;span class=&quot;italics&quot;&gt;predict&lt;/span&gt; what he'll do, and then play your own side in anticipation. This is a very strong strategy, 
-  and combined with a strong foundation will improve your game dramatically.. And because you have such a strong core already, adding things like 
-  prediction or ending strongly or beginning combos will have much more visible effects.
-&lt;/p&gt;
+    &lt;p&gt;
+      Eventually you can reach a point where building up your stack is almost done by reflex, and you will notice you have a lot more freedom and time to stare at your 
+      opponent's game and &lt;span class=&quot;italics&quot;&gt;predict&lt;/span&gt; what he'll do, and then play your own side in anticipation. This is a very strong strategy, 
+      and combined with a strong foundation will improve your game dramatically.. And because you have such a strong core already, adding things like 
+      prediction or ending strongly or beginning combos will have much more visible effects.
+    &lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 </content>
@@ -705,135 +695,143 @@
    <link href="http://www.laivictor.com/archive/2012/08/18/tetris"/>
    <updated>2012-08-18T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/08/18/tetris</id>
-   <content type="html">&lt;div class=&quot;sixteen columns&quot;&gt;
-    &lt;p&gt;
-        I recently achieved my 3 month goal of getting to level 95 in Tetris Friends Battle, so here's some Tetris. ^^
-    &lt;/p&gt;
+   <content type="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;sixteen columns&quot;&gt;
+        &lt;p&gt;
+            I recently achieved my 3 month goal of getting to level 95 in Tetris Friends Battle, so here's some Tetris. ^^
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        &lt;h3&gt;Tetris&lt;/h3&gt;
-    &lt;/p&gt;
+        &lt;p&gt;
+            &lt;h4&gt;Tetris&lt;/h4&gt;
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        Tetris is played all around the world, with good reason. It's very addictive, easily accessible to all ages, has a high skill ceiling for improvement and the Tetris &lt;span class=&quot;italics&quot;&gt;tune&lt;/span&gt; is just plain catchy. It has become one of those words that everyone knows, regardless of culture, race, age or job. 
-    &lt;/p&gt;
+        &lt;p&gt;
+            Tetris is played all around the world, with good reason. It's very addictive, easily accessible to all ages, has a high skill ceiling for improvement and the Tetris &lt;span class=&quot;italics&quot;&gt;tune&lt;/span&gt; is just plain catchy. It has become one of those words that everyone knows, regardless of culture, race, age or job.
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        However, you can easily when Tetris can become a monotonous grind. While the levelling system pushes the speed of the game up, the skill ceiling and time commitment goes exponentially up with no other gains, other than the joy of being really good. Which is sometimes enough. But over time, this monotonous grind loses the casual base. Sure, every once in a while you'll squeek out a quick Tetris game since it's good for your health. Once and done for a while, though.
-    &lt;/p&gt;
+        &lt;p&gt;
+            However, you can easily when Tetris can become a monotonous grind. While the levelling system pushes the speed of the game up, the skill ceiling and time commitment goes exponentially up with no other gains, other than the joy of being really good. Which is sometimes enough. But over time, this monotonous grind loses the casual base. Sure, every once in a while you'll squeek out a quick Tetris game since it's good for your health. Once and done for a while, though.
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        But enter Tetris Friends.
-    &lt;/p&gt;
-        
-    &lt;p&gt;
-        &lt;a href=&quot;http://www.tetrisfriends.com/&quot; target=&quot;_blank&quot;&gt;Tetris Friends&lt;/a&gt; hit the world via Facebook, and it spread like wildfire in its first few years. Now, it has seemed to die down, but it took the great Tetris formula, kept all the fun of stacking blocks, added enough social and game elements to cause Tetris's recent resurgence.
-    &lt;/p&gt;
+        &lt;p&gt;
+            But enter Tetris Friends.
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        It actually wouldn't be wrong to say Tetris Friends is a strong reason as to why Tetris is still on a lot of people's minds.
-    &lt;/p&gt;
-        
-    &lt;p&gt;
-        &lt;h3&gt;What makes a Tetris&lt;/h3&gt;
-    &lt;/p&gt;
-        
-    &lt;p&gt;
-        Because Tetris has become so mainstream, a lot of its meaning has been lost. The basics of the game are very easy to pick up, but there are a lot of nuances different versions have added that people say improve or detract from the game. I tend to think most of them improved upon an already winning formula.
-    &lt;/p&gt;
+        &lt;p&gt;
+            &lt;a href=&quot;http://www.tetrisfriends.com/&quot; target=&quot;_blank&quot;&gt;Tetris Friends&lt;/a&gt; hit the world via Facebook, and it spread like wildfire in its first few years. Now, it has seemed to die down, but it took the great Tetris formula, kept all the fun of stacking blocks, added enough social and game elements to cause Tetris's recent resurgence.
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        The point of regular Tetris is to finish the game. Many variants set the bar at level 20. Some have a limitless mode. More hardcore clones like ones posted on Youtube go invincibly fast, then turn off the pieces so you play blind and by memory. 
-    &lt;/p&gt;
+        &lt;p&gt;
+            It actually wouldn't be wrong to say Tetris Friends is a strong reason as to why Tetris is still on a lot of people's minds.
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        The end goal is always to get the highest score possible. How? To make lots and lots of Tetrises. In the world of stacking and clearing size-4 blocks, a Tetris is clearing 4 lines at the same time with the 'I' block.
-    &lt;/p&gt;
+        &lt;p&gt;
+            &lt;h4&gt;What makes a Tetris&lt;/h4&gt;
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        An equally viable method is to get lots of T-spins, which involve making a spin left or spin right in the half second when the block is about to drop onto the stack.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        These are really simple concepts. T-spin was not in the original Tetris, but you can imagine how much more depth it brings to the game.
-        Tetris Friends does even more to this formula.
-    &lt;/p&gt;
+        &lt;p&gt;
+            Because Tetris has become so mainstream, a lot of its meaning has been lost. The basics of the game are very easy to pick up, but there are a lot of nuances different versions have added that people say improve or detract from the game. I tend to think most of them improved upon an already winning formula.
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        &lt;h3&gt;What makes a Tetris friendly?&lt;/h3&gt;
-    &lt;/p&gt;
+        &lt;p&gt;
+            The point of regular Tetris is to finish the game. Many variants set the bar at level 20. Some have a limitless mode. More hardcore clones like ones posted on Youtube go invincibly fast, then turn off the pieces so you play blind and by memory.
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        While T-spins and Tetrises have become fundamental to the game, they don't add the much needed 'game' elements that makes a game really successful. Being a puzzle game is often enough to garner interest, but what really pushed Tetris into the mainstream is really making it more friendly to new players by introducing a lot of new, cool and most importantly fun elements.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        &lt;h5&gt;Facebook Integration&lt;/h5&gt;
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        Perhaps the most important element of Tetris Friend's success is their integration into Facebook. Recently passing 1 billion users, Facebook is by far the most successful and widespread social platform. By integrating an application successfully into Facebook's network, you can interact with all those users, which is a huge market and makes the game very accessible compared to client downloads.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        &lt;h5&gt;Game Modes&lt;/h5&gt;
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        Tetris Friends put a bunch of game modes on the grid, and made them accessible to a lot of people very easily with their integration with Facebook.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        Sprint races players against other players to see who can clear the fastest 40 lines. Marathon is like limitless mode, but amplifies the speed and point progression a lot better than other game variants do. Battle 2P and 6P pits players against players in a refreshing take on the Tetris formula. These modes work heavily to improve the replayability of the game by switching up the skills required to succeed in each, and expand the skill sets of the players.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        But what game modes do is simply reward and spread player improvement equally. While Battle 2P is always the premier game mode, being good at any of the game modes automatically makes you better in other game modes, and this adds to the time spent in each mode. Get good at Sprint and suddenly you'll want to be as good in Batle 2P as you are in Sprint. Which brings me to my next point.
-    &lt;/p&gt;
+        &lt;p&gt;
+            The end goal is always to get the highest score possible. How? To make lots and lots of Tetrises. In the world of stacking and clearing size-4 blocks, a Tetris is clearing 4 lines at the same time with the 'I' block.
+        &lt;/p&gt;
 
-    &lt;p&gt;
-        &lt;h5&gt;Rankings&lt;/h5&gt;
-    &lt;/p&gt;
-            
-    &lt;p&gt;
-        Basic Tetris has no metric on where your skill level stands. While you can judge a fair bit by saying, &quot;Oh, I can't beat level 14&quot;, beyond these generic statements you have no information. 
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        By including this ranking solution, you can suddenly compare yourself to your friends: boast, cry, whatever. You have a standard, physical goal to work towards. You have a lot more concrete information to judge your own performance in that you're weak in sprints, but good at battles.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        My personal favourite element of their ranking system is that it makes you feel good.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        If you keep track of the labels they have defined for the ranking system, you will notice it is always positive. And this is amazing in keeping you interested. Do you want to be called a Hero? Or a Rookie? Tetris God? Grandmaster? Star? It's amazing how they decided to keep the attitude positive like this.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        Some people will argue that it hides information a lot more, but in reality, good players don't care about their label. They don't even care about the number. But improving or stalled players don't need to feel bad about being stuck at the Grandmaster level this way.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        Plus, the name obscures the fact that the skill level is dramatically higher at the top levels. An extremely interesting observation I found with Starcraft is that the professional gamers, the highest tier of players, are at a skill level way beyond even the top players. If you are familiar with the Starcraft 2 rankings, it goes &lt;br/&gt;&lt;code class=&quot;in-line center&quot;&gt; Bronze &lt; Silver &lt; Gold &lt; Platinum &lt; Diamond &lt; Masters &lt; Grandmasters &lt;/code&gt;&lt;br/&gt; where Grandmaster represents the top 200 players, and Masters represents the top 2% of the Diamond ranking. In this same example, you can easily see how someone in Diamond who is not award of Masters may think that he is one of the best players, and this makes him continue playing. The same thing applies in Tetris Friends.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        &lt;h5&gt;Rewards&lt;/h5&gt;
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        And then adding rewards keep you coming back to the game. A really annoying, yet smart decision was to include a slot system where you opened more slots the more consecutive days you played. Diabolical yes. Smart yes. And running these slots more meant you got more Tetris money to spend for Tetris: adding skins, getting slight gaming tweaks.
-         Rewards keep you coming back to play more.
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-        Tetris Friends just does so many things right, it's very easy to see how it has become so successful. However, it will need to continue to innovate and improve the user experience, because being a Tetris clone, there is definitely a limit to how many blocks casual gamers can handle stacking.
-    &lt;/p&gt;
+        &lt;p&gt;
+            An equally viable method is to get lots of T-spins, which involve making a spin left or spin right in the half second when the block is about to drop onto the stack.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            These are really simple concepts. T-spin was not in the original Tetris, but you can imagine how much more depth it brings to the game.
+            Tetris Friends does even more to this formula.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;h4&gt;What makes a Tetris friendly?&lt;/h4&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            While T-spins and Tetrises have become fundamental to the game, they don't add the much needed 'game' elements that makes a game really successful. Being a puzzle game is often enough to garner interest, but what really pushed Tetris into the mainstream is really making it more friendly to new players by introducing a lot of new, cool and most importantly fun elements.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;h5&gt;Facebook Integration&lt;/h5&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            Perhaps the most important element of Tetris Friend's success is their integration into Facebook. Recently passing 1 billion users, Facebook is by far the most successful and widespread social platform. By integrating an application successfully into Facebook's network, you can interact with all those users, which is a huge market and makes the game very accessible compared to client downloads.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;h5&gt;Game Modes&lt;/h5&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            Tetris Friends put a bunch of game modes on the grid, and made them accessible to a lot of people very easily with their integration with Facebook.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            Sprint races players against other players to see who can clear the fastest 40 lines. Marathon is like limitless mode, but amplifies the speed and point progression a lot better than other game variants do. Battle 2P and 6P pits players against players in a refreshing take on the Tetris formula. These modes work heavily to improve the replayability of the game by switching up the skills required to succeed in each, and expand the skill sets of the players.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            But what game modes do is simply reward and spread player improvement equally. While Battle 2P is always the premier game mode, being good at any of the game modes automatically makes you better in other game modes, and this adds to the time spent in each mode. Get good at Sprint and suddenly you'll want to be as good in Batle 2P as you are in Sprint. Which brings me to my next point.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;h5&gt;Rankings&lt;/h5&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            Basic Tetris has no metric on where your skill level stands. While you can judge a fair bit by saying, &quot;Oh, I can't beat level 14&quot;, beyond these generic statements you have no information.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            By including this ranking solution, you can suddenly compare yourself to your friends: boast, cry, whatever. You have a standard, physical goal to work towards. You have a lot more concrete information to judge your own performance in that you're weak in sprints, but good at battles.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            My personal favourite element of their ranking system is that it makes you feel good.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            If you keep track of the labels they have defined for the ranking system, you will notice it is always positive. And this is amazing in keeping you interested. Do you want to be called a Hero or a noob? So instead of insults, we get all these Tetris Gods Grandmasters, Rock Stars and so on. It's amazing how they decided to keep the attitude positive like this, and how effective it is.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            Some people will argue that it hides information a lot more, but in reality, good players don't care about their label. They don't even care about the number. But improving or stalled players don't need to feel bad about being stuck at the Grandmaster level this way.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            Plus, the name obscures the fact that the skill level is dramatically higher at the top levels. An extremely interesting observation I found with Starcraft is that the professional gamers, the highest tier of players, are at a skill level way beyond even the top players. If you are familiar with the Starcraft 2 rankings, it goes &lt;code class=&quot;in-line&quot;&gt;Bronze &amp;lt; Silver &amp;lt; Gold &amp;lt; Platinum &amp;lt; Diamond &amp;lt; Masters &amp;lt; Grandmasters&lt;/code&gt; where Grandmaster represents the top 200 players, and Masters represents the top 2% of the Diamond ranking. In this same example, you can easily see how someone in Diamond who is not award of Masters may think that he is one of the best players, and this makes him continue playing. I mean, Diamond sounds like it's a pretty high rank, no? The same thing applies in Tetris Friends.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;img class=&quot;scale-with-grid&quot; src=&quot;/images/tetrisranks.png&quot;/&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            Expert at level 13!
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;h5&gt;Rewards&lt;/h5&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            And then adding rewards keep you coming back to the game. A really annoying, yet smart decision was to include a slot system where you opened more slots the more consecutive days you played. Diabolical yes. Smart yes. And running these slots more meant you got more Tetris money to spend for Tetris: adding skins, getting slight gaming tweaks.
+            Rewards keep you coming back to play more.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            Tetris Friends just does so many things right, it's very easy to see how it has become so successful. However, it will need to continue to innovate and improve the user experience, because being a Tetris clone, there is definitely a limit to how many blocks casual gamers can handle stacking.
+        &lt;/p&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
-
-
 
 </content>
    
@@ -891,10 +889,10 @@
    <updated>2012-08-03T00:00:00-04:00</updated>
    <id>http://www.laivictor.com/archive/2012/08/03/dexpot</id>
    <content type="html">&lt;p&gt;
-  When I first used Ubuntu, I fell in love with their 
+  When I first used Ubuntu, I fell in love with their
   &lt;a href=&quot;http://en.wikipedia.org/wiki/Workspace#Graphical_interfaces&quot; target=&quot;_blank&quot;&gt;workspaces&lt;/a&gt;.
-  The ability to open and manage multiple desktops very useful when you only have one monitor. 
-  The controls were intuitive, the transitions clean and delays non-existent. 
+  The ability to open and manage multiple desktops very useful when you only have one monitor.
+  The controls were intuitive, the transitions clean and delays non-existent.
   It was a good day.
 &lt;/p&gt;
 
@@ -902,8 +900,8 @@
 
 
 &lt;p&gt;
-  I later found out that Apple's OS X has the Expose and Spaces for their own version of workspaces. 
-  On my sister's MacBook, it is noticeably faster, more responsive and had more features, as expected on the very well 
+  I later found out that Apple's OS X has the Expose and Spaces for their own version of workspaces.
+  On my sister's MacBook, it is noticeably faster, more responsive and had more features, as expected on the very well
   designed Mac OS. As a Windows user primarily however, I felt very left out.
 &lt;/p&gt;
 
@@ -919,8 +917,8 @@
 
 &lt;p&gt;
   They've made a lot of improvements since I've first time I used it, and right now, it's evolved into something
-  beautiful. They've added much better taskbar integration, a less buggy multi-monitor support, and much, much better 
-  responsiveness overall. It's a great product with a great team behind it. I'm actually preferring Dexpot to 
+  beautiful. They've added much better taskbar integration, a less buggy multi-monitor support, and much, much better
+  responsiveness overall. It's a great product with a great team behind it. I'm actually preferring Dexpot to
   Ubuntu's workspaces.
 &lt;/p&gt;
 
@@ -928,8 +926,8 @@
 
 
 &lt;p&gt;
-  The hotkeys are just more intuitive for one-handed productivity. Hardly anyone keeps both their hands on the keyboard unless they're 
-  working exclusively in the shell. Having one hand on the mouse is a lot more flexible. But Ubuntu requires a WIN+ARROW_KEY press 
+  The hotkeys are just more intuitive for one-handed productivity. Hardly anyone keeps both their hands on the keyboard unless they're
+  working exclusively in the shell. Having one hand on the mouse is a lot more flexible. But Ubuntu requires a WIN+ARROW_KEY press
   to swap the workspace. A pretty big waste of time to move one hand over. Dexpot's solution? ALT+NUM. Simple and fast.
 &lt;/p&gt;
 
@@ -937,11 +935,11 @@
 
 
 &lt;p&gt;
-  Why use workspaces at all? The main benefit is clutter. Spacing out several applications over four screens is great, 
-  similar to the benefits of using multiple monitors. It means you can categorize your workspaces, one section for reference applications, 
+  Why use workspaces at all? The main benefit is clutter. Spacing out several applications over four screens is great,
+  similar to the benefits of using multiple monitors. It means you can categorize your workspaces, one section for reference applications,
   one side for working programs, and another area for anything else. I actually use it on my dual monitor setup, and still find it useful.
-  Having workspaces means keeping the programs maximized. Minimizing and maximizing requires a few more clicks, while with any virtual desktop 
-  application, pressing a customized key combination, say ALT+1 or 
+  Having workspaces means keeping the programs maximized. Minimizing and maximizing requires a few more clicks, while with any virtual desktop
+  application, pressing a customized key combination, say ALT+1 or
   WIN+DOWN_ARROW, will swap all the active applications to a new set (or carry some over depending on your preferences. It's much more convenient.
 &lt;/p&gt;
 
@@ -992,7 +990,21 @@
 
 
 &lt;p&gt;
-  I'm a University student that lives away from home. I decided to bring my desktop to my new residence. 
+  I'm a University student that lives away from home. I decided to bring my desktop to my new residence. I also bought a new laptop so I could work outside of my residence.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  Here's the problem, all my files are out of sync. I can work on one of my essays after class in one of the many labs across campus. But once I get home, either I can only work on the essay on my laptop, or get a USB drive, move it to my desktop and work a bit. And if I want to work outside in one of the labs again? Save it to the USB, transfer it to my laptop and get going.
+&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  While this is possible, it's just a massive waste of time compared to much better solutions. This is where Dropbox comes in.
 &lt;/p&gt;
 
 
@@ -1001,7 +1013,7 @@
 &lt;p&gt;
   I use some slightly confusing system with GitHub and Dropbox, so
   I had to learn some new stuff so that I could upload my website properly to GitHub Pages.
-  The first time I tried it, I actually deleted my website files, along with the 
+  The first time I tried it, I actually deleted my website files, along with the
   GitHub repository. I had nothing to roll back to. It was all gone.
 &lt;/p&gt;
 
@@ -1019,7 +1031,7 @@
 &lt;p&gt;
   When I accidentally deleted my website files, I panicked. But I found out that Dropbox saves a history of your deleted
   files, so that you can recover them if you're messed up accidentally, and actually use them as a mini-version
-  tracker. Awesome for a free service. Thank you very much Dropbox, for saving a couple days' or weeks' worth of material. 
+  tracker. Awesome for a free service. Thank you very much Dropbox, for saving a couple days' or weeks' worth of material.
   Kind of an amazing application.
 &lt;/p&gt;
 

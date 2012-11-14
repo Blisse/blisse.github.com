@@ -853,13 +853,17 @@
 /* #Pygments
 ================================================== */
 
+	pre {
+		margin: 2px;
+	}
+
 	code {
-	  font-family: monospace !important;
+	  font-family: 'Consolas' !important;
 	  background-color: #FAFAFA;
 	  border: 1px solid #CCCCCC;
 	  margin: 0;
 	  padding: 1px 3px;
-	  white-space: pre;
+	  white-space: pre; overflow: auto;
 	}
 
 	.highlight {

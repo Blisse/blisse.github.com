@@ -1,9 +1,8 @@
 /* #Header
 ================================================== */
 
-	
-	header {
 
+	header {
 		overflow-x: hidden;
 		overflow-y: hidden;
 		margin: 0;
@@ -40,7 +39,7 @@
 	}
 
 	header #name a #first {
-		color: #E9E9E9;
+		color: #F6F6F6;
 	}
 
 	header #name a:hover > #first {
@@ -97,16 +96,16 @@
 		border:none;
 	}
 
-	header #links a, 
-	header #links a:visited { 
+	header #links a,
+	header #links a:visited {
 		color: #3299BB;
 		text-decoration: none;
 		border: none;
 	}
 
-	header #links a:hover, 
-	header #links a.hover, 
-	header #links a.selected { 
+	header #links a:hover,
+	header #links a.hover,
+	header #links a.selected {
 		border: none;
 		color: #FF9900;
 		text-decoration: none;
@@ -115,7 +114,7 @@
 
 
 	header #nav {
-		color: #E9E9E9;
+		color: #F6F6F6;
 		height: 64px;
 		margin: 0;
 		padding: 0;
@@ -170,7 +169,7 @@
 		border-bottom: none;
 		display: block;
 		height: 32px;
-		color: #E9E9E9;
+		color: #F6F6F6;
 	}
 
 	header #nav ul li a:hover,
@@ -184,7 +183,7 @@
 		left: 0;
 		z-index: 200;
 	}
-	
+
 	header #nav ul li.currentpage > ul {
 		visibility: visible;
 		z-index: 300;
@@ -198,7 +197,7 @@
 
 	header #nav ul li.hover,
 	header #nav ul li:hover {
-		background-color: #E9E9E9;
+		background-color: #F6F6F6;
 	}
 
 	header #nav ul li.currentpage {
@@ -208,9 +207,9 @@
 		background-color: #FF9900;
 		color: #1A1A1A;
 	}
-	
+
 	header #nav ul li a {
-		color: #E9E9E9;
+		color: #F6F6F6;
 	}
 
 	header #nav ul li.hover a,
@@ -233,14 +232,14 @@
 	}
 
 	header #nav ul li ul li.currentpage a {
-		background-color: #E9E9E9;
+		background-color: #F6F6F6;
 		color: #1A1A1A;
 	}
 
 	header #nav ul li ul li.hover a,
 	header #nav ul li ul li:hover a {
 		background-color: #3299BB;
-		color: #E9E9E9;
+		color: #F6F6F6;
 	}
 
 	header #nav ul li ul li.empty.hover,

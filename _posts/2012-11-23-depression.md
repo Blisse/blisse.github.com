@@ -1,6 +1,6 @@
 ---
 layout: post
-title: depression and onwards
+title: depression
 date: 2012-11-23
 tags: [life]
 div: false
@@ -14,7 +14,7 @@ div: false
     </p>
 
     <p>
-      Over the several months, I lost everything.
+      Over several months, I lost everything.
     </p>
 
     <p>

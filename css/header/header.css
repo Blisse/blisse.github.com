@@ -27,7 +27,7 @@
 		color: #FF9900;
 		text-align: left;
 		font-family: 'Nexa Bold', 'Arial', sans-serif;
-		border-bottom: 4px solid #FF9900;
+		border-bottom: 5px solid #FF9900;
 	}
 
 	header #name a:hover {
@@ -52,29 +52,29 @@
 
     @media only screen and (min-width: 960px) {
     	header #name a {
-    		font-size: 64px;
-			border-bottom: 0;
+  		  font-size: 56px;
+        border-bottom: 0;
     	}
 
     	header #name {
-			border-right: 4px solid #FF9900;
+        border-right: 3px solid #FF9900;
     	}
     }
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
     	header #name a {
-    		font-size: 60px;
-			border-bottom: 0;
+    		font-size: 56px;
+        border-bottom: 0;
     	}
 
     	header #name {
-			border-right: 4px solid #FF9900;
+        border-right: 3px solid #FF9900;
     	}
     }
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
     	header #name a {
-    		font-size: 74px;
+    		font-size: 75px;
     		text-align: center;
     	}
     }
@@ -250,7 +250,7 @@
 
     @media only screen and (min-width: 960px) {
     	header #nav ul li {
-    		width: 100px;
+    		width: 85px;
     	}
     }
 

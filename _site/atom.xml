@@ -4,7 +4,7 @@
  <title>lai.victor</title>
  <link href="http://www.laivictor.com/atom.xml" rel="self"/>
  <link href="http://www.laivictor.com"/>
- <updated>2012-11-24T05:54:24-05:00</updated>
+ <updated>2012-12-31T23:55:16-05:00</updated>
  <id>http://www.laivictor.com</id>
  <author>
    <name>Victor Lai</name>
@@ -12,7 +12,181 @@
 
  
  <entry>
-   <title type="html">depression and onwards</title>
+   <title type="html">stuff to do</title>
+   <link href="http://www.laivictor.com/archive/2012/12/31/stufftodo"/>
+   <updated>2012-12-31T00:00:00-05:00</updated>
+   <id>http://www.laivictor.com/archive/2012/12/31/stufftodo</id>
+   <content type="html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;sixteen columns&quot;&gt;
+    &lt;p&gt;
+      So many things I want to do, that it just seems impossible. Hopefully I will cross them all off before 2013 is over. Also, this means I have something physical to achieve, and hopefully I won't forget them.
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;h3&gt;
+        Programming
+      &lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          Learn Scheme
+        &lt;/li&gt;
+        &lt;li&gt;
+          Learn Haskell
+        &lt;/li&gt;
+        &lt;li&gt;
+          Write a 2D grid based sprite engine, and eventually game in Python
+        &lt;/li&gt;
+        &lt;li&gt;
+          Fix the hack-y fixes I use for this site's CSS.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Rewrite the CSS for this site to make it nicer.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Figure out how to get markdown working for these blog posts.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Create a less contrasty theme and layout for this site.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Write and publish a Windows Phone 8 application.
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;h3&gt;
+        Computer
+      &lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          Finish building my computer rig.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Finish building my dad's computer from my old parts.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Physically mod my computer case.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Finish buying my ideal monitor setup.
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;h3&gt;
+        Active
+      &lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          Get back into shape.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Get into the habit of going to the gym.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Attend every single Kendo lesson for a term when I'm available.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Get to an 8 minute mile.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Wear my retainer at least every other night.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Floss at least every other night.
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;h3&gt;
+        General
+      &lt;/h3&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          Be happier than I have been the last 6 months.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Do something new every day.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Blog at least once a month.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Write in my journal weekly.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Find my dream pair of headphones.
+        &lt;/li&gt;
+        &lt;li&gt;
+          Smile.
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</content>
+   
+   <category term="life"/>
+   
+ </entry>
+ 
+ <entry>
+   <title type="html">a clockwork wtf</title>
+   <link href="http://www.laivictor.com/archive/2012/12/05/aclockworkwtf"/>
+   <updated>2012-12-05T00:00:00-05:00</updated>
+   <id>http://www.laivictor.com/archive/2012/12/05/aclockworkwtf</id>
+   <content type="html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;sixteen columns&quot;&gt;
+    &lt;p&gt;
+      There's a huge difference between reading something for fun and reading something for study.
+    &lt;/p&gt;
+    &lt;p&gt;
+      At least for study, your thoughts are focused in the direction of the teachers' musings. They provide subtle hints that you can clue in on about the message that the story is conveying. They help you try and divulge meaning from the text, rather than read it as you would a movie.
+    &lt;/p&gt;
+    &lt;p&gt;
+      So I'm not sure why I decided to read it.
+    &lt;/p&gt;
+    &lt;p&gt;
+      You always hear it being heralded as a literary triumph; a classic, timeless masterpiece. It's tempting, especially when the current generation of books is so pathetic. I'm not talking about Twilight, since it's clearly not vying for any real literary awards.
+    &lt;/p&gt;
+    &lt;p&gt;
+      I'm talking about Life of Pi somehow expressing more than just a really good story. And I'm seriously disinterested in those middle Eastern civil war novels like The Kite Runner and anything of a similar style.
+    &lt;/p&gt;
+    &lt;p&gt;
+      Maybe the current generation of award winning novels are different. I haven't followed the literary scene at all for a long time, but reading classics like Catch 22 feels a lot more thought provoking than my usual fantasy novels, though each have their place.
+    &lt;/p&gt;
+    &lt;p&gt;
+      So I do understand something is happening in the clockwork. I want to say I can easily follow the narrative, but really the language is a painful mess to drudge through, and it's extremely difficult to put down the novel and pick it up later, in both that the novel is engaging and difficult to get yourself into the flow of the story.
+    &lt;/p&gt;
+    &lt;p&gt;
+      Forcing readers to relearn the new dialect completely is a really smart way to force reader engagement. It makes you focus on the content and consider each line carefully, while adding a sort of realism and disconnect to this imaginary society.
+    &lt;/p&gt;
+    &lt;p&gt;
+      I don't want to comment on the actual story because it's something that should really be experienced individually, and my interpretations may be a bit off. However, the kind of mental-fucked-up-ness that it shows is slightly cool in its own sense.
+    &lt;/p&gt;
+    &lt;p&gt;
+      I mean, you can sort of see how the world could turn to shit like that, mainly because the entire lens that the reader experiences is so twisted; the protagonist's actions, the writing style, all contribute to this sort of distorted atmosphere that makes the entire story feel so realistic, but so disconnected at the same time.
+    &lt;/p&gt;
+    &lt;p&gt;
+      And the end of the novel, because I'm not constantly reflecting and writing paragraphs about what I thought about each section, I'm kind of in shock about what I've just read. It's also slightly hard to process each event without the weird writing style bleeding through my thoughts. It's a literal literary mindfuck, though it stands out so strongly in its own distinct mindfucked way that I'm not sure if it was really saying what I thought it was saying.
+    &lt;/p&gt;
+    &lt;p&gt;
+      The book definitely feels like a real story. Everything in the novel achieves a strong sense of circular conclusiveness like you would want in a good story. While not to say loose ends are all closed, the style and narrative really complements each other well in a way I haven't experienced or felt before.
+    &lt;/p&gt;
+    &lt;p&gt;
+      It's a great read, for sure.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</content>
+   
+   <category term="thinking"/>
+   
+ </entry>
+ 
+ <entry>
+   <title type="html">depression</title>
    <link href="http://www.laivictor.com/archive/2012/11/23/depression"/>
    <updated>2012-11-23T00:00:00-05:00</updated>
    <id>http://www.laivictor.com/archive/2012/11/23/depression</id>
@@ -23,7 +197,7 @@
     &lt;/p&gt;
 
     &lt;p&gt;
-      Over the several months, I lost everything.
+      Over several months, I lost everything.
     &lt;/p&gt;
 
     &lt;p&gt;

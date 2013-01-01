@@ -278,6 +278,8 @@
 
 
 	h2 {
+			padding-left: 3px;
+	    background: #FF9900;
 	    font-size: 28px;
 	    line-height: 40px;
 	}
@@ -289,6 +291,11 @@
 	h2 a:hover {
 	    background: #FF9900;
 	    padding: 5px;
+	}
+
+	h2:hover {
+			padding-left: 3px;
+			background: #3299BB;
 	}
 
 	h2 {
@@ -306,6 +313,14 @@
 	h2 a:hover {
 		background: #3299BB;
 	}
+
+	h2 a:hover,
+	h2 a:link:hover,
+	h2 a:visited:hover,
+	h2 a:active:hover {
+		border-color: #323222;
+	}
+
 
 	h2 a:hover,
 	h2 a:hover .h2-hover {
@@ -723,15 +738,16 @@
 	}
 
 	blockquote, blockquote p {
-		font-size: 14px;
+		font-size: 18px;
+		font-weight: 400;
 		font-family: 'Museo Sans', 'Source Sans Pro', Verdana;
-		line-height: 1.5em;
+		line-height: 1.4em;
 		color: #383838;
 	}
 
 	blockquote cite {
 		display: block;
-		font-size: 12px;
+		font-size: 14px;
 		color: #383838;
 	}
 
@@ -842,35 +858,6 @@
 	.parent-padding { padding: 10% 0; }
 	.child-padding { padding: 10% 0; }
 
-/* #Meters
-================================================== */
-
-	.meter {
-		display: block;
-		background-color: #333;
-		text-align: left;
-		margin: 12px;
-		padding: 5px;
-		height: 36px;
-		width: 100%;
-	}
-
-	.meter > span.meterfill {
-		padding-left: 5px;
-		height: 100%;
-		background-color: #FF9900;
-		text-align: center;
-		display: inline-block;
-	}
-
-	.meter > span.meterfill > span.desc {
-		font-family: 'Museo Slab';
-		vertical-align: middle;
-		float:left;
-		color: #1A1A1A;
-		margin:2px;
-		padding: 2px;
-	}
 
 /* #Pygments
 ================================================== */
@@ -908,5 +895,3 @@
 	  border-top-right-radius: 7px 7px;
 	  */
 	}
-
-.container * { max-width: 720px; }

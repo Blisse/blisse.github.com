@@ -17,7 +17,7 @@ Everything else is free to use under the MIT License. Thanks!
 
 -------
 
-[2012-02-25] 1.0.0
+    [2012-02-25] 1.0.0
 
 I recently deleted my Master branch to simplify my workflow, so there goes my commit history.
 Hopefully I will make up for it by writing better commit descriptions from now on.

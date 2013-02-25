@@ -1,18 +1,25 @@
 <h1> README </h1>
 
-This is my blog. 
+Hi! I'm Victor Lai. This is the repository for my blog made using Jekyll.
 
 * <a href="http://www.laivictor.com" target="_blank">www.laivictor.com</a>
 * <a href="http://blisse.github.com" target="_blank">blisse.github.com</a>
 
-It is automatically transformed by <a href="http://github.com/mojombo/jekyll" target="_blank">Jekyll</a> 
-into a static site whenever I push this repository to GitHub.
 
 <h1> License </h1>
 
-The following directories and their contents are Copyright Victor Lai. 
-You may not reuse anything therein without my permission:
+The following directories and their contents are Copyright Victor Lai. Please don't use
+anything in there without my permission.
 
 * _posts/
 
-All other directories and files are MIT Licensed, and free to use.
+Everything else is free to use under the MIT License. Thanks!
+
+-------
+
+[2012-02-25] 1.0.0
+
+I recently deleted my Master branch to simplify my workflow, so there goes my commit history.
+Hopefully I will make up for it by writing better commit descriptions from now on.
+
+Let's start from scratch, again!

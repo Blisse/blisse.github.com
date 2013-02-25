@@ -40,3 +40,5 @@ Thumbs.db
 .git
 site-master.sublime-project
 site-master.sublime-workspace
+
+_site/

@@ -7,14 +7,39 @@
 		overflow-y: hidden;
 		margin: 0;
 		border: 0px;
-		background: #1A1A1A;
-		border-bottom: none;
 		position: relative;
 		vertical-align: middle;
-		font-size: 14px/24px;
-		font-family: "PT Sans Narrow";
 		width: 100%;
 	}
+
+  header a:link    {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: none;
+    /* color:            blue; */
+  }
+  header a:visited {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: none;
+    /* color:            #f0f; */
+  }
+  header a:hover   {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: none;
+    /* color:            #fff; */
+  }
+  header a:active  {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: none;
+    /* color:            white; */
+  }
 
 	header #name {
 		margin-top: 5px;
@@ -92,8 +117,7 @@
 		display: block;
 		vertical-align: center;
 		margin-bottom: 10px;
-		float:right;
-		border:none;
+		float: right;
 	}
 
 	header #links a,
@@ -113,9 +137,31 @@
 	}
 
 
+
+  header nav {
+
+  }
+
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  header nav ul li {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: "Segoe UI", "Myriad Pro", Lato, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    display: inline;
+  }
+
+  header nav #nav-top ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1.0)
+  }
+
 	header #nav {
 		color: #F6F6F6;
-		height: 64px;
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -124,7 +170,6 @@
 	header #nav * {
 		margin: 0;
 		padding: 0;
-		font-family: 'PT Sans Narrow';
 	}
 
 	header #nav ul,
@@ -146,7 +191,7 @@
 		z-index: 100;
 		float: right;
 		display: block;
-		height: 32px;
+		height: 75px;
 		right: 0;
 	}
 
@@ -156,7 +201,7 @@
 		width: 75px;
 		float: left;
 		display: block;
-		height: 32px;
+		height: 75px;
 	}
 
 	header #nav ul li.hover,

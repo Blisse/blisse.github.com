@@ -1,1 +1,0 @@
-wget -E -H -k -p -nd www.laivictor.com/about/resume/

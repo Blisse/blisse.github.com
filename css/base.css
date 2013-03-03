@@ -35,15 +35,20 @@
 /* #Body
 ================================================== */
 
+	html {
+		overflow-y: scroll;
+	}
+
 	body {
-		background: repeat scroll 0 0 #F6F6F6;
-		color: #000000;
 		-webkit-text-size-adjust: 100%;
 
 		-ms-overflow-x: hidden;
+		background-color: rgba(37,37,37,1.0);
+		background: url("/images/bg.png") repeat center center fixed;
+		color: #fff;
 		overflow-x: hidden;
 		font-family: "Open Sans";
-		font-size: 14px/24px;
+		font-size: normal normal 300 16px/22.4px "Open Sans";
 		text-rendering: optimizeLegibility;
 	}
 
@@ -82,11 +87,11 @@
 		text-align: center;
 	}
 
-	.left {
+	.text-left {
 		text-align: left;
 	}
 
-	.right {
+	.text-right {
 		text-align: right;
 	}
 
@@ -103,7 +108,7 @@
 		opacity: 0.5;
 	}
 
-	.italics, .italic {
+	.italic {
 		font-style: italic;
 	}
 
@@ -111,62 +116,20 @@
 		font-weight: bold;
 	}
 
-	.font-size-14 {
-		font-size: 14px;
-	}
-
-	.font-size-18 {
-		font-size: 18px;
-	}
-
-	.font-size-24 {
-		font-size: 24px;
-	}
-
-	.font-size-32, .size-32 {
-		font-size: 32px;
-	}
-
-	.font-size-36 {
-		font-size: 36px;
-	}
-
-	.font-size-48 {
-		font-size: 48px;
-	}
-
-	.no-vertical-margins, .no-vertical-margins * {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-
-	.no-horizontal-margins, .no-horizontal-margins * {
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-	.no-margin, .no-margins,
-	.no-margin *, .no-margins * {
-		margin: 0;
-	}
-
-	.weight-normal {
-		font-weight: normal;
-	}
 
 /* #Typography
 ================================================== */
 
 
+
 	p {
-		color: #1A1A1A;
+		color: #F6F6F6;
 		display: block;
 		margin: 1.5em 0px;
 		margin-left: auto;
     margin-right: auto;
 		padding: 0px;
 		text-rendering: optimizeLegibility;
-		font: normal normal 300 14px/24px "Open Sans";
 		line-height: 24px;
 	}
 

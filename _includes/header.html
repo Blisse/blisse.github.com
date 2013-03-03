@@ -1,36 +1,68 @@
 <header>
 	<div class="container">
 		<br/>
+
+
+
 		<div class="eight columns">
 			<div id="name">
+
 				<a href="/">
-					<span  class="no-wrap">
+					<span class="no-wrap">
 						<span id="last">LAI</span><span id="first">.VICTOR</span>
 					</span>
 				</a>
+
 			</div>
 		</div>
+
 		<div class="eight columns">
 			<div id="links">
+
 				<a target="_blank" href="http://www.twitter.com/{{ site.twitter}} ">
 					<i class="icon-twitter-sign"></i>
 				</a>
+
 				<a target="_blank" href="http://www.github.com/{{ site.github }}">
 					<i class="icon-github-sign"></i>
 				</a>
+
 				<a target="_blank" href="http://ca.linkedin.com/in/{{ site.linkedin }}">
 					<i class="icon-linkedin-sign"></i>
 				</a>
+
 				<a href="mailto:{{ site.email }}">
 					<i class="icon-envelope-alt"></i>
 				</a>
+
 				<a href="{{ site.atom }}" target="_blank" >
 					<i class="icon-rss"></i>
 				</a>
+
 			</div>
 		</div>
-		<div class="eight columns">
+
+
+
+		<nav class="eight columns">
+			<div id="nav-top">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Projects</a></li>
+					<li><a href="">Archives</a></li>
+				</ul>
+			</div>
+			<div id="nav-bottom">
+
+			</div>
+
+			<br/>
+			<br/>
+			<br/>
+
 			<div id="nav">
+
 				<ul>
 					{% if page.main == "home" %}
 					<li class="currentpage">
@@ -61,7 +93,7 @@
 					<li class="dir">
 					{% endif %}
 						<a href="/blog/">
-							Blog <i class="icon-caret-down"></i>
+							Blog
 						</a>
 						<ul>
 							{% if page.sub == "highlights" %}
@@ -102,7 +134,7 @@
 					<li class="dir">
  					{% endif %}
  						<a href="/projects/">
- 							Projects <i class="icon-caret-down"></i>
+ 							Projects
  						</a>
 						<ul>
 							<li class="empty">
@@ -137,7 +169,7 @@
 					<li class="dir">
 					{% endif %}
 						<a href="/about/">
-							About <i class="icon-caret-down"></i>
+							About
 						</a>
 						<ul>
 							<li class="empty">
@@ -173,9 +205,8 @@
 						</ul>
 					</li>
 				</ul>
-			</div> <!-- / div nav -->
-		</div> <!-- / div 8 columns -->
-		<br />
-		<br />
-	</div> <!-- / div container -->
+			</nav>
+		</div>
+	</div>
+
 </header>

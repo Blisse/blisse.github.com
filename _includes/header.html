@@ -16,197 +16,103 @@
 			</div>
 		</div>
 
-		<div class="eight columns">
-			<div id="links">
+<!-- 		<div class="eight columns">
+	<div id="links">
 
-				<a target="_blank" href="http://www.twitter.com/{{ site.twitter}} ">
-					<i class="icon-twitter-sign"></i>
-				</a>
+		<a target="_blank" href="http://www.twitter.com/{{ site.twitter}} ">
+			<i class="icon-twitter-sign"></i>
+		</a>
 
-				<a target="_blank" href="http://www.github.com/{{ site.github }}">
-					<i class="icon-github-sign"></i>
-				</a>
+		<a target="_blank" href="http://www.github.com/{{ site.github }}">
+			<i class="icon-github-sign"></i>
+		</a>
 
-				<a target="_blank" href="http://ca.linkedin.com/in/{{ site.linkedin }}">
-					<i class="icon-linkedin-sign"></i>
-				</a>
+		<a target="_blank" href="http://ca.linkedin.com/in/{{ site.linkedin }}">
+			<i class="icon-linkedin-sign"></i>
+		</a>
 
-				<a href="mailto:{{ site.email }}">
-					<i class="icon-envelope-alt"></i>
-				</a>
+		<a href="mailto:{{ site.email }}">
+			<i class="icon-envelope-alt"></i>
+		</a>
 
-				<a href="{{ site.atom }}" target="_blank" >
-					<i class="icon-rss"></i>
-				</a>
+		<a href="{{ site.atom }}" target="_blank" >
+			<i class="icon-rss"></i>
+		</a>
 
-			</div>
-		</div>
+	</div>
+</div>
+ -->
 
 
+		<nav class="eight columns" id="nav-top">
+			<ul>
+				<li{% if page.main == "blog" %} class="currentpage"{% endif %}>
+					<a href="\blog\">
+						blog
+					</a>
+				</li>
+				<li{% if page.main == "projects" %} class="currentpage"{% endif %}>
+					<a href="\projects\">
+						projects
+					</a>
+				</li>
+				<li{% if page.main == "about" %} class="currentpage"{% endif %}>
+					<a href="\about\">
+						about
+					</a>
+				</li>
+			</ul>
+		</nav>
 
-		<nav class="eight columns">
-			<div id="nav-top">
+		<nav class="sixteen columns" id="nav-bottom">
+			{% if page.main == "blog" %}
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Projects</a></li>
-					<li><a href="">Archives</a></li>
-				</ul>
-			</div>
-			<div id="nav-bottom">
-
-			</div>
-
-			<br/>
-			<br/>
-			<br/>
-
-			<div id="nav">
-
-				<ul>
-					{% if page.main == "home" %}
-					<li class="currentpage">
-					{% else %}
-					<li>
-					{% endif %}
-						<a href="/">
-							Home
+					<li{% if page.sub == "highlights" %} class="currentpage"{% endif %}>
+						<a href="/highlights/">
+							Highlights
 						</a>
-						<ul>
-							<li class="empty">
-								&nbsp;
-							</li>
-							<li class="empty">
-								&nbsp;
-							</li>
-							<li class="empty">
-								&nbsp;
-							</li>
-							<li class="empty">
-								&nbsp;
-							</li>
-						</ul>
 					</li>
-					{% if page.main == "blog" %}
-					<li class="currentpage dir">
-					{% else %}
-					<li class="dir">
-					{% endif %}
+					<li{% if page.sub == "all" %} class="currentpage"{% endif %}>
 						<a href="/blog/">
-							Blog
+							Posts
 						</a>
-						<ul>
-							{% if page.sub == "highlights" %}
-							<li class="currentpage">
-							{% else %}
-							<li>
-							{% endif %}
-								<a href="/highlights/">
-									Highlights
-								</a>
-							</li>
-							{% if page.sub == "all" %}
-							<li class="currentpage">
-							{% else %}
-							<li  class="">
-							{% endif %}
-								<a href="/blog/">
-									Posts
-								</a>
-							</li>
-							{% if page.sub == "archive" %}
-							<li class="currentpage">
-							{% else %}
-							<li class="">
-							{% endif %}
-								<a href="/archive/">
-									Archives
-								</a>
-							</li>
-							<li class="empty">
-								&nbsp;
-							</li>
-						</ul>
 					</li>
-					{% if page.main == "projects" %}
-					<li class="currentpage dir">
-					{% else %}
-					<li class="dir">
- 					{% endif %}
- 						<a href="/projects/">
- 							Projects
- 						</a>
-						<ul>
-							<li class="empty">
-								&nbsp;
-							</li>
-							<li class="empty">
-								&nbsp;
-							</li>
-							{% if page.sub == "listing" %}
-							<li	class="currentpage">
-							{% else %}
-							<li class="">
-							{% endif %}
-								<a href="/projects/">
-									Completed
-								</a>
-							</li>
-							{% if page.sub == "site" %}
-							<li class="currentpage">
-							{% else %}
-							<li class="">
-							{% endif %}
-								<a href="/site/">
-									Site
-								</a>
-							</li>
-						</ul>
-					</li>
-					{% if page.main == "about" %}
-					<li class="currentpage dir">
-					{% else %}
-					<li class="dir">
-					{% endif %}
-						<a href="/about/">
-							About
+					<li{% if page.sub == "archive" %} class="currentpage"{% endif %}>
+						<a href="/archive/">
+							Archives
 						</a>
-						<ul>
-							<li class="empty">
-								&nbsp;
-							</li>
-							{% if page.sub == "tools" %}
-							<li	class="currentpage">
-							{% else %}
-							<li class="">
-							{% endif %}
-								<a href="/tools/">
-									Tools
-								</a>
-							</li>
-							{% if page.sub == "resume" %}
-							<li class="currentpage">
-							{% else %}
-							<li class="">
-							{% endif %}
-								<a href="/about/resume">
-									Resume
-								</a>
-							</li>
-							{% if page.sub == "me" %}
-							<li class="currentpage">
-							{% else %}
-							<li class="">
-							{% endif %}
-								<a href="/about/">
-									Me
-								</a>
-							</li>
-						</ul>
 					</li>
 				</ul>
-			</nav>
-		</div>
+			{% endif %}
+			{% if page.main == "projects" %}
+				<ul>
+					<li{% if page.sub == "listing" %} class="currentpage"{% endif %}>
+						<a href="/projects/">
+							Completed
+						</a>
+					</li>
+					<li{% if page.sub == "site" %} class="currentpage"{% endif %}>
+						<a href="/site/">
+							Site
+						</a>
+					</li>
+				</ul>
+			{% endif %}
+			{% if page.main == "about" %}
+				<ul>
+					<li{% if page.sub == "tools" %} class="currentpage"{% endif %}>
+						<a href="/tools/">
+							Tools
+						</a>
+					</li>
+					<li{% if page.sub == "me" %} class="currentpage"{% endif %}>
+						<a href="/about/">
+							Me
+						</a>
+					</li>
+				</ul>
+			{% endif %}
+		</nav>
 	</div>
 
 </header>

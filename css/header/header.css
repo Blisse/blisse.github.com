@@ -6,7 +6,7 @@
 		overflow-x: hidden;
 		overflow-y: hidden;
 		margin: 0;
-		border: 0px;
+		border: 0;
 		position: relative;
 		vertical-align: middle;
 		width: 100%;
@@ -16,28 +16,28 @@
     text-decoration:  none;
     font-weight:      regular;
     border:           none;
-    background-color: none;
+    background-color: transparent;
     /* color:            blue; */
   }
   header a:visited {
     text-decoration:  none;
     font-weight:      regular;
     border:           none;
-    background-color: none;
+    background-color: transparent;
     /* color:            #f0f; */
   }
   header a:hover   {
     text-decoration:  none;
     font-weight:      regular;
     border:           none;
-    background-color: none;
+    background-color: transparent;
     /* color:            #fff; */
   }
   header a:active  {
     text-decoration:  none;
     font-weight:      regular;
     border:           none;
-    background-color: none;
+    background-color: transparent;
     /* color:            white; */
   }
 
@@ -139,7 +139,8 @@
 
 
   header nav {
-
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
   }
 
   header nav ul {
@@ -149,21 +150,40 @@
   }
 
   header nav ul li {
-    font-size: 24px;
-    font-weight: 300;
-    font-family: "Segoe UI", "Myriad Pro", Lato, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     display: inline;
   }
 
-  header nav #nav-top ul li a {
-    text-decoration: none;
+  header nav#nav-top ul li a {
+    font-weight: 100;
+    font-family: 'Segoe UI Light', 'Segoe UI',  Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 42px;
+    text-transform: lowercase;
+    color: rgba(102, 102, 102, 1.0)
+  }
+
+  header nav#nav-top ul li.currentpage a {
+    color: rgba(243, 178, 0, 1.0)
+  }
+
+
+  header nav#nav-bottom ul li a {
+    font-weight: 300;
+    font-family: 'Segoe UI', Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(102, 102, 102, 1.0)
+  }
+
+  header nav#nav-bottom ul li.currentpage a {
     color: rgba(255, 255, 255, 1.0)
   }
 
 	header #nav {
 		color: #F6F6F6;
-		margin: 0;
-		padding: 0;
 		border: 0;
 	}
 

@@ -6,7 +6,9 @@
 		overflow-x: hidden;
 		overflow-y: hidden;
 		margin: 0;
+    padding: 10px 0 10px 0;
 		border: 0;
+    border-top: 4px solid rgba(0,170,170,1.0);
 		position: relative;
 		vertical-align: middle;
 		width: 100%;
@@ -41,102 +43,83 @@
     /* color:            white; */
   }
 
-	header #name {
-		margin-top: 5px;
-		margin-bottom: 10px;
-	}
 
-	header #name a {
-		margin: 0;
-		padding: 0;
-		color: #FF9900;
-		text-align: left;
-		font-family: 'Nexa Bold', 'Arial', sans-serif;
-		border-bottom: 5px solid #FF9900;
-	}
+  header #name {
+    margin: 10px 0 10px 0;
+    padding: 0;
+  }
 
-	header #name a:hover {
-		background: none;
-	}
+  header #name a {
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-family: 'Nexa Light', 'Lato', 'Nexa Bold', Frutiger, 'Open Sans', Arial, sans-serif;
+    font-size: 42pt;
+  }
 
-	header #name a #last {
-		color: #FF9900;
-	}
+  header #name a:link #last-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgb(0,216,204);
+  }
 
-	header #name a #first {
-		color: #F6F6F6;
-	}
+  header #name a:visited #last-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgb(0,216,204);
+  }
 
-	header #name a:hover > #first {
-		color: #3299BB;
-	}
+  header #name a:hover #last-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgb(0,216,204);
+  }
 
-	header #name a:hover #first {
-		color: #3299BB;
-	}
+  header #name a:active #last-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgb(0,216,204);
+  }
 
-    @media only screen and (min-width: 960px) {
-    	header #name a {
-  		  font-size: 56px;
-        border-bottom: 0;
-    	}
+  header #name a:link #first-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            white;
+  }
 
-    	header #name {
-        border-right: 3px solid #FF9900;
-    	}
-    }
+  header #name a:visited #first-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            white;
+  }
 
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
-    	header #name a {
-    		font-size: 56px;
-        border-bottom: 0;
-    	}
+  header #name a:hover #first-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
 
-    	header #name {
-        border-right: 3px solid #FF9900;
-    	}
-    }
-
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-    	header #name a {
-    		font-size: 75px;
-    		text-align: center;
-    	}
-    }
-
-    @media only screen and (max-width: 479px) {
-    	header #name a {
-    		font-size: 53px;
-    	}
-    }
-
-
-	header #links {
-		font-size: 28px;
-		height: 32px;
-		display: block;
-		vertical-align: center;
-		margin-bottom: 10px;
-		float: right;
-	}
-
-	header #links a,
-	header #links a:visited {
-		color: #3299BB;
-		text-decoration: none;
-		border: none;
-	}
-
-	header #links a:hover,
-	header #links a.hover,
-	header #links a.selected {
-		border: none;
-		color: #FF9900;
-		text-decoration: none;
-		background: none;
-	}
-
-
+  header #name a:active #first-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            white;
+  }
 
   header nav {
     margin: 5px 0 5px 0;
@@ -153,186 +136,31 @@
     display: inline;
   }
 
-  header nav#nav-top ul li a {
-    font-weight: 100;
+  header nav ul#nav-top li a {
+    font-weight: 300;
     font-family: 'Segoe UI Light', 'Segoe UI',  Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
     font-size: 36px;
     font-style: normal;
     line-height: 42px;
     text-transform: lowercase;
-    color: rgba(102, 102, 102, 1.0)
+    color: rgb(105, 105, 105);
   }
 
-  header nav#nav-top ul li.currentpage a {
-    color: rgba(243, 178, 0, 1.0)
+  header nav ul#nav-top li.currentpage a {
+    color: rgb(0, 170, 170);
+    /* color: rgb(243, 178, 0); */
   }
 
-
-  header nav#nav-bottom ul li a {
+  header nav ul#nav-bottom li a {
     font-weight: 300;
     font-family: 'Segoe UI', Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
     font-size: 12px;
     font-style: normal;
     line-height: 15px;
     text-transform: uppercase;
-    color: rgba(102, 102, 102, 1.0)
+    color: rgb(105, 105, 105);
   }
 
-  header nav#nav-bottom ul li.currentpage a {
-    color: rgba(255, 255, 255, 1.0)
+  header nav ul#nav-bottom li.currentpage a {
+    color: rgb(255, 255, 255);
   }
-
-	header #nav {
-		color: #F6F6F6;
-		border: 0;
-	}
-
-	header #nav * {
-		margin: 0;
-		padding: 0;
-	}
-
-	header #nav ul,
-	header #nav ul li,
-	header #nav ul ul {
-		text-align: center;
-		list-style: none;
-		line-height: 30px;
-		vertical-align: middle;
-		-webkit-transition: all 150ms ease-in-out 0s;
-		-moz-transition: all 150ms ease-in-out 0s;
-		-o-transition: all 150ms ease-in-out 0s;
-		transition: all 150ms ease-in-out 0s;
-	}
-
-	header #nav ul {
-		vertical-align: text-bottom;
-		position: relative;
-		z-index: 100;
-		float: right;
-		display: block;
-		height: 75px;
-		right: 0;
-	}
-
-	header #nav ul li {
-		font-size: 14px;
-		background-color: #1A1A1A;
-		width: 75px;
-		float: left;
-		display: block;
-		height: 75px;
-	}
-
-	header #nav ul li.hover,
-	header #nav ul li:hover {
-		position: static;
-		cursor: default;
-	}
-
-	header #nav ul li a {
-		border-bottom: none;
-		display: block;
-		height: 32px;
-		color: #F6F6F6;
-	}
-
-	header #nav ul li a:hover,
-	header #nav ul li a.hover {
-		border-bottom: none;
-	}
-
-	header #nav ul li ul {
-		visibility: hidden;
-		position: absolute;
-		left: 0;
-		z-index: 200;
-	}
-
-	header #nav ul li.currentpage > ul {
-		visibility: visible;
-		z-index: 300;
-	}
-
-	header #nav ul li.hover > ul,
-	header #nav ul li:hover > ul {
-		visibility: visible;
-		z-index: 400;
-	}
-
-	header #nav ul li.hover,
-	header #nav ul li:hover {
-		background-color: #F6F6F6;
-	}
-
-	header #nav ul li.currentpage {
-	}
-
-	header #nav ul li.currentpage a {
-		background-color: #FF9900;
-		color: #1A1A1A;
-	}
-
-	header #nav ul li a {
-		color: #F6F6F6;
-	}
-
-	header #nav ul li.hover a,
-	header #nav ul li:hover a {
-		color: #1A1A1A;
-	}
-
-	header #nav ul li.hover ul li a,
-	header #nav ul li:hover ul li a {
-		background-color: #1A1A1A;
-		color: #FF9900;
-	}
-
-	header #nav ul li.currentpage ul li a {
-		background-color: #1A1A1A;
-		color: #FF9900;
-	}
-
-	header #nav ul li ul li.currentpage {
-	}
-
-	header #nav ul li ul li.currentpage a {
-		background-color: #F6F6F6;
-		color: #1A1A1A;
-	}
-
-	header #nav ul li ul li.hover a,
-	header #nav ul li ul li:hover a {
-		background-color: #3299BB;
-		color: #F6F6F6;
-	}
-
-	header #nav ul li ul li.empty.hover,
-	header #nav ul li ul li.empty:hover {
-		background-color: #1A1A1A;
-	}
-
-
-    @media only screen and (min-width: 960px) {
-    	header #nav ul li {
-    		width: 85px;
-    	}
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
-    	header #nav ul li {
-    		width: 85px;
-    	}
-    }
-
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-    	header #nav ul li {
-    		width: 105px;
-    	}
-    }
-
-    @media only screen and (max-width: 479px) {
-    	header #nav ul li {
-    		width: 75px;
-    	}
-    }

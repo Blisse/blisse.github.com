@@ -43,8 +43,9 @@
 		-webkit-text-size-adjust: 100%;
 
 		-ms-overflow-x: hidden;
-		background-color: rgba(37,37,37,1.0);
+
 		background: url("/images/bg.png") repeat center center fixed;
+    background-color: rgb(37,37,37);
 		color: #fff;
 		overflow-x: hidden;
 		font-family: "Open Sans";
@@ -844,7 +845,7 @@
 	  border: 1px solid #D8D8DC;
 	  color: #000;
 	  display: block;
-	  font-family: "Consolas", 'Lucida Console', 'Consolas', 'Monaco', monospace !important;
+	  font-family: "Consolas", 'Lucida Console', 'Monaco', monospace !important;
 	  font-size: 14px;
 	  line-height: 1.6em;
 	  margin: 0 0 1.5em;

@@ -2,12 +2,68 @@
 ================================================== */
 
 	footer {
-		border-color: #BCBCBC;
-		border-style: dashed;
-		color: #1A1A1A;
-		line-height: 16px;
-		padding-top: 8px;
-		position: relative;
-		font: normal normal 300 10px/20px "Museo Slab";
-		margin: 1.5em 0px;
+		border: 2px dashed #BCBCBC;
+		color: #FFFFFF;
+		font: normal normal 100 12px/20px "Segoe UI";
+		margin: 1.5em 0;
+		text-align: center;
+		vertical-align: middle;
+    display: block;
 	}
+
+	footer a {
+		-webkit-transition: all 100ms ease-in-out 0s;
+		-moz-transition: all 100ms ease-in-out 0s;
+		-o-transition: all 100ms ease-in-out 0s;
+		transition: all 100ms ease-in-out 0s;
+	}
+
+  footer a:link    {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            white;
+  }
+
+  footer a:visited {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            white;
+  }
+
+  footer a:hover   {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            white;
+  }
+
+  footer a:active  {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            white;
+	}
+
+  footer #links a#twitter-hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("/images/icons/appbar.twitter.bird-hover.png") top;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
+
+  footer #links a#twitter-hover:hover {
+  	background-position: 0 -50px;
+  }
+
+
+
+

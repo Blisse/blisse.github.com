@@ -8,14 +8,13 @@
 		margin: 1.5em 0;
 		text-align: center;
 		vertical-align: middle;
-    display: block;
 	}
 
 	footer a {
-		-webkit-transition: all 100ms ease-in-out 0s;
-		-moz-transition: all 100ms ease-in-out 0s;
-		-o-transition: all 100ms ease-in-out 0s;
-		transition: all 100ms ease-in-out 0s;
+		-webkit-transition: all 70ms ease-in-out 50ms;
+		-moz-transition: all 70ms ease-in-out 50ms;
+		-o-transition: all 70ms ease-in-out 50ms;
+		transition: all 70ms ease-in-out 50ms;
 	}
 
   footer a:link    {
@@ -51,17 +50,73 @@
 	}
 
   footer #links a#twitter-hover {
-    display: block;
-    width: 50px;
-    height: 50px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
     background: url("/images/icons/appbar.twitter.bird-hover.png") top;
-    background-size: 50px;
+    background-size: 40px;
     background-repeat: no-repeat;
     text-indent: -99999px;
   }
 
   footer #links a#twitter-hover:hover {
-  	background-position: 0 -50px;
+    background-position: 0 -40px;
+  }
+
+  footer #links a#github-hover {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("/images/icons/appbar.github-hover.png") top;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
+
+  footer #links a#github-hover:hover {
+    background-position: 0 -40px;
+  }
+
+  footer #links a#linkedin-hover {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("/images/icons/appbar.linkedin-hover.png") top;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
+
+  footer #links a#linkedin-hover:hover {
+    background-position: 0 -40px;
+  }
+
+  footer #links a#mail-hover {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("/images/icons/appbar.email.minimal-hover.png") top;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
+
+  footer #links a#mail-hover:hover {
+    background-position: 0 -40px;
+  }
+
+  footer #links a#rss-hover {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("/images/icons/appbar.rss-hover.png") top;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
+
+  footer #links a#rss-hover:hover {
+  	background-position: 0 -40px;
   }
 
 

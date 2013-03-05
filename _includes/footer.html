@@ -2,32 +2,27 @@
 <footer class="container">
 
   <div class="sixteen columns">
-    <div id="links">
+    <a href="{{ page.url }}" id="chevron-up">
+      <img src="\images\icons\appbar.chevron.up.png" />
+    </a>
+  </div>
 
-      <a href="{{ page.url }}" id="chevron-up">
-        <img src="\images\icons\appbar.chevron.up.png" />
-      </a>
+  <div class="sixteen columns" id="links">
 
-      <a target="_blank" href="http://www.twitter.com/{{ site.twitter }}" id="twitter-hover">Leaf
-      </a>
+    <a target="_blank" href="http://www.github.com/{{ site.github }}" id="github-hover">
+    </a>
 
-      <a target="_blank" href="http://www.github.com/{{ site.github }}">
-        <img src="\images\icons\appbar.github.png" />
-      </a>
+    <a target="_blank" href="http://www.twitter.com/{{ site.twitter }}" id="twitter-hover">
+    </a>
 
-      <a target="_blank" href="http://ca.linkedin.com/in/{{ site.linkedin }}">
-        <img src="\images\icons\appbar.linkedin.png" />
-      </a>
+    <a target="_blank" href="http://ca.linkedin.com/in/{{ site.linkedin }}" id="linkedin-hover">
+    </a>
 
-      <a href="mailto:{{ site.email }}">
-        <img src="\images\icons\appbar.email.minimal.png" />
-      </a>
+    <a href="mailto:{{ site.email }}" id="mail-hover">
+    </a>
 
-      <a href="{{ site.atom }}" target="_blank" >
-        <img src="\images\icons\appbar.rss.png" />
-      </a>
-
-    </div>
+    <a href="{{ site.atom }}" target="_blank" id="rss-hover">
+    </a>
   </div>
 
 	<div class="sixteen columns">

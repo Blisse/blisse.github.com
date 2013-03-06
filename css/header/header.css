@@ -132,6 +132,42 @@
     color:            rgba(240,240,240,1.0);
   }
 
+  header #name a.currentpage:link #first-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
+
+  header #name a.currentpage:visited #first-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
+
+  header #name a.currentpage:hover #first-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(240,240,240,1.0);
+  }
+
+  header #name a.currentpage:active #first-name {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
+
+  header #name #first-name {
+    color:
+  }
+
   header #links-wrapper {
     text-align: center;
   }

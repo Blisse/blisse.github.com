@@ -10,15 +10,14 @@
 		border: 0;
     border-top: 4px solid rgba(0,170,170,1.0);
 		position: relative;
-		vertical-align: middle;
 		width: 100%;
 	}
 
   header a {
-    -webkit-transition: all 100ms ease-in-out 50ms;
-    -moz-transition: all 100ms ease-in-out 50ms;
-    -o-transition: all 100ms ease-in-out 50ms;
-    transition: all 100ms ease-in-out 50ms;
+    -webkit-transition: all 150ms ease-in-out 0ms;
+    -moz-transition: all 150ms ease-in-out 0ms;
+    -o-transition: all 150ms ease-in-out 0ms;
+    transition: all 150ms ease-in-out 0ms;
   }
 
   header a:link    {
@@ -51,13 +50,18 @@
   }
 
 
+  header #name-wrapper {
+    text-align: center;
+  }
+
   header #name {
     margin: 10px 0 10px 0;
     padding: 0;
   }
 
   header #name a {
-    text-align: left;
+    white-space: nowrap;
+    text-align: center;
     vertical-align: middle;
     font-weight: 300;
     font-family: 'Nexa Light', 'Lato', 'Nexa Bold', Frutiger, 'Open Sans', Arial, sans-serif;
@@ -128,7 +132,89 @@
     color:            rgba(240,240,240,1.0);
   }
 
+  header #links-wrapper {
+    text-align: center;
+  }
 
+  header #links a {
+    display: inline-block;
+  }
+
+  header #links a#twitter-hover {
+    width: 24px;
+    height: 24px;
+    background: url("/images/icons/appbar.twitter.bird-hover.png") top;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
+
+  header #links a#twitter-hover:hover {
+    background-position: 0 -24px;
+  }
+
+  header #links a#github-hover {
+    width: 24px;
+    height: 24px;
+    background: url("/images/icons/appbar.github-hover.png") top;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
+
+  header #links a#github-hover:hover {
+    background-position: 0 -24px;
+  }
+
+  header #links a#linkedin-hover {
+    width: 24px;
+    height: 24px;
+    background: url("/images/icons/appbar.linkedin-hover.png") top;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
+
+  header #links a#linkedin-hover:hover {
+    background-position: 0 -24px;
+  }
+
+  header #links a#mail-hover {
+    width: 24px;
+    height: 24px;
+    background: url("/images/icons/appbar.email.minimal-hover.png") top;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
+
+  header #links a#mail-hover:hover {
+    background-position: 0 -24px;
+  }
+
+  header #links a#rss-hover {
+    width: 24px;
+    height: 24px;
+    background: url("/images/icons/appbar.rss-hover.png") top;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
+
+  header #links a#rss-hover:hover {
+    background-position: 0 -24px;
+  }
+
+
+
+  header nav #nav-wrapper-outer {
+    text-align: center;
+  }
+
+  header nav #nav-wrapper-inner {
+    display: inline-block;
+    text-align: left;
+  }
 
   header nav {
     margin: 5px 0 5px 0;
@@ -139,10 +225,12 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    white-space: nowrap;
   }
 
   header nav ul li {
     display: inline;
+    text-align: left;
   }
 
   header nav ul#nav-top li a {

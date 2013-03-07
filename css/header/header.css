@@ -6,8 +6,7 @@
 		overflow-x: hidden;
 		overflow-y: hidden;
 		margin: 0;
-    padding: 10px 0 10px 0;
-		border: 0;
+    padding: 0;
     border-top: 4px solid rgba(0,170,170,1.0);
 		position: relative;
 		width: 100%;
@@ -51,12 +50,10 @@
 
 
   header #name-wrapper {
+    margin: 25px 0 25px 0;
     text-align: center;
-  }
-
-  header #name {
-    margin: 10px 0 10px 0;
-    padding: 0;
+    display: block;
+    vertical-align: middle;
   }
 
   header #name a {
@@ -66,6 +63,7 @@
     font-weight: 300;
     font-family: 'Nexa Light', 'Lato', 'Nexa Bold', Frutiger, 'Open Sans', Arial, sans-serif;
     font-size: 42pt;
+    border-bottom: 1px solid rgb(74,74,74);;
   }
 
   header #name a:link #last-name {
@@ -124,6 +122,10 @@
     color:            rgba(0,130,135,1.0);
   }
 
+  header #name a:hover {
+    border-color:     rgba(0,130,135,1.0);
+  }
+
   header #name a:active #first-name {
     text-decoration:  none;
     font-weight:      regular;
@@ -164,11 +166,7 @@
     color:            rgba(0,130,135,1.0);
   }
 
-  header #name #first-name {
-    color:
-  }
-
-  header #links-wrapper {
+  header .links-wrapper {
     text-align: center;
   }
 
@@ -242,6 +240,10 @@
   }
 
 
+  header nav {
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+  }
 
   header nav #nav-wrapper-outer {
     text-align: center;
@@ -251,12 +253,6 @@
     display: inline-block;
     text-align: left;
   }
-
-  header nav {
-    margin: 5px 0 5px 0;
-    padding: 5px 0 5px 0;
-  }
-
   header nav ul {
     margin: 0;
     padding: 0;

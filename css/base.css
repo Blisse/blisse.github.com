@@ -46,10 +46,9 @@
 
 		background: url("/images/bg.png") repeat center center fixed;
     background-color: rgb(37,37,37);
-		color: #fff;
+		color: rgba(210,210,210,1.0);
 		overflow-x: hidden;
-		font-family: "Open Sans";
-		font-size: normal normal 300 16px/22.4px "Open Sans";
+		font: normal normal 300 11pt/22.4px "Segoe UI Semilight";
 		text-rendering: optimizeLegibility;
 	}
 
@@ -696,7 +695,7 @@
 
 	blockquote {
 		border-left: 2px solid rgba(0,130,135,1.0);
-		background-color: rgba(255,255,255,0.05);
+		background-color: rgba(255,255,255,0.04);
 		margin: 30px 0 30px 15px;
 	}
 
@@ -707,8 +706,9 @@
 
 	blockquote cite {
 		text-decoration: none;
+		font-style: normal;
 		font-size: 12px;
-		color: rgb(255,255,255);
+		color: rgb(210,210,210);
 		padding: 0 20px 0 20px;
 		background-color: rgba(0,130,135,1.0);
 	}
@@ -878,4 +878,16 @@
 	  border-top-left-radius: 7px 7px;
 	  border-top-right-radius: 7px 7px;
 	  */
+	}
+
+
+
+
+/* #Figures
+================================================== */
+
+	figure {
+	}
+
+	figcaption {
 	}

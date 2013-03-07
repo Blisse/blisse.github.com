@@ -9,14 +9,15 @@
 	}
 
   footer #footer-wrapper {
-    border-top: 1px solid rgb(0,216,204);
+    border-top: 1px solid rgb(205,205,205);
   }
 
 	footer a {
-		-webkit-transition: all 100ms ease-in-out 0ms;
-		-moz-transition: all 100ms ease-in-out 0ms;
-		-o-transition: all 100ms ease-in-out 0ms;
-		transition: all 100ms ease-in-out 0ms;
+		-webkit-transition: all 50ms ease-in-out 0ms;
+		-moz-transition: all 50ms ease-in-out 0ms;
+		-o-transition: all 50ms ease-in-out 0ms;
+		transition: all 50ms ease-in-out 0ms;
+    display: inline-block;
 	}
 
   footer a:link    {
@@ -51,5 +52,19 @@
     color:            rgb(0,216,204);
 	}
 
+  footer a#chevron-up-hover {
+    width: 30px;
+    height: 30px;
+    background: url("/images/icons/appbar.chevron.up-hover.png") top;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+  }
 
+  footer #footer-wrapper:hover a#chevron-up-hover {
+    background-position: 0 -30px;
+  }
 
+  footer #footer-wrapper:hover {
+    border-top: 1px solid rgb(0,216,204);
+  }

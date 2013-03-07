@@ -3,7 +3,7 @@
 	<div class="container">
 	  <div class="sixteen columns" id="links">
 
-			<div id="links-wrapper">
+			<div class="links-wrapper">
 		    <a target="_blank" href="http://www.github.com/{{ site.github }}" id="github-hover">
 		    </a>
 
@@ -45,9 +45,9 @@
 								blog
 							</a>
 						</li>
-						<li{% if page.main == "projects" %} class="currentpage"{% endif %}>
-							<a href="\projects\">
-								projects
+						<li{% if page.main == "work" %} class="currentpage"{% endif %}>
+							<a href="\work\">
+								work
 							</a>
 						</li>
 						<li{% if page.main == "about" %} class="currentpage"{% endif %}>
@@ -75,10 +75,10 @@
 						</li>
 					</ul>
 					{% endif %}
-					{% if page.main == "projects" %}
+					{% if page.main == "work" %}
 					<ul id="nav-bottom">
 						<li{% if page.sub == "listing" %} class="currentpage"{% endif %}>
-							<a href="/projects/">
+							<a href="/work/">
 								Completed
 							</a>
 						</li>

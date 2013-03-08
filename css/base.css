@@ -41,14 +41,11 @@
 
 	body {
 		-webkit-text-size-adjust: 100%;
-
 		-ms-overflow-x: hidden;
+		overflow-x: hidden;
 
 		background: url("/images/bg.png") repeat center center fixed;
     background-color: rgb(37,37,37);
-		color: rgba(210,210,210,1.0);
-		overflow-x: hidden;
-		font: normal normal 300 11pt/22.4px "Segoe UI Semilight";
 		text-rendering: optimizeLegibility;
 	}
 
@@ -87,6 +84,14 @@
 		text-align: center;
 	}
 
+	.center-wrapper-outer {
+		text-align: center;
+	}
+
+	.center-wrapper-inner {
+		display: inline-block;
+	}
+
 	.text-left {
 		text-align: left;
 	}
@@ -123,60 +128,54 @@
 
 
 	p {
-		color: #F6F6F6;
 		display: block;
-		margin: 1.5em 0px;
-		margin-left: auto;
-    margin-right: auto;
+		margin: 1.4em 0px;
 		padding: 0px;
 		text-rendering: optimizeLegibility;
-		line-height: 24px;
+    color: rgba(210,210,210,1.0);
+    font: normal normal 300 14px/20px "Segoe UI Semilight";
+    font-family: "Segoe UI Semilight", "Segoe UI", "Lato", "Helvetica Neue", "Open Sans";
 	}
-
-	p img { margin: 0; }
 
 	p a {
-		font: inherit;
+		-webkit-transition: all 150ms ease-in-out 0ms;
+		-moz-transition: all 150ms ease-in-out 0ms;
+		-o-transition: all 150ms ease-in-out 0ms;
+		transition: all 150ms ease-in-out 0ms;
+    display: inline-block;
 	}
 
-	a {
-		padding: 0px 2px 0px 2px;
-		-webkit-transition: all 150ms ease-in-out 0s;
-		-moz-transition: all 150ms ease-in-out 0s;
-		-o-transition: all 150ms ease-in-out 0s;
-		transition: all 150ms ease-in-out 0s;
-	}
+  p a:link    {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgb(0,216,204);
+  }
 
-	a:link,
-	a:active {
-		color: #1A1A1A;
-		text-decoration: none;
-		border-bottom: 2px solid #FF9900;
-	}
+  p a:visited {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
 
-	a:hover, a:hover,
-	a.hover, a.hover {
-		text-decoration: none;
-		border-bottom: 2px solid #3299BB;
-		background-color: #3299BB;
-		color: #E9E9E9;
-	}
+  p a:hover   {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
 
-	a:visited {
-		text-decoration: none;
-		color: #1A1A1A;
-		border-bottom: 2px solid #3299BB;
+  p a:active  {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgb(0,216,204);
 	}
-
-	a.no-under {
-		border: none;
-	}
-
-	a.no-under:hover {
-		color: #E9E9E9;
-		border-bottom: none;
-	}
-
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Museo Slab', 'Nexa Light', Arial, sans-serif;
@@ -539,6 +538,30 @@
 
 
 
+/* #Quotes
+================================================== */
+
+	blockquote {
+		border-left: 2px solid rgba(0,130,135,1.0);
+		background-color: rgba(255,255,255,0.04);
+		margin: 30px 0 30px 15px;
+		padding: 5px;
+	}
+
+	blockquote p {
+		color: rgb(135,135,135);
+		padding: 0 15px 0 15px;
+	}
+
+	blockquote cite {
+		color: rgb(210,210,210);
+		background-color: rgba(0,130,135,1.0);
+		padding: 2px 20px 2px 20px;
+    font: normal normal 300 12px/20px "Sofia Pro";
+		text-transform: uppercase;
+	}
+
+
 /* #Ruled lines
 ================================================== */
 
@@ -576,108 +599,6 @@
 	}
 
 
-/* #Resume
-================================================= */
-
-	#resume{
-		font: normal normal 300 14px/24px "Open Sans";
-	}
-
-	#resume h1,
-	#resume h2,
-	#resume h3,
-	#resume h4,
-	#resume h5,
-	#resume h6 {
-		vertical-align: baseline;
-		top:0;
-		left:0;
-	}
-
-
-/* #Landing
-================================================== */
-
-	.landing p {
-		padding-top: 50px;
-	}
-
-/* #Boxing
-================================================== */
-
-
-	.section .details {
-		padding-right: 3px;
-		font-size: 10px/20px;
-	}
-
-	.header {
-		background-color: #1A1A1A;
-		color: #E9E9E9;
-		padding: 5px;
-	}
-
-	.details {
-		background-color: #DCDCDC;
-		border-left: 2px solid #1A1A1A;
-		padding-left: 4px;
-	}
-
-	.header a {
-		color: #E9E9E9;
-	}
-
-	.header .float-left {
-		color: #E9E9E9;
-	}
-	.header .float-right {
-		color: #3299BB;
-	}
-
-	.section:hover .title > div h2 {
-		background-color: #3299BB;
-	}
-
-	.section .division:hover .header {
-		background-color: #3299BB;
-	}
-
-	.division:hover .header a {
-		color: #E9E9E9;
-	}
-
-	.division:hover .float-right {
-		color: #1A1A1A;
-	}
-
-	.division:hover .details {
-		background-color: #E9E9E9;
-		border-left-color: #3299BB;
-	}
-
-	.details.last {
-		border-bottom: 2px solid #1A1A1A;
-	}
-
-	.division:hover .last {
-		border-bottom-color: #3299BB;
-	}
-
-	.division .header,
-	.division .details {
-		height: 100%;
-	}
-
-	.border-bottom-dotted {
-		border-bottom: 1px dotted #1A1A1A;
-	}
-
-	.border-bottom-solid {
-		border-bottom: 1px solid #1A1A1A;
-	}
-
-
-
 /* #Posts
 ================================================== */
 
@@ -686,70 +607,11 @@
 	.older { float: right; }
 	.newer { float: left; }
 
-	.first-letter { font-size: 125%;
-	}
-
-
-/* #Quotes
-================================================== */
-
-	blockquote {
-		border-left: 2px solid rgba(0,130,135,1.0);
-		background-color: rgba(255,255,255,0.04);
-		margin: 30px 0 30px 15px;
-	}
-
-	blockquote p {
-		color: rgb(105,105,105);
-		padding: 5px 15px 5px 15px;
-	}
-
-	blockquote cite {
-		text-decoration: none;
-		font-style: normal;
-		font-size: 12px;
-		color: rgb(210,210,210);
-		padding: 0 20px 0 20px;
-		background-color: rgba(0,130,135,1.0);
-	}
-
-/*
-	blockquote {
-		background-color: #FEFEFE;
-		margin: 10px 0 10px 0;
-		padding: 10px;
-		border-left: 10px solid #FF9900;
-	}
-
-	blockquote, blockquote p {
-		font-size: 18px;
-		font-weight: 400;
-		font-family: 'Museo Sans', 'Source Sans Pro', Verdana;
-		line-height: 1.4em;
-		color: #383838;
-	}
-
-	blockquote cite {
-		display: block;
-		font-size: 14px;
-		color: #383838;
-	}
-
-	blockquote cite:before {
-		content: "\2014 \0020";
-	}
-
-	blockquote cite a,
-	blockquote cite a:visited,
-	blockquote cite a:visited {
-		color: #555;
-	}
- */
 
 /* #Lists
 ================================================== */
 
-	ul,ol {
+	ul, ol {
 		margin: 2px 10px 2px 0px;
 		padding: 2px 5px 2px 0px;
 		font-size: 14px;
@@ -768,7 +630,7 @@
 		list-style: decimal;
 	}
 
-	ol,ul.square,ul.circle,ul.disc {
+	ol, ul.square, ul.circle, ul.disc {
 		padding-left: 15px;
 	}
 
@@ -784,19 +646,95 @@
 		list-style: disc outside;
 	}
 
-	ul ul,ul ol,ol ol,ol ul {
-		margin: 5px 0 5px 15px;
-		font-size: 90%;
-	}
-
-	ul ul li,ul ol li,ol ol li,ol ul li {
-		margin: 2px 0 2px 15px;
-	}
-
 	li {
-		margin-bottom: 4px;
+		margin: 2px 0;
 		font: normal 14px/24px "Open Sans";
 	}
+
+
+	li {
+		display: block;
+		margin: 1.4em 0px;
+		padding: 0px;
+		text-rendering: optimizeLegibility;
+    color: rgba(210,210,210,1.0);
+    font: normal normal 300 14px/20px "Segoe UI Semilight";
+    font-family: "Segoe UI Semilight", "Segoe UI", "Lato", "Helvetica Neue", "Open Sans";
+	}
+
+	li a {
+		-webkit-transition: all 150ms ease-in-out 0ms;
+		-moz-transition: all 150ms ease-in-out 0ms;
+		-o-transition: all 150ms ease-in-out 0ms;
+		transition: all 150ms ease-in-out 0ms;
+    display: inline-block;
+	}
+
+  li a:link    {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgb(0,216,204);
+  }
+
+  li a:visited {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
+
+  li a:hover   {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
+
+  li a:active  {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgb(0,216,204);
+	}
+
+
+ul.HelvetiList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.HelvetiList li {
+  border-bottom: 1px solid rgba(207, 207, 207,1.0);
+	margin: 0;
+}
+
+ul.HelvetiList li:last-child {
+  border: 0;
+}
+
+ul.HelvetiList li a {
+	margin: none;
+  text-decoration: none;
+  display: block;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+ul.HelvetiList li a:hover {
+  font-size: 105%;
+  background: rgba(207, 207, 207,1.0);
+}
+
 
 
 	ul.large li {

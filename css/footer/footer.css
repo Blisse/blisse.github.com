@@ -8,49 +8,17 @@
 		vertical-align: middle;
 	}
 
+  footer a {
+    -webkit-transition: all 50ms ease-in-out 0ms;
+    -moz-transition: all 50ms ease-in-out 0ms;
+    -o-transition: all 50ms ease-in-out 0ms;
+    transition: all 50ms ease-in-out 0ms;
+    display: inline-block;
+  }
+
   footer #footer-wrapper {
     border-top: 1px solid rgb(205,205,205);
   }
-
-	footer a {
-		-webkit-transition: all 50ms ease-in-out 0ms;
-		-moz-transition: all 50ms ease-in-out 0ms;
-		-o-transition: all 50ms ease-in-out 0ms;
-		transition: all 50ms ease-in-out 0ms;
-    display: inline-block;
-	}
-
-  footer a:link    {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgb(0,216,204);
-  }
-
-  footer a:visited {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgb(0,216,204);
-  }
-
-  footer a:hover   {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
-  }
-
-  footer a:active  {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgb(0,216,204);
-	}
 
   footer a#chevron-up-hover {
     width: 30px;

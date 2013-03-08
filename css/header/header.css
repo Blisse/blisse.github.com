@@ -50,20 +50,23 @@
 
 
   header #name-wrapper {
-    margin: 25px 0 25px 0;
+    margin: 10px 0 10px 0;
     text-align: center;
     display: block;
     vertical-align: middle;
   }
 
   header #name a {
-    white-space: nowrap;
     text-align: center;
     vertical-align: middle;
+    font-variant: normal;
+    font-style: normal;
     font-weight: 300;
-    font-family: 'Nexa Light', 'Lato', 'Nexa Bold', Frutiger, 'Open Sans', Arial, sans-serif;
     font-size: 42pt;
+    line-height: 42pt;
+    font-family: 'Nexa Light', 'Lato', 'Nexa Bold', Frutiger, 'Open Sans', Arial, sans-serif;
     border-bottom: 1px solid rgb(74,74,74);;
+    white-space: nowrap;
   }
 
   header #name a:link #last-name {
@@ -172,6 +175,7 @@
 
   header #links a {
     display: inline-block;
+    opacity: 0.6;
   }
 
   header #links a#twitter-hover {
@@ -254,8 +258,6 @@
     text-align: left;
   }
   header nav ul {
-    margin: 0;
-    padding: 0;
     list-style-type: none;
     white-space: nowrap;
   }
@@ -265,12 +267,17 @@
     text-align: left;
   }
 
+  header nav ul#nav-top li {
+    padding: 0 2px;
+  }
+
   header nav ul#nav-top li a {
-    font-weight: 200;
-    font-family: "Raleway", Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
-    font-size: 36px;
+    font-variant: normal;
     font-style: normal;
-    line-height: 42px;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: "Raleway", Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
     text-transform: lowercase;
     color: rgb(121, 121, 121);
   }
@@ -307,6 +314,9 @@
     color: rgb(0, 170, 170);
   }
 
+  header nav ul#nav-bottom li {
+    padding: 0 1px;
+  }
 
   header nav ul#nav-bottom li a {
     font-weight: 300;

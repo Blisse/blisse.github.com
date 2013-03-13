@@ -14,25 +14,24 @@ sub: archive
 		</h2>
 	</div>
   <div class="sixteen columns">
-    <span class="disabled font-size-18 float-right">about {{ page.tags | array_to_sentence_string }}.</span>
+    <span class="float-right">about {{ page.tags | array_to_sentence_string }}.</span>
   </div>
 </div>
 
 {% if page.div == false %}
-<div>
-	<div>
+    {{ content | markdownify }}
 {% else %}
 <div class="container">
 	<div class="sixteen columns">
-{% endif %}
-		{{ content | markdownify }}
-	</div>
+    {{ content | markdownify }}
+  </div>
 </div>
+{% endif %}
 
+
+{% if page.comments %}
 <div class="container">
 	<div class="sixteen columns">
-
-		{% if page.comments %}
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
 		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -48,7 +47,6 @@ sub: archive
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    {% endif %}
-
 	</div>
 </div>
+{% endif %}

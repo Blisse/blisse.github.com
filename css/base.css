@@ -131,9 +131,8 @@
 		display: block;
 		margin: 1.4em 0px;
 		padding: 0px;
-		text-rendering: optimizeLegibility;
-    color: rgba(210,210,210,1.0);
-    font: normal normal 300 14px/20px "Segoe UI Semilight";
+    color: rgba(221,221,221,1.0);
+    font: normal normal 300 16px/22.6px "Open Sans";
     font-family: "Segoe UI Semilight", "Segoe UI", "Lato", "Helvetica Neue", "Open Sans";
 	}
 
@@ -150,7 +149,7 @@
     font-weight:      regular;
     border:           none;
     background-color: transparent;
-    color:            rgb(0,216,204);
+    color:            rgba(0,130,135,1.0);
   }
 
   p a:visited {
@@ -165,8 +164,8 @@
     text-decoration:  none;
     font-weight:      regular;
     border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
+    background-color: rgba(0,130,135,1.0);
+    color:            rgba(221,221,221,1.0);
   }
 
   p a:active  {
@@ -174,19 +173,73 @@
     font-weight:      regular;
     border:           none;
     background-color: transparent;
-    color:            rgb(0,216,204);
+    color:            rgba(0,130,135,1.0);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Museo Slab', 'Nexa Light', "Open Sans", Arial, sans-serif;
+		font-family: "Open Sans", Arial, sans-serif;
 		margin: 0;
-		text-align: left;
-		font-weight: normal;
-		text-decoration: none;
+		text-align: 			left;
+    text-decoration:  none;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
 	}
 
-	h1 {
-		font-size: 40px;
+  h1 a:link,
+  h2 a:link,
+  h3 a:link,
+  h4 a:link,
+  h5 a:link,
+  h6 a:link {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
+
+  h1 a:visited,
+  h2 a:visited,
+  h3 a:visited,
+  h4 a:visited,
+  h5 a:visited,
+  h6 a:visited {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
+
+  h1 a:hover,
+  h2 a:hover,
+  h3 a:hover,
+  h4 a:hover,
+  h5 a:hover,
+  h6 a:hover {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
+  }
+
+  h1 a:active,
+  h2 a:active,
+  h3 a:active,
+  h4 a:active,
+  h5 a:active,
+  h6 a:active {
+    text-decoration:  none;
+    font-weight:      regular;
+    border:           none;
+    background-color: transparent;
+    color:            rgba(0,130,135,1.0);
 	}
 
 /* #Quotes
@@ -349,6 +402,7 @@
 
 	ul.simple-small {
 		width: auto;
+	  border: 1px solid rgba(255, 255, 255, 0.2);
 	  list-style-type: none;
 	  margin: 4px 0;
 	  padding: 0;
@@ -364,7 +418,7 @@
 	}
 
 	ul.simple-small li a:before {
-		content: '• ';
+		content: ' • ';
 	}
 
 	ul.simple-small li a {
@@ -396,7 +450,7 @@
   ul.simple-small li a:hover   {
     text-decoration:  none;
     font-weight:      regular;
-    border-color: 		rgba(37, 37, 37, 1.0);
+    border-color: 		rgb(0, 130, 135);
 	  background: 			rgb(0, 130, 135);
     color:            rgba(210, 210, 210,1.0);
   }
@@ -467,13 +521,13 @@
 	  border: 1px solid #CCCCCC;
 	  margin: 0;
 	  padding: 1px 3px;
-	  white-space: pre; overflow: auto;
+	  white-space: pre;
+	  overflow: auto;
 	}
 
 	.highlight pre code {
 	  background-color: #1F1F1F;
-	  box-shadow: 0 2px 4px #D8D8DC;
-	  border: 1px solid #D8D8DC;
+	  border: 1px solid rgb(107,107,107);
 	  color: #000;
 	  display: block;
 	  font-family: "Consolas", 'Lucida Console', 'Monaco', monospace !important;
@@ -481,7 +535,8 @@
 	  line-height: 1.6em;
 	  margin: 0 0 1.5em;
 	  padding: 0.7em;
-	  white-space: pre; overflow: auto;
+	  white-space: pre; o
+	  verflow: auto;
 	  /*
 	  -moz-border-radius: 7px 7px 7px 7px;
 	  border-bottom-left-radius: 7px 7px;

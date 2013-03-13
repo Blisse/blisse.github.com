@@ -74,7 +74,7 @@
     font-weight:      regular;
     border:           none;
     background-color: transparent;
-    color:            rgb(0,216,204);
+    color:            #47A3B2;
   }
 
   header #name a:visited #last-name {
@@ -82,7 +82,7 @@
     font-weight:      regular;
     border:           none;
     background-color: transparent;
-    color:            rgb(0,216,204);
+    color:            #47A3B2;
   }
 
   header #name a:hover #last-name {
@@ -90,7 +90,7 @@
     font-weight:      regular;
     border:           none;
     background-color: transparent;
-    color:            rgb(0,216,204);
+    color:            #47A3B2;
   }
 
   header #name a:active #last-name {
@@ -98,7 +98,7 @@
     font-weight:      regular;
     border:           none;
     background-color: transparent;
-    color:            rgb(0,216,204);
+    color:            #47A3B2;
   }
 
   header #name a:link #first-name {
@@ -275,8 +275,8 @@
     font-variant: normal;
     font-style: normal;
     font-weight: 200;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 24pt;
+    line-height: 32pt;
     font-family: "Raleway", Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
     text-transform: lowercase;
     color: rgb(121, 121, 121);
@@ -321,9 +321,9 @@
   header nav ul#nav-bottom li a {
     font-weight: 300;
     font-family:  'Segoe UI', Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
-    font-size: 12px;
+    font-size: 9pt;
     font-style: normal;
-    line-height: 15px;
+    line-height: 11pt;
     text-transform: uppercase;
     color: rgb(105, 105, 105);
   }

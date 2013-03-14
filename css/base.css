@@ -128,66 +128,65 @@
 
 
 	p {
-		display: block;
-		margin: 1.4em 0px;
-		padding: 0px;
-    color: rgba(221,221,221,1.0);
-    font: normal normal 300 16px/22.6px "Open Sans";
-    font-family: "Segoe UI Semilight", "Segoe UI", "Lato", "Helvetica Neue", "Open Sans";
+		display    : block;
+		margin     : 1.4em 0px;
+		padding    : 0px;
+		color      : rgba(221,221,221,1.0);
+		font       : normal normal 300 11pt "Cambria";
+		font-family: "Open Sans", "Segoe UI Semilight", "Segoe UI", "Lato", "Helvetica Neue", "Open Sans";
 	}
 
 	p a {
 		-webkit-transition: all 150ms ease-in-out 0ms;
-		-moz-transition: all 150ms ease-in-out 0ms;
-		-o-transition: all 150ms ease-in-out 0ms;
-		transition: all 150ms ease-in-out 0ms;
-    display: inline-block;
+		-moz-transition   : all 150ms ease-in-out 0ms;
+		-o-transition     : all 150ms ease-in-out 0ms;
+		transition        : all 150ms ease-in-out 0ms;
+		display           : inline-block;
 	}
 
   p a:link    {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
+		text-decoration : none;
+		font-weight     : regular;
+		border          : none;
+		background-color: transparent;
+		color           : rgba(0,130,135,1.0);
   }
 
   p a:visited {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
+		text-decoration :  none;
+		font-weight     : regular;
+		border          : none;
+		background-color: transparent;
+		color           : rgba(0,130,135,1.0);
   }
 
   p a:hover   {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: rgba(0,130,135,1.0);
-    color:            rgba(221,221,221,1.0);
+		text-decoration : none;
+		font-weight     : regular;
+		border          : none;
+		background-color: rgba(0,130,135,1.0);
+		color           : rgba(221,221,221,1.0);
   }
 
   p a:active  {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
+		text-decoration : none;
+		font-weight     : regular;
+		border          : none;
+		background-color: transparent;
+		color           : rgba(0,130,135,1.0);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Open Sans", Arial, sans-serif;
-		margin: 0;
-		text-align: 			left;
-    text-decoration:  none;
-    font-size: 26px;
-    line-height: 36px;
-    font-weight: normal;
-    text-transform: uppercase;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
+		font-family     : "Open Sans", Arial, sans-serif;
+		margin          : 4px 0;
+		text-align      : left;
+		text-decoration : none;
+		font-weight     : normal;
+		text-transform  : uppercase;
+		vertical-align  : middle;
+		border          : none;
+		background-color: transparent;
+		color           : rgba(0,130,135,1.0);
 	}
 
   h1 a:link,
@@ -196,11 +195,11 @@
   h4 a:link,
   h5 a:link,
   h6 a:link {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
+		text-decoration : none;
+		font-weight     : regular;
+		border          : none;
+		background-color: transparent;
+		color           : rgba(0,130,135,1.0);
   }
 
   h1 a:visited,
@@ -209,11 +208,11 @@
   h4 a:visited,
   h5 a:visited,
   h6 a:visited {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
+		text-decoration : none;
+		font-weight     : regular;
+		border          : none;
+		background-color: transparent;
+		color           : rgba(0,130,135,1.0);
   }
 
   h1 a:hover,
@@ -222,11 +221,11 @@
   h4 a:hover,
   h5 a:hover,
   h6 a:hover {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
+		text-decoration : none;
+		font-weight     : regular;
+		border          : none;
+		background-color: transparent;
+		color           : rgba(0,130,135,1.0);
   }
 
   h1 a:active,
@@ -235,34 +234,45 @@
   h4 a:active,
   h5 a:active,
   h6 a:active {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
+		text-decoration : none;
+		font-weight     : regular;
+		border          : none;
+		background-color: transparent;
+		color           : rgba(0,130,135,1.0);
 	}
+
+	h1 {
+		padding-left: 5px;
+		border-left : 2px solid rgb(0, 130, 135);
+		color       : rgba(255, 255, 255, 1.0);
+		font-size   : 42pt;
+		line-height : 48pt;
+		font-family : "Segoe UI Light", "Segoe UI", 'Nexa Light', 'Lato', Frutiger, 'Open Sans', Arial, sans-serif;
+
+	}
+
 
 /* #Quotes
 ================================================== */
 
 	blockquote {
-		border-left: 2px solid rgba(0,130,135,1.0);
+		border-left     : 2px solid rgba(0,130,135,1.0);
 		background-color: rgba(255,255,255,0.04);
-		margin: 30px 0 30px 15px;
-		padding: 5px;
+		margin          : 30px 0 30px 15px;
+		padding         : 5px;
 	}
 
 	blockquote p {
-		color: rgb(135,135,135);
+		color  : rgb(135,135,135);
 		padding: 0 15px 0 15px;
 	}
 
 	blockquote cite {
-		color: rgb(210,210,210);
+		color           : rgb(210,210,210);
 		background-color: rgba(0,130,135,1.0);
-		padding: 2px 20px 2px 20px;
-    font: normal normal 300 12px/20px "Sofia Pro";
-		text-transform: uppercase;
+		padding         : 2px 20px 2px 20px;
+		font            : normal normal 300 12px/20px "Sofia Pro";
+		text-transform  : uppercase;
 	}
 
 
@@ -436,7 +446,7 @@
     font-weight:      regular;
     border:           none;
     background-color: transparent;
-    color:            rgba(210, 210, 210,1.0);
+    color:            rgba(221, 221, 221,1.0);
   }
 
   ul.simple-small li a:visited {
@@ -444,7 +454,7 @@
     font-weight:      regular;
     border:           none;
     background-color: transparent;
-    color:            rgba(210, 210, 210,1.0);
+    color:            rgba(221, 221, 221,1.0);
   }
 
   ul.simple-small li a:hover   {
@@ -452,7 +462,7 @@
     font-weight:      regular;
     border-color: 		rgb(0, 130, 135);
 	  background: 			rgb(0, 130, 135);
-    color:            rgba(210, 210, 210,1.0);
+    color:            rgba(221, 221, 221,1.0);
   }
 
   ul.simple-small li a:active  {
@@ -460,7 +470,7 @@
     font-weight:      regular;
     border:           none;
     background-color: transparent;
-    color:            rgba(210, 210, 210,1.0);
+    color:            rgba(221, 221, 221,1.0);
 	}
 
 	ul.simple-small li:last-child {

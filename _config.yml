@@ -11,3 +11,9 @@ github: blisse
 twitter: laivictorvl
 linkedin: laivictor
 paginate: 5
+
+
+# defaults
+sass:
+    syntax: scss        # scss|sass
+    style:  compressed  # nested|expanded|compact|compressed

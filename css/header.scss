@@ -1,0 +1,201 @@
+@import "bases";
+
+
+/* #Header
+================================================== */
+
+
+	header {
+		overflow-x: hidden;
+		overflow-y: hidden;
+		margin: 0;
+    padding: 0;
+    border-top: 4px solid $color-sec;
+		position: relative;
+		width: 100%;
+	}
+
+  header a {
+    @include transition-ease;
+
+    &:link {
+      @include texts(none, regular, none, transparent, $color-white)
+    }
+
+    &:visited {
+      @include texts(none, regular, none, transparent, $color-white)
+    }
+
+    &:hover {
+      @include texts(none, regular, none, transparent, $color-white)
+    }
+
+    &:active {
+      @include texts(none, regular, none, transparent, $color-white)
+    }
+
+  }
+
+  header #name-wrapper {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    display: block;
+    vertical-align: middle;
+  }
+
+  header #name a {
+    text-align: center;
+    vertical-align: middle;
+
+    border-bottom: 1px solid $color-darkgrey;
+
+    font-variant: normal;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 42pt;
+
+    line-height: 42pt;
+    font-family: $font-stack-name;
+
+
+    white-space: nowrap;
+
+    &:link #last-name {
+      @include texts( none, regular, none, transparent, $color-sec );
+    }
+    &:visited #last-name {
+      @include texts( none, regular, none, transparent, $color-sec );
+    }
+    &:hover #last-name {
+      @include texts( none, regular, none, transparent, $color-sec );
+    }
+    &:active #last-name {
+      @include texts( none, regular, none, transparent, $color-sec );
+    }
+
+
+    &:link #first-name {
+      @include texts( none, regular, none, transparent, $color-white );
+    }
+    &:visited #first-name {
+      @include texts( none, regular, none, transparent, $color-white );
+    }
+    &:hover #first-name {
+      @include texts( none, regular, none, transparent, $color-main );
+    }
+    &:hover {
+      border-color: $color-main;
+    }
+    &:active #first-name {
+      @include texts( none, regular, none, transparent, $color-white );
+    }
+
+    &.currentpage {
+      &:link #first-name {
+        @include texts( none, regular, none, transparent, $color-main );
+      }
+      &:visited #first-name {
+        @include texts( none, regular, none, transparent, $color-main );
+      }
+      &:hover #first-name {
+        @include texts( none, regular, none, transparent, $color-main );
+      }
+      &:active #first-name {
+        @include texts( none, regular, none, transparent, $color-main );
+      }
+    }
+
+  }
+
+
+  header .links-wrapper {
+    text-align: center;
+  }
+
+  header #links a {
+    display: inline-block;
+    opacity: 0.75;
+  }
+
+  @include social-links(twitter-hover, "/images/icons/appbar.twitter.bird-hover.png");
+  @include social-links(github-hover, "/images/icons/appbar.github-hover.png");
+  @include social-links(linkedin-hover, "/images/icons/appbar.linkedin-hover.png");
+  @include social-links(mail-hover, "/images/icons/appbar.email.minimal-hover.png");
+  @include social-links(rss-hover, "/images/icons/appbar.rss-hover.png");
+
+
+
+  header nav {
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+     #nav-wrapper-outer {
+      text-align: center;
+    }
+
+     #nav-wrapper-inner {
+      display: inline-block;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      white-space: nowrap;
+
+      li {
+        display: inline;
+        text-align: left;
+      }
+    }
+  }
+
+  header nav ul#nav-top li {
+    padding: 0 2px;
+  }
+
+  header nav ul#nav-top li a {
+    font-variant: normal;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24pt;
+    line-height: 32pt;
+    font-family: "Raleway", Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
+    text-transform: lowercase;
+
+    &:link {color: $color-grey;}
+    &:visited {color: $color-grey;}
+    &:hover {color: $color-main;}
+    &:active {color: $color-grey;}
+  }
+
+  header nav ul#nav-top li.currentpage a {
+    &:link {color: $color-sec;}
+    &:visited {color: $color-sec;}
+    &:hover {color: $color-main;}
+    &:active {color: $color-sec;}
+  }
+
+  header nav ul#nav-bottom li {
+    padding: 0 1px;
+
+    a {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 9pt;
+      line-height: 11pt;
+      font-family:  'Segoe UI', Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
+
+      text-transform: uppercase;
+
+      &:link {color: $color-grey; }
+      &:visited {color: $color-grey; }
+      &:hover {color: $color-main; }
+      &:active {color: $color-grey; }
+    }
+  }
+
+  header nav ul#nav-bottom li.currentpage a {
+    &:link { color: #FFFFFF; }
+    &:visited { color: #FFFFFF; }
+    &:hover { color: $color-main; }
+    &:active { color: #FFFFFF; }
+  }

@@ -5,16 +5,17 @@ layout: default
 <article class="project">
 	<div class="container">
 		<div class="sixteen columns">
-			<h2 class="no-vertical-margins">
+			<h2>
 				<a href="{{ page.url }}" title="Permanent link to this post">
-					<span class="h2-hover">{{ page.title }}</span>
+					{{ page.title }}
 				</a>
 			</h2>
 		</div>
 	</div>
-</div>
 
 {{ content | markdownify }}
+
+</article>
 
 <div class="container">
 	<div class="sixteen columns">
@@ -37,5 +38,6 @@ layout: default
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     {% endif %}
 
+  </div>
 </div>
-</div>
+

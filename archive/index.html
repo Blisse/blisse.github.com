@@ -10,13 +10,19 @@ sub: archive
 <div class="container" id="archive">
 	<div class="sixteen columns">
 		{% for post in site.posts %}
-		<h3>
-			<a href="{{ post.url }}" class="block">
-				<span class="h3-nohover date">{{ post.date | date: "%Y%m%d" }}</span>
-				<span class="h3-hover">&nbsp;&raquo;&nbsp;{{ post.title }}&nbsp;</span>
-				<span class="h3-nohover no-wrap float-right font-size-14">about {{ post.tags | array_to_sentence_string }}.</span>
-			</a>
-		</h3>
+		<section class="archives">
+			<h3>
+				<a href="{{ post.url }}">
+					<span class="date">
+						{{ post.date | date: "%Y%m%d" }}
+					</span>
+					&nbsp;&raquo;&nbsp;{{ post.title }}
+				</a>
+			</h3>
+			<div class="tags">
+				about {{ post.tags | array_to_sentence_string }}.
+			</div>
+		</section>
 		{% endfor %}
 	</div>
 </div>

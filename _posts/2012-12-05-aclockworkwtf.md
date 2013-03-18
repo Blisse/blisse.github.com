@@ -4,6 +4,7 @@ title: a clockwork wtf
 date: 2012-12-05
 tags: [thinking]
 div: false
+archived: false
 ---
 
 

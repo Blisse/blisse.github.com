@@ -7,12 +7,12 @@
 * 6/20/2012
 */
 
+
 @import "bases";
 
 
 /* import reset - normalise.css */
 
-@import url('\css\reset.css');
 
 
 /* #Media Queries
@@ -40,16 +40,17 @@
 
 	html {
 		overflow-y: scroll;
+    -webkit-overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    -o-overflow-x: hidden;
+    overflow-x: hidden;
 	}
 
 	body {
 		-webkit-text-size-adjust: 100%;
-		-ms-overflow-x: hidden;
-		overflow-x: hidden;
 
-		background: url($bg-img) repeat center center fixed;
-    background-color: rgb(37,37,37);
-		text-rendering: optimizeLegibility;
+		background-color: $color-bg;
+
 	}
 
 
@@ -132,49 +133,51 @@
 
 	p {
 		display    : block;
-		margin     : 1.4em 0px;
+		margin     : 0px;
 		padding    : 0px;
-		color      : $color-white;
-		font       : normal normal 300 11pt "Cambria";
+		color      : $color-text;
+		font       : normal normal 300 11pt/14pt "Calibri";
 		font-family: $font-stack-text;
+
+  	a {
+      @include transition-ease;
+  		display           : inline-block;
+
+      &:link    {
+    		text-decoration : none;
+    		font-weight     : regular;
+    		border          : none;
+    		background-color: transparent;
+    		color           : $color-main;
+      }
+
+      &:visited {
+    		text-decoration : none;
+    		font-weight     : regular;
+    		border          : none;
+    		background-color: transparent;
+    		color           : $color-main;
+      }
+
+      &:hover   {
+    		text-decoration : none;
+    		font-weight     : regular;
+    		border          : none;
+    		background-color: $color-main;
+    		color           : $color-white;
+      }
+
+      &:active  {
+    		text-decoration : none;
+    		font-weight     : regular;
+    		border          : none;
+    		background-color: transparent;
+    		color           : $color-main;
+    	}
+
+    }
+
   }
-
-	p a {
-    @include transition-ease;
-		display           : inline-block;
-	}
-
-  p a:link    {
-		text-decoration : none;
-		font-weight     : regular;
-		border          : none;
-		background-color: transparent;
-		color           : rgba(0,130,135,1.0);
-  }
-
-  p a:visited {
-		text-decoration : none;
-		font-weight     : regular;
-		border          : none;
-		background-color: transparent;
-		color           : rgba(0,130,135,1.0);
-  }
-
-  p a:hover   {
-		text-decoration : none;
-		font-weight     : regular;
-		border          : none;
-		background-color: rgba(0,130,135,1.0);
-		color           : rgba(221,221,221,1.0);
-  }
-
-  p a:active  {
-		text-decoration : none;
-		font-weight     : regular;
-		border          : none;
-		background-color: transparent;
-		color           : rgba(0,130,135,1.0);
-	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family     : "Open Sans", Arial, sans-serif;
@@ -182,100 +185,143 @@
 		text-align      : left;
 		text-decoration : none;
 		font-weight     : normal;
-		text-transform  : uppercase;
 		vertical-align  : middle;
 		border          : none;
 		background-color: transparent;
 		color           : rgba(0,130,135,1.0);
-	}
-
-  h1 a:link,
-  h2 a:link,
-  h3 a:link,
-  h4 a:link,
-  h5 a:link,
-  h6 a:link {
-		text-decoration : none;
-		font-weight     : regular;
-		border          : none;
-		background-color: transparent;
-		color           : rgba(0,130,135,1.0);
+    a {
+      @include transition-ease;
+      &:link {
+        @include texts(none, regular, none, transparent, $color-main);
+      }
+      &:visited {
+        @include texts(none, regular, none, transparent, $color-main);
+      }
+      &:hover {
+        @include texts(none, regular, none, transparent, $color-main);
+      }
+      &:active {
+        @include texts(none, regular, none, transparent, $color-main);
+      }
+    }
   }
 
-  h1 a:visited,
-  h2 a:visited,
-  h3 a:visited,
-  h4 a:visited,
-  h5 a:visited,
-  h6 a:visited {
-		text-decoration : none;
-		font-weight     : regular;
-		border          : none;
-		background-color: transparent;
-		color           : rgba(0,130,135,1.0);
-  }
-
-  h1 a:hover,
-  h2 a:hover,
-  h3 a:hover,
-  h4 a:hover,
-  h5 a:hover,
-  h6 a:hover {
-		text-decoration : none;
-		font-weight     : regular;
-		border          : none;
-		background-color: transparent;
-		color           : rgba(0,130,135,1.0);
-  }
-
-  h1 a:active,
-  h2 a:active,
-  h3 a:active,
-  h4 a:active,
-  h5 a:active,
-  h6 a:active {
-		text-decoration : none;
-		font-weight     : regular;
-		border          : none;
-		background-color: transparent;
-		color           : rgba(0,130,135,1.0);
-	}
-
-	h1 {
-		color       : rgba(255, 255, 255, 1.0);
-		font-size   : 42px;
-		line-height : 42pt;
-		font-family : 'Nexa Light', 'Open Sans', Arial, sans-serif;
+  h1 {
+    color       : $color-darkgrey;
+    font-size   : 42px;
+    line-height : 58.8px;
+    font-family : 'Nexa Light', 'Open Sans', Arial, sans-serif;
+    text-transform  : uppercase;
 
     a {
+      line-height : 58.8px;
+      border-left : 58.8px solid transparent;
+      padding-left: 10px;
 
-		padding-left: 4px;
+      &:link {
+        border-left : 58.8px solid $color-darkgrey;
+        color       : $color-darkgrey;
+      }
+
+      &:visited {
+        border-left : 58.8px solid $color-darkgrey;
+        color       : $color-darkgrey;
+      }
+
+      &:hover {
+        background-color: $color-main;
+        border-left : 58.8px solid $color-darkgrey
+        color       : #FFFFFF;
+      }
+
+      &:active {
+        background-color: $color-main;
+        border-left : 58.8px solid $color-darkgrey;
+        color       : #FFFFFF;
+      }
+    }
+  }
+
+  h2 {
+    color       : $color-darkgrey;
+    font-size   : 36px;
+    line-height : 50.4px;
+    font-family : 'Nexa Light', 'Open Sans', Arial, sans-serif;
+    text-transform  : uppercase;
+
+    .date {
+      float: right;
+    }
+
+    a {
+      line-height : 50.4px;
+      border-left : 50.4px solid transparent;
+      padding-left: 5px;
+
+      &:link {
+        border-left : 50.4px solid $color-darkgrey;
+        color       : $color-darkgrey;
+      }
+
+      &:visited {
+        border-left : 50.4px solid $color-darkgrey;
+        color       : $color-darkgrey;
+      }
+
+      &:hover {
+        background-color: $color-main;
+        border-left : 50.4px solid $color-darkgrey;
+        color       : #FFFFFF;
+      }
+
+      &:active {
+        background-color: $color-main;
+        border-left : 50.4px solid $color-darkgrey;
+        color       : #FFFFFF;
+      }
+    }
+  }
+
+	h3 {
+    display: block;
+
+    padding-left: 4px;
+
+    color       : $color-white;
+    background-color: $color-grey;
+    font-size   : 24px;
+    line-height : 33.6px;
+    font-family : "Museo Slab", Arial, sans-serif;
+    text-transform  : uppercase;
+
+    a {
+      display: block;
+      line-height : 33.6px;
+      border-left : 5px solid transparent;
+      padding-left: 5px;
 
     	&:link {
-    		line-height : 42pt;
-    		border-left : 42pt solid rgba(255, 255, 255, 1.0);
-    		color       : rgba(255, 255, 255, 1.0);
+    		border-left : 5px solid $color-white;
+    		color       : $color-white;
     	}
 
     	&:visited {
-    		line-height : 42pt;
-    		border-left : 42pt solid rgba(0,130,135,1.0);
-    		color       : rgba(255, 255, 255, 1.0);
-    	}
-
-    	&:active {
-    		border-color: rgba(0,130,135,1.0);
-    		color       : rgba(0,130,135,1.0);
+        border-left : 5px solid $color-white;
+        color       : $color-white;
     	}
 
     	&:hover {
-    		line-height : 42pt;
-    		border-left : 42pt solid rgba(0,164,164,1.0);
-    		color       : rgba(0,164,164,1.0);
+        border-left : 5px solid $color-white;
+        color       : $color-white;
+        background-color: $color-main;
     	}
 
+      &:active {
+        border-left : 5px solid $color-white;
+        color       : $color-white;
+        background-color: $color-main;
+      }
     }
-
   }
 
 
@@ -284,7 +330,7 @@
 
 	blockquote {
 		border-left     : 2px solid rgba(0,130,135,1.0);
-		background-color: rgba(255,255,255,0.04);
+		background-color: rgba(0,0,0,0.02);
 		margin          : 30px 0 30px 15px;
 		padding         : 5px;
 	}
@@ -312,32 +358,33 @@
 		clear: both;
 		margin: 10px 0 30px;
 		height: 0;
-	}
 
-	hr.line {
-		background: none repeat scroll 0 0 #3299BB;
-		border: medium none;
-		clear: both;
-		color: #1A1A1A;
-		float: none;
-		height: 2px;
-		margin: 0 0 1.45em;
-		width: 100%;
-	}
+  	&.line {
+  		background: none repeat scroll 0 0 #3299BB;
+  		border: medium none;
+  		clear: both;
+  		color: #1A1A1A;
+  		float: none;
+  		height: 2px;
+  		margin: 0 0 1.45em;
+  		width: 100%;
+  	}
 
-	hr.space {
-		background: none repeat scroll 0 0 transparent;
-		color: #FFFFFF;
-		visibility: hidden;
-	}
+  	&.space {
+  		background: none repeat scroll 0 0 transparent;
+  		color: #FFFFFF;
+  		visibility: hidden;
+  	}
 
-	hr.dotted {
-		border: 1px dotted #111;
-	}
+  	&.dotted {
+  		border: 1px dotted #111;
+  	}
 
-	hr.tight {
-		margin: 1px;
-	}
+  	&.tight {
+  		margin: 1px;
+  	}
+
+  }
 
 
 /* #Posts
@@ -438,71 +485,78 @@
 
 
 	ul.simple-small {
-		width: auto;
+    list-style-type: none;
+
 	  border: 1px solid rgba(255, 255, 255, 0.2);
-	  list-style-type: none;
+
 	  margin: 4px 0;
 	  padding: 0;
-	  font-size: 120%;
-	}
 
-	ul.simple-small li {
-	  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-		margin: 0;
-	}
-	ul.simple-small li:hover {
-	  border-color: rgb(0, 130, 135);
-	}
+    width: auto;
 
-	ul.simple-small li a:before {
-		content: ' • ';
-	}
+  	li {
+  	  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  		margin: 0;
+  	}
 
-	ul.simple-small li a {
-	  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-	  transition: font-size 0.3s ease, background-color 0.3s ease;
-	  display: block;
-		padding: 1px 0 1px 2px;
-	}
+  	li:hover {
+  	  border-color: $color-main;
+  	}
 
-  ul.simple-small li a:link    {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(221, 221, 221,1.0);
+  	li a:before {
+  		content: ' • ';
+  	}
+
+  	li a {
+      display: block;
+
+  	  -webkit-transition: font-size 300ms ease, background-color 300ms ease;
+  	  -moz-transition: font-size 300ms ease, background-color 300ms ease;
+  	  -ms-transition: font-size 300ms ease, background-color 300ms ease;
+      -o-transition: font-size 300ms ease, background-color 300ms ease;
+  	  transition: font-size 300ms ease, background-color 300ms ease;
+
+  		padding: 1px 0 1px 2px;
+
+      a:link    {
+        text-decoration:  none;
+        font-weight:      regular;
+        border:           none;
+        background-color: transparent;
+        color:            $color-white;
+      }
+
+      a:visited {
+        text-decoration:  none;
+        font-weight:      regular;
+        border:           none;
+        background-color: transparent;
+        color:            $color-white;
+      }
+
+      a:hover   {
+        text-decoration:  none;
+        font-weight:      regular;
+        border-color: 		$color-main;
+    	  background: 			$color-main;
+        color:            $color-white;
+      }
+
+      a:active  {
+        text-decoration:  none;
+        font-weight:      regular;
+        border:           none;
+        background-color: transparent;
+        color:            $color-white;
+    	}
+
+    }
+
+  	li:last-child {
+  	  border-bottom: 0;
+  	}
+
   }
-
-  ul.simple-small li a:visited {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(221, 221, 221,1.0);
-  }
-
-  ul.simple-small li a:hover   {
-    text-decoration:  none;
-    font-weight:      regular;
-    border-color: 		rgb(0, 130, 135);
-	  background: 			rgb(0, 130, 135);
-    color:            rgba(221, 221, 221,1.0);
-  }
-
-  ul.simple-small li a:active  {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(221, 221, 221,1.0);
-	}
-
-	ul.simple-small li:last-child {
-	  border-bottom: 0;
-	}
 
 
 	dl {
@@ -582,6 +636,20 @@
 	  border-top-right-radius: 7px 7px;
 	  */
 	}
+
+
+
+/* #Section
+================================================== */
+
+  section {
+    display: block;
+  }
+
+
+/* #Article
+================================================== */
+
 
 
 

@@ -5,43 +5,55 @@ main: blog
 sub: all
 ---
 
+
 {% for post in paginator.posts %}
 
-<div class="container">
+{% if post.archived == false %}
+<article class="container">
 	<div class="sixteen columns">
-		<h2 class="no-vertical-margins">
+		<h2>
 			<a href="{{ post.url }}">
-				<span class="h2-hover">{{ post.title }}</span>
-				<span class="h2-nohover no-wrap">// {{ post.date | date:'%Y%m%d' }}</span>
+				{{ post.title }}
+				<span class="date">
+					// {{ post.date | date:'%Y%m%d' }}
+				</span>
 			</a>
 		</h2>
 	</div>
-	<div class="sixteen columns">
-		<span class="disabled font-size-18 float-right">about {{ post.tags | array_to_sentence_string }}.</span>
-	</div>
-</div>
 
-{% if post.div == false %}
-<div>
+	<div class="sixteen columns">
+		<span class="float-right">
+			about {{ post.tags | array_to_sentence_string }}.
+		</span>
+	</div>
+
+	{% if post.div == false %}
 	<div>
-{% else %}
-<div class="container">
-	<div class="sixteen columns">
-{% endif %}
-		{{ post.content | markdownify}}
+		{{ post.content | markdownify }}
 	</div>
-</div>
-<div class="container">
+	{% else %}
 	<div class="sixteen columns">
-		{% if post.comments %}
-		<p>
-			<a href="{{ post.url }}" class="float-right no-under">Discuss</a>
-		</p>
-		{% endif %}
+		{{ post.content | markdownify }}
+	</div>
+	{% endif %}
 
+	{% if post.comments %}
+	<div class="sixteen columns">
+		<p>
+			<a href="{{ post.url }}" class="discuss">
+				Discuss
+			</a>
+		</p>
+	</div>
+	{% endif %}
+
+</article>
+
+<div class="container">
+	<div class="sixteen columns">
 		<hr class="line">
-		<hr class="clear">
 	</div>
 </div>
+{% endif %}
 
 {% endfor %}

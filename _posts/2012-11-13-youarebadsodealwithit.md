@@ -1,10 +1,11 @@
 ---
 layout: post
-title: you are bad. deal with it
+title: i am bad. deal with it
 date: 2012-11-13
 tags: [life]
 div: false
 comments: true
+archived: true
 ---
 
 

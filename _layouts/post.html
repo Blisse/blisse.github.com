@@ -5,11 +5,15 @@ sub: archive
 ---
 
 <div class="container">
-	<div class="sixteen columns">
+    <div class="sixteen columns">
 		<h2>
 			<a href="{{ page.url }}">
-				<span class="h2-hover">{{ page.title }}</span>
-				<span class="h2-nohover no-wrap">// {{ page.date | date:'%Y%m%d' }}</span>
+				<span class="h2-hover">
+                    {{ page.title }}
+                </span>
+				<span class="date">
+                    // {{ page.date | date:'%Y%m%d' }}
+                </span>
 			</a>
 		</h2>
 	</div>

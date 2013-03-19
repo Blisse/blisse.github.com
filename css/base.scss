@@ -207,6 +207,9 @@
   }
 
   h1 {
+
+    display: block;
+
     color       : $color-darkgrey;
     font-size   : 42px;
     line-height : 58.8px;
@@ -214,9 +217,11 @@
     text-transform  : uppercase;
 
     a {
+
+      display: block;
       line-height : 58.8px;
       border-left : 58.8px solid transparent;
-      padding-left: 10px;
+      padding: 0 10px;
 
       &:link {
         border-left : 58.8px solid $color-darkgrey;
@@ -230,7 +235,7 @@
 
       &:hover {
         background-color: $color-main;
-        border-left : 58.8px solid $color-darkgrey
+        border-left : 58.8px solid $color-darkgrey;
         color       : #FFFFFF;
       }
 
@@ -243,20 +248,20 @@
   }
 
   h2 {
+
+    display: block;
     color       : $color-darkgrey;
     font-size   : 36px;
     line-height : 50.4px;
-    font-family : 'Nexa Light', 'Open Sans', Arial, sans-serif;
+    font-family : 'Museo Slab', 'Nexa Light', 'Open Sans', Arial, sans-serif;
     text-transform  : uppercase;
 
-    .date {
-      float: right;
-    }
-
     a {
+
+      display: block;
       line-height : 50.4px;
       border-left : 50.4px solid transparent;
-      padding-left: 5px;
+      padding: 0 10px;
 
       &:link {
         border-left : 50.4px solid $color-darkgrey;
@@ -353,21 +358,27 @@
 ================================================== */
 
 	hr {
-		border: solid #1A1A1A;
-		border-width: 3px 0 0;
+		border: solid $color-darkgrey;
+    border-width: 2px 0 0;
+    height: 0;
+
 		clear: both;
+
 		margin: 10px 0 30px;
-		height: 0;
+
 
   	&.line {
-  		background: none repeat scroll 0 0 #3299BB;
+  		background: none repeat scroll 0 0 $color-main;
   		border: medium none;
-  		clear: both;
-  		color: #1A1A1A;
+      height: 2px;
+      width: 100%;
+
+      color: $color-main;
+
   		float: none;
-  		height: 2px;
+      clear: both;
+
   		margin: 0 0 1.45em;
-  		width: 100%;
   	}
 
   	&.space {
@@ -377,7 +388,7 @@
   	}
 
   	&.dotted {
-  		border: 1px dotted #111;
+  		border: 1px dotted $color-main;
   	}
 
   	&.tight {
@@ -437,11 +448,7 @@
 	li {
 		display: block;
 		padding: 0px;
-		text-rendering: optimizeLegibility;
-    color: 		rgba(210,210,210,1.0);
-    font: normal normal 300 14px/20px "Segoe UI Semilight";
-    font-family: "Segoe UI Semilight", "Segoe UI", "Lato", "Helvetica Neue", "Open Sans";
-	}
+  }
 
 	li a {
 		-webkit-transition: all 150ms ease-in-out 0ms;
@@ -487,69 +494,62 @@
 	ul.simple-small {
     list-style-type: none;
 
-	  border: 1px solid rgba(255, 255, 255, 0.2);
+	  border: 1px solid $color-white;
 
-	  margin: 4px 0;
+	  margin: 10px 0;
 	  padding: 0;
 
     width: auto;
 
   	li {
-  	  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  	  border-bottom: 1px solid $color-white;
   		margin: 0;
-  	}
+      color: $color-darkgrey;
 
-  	li:hover {
-  	  border-color: $color-main;
-  	}
+      a {
+        display: block;
 
-  	li a:before {
-  		content: ' • ';
-  	}
+    	  -webkit-transition: font-size 300ms ease, background-color 300ms ease;
+    	  -moz-transition: font-size 300ms ease, background-color 300ms ease;
+    	  -ms-transition: font-size 300ms ease, background-color 300ms ease;
+        -o-transition: font-size 300ms ease, background-color 300ms ease;
+    	  transition: font-size 300ms ease, background-color 300ms ease;
 
-  	li a {
-      display: block;
+    		padding: 1px 0 1px 2px;
 
-  	  -webkit-transition: font-size 300ms ease, background-color 300ms ease;
-  	  -moz-transition: font-size 300ms ease, background-color 300ms ease;
-  	  -ms-transition: font-size 300ms ease, background-color 300ms ease;
-      -o-transition: font-size 300ms ease, background-color 300ms ease;
-  	  transition: font-size 300ms ease, background-color 300ms ease;
+        &:before {
+          content: ' • ';
+        }
 
-  		padding: 1px 0 1px 2px;
+        &:link {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-darkgrey;
+        }
 
-      a:link    {
-        text-decoration:  none;
-        font-weight:      regular;
-        border:           none;
-        background-color: transparent;
-        color:            $color-white;
+        &:visited {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-darkgrey;
+        }
+
+        &:hover   {
+          text-decoration:  none;
+          font-weight:      regular;
+      	  background-color: $color-main;
+          color:            #FFFFFF;
+        }
+
+        &:active  {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: $color-main;
+          color:            #FFFFFF;
+      	}
+
       }
-
-      a:visited {
-        text-decoration:  none;
-        font-weight:      regular;
-        border:           none;
-        background-color: transparent;
-        color:            $color-white;
-      }
-
-      a:hover   {
-        text-decoration:  none;
-        font-weight:      regular;
-        border-color: 		$color-main;
-    	  background: 			$color-main;
-        color:            $color-white;
-      }
-
-      a:active  {
-        text-decoration:  none;
-        font-weight:      regular;
-        border:           none;
-        background-color: transparent;
-        color:            $color-white;
-    	}
-
     }
 
   	li:last-child {

@@ -8,7 +8,9 @@ header {
   overflow-y: hidden;
   margin: 0;
   padding: 0;
+  padding-bottom: 10px;
   border-top: 4px solid #00d8d6;
+  background: url("/images/bg.png") repeat center center fixed;
   position: relative;
   width: 100%; }
 
@@ -100,9 +102,9 @@ header #name a {
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #008287; }
+    color: #00a4a4; }
   header #name a:hover {
-    border-color: #008287; }
+    border-color: #00a4a4; }
   header #name a:active #first-name {
     text-decoration: none;
     font-weight: regular;
@@ -114,25 +116,25 @@ header #name a {
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #008287; }
+    color: #00a4a4; }
   header #name a.currentpage:visited #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #008287; }
+    color: #00a4a4; }
   header #name a.currentpage:hover #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #008287; }
+    color: #00a4a4; }
   header #name a.currentpage:active #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #008287; }
+    color: #00a4a4; }
 
 header .links-wrapper {
   text-align: center; }
@@ -220,14 +222,14 @@ header nav ul#nav-top li a {
   font-weight: 200;
   font-size: 24pt;
   line-height: 32pt;
-  font-family: "Raleway", Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
+  font-family: Raleway, "Segoe UI Semilight", "Nexa Light", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
   text-transform: lowercase; }
   header nav ul#nav-top li a:link {
     color: #797979; }
   header nav ul#nav-top li a:visited {
     color: #797979; }
   header nav ul#nav-top li a:hover {
-    color: #008287; }
+    color: #00a4a4; }
   header nav ul#nav-top li a:active {
     color: #797979; }
 
@@ -236,34 +238,33 @@ header nav ul#nav-top li.currentpage a:link {
 header nav ul#nav-top li.currentpage a:visited {
   color: #00d8d6; }
 header nav ul#nav-top li.currentpage a:hover {
-  color: #008287; }
+  color: #00a4a4; }
 header nav ul#nav-top li.currentpage a:active {
   color: #00d8d6; }
 
 header nav ul#nav-bottom li {
   padding: 0 1px; }
-
-header nav ul#nav-bottom li a {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 9pt;
-  line-height: 11pt;
-  font-family: 'Segoe UI', Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
-  text-transform: uppercase; }
-  header nav ul#nav-bottom li a:link {
-    color: #797979; }
-  header nav ul#nav-bottom li a:visited {
-    color: #797979; }
-  header nav ul#nav-bottom li a:hover {
-    color: #008287; }
-  header nav ul#nav-bottom li a:active {
-    color: #797979; }
+  header nav ul#nav-bottom li a {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9pt;
+    line-height: 11pt;
+    font-family: 'Segoe UI', Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
+    text-transform: uppercase; }
+    header nav ul#nav-bottom li a:link {
+      color: #797979; }
+    header nav ul#nav-bottom li a:visited {
+      color: #797979; }
+    header nav ul#nav-bottom li a:hover {
+      color: #00a4a4; }
+    header nav ul#nav-bottom li a:active {
+      color: #797979; }
 
 header nav ul#nav-bottom li.currentpage a:link {
   color: #FFFFFF; }
 header nav ul#nav-bottom li.currentpage a:visited {
   color: #FFFFFF; }
 header nav ul#nav-bottom li.currentpage a:hover {
-  color: #008287; }
+  color: #00a4a4; }
 header nav ul#nav-bottom li.currentpage a:active {
   color: #FFFFFF; }

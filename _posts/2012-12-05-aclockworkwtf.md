@@ -47,7 +47,7 @@ archived: false
       The book definitely feels like a real story. Everything in the novel achieves a strong sense of circular conclusiveness like you would want in a good story. While not to say loose ends are all closed, the style and narrative really complements each other well in a way I haven't experienced or felt before.
     </p>
     <p>
-      It's a great read, for sure.
+      It's a great read if anything.
     </p>
   </div>
 </div>

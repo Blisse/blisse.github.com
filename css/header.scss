@@ -147,8 +147,9 @@
       white-space: nowrap;
 
       li {
-        display: inline;
+        display: inline-block;
         text-align: left;
+        margin: 0;
       }
     }
   }

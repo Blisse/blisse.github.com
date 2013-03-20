@@ -334,23 +334,31 @@
 ================================================== */
 
 	blockquote {
-		border-left     : 2px solid rgba(0,130,135,1.0);
-		background-color: rgba(0,0,0,0.02);
+		border-left     : 4px solid $color-main;
+    background-color: #E6E6E6;
+
 		margin          : 30px 0 30px 15px;
 		padding         : 5px;
-	}
 
-	blockquote p {
-		color  : rgb(135,135,135);
-		padding: 0 15px 0 15px;
-	}
+    p {
+  		color  : $color-darkgrey;
 
-	blockquote cite {
-		color           : rgb(210,210,210);
-		background-color: rgba(0,130,135,1.0);
-		padding         : 2px 20px 2px 20px;
-		font            : normal normal 300 12px/20px "Sofia Pro";
-		text-transform  : uppercase;
+      font       : normal normal 300 12pt/18pt "Bitter";
+      font-family: $font-stack-text;
+
+  		padding: 0 10px;
+      margin: 20px 5px;
+  	}
+
+  	cite {
+      background-color: $color-main;
+  		color           : #FFFFFF;
+
+      font            : normal normal 300 12px/20px "Sofia Pro";
+
+  		padding         : 2px 20px 2px 20px;
+  		text-transform  : uppercase;
+    }
 	}
 
 
@@ -433,89 +441,96 @@
 		padding-left: 15px;
 	}
 
-	ul.square li:before {
-		content: '⁃ ';
+	ul.square {
+    list-style-type:square;
 	}
 
-	ul.circle li:before {
-		content: '• ';
+	ul.circle {
+    list-style-type: circle;
 	}
 
-	ul.disc li:before {
-		content: '◦ ';
+	ul.disc {
+    list-style-type:disc;
 	}
 
 	li {
 		display: block;
-		padding: 0px;
+
+    color: $color-text;
+
+		padding: 2px;
+    margin: 1px 4px;
+
+    a {
+      display: block;
+
+      padding: 4px 2px;
+
+      &:link    {
+        text-decoration:  none;
+        font-weight:      regular;
+        border:           none;
+        background-color: transparent;
+        color:            $color-main;
+      }
+
+      &:visited {
+        text-decoration:  none;
+        font-weight:      regular;
+        border:           none;
+        background-color: transparent;
+        color:            $color-main;
+      }
+
+      &:hover   {
+        text-decoration:  none;
+        font-weight:      regular;
+        border:           none;
+        background-color: $color-main;
+        color:            #FFFFFF;
+      }
+
+      &:active  {
+        text-decoration:  none;
+        font-weight:      regular;
+        border:           none;
+        background-color: transparent;
+        color:            $color-main;
+    	}
+    }
   }
 
-	li a {
-		-webkit-transition: all 150ms ease-in-out 0ms;
-		-moz-transition: all 150ms ease-in-out 0ms;
-		-o-transition: all 150ms ease-in-out 0ms;
-		transition: all 150ms ease-in-out 0ms;
-    display: inline-block;
-	}
-
-  li a:link    {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgb(0,216,204);
-  }
-
-  li a:visited {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgb(0,216,204);
-  }
-
-  li a:hover   {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgba(0,130,135,1.0);
-  }
-
-  li a:active  {
-    text-decoration:  none;
-    font-weight:      regular;
-    border:           none;
-    background-color: transparent;
-    color:            rgb(0,216,204);
-	}
-
-
-	ul.simple-small {
+  ul.simple-small {
     list-style-type: none;
 
-	  border: 1px solid $color-white;
+    border: none;
+    margin: 10px 0;
+    padding: 0;
 
-	  margin: 10px 0;
-	  padding: 0;
+    width: 100%;
 
-    width: auto;
+    li {
 
-  	li {
-  	  border-bottom: 1px solid $color-white;
-  		margin: 0;
+      border-width: 1px 0;
+      border-style: solid;
+      border-color: $color-white;
+
+      font: normal normal 300 12pt/18pt "Bitter";
+
+      padding: 0 2px;
+
       color: $color-darkgrey;
 
       a {
         display: block;
 
-    	  -webkit-transition: font-size 300ms ease, background-color 300ms ease;
-    	  -moz-transition: font-size 300ms ease, background-color 300ms ease;
-    	  -ms-transition: font-size 300ms ease, background-color 300ms ease;
+        -webkit-transition: font-size 300ms ease, background-color 300ms ease;
+        -moz-transition: font-size 300ms ease, background-color 300ms ease;
+        -ms-transition: font-size 300ms ease, background-color 300ms ease;
         -o-transition: font-size 300ms ease, background-color 300ms ease;
-    	  transition: font-size 300ms ease, background-color 300ms ease;
+        transition: font-size 300ms ease, background-color 300ms ease;
 
-    		padding: 1px 0 1px 2px;
+        padding: 1px 2px;
 
         &:before {
           content: ' • ';
@@ -538,7 +553,7 @@
         &:hover   {
           text-decoration:  none;
           font-weight:      regular;
-      	  background-color: $color-main;
+          background-color: $color-main;
           color:            #FFFFFF;
         }
 
@@ -547,31 +562,108 @@
           font-weight:      regular;
           background-color: $color-main;
           color:            #FFFFFF;
-      	}
-
+        }
       }
     }
+  }
 
-  	li:last-child {
-  	  border-bottom: 0;
-  	}
 
+	ul.simple-large {
+    list-style-type: none;
+
+    border: none;
+	  margin: 10px 0;
+	  padding: 0;
+
+    width: 100%;
+
+  	li {
+
+      border-width: 1px 0;
+      border-style: solid;
+      border-color: $color-white;
+
+      padding: 1px;
+
+      font: normal normal 300 18pt/28pt "Bitter";
+
+      color: $color-darkgrey;
+
+      a {
+        display: block;
+
+    	  -webkit-transition: font-size 300ms ease, background-color 300ms ease;
+    	  -moz-transition: font-size 300ms ease, background-color 300ms ease;
+    	  -ms-transition: font-size 300ms ease, background-color 300ms ease;
+        -o-transition: font-size 300ms ease, background-color 300ms ease;
+    	  transition: font-size 300ms ease, background-color 300ms ease;
+
+    		padding: 1px 4px;
+
+        &:link {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-darkgrey;
+        }
+
+        &:visited {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-darkgrey;
+        }
+
+        &:hover   {
+          text-decoration:  none;
+          font-weight:      regular;
+      	  background-color: $color-main;
+          color:            #FFFFFF;
+          font-size: 125%;
+          line-height: 125%;
+        }
+
+        &:active  {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: $color-main;
+          color:            #FFFFFF;
+      	}
+      }
+    }
   }
 
 
 	dl {
-		margin: 0 0 18px;
-		font-size: 18px;
-	}
+		margin: 20px 0;
+    color: $color-text;
 
-	dd {
-		margin-left: 18px;
-		font-size: 18px;
-	}
+  	dt {
+      background-color: $color-main;
+      color: #FFFFFF;
 
-	dt {
-		font-size: 18px;
-	}
+      font: normal normal 300 14pt/18pt "Museo Slab";
+
+      padding: 0 2px;
+      margin: 1px 4px;
+      float: left;
+  	}
+
+    dd {
+      border-left: 4px solid $color-darkgrey;
+
+      margin: 1px 4px;
+      padding: 0 5px;
+
+      clear: both;
+
+      p {
+        font: normal normal 300 12pt/16pt "Museo Slab";
+      }
+    }
+
+  }
+
 
 /* #Images
 ================================================== */

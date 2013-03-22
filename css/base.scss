@@ -136,7 +136,7 @@
 		margin     : 0px;
 		padding    : 0px;
 		color      : $color-text;
-		font       : normal normal 300 11pt/14pt "Calibri";
+		font       : normal normal 300 11pt/14pt "Museo Slab";
 		font-family: $font-stack-text;
 
   	a {
@@ -287,7 +287,7 @@
     }
   }
 
-	h3 {
+  h3 {
     display: block;
 
     padding-left: 4px;
@@ -305,21 +305,21 @@
       border-left : 5px solid transparent;
       padding-left: 5px;
 
-    	&:link {
-    		border-left : 5px solid $color-white;
-    		color       : $color-white;
-    	}
-
-    	&:visited {
+      &:link {
         border-left : 5px solid $color-white;
         color       : $color-white;
-    	}
+      }
 
-    	&:hover {
+      &:visited {
+        border-left : 5px solid $color-white;
+        color       : $color-white;
+      }
+
+      &:hover {
         border-left : 5px solid $color-white;
         color       : $color-white;
         background-color: $color-main;
-    	}
+      }
 
       &:active {
         border-left : 5px solid $color-white;
@@ -329,21 +329,136 @@
     }
   }
 
+  h4 {
+    display: block;
+
+    padding-left: 4px;
+
+    color       : $color-white;
+    background-color: $color-grey;
+    font-size   : 21px;
+    line-height : 24px;
+    font-family : "Museo Slab", Arial, sans-serif;
+    text-transform  : uppercase;
+
+    a {
+      display: block;
+      border-left : 8px solid transparent;
+      padding-left: 4px;
+
+      &:link {
+        border-left : 8px solid $color-white;
+        color       : $color-white;
+      }
+
+      &:visited {
+        border-left : 8px solid $color-white;
+        color       : $color-white;
+      }
+
+      &:hover {
+        border-left : 8px solid $color-main;
+        color       : $color-main;
+        background-color: $color-white;
+      }
+
+      &:active {
+        border-left : 8px solid $color-white;
+        color       : $color-white;
+        background-color: $color-main;
+      }
+    }
+  }
+
+  h5 {
+    display: block;
+
+    color       : $color-grey;
+    border-bottom: 2px solid $color-grey;
+    font-size   : 18px;
+    line-height : 24px;
+    font-family : "Nexa Light", Arial, sans-serif;
+
+    a {
+      display: block;
+      padding-left: 4px;
+
+      &:link {
+        color       : $color-grey;
+        border-left: 2px solid $color-main;
+      }
+
+      &:visited {
+        color       : $color-grey;
+        border-left: 2px solid $color-main;
+      }
+
+      &:hover {
+        color       : $color-white;
+        background-color: $color-main;
+        border-left: 2px solid $color-main;
+      }
+
+      &:active {
+        color       : $color-white;
+        background-color: $color-main;
+        border-left: 2px solid $color-main;
+      }
+    }
+  }
+
+	h6 {
+    display: block;
+
+    color       : $color-grey;
+    border-bottom: 2px solid $color-grey;
+    font-size   : 16px;
+    line-height : 20px;
+    font-family : "Nexa Light", Arial, sans-serif;
+
+    a {
+      display: block;
+      padding-left: 4px;
+
+      &:link {
+        color       : $color-grey;
+        border-left: 2px solid $color-main;
+      }
+
+      &:visited {
+        color       : $color-grey;
+        border-left: 2px solid $color-main;
+      }
+
+      &:hover {
+        color       : $color-white;
+        background-color: $color-main;
+        border-left: 2px solid $color-main;
+      }
+
+      &:active {
+        color       : $color-white;
+        background-color: $color-main;
+        border-left: 2px solid $color-main;
+      }
+    }
+  }
+
 
 /* #Quotes
 ================================================== */
 
 	blockquote {
-		border-left     : 4px solid $color-main;
+		border-left     : 5px solid $color-main;
     background-color: #E6E6E6;
 
 		margin          : 30px 0 30px 15px;
-		padding         : 5px;
+		padding         : 10px 5px;
 
     p {
   		color  : $color-darkgrey;
 
-      font       : normal normal 300 12pt/18pt "Bitter";
+      font       : normal normal 300 14pt/22pt "Bitter";
       font-family: $font-stack-text;
 
   		padding: 0 10px;
@@ -372,7 +487,7 @@
 
 		clear: both;
 
-		margin: 10px 0 30px;
+		margin: 10px 0;
 
 
   	&.line {
@@ -386,7 +501,7 @@
   		float: none;
       clear: both;
 
-  		margin: 0 0 1.45em;
+  		margin: 0;
   	}
 
   	&.space {
@@ -411,9 +526,10 @@
 
 	.permalink { float: right; }
 
-	.older { float: right; }
-	.newer { float: left; }
-
+  .pagination {
+  	.older { float: right; }
+  	.newer { float: left; }
+  }
 
 /* #Lists
 ================================================== */
@@ -422,81 +538,80 @@
 		margin: 2px 10px 2px 0px;
 		padding: 2px 5px 2px 0px;
 		font-size: 14px;
+
+    &.full-left {
+      padding-left: 0;
+    }
 	}
 
-	ul.full-left,
-	ol.full-left {
-		padding-left: 0px;
-	}
+  ol {
+    list-style: decimal;
+  }
 
 	ul {
-		list-style: none outside;
-	}
-
-	ol {
-		list-style: decimal;
-	}
-
-	ol, ul.square, ul.circle, ul.disc {
-		padding-left: 15px;
-	}
-
-	ul.square {
     list-style-type:square;
-	}
+    list-style-position: inside;
 
-	ul.circle {
-    list-style-type: circle;
-	}
+    &.none {
+      list-style-type:none;
+    }
 
-	ul.disc {
-    list-style-type:disc;
-	}
+    &.square {
+      list-style-type:square;
+    }
 
-	li {
-		display: block;
+    &.circle {
+      list-style-type: circle;
+    }
 
-    color: $color-text;
+    &.disc {
+      list-style-type:disc;
+    }
 
-		padding: 2px;
-    margin: 1px 4px;
+    li {
+      display: list-item;
+      color: $color-text;
 
-    a {
-      display: block;
+      padding: 2px;
+      margin: 1px 4px;
 
-      padding: 4px 2px;
+      a {
+        display: block;
 
-      &:link    {
-        text-decoration:  none;
-        font-weight:      regular;
-        border:           none;
-        background-color: transparent;
-        color:            $color-main;
+        padding: 4px 2px;
+
+        &:link    {
+          text-decoration:  none;
+          font-weight:      regular;
+          border:           none;
+          background-color: transparent;
+          color:            $color-main;
+        }
+
+        &:visited {
+          text-decoration:  none;
+          font-weight:      regular;
+          border:           none;
+          background-color: transparent;
+          color:            $color-main;
+        }
+
+        &:hover   {
+          text-decoration:  none;
+          font-weight:      regular;
+          border:           none;
+          background-color: $color-main;
+          color:            #FFFFFF;
+        }
+
+        &:active  {
+          text-decoration:  none;
+          font-weight:      regular;
+          border:           none;
+          background-color: transparent;
+          color:            $color-main;
+        }
       }
-
-      &:visited {
-        text-decoration:  none;
-        font-weight:      regular;
-        border:           none;
-        background-color: transparent;
-        color:            $color-main;
-      }
-
-      &:hover   {
-        text-decoration:  none;
-        font-weight:      regular;
-        border:           none;
-        background-color: $color-main;
-        color:            #FFFFFF;
-      }
-
-      &:active  {
-        text-decoration:  none;
-        font-weight:      regular;
-        border:           none;
-        background-color: transparent;
-        color:            $color-main;
-    	}
     }
   }
 
@@ -510,6 +625,9 @@
     width: 100%;
 
     li {
+
+      display: list-item;
+      list-style-type: disc;
 
       border-width: 1px 0;
       border-style: solid;
@@ -530,11 +648,7 @@
         -o-transition: font-size 300ms ease, background-color 300ms ease;
         transition: font-size 300ms ease, background-color 300ms ease;
 
-        padding: 1px 2px;
-
-        &:before {
-          content: ' • ';
-        }
+        padding: 1px 3px;
 
         &:link {
           text-decoration:  none;
@@ -579,7 +693,7 @@
 
   	li {
 
-      border-width: 1px 0;
+      border-width: 0 0 2px 0;
       border-style: solid;
       border-color: $color-white;
 
@@ -630,6 +744,10 @@
           color:            #FFFFFF;
       	}
       }
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
 
@@ -639,18 +757,21 @@
     color: $color-text;
 
   	dt {
+      border-width: 2px;
+      border-style: solid;
+      border-color: $color-darkgrey;
       background-color: $color-main;
       color: #FFFFFF;
 
       font: normal normal 300 14pt/18pt "Museo Slab";
 
-      padding: 0 2px;
-      margin: 1px 4px;
+      padding: 2px;
+      margin: 4px;
       float: left;
   	}
 
     dd {
-      border-left: 4px solid $color-darkgrey;
+      border-left: 2px solid $color-darkgrey;
 
       margin: 1px 4px;
       padding: 0 5px;
@@ -742,7 +863,82 @@
 /* #Article
 ================================================== */
 
+  article {
+    display: block;
 
+    margin: 10px 0;
+    padding: 4px 0;
+
+    header {
+      margin: 0;
+      padding: 0;
+
+      .tags {
+        font: normal normal 300 16px/20px "Bitter";
+        color: $color-darkgrey;
+        text-transform: uppercase;
+        text-align: right;
+      }
+    }
+
+    .content {
+      margin: 10px 0;
+      padding: 2px 0;
+
+      p {
+        margin: 5px 0;
+        padding: 5px 0;
+
+        font: normal normal 300 13pt/20pt "Museo Slab";
+      }
+
+      li {
+        font: normal normal 300 11pt/12pt "Museo Slab";
+      }
+
+    }
+
+    .discuss {
+      font: normal normal 300 14px/20px "Bitter";
+      color: $color-darkgrey;
+
+      text-transform: uppercase;
+
+      float: right;
+
+      a {
+
+        &:link {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-darkgrey;
+        }
+
+        &:visited {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-darkgrey;
+        }
+
+        &:hover   {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-sec;
+        }
+
+        &:active  {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-sec;
+        }
+      }
+    }
+
+  }
 
 
 

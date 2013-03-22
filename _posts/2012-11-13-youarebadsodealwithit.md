@@ -3,8 +3,9 @@ layout: post
 title: i am bad. deal with it
 date: 2012-11-13
 tags: [life]
-div: false
-comments: true
+comments: false
+
+pure_markdown: false
 archived: true
 ---
 

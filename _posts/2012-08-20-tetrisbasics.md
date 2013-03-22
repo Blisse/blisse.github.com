@@ -3,7 +3,10 @@ layout: post
 title: tetris basics
 tags: [gaming, life]
 date: 2012-08-20
-div: false
+comments: false
+
+pure_markdown: false
+archived: true
 ---
 
 

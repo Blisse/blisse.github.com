@@ -4,8 +4,8 @@
 /* #Header
 ================================================== */
 
-
-	header {
+header {
+	&.page {
 		overflow-x: hidden;
 		overflow-y: hidden;
 
@@ -21,7 +21,7 @@
 		width: 100%;
 	}
 
-  header a {
+  &.page a {
     @include transition-ease;
 
     &:link {
@@ -42,14 +42,14 @@
 
   }
 
-  header #name-wrapper {
+  &.page #name-wrapper {
     margin: 10px 0 10px 0;
     text-align: center;
     display: block;
     vertical-align: middle;
   }
 
-  header #name a {
+  &.page #name a {
     text-align: center;
     vertical-align: middle;
 
@@ -114,11 +114,11 @@
   }
 
 
-  header .links-wrapper {
+  &.page .links-wrapper {
     text-align: center;
   }
 
-  header #links a {
+  &.page #links a {
     display: inline-block;
     opacity: 0.75;
   }
@@ -130,7 +130,7 @@
   @include social-links(rss-hover, "/images/icons/appbar.rss-hover.png");
 
 
-  header nav {
+  &.page nav {
     margin: 5px 0 5px 0;
     padding: 5px 0 5px 0;
      #nav-wrapper-outer {
@@ -154,11 +154,11 @@
     }
   }
 
-  header nav ul#nav-top li {
+  &.page nav ul#nav-top li {
     padding: 0 2px;
   }
 
-  header nav ul#nav-top li a {
+  &.page nav ul#nav-top li a {
     font-variant: normal;
     font-style: normal;
     font-weight: 200;
@@ -173,14 +173,14 @@
     &:active {color: $color-grey;}
   }
 
-  header nav ul#nav-top li.currentpage a {
+  &.page nav ul#nav-top li.currentpage a {
     &:link {color: $color-sec;}
     &:visited {color: $color-sec;}
     &:hover {color: $color-main;}
     &:active {color: $color-sec;}
   }
 
-  header nav ul#nav-bottom li {
+  &.page nav ul#nav-bottom li {
     padding: 0 1px;
 
     a {
@@ -199,9 +199,10 @@
     }
   }
 
-  header nav ul#nav-bottom li.currentpage a {
+  &.page nav ul#nav-bottom li.currentpage a {
     &:link { color: #FFFFFF; }
     &:visited { color: #FFFFFF; }
     &:hover { color: $color-main; }
     &:active { color: #FFFFFF; }
   }
+}

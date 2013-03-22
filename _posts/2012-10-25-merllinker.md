@@ -3,7 +3,10 @@ layout: post
 title: CS241 MERL file linker
 date: 2012-10-25
 tags: [school]
-comments: true
+comments: false
+
+pure_markdown: false
+archived: true
 ---
 
 <p>

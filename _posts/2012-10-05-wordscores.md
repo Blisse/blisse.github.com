@@ -4,10 +4,13 @@ title: word scores
 date: 2012-10-05
 tags: [programming]
 comments: true
+
+pure_markdown: false
+archived: false
 ---
 
 <p>
- <img src="http://i.imgur.com/OBg92.jpg" alt="1..26 for a..z" class="scale-with-grid" /> 
+ <img src="http://i.imgur.com/OBg92.jpg" alt="1..26 for a..z" class="scale-with-grid" />
 </p>
 
 <p>
@@ -15,7 +18,7 @@ comments: true
 </p>
 
 <p>
-  First, I'll define 
+  First, I'll define
 </p>
 
 <p>
@@ -30,7 +33,7 @@ comments: true
 </p>
 
 <p>
-{% highlight python %} 
+{% highlight python %}
 
 import os, inspect, string
 write_file = "output.txt"
@@ -54,7 +57,7 @@ def select_word(word, lower_range, upper_range):
 
 def walk_words(dictionary_path, lower_range, upper_range):
   for word in open(dictionary_path).readlines():
-    word = word.strip().lower() 
+    word = word.strip().lower()
     if select_word(word, lower_range, upper_range) == True:
       output.write( str( ( word, word_score_list(word) ) ).strip("()") + "\n" )
 
@@ -82,7 +85,7 @@ if __name__ == "__main__":
 </p>
 
 <p>
-  Ignoring non-ASCII characters, I get 5340 matches for words that total to 100. 
+  Ignoring non-ASCII characters, I get 5340 matches for words that total to 100.
   'Inefficient' appears on there, so I have proven that first image is false with this contradiction.
 </p>
 

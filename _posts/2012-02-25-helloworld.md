@@ -3,13 +3,16 @@ layout: post
 title: hello world!
 date: 2012-02-25
 tags: [this site, milestones]
+comments: false
+
+pure_markdown: true
+archived: false
 ---
 
-<p>
-	This is my first post. So, an obligatory
-</p>
 
-<p>
+This is my first post. So, an obligatory
+
+
 {% highlight python %}
 
 def main():
@@ -19,8 +22,7 @@ if __name__ == "__main__":
   main()
 
 {% endhighlight %}
-</p>
 
-<p>
-	Thanks for visiting~
-</p>
+
+Thanks for visiting~
+

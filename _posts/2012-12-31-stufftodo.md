@@ -3,7 +3,9 @@ layout: post
 title: stuff to do
 date: 2012-12-31
 tags: [life]
-div: true
+comments: true
+
+pure_markdown: true
 archived: false
 ---
 

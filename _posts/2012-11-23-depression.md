@@ -3,7 +3,9 @@ layout: post
 title: depression
 date: 2012-11-23
 tags: [life]
-div: false
+comments: false
+
+pure_markdown: false
 archived: false
 ---
 

@@ -4,12 +4,13 @@ permalink: /archive/:year/:month/:day/index.html
 url: http://www.laivictor.com
 atom: http://www.laivictor.com/atom.xml
 title: lai.victor
-description:
+description: personal
 author: Victor Lai
 email: lai.victor.vl@gmail.com
 github: blisse
 twitter: laivictorvl
 linkedin: laivictor
+
 paginate: 5
 
 

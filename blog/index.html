@@ -8,8 +8,8 @@ sub: all
 {% for post in paginator.posts %}
 {% if post.archived == false %}
 
-<article>
-  <div class="container">
+<article class="post">
+  <header class="container">
     <div class="sixteen columns">
     	<div class="title">
         <h2>
@@ -27,10 +27,10 @@ sub: all
         about {{ post.tags | array_to_sentence_string }}.
       </div>
     </div>
-  </div>
+  </header>
 
   <div class="content">
-  {% if post.div == false %}
+  {% if post.pure_markdown == false %}
   	{{ post.content }}
   {% else %}
 	  <div class="container">
@@ -40,15 +40,16 @@ sub: all
 	  </div>
   {% endif %}
   </div>
-</article>
 
-	{% if post.comments %}
-	<div class="sixteen columns">
-		<div class="discuss">
-			<a href="{{ post.url }}" class="discuss">
-				Discuss
-			</a>
-		</div>
+	{% if post.comments == true %}
+  <div class="container">
+  	<div class="sixteen columns">
+  		<div class="discuss">
+  			<a href="{{ post.url }}" class="discuss">
+  				Discuss more ..
+  			</a>
+  		</div>
+    </div>
 	</div>
 	{% endif %}
 </article>
@@ -61,3 +62,22 @@ sub: all
 
 {% endif %}
 {% endfor %}
+
+
+<div class="container">
+  <div class="sixteen columns">
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <a href="/" title="Previous Page">&laquo; Previous</a>
+        {% else %}
+        <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+        {% endif %}
+      {% endif %}
+
+      {% if paginator.next_page %}
+      <a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+      {% endif %}
+    </nav>
+  </div>
+</div>

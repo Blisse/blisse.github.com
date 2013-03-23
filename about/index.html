@@ -6,72 +6,103 @@ sub: me
 ---
 
 <div class="container">
-	<div class="sixteen columns">
+	<section class="sixteen columns">
 		<p>
-			My alias is Bliss \'blis\, which is not only my favourite <a href="http://www.merriam-webster.com/dictionary/bliss" target="_blank">
-			word</a>, but also one of my favourite <a href="http://www.youtube.com/watch?v=eMqsWc8muj8" target="_blank">songs</a>.
+			My alias is Bliss \'blis\, which is not only my favourite <a href="http://www.merriam-webster.com/dictionary/bliss">
+			word</a>, but also one of my favourite <a href="http://www.youtube.com/watch?v=eMqsWc8muj8">songs</a>.
 		</p>
-	</div>
+	</section>
 
-	<div class="six columns">
-		<h3><a href="http://en.wikipedia.org/wiki/Copyleft">Copyleft</a></h3>
+	<section class="eight columns">
+		<header>
+			<h3>
+				<a href="http://en.wikipedia.org/wiki/Copyleft">
+					Copyleft
+				</a>
+			</h3>
+		</header>
+		<div class="content">
+			<p>
+				This website is built using <a href="http://github.com/mojombo/jekyll"
+				target="_blank">Jekyll</a>, a blog-aware, static site generator written in Ruby.
+				The <a href="http://en.wikipedia.org/wiki/Source_code">source code</a> used to
+				create this website is publicly available on <a href="http://github.com/Blisse/blisse.github.com">GitHub</a>.
+			</p>
+			<p>
+				All the posts here are Copyright &copy; <a href="{{ site.url }}">{{ site.author }}.</a>
+				Any thing else is <a href="http://en.wikipedia.org/wiki/Mit_license">MIT licensed</a>.
+				Feel free to reuse the <a href="http://en.wikipedia.org/wiki/Html">HTML</a> and
+				<a href="http://en.wikipedia.org/wiki/Css">CSS</a>.
+			</p>
+		</div>
+	</section>
 
-		<p>
-			This website is built using <a href="http://github.com/mojombo/jekyll"
-			target="_blank">Jekyll</a>, a blog-aware, static site generator written in Ruby.
-			The <a href="http://en.wikipedia.org/wiki/Source_code" target="_blank">source code</a> used to
-			create this website is publicly available on <a href="http://github.com/Blisse/blisse.github.com" target="_blank">GitHub</a>.
-		</p>
-		<p>
-			All the posts here are Copyright &copy; <a href="{{ site.url }}" target="_blank">{{ site.author }}.</a>
-			Any thing else is <a href="http://en.wikipedia.org/wiki/Mit_license" target="_blank">MIT licensed</a>.
-			Feel free to reuse the <a href="http://en.wikipedia.org/wiki/Html" target="_blank">HTML</a> and
-			<a href="http://en.wikipedia.org/wiki/Css" target="_blank">CSS</a>.
-		</p>
-	</div>
+	<section class="eight columns">
+		<header>
+			<h3>
+				Thanks
+			</h3>
+		</header>
+		<div class="content">
+			<ul class="simple-small">
+				<li>
+					<a href="https://github.com/mattgraham/Midnight/blob/master/stylesheets/pygment_trac.css">
+						Matt Graham's Pygments theme
+					</a>
+				</li>
+				<li>
+					<a href="http://abduzeedo.com/">
+						abduzeedo
+					</a>
+				</li>
+				<li>
+					<a href="http://tympanus.net/codrops/">
+						Codrops
+					</a>
+				</li>
+				<li>
+					<a href="http://fontfabric.com/">
+						Fontfabric
+					</a>
+				</li>
+				<li>
+					<a href="http://www.google.com/webfonts">
+						Google Fonts
+					</a>
+				</li>
+				<li>
+					<a href="http://www.getskeleton.com">
+						Dave Gamache's Skeleton theme
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
 
-	<div class="four columns parent-padding">
-		<img class="scale-with-grid child-padding" alt="Bliss" src="/images/bliss.jpg">
-	</div>
 
-	<div class="six columns">
-		<h3>Thanks</h3>
-		<ul class="simple-small">
-			<li>
-				<a href="https://github.com/mattgraham/Midnight/blob/master/stylesheets/pygment_trac.css" target="_blank">Matt Graham's Pygments theme</a>
-			</li>
-			<li>
-				<a href="http://abduzeedo.com/" target="_blank">abduzeedo</a>
-			</li>
-			<li>
-				<a href="http://tympanus.net/codrops/">Codrops</a>
-			</li>
-			<li>
-				<a href="http://fontfabric.com/" target="_blank">Fontfabric</a>
-			</li>
-			<li>
-				<a href="http://www.google.com/webfonts">Google Fonts</a>
-			</li>
-			<li>
-				<a href="http://www.getskeleton.com" target="_blank">Dave Gamache's Skeleton theme</a>
-			</li>
-		</ul>
-	</div>
+	<section class="sixteen columns">
+		<header>
+			<h3>
+				Disclaimer
+			</h3>
+		</header>
+		<div class="content">
+			<p>
+				The opinions expressed herein are my own personal opinions and do not represent my employer's view in any way.
+				This website is not responsible for externally hosted material, including linked
+				articles, photos or any other media.
+			</p>
+		</div>
 
-
-	<div class="sixteen columns">
-		<h3>Disclaimer</h3>
-
-		<p>
-			The opinions expressed herein are my own personal opinions and do not represent my employer's view in any way.
-			This website is not responsible for externally hosted material, including linked
-			articles, photos or any other media.
-		</p>
-
-		<h3>Contact</h3>
-
-		<p>
-			If you want to contact me, send me a message at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
-		</p>
+		<header>
+			<h3>
+				Contact
+			</h3>
+		</header>
+		<div class="content">
+			<p>
+				If you want to contact me, send me a message at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+			</p>
+		</div>
 	</div>
 </div>

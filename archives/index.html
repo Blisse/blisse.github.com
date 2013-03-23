@@ -1,0 +1,30 @@
+---
+layout: page
+title: archive
+main: blog
+sub: archives
+---
+
+{% assign posts = site.posts %}
+
+<div class="container">
+	<div class="sixteen columns">
+		{% for post in site.posts %}
+		<section class="archives">
+			<header>
+				<h3>
+					<a href="{{ post.url }}">
+						<span class="date">
+							{{ post.date | date: "%Y%m%d" }}
+						</span>
+						&nbsp;&raquo;&nbsp;{{ post.title }}
+					</a>
+				</h3>
+				<div class="tags">
+					about {{ post.tags | array_to_sentence_string }}.
+				</div>
+			</header>
+		</section>
+		{% endfor %}
+	</div>
+</div>

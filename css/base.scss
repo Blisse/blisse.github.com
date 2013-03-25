@@ -374,7 +374,7 @@
     display: block;
 
     color       : $color-grey;
-    border-bottom: 2px solid $color-grey;
+    border-bottom: 0 solid $color-grey;
     font-size   : 18px;
     line-height : 24px;
     font-family : "Nexa Light", Arial, sans-serif;
@@ -519,6 +519,242 @@
   	}
 
   }
+
+
+
+/* #Section
+================================================== */
+
+  section {
+    display: block;
+
+    margin: 15px 0;
+    padding: 0;
+
+    header {
+      margin: 0;
+      padding: 0;
+
+      .tags {
+        font: normal normal 300 16px/20px "Bitter";
+        color: $color-darkgrey;
+        text-transform: uppercase;
+        text-align: right;
+      }
+
+      .caption  {
+        p {
+          padding: 0 5px;
+
+          font: normal normal 300 13pt/20pt "Nexa Light";
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    .content {
+      margin: 0 0 10px 0;
+      padding: 0 0;
+
+
+      p {
+        margin: 10px 0;
+        padding: 5px 0;
+
+        font: normal normal 300 13pt/20pt "Museo Slab";
+      }
+
+    }
+
+    &.archives {
+      border-bottom: 2px solid $color-grey;
+
+    }
+
+    &.branch {
+      display: table;
+      border-collapse:collapse;
+      float: none;
+
+      .row {
+
+        display: table-row;
+        float: none;
+        header {
+          display: table-cell;
+          float: none;
+
+          margin: 0;
+          padding: 0;
+
+          background-color: $color-main;
+
+          h2 {
+
+            padding: 0 5px;
+            color: #FFFFFF;
+            font-size: 28pt;
+          }
+
+          .caption  {
+            p {
+              padding: 0 5px;
+
+              font: normal normal 300 13pt/20pt "Nexa Light";
+              color: #FFFFFF;
+            }
+          }
+        }
+
+        .content {
+          display: table-cell;
+          float: none;
+
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {
+
+    section {
+
+      &.branch {
+        display: block;
+
+        .row {
+          display: block;
+          float: left;
+
+          header {
+            display: block;
+            float: left;
+
+            margin: 0;
+            padding: 0;
+
+            background-color: $color-main;
+
+            h2 {
+
+              padding: 0 5px;
+              color: #FFFFFF;
+            }
+
+            .caption  {
+              p {
+                padding: 0 5px;
+
+                font: normal normal 300 13pt/20pt "Nexa Light";
+                color: #FFFFFF;
+              }
+            }
+          }
+
+          .content {
+            display: block;
+            float: left;
+
+            margin: 0;
+            padding: 0;
+
+          }
+        }
+      }
+    }
+  }
+
+
+
+/* #Article
+================================================== */
+
+  article {
+    display: block;
+
+    margin: 10px 0;
+    padding: 4px 0;
+
+    hr {
+      border-width: 1px;
+      height: 1px;
+    }
+
+    header {
+      margin: 0;
+      padding: 0;
+
+      .tags {
+        font: normal normal 300 16px/20px "Bitter";
+        color: $color-darkgrey;
+        text-transform: uppercase;
+        text-align: right;
+      }
+    }
+
+    .content {
+      margin: 10px 0;
+      padding: 2px 0;
+
+      p {
+        margin: 10px 0;
+        padding: 5px 0;
+
+        font: normal normal 300 13pt/20pt "Museo Slab";
+      }
+
+      li {
+        font: normal normal 300 11pt/12pt "Museo Slab";
+      }
+
+    }
+
+    .discuss {
+      font: normal normal 300 14px/20px "Bitter";
+      color: $color-darkgrey;
+
+      text-transform: uppercase;
+
+      float: right;
+
+      a {
+
+        &:link {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-darkgrey;
+        }
+
+        &:visited {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-darkgrey;
+        }
+
+        &:hover   {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-sec;
+        }
+
+        &:active  {
+          text-decoration:  none;
+          font-weight:      regular;
+          background-color: transparent;
+          color:            $color-sec;
+        }
+      }
+    }
+
+  }
+
+
 
 
 /* #Posts
@@ -849,210 +1085,6 @@
 	  border-top-right-radius: 7px 7px;
 	  */
 	}
-
-
-
-/* #Section
-================================================== */
-
-  section {
-    display: block;
-
-    margin: 15px 0;
-    padding: 0;
-
-    header {
-      margin: 0;
-      padding: 0;
-
-      .tags {
-        font: normal normal 300 16px/20px "Bitter";
-        color: $color-darkgrey;
-        text-transform: uppercase;
-        text-align: right;
-      }
-    }
-
-    .content {
-      margin: 0 0 10px 0;
-      padding: 0 0;
-
-      p {
-
-        margin: 0;
-        padding: 0;
-
-        font: normal normal 300 13pt/20pt "Museo Slab";
-      }
-
-    }
-
-    &.archives {
-      border-bottom: 2px solid $color-grey;
-
-    }
-
-    &.branch {
-      display: table;
-      border-collapse:collapse;
-      float: none;
-
-      .row {
-
-        display: table-row;
-        float: none;
-        header {
-          display: table-cell;
-          float: none;
-
-          margin: 0;
-          padding: 0;
-
-          background-color: $color-main;
-
-          h2 {
-
-            padding: 0 5px;
-            color: #FFFFFF;
-            font-size: 28pt;
-          }
-        }
-
-        .content {
-          display: table-cell;
-          float: none;
-
-          margin: 0;
-          padding: 0;
-        }
-      }
-    }
-  }
-
-  /* All Mobile Sizes (devices and browser) */
-  @media only screen and (max-width: 767px) {
-
-    section {
-
-      &.branch {
-        display: block;
-
-        .row {
-          display: block;
-          float: left;
-
-          header {
-            display: block;
-            float: left;
-
-            margin: 0;
-            padding: 0;
-
-            background-color: $color-main;
-
-            h2 {
-
-              padding: 0 5px;
-              color: #FFFFFF;
-            }
-          }
-
-          .content {
-            display: block;
-            float: left;
-
-            margin: 0;
-            padding: 0;
-
-          }
-        }
-      }
-    }
-  }
-
-
-
-/* #Article
-================================================== */
-
-  article {
-    display: block;
-
-    margin: 10px 0;
-    padding: 4px 0;
-
-    header {
-      margin: 0;
-      padding: 0;
-
-      .tags {
-        font: normal normal 300 16px/20px "Bitter";
-        color: $color-darkgrey;
-        text-transform: uppercase;
-        text-align: right;
-      }
-    }
-
-    .content {
-      margin: 10px 0;
-      padding: 2px 0;
-
-      p {
-        margin: 5px 0;
-        padding: 5px 0;
-
-        font: normal normal 300 13pt/20pt "Museo Slab";
-      }
-
-      li {
-        font: normal normal 300 11pt/12pt "Museo Slab";
-      }
-
-    }
-
-    .discuss {
-      font: normal normal 300 14px/20px "Bitter";
-      color: $color-darkgrey;
-
-      text-transform: uppercase;
-
-      float: right;
-
-      a {
-
-        &:link {
-          text-decoration:  none;
-          font-weight:      regular;
-          background-color: transparent;
-          color:            $color-darkgrey;
-        }
-
-        &:visited {
-          text-decoration:  none;
-          font-weight:      regular;
-          background-color: transparent;
-          color:            $color-darkgrey;
-        }
-
-        &:hover   {
-          text-decoration:  none;
-          font-weight:      regular;
-          background-color: transparent;
-          color:            $color-sec;
-        }
-
-        &:active  {
-          text-decoration:  none;
-          font-weight:      regular;
-          background-color: transparent;
-          color:            $color-sec;
-        }
-      }
-    }
-
-  }
-
-
 
 /* #Figures
 ================================================== */

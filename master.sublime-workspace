@@ -1,0 +1,762 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"colo",
+				"color-darkgrey"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"col",
+				"color-darkgrey"
+			],
+			[
+				"color",
+				"color-main"
+			],
+			[
+				"border-",
+				"border-width:   (property)"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"txt",
+				"txt-colour"
+			],
+			[
+				"bg",
+				"bg-colour"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"border-c",
+				"border-color:   (property)"
+			],
+			[
+				"Hel",
+				"HelvetiList"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"Se",
+				"Semilight"
+			],
+			[
+				"p",
+				"padding-top"
+			],
+			[
+				"font-",
+				"font-style:   (property)"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"twit",
+				"twitter-hover"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"u",
+				"UTF-8"
+			],
+			[
+				"T",
+				"TEST_DIRECTORY_SLAVE  (variable)"
+			],
+			[
+				"AT",
+				"ATTRSTR"
+			],
+			[
+				"f",
+				"file_type  (variable)"
+			],
+			[
+				"file",
+				"filepath"
+			],
+			[
+				"fil",
+				"filepath"
+			],
+			[
+				"read",
+				"readfile"
+			],
+			[
+				"wr",
+				"writefile"
+			],
+			[
+				"attr",
+				"attr_conv"
+			],
+			[
+				"write",
+				"write_attributes_ID3_map"
+			],
+			[
+				"gen",
+				"generate_meta_master"
+			],
+			[
+				"aud",
+				"audio_file"
+			],
+			[
+				"call",
+				"call_ID3_map"
+			],
+			[
+				"att",
+				"attributes_ID3_map  (variable)"
+			],
+			[
+				"alb",
+				"albumartist"
+			],
+			[
+				"supp",
+				"supported_types"
+			],
+			[
+				"sup",
+				"supported_types"
+			],
+			[
+				"file_",
+				"file_path"
+			],
+			[
+				"filepath",
+				"filepath"
+			],
+			[
+				"file_pa",
+				"file_path_relative"
+			],
+			[
+				"f_",
+				"f_n"
+			],
+			[
+				"ENC",
+				"ENCODING"
+			],
+			[
+				"ext",
+				"extensions"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"alignm",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"align ",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"alignment",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"Alignment",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"filediff",
+				"FileDiffs: Menu"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"INsta",
+				"Package Control: Install Package"
+			],
+			[
+				"intel",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"Linter",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"Lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"Pin",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 522.0
+	},
+	"console":
+	{
+		"height": 127.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/atom.xml",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/archives/index.html",
+		"/C/Users/Victor/Desktop/f2ksdk/foobar2000/helpers/create_directory_helper.cpp",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_config.yml",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/README.markdown",
+		"/D/Root/Air/Dropbox/save.txt",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/trackers/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-03-21-anewbeginning.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardhead.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/ogltictactoe/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/post.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/page.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/blog/index.html",
+		"/C/Users/Victor/.bashrc",
+		"/C/Users/Victor/.gitconfig",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/setp/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/site/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/archive/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-10-05-wordscores.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-11-12-teamliquidattack.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-09-22-dataurls.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-22-html5valid.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/default.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_plugins/jekyll-sass.rb",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_plugins/pagination.rb",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/blog/page-2/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-19-tetris.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/404.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/blog/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/archive/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/page5/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-07-20-justgoforit.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-12-31-stufftodo.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-11-23-depression.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-12-05-aclockworkwtf.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-11-13-youarebadsodealwithit.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-10-25-merllinker.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-10-14-chairsate5.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-09-15-gamingprofessionalism.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-20-tetrisbasics.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-11-reallynicecables.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-09-08-codersblock.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-07-26-dropbox.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-03-dexpot.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-07-11-counter-memories.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-02-25-helloworld.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-04-14-failinterview.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/page2/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/highlights/index.html",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/project.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/css/base.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/resume.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/footer.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/css/footer.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header/header.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer/footer.scss",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer/footer.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/scss/base.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/compiled/base.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header/header.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/ie.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-awesome/font-awesome.css",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/color-palette.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/googlefonts.html",
+		"/E/__flac-files.txt",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/layout.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/projects/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/projects/ogltictactoe/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitignore",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/nexa_light-webfont.svg",
+		"/C/Users/Victor/Desktop/readme.html",
+		"/C/Users/Victor/Desktop/WindowsIcons-master/readme.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/metro-icons-fixed-2000-webfont.svg",
+		"/C/Users/Victor/AppData/Local/Temp/7zOC524.tmp/readme.txt",
+		"/D/Root/Air/Dropbox/Fonts/Sofia Pro Light/Sofia Pro Light.svg",
+		"/E/Music/Muse/Absolution/GUIDE.txt",
+		"/E/Music/Muse/Absolution/Fingerprint.txt",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/tools/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/Sofia Pro Light.svg",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/Museo Sans 500.svg",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/Nexa Bold.svg",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/fontawesome-webfont.svg",
+		"/C/Users/Victor/Desktop/codepro_regulardemo_english/stylesheet.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/print.css",
+		"/C/Users/Victor/AppData/Local/Temp/7zO72EC.tmp/Webfont License.txt",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/reset.css",
+		"/C/Users/Victor/AppData/Local/Temp/7zO51C7.tmp/readme.txt",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/resume/index.html",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
+		"/C/Users/Victor/Desktop/bootstrap/js/bootstrap.js",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/FileDiffs.sublime-settings",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-12-31-stufftodo.markdown",
+		"/C/Users/Victor/Downloads/id3v2.3.0 - ID3.org.htm",
+		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/README.markdown",
+		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/CNAME",
+		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/.git/refs/heads/gh-pages",
+		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/.git/refs/heads/master",
+		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/404.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/.gitignore",
+		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/_config.yml",
+		"/D/Root/Air/Dropbox/Sides/STagger/Strings/Attributes.py",
+		"/D/Root/Air/Dropbox/Sides/STagger/master_music_library",
+		"/D/Root/Air/Dropbox/Sides/STagger/Libraries/Attributes.py",
+		"/D/Root/Air/Dropbox/Sides/STagger/muta.py",
+		"/D/Root/Air/Dropbox/Sides/STagger/Libraries/Folders.py"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"h2",
+			"h3",
+			"Open Sans",
+			"Cambria",
+			"14pt",
+			"Museo Slab",
+			"16pt",
+			"13pt/20pt",
+			"#####",
+			" target=\"_blank\"",
+			"four",
+			"thirteen",
+			"three",
+			"none",
+			"\n      float: none;",
+			"clear",
+			"block",
+			"category",
+			"div",
+			"section",
+			"container",
+			"div",
+			" target=\"_blank\"",
+			"highlights",
+			"</p>",
+			"<p>",
+			"</p>",
+			"<p>",
+			"</p>",
+			"<p>",
+			"main",
+			"darkgrey",
+			"\n          background-color: $color-main;",
+			"<p>",
+			"</p>",
+			"\n<p>",
+			"\n</p>",
+			"\n<p>",
+			"</p>",
+			"\n<p>",
+			"<p>",
+			"</p>",
+			"<p>",
+			"</h1>",
+			"\n		<p>",
+			"\n		</p>",
+			"4px",
+			"6px",
+			"white",
+			"8px",
+			"4px",
+			"2px",
+			"5px",
+			"ul",
+			"header",
+			" li:before ",
+			"rgb(0,216,204)",
+			"li a",
+			"8",
+			"4",
+			"0",
+			"$color-white",
+			"a:",
+			"$color-white",
+			"\"#\">",
+			"<a ",
+			"><",
+			"date",
+			"page",
+			"span",
+			"58.8px ",
+			"white",
+			"$color-white",
+			"main",
+			"rgb(0, 130, 135)",
+			"rgba(221, 221, 221,1.0)",
+			"0.3s",
+			"li ",
+			"ul.simple-small ",
+			"grey",
+			"main",
+			"sec",
+			"white",
+			"darkgrey",
+			"main",
+			"'",
+			"hr",
+			"12px",
+			"pt",
+			"h2",
+			"###",
+			"        </li>\n        <li>",
+			"\n        </li>\n        <li>",
+			"px",
+			"33.6",
+			"50.4",
+			"221",
+			"36px",
+			"58.8pt",
+			"42pt",
+			"h1",
+			"left-",
+			"left",
+			"58.8pt solid ",
+			"50pt",
+			"42pt",
+			"darkgrey",
+			"#FFFFFF",
+			"\n    		line-height : 42pt;",
+			"main",
+			"sec",
+			"rgba(0,164,164,1.0)",
+			"42pt",
+			"rgba(0,130,135,1.0)",
+			"rgba(255, 255, 255, 1.0)",
+			",",
+			"255",
+			"74",
+			"0",
+			"74",
+			"ss",
+			"221",
+			"37",
+			"rgba(0,130,135,1.0)",
+			"p a",
+			"h1 a",
+			"h1 ",
+			"rgba(0,130,135,1.0);"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\n			{% if page.main == \"blog\" %}\n\n			{% endif %}",
+			"	album 			TALB\n	albumartist 	TPE2\n	artist 			TPE1\n	date			TDAT\n	discnumber		TPOS\n	filename		TOFN\n	filetype		TFLT\n	genre			TCON\n	title			TIT2\n	track			TRCK\n	year			TYER\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.488638357411,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 177.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"header",
+				"css/header.scss"
+			],
+			[
+				"footer.ht",
+				"_includes/footer.html"
+			],
+			[
+				"heascs",
+				"css/header.scss"
+			],
+			[
+				"footer",
+				"css/footer/footer.css"
+			],
+			[
+				"hea",
+				"css/header/header.css"
+			],
+			[
+				"colo",
+				"css/color-palette.css"
+			],
+			[
+				"heade",
+				"css/header/header.css"
+			],
+			[
+				"heht",
+				"_includes/header.html"
+			],
+			[
+				"header.cs",
+				"css/header/header.css"
+			],
+			[
+				"head",
+				"_includes/header.html"
+			],
+			[
+				"muta",
+				"muta.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 256.0,
+	"status_bar_visible": true
+}

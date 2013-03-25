@@ -546,8 +546,9 @@
         p {
           padding: 0 5px;
 
-          font: normal normal 300 13pt/20pt "Nexa Light";
+          font: normal normal 300 11pt/20pt "Bitter";
           color: #FFFFFF;
+          text-transform: uppercase;
         }
       }
     }
@@ -592,16 +593,19 @@
           h2 {
 
             padding: 0 5px;
-            color: #FFFFFF;
+            color: $color-darkgrey;
             font-size: 28pt;
+
+            background-color: $color-bg;
           }
 
           .caption  {
             p {
-              padding: 0 5px;
+                padding: 0 5px;
 
-              font: normal normal 300 13pt/20pt "Nexa Light";
-              color: #FFFFFF;
+                font: normal normal 300 11pt/20pt "Bitter";
+                color: #FFFFFF;
+                text-transform: uppercase;
             }
           }
         }
@@ -641,15 +645,16 @@
             h2 {
 
               padding: 0 5px;
-              color: #FFFFFF;
+              color: $color-darkgrey;
             }
 
             .caption  {
               p {
                 padding: 0 5px;
 
-                font: normal normal 300 13pt/20pt "Nexa Light";
+                font: normal normal 300 11pt/20pt "Bitter";
                 color: #FFFFFF;
+                text-transform: uppercase;
               }
             }
           }

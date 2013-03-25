@@ -387,8 +387,9 @@ section {
       text-align: right; }
     section header .caption p {
       padding: 0 5px;
-      font: normal normal 300 13pt/20pt "Nexa Light";
-      color: #FFFFFF; }
+      font: normal normal 300 11pt/20pt "Bitter";
+      color: #FFFFFF;
+      text-transform: uppercase; }
   section .content {
     margin: 0 0 10px 0;
     padding: 0 0; }
@@ -413,12 +414,14 @@ section {
         background-color: #00a4a4; }
         section.branch .row header h2 {
           padding: 0 5px;
-          color: #FFFFFF;
-          font-size: 28pt; }
+          color: #4a4a4a;
+          font-size: 28pt;
+          background-color: #eeeeee; }
         section.branch .row header .caption p {
           padding: 0 5px;
-          font: normal normal 300 13pt/20pt "Nexa Light";
-          color: #FFFFFF; }
+          font: normal normal 300 11pt/20pt "Bitter";
+          color: #FFFFFF;
+          text-transform: uppercase; }
       section.branch .row .content {
         display: table-cell;
         float: none;
@@ -440,11 +443,12 @@ section {
         background-color: #00a4a4; }
         section.branch .row header h2 {
           padding: 0 5px;
-          color: #FFFFFF; }
+          color: #4a4a4a; }
         section.branch .row header .caption p {
           padding: 0 5px;
-          font: normal normal 300 13pt/20pt "Nexa Light";
-          color: #FFFFFF; }
+          font: normal normal 300 11pt/20pt "Bitter";
+          color: #FFFFFF;
+          text-transform: uppercase; }
       section.branch .row .content {
         display: block;
         float: left;

@@ -136,7 +136,7 @@
 		margin     : 0px;
 		padding    : 0px;
 		color      : $color-text;
-		font       : normal normal 300 11pt/14pt "Museo Slab";
+		font       : normal normal 300 13pt/20pt "Museo Slab";
 		font-family: $font-stack-text;
 
   	a {
@@ -858,8 +858,8 @@
   section {
     display: block;
 
-    margin: 10px 0;
-    padding: 4px 0;
+    margin: 15px 0;
+    padding: 0;
 
     header {
       margin: 0;
@@ -873,24 +873,103 @@
       }
     }
 
-    &.archives {
-      margin: 4px 0;
-    }
-
-
     .content {
-      margin: 10px 0;
-      padding: 2px 0;
+      margin: 0 0 10px 0;
+      padding: 0 0;
 
       p {
-        margin: 5px 0;
-        padding: 5px 0;
+
+        margin: 0;
+        padding: 0;
 
         font: normal normal 300 13pt/20pt "Museo Slab";
       }
 
     }
+
+    &.archives {
+      border-bottom: 2px solid $color-grey;
+
+    }
+
+    &.branch {
+      display: table;
+      border-collapse:collapse;
+      float: none;
+
+      .row {
+
+        display: table-row;
+        float: none;
+        header {
+          display: table-cell;
+          float: none;
+
+          margin: 0;
+          padding: 0;
+
+          background-color: $color-main;
+
+          h2 {
+
+            padding: 0 5px;
+            color: #FFFFFF;
+            font-size: 28pt;
+          }
+        }
+
+        .content {
+          display: table-cell;
+          float: none;
+
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
   }
+
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {
+
+    section {
+
+      &.branch {
+        display: block;
+
+        .row {
+          display: block;
+          float: left;
+
+          header {
+            display: block;
+            float: left;
+
+            margin: 0;
+            padding: 0;
+
+            background-color: $color-main;
+
+            h2 {
+
+              padding: 0 5px;
+              color: #FFFFFF;
+            }
+          }
+
+          .content {
+            display: block;
+            float: left;
+
+            margin: 0;
+            padding: 0;
+
+          }
+        }
+      }
+    }
+  }
+
 
 
 /* #Article

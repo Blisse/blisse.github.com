@@ -12,7 +12,6 @@ github: blisse
 twitter: laivictorvl
 linkedin: laivictor
 
-
 paginate: 100
 paginate_path: "/blog/page-:num"
 
@@ -23,5 +22,5 @@ sass:
   syntax: scss        # scss|sass
   style:  compressed  # nested|expanded|compact|compressed
 
-markdown: rdiscount
+markdown: maruku 
 pygments: true

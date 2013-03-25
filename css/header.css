@@ -3,7 +3,7 @@
 */
 /* #Header
 ================================================== */
-header {
+header.page {
   overflow-x: hidden;
   overflow-y: hidden;
   margin: 0;
@@ -13,44 +13,41 @@ header {
   background: url("/images/bg.png") repeat center center fixed;
   position: relative;
   width: 100%; }
-
-header a {
+header.page a {
   -webkit-transition: all 150ms ease-in-out 0ms;
   -moz-transition: all 150ms ease-in-out 0ms;
   -o-transition: all 150ms ease-in-out 0ms;
   transition: all 150ms ease-in-out 0ms; }
-  header a:link {
+  header.page a:link {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #dddddd; }
-  header a:visited {
+  header.page a:visited {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #dddddd; }
-  header a:hover {
+  header.page a:hover {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #dddddd; }
-  header a:active {
+  header.page a:active {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #dddddd; }
-
-header #name-wrapper {
+header.page #name-wrapper {
   margin: 10px 0 10px 0;
   text-align: center;
   display: block;
   vertical-align: middle; }
-
-header #name a {
+header.page #name a {
   text-align: center;
   vertical-align: middle;
   border-bottom: 1px solid #4a4a4a;
@@ -61,162 +58,148 @@ header #name a {
   line-height: 42pt;
   font-family: "Nexa Light", "Lato", "Nexa Bold", Frutiger, "Open Sans", Arial, sans-serif;
   white-space: nowrap; }
-  header #name a:link #last-name {
+  header.page #name a:link #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #00d8d6; }
-  header #name a:visited #last-name {
+  header.page #name a:visited #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #00d8d6; }
-  header #name a:hover #last-name {
+  header.page #name a:hover #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #00d8d6; }
-  header #name a:active #last-name {
+  header.page #name a:active #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #00d8d6; }
-  header #name a:link #first-name {
+  header.page #name a:link #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #dddddd; }
-  header #name a:visited #first-name {
+  header.page #name a:visited #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #dddddd; }
-  header #name a:hover #first-name {
+  header.page #name a:hover #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #00a4a4; }
-  header #name a:hover {
+  header.page #name a:hover {
     border-color: #00a4a4; }
-  header #name a:active #first-name {
+  header.page #name a:active #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #dddddd; }
-  header #name a.currentpage:link #first-name {
+  header.page #name a.currentpage:link #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #00a4a4; }
-  header #name a.currentpage:visited #first-name {
+  header.page #name a.currentpage:visited #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #00a4a4; }
-  header #name a.currentpage:hover #first-name {
+  header.page #name a.currentpage:hover #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #00a4a4; }
-  header #name a.currentpage:active #first-name {
+  header.page #name a.currentpage:active #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
     color: #00a4a4; }
-
-header .links-wrapper {
+header.page .links-wrapper {
   text-align: center; }
-
-header #links a {
+header.page #links a {
   display: inline-block;
   opacity: 0.75; }
-
-header #links a#twitter-hover {
+header header #links a#twitter-hover {
   width: 24px;
   height: 24px;
   background: url("/images/icons/appbar.twitter.bird-hover.png") top;
   background-size: 24px;
   background-repeat: no-repeat;
   text-indent: -99999px; }
-
-header #links a#twitter-hover:hover {
+header header #links a#twitter-hover:hover {
   background-position: 0 -24px; }
-
-header #links a#github-hover {
+header header #links a#github-hover {
   width: 24px;
   height: 24px;
   background: url("/images/icons/appbar.github-hover.png") top;
   background-size: 24px;
   background-repeat: no-repeat;
   text-indent: -99999px; }
-
-header #links a#github-hover:hover {
+header header #links a#github-hover:hover {
   background-position: 0 -24px; }
-
-header #links a#linkedin-hover {
+header header #links a#linkedin-hover {
   width: 24px;
   height: 24px;
   background: url("/images/icons/appbar.linkedin-hover.png") top;
   background-size: 24px;
   background-repeat: no-repeat;
   text-indent: -99999px; }
-
-header #links a#linkedin-hover:hover {
+header header #links a#linkedin-hover:hover {
   background-position: 0 -24px; }
-
-header #links a#mail-hover {
+header header #links a#mail-hover {
   width: 24px;
   height: 24px;
   background: url("/images/icons/appbar.email.minimal-hover.png") top;
   background-size: 24px;
   background-repeat: no-repeat;
   text-indent: -99999px; }
-
-header #links a#mail-hover:hover {
+header header #links a#mail-hover:hover {
   background-position: 0 -24px; }
-
-header #links a#rss-hover {
+header header #links a#rss-hover {
   width: 24px;
   height: 24px;
   background: url("/images/icons/appbar.rss-hover.png") top;
   background-size: 24px;
   background-repeat: no-repeat;
   text-indent: -99999px; }
-
-header #links a#rss-hover:hover {
+header header #links a#rss-hover:hover {
   background-position: 0 -24px; }
-
-header nav {
+header.page nav {
   margin: 5px 0 5px 0;
   padding: 5px 0 5px 0; }
-  header nav #nav-wrapper-outer {
+  header.page nav #nav-wrapper-outer {
     text-align: center; }
-  header nav #nav-wrapper-inner {
+  header.page nav #nav-wrapper-inner {
     display: inline-block;
     text-align: left; }
-  header nav ul {
+  header.page nav ul {
     list-style-type: none;
     white-space: nowrap; }
-    header nav ul li {
-      display: inline;
-      text-align: left; }
-
-header nav ul#nav-top li {
+    header.page nav ul li {
+      display: inline-block;
+      text-align: left;
+      margin: 0; }
+header.page nav ul#nav-top li {
   padding: 0 2px; }
-
-header nav ul#nav-top li a {
+header.page nav ul#nav-top li a {
   font-variant: normal;
   font-style: normal;
   font-weight: 200;
@@ -224,47 +207,44 @@ header nav ul#nav-top li a {
   line-height: 32pt;
   font-family: Raleway, "Segoe UI Semilight", "Nexa Light", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
   text-transform: lowercase; }
-  header nav ul#nav-top li a:link {
+  header.page nav ul#nav-top li a:link {
     color: #797979; }
-  header nav ul#nav-top li a:visited {
+  header.page nav ul#nav-top li a:visited {
     color: #797979; }
-  header nav ul#nav-top li a:hover {
+  header.page nav ul#nav-top li a:hover {
     color: #00a4a4; }
-  header nav ul#nav-top li a:active {
+  header.page nav ul#nav-top li a:active {
     color: #797979; }
-
-header nav ul#nav-top li.currentpage a:link {
+header.page nav ul#nav-top li.currentpage a:link {
   color: #00d8d6; }
-header nav ul#nav-top li.currentpage a:visited {
+header.page nav ul#nav-top li.currentpage a:visited {
   color: #00d8d6; }
-header nav ul#nav-top li.currentpage a:hover {
+header.page nav ul#nav-top li.currentpage a:hover {
   color: #00a4a4; }
-header nav ul#nav-top li.currentpage a:active {
+header.page nav ul#nav-top li.currentpage a:active {
   color: #00d8d6; }
-
-header nav ul#nav-bottom li {
+header.page nav ul#nav-bottom li {
   padding: 0 1px; }
-  header nav ul#nav-bottom li a {
+  header.page nav ul#nav-bottom li a {
     font-style: normal;
     font-weight: 300;
     font-size: 9pt;
     line-height: 11pt;
     font-family: 'Segoe UI', Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
     text-transform: uppercase; }
-    header nav ul#nav-bottom li a:link {
+    header.page nav ul#nav-bottom li a:link {
       color: #797979; }
-    header nav ul#nav-bottom li a:visited {
+    header.page nav ul#nav-bottom li a:visited {
       color: #797979; }
-    header nav ul#nav-bottom li a:hover {
+    header.page nav ul#nav-bottom li a:hover {
       color: #00a4a4; }
-    header nav ul#nav-bottom li a:active {
+    header.page nav ul#nav-bottom li a:active {
       color: #797979; }
-
-header nav ul#nav-bottom li.currentpage a:link {
+header.page nav ul#nav-bottom li.currentpage a:link {
   color: #FFFFFF; }
-header nav ul#nav-bottom li.currentpage a:visited {
+header.page nav ul#nav-bottom li.currentpage a:visited {
   color: #FFFFFF; }
-header nav ul#nav-bottom li.currentpage a:hover {
+header.page nav ul#nav-bottom li.currentpage a:hover {
   color: #00a4a4; }
-header nav ul#nav-bottom li.currentpage a:active {
+header.page nav ul#nav-bottom li.currentpage a:active {
   color: #FFFFFF; }

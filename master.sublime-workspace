@@ -231,7 +231,23 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3974,
+				"buffer_size": 3986,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "about/index.html",
+			"settings":
+			{
+				"buffer_size": 5387,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "trackers/index.html",
+			"settings":
+			{
+				"buffer_size": 184,
 				"line_ending": "Windows"
 			}
 		}
@@ -352,12 +368,14 @@
 	},
 	"file_history":
 	[
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/atom.xml",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-03-21-anewbeginning.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/atom.xml",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/archives/index.html",
 		"/C/Users/Victor/Desktop/f2ksdk/foobar2000/helpers/create_directory_helper.cpp",
@@ -366,9 +384,7 @@
 		"/D/Root/Air/Dropbox/save.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/trackers/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-03-21-anewbeginning.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardhead.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/ogltictactoe/index.html",
@@ -497,6 +513,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"300ms",
 			"h2",
 			"h3",
 			"Open Sans",
@@ -623,8 +640,7 @@
 			"rgba(0,130,135,1.0)",
 			"p a",
 			"h1 a",
-			"h1 ",
-			"rgba(0,130,135,1.0);"
+			"h1 "
 		],
 		"highlight": true,
 		"in_selection": true,
@@ -644,7 +660,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -652,15 +668,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 3974,
+						"buffer_size": 3986,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1602,
-								1602
+								0,
+								0
 							]
 						],
 						"settings":
@@ -669,7 +685,60 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1092.0,
+						"translation.y": 904.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "about/index.html",
+					"settings":
+					{
+						"buffer_size": 5387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2905,
+								2905
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1428.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "trackers/index.html",
+					"settings":
+					{
+						"buffer_size": 184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								168,
+								168
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -710,7 +779,7 @@
 		"cols":
 		[
 			0.0,
-			0.488638357411,
+			0.599006656404,
 			1.0
 		],
 		"rows":

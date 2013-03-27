@@ -45,10 +45,5 @@ Of course, I'm not done growing and I still have to work to apply my knowledge s
 -------
 
 
-<ul class="simple-large">
-  <li>
-    <a href="#">
-      For the first time in a while, I feel like I am alive.
-    </a>
-  </li>
-</ul>
+###For the first time in a while, I feel like I am alive.
+

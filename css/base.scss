@@ -164,7 +164,7 @@
     		font-weight     : regular;
     		border          : none;
     		background-color: $color-main;
-    		color           : $color-white;
+    		color           : #FFFFFF;
       }
 
       &:active  {
@@ -560,7 +560,7 @@
 
       p {
         margin: 10px 0;
-        padding: 5px 0;
+        padding: 5px 10px;
 
         font: normal normal 300 13pt/20pt "Museo Slab";
       }
@@ -666,6 +666,12 @@
             margin: 0;
             padding: 0;
 
+            p {
+              margin: 10px 5px;
+              padding: 5px 0;
+
+            }
+
           }
         }
       }
@@ -705,7 +711,7 @@
       padding: 2px 0;
 
       p {
-        margin: 10px 0;
+        margin: 10px 5px;
         padding: 5px 0;
 
         font: normal normal 300 13pt/20pt "Museo Slab";
@@ -715,6 +721,11 @@
         font: normal normal 300 11pt/12pt "Museo Slab";
       }
 
+      h3, h4 {
+        background: none;
+        color: $color-text;
+        text-transform: none;
+      }
     }
 
     .discuss {
@@ -927,18 +938,15 @@
     list-style-type: none;
 
     border: none;
-	  margin: 10px 0;
+	  margin: 5px 0;
 	  padding: 0;
 
-    width: 100%;
 
   	li {
 
       border-width: 0 0 2px 0;
       border-style: solid;
       border-color: $color-white;
-
-      padding: 1px;
 
       font: normal normal 300 18pt/28pt "Bitter";
 
@@ -947,13 +955,13 @@
       a {
         display: block;
 
-    	  -webkit-transition: font-size 300ms ease, background-color 300ms ease;
-    	  -moz-transition: font-size 300ms ease, background-color 300ms ease;
-    	  -ms-transition: font-size 300ms ease, background-color 300ms ease;
-        -o-transition: font-size 300ms ease, background-color 300ms ease;
-    	  transition: font-size 300ms ease, background-color 300ms ease;
+    	  -webkit-transition: font-size 100ms ease, background-color 100ms ease;
+    	  -moz-transition: font-size 100ms ease, background-color 100ms ease;
+    	  -ms-transition: font-size 100ms ease, background-color 100ms ease;
+        -o-transition: font-size 100ms ease, background-color 100ms ease;
+    	  transition: font-size 100ms ease, background-color 100ms ease;
 
-    		padding: 1px 4px;
+    		padding: 0px 2px;
 
         &:link {
           text-decoration:  none;
@@ -974,8 +982,7 @@
           font-weight:      regular;
       	  background-color: $color-main;
           color:            #FFFFFF;
-          font-size: 125%;
-          line-height: 125%;
+          font-size: 120%;
         }
 
         &:active  {

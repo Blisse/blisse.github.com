@@ -13,31 +13,115 @@ $color-white:rgba(221,221,221,1.0);
 $color-grey:rgba(121,121,121,1.0);
 $color-darkgrey:rgba(74,74,74,1.0);
 
-
 $color-bg:rgba(238,238,238,1.0);
-
 
 $color-text:$color-darkgrey;
 
 
+$font-stack-monospace: "Consolas", "Lucida Console", "Monaco", monospace !important;
 
-$font-stack-h-big: "Segoe UI Semilight", "Segoe UI", "Lato", "Helvetica Neue", "Open Sans", sans-serif;
-$font-stack-h-med: "Segoe UI Semilight", "Segoe UI", "Lato", "Helvetica Neue", "Open Sans", sans-serif;
-$font-stack-h-low: "Segoe UI Semilight", "Segoe UI", "Lato", "Helvetica Neue", "Open Sans", sans-serif;
+$font-one: "Segoe UI";
 
-$font-stack-text: "Museo Slab", "Open Sans", "Segoe UI Semilight", "Calibri", "Helvetica Neue", sans-serif;
-
-$font-stack-monospace: "Consolas", 'Lucida Console', 'Monaco', monospace !important;
-
-
-$font-stack-name: 'Nexa Light', 'Lato', 'Nexa Bold', Frutiger, 'Open Sans', Arial, sans-serif;
+$font-stack-name: "Nexa Light", "Nexa Bold", Frutiger, "Open Sans", Arial, sans-serif;
+$font-stack-navtop: Raleway, "Segoe UI Semilight", "Nexa Light";
+$font-stack-navbottom: "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
 
 
+$font-stack-primary: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
+$font-stack-subheader: "Segoe UI Light", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
+$font-stack-item: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
+$font-stack-import: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
+
+$font-stack-branch: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+
+$font-stack-text: "Segoe UI", "Myriad Pro", "Frutiger", "Frutiger Linotype", "Dejavu Sans", sans-serif;
+
+
+
+$font-stack-segoe: "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", sans-serif;
+
+$font-stack-discuss: "Segoe UI Semibold", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+$font-stack-caption: "Segoe UI Light", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+$font-stack-tags: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+
+$font-stack-list: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
 
 
 $bg-img: "/images/bg.png";
 
 
+@mixin text-body {
+  font: normal normal 300 12pt/1.5 $font-one;
+  font-family: $font-stack-text;
+  color: $color-text;
+}
+
+@mixin text-caption {
+  font: normal normal 300 12pt/1.5 $font-one;
+  font-family: $font-stack-caption;
+}
+
+@mixin text-tags {
+  font: normal normal 300 14pt/1.5 $font-one;
+  font-family: $font-stack-tags;
+}
+
+@mixin text-blockquote-p {
+  font: normal normal 300 14pt/22pt $font-one;
+  font-family: $font-stack-text;
+  color: $color-darkgrey;
+}
+
+@mixin text-blockquote-cite {
+  font: normal normal 300 10pt/15pt "Sofia Pro";
+  color: #FFFFFF;
+}
+
+@mixin text-selected {
+  -webkit-transition: all 300ms ease-in-out 0ms;
+  -moz-transition: all 300ms ease-in-out 0ms;
+  -o-transition: all 300ms ease-in-out 0ms;
+  transition: all 300ms ease-in-out 0ms;
+  perspective: 1500;
+  -webkit-perspective: 1500; /* Safari and Chrome */
+  perspective-origin: 100% 50%;
+  -webkit-perspective-origin: 100% 50%;
+
+  a {
+    &:hover {
+      transform: rotateX(-1deg);
+      -webkit-transform: rotateY(-1deg); /* Safari and Chrome */
+    }
+
+    &:active {
+      transform: rotateX(-1deg);
+      -webkit-transform: rotateY(-1deg); /* Safari and Chrome */
+    }
+  }
+}
+@mixin text-selected-clear {
+  perspective: 0;
+  -webkit-perspective: 0; /* Safari and Chrome */
+  perspective-origin: 50% 50%;
+  -webkit-perspective-origin: 50% 50%;
+
+  a {
+    &:hover {
+      transform: rotateX(0deg);
+      -webkit-transform: rotateY(0deg); /* Safari and Chrome */
+    }
+
+    &:active {
+      transform: rotateX(0deg);
+      -webkit-transform: rotateY(0deg); /* Safari and Chrome */
+    }
+  }
+}
+
+@mixin clear-margin-padding {
+  margin: 0;
+  padding: 0;
+}
 
 @mixin transition-ease {
   -webkit-transition: all 150ms ease-in-out 0ms;

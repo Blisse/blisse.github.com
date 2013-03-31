@@ -164,7 +164,7 @@ header {
     font-weight: 200;
     font-size: 24pt;
     line-height: 32pt;
-    font-family: Raleway, "Segoe UI Semilight", "Nexa Light", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
+    font-family: $font-stack-navtop;
     text-transform: lowercase;
 
     &:link {color: $color-grey;}
@@ -188,7 +188,7 @@ header {
       font-weight: 300;
       font-size: 9pt;
       line-height: 11pt;
-      font-family:  'Segoe UI', Lato, Frutiger, "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", "Helvetica Neue", 'Lucida Grande', 'Arial', sans-serif;
+      font-family: $font-stack-navbottom;
 
       text-transform: uppercase;
 

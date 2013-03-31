@@ -40,4 +40,5 @@ Thumbs.db
 site-master.sublime-project
 site-master.sublime-workspace
 
+.sass-cache/
 _site/

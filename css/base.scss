@@ -63,81 +63,41 @@
 /* #Common Snippets
 ================================================== */
 
-	.hide {
-		display: none;
-	}
+	.hide { display: none; }
+	.block, .show { display: block;}
 
-	.block,
-	.show {
-		display: block;
-	}
+	.in-line{ display: inline; }
+	.in-line-block{ display: inline-block; }
+	.no-wrap{ white-space: nowrap; }
 
-	.in-line{
-		display: inline;
-	}
+	.center { text-align: center;}
+	.center-wrapper-outer { text-align: center; }
+	.center-wrapper-inner { display: inline-block;}
 
-	.in-line-block{
-		display: inline-block;
-	}
+	.text-left { text-align: left; }
+	.text-right { text-align: right; }
 
-	.no-wrap{
-		white-space: nowrap;
-	}
-
-	.center {
-		text-align: center;
-	}
-
-	.center-wrapper-outer {
-		text-align: center;
-	}
-
-	.center-wrapper-inner {
-		display: inline-block;
-	}
-
-	.text-left {
-		text-align: left;
-	}
-
-	.text-right {
-		text-align: right;
-	}
-
-	.float-left {
-		float: left;
-	}
-
-	.float-right {
-		float: right;
-	}
+	.float-left { float: left; }
+	.float-right { float: right; }
 
 	.disabled {
 		pointer-events: none;
 		opacity: 0.5;
 	}
 
-	.italic {
-		font-style: italic;
-	}
-
-	.bold {
-		font-weight: bold;
-	}
+	.italic { font-style: italic; }
+	.bold { font-weight: bold; }
 
 
 /* #Typography
 ================================================== */
 
 
-
 	p {
 		display    : block;
 		margin     : 0px;
 		padding    : 0px;
-		color      : $color-text;
-		font       : normal normal 300 13pt/20pt "Museo Slab";
-		font-family: $font-stack-text;
+    @include text-body;
 
   	a {
       @include transition-ease;
@@ -145,7 +105,7 @@
 
       &:link    {
     		text-decoration : none;
-    		font-weight     : regular;
+    		font-weight     : normal;
     		border          : none;
     		background-color: transparent;
     		color           : $color-main;
@@ -153,7 +113,7 @@
 
       &:visited {
     		text-decoration : none;
-    		font-weight     : regular;
+    		font-weight     : normal;
     		border          : none;
     		background-color: transparent;
     		color           : $color-main;
@@ -161,7 +121,7 @@
 
       &:hover   {
     		text-decoration : none;
-    		font-weight     : regular;
+    		font-weight     : normal;
     		border          : none;
     		background-color: $color-main;
     		color           : #FFFFFF;
@@ -169,7 +129,7 @@
 
       &:active  {
     		text-decoration : none;
-    		font-weight     : regular;
+    		font-weight     : normal;
     		border          : none;
     		background-color: transparent;
     		color           : $color-main;
@@ -180,7 +140,7 @@
   }
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family     : "Open Sans", Arial, sans-serif;
+		font-family     : $font-one;
 		margin          : 4px 0;
 		text-align      : left;
 		text-decoration : none;
@@ -192,16 +152,16 @@
     a {
       @include transition-ease;
       &:link {
-        @include texts(none, regular, none, transparent, $color-main);
+        @include texts(none, normal, none, transparent, $color-main);
       }
       &:visited {
-        @include texts(none, regular, none, transparent, $color-main);
+        @include texts(none, normal, none, transparent, $color-main);
       }
       &:hover {
-        @include texts(none, regular, none, transparent, $color-main);
+        @include texts(none, normal, none, transparent, $color-main);
       }
       &:active {
-        @include texts(none, regular, none, transparent, $color-main);
+        @include texts(none, normal, none, transparent, $color-main);
       }
     }
   }
@@ -210,39 +170,37 @@
 
     display: block;
 
-    color       : $color-darkgrey;
-    font-size   : 42px;
-    line-height : 58.8px;
-    font-family : 'Nexa Light', 'Open Sans', Arial, sans-serif;
-    text-transform  : uppercase;
+    color       : $color-text;
+    font: normal normal 200 40pt/1.4 $font-one;
+    font-family : $font-stack-primary;
+
+    @include text-selected;
 
     a {
 
       display: block;
-      line-height : 58.8px;
-      border-left : 58.8px solid transparent;
+      line-height : 56pt;
+      border-left : 56pt solid transparent;
       padding: 0 10px;
 
       &:link {
-        border-left : 58.8px solid $color-darkgrey;
-        color       : $color-darkgrey;
+        color       : $color-text;
+        border-left : 56pt solid $color-text;
       }
 
       &:visited {
-        border-left : 58.8px solid $color-darkgrey;
-        color       : $color-darkgrey;
+        color       : $color-text;
+        border-left : 56pt solid $color-text;
       }
 
       &:hover {
-        background-color: $color-main;
-        border-left : 58.8px solid $color-darkgrey;
-        color       : #FFFFFF;
+        color       : $color-text;
+        border-left : 56pt solid $color-text;
       }
 
       &:active {
-        background-color: $color-main;
-        border-left : 58.8px solid $color-darkgrey;
-        color       : #FFFFFF;
+        color       : $color-text;
+        border-left : 56pt solid $color-text;
       }
     }
   }
@@ -250,39 +208,38 @@
   h2 {
 
     display: block;
-    color       : $color-darkgrey;
-    font-size   : 36px;
-    line-height : 50.4px;
-    font-family : 'Museo Slab', 'Nexa Light', 'Open Sans', Arial, sans-serif;
-    text-transform  : uppercase;
+
+    color       : $color-text;
+    font: normal normal 200 30pt/1.5 $font-one;
+    font-family : $font-stack-primary;
+
+    @include text-selected;
 
     a {
 
       display: block;
-      line-height : 50.4px;
-      border-left : 50.4px solid transparent;
+      line-height: 45pt;
+      border-left : 45pt solid transparent;
       padding: 0 10px;
 
       &:link {
-        border-left : 50.4px solid $color-darkgrey;
-        color       : $color-darkgrey;
+        color       : $color-text;
+        border-left : 45pt solid $color-text;
       }
 
       &:visited {
-        border-left : 50.4px solid $color-darkgrey;
-        color       : $color-darkgrey;
+        color       : $color-text;
+        border-left : 45pt solid $color-text;
       }
 
       &:hover {
-        background-color: $color-main;
-        border-left : 50.4px solid $color-darkgrey;
-        color       : #FFFFFF;
+        color       : $color-text;
+        border-left : 45pt solid $color-text;
       }
 
       &:active {
-        background-color: $color-main;
-        border-left : 50.4px solid $color-darkgrey;
-        color       : #FFFFFF;
+        color       : $color-text;
+        border-left : 45pt solid $color-text;
       }
     }
   }
@@ -292,39 +249,33 @@
 
     padding-left: 4px;
 
-    color       : $color-white;
-    background-color: $color-grey;
-    font-size   : 24px;
-    line-height : 33.6px;
-    font-family : "Museo Slab", Arial, sans-serif;
-    text-transform  : uppercase;
+    color       : $color-darkgrey;
+    font: normal normal 300 20pt/1.5 $font-one;
+    font-family : $font-stack-item;
+
+    @include text-selected;
 
     a {
       display: block;
-      line-height : 33.6px;
-      border-left : 5px solid transparent;
-      padding-left: 5px;
 
       &:link {
-        border-left : 5px solid $color-white;
-        color       : $color-white;
+        border-bottom : 2px solid $color-text;
+        color       : $color-text;
       }
 
       &:visited {
-        border-left : 5px solid $color-white;
-        color       : $color-white;
+        border-bottom : 2px solid $color-text;
+        color       : $color-text;
       }
 
       &:hover {
-        border-left : 5px solid $color-white;
-        color       : $color-white;
-        background-color: $color-main;
+        border-bottom : 2px solid $color-text;
+        color       : $color-text;
       }
 
       &:active {
-        border-left : 5px solid $color-white;
-        color       : $color-white;
-        background-color: $color-main;
+        border-bottom : 2px solid $color-text;
+        color       : $color-text;
       }
     }
   }
@@ -332,40 +283,33 @@
   h4 {
     display: block;
 
-    padding-left: 4px;
+    color       : $color-text;
+    font: normal normal 200 16pt/1.5 $font-one;
+    font-family : $font-stack-item;
 
-    color       : $color-white;
-    background-color: $color-grey;
-    font-size   : 21px;
-    line-height : 24px;
-    font-family : "Museo Slab", Arial, sans-serif;
-    text-transform  : uppercase;
+    @include text-selected;
 
     a {
       display: block;
-      border-left : 8px solid transparent;
-      padding-left: 4px;
 
       &:link {
-        border-left : 8px solid $color-white;
-        color       : $color-white;
+        border-bottom : 1.5px solid $color-text;
+        color       : $color-text;
       }
 
       &:visited {
-        border-left : 8px solid $color-white;
-        color       : $color-white;
+        border-bottom : 1.5px solid $color-text;
+        color       : $color-text;
       }
 
       &:hover {
-        border-left : 8px solid $color-main;
-        color       : $color-main;
-        background-color: $color-white;
+        border-bottom : 1.5px solid $color-text;
+        color       : $color-text;
       }
 
       &:active {
-        border-left : 8px solid $color-white;
-        color       : $color-white;
-        background-color: $color-main;
+        border-bottom : 1.5px solid $color-text;
+        color       : $color-text;
       }
     }
   }
@@ -373,36 +317,32 @@
   h5 {
     display: block;
 
-    color       : $color-grey;
-    border-bottom: 0 solid $color-grey;
-    font-size   : 18px;
-    line-height : 24px;
-    font-family : "Nexa Light", Arial, sans-serif;
+    color       : $color-text;
+    font: normal normal 200 11pt/1.5 $font-one;
+    font-family : $font-stack-import;
+    @include text-selected;
 
     a {
       display: block;
-      padding-left: 4px;
 
       &:link {
-        color       : $color-grey;
-        border-left: 2px solid $color-main;
+        color       : $color-text;
+        text-decoration: underline;
       }
 
       &:visited {
-        color       : $color-grey;
-        border-left: 2px solid $color-main;
+        color       : $color-text;
+        text-decoration: underline;
       }
 
       &:hover {
-        color       : $color-white;
-        background-color: $color-main;
-        border-left: 2px solid $color-main;
+        color       : $color-text;
+        text-decoration: underline;
       }
 
       &:active {
-        color       : $color-white;
-        background-color: $color-main;
-        border-left: 2px solid $color-main;
+        color       : $color-text;
+        text-decoration: underline;
       }
     }
   }
@@ -410,36 +350,35 @@
 	h6 {
     display: block;
 
-    color       : $color-grey;
-    border-bottom: 2px solid $color-grey;
-    font-size   : 16px;
-    line-height : 20px;
-    font-family : "Nexa Light", Arial, sans-serif;
+    color       : $color-darkgrey;
+    font: normal normal 200 9pt/1.5 $font-one;
+    font-family : $font-stack-import;
+
+    text-transform: uppercase;
+    @include text-selected;
 
     a {
+      padding-left: 2px;
       display: block;
-      padding-left: 4px;
 
       &:link {
-        color       : $color-grey;
-        border-left: 2px solid $color-main;
+        color       : $color-text;
+        border-left: 1px solid $color-text;
       }
 
       &:visited {
-        color       : $color-grey;
-        border-left: 2px solid $color-main;
+        color       : $color-text;
+        border-left: 1px solid $color-text;
       }
 
       &:hover {
-        color       : $color-white;
-        background-color: $color-main;
-        border-left: 2px solid $color-main;
+        color       : $color-text;
+        border-left: 1px solid $color-text;
       }
 
       &:active {
-        color       : $color-white;
-        background-color: $color-main;
-        border-left: 2px solid $color-main;
+        color       : $color-text;
+        border-left: 1px solid $color-text;
       }
     }
   }
@@ -456,20 +395,16 @@
 		padding         : 10px 5px;
 
     p {
-  		color  : $color-darkgrey;
-
-      font       : normal normal 300 14pt/22pt "Bitter";
-      font-family: $font-stack-text;
+      @include text-blockquote-p;
 
   		padding: 0 10px;
       margin: 20px 5px;
   	}
 
-  	cite {
-      background-color: $color-main;
-  		color           : #FFFFFF;
+    cite {
+      @include text-blockquote-cite;
 
-      font            : normal normal 300 12px/20px "Sofia Pro";
+      background-color: $color-main;
 
   		padding         : 2px 20px 2px 20px;
   		text-transform  : uppercase;
@@ -481,41 +416,36 @@
 ================================================== */
 
 	hr {
-		border: solid $color-darkgrey;
-    border-width: 2px 0 0;
-    height: 0;
-
+    border: 0;
+    height: 1px;
 		clear: both;
-
+    width: 100%;
 		margin: 10px 0;
 
 
   	&.line {
-  		background: none repeat scroll 0 0 $color-main;
-  		border: medium none;
-      height: 2px;
-      width: 100%;
 
+      width: 90%;
+      height: 1px;
       color: $color-main;
+      background: $color-main;
+      background-image: -webkit-linear-gradient(left, $color-bg, $color-darkgrey, $color-bg);
+      background-image:    -moz-linear-gradient(left, $color-bg, $color-darkgrey, $color-bg);
+      background-image:     -ms-linear-gradient(left, $color-bg, $color-darkgrey, $color-bg);
+      background-image:      -o-linear-gradient(left, $color-bg, $color-darkgrey, $color-bg);
 
   		float: none;
       clear: both;
 
-  		margin: 0;
+      margin-left: auto;
+  		margin-right: auto;
   	}
 
   	&.space {
-  		background: none repeat scroll 0 0 transparent;
-  		color: #FFFFFF;
+      height: 0;
+  		color: $color-bg;
+      background: $color-bg;
   		visibility: hidden;
-  	}
-
-  	&.dotted {
-  		border: 1px dotted $color-main;
-  	}
-
-  	&.tight {
-  		margin: 1px;
   	}
 
   }
@@ -536,18 +466,20 @@
       padding: 0;
 
       .tags {
-        font: normal normal 300 16px/20px "Bitter";
-        color: $color-darkgrey;
+
+        @include text-tags;
+        color: $color-text;
         text-transform: uppercase;
         text-align: right;
       }
 
-      .caption  {
+      .caption {
         p {
           padding: 0 5px;
 
-          font: normal normal 300 11pt/20pt "Bitter";
-          color: #FFFFFF;
+          @include text-caption;
+          color: $color-text;
+
           text-transform: uppercase;
         }
       }
@@ -557,20 +489,65 @@
       margin: 0 0 10px 0;
       padding: 0 0;
 
-
       p {
         margin: 10px 0;
         padding: 5px 10px;
 
-        font: normal normal 300 13pt/20pt "Museo Slab";
+        @include text-body;
       }
 
     }
+  }
 
+  section {
     &.archives {
-      border-bottom: 2px solid $color-grey;
 
+      header {
+
+        border-bottom: 2px solid $color-grey;
+
+        perspective: 1500;
+        -webkit-perspective: 1500; /* Safari and Chrome */
+        perspective-origin: 100% 50%;
+        -webkit-perspective-origin: 100% 50%;
+
+        h3 {
+          display: block;
+
+          color       : $color-bg;
+          background-color: $color-grey;
+          border: none;
+          font: normal normal 300 14pt/30pt $font-one;
+          font-family : $font-stack-import;
+
+          text-transform: uppercase;
+
+          a {
+            border: none;
+            color       : $color-bg;
+            line-height: 30pt;
+          }
+
+          &:hover {
+            transform: rotateX(-1deg);
+            -webkit-transform: rotateY(-1deg); /* Safari and Chrome */
+          }
+
+          &:active {
+            transform: rotateX(-1deg);
+            -webkit-transform: rotateY(-1deg); /* Safari and Chrome */
+          }
+        }
+
+        .tags {
+          font-size: 11pt;
+        }
+
+      }
     }
+  }
+
+  section {
 
     &.branch {
       display: table;
@@ -581,6 +558,7 @@
 
         display: table-row;
         float: none;
+
         header {
           display: table-cell;
           float: none;
@@ -588,13 +566,16 @@
           margin: 0;
           padding: 0;
 
-          background-color: $color-main;
+          background-color: $color-grey;
 
           h2 {
+            display: block;
+            color       : $color-text;
+            font: normal normal 200 40pt/1.5 $font-one;
+            font-family : $font-stack-branch;
+            text-transform  : uppercase;
 
             padding: 0 5px;
-            color: $color-darkgrey;
-            font-size: 28pt;
 
             background-color: $color-bg;
           }
@@ -603,8 +584,8 @@
             p {
                 padding: 0 5px;
 
-                font: normal normal 300 11pt/20pt "Bitter";
-                color: #FFFFFF;
+                @include text-caption;
+                color: $color-bg;
                 text-transform: uppercase;
             }
           }
@@ -640,20 +621,26 @@
             margin: 0;
             padding: 0;
 
-            background-color: $color-main;
+            background-color: $color-grey;
 
             h2 {
+              display: block;
+
+              color       : $color-text;
+              font: normal normal 200 40pt/1.5 $font-one;
+              font-family : $font-stack-branch;
+
+              text-transform  : uppercase;
 
               padding: 0 5px;
-              color: $color-darkgrey;
             }
 
             .caption  {
               p {
-                padding: 0 5px;
+                padding: 0 5px 5px 5px;
 
-                font: normal normal 300 11pt/20pt "Bitter";
-                color: #FFFFFF;
+                @include text-caption;
+                color: $color-bg;
                 text-transform: uppercase;
               }
             }
@@ -690,7 +677,7 @@
     padding: 4px 0;
 
     hr {
-      border-width: 1px;
+      border-width: 0;
       height: 1px;
     }
 
@@ -699,7 +686,7 @@
       padding: 0;
 
       .tags {
-        font: normal normal 300 16px/20px "Bitter";
+        @include text-tags;
         color: $color-darkgrey;
         text-transform: uppercase;
         text-align: right;
@@ -714,14 +701,16 @@
         margin: 10px 5px;
         padding: 5px 0;
 
-        font: normal normal 300 13pt/20pt "Museo Slab";
+        @include text-body;
       }
 
       li {
-        font: normal normal 300 11pt/12pt "Museo Slab";
+        font: normal normal 300 11pt/13pt $font-one;
       }
 
-      h3, h4 {
+      h1, h2, h3, h4, h5, h6,
+      h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        border: 0;
         background: none;
         color: $color-text;
         text-transform: none;
@@ -729,8 +718,9 @@
     }
 
     .discuss {
-      font: normal normal 300 14px/20px "Bitter";
-      color: $color-darkgrey;
+      font: normal normal 300 13pt/19pt $font-one;
+      font-family: $font-stack-discuss;
+      color: $color-text;
 
       text-transform: uppercase;
 
@@ -740,28 +730,28 @@
 
         &:link {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: transparent;
           color:            $color-darkgrey;
         }
 
         &:visited {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: transparent;
           color:            $color-darkgrey;
         }
 
         &:hover   {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: transparent;
           color:            $color-sec;
         }
 
         &:active  {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: transparent;
           color:            $color-sec;
         }
@@ -834,7 +824,7 @@
 
         &:link    {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           border:           none;
           background-color: transparent;
           color:            $color-main;
@@ -842,7 +832,7 @@
 
         &:visited {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           border:           none;
           background-color: transparent;
           color:            $color-main;
@@ -850,7 +840,7 @@
 
         &:hover   {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           border:           none;
           background-color: $color-main;
           color:            #FFFFFF;
@@ -858,7 +848,7 @@
 
         &:active  {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           border:           none;
           background-color: transparent;
           color:            $color-main;
@@ -878,14 +868,9 @@
 
     li {
 
-      display: list-item;
-      list-style-type: disc;
+      border-bottom: 1px solid $color-white;
 
-      border-width: 1px 0;
-      border-style: solid;
-      border-color: $color-white;
-
-      font: normal normal 300 12pt/18pt "Bitter";
+      font: normal normal 300 12pt/18pt $font-one;
 
       padding: 0 2px;
 
@@ -900,35 +885,39 @@
         -o-transition: font-size 300ms ease, background-color 300ms ease;
         transition: font-size 300ms ease, background-color 300ms ease;
 
-        padding: 1px 3px;
+        padding: 1px 2px;
 
         &:link {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: transparent;
           color:            $color-darkgrey;
         }
 
         &:visited {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: transparent;
           color:            $color-darkgrey;
         }
 
         &:hover   {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: $color-main;
           color:            #FFFFFF;
         }
 
         &:active  {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: $color-main;
           color:            #FFFFFF;
         }
+      }
+
+      &:last-child {
+        border-bottom: none;
       }
     }
   }
@@ -944,11 +933,10 @@
 
   	li {
 
-      border-width: 0 0 2px 0;
-      border-style: solid;
-      border-color: $color-white;
+      border-bottom: 2px solid $color-white;
 
-      font: normal normal 300 18pt/28pt "Bitter";
+      font: normal normal 300 20pt/30pt $font-one;
+      font-family: $font-stack-list;
 
       color: $color-darkgrey;
 
@@ -965,29 +953,28 @@
 
         &:link {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: transparent;
           color:            $color-darkgrey;
         }
 
         &:visited {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: transparent;
           color:            $color-darkgrey;
         }
 
         &:hover   {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
       	  background-color: $color-main;
           color:            #FFFFFF;
-          font-size: 120%;
         }
 
         &:active  {
           text-decoration:  none;
-          font-weight:      regular;
+          font-weight:      normal;
           background-color: $color-main;
           color:            #FFFFFF;
       	}
@@ -1011,7 +998,7 @@
       background-color: $color-main;
       color: #FFFFFF;
 
-      font: normal normal 300 14pt/18pt "Museo Slab";
+      font: normal normal 300 14pt/18pt $font-one;
 
       padding: 2px;
       margin: 4px;
@@ -1027,7 +1014,7 @@
       clear: both;
 
       p {
-        font: normal normal 300 12pt/16pt "Museo Slab";
+        font: normal normal 300 12pt/16pt $font-one;
       }
     }
 
@@ -1068,7 +1055,7 @@
 	}
 
 	code, code > .highlight{
-	  font-family: 'Consolas' !important;
+	  font-family: $font-stack-monospace;
 	  background-color: #FAFAFA;
 	  border: 1px solid #CCCCCC;
 	  margin: 0;
@@ -1078,12 +1065,12 @@
 	}
 
 	.highlight pre code {
-	  background-color: #1F1F1F;
-	  border: 1px solid rgb(107,107,107);
-	  color: #000;
+	  background-color: $color-darkgrey;
+	  border: 1px solid $color-darkgrey;
+	  color: #FFFFFF;
 	  display: block;
 	  font-family: $font-stack-monospace;
-	  font-size: 14px;
+	  font-size: 11pt;
 	  line-height: 1.6em;
 	  margin: 0 0 1.5em;
 	  padding: 0.7em;

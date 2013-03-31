@@ -9,10 +9,9 @@ footer {
   -o-transition: all 150ms ease-in-out 0ms;
   transition: all 150ms ease-in-out 0ms;
   font: normal normal 100 12px/20px "Segoe UI";
-  margin: 1.5em 0;
-  padding: 1.5em 0;
-  text-align: center;
-  vertical-align: middle; }
+  margin: 15px 5px;
+  padding: 5px;
+  text-align: center; }
   footer a {
     display: inline-block; }
     footer a#chevron-up-hover {

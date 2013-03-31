@@ -37,8 +37,8 @@ ehthumbs.db
 Thumbs.db
 
 .git
-site-master.sublime-project
-site-master.sublime-workspace
+master.sublime-project
+master.sublime-workspace
 
 .sass-cache/
 _site/

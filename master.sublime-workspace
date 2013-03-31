@@ -247,6 +247,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "work/site/index.html",
+			"settings":
+			{
+				"buffer_size": 2701,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -509,6 +517,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"20121113",
+			"20121105",
 			"15pt",
 			"darkgrey",
 			"main",
@@ -634,9 +644,7 @@
 			"\n<p>",
 			"\n</p>",
 			"\n<p>",
-			"</p>",
-			"\n<p>",
-			"<p>"
+			"</p>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -656,8 +664,36 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "work/site/index.html",
+					"settings":
+					{
+						"buffer_size": 2701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2611,
+								2611
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 351.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
@@ -694,7 +730,7 @@
 		"cols":
 		[
 			0.0,
-			0.421682696704,
+			0.678500878522,
 			1.0
 		],
 		"rows":

@@ -247,14 +247,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "work/site/index.html",
-			"settings":
-			{
-				"buffer_size": 2701,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -372,10 +364,14 @@
 	},
 	"file_history":
 	[
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-01-thenword.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-02-25-helloworld.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/2013/04/01/thenword.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitignore",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitignore",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-03-21-anewbeginning.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
@@ -383,7 +379,6 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/trackers/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-02-25-helloworld.md",
 		"/E/__flac-files.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
@@ -394,7 +389,6 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/README.markdown",
 		"/D/Root/Air/Dropbox/save.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardhead.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/ogltictactoe/index.html",
@@ -497,9 +491,7 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/_config.yml",
 		"/D/Root/Air/Dropbox/Sides/STagger/Strings/Attributes.py",
 		"/D/Root/Air/Dropbox/Sides/STagger/master_music_library",
-		"/D/Root/Air/Dropbox/Sides/STagger/Libraries/Attributes.py",
-		"/D/Root/Air/Dropbox/Sides/STagger/muta.py",
-		"/D/Root/Air/Dropbox/Sides/STagger/Libraries/Folders.py"
+		"/D/Root/Air/Dropbox/Sides/STagger/Libraries/Attributes.py"
 	],
 	"find":
 	{
@@ -517,6 +509,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"site-",
 			"20121113",
 			"20121105",
 			"15pt",
@@ -643,8 +636,7 @@
 			"</p>",
 			"\n<p>",
 			"\n</p>",
-			"\n<p>",
-			"</p>"
+			"\n<p>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -664,36 +656,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "work/site/index.html",
-					"settings":
-					{
-						"buffer_size": 2701,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2611,
-								2611
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 351.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{

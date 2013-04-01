@@ -419,9 +419,12 @@ blockquote {
 hr {
   border: 0;
   height: 1px;
-  clear: both;
+  color: #797979;
+  background: #797979;
   width: 100%;
-  margin: 10px 0; }
+  margin: 10px 0;
+  float: none;
+  clear: both; }
   hr.line {
     width: 90%;
     height: 1px;
@@ -575,9 +578,6 @@ article {
   display: block;
   margin: 10px 0;
   padding: 4px 0; }
-  article hr {
-    border-width: 0;
-    height: 1px; }
   article header {
     margin: 0;
     padding: 0; }

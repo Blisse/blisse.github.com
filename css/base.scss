@@ -418,10 +418,15 @@
 	hr {
     border: 0;
     height: 1px;
-		clear: both;
+
+    color: $color-grey;
+    background: $color-grey;
+
     width: 100%;
 		margin: 10px 0;
 
+    float: none;
+    clear: both;
 
   	&.line {
 
@@ -675,11 +680,6 @@
 
     margin: 10px 0;
     padding: 4px 0;
-
-    hr {
-      border-width: 0;
-      height: 1px;
-    }
 
     header {
       margin: 0;

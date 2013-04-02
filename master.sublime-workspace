@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"col",
+				"color-main"
+			],
+			[
+				"color-",
+				"color-main"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"co",
+				"color-main"
+			],
+			[
 				"text-",
 				"text-transform"
 			],
@@ -24,10 +48,6 @@
 				"text-transform"
 			],
 			[
-				"bac",
-				"background"
-			],
-			[
 				"colo",
 				"color-main"
 			],
@@ -46,10 +66,6 @@
 			[
 				"paddin",
 				"padding-left"
-			],
-			[
-				"col",
-				"color-darkgrey"
 			],
 			[
 				"color",
@@ -82,14 +98,6 @@
 			[
 				"Hel",
 				"HelvetiList"
-			],
-			[
-				"pad",
-				"padding"
-			],
-			[
-				"pa",
-				"padding"
 			],
 			[
 				"Se",
@@ -126,10 +134,6 @@
 			[
 				"m",
 				"margin"
-			],
-			[
-				"co",
-				"color"
 			],
 			[
 				"no",
@@ -364,14 +368,16 @@
 	},
 	"file_history":
 	[
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-01-thenword.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-02-25-helloworld.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/2013/04/01/thenword.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitignore",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-03-21-anewbeginning.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
@@ -380,7 +386,6 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/trackers/index.html",
 		"/E/__flac-files.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/atom.xml",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/archives/index.html",
@@ -390,7 +395,6 @@
 		"/D/Root/Air/Dropbox/save.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardhead.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/ogltictactoe/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/post.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/page.html",
@@ -509,6 +513,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"darkgrey",
+			"main",
+			"transparent",
+			"text",
+			"$color-main",
+			"bg",
+			"underline",
+			"bg",
+			"text",
+			"1",
+			"sixteen",
+			"0.5",
+			"\n        background: -moz-linear-gradient(left, rgba(0,164,164,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */\n        background: -webkit-gradient(linear, left, right, color-stop(0%,rgba(0,164,164,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */\n        background: -webkit-linear-gradient(left, rgba(0,164,164,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */\n        background: -o-linear-gradient(left, rgba(0,164,164,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */\n        background: -ms-linear-gradient(left, rgba(0,164,164,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */\n        background: linear-gradient(to right, rgba(0,164,164,1) 0%,rgba(255,255,255,0) 100%); /* W3C */\n        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a4a4', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */\n",
+			"56pt",
+			"300ms",
+			"1s",
+			"top",
+			"45pt",
+			"56pt",
+			"text",
+			"grey",
+			"150ms",
+			"300ms",
+			"150ms",
+			"5px",
+			"<i class=\"icon-star\"></i>",
+			"#FFFFFF",
+			"bg",
+			"$color-main",
+			"#FFFFFF",
+			"main",
 			"site-",
 			"20121113",
 			"20121105",
@@ -605,38 +640,7 @@
 			"Cambria",
 			"14pt",
 			"Museo Slab",
-			"16pt",
-			"13pt/20pt",
-			"#####",
-			" target=\"_blank\"",
-			"four",
-			"thirteen",
-			"three",
-			"none",
-			"\n      float: none;",
-			"clear",
-			"block",
-			"category",
-			"div",
-			"section",
-			"container",
-			"div",
-			" target=\"_blank\"",
-			"highlights",
-			"</p>",
-			"<p>",
-			"</p>",
-			"<p>",
-			"</p>",
-			"<p>",
-			"main",
-			"darkgrey",
-			"\n          background-color: $color-main;",
-			"<p>",
-			"</p>",
-			"\n<p>",
-			"\n</p>",
-			"\n<p>"
+			"16pt"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -694,7 +698,7 @@
 		"cols":
 		[
 			0.0,
-			0.678500878522,
+			0.516215310982,
 			1.0
 		],
 		"rows":
@@ -718,6 +722,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"_bases",
+				"css/_bases.scss"
+			],
 			[
 				"header",
 				"css/header.scss"

@@ -100,7 +100,6 @@
     @include text-body;
 
   	a {
-      @include transition-ease;
   		display           : inline-block;
 
       &:link    {
@@ -174,10 +173,13 @@
     font: normal normal 200 40pt/1.4 $font-one;
     font-family : $font-stack-primary;
 
-    @include text-selected;
-
     a {
+    &:hover {
+      color: $color-bg;
+    }
 
+    &:active {
+      color: $color-bg;    }
       display: block;
       line-height : 56pt;
       border-left : 56pt solid transparent;
@@ -185,22 +187,26 @@
 
       &:link {
         color       : $color-text;
-        border-left : 56pt solid $color-text;
+        border-left : 56pt solid $color-main;
       }
 
       &:visited {
         color       : $color-text;
-        border-left : 56pt solid $color-text;
+        border-left : 56pt solid $color-main;
       }
 
       &:hover {
-        color       : $color-text;
-        border-left : 56pt solid $color-text;
+        color       : $color-bg;
+        border-left : 56pt solid $color-main;
+        background-color: $color-main;
+        -webkit-transition: background 0.5s;
       }
 
       &:active {
-        color       : $color-text;
-        border-left : 56pt solid $color-text;
+        color       : $color-bg;
+        border-left : 56pt solid $color-main;
+        background-color: $color-main;
+        -webkit-transition: background 0.5s;
       }
     }
   }
@@ -213,7 +219,10 @@
     font: normal normal 200 30pt/1.5 $font-one;
     font-family : $font-stack-primary;
 
-    @include text-selected;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
 
     a {
 
@@ -224,22 +233,26 @@
 
       &:link {
         color       : $color-text;
-        border-left : 45pt solid $color-text;
+        border-left : 45pt solid $color-main;
       }
 
       &:visited {
         color       : $color-text;
-        border-left : 45pt solid $color-text;
+        border-left : 45pt solid $color-main;
       }
 
       &:hover {
-        color       : $color-text;
-        border-left : 45pt solid $color-text;
+        color       : $color-bg;
+        border-left : 45pt solid $color-main;
+        background-color: $color-main;
+        -webkit-transition: background 500ms;
       }
 
       &:active {
-        color       : $color-text;
-        border-left : 45pt solid $color-text;
+        color       : $color-bg;
+        border-left : 45pt solid $color-main;
+        background-color: $color-main;
+        -webkit-transition: background 500ms;
       }
     }
   }
@@ -257,6 +270,7 @@
 
     a {
       display: block;
+      padding-left: 4px;
 
       &:link {
         border-bottom : 2px solid $color-text;
@@ -269,13 +283,13 @@
       }
 
       &:hover {
-        border-bottom : 2px solid $color-text;
-        color       : $color-text;
+        border-bottom : 2px solid $color-main;
+        color       : $color-bg;
       }
 
       &:active {
-        border-bottom : 2px solid $color-text;
-        color       : $color-text;
+        border-bottom : 2px solid $color-main;
+        color       : $color-bg;
       }
     }
   }
@@ -290,6 +304,7 @@
     @include text-selected;
 
     a {
+      padding-left: 4px;
       display: block;
 
       &:link {
@@ -303,13 +318,13 @@
       }
 
       &:hover {
-        border-bottom : 1.5px solid $color-text;
-        color       : $color-text;
+        border-bottom : 1.5px solid $color-main;
+        color       : $color-bg;
       }
 
       &:active {
-        border-bottom : 1.5px solid $color-text;
-        color       : $color-text;
+        border-bottom : 1.5px solid $color-main;
+        color       : $color-bg;
       }
     }
   }
@@ -323,6 +338,7 @@
     @include text-selected;
 
     a {
+      padding-left: 3px;
       display: block;
 
       &:link {
@@ -336,13 +352,13 @@
       }
 
       &:hover {
-        color       : $color-text;
-        text-decoration: underline;
+        color       : $color-bg;
+        text-decoration: none;
       }
 
       &:active {
-        color       : $color-text;
-        text-decoration: underline;
+        color       : $color-bg;
+        text-decoration: none;
       }
     }
   }
@@ -372,13 +388,13 @@
       }
 
       &:hover {
-        color       : $color-text;
-        border-left: 1px solid $color-text;
+        color       : $color-bg;
+        border-left: 1px solid $color-main;
       }
 
       &:active {
-        color       : $color-text;
-        border-left: 1px solid $color-text;
+        color       : $color-bg;
+        border-left: 1px solid $color-main;
       }
     }
   }
@@ -509,38 +525,27 @@
 
       header {
 
-        border-bottom: 2px solid $color-grey;
-
-        perspective: 1500;
-        -webkit-perspective: 1500; /* Safari and Chrome */
-        perspective-origin: 100% 50%;
-        -webkit-perspective-origin: 100% 50%;
+        border-bottom: 1px solid $color-grey;
 
         h3 {
           display: block;
 
           color       : $color-bg;
-          background-color: $color-grey;
+          background-color: $color-darkgrey;
           border: none;
           font: normal normal 300 14pt/30pt $font-one;
           font-family : $font-stack-import;
+          padding: 0;
+          margin: 0;
 
           text-transform: uppercase;
 
+          @include text-selected;
           a {
+            padding-left: 4px;
             border: none;
             color       : $color-bg;
             line-height: 30pt;
-          }
-
-          &:hover {
-            transform: rotateX(-1deg);
-            -webkit-transform: rotateY(-1deg); /* Safari and Chrome */
-          }
-
-          &:active {
-            transform: rotateX(-1deg);
-            -webkit-transform: rotateY(-1deg); /* Safari and Chrome */
           }
         }
 
@@ -571,7 +576,7 @@
           margin: 0;
           padding: 0;
 
-          background-color: $color-grey;
+          background-color: $color-darkgrey;
 
           h2 {
             display: block;
@@ -587,7 +592,7 @@
 
           .caption  {
             p {
-                padding: 0 5px;
+                padding: 0 5px 5px 5px;
 
                 @include text-caption;
                 color: $color-bg;
@@ -599,6 +604,8 @@
         .content {
           display: table-cell;
           float: none;
+
+          vertical-align: top;
 
           margin: 0;
           padding: 0;
@@ -626,7 +633,7 @@
             margin: 0;
             padding: 0;
 
-            background-color: $color-grey;
+            background-color: $color-darkgrey;
 
             h2 {
               display: block;
@@ -666,6 +673,16 @@
 
           }
         }
+      }
+    }
+  }
+
+  section.branch:hover {
+    header {
+      @include transition-ease;
+      background-color: $color-main;
+      h2 {
+        color: $color-main;
       }
     }
   }
@@ -861,10 +878,8 @@
     list-style-type: none;
 
     border: none;
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 0;
-
-    width: 100%;
 
     li {
 
@@ -876,14 +891,10 @@
 
       color: $color-darkgrey;
 
+      @include text-selected;
+
       a {
         display: block;
-
-        -webkit-transition: font-size 300ms ease, background-color 300ms ease;
-        -moz-transition: font-size 300ms ease, background-color 300ms ease;
-        -ms-transition: font-size 300ms ease, background-color 300ms ease;
-        -o-transition: font-size 300ms ease, background-color 300ms ease;
-        transition: font-size 300ms ease, background-color 300ms ease;
 
         padding: 1px 2px;
 
@@ -901,18 +912,18 @@
           color:            $color-darkgrey;
         }
 
-        &:hover   {
+        &:hover {
           text-decoration:  none;
           font-weight:      normal;
+          color:            $color-bg;
           background-color: $color-main;
-          color:            #FFFFFF;
         }
 
-        &:active  {
+        &:active {
           text-decoration:  none;
           font-weight:      normal;
+          color:            $color-bg;
           background-color: $color-main;
-          color:            #FFFFFF;
         }
       }
 
@@ -930,7 +941,6 @@
 	  margin: 5px 0;
 	  padding: 0;
 
-
   	li {
 
       border-bottom: 2px solid $color-white;
@@ -942,12 +952,6 @@
 
       a {
         display: block;
-
-    	  -webkit-transition: font-size 100ms ease, background-color 100ms ease;
-    	  -moz-transition: font-size 100ms ease, background-color 100ms ease;
-    	  -ms-transition: font-size 100ms ease, background-color 100ms ease;
-        -o-transition: font-size 100ms ease, background-color 100ms ease;
-    	  transition: font-size 100ms ease, background-color 100ms ease;
 
     		padding: 0px 2px;
 
@@ -965,19 +969,19 @@
           color:            $color-darkgrey;
         }
 
-        &:hover   {
+        &:hover {
           text-decoration:  none;
           font-weight:      normal;
-      	  background-color: $color-main;
-          color:            #FFFFFF;
+          color:            $color-bg;
+          background-color: $color-main;
         }
 
-        &:active  {
+        &:active {
           text-decoration:  none;
           font-weight:      normal;
+          color:            $color-bg;
           background-color: $color-main;
-          color:            #FFFFFF;
-      	}
+        }
       }
 
       &:last-child {

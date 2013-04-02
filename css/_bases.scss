@@ -1,11 +1,12 @@
 
 /*
 == Colours
+$color-main:rgba(0, 164, 164, 1.0);
 */
 
 
-$color-main:rgba(0, 164, 164, 1.0);
-$color-sec:rgba(0, 216, 214, 1.0);
+$color-main:#2773ed;
+$color-sec:#20aeff;
 
 
 
@@ -78,44 +79,21 @@ $bg-img: "/images/bg.png";
 }
 
 @mixin text-selected {
-  -webkit-transition: all 300ms ease-in-out 0ms;
-  -moz-transition: all 300ms ease-in-out 0ms;
-  -o-transition: all 300ms ease-in-out 0ms;
-  transition: all 300ms ease-in-out 0ms;
-  perspective: 1500;
-  -webkit-perspective: 1500; /* Safari and Chrome */
-  perspective-origin: 100% 50%;
-  -webkit-perspective-origin: 100% 50%;
 
   a {
     &:hover {
-      transform: rotateX(-1deg);
-      -webkit-transform: rotateY(-1deg); /* Safari and Chrome */
+      color: $color-bg;
+      background-color: $color-main;
     }
 
     &:active {
-      transform: rotateX(-1deg);
-      -webkit-transform: rotateY(-1deg); /* Safari and Chrome */
+      color: $color-bg;
+      background-color: $color-main;
     }
   }
 }
+
 @mixin text-selected-clear {
-  perspective: 0;
-  -webkit-perspective: 0; /* Safari and Chrome */
-  perspective-origin: 50% 50%;
-  -webkit-perspective-origin: 50% 50%;
-
-  a {
-    &:hover {
-      transform: rotateX(0deg);
-      -webkit-transform: rotateY(0deg); /* Safari and Chrome */
-    }
-
-    &:active {
-      transform: rotateX(0deg);
-      -webkit-transform: rotateY(0deg); /* Safari and Chrome */
-    }
-  }
 }
 
 @mixin clear-margin-padding {
@@ -124,10 +102,6 @@ $bg-img: "/images/bg.png";
 }
 
 @mixin transition-ease {
-  -webkit-transition: all 150ms ease-in-out 0ms;
-  -moz-transition: all 150ms ease-in-out 0ms;
-  -o-transition: all 150ms ease-in-out 0ms;
-  transition: all 150ms ease-in-out 0ms;
 }
 
 

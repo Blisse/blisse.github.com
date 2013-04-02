@@ -1,13 +1,10 @@
 /*
 == Colours
+$color-main:rgba(0, 164, 164, 1.0);
 */
 /* Footer
 ================================================== */
 footer {
-  -webkit-transition: all 150ms ease-in-out 0ms;
-  -moz-transition: all 150ms ease-in-out 0ms;
-  -o-transition: all 150ms ease-in-out 0ms;
-  transition: all 150ms ease-in-out 0ms;
   font: normal normal 100 12px/20px "Segoe UI";
   margin: 15px 5px;
   padding: 5px;

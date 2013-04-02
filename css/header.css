@@ -1,5 +1,6 @@
 /*
 == Colours
+$color-main:rgba(0, 164, 164, 1.0);
 */
 /* #Header
 ================================================== */
@@ -9,39 +10,34 @@ header.page {
   margin: 0;
   padding: 0;
   padding-bottom: 15px;
-  border-top: 4px solid #00d8d6;
+  border-top: 4px solid #20aeff;
   background: url("/images/bg.png") repeat center center fixed;
   position: relative;
   width: 100%; }
-header.page a {
-  -webkit-transition: all 150ms ease-in-out 0ms;
-  -moz-transition: all 150ms ease-in-out 0ms;
-  -o-transition: all 150ms ease-in-out 0ms;
-  transition: all 150ms ease-in-out 0ms; }
-  header.page a:link {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #dddddd; }
-  header.page a:visited {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #dddddd; }
-  header.page a:hover {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #dddddd; }
-  header.page a:active {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #dddddd; }
+header.page a:link {
+  text-decoration: none;
+  font-weight: regular;
+  border: none;
+  background-color: transparent;
+  color: #dddddd; }
+header.page a:visited {
+  text-decoration: none;
+  font-weight: regular;
+  border: none;
+  background-color: transparent;
+  color: #dddddd; }
+header.page a:hover {
+  text-decoration: none;
+  font-weight: regular;
+  border: none;
+  background-color: transparent;
+  color: #dddddd; }
+header.page a:active {
+  text-decoration: none;
+  font-weight: regular;
+  border: none;
+  background-color: transparent;
+  color: #dddddd; }
 header.page #name-wrapper {
   margin: 10px 0 10px 0;
   text-align: center;
@@ -63,25 +59,25 @@ header.page #name a {
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #00d8d6; }
+    color: #20aeff; }
   header.page #name a:visited #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #00d8d6; }
+    color: #20aeff; }
   header.page #name a:hover #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #00d8d6; }
+    color: #20aeff; }
   header.page #name a:active #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #00d8d6; }
+    color: #20aeff; }
   header.page #name a:link #first-name {
     text-decoration: none;
     font-weight: regular;
@@ -99,9 +95,9 @@ header.page #name a {
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #00a4a4; }
+    color: #2773ed; }
   header.page #name a:hover {
-    border-color: #00a4a4; }
+    border-color: #2773ed; }
   header.page #name a:active #first-name {
     text-decoration: none;
     font-weight: regular;
@@ -113,25 +109,25 @@ header.page #name a {
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #00a4a4; }
+    color: #2773ed; }
   header.page #name a.currentpage:visited #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #00a4a4; }
+    color: #2773ed; }
   header.page #name a.currentpage:hover #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #00a4a4; }
+    color: #2773ed; }
   header.page #name a.currentpage:active #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #00a4a4; }
+    color: #2773ed; }
 header.page .links-wrapper {
   text-align: center; }
 header.page #links a {
@@ -212,17 +208,17 @@ header.page nav ul#nav-top li a {
   header.page nav ul#nav-top li a:visited {
     color: #797979; }
   header.page nav ul#nav-top li a:hover {
-    color: #00a4a4; }
+    color: #2773ed; }
   header.page nav ul#nav-top li a:active {
     color: #797979; }
 header.page nav ul#nav-top li.currentpage a:link {
-  color: #00d8d6; }
+  color: #20aeff; }
 header.page nav ul#nav-top li.currentpage a:visited {
-  color: #00d8d6; }
+  color: #20aeff; }
 header.page nav ul#nav-top li.currentpage a:hover {
-  color: #00a4a4; }
+  color: #2773ed; }
 header.page nav ul#nav-top li.currentpage a:active {
-  color: #00d8d6; }
+  color: #20aeff; }
 header.page nav ul#nav-bottom li {
   padding: 0 1px; }
   header.page nav ul#nav-bottom li a {
@@ -237,7 +233,7 @@ header.page nav ul#nav-bottom li {
     header.page nav ul#nav-bottom li a:visited {
       color: #797979; }
     header.page nav ul#nav-bottom li a:hover {
-      color: #00a4a4; }
+      color: #2773ed; }
     header.page nav ul#nav-bottom li a:active {
       color: #797979; }
 header.page nav ul#nav-bottom li.currentpage a:link {
@@ -245,6 +241,6 @@ header.page nav ul#nav-bottom li.currentpage a:link {
 header.page nav ul#nav-bottom li.currentpage a:visited {
   color: #FFFFFF; }
 header.page nav ul#nav-bottom li.currentpage a:hover {
-  color: #00a4a4; }
+  color: #2773ed; }
 header.page nav ul#nav-bottom li.currentpage a:active {
   color: #FFFFFF; }

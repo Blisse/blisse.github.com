@@ -15,83 +15,77 @@
 			</div>
 	  </div>
 		<div class="eight columns" id="name">
-			<div id="name-wrapper">
-				<a href="/"{% if page.main == "home" %} class="currentpage"{% endif %}>
-					<span id="last-name">
-						LAI
-					</span>
-					<span id="first-name">
-						VICTOR
-					</span>
-				</a>
-			</div>
+			<a href="/"{% if page.main == "home" %} class="currentpage"{% endif %}>
+				<span id="last-name">
+					LAI
+				</span>
+				<span id="first-name">
+					VICTOR
+				</span>
+			</a>
 		</div>
 		<nav class="eight columns">
-			<div id="nav-wrapper-outer">
-				<div id="nav-wrapper-inner">
-					<ul id="nav-top">
-						<li{% if page.main == "blog" %} class="currentpage"{% endif %}>
-							<a href="/blog/">
-								blog
-							</a>
-						</li>
-						<li{% if page.main == "work" %} class="currentpage"{% endif %}>
-							<a href="/work/">
-								work
-							</a>
-						</li>
-						<li{% if page.main == "about" %} class="currentpage"{% endif %}>
-							<a href="/about/">
-								about
-							</a>
-						</li>
-					</ul>
-					{% if page.main == "blog" %}
-					<ul id="nav-bottom">
-						<li{% if page.sub == "awesome" %} class="currentpage"{% endif %}>
-							<a href="/awesome/">
-								Awesome
-							</a>
-						</li>
-						<li{% if page.sub == "blog" %} class="currentpage"{% endif %}>
-							<a href="/blog/">
-								Posts
-							</a>
-						</li>
-						<li{% if page.sub == "archives" %} class="currentpage"{% endif %}>
-							<a href="/archives/">
-								Archives
-							</a>
-						</li>
-					</ul>
-					{% endif %}{% if page.main == "work" %}<ul id="nav-bottom">
-						<li{% if page.sub == "projects" %} class="currentpage"{% endif %}>
-							<a href="/work/">
-								Projects
-							</a>
-						</li>
-						<li{% if page.sub == "trackers" %} class="currentpage"{% endif %}>
-							<a href="/trackers/">
-								Trackers
-							</a>
-						</li>
-					</ul>
-					{% endif %}{% if page.main == "about" %}
-					<ul id="nav-bottom">
-						<li{% if page.sub == "tools" %} class="currentpage"{% endif %}>
-							<a href="/setup/">
-								Setup
-							</a>
-						</li>
-						<li{% if page.sub == "me" %} class="currentpage"{% endif %}>
-							<a href="/about/">
-								Me
-							</a>
-						</li>
-					</ul>
-					{% endif %}
-				</div>
-			</div>
+			<ul id="nav-top">
+				<li{% if page.main == "blog" %} class="currentpage"{% endif %}>
+					<a href="/blog/">
+						blog
+					</a>
+				</li>
+				<li{% if page.main == "work" %} class="currentpage"{% endif %}>
+					<a href="/work/">
+						work
+					</a>
+				</li>
+				<li{% if page.main == "about" %} class="currentpage"{% endif %}>
+					<a href="/about/">
+						about
+					</a>
+				</li>
+			</ul>
+			{% if page.main == "blog" %}
+			<ul id="nav-bottom">
+				<li{% if page.sub == "awesome" %} class="currentpage"{% endif %}>
+					<a href="/awesome/">
+						Awesome
+					</a>
+				</li>
+				<li{% if page.sub == "blog" %} class="currentpage"{% endif %}>
+					<a href="/blog/">
+						Posts
+					</a>
+				</li>
+				<li{% if page.sub == "archives" %} class="currentpage"{% endif %}>
+					<a href="/archives/">
+						Archives
+					</a>
+				</li>
+			</ul>
+			{% endif %}{% if page.main == "work" %}<ul id="nav-bottom">
+				<li{% if page.sub == "projects" %} class="currentpage"{% endif %}>
+					<a href="/work/">
+						Projects
+					</a>
+				</li>
+				<li{% if page.sub == "trackers" %} class="currentpage"{% endif %}>
+					<a href="/trackers/">
+						Trackers
+					</a>
+				</li>
+			</ul>
+			{% endif %}{% if page.main == "about" %}
+			<ul id="nav-bottom">
+				<li{% if page.sub == "tools" %} class="currentpage"{% endif %}>
+					<a href="/setup/">
+						Setup
+					</a>
+				</li>
+				<li{% if page.sub == "me" %} class="currentpage"{% endif %}>
+					<a href="/about/">
+						Me
+					</a>
+				</li>
+			</ul>
+			{% endif %}
 		</nav>
 	</div>
 </header>

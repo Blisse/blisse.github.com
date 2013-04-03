@@ -9,13 +9,8 @@ header {
 		overflow-x: hidden;
 		overflow-y: hidden;
 
-		margin: 0;
+		margin: 10px 0 0 0;
     padding: 0;
-    padding-bottom: 15px;
-
-    border-top: 4px solid $color-sec;
-
-    background: url($bg-img) repeat center center fixed;
 
 		position: relative;
 		width: 100%;
@@ -25,46 +20,52 @@ header {
     @include transition-ease;
 
     &:link {
-      @include texts(none, regular, none, transparent, $color-white)
+      @include texts(none, regular, none, transparent, $color-darkgrey)
     }
 
     &:visited {
-      @include texts(none, regular, none, transparent, $color-white)
+      @include texts(none, regular, none, transparent, $color-darkgrey)
     }
 
     &:hover {
-      @include texts(none, regular, none, transparent, $color-white)
+      @include texts(none, regular, none, transparent, $color-darkgrey)
     }
 
     &:active {
-      @include texts(none, regular, none, transparent, $color-white)
+      @include texts(none, regular, none, transparent, $color-darkgrey)
     }
 
   }
 
   &.page #name-wrapper {
-    margin: 10px 0 10px 0;
+    margin: 10px 10px 10px 0;
     text-align: center;
     display: block;
     vertical-align: middle;
   }
 
-  &.page #name a {
-    text-align: center;
-    vertical-align: middle;
+  &.page #name {
+    margin: 0;
+  }
 
-    border-bottom: 2px solid $color-darkgrey;
+  &.page #name a {
+    padding: 0;
+    text-align: center;
 
     font-variant: normal;
     font-style: normal;
     font-weight: 300;
-    font-size: 42pt;
+    font-size: 74pt;
 
-    line-height: 42pt;
+    line-height: 74pt;
     font-family: $font-stack-name;
 
 
     white-space: nowrap;
+
+    span {
+      vertical-align: bottom;
+    }
 
     &:link #last-name {
       @include texts( none, regular, none, transparent, $color-sec );
@@ -73,34 +74,30 @@ header {
       @include texts( none, regular, none, transparent, $color-sec );
     }
     &:hover #last-name {
-      @include texts( none, regular, none, transparent, $color-sec );
-    }
-    &:active #last-name {
-      @include texts( none, regular, none, transparent, $color-sec );
-    }
-
-
-    &:link #first-name {
-      @include texts( none, regular, none, transparent, $color-white );
-    }
-    &:visited #first-name {
-      @include texts( none, regular, none, transparent, $color-white );
-    }
-    &:hover #first-name {
       @include texts( none, regular, none, transparent, $color-main );
     }
-    &:hover {
-      border-color: $color-main;
+    &:active #last-name {
+      @include texts( none, regular, none, transparent, $color-main );
+    }
+
+    &:link #first-name {
+      @include texts( none, regular, none, transparent, $color-tert );
+    }
+    &:visited #first-name {
+      @include texts( none, regular, none, transparent, $color-tert );
+    }
+    &:hover #first-name {
+      @include texts( none, regular, none, transparent, $color-tert );
     }
     &:active #first-name {
-      @include texts( none, regular, none, transparent, $color-white );
+      @include texts( none, regular, none, transparent, $color-tert );
     }
 
     &.currentpage {
-      &:link #first-name {
+      &:link #last-name {
         @include texts( none, regular, none, transparent, $color-main );
       }
-      &:visited #first-name {
+      &:visited #last-name {
         @include texts( none, regular, none, transparent, $color-main );
       }
       &:hover #first-name {
@@ -118,21 +115,9 @@ header {
     text-align: center;
   }
 
-  &.page #links a {
-    display: inline-block;
-    opacity: 0.75;
-  }
-
-  @include social-links(twitter-hover, "/images/icons/appbar.twitter.bird-hover.png");
-  @include social-links(github-hover, "/images/icons/appbar.github-hover.png");
-  @include social-links(linkedin-hover, "/images/icons/appbar.linkedin-hover.png");
-  @include social-links(mail-hover, "/images/icons/appbar.email.minimal-hover.png");
-  @include social-links(rss-hover, "/images/icons/appbar.rss-hover.png");
-
-
   &.page nav {
-    margin: 5px 0 5px 0;
-    padding: 5px 0 5px 0;
+    margin: 4px 0;
+    padding: 1px 0;
      #nav-wrapper-outer {
       text-align: center;
     }
@@ -154,39 +139,34 @@ header {
     }
   }
 
-  &.page nav ul#nav-top li {
-    padding: 0 2px;
-  }
-
   &.page nav ul#nav-top li a {
     font-variant: normal;
     font-style: normal;
     font-weight: 200;
-    font-size: 24pt;
-    line-height: 32pt;
+    font-size: 42pt;
+    line-height: 42pt;
     font-family: $font-stack-navtop;
     text-transform: lowercase;
 
     &:link {color: $color-grey;}
     &:visited {color: $color-grey;}
-    &:hover {color: $color-main;}
+    &:hover {color: $color-sec;}
     &:active {color: $color-grey;}
   }
 
   &.page nav ul#nav-top li.currentpage a {
-    &:link {color: $color-sec;}
-    &:visited {color: $color-sec;}
-    &:hover {color: $color-main;}
-    &:active {color: $color-sec;}
+    &:link {color: $color-main;}
+    &:visited {color: $color-main;}
+    &:hover {color: $color-sec;}
+    &:active {color: $color-main;}
   }
 
   &.page nav ul#nav-bottom li {
-    padding: 0 1px;
 
     a {
       font-style: normal;
       font-weight: 300;
-      font-size: 9pt;
+      font-size: 11pt;
       line-height: 11pt;
       font-family: $font-stack-navbottom;
 
@@ -200,9 +180,9 @@ header {
   }
 
   &.page nav ul#nav-bottom li.currentpage a {
-    &:link { color: #FFFFFF; }
-    &:visited { color: #FFFFFF; }
-    &:hover { color: $color-main; }
-    &:active { color: #FFFFFF; }
+    &:link { color: $color-darkgrey; }
+    &:visited { color: $color-darkgrey; }
+    &:hover { color: $color-sec; }
+    &:active { color: $color-darkgrey; }
   }
 }

@@ -1,6 +1,6 @@
-<header class="page">
-	<div class="container">
-	  <div class="sixteen columns" id="links">
+<div id="header-navigation">
+
+<!-- 	  <div class="sixteen columns" id="links">
 			<div class="links-wrapper">
 		    <a target="_blank" href="http://www.github.com/{{ site.github }}" id="github-hover">
 		    </a>
@@ -13,8 +13,13 @@
 		    <a href="{{ site.atom }}" target="_blank" id="rss-hover">
 		    </a>
 			</div>
-	  </div>
-		<div class="eight columns" id="name">
+</div> -->
+
+</div>
+
+<header class="page">
+	<div class="container">
+		<div class="sixteen columns" id="name">
 			<a href="/"{% if page.main == "home" %} class="currentpage"{% endif %}>
 				<span id="last-name">
 					LAI
@@ -24,25 +29,26 @@
 				</span>
 			</a>
 		</div>
-		<nav class="eight columns">
+		<nav class="sixteen columns">
+			{% case page.main %}
+			{% when "blog" %}
 			<ul id="nav-top">
-				<li{% if page.main == "blog" %} class="currentpage"{% endif %}>
+				<li class="currentpage">
 					<a href="/blog/">
 						blog
 					</a>
 				</li>
-				<li{% if page.main == "work" %} class="currentpage"{% endif %}>
+				<li>
 					<a href="/work/">
 						work
 					</a>
 				</li>
-				<li{% if page.main == "about" %} class="currentpage"{% endif %}>
+				<li>
 					<a href="/about/">
 						about
 					</a>
 				</li>
 			</ul>
-			{% if page.main == "blog" %}
 			<ul id="nav-bottom">
 				<li{% if page.sub == "awesome" %} class="currentpage"{% endif %}>
 					<a href="/awesome/">
@@ -60,7 +66,25 @@
 					</a>
 				</li>
 			</ul>
-			{% endif %}{% if page.main == "work" %}<ul id="nav-bottom">
+			{% when "work" %}
+			<ul id="nav-top">
+				<li class="currentpage">
+					<a href="/work/">
+						work
+					</a>
+				</li>
+				<li>
+					<a href="/about/">
+						about
+					</a>
+				</li>
+				<li>
+					<a href="/blog/">
+						blog
+					</a>
+				</li>
+			</ul>
+			<ul id="nav-bottom">
 				<li{% if page.sub == "projects" %} class="currentpage"{% endif %}>
 					<a href="/work/">
 						Projects
@@ -72,7 +96,24 @@
 					</a>
 				</li>
 			</ul>
-			{% endif %}{% if page.main == "about" %}
+			{% when "about" %}
+			<ul id="nav-top">
+				<li class="currentpage">
+					<a href="/about/">
+						about
+					</a>
+				</li>
+				<li>
+					<a href="/blog/">
+						blog
+					</a>
+				</li>
+				<li>
+					<a href="/work/">
+						work
+					</a>
+				</li>
+			</ul>
 			<ul id="nav-bottom">
 				<li{% if page.sub == "tools" %} class="currentpage"{% endif %}>
 					<a href="/setup/">
@@ -85,7 +126,25 @@
 					</a>
 				</li>
 			</ul>
-			{% endif %}
+			{% else %}
+			<ul id="nav-top">
+				<li>
+					<a href="/blog/">
+						blog
+					</a>
+				</li>
+				<li>
+					<a href="/work/">
+						work
+					</a>
+				</li>
+				<li>
+					<a href="/about/">
+						about
+					</a>
+				</li>
+			</ul>
+			{% endcase %}
 		</nav>
 	</div>
 </header>

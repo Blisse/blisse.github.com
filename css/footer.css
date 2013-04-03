@@ -1,26 +1,7 @@
-/*
-== Colours
-$color-main:rgba(0, 164, 164, 1.0);
-*/
 /* Footer
 ================================================== */
 footer {
   font: normal normal 100 12px/20px "Segoe UI";
-  margin: 15px 5px;
+  margin: 20px 0;
   padding: 5px;
   text-align: center; }
-  footer a {
-    display: inline-block; }
-    footer a#chevron-up-hover {
-      width: 30px;
-      height: 30px;
-      background: url("/images/icons/appbar.chevron.up-hover.png") top;
-      background-size: 30px;
-      background-repeat: no-repeat;
-      text-indent: -99999px; }
-  footer #footer-wrapper {
-    border-top: 1px solid #dddddd; }
-    footer #footer-wrapper:hover {
-      border-top: 1px solid #00d8cc; }
-    footer #footer-wrapper:hover a#chevron-up-hover {
-      background-position: 0 -30px; }

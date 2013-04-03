@@ -1,17 +1,10 @@
-/*
-== Colours
-$color-main:rgba(0, 164, 164, 1.0);
-*/
 /* #Header
 ================================================== */
 header.page {
   overflow-x: hidden;
   overflow-y: hidden;
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
-  padding-bottom: 15px;
-  border-top: 4px solid #20aeff;
-  background: url("/images/bg.png") repeat center center fixed;
   position: relative;
   width: 100%; }
 header.page a:link {
@@ -19,168 +12,121 @@ header.page a:link {
   font-weight: regular;
   border: none;
   background-color: transparent;
-  color: #dddddd; }
+  color: #4a4a4a; }
 header.page a:visited {
   text-decoration: none;
   font-weight: regular;
   border: none;
   background-color: transparent;
-  color: #dddddd; }
+  color: #4a4a4a; }
 header.page a:hover {
   text-decoration: none;
   font-weight: regular;
   border: none;
   background-color: transparent;
-  color: #dddddd; }
+  color: #4a4a4a; }
 header.page a:active {
   text-decoration: none;
   font-weight: regular;
   border: none;
   background-color: transparent;
-  color: #dddddd; }
+  color: #4a4a4a; }
 header.page #name-wrapper {
-  margin: 10px 0 10px 0;
+  margin: 10px 10px 10px 0;
   text-align: center;
   display: block;
   vertical-align: middle; }
+header.page #name {
+  margin: 0; }
 header.page #name a {
+  padding: 0;
   text-align: center;
-  vertical-align: middle;
-  border-bottom: 2px solid #4a4a4a;
   font-variant: normal;
   font-style: normal;
   font-weight: 300;
-  font-size: 42pt;
-  line-height: 42pt;
-  font-family: "Nexa Light", "Nexa Bold", Frutiger, "Open Sans", Arial, sans-serif;
+  font-size: 74pt;
+  line-height: 74pt;
+  font-family: "Nexa Light", "Segoe UI Light", Frutiger, "Open Sans", Arial, sans-serif;
   white-space: nowrap; }
+  header.page #name a span {
+    vertical-align: bottom; }
   header.page #name a:link #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #20aeff; }
+    color: #252525; }
   header.page #name a:visited #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #20aeff; }
+    color: #252525; }
   header.page #name a:hover #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #20aeff; }
+    color: #b11d01; }
   header.page #name a:active #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #20aeff; }
+    color: #b11d01; }
   header.page #name a:link #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #dddddd; }
+    color: #b91d1e; }
   header.page #name a:visited #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #dddddd; }
+    color: #b91d1e; }
   header.page #name a:hover #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #2773ed; }
-  header.page #name a:hover {
-    border-color: #2773ed; }
+    color: #b91d1e; }
   header.page #name a:active #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #dddddd; }
-  header.page #name a.currentpage:link #first-name {
+    color: #b91d1e; }
+  header.page #name a.currentpage:link #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #2773ed; }
-  header.page #name a.currentpage:visited #first-name {
+    color: #b11d01; }
+  header.page #name a.currentpage:visited #last-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #2773ed; }
+    color: #b11d01; }
   header.page #name a.currentpage:hover #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #2773ed; }
+    color: #b11d01; }
   header.page #name a.currentpage:active #first-name {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #2773ed; }
+    color: #b11d01; }
 header.page .links-wrapper {
   text-align: center; }
-header.page #links a {
-  display: inline-block;
-  opacity: 0.75; }
-header header #links a#twitter-hover {
-  width: 24px;
-  height: 24px;
-  background: url("/images/icons/appbar.twitter.bird-hover.png") top;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  text-indent: -99999px; }
-header header #links a#twitter-hover:hover {
-  background-position: 0 -24px; }
-header header #links a#github-hover {
-  width: 24px;
-  height: 24px;
-  background: url("/images/icons/appbar.github-hover.png") top;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  text-indent: -99999px; }
-header header #links a#github-hover:hover {
-  background-position: 0 -24px; }
-header header #links a#linkedin-hover {
-  width: 24px;
-  height: 24px;
-  background: url("/images/icons/appbar.linkedin-hover.png") top;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  text-indent: -99999px; }
-header header #links a#linkedin-hover:hover {
-  background-position: 0 -24px; }
-header header #links a#mail-hover {
-  width: 24px;
-  height: 24px;
-  background: url("/images/icons/appbar.email.minimal-hover.png") top;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  text-indent: -99999px; }
-header header #links a#mail-hover:hover {
-  background-position: 0 -24px; }
-header header #links a#rss-hover {
-  width: 24px;
-  height: 24px;
-  background: url("/images/icons/appbar.rss-hover.png") top;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  text-indent: -99999px; }
-header header #links a#rss-hover:hover {
-  background-position: 0 -24px; }
 header.page nav {
-  margin: 5px 0 5px 0;
-  padding: 5px 0 5px 0; }
+  margin: 4px 0;
+  padding: 1px 0; }
   header.page nav #nav-wrapper-outer {
     text-align: center; }
   header.page nav #nav-wrapper-inner {
@@ -193,54 +139,50 @@ header.page nav {
       display: inline-block;
       text-align: left;
       margin: 0; }
-header.page nav ul#nav-top li {
-  padding: 0 2px; }
 header.page nav ul#nav-top li a {
   font-variant: normal;
   font-style: normal;
   font-weight: 200;
-  font-size: 24pt;
-  line-height: 32pt;
-  font-family: Raleway, "Segoe UI Semilight", "Nexa Light";
+  font-size: 42pt;
+  line-height: 42pt;
+  font-family: Raleway, "Segoe UI Light", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
   text-transform: lowercase; }
   header.page nav ul#nav-top li a:link {
-    color: #797979; }
+    color: #838383; }
   header.page nav ul#nav-top li a:visited {
-    color: #797979; }
+    color: #838383; }
   header.page nav ul#nav-top li a:hover {
-    color: #2773ed; }
+    color: #252525; }
   header.page nav ul#nav-top li a:active {
-    color: #797979; }
+    color: #838383; }
 header.page nav ul#nav-top li.currentpage a:link {
-  color: #20aeff; }
+  color: #b11d01; }
 header.page nav ul#nav-top li.currentpage a:visited {
-  color: #20aeff; }
+  color: #b11d01; }
 header.page nav ul#nav-top li.currentpage a:hover {
-  color: #2773ed; }
+  color: #252525; }
 header.page nav ul#nav-top li.currentpage a:active {
-  color: #20aeff; }
-header.page nav ul#nav-bottom li {
-  padding: 0 1px; }
-  header.page nav ul#nav-bottom li a {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 9pt;
-    line-height: 11pt;
-    font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
-    text-transform: uppercase; }
-    header.page nav ul#nav-bottom li a:link {
-      color: #797979; }
-    header.page nav ul#nav-bottom li a:visited {
-      color: #797979; }
-    header.page nav ul#nav-bottom li a:hover {
-      color: #2773ed; }
-    header.page nav ul#nav-bottom li a:active {
-      color: #797979; }
+  color: #b11d01; }
+header.page nav ul#nav-bottom li a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11pt;
+  line-height: 11pt;
+  font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
+  text-transform: uppercase; }
+  header.page nav ul#nav-bottom li a:link {
+    color: #838383; }
+  header.page nav ul#nav-bottom li a:visited {
+    color: #838383; }
+  header.page nav ul#nav-bottom li a:hover {
+    color: #b11d01; }
+  header.page nav ul#nav-bottom li a:active {
+    color: #838383; }
 header.page nav ul#nav-bottom li.currentpage a:link {
-  color: #FFFFFF; }
+  color: #4a4a4a; }
 header.page nav ul#nav-bottom li.currentpage a:visited {
-  color: #FFFFFF; }
+  color: #4a4a4a; }
 header.page nav ul#nav-bottom li.currentpage a:hover {
-  color: #2773ed; }
+  color: #252525; }
 header.page nav ul#nav-bottom li.currentpage a:active {
-  color: #FFFFFF; }
+  color: #4a4a4a; }

@@ -6,10 +6,6 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 6/20/2012
 */
-/*
-== Colours
-$color-main:rgba(0, 164, 164, 1.0);
-*/
 /* import reset - normalise.css */
 /* #Media Queries
 ================================================== */
@@ -29,7 +25,7 @@ html {
 
 body {
   -webkit-text-size-adjust: 100%;
-  background-color: #eeeeee; }
+  background-color: #f8f8f8; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -100,25 +96,25 @@ p {
       font-weight: normal;
       border: none;
       background-color: transparent;
-      color: #2773ed; }
+      color: #b11d01; }
     p a:visited {
       text-decoration: none;
       font-weight: normal;
       border: none;
       background-color: transparent;
-      color: #2773ed; }
+      color: #b11d01; }
     p a:hover {
       text-decoration: none;
       font-weight: normal;
       border: none;
-      background-color: #2773ed;
+      background-color: #b11d01;
       color: #FFFFFF; }
     p a:active {
       text-decoration: none;
       font-weight: normal;
       border: none;
       background-color: transparent;
-      color: #2773ed; }
+      color: #b11d01; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Segoe UI";
@@ -135,25 +131,25 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     border: none;
     background-color: transparent;
-    color: #2773ed; }
+    color: #b11d01; }
   h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
     text-decoration: none;
     font-weight: normal;
     border: none;
     background-color: transparent;
-    color: #2773ed; }
+    color: #b11d01; }
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     text-decoration: none;
     font-weight: normal;
     border: none;
     background-color: transparent;
-    color: #2773ed; }
+    color: #b11d01; }
   h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
     text-decoration: none;
     font-weight: normal;
     border: none;
     background-color: transparent;
-    color: #2773ed; }
+    color: #b11d01; }
 
 h1 {
   display: block;
@@ -166,24 +162,24 @@ h1 {
     border-left: 56pt solid transparent;
     padding: 0 10px; }
     h1 a:hover {
-      color: #eeeeee; }
+      color: #f8f8f8; }
     h1 a:active {
-      color: #eeeeee; }
+      color: #f8f8f8; }
     h1 a:link {
       color: #4a4a4a;
-      border-left: 56pt solid #2773ed; }
+      border-left: 56pt solid #b11d01; }
     h1 a:visited {
       color: #4a4a4a;
-      border-left: 56pt solid #2773ed; }
+      border-left: 56pt solid #b11d01; }
     h1 a:hover {
-      color: #eeeeee;
-      border-left: 56pt solid #2773ed;
-      background-color: #2773ed;
+      color: #f8f8f8;
+      border-left: 56pt solid #b11d01;
+      background-color: #b11d01;
       -webkit-transition: background 0.5s; }
     h1 a:active {
-      color: #eeeeee;
-      border-left: 56pt solid #2773ed;
-      background-color: #2773ed;
+      color: #f8f8f8;
+      border-left: 56pt solid #b11d01;
+      background-color: #b11d01;
       -webkit-transition: background 0.5s; }
 
 h2 {
@@ -202,19 +198,19 @@ h2 {
     padding: 0 10px; }
     h2 a:link {
       color: #4a4a4a;
-      border-left: 45pt solid #2773ed; }
+      border-left: 45pt solid #b11d01; }
     h2 a:visited {
       color: #4a4a4a;
-      border-left: 45pt solid #2773ed; }
+      border-left: 45pt solid #b11d01; }
     h2 a:hover {
-      color: #eeeeee;
-      border-left: 45pt solid #2773ed;
-      background-color: #2773ed;
+      color: #f8f8f8;
+      border-left: 45pt solid #b11d01;
+      background-color: #b11d01;
       -webkit-transition: background 500ms; }
     h2 a:active {
-      color: #eeeeee;
-      border-left: 45pt solid #2773ed;
-      background-color: #2773ed;
+      color: #f8f8f8;
+      border-left: 45pt solid #b11d01;
+      background-color: #b11d01;
       -webkit-transition: background 500ms; }
 
 h3 {
@@ -222,13 +218,13 @@ h3 {
   padding-left: 4px;
   color: #4a4a4a;
   font: normal normal 300 20pt/1.5 "Segoe UI";
-  font-family: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Open Sans", sans-serif; }
+  font-family: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif; }
   h3 a:hover {
-    color: #eeeeee;
-    background-color: #2773ed; }
+    color: #f8f8f8;
+    background-color: #b11d01; }
   h3 a:active {
-    color: #eeeeee;
-    background-color: #2773ed; }
+    color: #f8f8f8;
+    background-color: #b11d01; }
   h3 a {
     display: block;
     padding-left: 4px; }
@@ -239,11 +235,11 @@ h3 {
       border-bottom: 2px solid #4a4a4a;
       color: #4a4a4a; }
     h3 a:hover {
-      border-bottom: 2px solid #2773ed;
-      color: #eeeeee; }
+      border-bottom: 2px solid #b11d01;
+      color: #f8f8f8; }
     h3 a:active {
-      border-bottom: 2px solid #2773ed;
-      color: #eeeeee; }
+      border-bottom: 2px solid #b11d01;
+      color: #f8f8f8; }
 
 h4 {
   display: block;
@@ -251,11 +247,11 @@ h4 {
   font: normal normal 200 16pt/1.5 "Segoe UI";
   font-family: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Open Sans", sans-serif; }
   h4 a:hover {
-    color: #eeeeee;
-    background-color: #2773ed; }
+    color: #f8f8f8;
+    background-color: #b11d01; }
   h4 a:active {
-    color: #eeeeee;
-    background-color: #2773ed; }
+    color: #f8f8f8;
+    background-color: #b11d01; }
   h4 a {
     padding-left: 4px;
     display: block; }
@@ -266,11 +262,11 @@ h4 {
       border-bottom: 1.5px solid #4a4a4a;
       color: #4a4a4a; }
     h4 a:hover {
-      border-bottom: 1.5px solid #2773ed;
-      color: #eeeeee; }
+      border-bottom: 1.5px solid #b11d01;
+      color: #f8f8f8; }
     h4 a:active {
-      border-bottom: 1.5px solid #2773ed;
-      color: #eeeeee; }
+      border-bottom: 1.5px solid #b11d01;
+      color: #f8f8f8; }
 
 h5 {
   display: block;
@@ -278,11 +274,11 @@ h5 {
   font: normal normal 200 11pt/1.5 "Segoe UI";
   font-family: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif; }
   h5 a:hover {
-    color: #eeeeee;
-    background-color: #2773ed; }
+    color: #f8f8f8;
+    background-color: #b11d01; }
   h5 a:active {
-    color: #eeeeee;
-    background-color: #2773ed; }
+    color: #f8f8f8;
+    background-color: #b11d01; }
   h5 a {
     padding-left: 3px;
     display: block; }
@@ -293,10 +289,10 @@ h5 {
       color: #4a4a4a;
       text-decoration: underline; }
     h5 a:hover {
-      color: #eeeeee;
+      color: #f8f8f8;
       text-decoration: none; }
     h5 a:active {
-      color: #eeeeee;
+      color: #f8f8f8;
       text-decoration: none; }
 
 h6 {
@@ -306,11 +302,11 @@ h6 {
   font-family: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
   text-transform: uppercase; }
   h6 a:hover {
-    color: #eeeeee;
-    background-color: #2773ed; }
+    color: #f8f8f8;
+    background-color: #b11d01; }
   h6 a:active {
-    color: #eeeeee;
-    background-color: #2773ed; }
+    color: #f8f8f8;
+    background-color: #b11d01; }
   h6 a {
     padding-left: 2px;
     display: block; }
@@ -321,39 +317,41 @@ h6 {
       color: #4a4a4a;
       border-left: 1px solid #4a4a4a; }
     h6 a:hover {
-      color: #eeeeee;
-      border-left: 1px solid #2773ed; }
+      color: #f8f8f8;
+      border-left: 1px solid #b11d01; }
     h6 a:active {
-      color: #eeeeee;
-      border-left: 1px solid #2773ed; }
+      color: #f8f8f8;
+      border-left: 1px solid #b11d01; }
 
 /* #Quotes
 ================================================== */
 blockquote {
-  border-left: 5px solid #2773ed;
-  background-color: #E6E6E6;
-  margin: 30px 0 30px 15px;
-  padding: 10px 5px; }
+  border-left: 2px solid #838383;
+  background-color: #f8f8f8;
+  margin: 30px 0 30px 30px;
+  padding: 10px 15px; }
   blockquote p {
     font: normal normal 300 14pt/22pt "Segoe UI";
     font-family: "Segoe UI", "Myriad Pro", "Frutiger", "Frutiger Linotype", "Dejavu Sans", sans-serif;
     color: #4a4a4a;
-    padding: 0 10px;
-    margin: 20px 5px; }
+    padding: 0 2px;
+    margin: 20px 2px;
+    font-style: italic; }
   blockquote cite {
-    font: normal normal 300 10pt/15pt "Sofia Pro";
-    color: #FFFFFF;
-    background-color: #2773ed;
-    padding: 2px 20px 2px 20px;
+    font: normal normal 300 11pt/20pt "Segoe UI";
+    color: #4a4a4a;
+    padding: 0 2px;
     text-transform: uppercase; }
+    blockquote cite:before {
+      content: "\2014 \0020"; }
 
 /* #Ruled lines
 ================================================== */
 hr {
   border: 0;
   height: 1px;
-  color: #797979;
-  background: #797979;
+  color: #838383;
+  background: #838383;
   width: 100%;
   margin: 10px 0;
   float: none;
@@ -361,20 +359,20 @@ hr {
   hr.line {
     width: 90%;
     height: 1px;
-    color: #2773ed;
-    background: #2773ed;
-    background-image: -webkit-linear-gradient(left, #eeeeee, #4a4a4a, #eeeeee);
-    background-image: -moz-linear-gradient(left, #eeeeee, #4a4a4a, #eeeeee);
-    background-image: -ms-linear-gradient(left, #eeeeee, #4a4a4a, #eeeeee);
-    background-image: -o-linear-gradient(left, #eeeeee, #4a4a4a, #eeeeee);
+    color: #b11d01;
+    background: #b11d01;
+    background-image: -webkit-linear-gradient(left, #f8f8f8, #4a4a4a, #f8f8f8);
+    background-image: -moz-linear-gradient(left, #f8f8f8, #4a4a4a, #f8f8f8);
+    background-image: -ms-linear-gradient(left, #f8f8f8, #4a4a4a, #f8f8f8);
+    background-image: -o-linear-gradient(left, #f8f8f8, #4a4a4a, #f8f8f8);
     float: none;
     clear: both;
     margin-left: auto;
     margin-right: auto; }
   hr.space {
     height: 0;
-    color: #eeeeee;
-    background: #eeeeee;
+    color: #f8f8f8;
+    background: #f8f8f8;
     visibility: hidden; }
 
 /* #Section
@@ -393,26 +391,26 @@ section {
       text-transform: uppercase;
       text-align: right; }
     section header .caption p {
-      padding: 0 5px;
+      padding: 0 5px 5px 5px;
       font: normal normal 300 12pt/1.5 "Segoe UI";
       font-family: "Segoe UI Light", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
       color: #4a4a4a;
       text-transform: uppercase; }
   section .content {
     margin: 0 0 10px 0;
-    padding: 0 0; }
+    padding: 0; }
     section .content p {
       margin: 10px 0;
-      padding: 5px 10px;
+      padding: 5px 0;
       font: normal normal 300 12pt/1.5 "Segoe UI";
       font-family: "Segoe UI", "Myriad Pro", "Frutiger", "Frutiger Linotype", "Dejavu Sans", sans-serif;
       color: #4a4a4a; }
 
 section.archives header {
-  border-bottom: 1px solid #797979; }
+  border-bottom: 1px solid #838383; }
   section.archives header h3 {
     display: block;
-    color: #eeeeee;
+    color: #f8f8f8;
     background-color: #4a4a4a;
     border: none;
     font: normal normal 300 14pt/30pt "Segoe UI";
@@ -421,15 +419,15 @@ section.archives header {
     margin: 0;
     text-transform: uppercase; }
     section.archives header h3 a:hover {
-      color: #eeeeee;
-      background-color: #2773ed; }
+      color: #f8f8f8;
+      background-color: #b11d01; }
     section.archives header h3 a:active {
-      color: #eeeeee;
-      background-color: #2773ed; }
+      color: #f8f8f8;
+      background-color: #b11d01; }
     section.archives header h3 a {
       padding-left: 4px;
       border: none;
-      color: #eeeeee;
+      color: #f8f8f8;
       line-height: 30pt; }
   section.archives header .tags {
     font-size: 11pt; }
@@ -453,13 +451,13 @@ section.branch {
         font: normal normal 200 40pt/1.5 "Segoe UI";
         font-family: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
         text-transform: uppercase;
-        padding: 0 5px;
-        background-color: #eeeeee; }
+        padding: 0;
+        background-color: #f8f8f8; }
       section.branch .row header .caption p {
-        padding: 0 5px 5px 5px;
+        padding: 0 5px 0 5px;
         font: normal normal 300 12pt/1.5 "Segoe UI";
         font-family: "Segoe UI Light", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-        color: #eeeeee;
+        color: #f8f8f8;
         text-transform: uppercase; }
     section.branch .row .content {
       display: table-cell;
@@ -492,7 +490,7 @@ section.branch {
           padding: 0 5px 5px 5px;
           font: normal normal 300 12pt/1.5 "Segoe UI";
           font-family: "Segoe UI Light", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-          color: #eeeeee;
+          color: #f8f8f8;
           text-transform: uppercase; }
       section.branch .row .content {
         display: block;
@@ -500,12 +498,12 @@ section.branch {
         margin: 0;
         padding: 0; }
         section.branch .row .content p {
-          margin: 10px 5px;
+          margin: 10px 0;
           padding: 5px 0; } }
 section.branch:hover header {
-  background-color: #2773ed; }
+  background-color: #b11d01; }
   section.branch:hover header h2 {
-    color: #2773ed; }
+    color: #b11d01; }
 
 /* #Article
 ================================================== */
@@ -559,12 +557,12 @@ article {
       text-decoration: none;
       font-weight: normal;
       background-color: transparent;
-      color: #20aeff; }
+      color: #252525; }
     article .discuss a:active {
       text-decoration: none;
       font-weight: normal;
       background-color: transparent;
-      color: #20aeff; }
+      color: #252525; }
 
 /* #Posts
 ================================================== */
@@ -603,34 +601,34 @@ ul {
     display: list-item;
     color: #4a4a4a;
     padding: 2px;
-    margin: 1px 4px; }
+    margin: 1px 0; }
     ul li a {
       display: block;
-      padding: 4px 2px; }
+      padding: 4px; }
       ul li a:link {
         text-decoration: none;
         font-weight: normal;
         border: none;
         background-color: transparent;
-        color: #2773ed; }
+        color: #b11d01; }
       ul li a:visited {
         text-decoration: none;
         font-weight: normal;
         border: none;
         background-color: transparent;
-        color: #2773ed; }
+        color: #b11d01; }
       ul li a:hover {
         text-decoration: none;
         font-weight: normal;
         border: none;
-        background-color: #2773ed;
+        background-color: #b11d01;
         color: #FFFFFF; }
       ul li a:active {
         text-decoration: none;
         font-weight: normal;
         border: none;
         background-color: transparent;
-        color: #2773ed; }
+        color: #b11d01; }
 
 ul.simple-small {
   list-style-type: none;
@@ -638,16 +636,16 @@ ul.simple-small {
   margin: 5px 0;
   padding: 0; }
   ul.simple-small li {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid white;
     font: normal normal 300 12pt/18pt "Segoe UI";
-    padding: 0 2px;
+    padding: 0;
     color: #4a4a4a; }
     ul.simple-small li a:hover {
-      color: #eeeeee;
-      background-color: #2773ed; }
+      color: #f8f8f8;
+      background-color: #b11d01; }
     ul.simple-small li a:active {
-      color: #eeeeee;
-      background-color: #2773ed; }
+      color: #f8f8f8;
+      background-color: #b11d01; }
     ul.simple-small li a {
       display: block;
       padding: 1px 2px; }
@@ -664,13 +662,13 @@ ul.simple-small {
       ul.simple-small li a:hover {
         text-decoration: none;
         font-weight: normal;
-        color: #eeeeee;
-        background-color: #2773ed; }
+        color: #f8f8f8;
+        background-color: #b11d01; }
       ul.simple-small li a:active {
         text-decoration: none;
         font-weight: normal;
-        color: #eeeeee;
-        background-color: #2773ed; }
+        color: #f8f8f8;
+        background-color: #b11d01; }
     ul.simple-small li:last-child {
       border-bottom: none; }
 
@@ -680,7 +678,7 @@ ul.simple-large {
   margin: 5px 0;
   padding: 0; }
   ul.simple-large li {
-    border-bottom: 2px solid #dddddd;
+    border-bottom: 2px solid white;
     font: normal normal 300 20pt/30pt "Segoe UI";
     font-family: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
     color: #4a4a4a; }
@@ -700,13 +698,13 @@ ul.simple-large {
       ul.simple-large li a:hover {
         text-decoration: none;
         font-weight: normal;
-        color: #eeeeee;
-        background-color: #2773ed; }
+        color: #f8f8f8;
+        background-color: #b11d01; }
       ul.simple-large li a:active {
         text-decoration: none;
         font-weight: normal;
-        color: #eeeeee;
-        background-color: #2773ed; }
+        color: #f8f8f8;
+        background-color: #b11d01; }
     ul.simple-large li:last-child {
       border-bottom: none; }
 
@@ -717,7 +715,7 @@ dl {
     border-width: 2px;
     border-style: solid;
     border-color: #4a4a4a;
-    background-color: #2773ed;
+    background-color: #b11d01;
     color: #FFFFFF;
     font: normal normal 300 14pt/18pt "Segoe UI";
     padding: 2px;
@@ -771,7 +769,7 @@ code, code > .highlight {
   overflow: auto; }
 
 .highlight pre code {
-  background-color: #4a4a4a;
+  background-color: #111111;
   border: 1px solid #4a4a4a;
   color: #FFFFFF;
   display: block;

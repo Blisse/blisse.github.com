@@ -5,7 +5,19 @@
 		[
 			[
 				"pa",
-				"padding-left"
+				"padding"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"colo",
+				"color-bg"
 			],
 			[
 				"pad",
@@ -42,18 +54,6 @@
 			[
 				"color-b",
 				"color-bg"
-			],
-			[
-				"text",
-				"text-transform"
-			],
-			[
-				"colo",
-				"color-main"
-			],
-			[
-				"font",
-				"font-family"
 			],
 			[
 				"back",
@@ -255,9 +255,21 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 282.0,
 		"selected_items":
 		[
+			[
+				"findkey",
+				"FindKeyConflicts: All Conflicts"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"emmet",
+				"Emmet: Match Pair (inward)"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
@@ -269,10 +281,6 @@
 			[
 				"alignm",
 				"Preferences: Alignment Key Bindings – User"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"align ",
@@ -368,22 +376,24 @@
 	},
 	"file_history":
 	[
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-01-thenword.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/footer.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-02-25-helloworld.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/2013/04/01/thenword.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitignore",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-03-21-anewbeginning.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/trackers/index.html",
 		"/E/__flac-files.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
@@ -439,9 +449,7 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/css/base.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/resume.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/footer.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/css/footer.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header/header.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer/footer.scss",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
@@ -513,6 +521,53 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h1",
+			"a href=\"#\"",
+			"h3",
+			"h2",
+			"p",
+			"h2",
+			"hh",
+			"h3",
+			"h1",
+			"p",
+			"sec",
+			"grey",
+			"darkgrey",
+			"242",
+			"sec",
+			"main",
+			"121",
+			"#FFFFFF",
+			"68pt",
+			"last",
+			"white",
+			"sec",
+			"main",
+			"first",
+			"0",
+			"62pt",
+			"80pt",
+			"68pt",
+			"20pt",
+			"42pt",
+			"60pt",
+			"24pt",
+			"238",
+			"251",
+			"47",
+			"24",
+			"240",
+			"47",
+			"if page.main == ",
+			"white",
+			"250",
+			"238",
+			"121",
+			"74",
+			"238",
+			"eight",
+			"42pt",
 			"darkgrey",
 			"main",
 			"transparent",
@@ -593,54 +648,7 @@
 			"webkit",
 			"60pt",
 			"darkgrey",
-			"\n        background-color: $color-main;",
-			"\n        color       : #FFFFFF;",
-			"50.4px",
-			"58.8px",
-			"63pt",
-			"\"Bitter\"",
-			"4px",
-			"white",
-			"5px",
-			"white",
-			"8px",
-			"white",
-			"darkgrey",
-			"bg",
-			"2px",
-			"white",
-			"grey",
-			"main",
-			"white",
-			"11pt",
-			"grey",
-			"\n        color       : $color-grey;",
-			"\"Helvetica Neue\", ",
-			" \"Lato\", ",
-			"\n    text-transform  : uppercase;",
-			"px",
-			",",
-			"g",
-			"h3",
-			"h4",
-			"h3",
-			"h1",
-			"\n			<h1>\n				There\n			</h1>\n			<h1>\n				<a href=\"#\">\n					Here\n				</a>\n			</h1>",
-			"#ccc",
-			"#333",
-			";\n",
-			"{",
-			"'",
-			"museo",
-			"\n-------",
-			"300ms",
-			"h2",
-			"h3",
-			"Open Sans",
-			"Cambria",
-			"14pt",
-			"Museo Slab",
-			"16pt"
+			"\n        background-color: $color-main;"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -698,7 +706,7 @@
 		"cols":
 		[
 			0.0,
-			0.516215310982,
+			0.5,
 			1.0
 		],
 		"rows":

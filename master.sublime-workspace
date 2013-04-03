@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding"
+			],
+			[
 				"pa",
 				"padding"
 			],
@@ -18,10 +22,6 @@
 			[
 				"colo",
 				"color-bg"
-			],
-			[
-				"pad",
-				"padding-left"
 			],
 			[
 				"col",
@@ -376,10 +376,10 @@
 	},
 	"file_history":
 	[
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-01-thenword.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
@@ -521,6 +521,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h5",
+			"h6",
+			"p",
 			"h1",
 			"a href=\"#\"",
 			"h3",
@@ -645,10 +648,7 @@
 			"500",
 			"150",
 			"600",
-			"webkit",
-			"60pt",
-			"darkgrey",
-			"\n        background-color: $color-main;"
+			"webkit"
 		],
 		"highlight": true,
 		"in_selection": false,

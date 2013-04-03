@@ -125,20 +125,16 @@ header.page #name a {
 header.page .links-wrapper {
   text-align: center; }
 header.page nav {
-  margin: 4px 0;
-  padding: 1px 0; }
-  header.page nav #nav-wrapper-outer {
-    text-align: center; }
-  header.page nav #nav-wrapper-inner {
-    display: inline-block;
-    text-align: left; }
+  margin: 0;
+  padding: 0; }
   header.page nav ul {
     list-style-type: none;
     white-space: nowrap; }
     header.page nav ul li {
       display: inline-block;
       text-align: left;
-      margin: 0; }
+      margin: 0;
+      padding: 0; }
 header.page nav ul#nav-top li a {
   font-variant: normal;
   font-style: normal;

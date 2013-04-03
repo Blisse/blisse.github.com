@@ -19,17 +19,20 @@
 
 <header class="page">
 	<div class="container">
-		<div class="sixteen columns" id="name">
-			<a href="/"{% if page.main == "home" %} class="currentpage"{% endif %}>
-				<span id="last-name">
-					LAI
-				</span>
-				<span id="first-name">
-					VICTOR
-				</span>
-			</a>
+		<div class="sixteen columns">
+			<div id="name">
+				<a href="/"{% if page.main == "home" %} class="currentpage"{% endif %}>
+					<span id="last-name">
+						LAI
+					</span>
+					<span id="first-name">
+						VICTOR
+					</span>
+				</a>
+			</div>
 		</div>
-		<nav class="sixteen columns">
+		<div class="sixteen columns">
+			<nav>
 			{% case page.main %}
 			{% when "blog" %}
 			<ul id="nav-top">
@@ -145,6 +148,7 @@
 				</li>
 			</ul>
 			{% endcase %}
-		</nav>
+			</nav>
+		</div>
 	</div>
 </header>

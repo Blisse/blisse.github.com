@@ -32,69 +32,13 @@
     .column.alpha, .columns.alpha               { margin-left: 0; }
     .column.omega, .columns.omega               { margin-right: 0; }
 
-    /* Base Grid */
-    .container .one.column,
-    .container .one.columns                     { width: 40px;  }
-    .container .two.columns                     { width: 100px; }
-    .container .three.columns                   { width: 160px; }
-    .container .four.columns                    { width: 220px; }
-    .container .five.columns                    { width: 280px; }
-    .container .six.columns                     { width: 340px; }
-    .container .seven.columns                   { width: 400px; }
-    .container .eight.columns                   { width: 460px; }
-    .container .nine.columns                    { width: 520px; }
-    .container .ten.columns                     { width: 580px; }
-    .container .eleven.columns                  { width: 640px; }
-    .container .twelve.columns                  { width: 700px; }
-    .container .thirteen.columns                { width: 760px; }
-    .container .fourteen.columns                { width: 820px; }
-    .container .fifteen.columns                 { width: 880px; }
-    .container .sixteen.columns                 { width: 940px; }
-
-    .container .one-third.column                { width: 300px; }
-    .container .two-thirds.column               { width: 620px; }
-    
-    /* Pushes & Pulls */
-    .container .pull.by-one                     { left: -50px }
-    .container .pull.by-two                     { left: -110px; }
-    .container .pull.by-three                   { left: -170px; }
-    .container .pull.by-four                    { left: -230px; }
-    .container .pull.by-five                    { left: -290px; }
-    .container .pull.by-six                     { left: -350px; }
-    .container .pull.by-seven                   { left: -410px; }
-    .container .pull.by-eight                   { left: -470px; }
-    .container .pull.by-nine                    { left: -530px; }
-    .container .pull.by-ten                     { left: -590px; }
-    .container .pull.by-eleven                  { left: -650px; }
-    .container .pull.by-twelve                  { left: -710px; }
-    .container .pull.by-thirteen                { left: -770px; }
-    .container .pull.by-fourteen                { left: -830px; }
-    .container .pull.by-fifteen                 { left: -890px; }
-    
-    .container .push.by-one                     { left: 50px }
-    .container .push.by-two                     { left: 110px; }
-    .container .push.by-three                   { left: 170px; }
-    .container .push.by-four                    { left: 230px; }
-    .container .push.by-five                    { left: 290px; }
-    .container .push.by-six                     { left: 350px; }
-    .container .push.by-seven                   { left: 410px; }
-    .container .push.by-eight                   { left: 470px; }
-    .container .push.by-nine                    { left: 530px; }
-    .container .push.by-ten                     { left: 590px; }
-    .container .push.by-eleven                  { left: 650px; }
-    .container .push.by-twelve                  { left: 710px; }
-    .container .push.by-thirteen                { left: 770px; }
-    .container .push.by-fourteen                { left: 830px; }
-    .container .push.by-fifteen                 { left: 890px; }
-
-
 
 /* #Tablet (Portrait)
 ================================================== */
 
     /* Note: Design for a width of 768px */
 
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
+    @media only screen and (min-width: 768px) {
         .container                                  { width: 768px; }
         .container .column,
         .container .columns                         { margin-left: 10px; margin-right: 10px;  }
@@ -229,7 +173,7 @@
     /* Note: Design for a width of 480px */
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 420px; }
+        .container { width: 400px; }
         .container .columns,
         .container .column { margin: 0; }
 
@@ -251,7 +195,7 @@
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
-        .container .two-thirds.column { width: 420px; }
+        .container .two-thirds.column { width: 400px; }
     }
 
 

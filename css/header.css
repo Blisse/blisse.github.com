@@ -7,178 +7,181 @@ header.page {
   padding: 0;
   position: relative;
   width: 100%; }
-header.page a:link {
-  text-decoration: none;
-  font-weight: regular;
-  border: none;
-  background-color: transparent;
-  color: #4a4a4a; }
-header.page a:visited {
-  text-decoration: none;
-  font-weight: regular;
-  border: none;
-  background-color: transparent;
-  color: #4a4a4a; }
-header.page a:hover {
-  text-decoration: none;
-  font-weight: regular;
-  border: none;
-  background-color: transparent;
-  color: #4a4a4a; }
-header.page a:active {
-  text-decoration: none;
-  font-weight: regular;
-  border: none;
-  background-color: transparent;
-  color: #4a4a4a; }
-header.page #name-wrapper {
-  margin: 10px 10px 10px 0;
-  text-align: center;
-  display: block;
-  vertical-align: middle; }
-header.page #name {
-  margin: 0; }
-header.page #name a {
-  padding: 0;
-  text-align: center;
-  font-variant: normal;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 74pt;
-  line-height: 74pt;
-  font-family: "Nexa Light", "Segoe UI Light", Frutiger, "Open Sans", Arial, sans-serif;
-  white-space: nowrap; }
-  header.page #name a span {
-    vertical-align: bottom; }
-  header.page #name a:link #last-name {
+  header.page a:link {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #252525; }
-  header.page #name a:visited #last-name {
+    color: #4a4a4a; }
+  header.page a:visited {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #252525; }
-  header.page #name a:hover #last-name {
+    color: #4a4a4a; }
+  header.page a:hover {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #b11d01; }
-  header.page #name a:active #last-name {
+    color: #4a4a4a; }
+  header.page a:active {
     text-decoration: none;
     font-weight: regular;
     border: none;
     background-color: transparent;
-    color: #b11d01; }
-  header.page #name a:link #first-name {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #b91d1e; }
-  header.page #name a:visited #first-name {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #b91d1e; }
-  header.page #name a:hover #first-name {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #b91d1e; }
-  header.page #name a:active #first-name {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #b91d1e; }
-  header.page #name a.currentpage:link #last-name {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #b11d01; }
-  header.page #name a.currentpage:visited #last-name {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #b11d01; }
-  header.page #name a.currentpage:hover #first-name {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #b11d01; }
-  header.page #name a.currentpage:active #first-name {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #b11d01; }
-header.page .links-wrapper {
-  text-align: center; }
-header.page nav {
+    color: #4a4a4a; }
+  header.page #name-wrapper {
+    margin: 10px 10px 10px 0;
+    text-align: center;
+    display: block;
+    vertical-align: middle; }
+  header.page #name {
+    margin: 0; }
+  header.page #name a {
+    padding: 0;
+    text-align: center;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60pt;
+    line-height: 60pt;
+    font-family: "Nexa Light", Frutiger, "Open Sans", Arial, sans-serif;
+    white-space: nowrap; }
+    header.page #name a span {
+      vertical-align: bottom; }
+    header.page #name a:link #last-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #006ac0; }
+    header.page #name a:visited #last-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #006ac0; }
+    header.page #name a:hover #last-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #006ac0; }
+    header.page #name a:active #last-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #006ac0; }
+    header.page #name a:link #first-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #1d1d1d; }
+    header.page #name a:visited #first-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #1d1d1d; }
+    header.page #name a:hover #first-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #006ac0; }
+    header.page #name a:active #first-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #006ac0; }
+    header.page #name a.currentpage:link #last-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #2773ed; }
+    header.page #name a.currentpage:visited #last-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #2773ed; }
+    header.page #name a.currentpage:hover #first-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #006ac0; }
+    header.page #name a.currentpage:active #first-name {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #006ac0; }
+
+nav.page {
+  background-color: #1d1d1d;
   margin: 0;
-  padding: 0; }
-  header.page nav ul {
+  padding: 5px 0; }
+  nav.page ul {
+    padding: 5px 0;
     list-style-type: none;
     white-space: nowrap; }
-    header.page nav ul li {
+    nav.page ul li {
       display: inline-block;
       text-align: left;
       margin: 0;
       padding: 0; }
-header.page nav ul#nav-top li a {
-  font-variant: normal;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 42pt;
-  line-height: 42pt;
-  font-family: Raleway, "Segoe UI Light", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
-  text-transform: lowercase; }
-  header.page nav ul#nav-top li a:link {
-    color: #838383; }
-  header.page nav ul#nav-top li a:visited {
-    color: #838383; }
-  header.page nav ul#nav-top li a:hover {
-    color: #252525; }
-  header.page nav ul#nav-top li a:active {
-    color: #838383; }
-header.page nav ul#nav-top li.currentpage a:link {
-  color: #b11d01; }
-header.page nav ul#nav-top li.currentpage a:visited {
-  color: #b11d01; }
-header.page nav ul#nav-top li.currentpage a:hover {
-  color: #252525; }
-header.page nav ul#nav-top li.currentpage a:active {
-  color: #b11d01; }
-header.page nav ul#nav-bottom li a {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 11pt;
-  line-height: 11pt;
-  font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
-  text-transform: uppercase; }
-  header.page nav ul#nav-bottom li a:link {
-    color: #838383; }
-  header.page nav ul#nav-bottom li a:visited {
-    color: #838383; }
-  header.page nav ul#nav-bottom li a:hover {
-    color: #b11d01; }
-  header.page nav ul#nav-bottom li a:active {
-    color: #838383; }
-header.page nav ul#nav-bottom li.currentpage a:link {
-  color: #4a4a4a; }
-header.page nav ul#nav-bottom li.currentpage a:visited {
-  color: #4a4a4a; }
-header.page nav ul#nav-bottom li.currentpage a:hover {
-  color: #252525; }
-header.page nav ul#nav-bottom li.currentpage a:active {
-  color: #4a4a4a; }
+    nav.page ul#nav-top li a {
+      font-variant: normal;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 32pt;
+      line-height: 32pt;
+      font-family: "Segoe UI Light", "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
+      text-transform: lowercase;
+      background-color: transparent; }
+      nav.page ul#nav-top li a:link {
+        color: #4a4a4a; }
+      nav.page ul#nav-top li a:visited {
+        color: #4a4a4a; }
+      nav.page ul#nav-top li a:hover {
+        color: #2773ed; }
+      nav.page ul#nav-top li a:active {
+        color: #4a4a4a; }
+    nav.page ul#nav-top li.currentpage a:link {
+      color: white; }
+    nav.page ul#nav-top li.currentpage a:visited {
+      color: white; }
+    nav.page ul#nav-top li.currentpage a:hover {
+      color: #006ac0; }
+    nav.page ul#nav-top li.currentpage a:active {
+      color: white; }
+    nav.page ul#nav-bottom li a {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 11pt;
+      line-height: 11pt;
+      font-family: "Segoe UI Semibold", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
+      text-transform: uppercase;
+      background-color: transparent; }
+      nav.page ul#nav-bottom li a:link {
+        color: #797979; }
+      nav.page ul#nav-bottom li a:visited {
+        color: #797979; }
+      nav.page ul#nav-bottom li a:hover {
+        color: #2773ed; }
+      nav.page ul#nav-bottom li a:active {
+        color: #797979; }
+    nav.page ul#nav-bottom li.currentpage a:link {
+      color: #006ac0; }
+    nav.page ul#nav-bottom li.currentpage a:visited {
+      color: #006ac0; }
+    nav.page ul#nav-bottom li.currentpage a:hover {
+      color: #2773ed; }
+    nav.page ul#nav-bottom li.currentpage a:active {
+      color: #006ac0; }

@@ -14,91 +14,76 @@ header {
 
 		position: relative;
 		width: 100%;
-	}
 
-  &.page a {
-    @include transition-ease;
+    a {
+      @include transition-ease;
 
-    &:link {
-      @include texts(none, regular, none, transparent, $color-darkgrey)
+      &:link {
+        @include texts(none, regular, none, transparent, $color-darkgrey)
+      }
+
+      &:visited {
+        @include texts(none, regular, none, transparent, $color-darkgrey)
+      }
+
+      &:hover {
+        @include texts(none, regular, none, transparent, $color-darkgrey)
+      }
+
+      &:active {
+        @include texts(none, regular, none, transparent, $color-darkgrey)
+      }
+
     }
 
-    &:visited {
-      @include texts(none, regular, none, transparent, $color-darkgrey)
+    #name-wrapper {
+      margin: 10px 10px 10px 0;
+      text-align: center;
+      display: block;
+      vertical-align: middle;
     }
 
-    &:hover {
-      @include texts(none, regular, none, transparent, $color-darkgrey)
+    #name {
+      margin: 0;
     }
 
-    &:active {
-      @include texts(none, regular, none, transparent, $color-darkgrey)
-    }
+    #name a {
+      padding: 0;
+      text-align: center;
 
-  }
+      font-variant: normal;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 60pt;
 
-  &.page #name-wrapper {
-    margin: 10px 10px 10px 0;
-    text-align: center;
-    display: block;
-    vertical-align: middle;
-  }
-
-  &.page #name {
-    margin: 0;
-  }
-
-  &.page #name a {
-    padding: 0;
-    text-align: center;
-
-    font-variant: normal;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 74pt;
-
-    line-height: 74pt;
-    font-family: $font-stack-name;
+      line-height: 60pt;
+      font-family: $font-stack-name;
 
 
-    white-space: nowrap;
+      white-space: nowrap;
 
-    span {
-      vertical-align: bottom;
-    }
+      span {
+        vertical-align: bottom;
+      }
 
-    &:link #last-name {
-      @include texts( none, regular, none, transparent, $color-sec );
-    }
-    &:visited #last-name {
-      @include texts( none, regular, none, transparent, $color-sec );
-    }
-    &:hover #last-name {
-      @include texts( none, regular, none, transparent, $color-main );
-    }
-    &:active #last-name {
-      @include texts( none, regular, none, transparent, $color-main );
-    }
-
-    &:link #first-name {
-      @include texts( none, regular, none, transparent, $color-tert );
-    }
-    &:visited #first-name {
-      @include texts( none, regular, none, transparent, $color-tert );
-    }
-    &:hover #first-name {
-      @include texts( none, regular, none, transparent, $color-tert );
-    }
-    &:active #first-name {
-      @include texts( none, regular, none, transparent, $color-tert );
-    }
-
-    &.currentpage {
       &:link #last-name {
         @include texts( none, regular, none, transparent, $color-main );
       }
       &:visited #last-name {
         @include texts( none, regular, none, transparent, $color-main );
+      }
+      &:hover #last-name {
+        @include texts( none, regular, none, transparent, $color-main );
+      }
+      &:active #last-name {
+        @include texts( none, regular, none, transparent, $color-main );
+      }
+
+      &:link #first-name {
+        @include texts( none, regular, none, transparent, $color-black );
+      }
+      &:visited #first-name {
+        @include texts( none, regular, none, transparent, $color-black );
       }
       &:hover #first-name {
         @include texts( none, regular, none, transparent, $color-main );
@@ -106,76 +91,95 @@ header {
       &:active #first-name {
         @include texts( none, regular, none, transparent, $color-main );
       }
-    }
 
-  }
-
-
-  &.page .links-wrapper {
-    text-align: center;
-  }
-
-  &.page nav {
-    margin: 0;
-    padding: 0;
-
-    ul {
-      list-style-type: none;
-      white-space: nowrap;
-
-      li {
-        display: inline-block;
-        text-align: left;
-        margin: 0;
-        padding: 0;
+      &.currentpage {
+        &:link #last-name {
+          @include texts( none, regular, none, transparent, $color-sec );
+        }
+        &:visited #last-name {
+          @include texts( none, regular, none, transparent, $color-sec );
+        }
+        &:hover #first-name {
+          @include texts( none, regular, none, transparent, $color-main );
+        }
+        &:active #first-name {
+          @include texts( none, regular, none, transparent, $color-main );
+        }
       }
     }
   }
+}
 
-  &.page nav ul#nav-top li a {
-    font-variant: normal;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 42pt;
-    line-height: 42pt;
-    font-family: $font-stack-navtop;
-    text-transform: lowercase;
 
-    &:link {color: $color-grey;}
-    &:visited {color: $color-grey;}
-    &:hover {color: $color-sec;}
-    &:active {color: $color-grey;}
-  }
+nav.page {
 
-  &.page nav ul#nav-top li.currentpage a {
-    &:link {color: $color-main;}
-    &:visited {color: $color-main;}
-    &:hover {color: $color-sec;}
-    &:active {color: $color-main;}
-  }
+  background-color: $color-black;
 
-  &.page nav ul#nav-bottom li {
+  margin: 0;
+  padding: 5px 0;
 
-    a {
-      font-style: normal;
-      font-weight: 300;
-      font-size: 11pt;
-      line-height: 11pt;
-      font-family: $font-stack-navbottom;
+  ul {
+    padding: 5px 0;
+    list-style-type: none;
+    white-space: nowrap;
 
-      text-transform: uppercase;
-
-      &:link {color: $color-grey; }
-      &:visited {color: $color-grey; }
-      &:hover {color: $color-main; }
-      &:active {color: $color-grey; }
+    li {
+      display: inline-block;
+      text-align: left;
+      margin: 0;
+      padding: 0;
     }
-  }
 
-  &.page nav ul#nav-bottom li.currentpage a {
-    &:link { color: $color-darkgrey; }
-    &:visited { color: $color-darkgrey; }
-    &:hover { color: $color-sec; }
-    &:active { color: $color-darkgrey; }
+    &#nav-top li a {
+      font-variant: normal;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 32pt;
+      line-height: 32pt;
+      font-family: $font-stack-navtop;
+      text-transform: lowercase;
+
+      background-color: transparent;
+
+      &:link {color: $color-darkgrey;}
+      &:visited {color: $color-darkgrey;}
+      &:hover {color: $color-sec;}
+      &:active {color: $color-darkgrey;}
+    }
+
+    &#nav-top li.currentpage a {
+      &:link {color: $color-white;}
+      &:visited {color: $color-white;}
+      &:hover {color: $color-main;}
+      &:active {color: $color-white;}
+    }
+
+    &#nav-bottom li {
+
+      a {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11pt;
+        line-height: 11pt;
+        font-family: $font-stack-navbottom;
+
+        text-transform: uppercase;
+
+        background-color: transparent;
+
+        &:link {color: $color-grey; }
+        &:visited {color: $color-grey; }
+        &:hover {color: $color-sec; }
+        &:active {color: $color-grey; }
+      }
+    }
+
+    &#nav-bottom li.currentpage a {
+      &:link { color: $color-main; }
+      &:visited { color: $color-main; }
+      &:hover { color: $color-sec; }
+      &:active { color: $color-main; }
+    }
+
   }
 }

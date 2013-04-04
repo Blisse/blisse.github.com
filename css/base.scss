@@ -48,7 +48,7 @@
 
 	body {
 		-webkit-text-size-adjust: 100%;
-
+    -webkit-font-smoothing: antialiased;
 		background-color: $color-bg;
 
 	}
@@ -169,44 +169,45 @@
 
     display: block;
 
-    color       : $color-text;
-    font: normal normal 200 40pt/1.4 $font-one;
+    color       : $color-black;
+    font: normal normal 100 40pt/1.4 $font-one;
     font-family : $font-stack-primary;
 
     a {
-    &:hover {
-      color: $color-bg;
-    }
-
-    &:active {
-      color: $color-bg;    }
-      display: block;
-      line-height : 56pt;
-      border-left : 56pt solid transparent;
-      padding: 0 10px;
-
-      &:link {
-        color       : $color-text;
-        border-left : 56pt solid $color-main;
-      }
-
-      &:visited {
-        color       : $color-text;
-        border-left : 56pt solid $color-main;
-      }
-
       &:hover {
-        color       : $color-bg;
-        border-left : 56pt solid $color-main;
-        background-color: $color-main;
-        -webkit-transition: background 0.5s;
+        color: $color-bg;
       }
 
       &:active {
-        color       : $color-bg;
-        border-left : 56pt solid $color-main;
-        background-color: $color-main;
-        -webkit-transition: background 0.5s;
+        color: $color-bg;
+        display: block;
+        line-height : 56pt;
+        border-left : 56pt solid transparent;
+        padding: 0 10px;
+
+        &:link {
+          color       : $color-text;
+          border-left : 56pt solid $color-main;
+        }
+
+        &:visited {
+          color       : $color-text;
+          border-left : 56pt solid $color-main;
+        }
+
+        &:hover {
+          color       : $color-bg;
+          border-left : 56pt solid $color-main;
+          background-color: $color-main;
+          -webkit-transition: background 0.5s;
+        }
+
+        &:active {
+          color       : $color-bg;
+          border-left : 56pt solid $color-main;
+          background-color: $color-main;
+          -webkit-transition: background 0.5s;
+        }
       }
     }
   }
@@ -404,10 +405,10 @@
 ================================================== */
 
 	blockquote {
-		border-left     : 2px solid $color-grey;
+		border-left     : 1px solid $color-main;
     background-color: $color-bg;
 
-		margin          : 30px 0 30px 30px;
+		margin          : 30px 0 30px 5px;
 		padding         : 10px 15px;
 
     p {
@@ -416,6 +417,11 @@
   		padding: 0 2px;
       margin: 20px 2px;
       font-style: italic;
+
+      strong {
+        font-style: normal;
+        font-weight: normal;
+      }
   	}
 
     cite {
@@ -450,7 +456,7 @@
   	&.line {
 
       width: 90%;
-      height: 1px;
+      height: 2px;
       color: $color-main;
       background: $color-main;
       background-image: -webkit-linear-gradient(left, $color-bg, $color-darkgrey, $color-bg);
@@ -471,6 +477,25 @@
       background: $color-bg;
   		visibility: hidden;
   	}
+
+    &.left-line {
+
+      width: 100%;
+      height: 2px;
+      color: $color-main;
+      background: $color-main;
+      background-image: -webkit-linear-gradient(left,$color-main, $color-bg);
+      background-image:    -moz-linear-gradient(left,$color-main, $color-bg);
+      background-image:     -ms-linear-gradient(left,$color-main, $color-bg);
+      background-image:      -o-linear-gradient(left,$color-main, $color-bg);
+
+      float: none;
+      clear: both;
+
+      margin-left: auto;
+      margin-right: auto;
+
+    }
 
   }
 
@@ -579,11 +604,11 @@
           margin: 0;
           padding: 0;
 
-          background-color: $color-darkgrey;
+          background-color: $color-black;
 
           h2 {
             display: block;
-            color       : $color-text;
+            color       : $color-black;
             font: normal normal 200 40pt/1.5 $font-one;
             font-family : $font-stack-branch;
             text-transform  : uppercase;
@@ -636,12 +661,12 @@
             margin: 0;
             padding: 0;
 
-            background-color: $color-darkgrey;
+            background-color: $color-black;
 
             h2 {
               display: block;
 
-              color       : $color-text;
+              color       : $color-black;
               font: normal normal 200 40pt/1.5 $font-one;
               font-family : $font-stack-branch;
 
@@ -881,7 +906,7 @@
     list-style-type: none;
 
     border: none;
-    margin: 5px 0;
+    margin: 5px;
     padding: 0;
 
     li {
@@ -899,7 +924,7 @@
       a {
         display: block;
 
-        padding: 1px 2px;
+        padding: 1px 4px;
 
         &:link {
           text-decoration:  none;
@@ -941,7 +966,7 @@
     list-style-type: none;
 
     border: none;
-	  margin: 5px 0;
+	  margin: 5px;
 	  padding: 0;
 
   	li {
@@ -956,7 +981,7 @@
       a {
         display: block;
 
-    		padding: 0px 2px;
+    		padding: 0px 5px;
 
         &:link {
           text-decoration:  none;

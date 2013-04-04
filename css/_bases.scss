@@ -1,17 +1,17 @@
 
-$color-main:#b11d01;
-$color-sec:#252525;
+$color-main:#006ac0;
+$color-sec:#2773ed;
 
-$color-tert:#b91d1e;
+$color-tert:#20aeff;
 
 
 
 $color-white:#FFFFFF;
-$color-grey:rgba(131,131,131,1.0);
+$color-grey:rgba(121,121,121,1.0);
 $color-darkgrey:rgba(74,74,74,1.0);
-$color-black:rgba(7,7,7,1.0);
+$color-black:rgba(29,29,29,1.0);
 
-$color-bg:rgba(248,248,248,1.0);
+$color-bg:rgba(255,255,255,1.0);
 
 $color-text:$color-darkgrey;
 
@@ -20,9 +20,9 @@ $font-stack-monospace: "Consolas", "Lucida Console", "Monaco", monospace !import
 
 $font-one: "Segoe UI";
 
-$font-stack-name: "Nexa Light", "Segoe UI Light", Frutiger, "Open Sans", Arial, sans-serif;
-$font-stack-navtop: Raleway, "Segoe UI Light", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
-$font-stack-navbottom: "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
+$font-stack-name: "Nexa Light", Frutiger, "Open Sans", Arial, sans-serif;
+$font-stack-navtop: "Segoe UI Light", "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
+$font-stack-navbottom: "Segoe UI Semibold", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
 
 
 $font-stack-primary: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
@@ -57,14 +57,14 @@ $font-stack-list: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger",
 }
 
 @mixin text-tags {
-  font: normal normal 300 14pt/1.5 $font-one;
+  font: normal normal 300 11pt/1.5 $font-one;
   font-family: $font-stack-tags;
 }
 
 @mixin text-blockquote-p {
-  font: normal normal 300 14pt/22pt $font-one;
+  font: normal normal 300 14pt/21pt $font-one;
   font-family: $font-stack-text;
-  color: $color-darkgrey;
+  color: $color-black;
 }
 
 @mixin text-blockquote-cite {

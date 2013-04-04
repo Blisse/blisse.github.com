@@ -25,7 +25,8 @@ html {
 
 body {
   -webkit-text-size-adjust: 100%;
-  background-color: #f8f8f8; }
+  -webkit-font-smoothing: antialiased;
+  background-color: white; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -96,25 +97,25 @@ p {
       font-weight: normal;
       border: none;
       background-color: transparent;
-      color: #b11d01; }
+      color: #006ac0; }
     p a:visited {
       text-decoration: none;
       font-weight: normal;
       border: none;
       background-color: transparent;
-      color: #b11d01; }
+      color: #006ac0; }
     p a:hover {
       text-decoration: none;
       font-weight: normal;
       border: none;
-      background-color: #b11d01;
+      background-color: #006ac0;
       color: #FFFFFF; }
     p a:active {
       text-decoration: none;
       font-weight: normal;
       border: none;
       background-color: transparent;
-      color: #b11d01; }
+      color: #006ac0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Segoe UI";
@@ -131,55 +132,54 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     border: none;
     background-color: transparent;
-    color: #b11d01; }
+    color: #006ac0; }
   h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
     text-decoration: none;
     font-weight: normal;
     border: none;
     background-color: transparent;
-    color: #b11d01; }
+    color: #006ac0; }
   h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     text-decoration: none;
     font-weight: normal;
     border: none;
     background-color: transparent;
-    color: #b11d01; }
+    color: #006ac0; }
   h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
     text-decoration: none;
     font-weight: normal;
     border: none;
     background-color: transparent;
-    color: #b11d01; }
+    color: #006ac0; }
 
 h1 {
   display: block;
-  color: #4a4a4a;
-  font: normal normal 200 40pt/1.4 "Segoe UI";
+  color: #1d1d1d;
+  font: normal normal 100 40pt/1.4 "Segoe UI";
   font-family: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif; }
-  h1 a {
+  h1 a:hover {
+    color: white; }
+  h1 a:active {
+    color: white;
     display: block;
     line-height: 56pt;
     border-left: 56pt solid transparent;
     padding: 0 10px; }
-    h1 a:hover {
-      color: #f8f8f8; }
-    h1 a:active {
-      color: #f8f8f8; }
-    h1 a:link {
+    h1 a:active:link {
       color: #4a4a4a;
-      border-left: 56pt solid #b11d01; }
-    h1 a:visited {
+      border-left: 56pt solid #006ac0; }
+    h1 a:active:visited {
       color: #4a4a4a;
-      border-left: 56pt solid #b11d01; }
-    h1 a:hover {
-      color: #f8f8f8;
-      border-left: 56pt solid #b11d01;
-      background-color: #b11d01;
+      border-left: 56pt solid #006ac0; }
+    h1 a:active:hover {
+      color: white;
+      border-left: 56pt solid #006ac0;
+      background-color: #006ac0;
       -webkit-transition: background 0.5s; }
-    h1 a:active {
-      color: #f8f8f8;
-      border-left: 56pt solid #b11d01;
-      background-color: #b11d01;
+    h1 a:active:active {
+      color: white;
+      border-left: 56pt solid #006ac0;
+      background-color: #006ac0;
       -webkit-transition: background 0.5s; }
 
 h2 {
@@ -198,19 +198,19 @@ h2 {
     padding: 0 10px; }
     h2 a:link {
       color: #4a4a4a;
-      border-left: 45pt solid #b11d01; }
+      border-left: 45pt solid #006ac0; }
     h2 a:visited {
       color: #4a4a4a;
-      border-left: 45pt solid #b11d01; }
+      border-left: 45pt solid #006ac0; }
     h2 a:hover {
-      color: #f8f8f8;
-      border-left: 45pt solid #b11d01;
-      background-color: #b11d01;
+      color: white;
+      border-left: 45pt solid #006ac0;
+      background-color: #006ac0;
       -webkit-transition: background 500ms; }
     h2 a:active {
-      color: #f8f8f8;
-      border-left: 45pt solid #b11d01;
-      background-color: #b11d01;
+      color: white;
+      border-left: 45pt solid #006ac0;
+      background-color: #006ac0;
       -webkit-transition: background 500ms; }
 
 h3 {
@@ -220,11 +220,11 @@ h3 {
   font: normal normal 300 20pt/1.5 "Segoe UI";
   font-family: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif; }
   h3 a:hover {
-    color: #f8f8f8;
-    background-color: #b11d01; }
+    color: white;
+    background-color: #006ac0; }
   h3 a:active {
-    color: #f8f8f8;
-    background-color: #b11d01; }
+    color: white;
+    background-color: #006ac0; }
   h3 a {
     display: block;
     padding-left: 4px; }
@@ -235,11 +235,11 @@ h3 {
       border-bottom: 2px solid #4a4a4a;
       color: #4a4a4a; }
     h3 a:hover {
-      border-bottom: 2px solid #b11d01;
-      color: #f8f8f8; }
+      border-bottom: 2px solid #006ac0;
+      color: white; }
     h3 a:active {
-      border-bottom: 2px solid #b11d01;
-      color: #f8f8f8; }
+      border-bottom: 2px solid #006ac0;
+      color: white; }
 
 h4 {
   display: block;
@@ -247,11 +247,11 @@ h4 {
   font: normal normal 200 16pt/1.5 "Segoe UI";
   font-family: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Open Sans", sans-serif; }
   h4 a:hover {
-    color: #f8f8f8;
-    background-color: #b11d01; }
+    color: white;
+    background-color: #006ac0; }
   h4 a:active {
-    color: #f8f8f8;
-    background-color: #b11d01; }
+    color: white;
+    background-color: #006ac0; }
   h4 a {
     padding-left: 4px;
     display: block; }
@@ -262,11 +262,11 @@ h4 {
       border-bottom: 1.5px solid #4a4a4a;
       color: #4a4a4a; }
     h4 a:hover {
-      border-bottom: 1.5px solid #b11d01;
-      color: #f8f8f8; }
+      border-bottom: 1.5px solid #006ac0;
+      color: white; }
     h4 a:active {
-      border-bottom: 1.5px solid #b11d01;
-      color: #f8f8f8; }
+      border-bottom: 1.5px solid #006ac0;
+      color: white; }
 
 h5 {
   display: block;
@@ -274,11 +274,11 @@ h5 {
   font: normal normal 200 11pt/1.5 "Segoe UI";
   font-family: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif; }
   h5 a:hover {
-    color: #f8f8f8;
-    background-color: #b11d01; }
+    color: white;
+    background-color: #006ac0; }
   h5 a:active {
-    color: #f8f8f8;
-    background-color: #b11d01; }
+    color: white;
+    background-color: #006ac0; }
   h5 a {
     padding-left: 3px;
     display: block; }
@@ -289,10 +289,10 @@ h5 {
       color: #4a4a4a;
       text-decoration: underline; }
     h5 a:hover {
-      color: #f8f8f8;
+      color: white;
       text-decoration: none; }
     h5 a:active {
-      color: #f8f8f8;
+      color: white;
       text-decoration: none; }
 
 h6 {
@@ -302,11 +302,11 @@ h6 {
   font-family: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
   text-transform: uppercase; }
   h6 a:hover {
-    color: #f8f8f8;
-    background-color: #b11d01; }
+    color: white;
+    background-color: #006ac0; }
   h6 a:active {
-    color: #f8f8f8;
-    background-color: #b11d01; }
+    color: white;
+    background-color: #006ac0; }
   h6 a {
     padding-left: 2px;
     display: block; }
@@ -317,26 +317,29 @@ h6 {
       color: #4a4a4a;
       border-left: 1px solid #4a4a4a; }
     h6 a:hover {
-      color: #f8f8f8;
-      border-left: 1px solid #b11d01; }
+      color: white;
+      border-left: 1px solid #006ac0; }
     h6 a:active {
-      color: #f8f8f8;
-      border-left: 1px solid #b11d01; }
+      color: white;
+      border-left: 1px solid #006ac0; }
 
 /* #Quotes
 ================================================== */
 blockquote {
-  border-left: 2px solid #838383;
-  background-color: #f8f8f8;
-  margin: 30px 0 30px 30px;
+  border-left: 1px solid #006ac0;
+  background-color: white;
+  margin: 30px 0 30px 5px;
   padding: 10px 15px; }
   blockquote p {
-    font: normal normal 300 14pt/22pt "Segoe UI";
+    font: normal normal 300 14pt/21pt "Segoe UI";
     font-family: "Segoe UI", "Myriad Pro", "Frutiger", "Frutiger Linotype", "Dejavu Sans", sans-serif;
-    color: #4a4a4a;
+    color: #1d1d1d;
     padding: 0 2px;
     margin: 20px 2px;
     font-style: italic; }
+    blockquote p strong {
+      font-style: normal;
+      font-weight: normal; }
   blockquote cite {
     font: normal normal 300 11pt/20pt "Segoe UI";
     color: #4a4a4a;
@@ -350,30 +353,43 @@ blockquote {
 hr {
   border: 0;
   height: 1px;
-  color: #838383;
-  background: #838383;
+  color: #797979;
+  background: #797979;
   width: 100%;
   margin: 10px 0;
   float: none;
   clear: both; }
   hr.line {
     width: 90%;
-    height: 1px;
-    color: #b11d01;
-    background: #b11d01;
-    background-image: -webkit-linear-gradient(left, #f8f8f8, #4a4a4a, #f8f8f8);
-    background-image: -moz-linear-gradient(left, #f8f8f8, #4a4a4a, #f8f8f8);
-    background-image: -ms-linear-gradient(left, #f8f8f8, #4a4a4a, #f8f8f8);
-    background-image: -o-linear-gradient(left, #f8f8f8, #4a4a4a, #f8f8f8);
+    height: 2px;
+    color: #006ac0;
+    background: #006ac0;
+    background-image: -webkit-linear-gradient(left, white, #4a4a4a, white);
+    background-image: -moz-linear-gradient(left, white, #4a4a4a, white);
+    background-image: -ms-linear-gradient(left, white, #4a4a4a, white);
+    background-image: -o-linear-gradient(left, white, #4a4a4a, white);
     float: none;
     clear: both;
     margin-left: auto;
     margin-right: auto; }
   hr.space {
     height: 0;
-    color: #f8f8f8;
-    background: #f8f8f8;
+    color: white;
+    background: white;
     visibility: hidden; }
+  hr.left-line {
+    width: 100%;
+    height: 2px;
+    color: #006ac0;
+    background: #006ac0;
+    background-image: -webkit-linear-gradient(left, #006ac0, white);
+    background-image: -moz-linear-gradient(left, #006ac0, white);
+    background-image: -ms-linear-gradient(left, #006ac0, white);
+    background-image: -o-linear-gradient(left, #006ac0, white);
+    float: none;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto; }
 
 /* #Section
 ================================================== */
@@ -385,7 +401,7 @@ section {
     margin: 0;
     padding: 0; }
     section header .tags {
-      font: normal normal 300 14pt/1.5 "Segoe UI";
+      font: normal normal 300 11pt/1.5 "Segoe UI";
       font-family: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
       color: #4a4a4a;
       text-transform: uppercase;
@@ -407,10 +423,10 @@ section {
       color: #4a4a4a; }
 
 section.archives header {
-  border-bottom: 1px solid #838383; }
+  border-bottom: 1px solid #797979; }
   section.archives header h3 {
     display: block;
-    color: #f8f8f8;
+    color: white;
     background-color: #4a4a4a;
     border: none;
     font: normal normal 300 14pt/30pt "Segoe UI";
@@ -419,15 +435,15 @@ section.archives header {
     margin: 0;
     text-transform: uppercase; }
     section.archives header h3 a:hover {
-      color: #f8f8f8;
-      background-color: #b11d01; }
+      color: white;
+      background-color: #006ac0; }
     section.archives header h3 a:active {
-      color: #f8f8f8;
-      background-color: #b11d01; }
+      color: white;
+      background-color: #006ac0; }
     section.archives header h3 a {
       padding-left: 4px;
       border: none;
-      color: #f8f8f8;
+      color: white;
       line-height: 30pt; }
   section.archives header .tags {
     font-size: 11pt; }
@@ -444,20 +460,20 @@ section.branch {
       float: none;
       margin: 0;
       padding: 0;
-      background-color: #4a4a4a; }
+      background-color: #1d1d1d; }
       section.branch .row header h2 {
         display: block;
-        color: #4a4a4a;
+        color: #1d1d1d;
         font: normal normal 200 40pt/1.5 "Segoe UI";
         font-family: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
         text-transform: uppercase;
         padding: 0;
-        background-color: #f8f8f8; }
+        background-color: white; }
       section.branch .row header .caption p {
         padding: 0 5px 0 5px;
         font: normal normal 300 12pt/1.5 "Segoe UI";
         font-family: "Segoe UI Light", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-        color: #f8f8f8;
+        color: white;
         text-transform: uppercase; }
     section.branch .row .content {
       display: table-cell;
@@ -478,10 +494,10 @@ section.branch {
         float: left;
         margin: 0;
         padding: 0;
-        background-color: #4a4a4a; }
+        background-color: #1d1d1d; }
         section.branch .row header h2 {
           display: block;
-          color: #4a4a4a;
+          color: #1d1d1d;
           font: normal normal 200 40pt/1.5 "Segoe UI";
           font-family: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
           text-transform: uppercase;
@@ -490,7 +506,7 @@ section.branch {
           padding: 0 5px 5px 5px;
           font: normal normal 300 12pt/1.5 "Segoe UI";
           font-family: "Segoe UI Light", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-          color: #f8f8f8;
+          color: white;
           text-transform: uppercase; }
       section.branch .row .content {
         display: block;
@@ -501,9 +517,9 @@ section.branch {
           margin: 10px 0;
           padding: 5px 0; } }
 section.branch:hover header {
-  background-color: #b11d01; }
+  background-color: #006ac0; }
   section.branch:hover header h2 {
-    color: #b11d01; }
+    color: #006ac0; }
 
 /* #Article
 ================================================== */
@@ -515,7 +531,7 @@ article {
     margin: 0;
     padding: 0; }
     article header .tags {
-      font: normal normal 300 14pt/1.5 "Segoe UI";
+      font: normal normal 300 11pt/1.5 "Segoe UI";
       font-family: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
       color: #4a4a4a;
       text-transform: uppercase;
@@ -557,12 +573,12 @@ article {
       text-decoration: none;
       font-weight: normal;
       background-color: transparent;
-      color: #252525; }
+      color: #2773ed; }
     article .discuss a:active {
       text-decoration: none;
       font-weight: normal;
       background-color: transparent;
-      color: #252525; }
+      color: #2773ed; }
 
 /* #Posts
 ================================================== */
@@ -610,30 +626,30 @@ ul {
         font-weight: normal;
         border: none;
         background-color: transparent;
-        color: #b11d01; }
+        color: #006ac0; }
       ul li a:visited {
         text-decoration: none;
         font-weight: normal;
         border: none;
         background-color: transparent;
-        color: #b11d01; }
+        color: #006ac0; }
       ul li a:hover {
         text-decoration: none;
         font-weight: normal;
         border: none;
-        background-color: #b11d01;
+        background-color: #006ac0;
         color: #FFFFFF; }
       ul li a:active {
         text-decoration: none;
         font-weight: normal;
         border: none;
         background-color: transparent;
-        color: #b11d01; }
+        color: #006ac0; }
 
 ul.simple-small {
   list-style-type: none;
   border: none;
-  margin: 5px 0;
+  margin: 5px;
   padding: 0; }
   ul.simple-small li {
     border-bottom: 1px solid white;
@@ -641,14 +657,14 @@ ul.simple-small {
     padding: 0;
     color: #4a4a4a; }
     ul.simple-small li a:hover {
-      color: #f8f8f8;
-      background-color: #b11d01; }
+      color: white;
+      background-color: #006ac0; }
     ul.simple-small li a:active {
-      color: #f8f8f8;
-      background-color: #b11d01; }
+      color: white;
+      background-color: #006ac0; }
     ul.simple-small li a {
       display: block;
-      padding: 1px 2px; }
+      padding: 1px 4px; }
       ul.simple-small li a:link {
         text-decoration: none;
         font-weight: normal;
@@ -662,20 +678,20 @@ ul.simple-small {
       ul.simple-small li a:hover {
         text-decoration: none;
         font-weight: normal;
-        color: #f8f8f8;
-        background-color: #b11d01; }
+        color: white;
+        background-color: #006ac0; }
       ul.simple-small li a:active {
         text-decoration: none;
         font-weight: normal;
-        color: #f8f8f8;
-        background-color: #b11d01; }
+        color: white;
+        background-color: #006ac0; }
     ul.simple-small li:last-child {
       border-bottom: none; }
 
 ul.simple-large {
   list-style-type: none;
   border: none;
-  margin: 5px 0;
+  margin: 5px;
   padding: 0; }
   ul.simple-large li {
     border-bottom: 2px solid white;
@@ -684,7 +700,7 @@ ul.simple-large {
     color: #4a4a4a; }
     ul.simple-large li a {
       display: block;
-      padding: 0px 2px; }
+      padding: 0px 5px; }
       ul.simple-large li a:link {
         text-decoration: none;
         font-weight: normal;
@@ -698,13 +714,13 @@ ul.simple-large {
       ul.simple-large li a:hover {
         text-decoration: none;
         font-weight: normal;
-        color: #f8f8f8;
-        background-color: #b11d01; }
+        color: white;
+        background-color: #006ac0; }
       ul.simple-large li a:active {
         text-decoration: none;
         font-weight: normal;
-        color: #f8f8f8;
-        background-color: #b11d01; }
+        color: white;
+        background-color: #006ac0; }
     ul.simple-large li:last-child {
       border-bottom: none; }
 
@@ -715,7 +731,7 @@ dl {
     border-width: 2px;
     border-style: solid;
     border-color: #4a4a4a;
-    background-color: #b11d01;
+    background-color: #006ac0;
     color: #FFFFFF;
     font: normal normal 300 14pt/18pt "Segoe UI";
     padding: 2px;

@@ -17,10 +17,15 @@ Everything else is free to use under the MIT License. Thanks!
 
 -------
 
+
+    [2012-04-08] 2.1
+
+Scratch that. Not really big changes because of the way my site is structured now, but it's slightly noticeable. I am working to incorporate Microsoft's attempt to make text the focal point of the application. Instead of having literal borders, spacing and sizing of text creates a natural feel. It's still a work in progress, but I really like that concept.
+
+
     [2012-03-24] 2.0
 
 Done my final changes to the site. Unlikely to change any other parts of the site in the future unless I experience some stronger shifts. For now, this will be the base from which I will be building new layouts and features. Lots of work to get this site running. I hope it works!
-
 
 
     [2012-02-26] 1.1

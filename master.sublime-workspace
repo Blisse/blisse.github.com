@@ -4,16 +4,20 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-variant"
+			],
+			[
+				"color-b",
+				"color-black"
+			],
+			[
 				"pad",
 				"padding"
 			],
 			[
 				"pa",
 				"padding"
-			],
-			[
-				"font",
-				"font-style"
 			],
 			[
 				"text",
@@ -50,10 +54,6 @@
 			[
 				"padding",
 				"padding-left"
-			],
-			[
-				"color-b",
-				"color-bg"
 			],
 			[
 				"back",
@@ -255,7 +255,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 282.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
@@ -376,13 +376,17 @@
 	},
 	"file_history":
 	[
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-06-meditation.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-01-thenword.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
+		"/E/__ffp-files.txt",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/reset.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-01-thenword.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/footer.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
@@ -396,7 +400,6 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/trackers/index.html",
 		"/E/__flac-files.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/atom.xml",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/archives/index.html",
 		"/C/Users/Victor/Desktop/f2ksdk/foobar2000/helpers/create_directory_helper.cpp",
@@ -484,7 +487,6 @@
 		"/C/Users/Victor/Desktop/codepro_regulardemo_english/stylesheet.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/print.css",
 		"/C/Users/Victor/AppData/Local/Temp/7zO72EC.tmp/Webfont License.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/reset.css",
 		"/C/Users/Victor/AppData/Local/Temp/7zO51C7.tmp/readme.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/resume/index.html",
@@ -501,9 +503,7 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/404.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/.gitignore",
 		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/_config.yml",
-		"/D/Root/Air/Dropbox/Sides/STagger/Strings/Attributes.py",
-		"/D/Root/Air/Dropbox/Sides/STagger/master_music_library",
-		"/D/Root/Air/Dropbox/Sides/STagger/Libraries/Attributes.py"
+		"/D/Root/Air/Dropbox/Sides/STagger/Strings/Attributes.py"
 	],
 	"find":
 	{
@@ -521,6 +521,50 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tert",
+			"p",
+			"darkgrey",
+			"tert",
+			"42pt",
+			"sec",
+			"tert",
+			"32pt",
+			"tert",
+			"grey",
+			"74pt",
+			"42pt",
+			"34",
+			"54",
+			"15",
+			"74",
+			"nav ul",
+			"nav ",
+			"&.page ",
+			"darkgrey",
+			"main",
+			"360px",
+			"420px",
+			"300px",
+			"159",
+			"131",
+			"main",
+			"darkgrey",
+			"7",
+			"black",
+			"main",
+			"black",
+			"248",
+			"tert",
+			"black",
+			"main",
+			"tert",
+			"sec",
+			"darkgrey",
+			"main",
+			"sec",
+			"tert",
+			"main",
+			"darkgrey",
 			"h5",
 			"h6",
 			"p",
@@ -604,51 +648,7 @@
 			"main",
 			"site-",
 			"20121113",
-			"20121105",
-			"15pt",
-			"darkgrey",
-			"main",
-			"darkgrey",
-			"main",
-			"h5",
-			"h4",
-			"h3",
-			"\n        border-left: 1px solid $color-text;",
-			"\n        border-left: 1px solid $color-darkgrey;",
-			"left",
-			"1px",
-			"left",
-			"\n        border-left : 3px solid $color-text;",
-			"\n        border-left : 4px solid $color-text;",
-			"$color-main;",
-			"$color-bg;",
-			"main",
-			"\n        border-left : 4px solid $color-main;",
-			"\n        background-color: $color-main;",
-			"}",
-			"1500",
-			"-1deg",
-			"100% ",
-			"\n                @include texts(none, normal, none, transparent, $color-main);\n              ",
-			"\n        transform: rotateX(-2deg);\n        -webkit-transform: rotateY(-2deg); /* Safari and Chrome */",
-			"150ms",
-			"import",
-			"100",
-			"1500",
-			"\n        transform: rotateX(-2deg);\n        -webkit-transform: rotateY(-2deg); /* Safari and Chrome */",
-			"2deg",
-			"darkgrey",
-			"main",
-			"#FFFFFF",
-			"\"Bitter\"",
-			"darkgrey",
-			"sec",
-			"1000",
-			"5deg",
-			"500",
-			"150",
-			"600",
-			"webkit"
+			"20121105"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -667,11 +667,6 @@
 	},
 	"groups":
 	[
-		{
-			"sheets":
-			[
-			]
-		},
 		{
 			"sheets":
 			[
@@ -695,18 +690,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":

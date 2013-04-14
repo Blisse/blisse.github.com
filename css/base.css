@@ -559,22 +559,26 @@ article {
       text-decoration: none;
       font-weight: normal;
       background-color: transparent;
-      color: #4a4a4a; }
+      color: #2b2b2b;
+      border-bottom: 1px dotted #2b2b2b; }
     article .more-info a:visited {
       text-decoration: none;
       font-weight: normal;
       background-color: transparent;
-      color: #4a4a4a; }
+      color: #2b2b2b;
+      border-bottom: 1px dotted #2b2b2b; }
     article .more-info a:hover {
       text-decoration: none;
       font-weight: normal;
       background-color: transparent;
-      color: #2773ed; }
+      color: #006ac0;
+      border-bottom: 1px solid #006ac0; }
     article .more-info a:active {
       text-decoration: none;
       font-weight: normal;
       background-color: transparent;
-      color: #2773ed; }
+      color: #006ac0;
+      border-bottom: 1px solid #006ac0; }
     article .more-info a.discuss {
       float: right; }
     article .more-info a.read-more {
@@ -693,12 +697,9 @@ ul.simple-large {
   ul.simple-large li {
     margin: 5px 0;
     padding: 0;
-    border-left: 2px solid #797979;
     font: normal normal 300 20pt/30pt "Segoe UI";
     font-family: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
     color: #4a4a4a; }
-    ul.simple-large li:hover {
-      border-left-color: #006ac0; }
     ul.simple-large li a {
       display: block; }
       ul.simple-large li a:link {

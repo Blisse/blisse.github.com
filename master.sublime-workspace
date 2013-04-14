@@ -4,32 +4,52 @@
 		"selected_items":
 		[
 			[
+				"colo",
+				"color-black"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"bor",
+				"border-left"
+			],
+			[
+				"col",
+				"color-black"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
 				"font",
-				"font-variant"
+				"font-size"
 			],
 			[
 				"color-b",
 				"color-black"
 			],
 			[
-				"pad",
-				"padding"
-			],
-			[
 				"pa",
 				"padding"
-			],
-			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"colo",
-				"color-bg"
-			],
-			[
-				"col",
-				"color-main"
 			],
 			[
 				"color-",
@@ -48,20 +68,12 @@
 				"text-transform"
 			],
 			[
-				"fon",
-				"font-size"
-			],
-			[
 				"padding",
 				"padding-left"
 			],
 			[
 				"back",
 				"background-color"
-			],
-			[
-				"border",
-				"border-bottom"
 			],
 			[
 				"paddin",
@@ -114,10 +126,6 @@
 			[
 				"margi",
 				"margin-top"
-			],
-			[
-				"bor",
-				"border-bottom"
 			],
 			[
 				"mar",
@@ -376,42 +384,54 @@
 	},
 	"file_history":
 	[
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-06-meditation.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/README.markdown",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/blog/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/layout.css",
+		"/C/Users/Victor/Downloads/webfontkit-20130413-204354/stylesheet.css",
+		"/C/Users/Victor/AppData/Local/Temp/7zE6FD2.tmp/stylesheet.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_config.yml",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/footer.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/post.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/default.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/archives/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/page.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardhead.html",
+		"/C/Users/Victor/Desktop/icomoon24515/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-icomoon/icomoon.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-awesome/font-awesome.css",
+		"/C/Users/Victor/Desktop/icomoon24515/style.css",
+		"/C/Users/Victor/Desktop/icomoon24515/fonts/icomoon.svg",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitattributes",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitignore",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
+		"/D/Root/Air/Dropbox/Site/master/.gitignore",
+		"/J/Documents/howto.txt",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-06-meditation.md",
 		"/E/__ffp-files.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/reset.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-01-thenword.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/footer.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-02-25-helloworld.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/2013/04/01/thenword.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitignore",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-03-21-anewbeginning.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/trackers/index.html",
 		"/E/__flac-files.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/atom.xml",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/archives/index.html",
 		"/C/Users/Victor/Desktop/f2ksdk/foobar2000/helpers/create_directory_helper.cpp",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_config.yml",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/README.markdown",
 		"/D/Root/Air/Dropbox/save.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardhead.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/ogltictactoe/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/post.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/page.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/blog/index.html",
 		"/C/Users/Victor/.bashrc",
 		"/C/Users/Victor/.gitconfig",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/setp/index.html",
@@ -421,7 +441,6 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-11-12-teamliquidattack.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-09-22-dataurls.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-22-html5valid.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/default.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_plugins/jekyll-sass.rb",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_plugins/pagination.rb",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/blog/page-2/index.html",
@@ -461,14 +480,12 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/compiled/base.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header/header.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/ie.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-awesome/font-awesome.css",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/color-palette.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/googlefonts.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/layout.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/projects/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/projects/ogltictactoe/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/nexa_light-webfont.svg",
@@ -494,16 +511,7 @@
 		"/C/Users/Victor/Desktop/bootstrap/js/bootstrap.js",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/FileDiffs.sublime-settings",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-12-31-stufftodo.markdown",
-		"/C/Users/Victor/Downloads/id3v2.3.0 - ID3.org.htm",
-		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/README.markdown",
-		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/CNAME",
-		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/.git/refs/heads/gh-pages",
-		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/.git/refs/heads/master",
-		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/404.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/.gitignore",
-		"/D/Root/Air/Dropbox/Site/grandmaster/gh-pages/_config.yml",
-		"/D/Root/Air/Dropbox/Sides/STagger/Strings/Attributes.py"
+		"/C/Users/Victor/Downloads/id3v2.3.0 - ID3.org.htm"
 	],
 	"find":
 	{
@@ -521,6 +529,78 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"main",
+			"sec",
+			"darkgrey",
+			"center",
+			"bg",
+			"black",
+			"background-color: $color-bg;",
+			"grey",
+			"bg",
+			"white",
+			"darkgrey",
+			"grey",
+			"white",
+			"darkgrey",
+			"background-color: $color-darkgrey;",
+			"black",
+			"journal",
+			"text",
+			"grey",
+			"white",
+			"30px",
+			"hidden",
+			"h2",
+			"20pt",
+			"24pt",
+			"40pt",
+			"43",
+			"7",
+			"32pt",
+			"main",
+			"40pt",
+			"32pt",
+			"five",
+			"60",
+			"text",
+			"30pt",
+			"45pt",
+			"main",
+			"h2",
+			"Museo Sans 500",
+			"white",
+			"h3",
+			"h2",
+			"grey",
+			"h1",
+			"$color-bg",
+			"grey",
+			"white",
+			"h5",
+			"255",
+			"grey",
+			"bg",
+			"main",
+			"dotted",
+			"bg",
+			"29",
+			"text",
+			"span",
+			"rgba",
+			"15px",
+			"webkit",
+			"15px -4px",
+			"rgba(31, 73, 125, 0.8)",
+			"main",
+			"bg",
+			"transparent;",
+			"transparent;\n          color           : $color-bg;",
+			"main",
+			"div",
+			"\n	</span>",
+			"\n	<span class=\"box1\">",
+			"fonts",
 			"tert",
 			"p",
 			"darkgrey",
@@ -576,79 +656,7 @@
 			"h2",
 			"hh",
 			"h3",
-			"h1",
-			"p",
-			"sec",
-			"grey",
-			"darkgrey",
-			"242",
-			"sec",
-			"main",
-			"121",
-			"#FFFFFF",
-			"68pt",
-			"last",
-			"white",
-			"sec",
-			"main",
-			"first",
-			"0",
-			"62pt",
-			"80pt",
-			"68pt",
-			"20pt",
-			"42pt",
-			"60pt",
-			"24pt",
-			"238",
-			"251",
-			"47",
-			"24",
-			"240",
-			"47",
-			"if page.main == ",
-			"white",
-			"250",
-			"238",
-			"121",
-			"74",
-			"238",
-			"eight",
-			"42pt",
-			"darkgrey",
-			"main",
-			"transparent",
-			"text",
-			"$color-main",
-			"bg",
-			"underline",
-			"bg",
-			"text",
-			"1",
-			"sixteen",
-			"0.5",
-			"\n        background: -moz-linear-gradient(left, rgba(0,164,164,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */\n        background: -webkit-gradient(linear, left, right, color-stop(0%,rgba(0,164,164,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */\n        background: -webkit-linear-gradient(left, rgba(0,164,164,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */\n        background: -o-linear-gradient(left, rgba(0,164,164,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */\n        background: -ms-linear-gradient(left, rgba(0,164,164,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */\n        background: linear-gradient(to right, rgba(0,164,164,1) 0%,rgba(255,255,255,0) 100%); /* W3C */\n        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a4a4', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */\n",
-			"56pt",
-			"300ms",
-			"1s",
-			"top",
-			"45pt",
-			"56pt",
-			"text",
-			"grey",
-			"150ms",
-			"300ms",
-			"150ms",
-			"5px",
-			"<i class=\"icon-star\"></i>",
-			"#FFFFFF",
-			"bg",
-			"$color-main",
-			"#FFFFFF",
-			"main",
-			"site-",
-			"20121113",
-			"20121105"
+			"h1"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -719,12 +727,28 @@
 		"selected_items":
 		[
 			[
-				"_bases",
-				"css/_bases.scss"
+				"footer",
+				"css/footer.scss"
+			],
+			[
+				"heade",
+				"_includes/header.html"
 			],
 			[
 				"header",
 				"css/header.scss"
+			],
+			[
+				"_bas",
+				"css/_bases.scss"
+			],
+			[
+				"base",
+				"css/base.scss"
+			],
+			[
+				"_bases",
+				"css/_bases.scss"
 			],
 			[
 				"footer.ht",
@@ -735,20 +759,12 @@
 				"css/header.scss"
 			],
 			[
-				"footer",
-				"css/footer/footer.css"
-			],
-			[
 				"hea",
 				"css/header/header.css"
 			],
 			[
 				"colo",
 				"css/color-palette.css"
-			],
-			[
-				"heade",
-				"css/header/header.css"
 			],
 			[
 				"heht",
@@ -781,6 +797,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 256.0,
+	"side_bar_width": 197.0,
 	"status_bar_visible": true
 }

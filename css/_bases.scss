@@ -9,11 +9,13 @@ $color-tert:#20aeff;
 $color-white:#FFFFFF;
 $color-grey:rgba(121,121,121,1.0);
 $color-darkgrey:rgba(74,74,74,1.0);
-$color-black:rgba(29,29,29,1.0);
+$color-black:rgba(43,43,43,1.0);
 
-$color-bg:rgba(255,255,255,1.0);
+$color-footer:rgba(7,7,7,1.0);
 
-$color-text:$color-darkgrey;
+$color-bg:rgb(235, 241, 244);
+
+$color-text:$color-black;
 
 
 $font-stack-monospace: "Consolas", "Lucida Console", "Monaco", monospace !important;
@@ -21,14 +23,14 @@ $font-stack-monospace: "Consolas", "Lucida Console", "Monaco", monospace !import
 $font-one: "Segoe UI";
 
 $font-stack-name: "Nexa Light", Frutiger, "Open Sans", Arial, sans-serif;
-$font-stack-navtop: "Segoe UI Light", "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
-$font-stack-navbottom: "Segoe UI Semibold", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
+$font-stack-navtop: "Segoe UI Semilight", "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
+$font-stack-navbottom: "Segoe UI Bold", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
 
 
 $font-stack-primary: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
 $font-stack-subheader: "Segoe UI Light", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
 $font-stack-item: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
-$font-stack-import: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
+$font-stack-import: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
 
 $font-stack-branch: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
 

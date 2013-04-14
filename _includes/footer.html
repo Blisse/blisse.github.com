@@ -1,13 +1,37 @@
-<div class="container">
-  <footer>
-  	<div class="sixteen columns">
-  		<p>
-  			All content copyright &copy; <a href="/about">{{ site.author }}</a>. Enjoyed the content? <a href="{{ site.atom }}" target="_blank">Subscribe!</a>
-  		</p>
-  		<p>
-  			Powered by the <a href="http://github.com/mojombo/jekyll" title="The Jekyll (static site generator) code repository"
-  			rel="external" target="_blank">Jekyll</a> monster through <a href="http://pages.github.com/">GitHub Pages</a>.
+<footer>
+  <div class="container">
+    <div class="six columns footer-about">
+      <h6>
+        Quick Look
+      </h6>
+      <p>
+        Victor Lai is a 19-year-old undergraduate Software Engineering student at the University of Waterloo. This is his site.
       </p>
     </div>
-  </footer>
-</div>
+    <div class="ten columns">
+        <p id="social-icons">
+          <a href="www.twitter.com/{{ site.twitter }}">
+            <span aria-hidden="true" data-icon="&#xe000;"></span>
+          </a>
+          <a href="www.github.com/{{ site.github }}">
+            <span aria-hidden="true" data-icon="&#xe001;"></span>
+          </a>
+          <a href="/atom.xml">
+            <span aria-hidden="true" data-icon="&#xe002;"></span>
+          </a>
+          <a href="{{ site.email }}">
+            <span aria-hidden="true" data-icon="&#xe003;"></span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="sixteen columns">
+      <p>
+        Copyright &copy; 2013 {{ site.author }}. Powered by
+        <a href="http://github.com/mojombo/jekyll" title="The Jekyll (static site generator) code repository" rel="external" target="_blank">
+          Jekyll
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>

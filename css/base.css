@@ -227,7 +227,6 @@ h2 {
 
 h3 {
   display: block;
-  padding-left: 4px;
   font-weight: bold;
   color: #4a4a4a;
   font: normal normal 300 20pt/1.5 "Segoe UI";
@@ -239,8 +238,8 @@ h3 {
     color: #ebf1f4;
     background-color: #006ac0; }
   h3 a {
-    display: block;
-    padding-left: 4px; }
+    padding: 0 4px;
+    display: inline-block; }
     h3 a:link {
       border-bottom: 2px solid #2b2b2b;
       color: #2b2b2b; }
@@ -266,8 +265,8 @@ h4 {
     color: #ebf1f4;
     background-color: #006ac0; }
   h4 a {
-    padding-left: 4px;
-    display: block; }
+    padding: 0 4px;
+    display: inline-block; }
     h4 a:link {
       border-bottom: 1.5px solid #2b2b2b;
       color: #2b2b2b; }
@@ -293,8 +292,8 @@ h5 {
     color: #ebf1f4;
     background-color: #006ac0; }
   h5 a {
-    padding-left: 3px;
-    display: block; }
+    padding: 0 3px;
+    display: inline-block; }
     h5 a:link {
       color: #2b2b2b;
       text-decoration: underline; }
@@ -321,8 +320,8 @@ h6 {
     color: #ebf1f4;
     background-color: #006ac0; }
   h6 a {
-    padding-left: 2px;
-    display: block; }
+    padding: 0 2px;
+    display: inline-block; }
     h6 a:link {
       color: #2b2b2b;
       border-left: 1px solid #2b2b2b; }
@@ -340,7 +339,7 @@ h6 {
 ================================================== */
 blockquote {
   border-left: 1px solid #2b2b2b;
-  border-right: 1px solid #2b2b2b;
+  border-right: 1px solid transparent;
   text-align: center;
   margin: 40px 0 40px 5px;
   padding: 10px 15px; }
@@ -367,11 +366,11 @@ blockquote {
 hr {
   text-align: center;
   border: 0;
-  height: 1px;
+  height: 0;
   color: #797979;
   background: #797979;
-  width: 80%;
-  margin: 15px auto;
+  width: 100%;
+  margin: 50px 0;
   float: none;
   clear: both; }
   hr.line {
@@ -381,7 +380,6 @@ hr {
     margin-left: auto;
     margin-right: auto; }
   hr.space {
-    height: 0;
     color: #ebf1f4;
     background: #ebf1f4;
     visibility: hidden; }
@@ -389,12 +387,11 @@ hr {
 /* #Section
 ================================================== */
 section {
-  display: block;
   margin: 15px 0;
   padding: 0; }
   section header {
     margin: 0;
-    padding: 0; }
+    padding: 0 4px; }
     section header .tags {
       font: normal normal 300 11pt/1.5 "Segoe UI";
       font-family: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
@@ -403,10 +400,9 @@ section {
       text-align: right; }
     section header .caption p {
       padding: 0 5px 5px 5px;
-      font: normal normal 300 12pt/1.5 "Segoe UI";
-      font-family: "Segoe UI Light", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-      color: #2b2b2b;
-      text-transform: uppercase; }
+      font: normal normal 300 10pt/1.5 "Segoe UI";
+      font-family: "Segoe UI", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+      color: #2b2b2b; }
   section .content {
     margin: 0 0 10px 0;
     padding: 0; }
@@ -420,7 +416,6 @@ section {
 section.archives header {
   border-bottom: 1px solid #797979; }
   section.archives header h3 {
-    display: block;
     color: #ebf1f4;
     background-color: #4a4a4a;
     border: none;
@@ -442,75 +437,31 @@ section.archives header {
       line-height: 30pt; }
   section.archives header .tags {
     font-size: 11pt; }
+section.branch header {
+  margin: 0;
+  padding: 0;
+  background-color: #070707; }
+  section.branch header h2 {
+    display: block;
+    color: #070707;
+    font: normal normal 200 40pt/1.5 "Segoe UI";
+    font-family: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+    padding: 0 5px;
+    background-color: #ebf1f4; }
+  section.branch header .caption p {
+    padding: 0 5px 5px 5px;
+    font: normal normal 300 10pt/1.5 "Segoe UI";
+    font-family: "Segoe UI", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+    color: #ebf1f4; }
+    section.branch header .caption p:before {
+      content: "\2014 \0020"; }
+section.branch .content {
+  margin: 0;
+  padding: 0; }
+  section.branch .content p {
+    margin: 10px 0;
+    padding: 5px 0; }
 
-section.branch {
-  display: table;
-  border-collapse: collapse;
-  float: none; }
-  section.branch .row {
-    display: table-row;
-    float: none; }
-    section.branch .row header {
-      display: table-cell;
-      float: none;
-      margin: 0;
-      padding: 0;
-      background-color: #2b2b2b; }
-      section.branch .row header h2 {
-        display: block;
-        color: #2b2b2b;
-        font: normal normal 200 40pt/1.5 "Segoe UI";
-        font-family: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-        text-transform: uppercase;
-        padding: 0;
-        background-color: #ebf1f4; }
-      section.branch .row header .caption p {
-        padding: 0 5px 0 5px;
-        font: normal normal 300 12pt/1.5 "Segoe UI";
-        font-family: "Segoe UI Light", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-        color: #ebf1f4;
-        text-transform: uppercase; }
-    section.branch .row .content {
-      display: table-cell;
-      float: none;
-      vertical-align: top;
-      margin: 0;
-      padding: 0; }
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-  section.branch {
-    display: block; }
-    section.branch .row {
-      display: block;
-      float: left; }
-      section.branch .row header {
-        display: block;
-        float: left;
-        margin: 0;
-        padding: 0;
-        background-color: #2b2b2b; }
-        section.branch .row header h2 {
-          display: block;
-          color: #2b2b2b;
-          font: normal normal 200 40pt/1.5 "Segoe UI";
-          font-family: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-          text-transform: uppercase;
-          padding: 0 5px; }
-        section.branch .row header .caption p {
-          padding: 0 5px 5px 5px;
-          font: normal normal 300 12pt/1.5 "Segoe UI";
-          font-family: "Segoe UI Light", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-          color: #ebf1f4;
-          text-transform: uppercase; }
-      section.branch .row .content {
-        display: block;
-        float: left;
-        margin: 0;
-        padding: 0; }
-        section.branch .row .content p {
-          margin: 10px 0;
-          padding: 5px 0; } }
 section.branch:hover header {
   background-color: #006ac0; }
   section.branch:hover header h2 {
@@ -537,7 +488,7 @@ article {
     margin: 10px 0;
     padding: 2px 0; }
     article .content p {
-      margin: 10px 5px;
+      margin: 10px 0;
       padding: 5px 0;
       font: normal normal 300 12pt/1.5 "Segoe UI";
       font-family: "Segoe UI", "Myriad Pro", "Frutiger", "Frutiger Linotype", "Dejavu Sans", sans-serif;
@@ -653,11 +604,12 @@ ul {
 ul.simple-small {
   list-style-type: none;
   border: none;
-  margin: 5px;
+  margin: 0;
   padding: 0; }
   ul.simple-small li {
     font: normal normal 300 12pt/18pt "Segoe UI";
     padding: 0;
+    margin: 0;
     color: #4a4a4a; }
     ul.simple-small li a:hover {
       color: #ebf1f4;
@@ -692,10 +644,10 @@ ul.simple-small {
 ul.simple-large {
   list-style-type: none;
   border: none;
-  margin: 5px;
+  margin: 0;
   padding: 0; }
   ul.simple-large li {
-    margin: 5px 0;
+    margin: 0;
     padding: 0;
     font: normal normal 300 20pt/30pt "Segoe UI";
     font-family: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;

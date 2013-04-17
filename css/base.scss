@@ -275,7 +275,6 @@
   h3 {
     display: block;
 
-    padding-left: 4px;
     font-weight: bold;
 
     color       : $color-darkgrey;
@@ -285,8 +284,8 @@
     @include text-selected;
 
     a {
-      display: block;
-      padding-left: 4px;
+      padding: 0 4px;
+      display: inline-block;
 
       &:link {
         border-bottom : 2px solid $color-text;
@@ -320,8 +319,8 @@
     @include text-selected;
 
     a {
-      padding-left: 4px;
-      display: block;
+      padding: 0 4px;
+      display: inline-block;
 
       &:link {
         border-bottom : 1.5px solid $color-text;
@@ -354,8 +353,8 @@
     @include text-selected;
 
     a {
-      padding-left: 3px;
-      display: block;
+      padding: 0 3px;
+      display: inline-block;
 
       &:link {
         color       : $color-text;
@@ -390,8 +389,8 @@
     @include text-selected;
 
     a {
-      padding-left: 2px;
-      display: block;
+      padding: 0 2px;
+      display: inline-block;
 
       &:link {
         color       : $color-text;
@@ -421,7 +420,7 @@
 
 	blockquote {
     border-left: 1px solid $color-text;
-    border-right: 1px solid $color-text;
+    border-right: 1px solid transparent;
 
     text-align: center;
 
@@ -462,19 +461,18 @@
     text-align: center;
 
     border: 0;
-    height: 1px;
+    height: 0;
 
     color: $color-grey;
     background: $color-grey;
 
-    width: 80%;
-		margin: 15px auto;
+    width: 100%;
+		margin: 50px 0;
 
     float: none;
     clear: both;
 
   	&.line {
-
       height: 2px;
       color: $color-main;
       background: $color-main;
@@ -484,7 +482,6 @@
   	}
 
   	&.space {
-      height: 0;
   		color: $color-bg;
       background: $color-bg;
   		visibility: hidden;
@@ -498,14 +495,14 @@
 ================================================== */
 
   section {
-    display: block;
 
     margin: 15px 0;
     padding: 0;
 
     header {
+
       margin: 0;
-      padding: 0;
+      padding: 0 4px;
 
       .tags {
 
@@ -522,7 +519,6 @@
           @include text-caption;
           color: $color-text;
 
-          text-transform: uppercase;
         }
       }
     }
@@ -543,13 +539,10 @@
 
   section {
     &.archives {
-
       header {
-
         border-bottom: 1px solid $color-grey;
 
         h3 {
-          display: block;
 
           color       : $color-bg;
           background-color: $color-darkgrey;
@@ -576,124 +569,49 @@
 
       }
     }
-  }
-
-  section {
 
     &.branch {
-      display: table;
-      border-collapse:collapse;
-      float: none;
 
-      .row {
+      header {
 
-        display: table-row;
-        float: none;
+        margin: 0;
+        padding: 0;
+        background-color: $color-darkblack;
 
-        header {
-          display: table-cell;
-          float: none;
+        h2 {
+          display: block;
 
-          margin: 0;
-          padding: 0;
+          color       : $color-darkblack;
+          font: normal normal 200 40pt/1.5 $font-one;
+          font-family : $font-stack-branch;
 
-          background-color: $color-black;
-
-          h2 {
-            display: block;
-            color       : $color-black;
-            font: normal normal 200 40pt/1.5 $font-one;
-            font-family : $font-stack-branch;
-            text-transform  : uppercase;
-
-            padding: 0;
-
-            background-color: $color-bg;
-          }
-
-          .caption  {
-            p {
-                padding: 0 5px 0 5px;
-
-                @include text-caption;
-                color: $color-bg;
-                text-transform: uppercase;
-            }
-          }
+          padding: 0 5px;
+          background-color: $color-bg;
         }
 
-        .content {
-          display: table-cell;
-          float: none;
+        .caption  {
+          p {
+            padding: 0 5px 5px 5px;
 
-          vertical-align: top;
-
-          margin: 0;
-          padding: 0;
+            @include text-caption;
+            color: $color-bg;
+            &:before {
+              content: "\2014 \0020";
+            }
+          }
         }
       }
-    }
-  }
 
-  /* All Mobile Sizes (devices and browser) */
-  @media only screen and (max-width: 767px) {
+      .content {
+        margin: 0;
+        padding: 0;
 
-    section {
+        p {
+          margin: 10px 0;
+          padding: 5px 0;
 
-      &.branch {
-        display: block;
-
-        .row {
-          display: block;
-          float: left;
-
-          header {
-            display: block;
-            float: left;
-
-            margin: 0;
-            padding: 0;
-
-            background-color: $color-black;
-
-            h2 {
-              display: block;
-
-              color       : $color-black;
-              font: normal normal 200 40pt/1.5 $font-one;
-              font-family : $font-stack-branch;
-
-              text-transform  : uppercase;
-
-              padding: 0 5px;
-            }
-
-            .caption  {
-              p {
-                padding: 0 5px 5px 5px;
-
-                @include text-caption;
-                color: $color-bg;
-                text-transform: uppercase;
-              }
-            }
-          }
-
-          .content {
-            display: block;
-            float: left;
-
-            margin: 0;
-            padding: 0;
-
-            p {
-              margin: 10px 0;
-              padding: 5px 0;
-
-            }
-
-          }
         }
+
       }
     }
   }
@@ -741,7 +659,7 @@
       padding: 2px 0;
 
       p {
-        margin: 10px 5px;
+        margin: 10px 0;
         padding: 5px 0;
 
         @include text-body;
@@ -915,7 +833,7 @@
     list-style-type: none;
 
     border: none;
-    margin: 5px;
+    margin: 0;
     padding: 0;
 
     li {
@@ -923,6 +841,7 @@
       font: normal normal 300 12pt/18pt $font-one;
 
       padding: 0;
+      margin: 0;
 
       color: $color-darkgrey;
 
@@ -970,12 +889,12 @@
     list-style-type: none;
 
     border: none;
-	  margin: 5px;
+	  margin: 0;
 	  padding: 0;
 
   	li {
 
-      margin: 5px 0;
+      margin: 0;
       padding: 0;
 
       font: normal normal 300 20pt/30pt $font-one;

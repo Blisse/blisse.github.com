@@ -2,8 +2,7 @@
 ================================================== */
 header.page {
   margin: 0 0 20px 0;
-  padding: 0;
-  width: 100%; }
+  padding: 0; }
   header.page a:link {
     text-decoration: none;
     font-weight: regular;
@@ -116,7 +115,7 @@ header nav.page {
   padding: 0; }
   header nav.page ul {
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
     list-style-type: none;
     white-space: nowrap; }
     header nav.page ul li {
@@ -127,12 +126,12 @@ header nav.page {
       margin: 0;
       padding: 0; }
     header nav.page ul#nav-top li a {
-      margin: 0;
-      padding: 2px 10px;
+      margin: 0 2px;
+      padding: 4px 0;
       font-variant: normal;
       font-style: normal;
       font-weight: 100;
-      font-size: 16pt;
+      font-size: 13pt;
       line-height: 16pt;
       font-family: "Segoe UI Semilight", "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans"; }
       header nav.page ul#nav-top li a:link {

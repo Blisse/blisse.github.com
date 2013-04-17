@@ -10,8 +10,8 @@ $color-white:#FFFFFF;
 $color-grey:rgba(121,121,121,1.0);
 $color-darkgrey:rgba(74,74,74,1.0);
 $color-black:rgba(43,43,43,1.0);
-
-$color-footer:rgba(7,7,7,1.0);
+$color-darkblack:rgba(7,7,7,1.0);
+$color-footer:$color-darkblack;
 
 $color-bg:rgb(235, 241, 244);
 
@@ -41,7 +41,7 @@ $font-stack-text: "Segoe UI", "Myriad Pro", "Frutiger", "Frutiger Linotype", "De
 $font-stack-segoe: "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", sans-serif;
 
 $font-stack-discuss: "Segoe UI Semibold", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-$font-stack-caption: "Segoe UI Light", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+$font-stack-caption: "Segoe UI", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
 $font-stack-tags: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
 
 $font-stack-list: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
@@ -54,7 +54,7 @@ $font-stack-list: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger",
 }
 
 @mixin text-caption {
-  font: normal normal 300 12pt/1.5 $font-one;
+  font: normal normal 300 10pt/1.5 $font-one;
   font-family: $font-stack-caption;
 }
 

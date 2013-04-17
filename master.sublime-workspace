@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"padd",
+				"padding"
+			],
+			[
 				"colo",
 				"color-black"
 			],
@@ -86,10 +90,6 @@
 			[
 				"border-",
 				"border-width:   (property)"
-			],
-			[
-				"padd",
-				"padding-bottom"
 			],
 			[
 				"txt",
@@ -367,7 +367,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 522.0
+		"width": 514.0
 	},
 	"console":
 	{
@@ -384,19 +384,28 @@
 	},
 	"file_history":
 	[
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-16-tires.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-icomoon/icomoon.css",
+		"/C/Users/Victor/Desktop/icomoon77412/style.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
+		"/C/Users/Victor/Desktop/style.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/blog/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/master.sublime-project",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-16-ties.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/footer.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-01-thenword.md",
 		"/H/Back Up/Movies/The Avengers/READ this before playing the Movie.txt",
 		"/D/Root/Air/Dropbox/Sides/Music Player/Coding4Fun/ReadMe.Coding4Fun.Toolkit.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_config.yml",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/footer.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/README.markdown",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/blog/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
@@ -409,21 +418,17 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/page.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardhead.html",
 		"/C/Users/Victor/Desktop/icomoon24515/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-icomoon/icomoon.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-awesome/font-awesome.css",
 		"/C/Users/Victor/Desktop/icomoon24515/style.css",
 		"/C/Users/Victor/Desktop/icomoon24515/fonts/icomoon.svg",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitattributes",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitignore",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
 		"/D/Root/Air/Dropbox/Site/master/.gitignore",
 		"/J/Documents/howto.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-06-meditation.md",
 		"/E/__ffp-files.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/reset.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-01-thenword.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-02-25-helloworld.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/2013/04/01/thenword.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-03-21-anewbeginning.md",
@@ -506,12 +511,7 @@
 		"/C/Users/Victor/Desktop/codepro_regulardemo_english/stylesheet.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/print.css",
 		"/C/Users/Victor/AppData/Local/Temp/7zO72EC.tmp/Webfont License.txt",
-		"/C/Users/Victor/AppData/Local/Temp/7zO51C7.tmp/readme.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/resume/index.html",
-		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
-		"/C/Users/Victor/Desktop/bootstrap/js/bootstrap.js",
-		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/FileDiffs.sublime-settings"
+		"/C/Users/Victor/AppData/Local/Temp/7zO51C7.tmp/readme.txt"
 	],
 	"find":
 	{
@@ -529,6 +529,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"class=\"sixteen columns\"",
+			"h1",
+			"16pt",
+			"<span aria-hidden=\"true\" ",
+			"\n    padding-left: 4px;",
+			"block",
+			"<span aria-hidden=\"true\" data-icon=\"&#xe016;\"></span> ",
+			"xe014",
+			"<i class=\"icon-stop\"></i>",
+			" twelve columns",
+			" class=\"four columns\"",
+			"<i class=\"icon-star\"></i>",
 			"main",
 			"sec",
 			"darkgrey",
@@ -644,19 +656,7 @@
 			"sec",
 			"tert",
 			"main",
-			"darkgrey",
-			"h5",
-			"h6",
-			"p",
-			"h1",
-			"a href=\"#\"",
-			"h3",
-			"h2",
-			"p",
-			"h2",
-			"hh",
-			"h3",
-			"h1"
+			"darkgrey"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -727,6 +727,26 @@
 		"selected_items":
 		[
 			[
+				"head",
+				"css/header.scss"
+			],
+			[
+				"_bas",
+				"css/_bases.scss"
+			],
+			[
+				"foo",
+				"_includes/footer.html"
+			],
+			[
+				"basescss",
+				"css/base.scss"
+			],
+			[
+				"2013-04",
+				"_posts/2013-04-01-thenword.md"
+			],
+			[
 				"footer",
 				"css/footer.scss"
 			],
@@ -737,10 +757,6 @@
 			[
 				"header",
 				"css/header.scss"
-			],
-			[
-				"_bas",
-				"css/_bases.scss"
 			],
 			[
 				"base",
@@ -773,10 +789,6 @@
 			[
 				"header.cs",
 				"css/header/header.css"
-			],
-			[
-				"head",
-				"_includes/header.html"
 			],
 			[
 				"muta",

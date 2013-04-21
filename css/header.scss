@@ -40,7 +40,7 @@ header {
       }
 
       #first-name {
-        font-family: "Nexa Bold";
+        font-family: "Nexa Light";
 
       }
 
@@ -123,15 +123,15 @@ header {
 
         &:link {color: $color-text;}
         &:visited {color: $color-text;}
-        &:hover {color: $color-sec; border-bottom: 1px solid $color-sec;}
+        &:hover {color: $color-sec;}
         &:active {color: $color-text;}
       }
 
       &#nav-top li.currentpage a {
-        &:link {color: $color-main; border-bottom: 1px solid $color-main; }
-        &:visited {color: $color-main; border-bottom: 1px solid $color-main; }
-        &:hover {color: $color-text; border-bottom: 1px solid $color-text; }
-        &:active {color: $color-main; border-bottom: 1px solid $color-main; }
+        &:link {color: $color-main;}
+        &:visited {color: $color-main;}
+        &:hover {color: $color-sec;}
+        &:active {color: $color-main;}
       }
 
       &#nav-bottom li {

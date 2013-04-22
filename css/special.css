@@ -1,0 +1,18 @@
+.status.complete, .status.green {
+  color: green; }
+  .status.complete:hover, .status.green:hover {
+    background-color: green;
+    color: #f6f6f6; }
+.status.in-progress, .status.yellow {
+  color: orange; }
+  .status.in-progress:hover, .status.yellow:hover {
+    background-color: orange;
+    color: #f6f6f6; }
+.status.upcoming, .status.red {
+  color: red; }
+  .status.upcoming:hover, .status.red:hover {
+    background-color: red;
+    color: #f6f6f6; }
+
+.icon {
+  font-size: 75%; }

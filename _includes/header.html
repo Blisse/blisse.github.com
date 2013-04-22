@@ -2,33 +2,32 @@
 	<div class="container">
 		<div class="sixteen columns" id="name">
 			<a href="/"{% if page.main == "home" %} class="currentpage"{% endif %}>
+				<strong>
 				<span id="last-name">
 					LAI
 				</span>
 				<span id="first-name">
-					VICTOR
+					victor
 				</span>
+			</strong>
 			</a>
+		</div>
+		<div class="sixteen columns">
 			<nav class="page">
-				<ul id="nav-top">
-					<li{% if page.main == "blog" %} class="currentpage"{% endif %}>
+				<ul id="nav-top"><li{% if page.main == "blog" %} class="currentpage"{% endif %}>
 						<a href="/blog/">
 							<span aria-hidden="true" data-icon="&#xe006;"></span> JOURNAL
 						</a>
-					</li>
-					<li{% if page.main == "work" %} class="currentpage"{% endif %}>
+					</li><li{% if page.main == "work" %} class="currentpage"{% endif %}>
 						<a href="/work/">
-							<span aria-hidden="true" data-icon="&#xe00c;"></span> WORK
+							<span aria-hidden="true" data-icon="&#xe00c;"></span> CODE
 						</a>
-					</li>
-					<li{% if page.main == "about" %} class="currentpage"{% endif %}>
+					</li><li{% if page.main == "about" %} class="currentpage"{% endif %}>
 						<a href="/about/">
 							<span aria-hidden="true" data-icon="&#xe004;"></span> ABOUT
 						</a>
-					</li>
-				</ul>
+					</li></ul>
 			</nav>
 		</div>
 	</div>
-
 </header>

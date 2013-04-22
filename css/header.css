@@ -1,32 +1,38 @@
 /* #Header
 ================================================== */
 header.page {
+  text-align: center;
   margin: 0 0 20px 0;
   padding: 0; }
-  header.page a:link {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #4a4a4a; }
-  header.page a:visited {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #4a4a4a; }
-  header.page a:hover {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #4a4a4a; }
-  header.page a:active {
-    text-decoration: none;
-    font-weight: regular;
-    border: none;
-    background-color: transparent;
-    color: #4a4a4a; }
+  header.page a {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; }
+    header.page a:link {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #4a4a4a; }
+    header.page a:visited {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #4a4a4a; }
+    header.page a:hover {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #4a4a4a; }
+    header.page a:active {
+      text-decoration: none;
+      font-weight: regular;
+      border: none;
+      background-color: transparent;
+      color: #4a4a4a; }
   header.page #name {
     margin: 5px 0 25px 0; }
   header.page #name a {
@@ -34,9 +40,9 @@ header.page {
     line-height: 20pt;
     white-space: nowrap; }
     header.page #name a #last-name {
-      font-family: "Nexa Bold"; }
+      font-family: "Source Sans Pro"; }
     header.page #name a #first-name {
-      font-family: "Nexa Bold"; }
+      font-family: "Source Sans Pro"; }
     header.page #name a:link #last-name {
       text-decoration: none;
       font-weight: regular;
@@ -110,74 +116,52 @@ header.page {
       background-color: transparent;
       color: #2773ed; }
 header nav.page {
-  float: right;
-  margin: 0;
-  padding: 0; }
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 2px;
+  background-color: #4a4a4a; }
   header nav.page ul {
     margin: 0;
-    padding: 0;
+    padding: 0 5px;
     list-style-type: none;
-    white-space: nowrap; }
+    white-space: nowrap;
+    background-color: #f6f6f6;
+    font-size: 0;
+    height: 24px; }
     header nav.page ul li {
       margin: 0;
       padding: 0;
       display: inline-block;
-      text-align: left;
-      margin: 0;
-      padding: 0; }
+      text-align: left; }
     header nav.page ul#nav-top li a {
-      margin: 0 2px;
-      padding: 4px 0;
+      margin: 0;
+      padding: 0 2px;
       font-variant: normal;
       font-style: normal;
       font-weight: 100;
       font-size: 13pt;
-      line-height: 16pt;
-      font-family: "Segoe UI Semilight", "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans"; }
+      line-height: 24px;
+      font-family: "Segoe UI Semilight", "Segoe UI", "Open Sans", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans"; }
       header nav.page ul#nav-top li a:link {
         color: #2b2b2b; }
       header nav.page ul#nav-top li a:visited {
         color: #2b2b2b; }
       header nav.page ul#nav-top li a:hover {
         color: #2773ed;
-        border-bottom: 1px solid #2773ed; }
+        border-bottom: 2px solid #006ac0; }
       header nav.page ul#nav-top li a:active {
         color: #2b2b2b; }
     header nav.page ul#nav-top li.currentpage a:link {
       color: #006ac0;
-      border-bottom: 1px solid #006ac0; }
+      border-bottom: 4px solid #006ac0; }
     header nav.page ul#nav-top li.currentpage a:visited {
       color: #006ac0;
-      border-bottom: 1px solid #006ac0; }
+      border-bottom: 4px solid #006ac0; }
     header nav.page ul#nav-top li.currentpage a:hover {
-      color: #2b2b2b;
-      border-bottom: 1px solid #2b2b2b; }
+      color: #2773ed;
+      border-bottom: 4px solid #006ac0; }
     header nav.page ul#nav-top li.currentpage a:active {
       color: #006ac0;
-      border-bottom: 1px solid #006ac0; }
-    header nav.page ul#nav-bottom li a {
-      margin: 0;
-      padding: 0;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 11pt;
-      line-height: 11pt;
-      font-family: "Segoe UI Bold", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
-      text-transform: uppercase;
-      background-color: transparent; }
-      header nav.page ul#nav-bottom li a:link {
-        color: white; }
-      header nav.page ul#nav-bottom li a:visited {
-        color: white; }
-      header nav.page ul#nav-bottom li a:hover {
-        color: #2773ed; }
-      header nav.page ul#nav-bottom li a:active {
-        color: white; }
-    header nav.page ul#nav-bottom li.currentpage a:link {
-      color: #006ac0; }
-    header nav.page ul#nav-bottom li.currentpage a:visited {
-      color: #006ac0; }
-    header nav.page ul#nav-bottom li.currentpage a:hover {
-      color: #2773ed; }
-    header nav.page ul#nav-bottom li.currentpage a:active {
-      color: #006ac0; }
+      border-bottom: 4px solid #006ac0; }

@@ -159,13 +159,11 @@
 		margin          : 4px 0;
 		text-align      : left;
 		text-decoration : none;
-		font-weight     : normal;
-		vertical-align  : middle;
+		vertical-align  : bottom;
 		border          : none;
 		background-color: transparent;
-		color           : rgba(0,130,135,1.0);
     a {
-      @include transition-ease;
+      @include transition-ease(500ms);
       &:link {
         @include texts(none, normal, none, transparent, $color-main);
       }
@@ -186,8 +184,8 @@
     display: block;
 
     color       : $color-text;
-    font: normal normal 100 40pt/1.4 $font-one;
-    font-family : $font-stack-primary;
+    font: normal normal 100 56pt/1.2 $font-one;
+    font-family : $font-stack-h1;
 
     a {
       &:hover {
@@ -203,26 +201,20 @@
 
         &:link {
           color       : $color-text;
-          border-left : 56pt solid $color-main;
         }
 
         &:visited {
           color       : $color-text;
-          border-left : 56pt solid $color-main;
         }
 
         &:hover {
           color       : $color-bg;
-          border-left : 56pt solid $color-main;
           background-color: $color-main;
-          -webkit-transition: background 0.5s;
         }
 
         &:active {
           color       : $color-bg;
-          border-left : 56pt solid $color-main;
           background-color: $color-main;
-          -webkit-transition: background 0.5s;
         }
       }
     }
@@ -233,8 +225,8 @@
     display: block;
 
     color       : $color-text;
-    font: normal normal 200 28pt/1.5 $font-one;
-    font-family : "Intro";
+    font: normal normal 100 38pt/40pt $font-one;
+    font-family : $font-stack-h2;
 
     -webkit-transition: all 100ms ease-in-out;
     -moz-transition: all 100ms ease-in-out;
@@ -244,29 +236,23 @@
     a {
 
       display: block;
-      line-height: 40pt;
-      border-left : 20pt solid transparent;
-      padding: 0 10px;
+      padding: 8px 5px 0 5px;
 
       &:link {
         color       : $color-text;
-        border-left : 20pt solid $color-text;
       }
 
       &:visited {
         color       : $color-text;
-        border-left : 20pt solid $color-text;
       }
 
       &:hover {
         color       : $color-bg;
-        border-left : 20pt solid $color-main;
         background-color: $color-main;
       }
 
       &:active {
         color       : $color-bg;
-        border-left : 20pt solid $color-darkgrey;
         background-color: $color-darkgrey;
       }
     }
@@ -277,9 +263,9 @@
 
     font-weight: bold;
 
-    color       : $color-darkgrey;
-    font: normal normal 300 20pt/1.5 $font-one;
-    font-family : $font-stack-import;
+    color       : $color-text;
+    font: normal normal 100 24pt/1.4 $font-one;
+    font-family : $font-stack-h3;
 
     @include text-selected;
 
@@ -288,22 +274,18 @@
       display: inline-block;
 
       &:link {
-        border-bottom : 2px solid $color-text;
         color       : $color-text;
       }
 
       &:visited {
-        border-bottom : 2px solid $color-text;
         color       : $color-text;
       }
 
       &:hover {
-        border-bottom : 2px solid $color-main;
         color       : $color-bg;
       }
 
       &:active {
-        border-bottom : 2px solid $color-main;
         color       : $color-bg;
       }
     }
@@ -313,8 +295,8 @@
     display: block;
 
     color       : $color-text;
-    font: normal normal 200 16pt/1.5 $font-one;
-    font-family : "Intro";
+    font: normal normal 100 18pt/1.4 $font-one;
+    font-family : $font-stack-h4;
 
     @include text-selected;
 
@@ -323,22 +305,22 @@
       display: inline-block;
 
       &:link {
-        border-bottom : 1.5px solid $color-text;
+        border-bottom : 1.5px dotted $color-text;
         color       : $color-text;
       }
 
       &:visited {
-        border-bottom : 1.5px solid $color-text;
+        border-bottom : 1.5px dotted $color-text;
         color       : $color-text;
       }
 
       &:hover {
-        border-bottom : 1.5px solid $color-main;
+        border-bottom : 1.5px dotted $color-main;
         color       : $color-bg;
       }
 
       &:active {
-        border-bottom : 1.5px solid $color-main;
+        border-bottom : 1.5px dotted $color-main;
         color       : $color-bg;
       }
     }
@@ -348,8 +330,8 @@
     display: block;
 
     color       : $color-text;
-    font: normal normal 200 11pt/1.5 $font-one;
-    font-family : $font-stack-import;
+    font: normal normal 100 11pt/1.4 $font-one;
+    font-family : $font-stack-h5;
     @include text-selected;
 
     a {
@@ -381,9 +363,9 @@
 	h6 {
     display: block;
 
-    color       : $color-darkgrey;
-    font: normal normal 200 9pt/1.5 $font-one;
-    font-family : $font-stack-import;
+    color       : $color-text;
+    font: normal normal 100 9pt/1.4 $font-one;
+    font-family : $font-stack-h6;
 
     text-transform: uppercase;
     @include text-selected;
@@ -502,7 +484,10 @@
     header {
 
       margin: 0;
-      padding: 0 4px;
+
+      h2 a {
+        padding: 10px 10px 0 10px;
+      }
 
       .tags {
 
@@ -518,7 +503,6 @@
 
           @include text-caption;
           color: $color-text;
-
         }
       }
     }
@@ -535,9 +519,8 @@
       }
 
     }
-  }
 
-  section {
+
     &.archives {
       header {
         border-bottom: 1px solid $color-grey;
@@ -571,30 +554,20 @@
     }
 
     &.branch {
-
       header {
-
         margin: 0;
         padding: 0;
-        background-color: $color-darkblack;
-
         h2 {
-          display: block;
-
-          color       : $color-darkblack;
-          font: normal normal 200 40pt/1.5 $font-one;
-          font-family : $font-stack-branch;
-
-          padding: 0 5px;
-          background-color: $color-bg;
+          color       : $color-black;
+          font-size: 40pt;
+          padding: 8px 5px 0 5px;
         }
 
         .caption  {
           p {
             padding: 0 5px 5px 5px;
-
             @include text-caption;
-            color: $color-bg;
+            color: $color-text;
             &:before {
               content: "\2014 \0020";
             }
@@ -614,14 +587,13 @@
 
       }
     }
-  }
-
-  section.branch:hover {
-    header {
-      @include transition-ease;
-      background-color: $color-main;
-      h2 {
-        color: $color-main;
+    &.branch:hover {
+      header {
+        @include transition-ease(250ms);
+        h2 {
+          background-color: $color-main;
+          color: $color-bg;
+        }
       }
     }
   }
@@ -635,18 +607,27 @@
   article {
     display: block;
 
-    margin: 10px 0 100px 0;
+    margin: 0 0 100px 0;
     padding: 4px 0;
 
     header {
+
       margin: 0;
       padding: 0;
+
+      a {
+        padding: 10px 15px 0 15px;
+      }
+
+      .icon {
+        font-size: 75%;
+      }
 
       .tags {
         @include text-tags;
         color: $color-darkgrey;
-        text-transform: uppercase;
-        text-align: right;
+        text-align: left;
+        padding-left: 15px;
       }
 
       .date {

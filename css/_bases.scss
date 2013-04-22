@@ -13,7 +13,7 @@ $color-black:rgba(43,43,43,1.0);
 $color-darkblack:rgba(7,7,7,1.0);
 $color-footer:$color-darkblack;
 
-$color-bg:rgb(235, 241, 244);
+$color-bg:rgb(246, 246, 246);
 
 $color-text:$color-black;
 
@@ -23,63 +23,63 @@ $font-stack-monospace: "Consolas", "Lucida Console", "Monaco", monospace !import
 $font-one: "Segoe UI";
 
 $font-stack-name: "Nexa Light", Frutiger, "Open Sans", Arial, sans-serif;
-$font-stack-navtop: "Segoe UI Semilight", "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
+$font-stack-navtop: "Segoe UI Semilight", "Segoe UI", "Open Sans", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
 $font-stack-navbottom: "Segoe UI Bold", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans";
 
 
-$font-stack-primary: "Segoe UI", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
-$font-stack-subheader: "Segoe UI Light", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
-$font-stack-item: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
-$font-stack-import: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Open Sans", sans-serif;
+$font-stack-primary: "Segoe UI", "Open Sans", sans-serif;
+$font-stack-subheader: "Segoe UI Light", "Open Sans", sans-serif;
+$font-stack-item: "Segoe UI Semibold", "Open Sans", sans-serif;
+$font-stack-import: "Segoe UI Semibold", "Open Sans", sans-serif;
 
-$font-stack-branch: "Segoe UI Semibold", "Nexa Light", "Segoe UI", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+$font-stack-branch: "Segoe UI Semibold", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
 
-$font-stack-text: "Segoe UI", "Myriad Pro", "Frutiger", "Frutiger Linotype", "Dejavu Sans", sans-serif;
+$font-stack-text: "Segoe UI", "Source Sans Pro", "Open Sans", "Myriad Pro", "Frutiger", "Frutiger Linotype", "Dejavu Sans", sans-serif;
 
-
-$font-stack-h1: ;
-$font-stack-h2: ;
-$font-stack-h3: ;
-$font-stack-h4: ;
-$font-stack-h5: ;
-$font-stack-h6: ;
-
+$font-stack-h1: "Source Sans Pro", "Segoe UI", "Open Sans";
+$font-stack-h2: "Source Sans Pro", "Open Sans" ;
+$font-stack-h3: "Source Sans Pro", "Segoe UI", "Open Sans";
+$font-stack-h4: "Source Sans Pro", "Segoe UI", "Open Sans";
+$font-stack-h5: "Source Sans Pro", "Segoe UI", "Open Sans";
+$font-stack-h6: "Source Sans Pro", "Segoe UI", "Open Sans";
 
 
+$font-stack-segoe: "Segoe UI", "Open Sans", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", sans-serif;
 
-$font-stack-segoe: "Segoe UI", "Frutiger", "Frutiger Linotype", "Myriad Pro", "Dejavu Sans", sans-serif;
+$font-stack-discuss: "Segoe UI Semibold", "Open Sans", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+$font-stack-caption: "Segoe UI", "Open Sans", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+$font-stack-tags: "Segoe UI Semilight", "Open Sans", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
 
-$font-stack-discuss: "Segoe UI Semibold", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-$font-stack-caption: "Segoe UI", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-$font-stack-tags: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
-
-$font-stack-list: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
+$font-stack-list: "Segoe UI Semilight", "Open Sans", "Myriad Pro", "Dejavu Sans", "Frutiger", "Frutiger Linotype", Arial, sans-serif;
 
 
 @mixin text-body {
-  font: normal normal 300 12pt/1.5 $font-one;
+  font: normal normal 300 13pt/1.5 $font-one;
   font-family: $font-stack-text;
   color: $color-text;
 }
 
 @mixin text-caption {
-  font: normal normal 300 10pt/1.5 $font-one;
+  font: normal normal 300 11pt/1.5 $font-one;
   font-family: $font-stack-caption;
+  color: $color-text;
 }
 
 @mixin text-tags {
   font: normal normal 300 11pt/1.5 $font-one;
   font-family: $font-stack-tags;
+  color: $color-text;
 }
 
 @mixin text-blockquote-p {
-  font: normal normal 300 14pt/21pt $font-one;
+  font: normal normal 300 16pt/22pt $font-one;
   font-family: $font-stack-text;
-  color: $color-black;
+  color: $color-text;
 }
 
 @mixin text-blockquote-cite {
   font: normal normal 300 11pt/20pt $font-one;
+  font-family: $font-stack-text;
   color: $color-text;
 }
 
@@ -106,7 +106,11 @@ $font-stack-list: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger",
   padding: 0;
 }
 
-@mixin transition-ease {
+@mixin transition-ease ( $num-in ){
+    -webkit-transition: all $num-in ease-in-out;
+    -moz-transition: all $num-in ease-in-out;
+    -o-transition: all $num-in ease-in-out;
+    transition: all $num-in ease-in-out;
 }
 
 
@@ -116,20 +120,4 @@ $font-stack-list: "Segoe UI Semilight", "Myriad Pro", "Dejavu Sans", "Frutiger",
     border:           $border;
     background-color: $bg-colour;
     color:            $txt-colour;
-}
-
-
-@mixin social-links ( $link-id, $link-url ) {
-  header #links a##{$link-id} {
-    width: 24px;
-    height: 24px;
-    background: url($link-url) top;
-    background-size: 24px;
-    background-repeat: no-repeat;
-    text-indent: -99999px;
-  }
-
-  header #links a##{$link-id}:hover {
-    background-position: 0 -24px;
-  }
 }

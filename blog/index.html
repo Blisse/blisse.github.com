@@ -5,6 +5,14 @@ main: blog
 sub: blog
 ---
 
+<div class="container">
+  <div class="sixteen columns">
+    <h1 class="no-wrap">
+      My <strong>Journal</strong>
+    </h1>
+  </div>
+</div>
+
 {% for post in paginator.posts %}
 
 {% if post.archived == false %}
@@ -15,17 +23,16 @@ sub: blog
     	<div class="title">
         <h2>
       		<a href="{{ post.url }}">
-            {{ post.title }}
-      			<span class="date">
-              // {{ post.date | date:'%Y%m%d' }}
-            </span>
+            <span aria-hidden="true" data-icon="&#xe016;" class="icon"></span> {{ post.title }}
       		</a>
       	</h2>
       </div>
     </div>
     <div class="sixteen columns">
+      <div class="date">
+      </div>
       <div class="tags">
-        about {{ post.tags | array_to_sentence_string }}.
+        Posted on {{ post.date |  date: "%B %d %Y" }} about {{ post.tags | array_to_sentence_string }}.
       </div>
     </div>
   </header>
@@ -47,7 +54,7 @@ sub: blog
   	<div class="sixteen columns">
       <div class="more-info">
         <a href="{{ post.url }}" class="read-more">
-          Read More
+          <span aria-hidden="true" data-icon="&#xe01b;"></span> Read More
         </a>
   			<a href="{{ post.url }}#disqus_thread" class="discuss">
   				<span aria-hidden="true" data-icon="&#xe005;"></span> Discuss

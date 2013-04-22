@@ -1,0 +1,46 @@
+
+@import "bases";
+
+.status {
+
+  &.complete, &.green {
+    color: green;
+
+    &:hover {
+      background-color: green;
+      color: $color-bg;
+    }
+  }
+
+  &.in-progress, &.yellow {
+    color: orange;
+
+    &:hover {
+      background-color: orange;
+      color: $color-bg;
+    }
+  }
+
+  &.upcoming, &.red {
+    color: red;
+
+    &:hover {
+      background-color: red;
+      color: $color-bg;
+    }
+  }
+
+  &.abandoned, &.grey {
+    color: grey;
+
+    &:hover {
+      background-color: grey;
+      color: $color-bg;
+    }
+  }
+
+}
+
+.icon {
+  font-size: 75%;
+}

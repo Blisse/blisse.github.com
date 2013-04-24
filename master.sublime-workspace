@@ -4,8 +4,28 @@
 		"selected_items":
 		[
 			[
+				"fon",
+				"font-size"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
 				"padd",
-				"padding"
+				"padding-bottom"
+			],
+			[
+				"col",
+				"color-main"
+			],
+			[
+				"bord",
+				"border-bottom"
 			],
 			[
 				"colo",
@@ -18,18 +38,6 @@
 			[
 				"bor",
 				"border-left"
-			],
-			[
-				"col",
-				"color-black"
-			],
-			[
-				"fon",
-				"font-weight"
-			],
-			[
-				"pad",
-				"padding-bottom"
 			],
 			[
 				"fl",
@@ -384,20 +392,32 @@
 	},
 	"file_history":
 	[
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-23-pain.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/special.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/syntax.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardhead.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/blog/index.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/layout.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/default.html",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/googlefonts.html",
+		"/C/Users/Victor/Desktop/stylesheet.css",
+		"/C/Users/Victor/Downloads/Source_Sans_Pro_400-Source_Sans_Pro_Semibold_600-Source_Sans_Pro_italic_400-Source_Sans_Pro_italic_600.font.js",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-16-tires.md",
+		"/C/Users/Victor/AppData/Local/Temp/7zE38E6.tmp/stylesheet.css",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-21-liberation.md",
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-21-feedbackloops.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-icomoon/icomoon.css",
 		"/C/Users/Victor/Desktop/icomoon77412/style.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
 		"/C/Users/Victor/Desktop/style.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/blog/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/master.sublime-project",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-16-ties.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/footer.html",
@@ -409,14 +429,11 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/layout.css",
 		"/C/Users/Victor/Downloads/webfontkit-20130413-204354/stylesheet.css",
 		"/C/Users/Victor/AppData/Local/Temp/7zE6FD2.tmp/stylesheet.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/post.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/default.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/archives/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/page.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardhead.html",
 		"/C/Users/Victor/Desktop/icomoon24515/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-awesome/font-awesome.css",
 		"/C/Users/Victor/Desktop/icomoon24515/style.css",
@@ -492,7 +509,6 @@
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/color-palette.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/googlefonts.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/projects/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/projects/ogltictactoe/index.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/nexa_light-webfont.svg",
@@ -503,15 +519,7 @@
 		"/D/Root/Air/Dropbox/Fonts/Sofia Pro Light/Sofia Pro Light.svg",
 		"/E/Music/Muse/Absolution/GUIDE.txt",
 		"/E/Music/Muse/Absolution/Fingerprint.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/tools/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/Sofia Pro Light.svg",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/Museo Sans 500.svg",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/Nexa Bold.svg",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/fonts/fontawesome-webfont.svg",
-		"/C/Users/Victor/Desktop/codepro_regulardemo_english/stylesheet.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/print.css",
-		"/C/Users/Victor/AppData/Local/Temp/7zO72EC.tmp/Webfont License.txt",
-		"/C/Users/Victor/AppData/Local/Temp/7zO51C7.tmp/readme.txt"
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/tools/index.html"
 	],
 	"find":
 	{
@@ -529,6 +537,44 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"black",
+			"red",
+			"20px",
+			"15px",
+			"\"Frutiger\", \"Frutiger Linotype\",",
+			"section",
+			"5px",
+			"darkblack",
+			"transition-ease",
+			"100ms",
+			"transition",
+			"2px",
+			"span",
+			"\n          border-bottom: 2px solid transparent;",
+			"$color-main",
+			"Light",
+			"16pt",
+			"h1",
+			"20pt",
+			"40pt",
+			"42pt",
+			"40pt",
+			"20pt",
+			"244",
+			"Droid Sans",
+			"solid",
+			"\n        border-left : 20pt solid $color-text;",
+			"\n          border-left : 56pt solid $color-main;",
+			"Source Sans Pro",
+			"url(",
+			"DroidSansRegular",
+			"text-body;",
+			"12pt",
+			"url('",
+			"Source Sans Pro",
+			"\"Nexa Light\", \"Segoe UI\", ",
+			";",
+			"border-bottom: 1px solid $color-main; ",
 			"class=\"sixteen columns\"",
 			"h1",
 			"16pt",
@@ -618,45 +664,7 @@
 			"darkgrey",
 			"tert",
 			"42pt",
-			"sec",
-			"tert",
-			"32pt",
-			"tert",
-			"grey",
-			"74pt",
-			"42pt",
-			"34",
-			"54",
-			"15",
-			"74",
-			"nav ul",
-			"nav ",
-			"&.page ",
-			"darkgrey",
-			"main",
-			"360px",
-			"420px",
-			"300px",
-			"159",
-			"131",
-			"main",
-			"darkgrey",
-			"7",
-			"black",
-			"main",
-			"black",
-			"248",
-			"tert",
-			"black",
-			"main",
-			"tert",
-			"sec",
-			"darkgrey",
-			"main",
-			"sec",
-			"tert",
-			"main",
-			"darkgrey"
+			"sec"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -675,6 +683,11 @@
 	},
 	"groups":
 	[
+		{
+			"sheets":
+			[
+			]
+		},
 		{
 			"sheets":
 			[
@@ -698,11 +711,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.474654428547,
 			1.0
 		],
 		"rows":

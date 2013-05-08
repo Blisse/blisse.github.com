@@ -12,7 +12,7 @@ github: blisse
 twitter: laivictorvl
 linkedin: laivictor
 
-paginate: 100
+paginate: 1000
 paginate_path: "/blog/page-:num"
 
 exclude: ['README.markdown', 'Gemfile.lock', 'Gemfile']

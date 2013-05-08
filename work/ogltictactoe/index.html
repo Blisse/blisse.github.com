@@ -5,47 +5,12 @@ main: work
 sub: projects
 ---
 
-<div class="in-line section">
-  <div class="container">
-    <div class="sixteen columns">
-      &nbsp;
-    </div>
-  </div>
-
-  <div class="container division">
-    <div class="three columns header">
-      TOOLS
-    </div>
-    <div class="thirteen columns details">
-      C++</br>
-      OpenGLUT - OpenGL API Extension<br/>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="sixteen columns">
-      &nbsp;
-    </div>
-  </div>
-
-  <div class="container division">
-    <div class="three columns header">
-      CONCEPTS
-    </div>
-    <div class="thirteen columns details">
-      State Machines<br/>
-    </div>
-  </div>
-</div>
 
 <div class="container">
   <div class="sixteen columns">
-    &nbsp;
-  </div>
-</div>
-
-<div class="container">
-  <div class="sixteen columns">
+    <h3>
+      Overview
+    </h3>
     <p>
       The first game most people make is usually the classic Tic-Tac-Toe. When I started my first Tic-Tac-Toe game in Python, I had no idea what to do, because it was so conceptually different from what I am used to. Input comes from the hands, not from the keyboard. Typing '4' or '5' to take the center piece or even '2 2', makes no sense for an actual game. Because I had not learned about PyGame yet, I looked back at what input I actually knew, and took a stab at OpenGL.
     </p>
@@ -53,20 +18,10 @@ sub: projects
       My first encounter with OpenGL was from my Counter-Strike days, where my tinkering with the in-game configurations and macros made me notice the subtle <code class="in-line">D3D</code> and <code class="in-line">OpenGL</code> options. I never really understood these terms, except that they had something to do with graphics, so I tried to fix slightly.
     </p>
 
-    <p>
-      <h4>Process</h4>
-    </p>
+    <h4>Process</h4>
 
     <p>
       Using a finite state machine, as I had learned in the previous term, I wrote out a basic layout of how the state progression works in a game.
-    </p>
-
-    <p>
-      <code class="block">STARTMENU -> GAME -> RESULTS -> STARTMENU</code>
-    </p>
-
-    <p>
-      Something like that, and progression through the states became simply reading a bunch of if statements. It was really cool to see something like that actually work.
     </p>
 
     <p>
@@ -77,9 +32,20 @@ sub: projects
       After I had the board set-up fully, and an actual game available, creating the three A.I. levels was the fun part. Using wikipedia's <a href="http://en.wikipedia.org/wiki/Tic-tac-toe#Strategy">Tic-Tac-Toe strategy</a> and randomizing it a bit, along with some other custom pieces, I created a Level 3 A.I. that never loses, even if it goes second. Toning down the difficulty simply required stripping the more advanced move algorithms, while the Level 1 A.I. played randomly unless it could win or block. Simple, but fun to code.
     </p>
 
+  </div>
+
+  <div class="sixteen columns">
+    <h3>
+      Tools
+    </h3>
     <p>
-      <h4>DirectX v. OpenGL</h4>
+      C++, OpenGLUT
     </p>
+  </div>
+
+  <div class="sixteen columns">
+
+    <h4>DirectX v. OpenGL</h4>
 
     <p>
       There is actually a lot of debate over OpenGL versus DirectX. Because I saw them around a lot in Counter-Strike, it really interested me to take a look into the craziness that is the WinAPI.

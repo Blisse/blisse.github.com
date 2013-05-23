@@ -6,7 +6,7 @@ tags: [thinking]
 comments: true
 
 pure_markdown: false
-archived: false
+archived: true
 ---
 
 

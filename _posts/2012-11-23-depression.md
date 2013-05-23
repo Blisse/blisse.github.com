@@ -6,7 +6,7 @@ tags: [life]
 comments: false
 
 pure_markdown: false
-archived: false
+archived: true
 ---
 
 

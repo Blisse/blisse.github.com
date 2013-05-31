@@ -7,7 +7,7 @@
 header {
 	&.page {
     text-align: center;
-		margin: 0 0 20px 0;
+		margin: 0 0 35px 0;
     padding: 0;
 
     a {
@@ -28,20 +28,20 @@ header {
     }
 
     #name {
-      margin: 5px 0 25px 0;
+      margin: 5px 0 15px 0;
     }
 
     #name a {
-      font-size: 20pt;
-      line-height: 20pt;
+      font-size: 40pt;
+      line-height: 40pt;
       white-space: nowrap;
 
       #last-name {
-        font-family: "Source Sans Pro";
+        font-family: "Segoe UI";
       }
 
       #first-name {
-        font-family: "Source Sans Pro";
+        font-family: "Segoe UI";
       }
 
 
@@ -91,21 +91,14 @@ header {
   nav.page {
 
     text-align: center;
-
-    width: 75%;
     margin: 0 auto;
-    padding: 0;
-    padding-bottom: 2px;
-
-    background-color: $color-darkgrey;
 
     ul {
       margin: 0;
-      padding: 0 5px;
+      padding: 0 4px;
       list-style-type: none;
       white-space: nowrap;
 
-      background-color: $color-bg;
       font-size: 0;
 
       height: 24px;
@@ -119,8 +112,7 @@ header {
 
       &#nav-top li a {
 
-        margin: 0;
-        padding: 0 2px;
+        margin: 0 4px;
         font-variant: normal;
         font-style: normal;
         font-weight: 100;
@@ -136,7 +128,6 @@ header {
         }
         &:hover {
           color: $color-sec;
-          border-bottom: 2px solid $color-main;
         }
         &:active {
           color: $color-text;
@@ -146,22 +137,18 @@ header {
       &#nav-top li.currentpage a {
         &:link {
           color: $color-main;
-          border-bottom: 4px solid $color-main;
         }
 
         &:visited {
           color: $color-main;
-          border-bottom: 4px solid $color-main;
         }
 
         &:hover {
           color: $color-sec;
-          border-bottom: 4px solid $color-main;
         }
 
         &:active {
           color: $color-main;
-          border-bottom: 4px solid $color-main;
         }
       }
 

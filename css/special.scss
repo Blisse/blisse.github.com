@@ -17,7 +17,7 @@
   }
 
   &.abandoned, &.grey {
-    color: #808080;
+    color: #AAAAAA;
   }
 }
 
@@ -51,10 +51,10 @@ a.status {
   }
 
   &.abandoned, &.grey {
-    color: #808080;
+    color: #AAAAAA;
 
     &:hover {
-      background-color: #808080;
+      background-color: #AAAAAA;
       color: $color-bg;
     }
   }

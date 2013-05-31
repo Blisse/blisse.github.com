@@ -5,7 +5,7 @@
 .status.upcoming, .status.red {
   color: red; }
 .status.abandoned, .status.grey {
-  color: #808080; }
+  color: #AAAAAA; }
 
 a.status.complete, a.status.green {
   color: green; }
@@ -23,9 +23,9 @@ a.status.upcoming, a.status.red {
     background-color: red;
     color: #f6f6f6; }
 a.status.abandoned, a.status.grey {
-  color: #808080; }
+  color: #AAAAAA; }
   a.status.abandoned:hover, a.status.grey:hover {
-    background-color: #808080;
+    background-color: #AAAAAA;
     color: #f6f6f6; }
 
 .icon {

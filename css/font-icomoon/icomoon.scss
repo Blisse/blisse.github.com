@@ -1,0 +1,123 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('/fonts/icomoon.eot');
+	src:url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/icomoon.woff') format('woff'),
+		url('/fonts/icomoon.ttf') format('truetype'),
+		url('/fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-twitter, .icon-github, .icon-feed, .icon-mail, .icon-pencil, .icon-headphones, .icon-music, .icon-screen, .icon-facebook, .icon-google-plus, .icon-console, .icon-windows8, .icon-star, .icon-heart, .icon-heart-2, .icon-stop, .icon-bubbles, .icon-user, .icon-notebook, .icon-quill, .icon-briefcase, .icon-keyboard, .icon-library, .icon-book, .icon-wrench, .icon-pacman, .icon-disk, .icon-redo {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+	content: "\e000";
+}
+.icon-github:before {
+	content: "\e001";
+}
+.icon-feed:before {
+	content: "\e002";
+}
+.icon-mail:before {
+	content: "\e003";
+}
+.icon-pencil:before {
+	content: "\e008";
+}
+.icon-headphones:before {
+	content: "\e009";
+}
+.icon-music:before {
+	content: "\e00a";
+}
+.icon-screen:before {
+	content: "\e00d";
+}
+.icon-facebook:before {
+	content: "\e00f";
+}
+.icon-google-plus:before {
+	content: "\e010";
+}
+.icon-console:before {
+	content: "\e011";
+}
+.icon-windows8:before {
+	content: "\e012";
+}
+.icon-star:before {
+	content: "\e013";
+}
+.icon-heart:before {
+	content: "\e014";
+}
+.icon-heart-2:before {
+	content: "\e015";
+}
+.icon-stop:before {
+	content: "\e016";
+}
+.icon-bubbles:before {
+	content: "\e005";
+}
+.icon-user:before {
+	content: "\e004";
+}
+.icon-notebook:before {
+	content: "\e006";
+}
+.icon-quill:before {
+	content: "\e007";
+}
+.icon-briefcase:before {
+	content: "\e00b";
+}
+.icon-keyboard:before {
+	content: "\e00c";
+}
+.icon-library:before {
+	content: "\e00e";
+}
+.icon-book:before {
+	content: "\e017";
+}
+.icon-wrench:before {
+	content: "\e018";
+}
+.icon-pacman:before {
+	content: "\e019";
+}
+.icon-disk:before {
+	content: "\e01a";
+}
+.icon-redo:before {
+	content: "\e01b";
+}

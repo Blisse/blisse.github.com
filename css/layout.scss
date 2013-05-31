@@ -1,0 +1,137 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('/fonts/Nexa Bold.eot');
+    src: url('/fonts/Nexa Bold.eot?#iefix') format('eot'),
+         url('/fonts/Nexa Bold.svg#nexa_lightregular') format('svg'),
+         url('/fonts/Nexa Bold.woff') format('woff'),
+         url('/fonts/Nexa Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('/fonts/nexa_light-webfont.eot');
+    src: url('/fonts/nexa_light-webfont.eot?#iefix') format('eot'),
+         url('/fonts/nexa_light-webfont.svg#nexa_boldregular') format('svg'),
+         url('/fonts/nexa_light-webfont.woff') format('woff'),
+         url('/fonts/nexa_light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url('/fonts/sourcesanspro-extralight-webfont.eot');
+    src: url('/fonts/sourcesanspro-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/sourcesanspro-extralight-webfont.svg#source_sans_proextralight') format('svg'),
+         url('/fonts/sourcesanspro-extralight-webfont.woff') format('woff'),
+         url('/fonts/sourcesanspro-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url('sourcesanspro-extralightit-webfont.eot');
+    src: url('sourcesanspro-extralightit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sourcesanspro-extralightit-webfont.woff') format('woff'),
+         url('sourcesanspro-extralightit-webfont.ttf') format('truetype'),
+         url('sourcesanspro-extralightit-webfont.svg#source_sans_proXLtIt') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url('/fonts/sourcesanspro-light-webfont.eot');
+    src: url('/fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg'),
+         url('/fonts/sourcesanspro-light-webfont.woff') format('woff'),
+         url('/fonts/sourcesanspro-light-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url('sourcesanspro-lightit-webfont.eot');
+    src: url('sourcesanspro-lightit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sourcesanspro-lightit-webfont.woff') format('woff'),
+         url('sourcesanspro-lightit-webfont.ttf') format('truetype'),
+         url('sourcesanspro-lightit-webfont.svg#source_sans_prolight_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/fonts/sourcesanspro-regular-webfont.eot');
+    src: url('/fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg'),
+         url('/fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('/fonts/sourcesanspro-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('sourcesanspro-it-webfont.eot');
+    src: url('sourcesanspro-it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sourcesanspro-it-webfont.woff') format('woff'),
+         url('sourcesanspro-it-webfont.ttf') format('truetype'),
+         url('sourcesanspro-it-webfont.svg#source_sans_proitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/fonts/sourcesanspro-semibold-webfont.eot');
+    src: url('/fonts/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg'),
+         url('/fonts/sourcesanspro-semibold-webfont.woff') format('woff'),
+         url('/fonts/sourcesanspro-semibold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('sourcesanspro-semiboldit-webfont.eot');
+    src: url('sourcesanspro-semiboldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sourcesanspro-semiboldit-webfont.woff') format('woff'),
+         url('sourcesanspro-semiboldit-webfont.ttf') format('truetype'),
+         url('sourcesanspro-semiboldit-webfont.svg#source_sans_proSBdIt') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}

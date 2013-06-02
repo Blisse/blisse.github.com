@@ -1028,63 +1028,64 @@
   }
 
 
+/* #Statuses
+================================================== */
 
-@import "bases";
 
 
 .status {
 
   &.complete, &.green {
-    color: green;
+    color: #27ae60;
   }
 
   &.in-progress, &.yellow {
-    color: orange;
+    color: #f39c12;
   }
 
   &.upcoming, &.red {
-    color: red;
+    color: #c0392b;
   }
 
   &.abandoned, &.grey {
-    color: #AAAAAA;
+    color: #7f8c8d;
   }
 }
 
 a.status {
 
   &.complete, &.green {
-    color: green;
+    color: #27ae60;
 
     &:hover {
-      background-color: green;
+      background-color: #27ae60;
       color: $color-bg;
     }
   }
 
   &.in-progress, &.yellow {
-    color: orange;
+    color: #f39c12;
 
     &:hover {
-      background-color: orange;
+      background-color: #f39c12;
       color: $color-bg;
     }
   }
 
   &.upcoming, &.red {
-    color: red;
+    color: #c0392b;
 
     &:hover {
-      background-color: red;
+      background-color: #c0392b;
       color: $color-bg;
     }
   }
 
   &.abandoned, &.grey {
-    color: #AAAAAA;
+    color: #7f8c8d;
 
     &:hover {
-      background-color: #AAAAAA;
+      background-color: #7f8c8d;
       color: $color-bg;
     }
   }

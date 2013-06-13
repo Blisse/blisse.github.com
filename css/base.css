@@ -350,11 +350,7 @@ blockquote {
     font-family: "Source Sans Pro", "Source Sans Pro", "Open Sans", "Myriad Pro", "Frutiger", "Dejavu Sans", sans-serif;
     color: #2b2b2b;
     padding: 0 2px;
-    margin: 20px 2px;
-    font-style: italic; }
-    blockquote p strong {
-      font-style: normal;
-      font-weight: normal; }
+    margin: 20px 2px; }
   blockquote cite {
     font: normal normal 300 11pt/20pt "Source Sans Pro";
     font-family: "Source Sans Pro", "Source Sans Pro", "Open Sans", "Myriad Pro", "Frutiger", "Dejavu Sans", sans-serif;

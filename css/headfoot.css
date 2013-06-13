@@ -44,9 +44,9 @@ header.page {
     line-height: 40pt;
     white-space: nowrap; }
     header.page #name a #last-name {
-      font-family: "Source Sans Pro"; }
+      font-family: "Nexa Bold", "Frutiger", "Open Sans", Arial, sans-serif; }
     header.page #name a #first-name {
-      font-family: "Source Sans Pro"; }
+      font-family: "Nexa Bold", "Frutiger", "Open Sans", Arial, sans-serif; }
     header.page #name a:link #last-name {
       text-decoration: none;
       font-weight: regular;

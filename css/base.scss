@@ -154,9 +154,10 @@
 
   }
 
-	h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
 		font-family     : $font-one;
-		margin          : 4px 0;
+    padding         : 5px;
+		margin          : 5px 0;
 		text-align      : left;
 		text-decoration : none;
 		vertical-align  : bottom;
@@ -182,9 +183,9 @@
   h1 {
 
     display: block;
-
-    color       : $color-text;
-    font: normal normal 100 56pt/1.2 $font-one;
+    color       : $color-bg;
+    background-color: $color-main;
+    font: normal normal 100 50pt/50pt $font-one;
     font-family : $font-stack-h1;
 
     a {
@@ -195,21 +196,21 @@
       &:active {
         color: $color-bg;
         display: block;
-        line-height : 56pt;
-        border-left : 56pt solid transparent;
+        line-height : 50pt;
+        border-left : 50pt solid transparent;
         padding: 0 10px;
 
         &:link {
-          color       : $color-text;
+          color       : $color-bg;
         }
 
         &:visited {
-          color       : $color-text;
+          color       : $color-bg;
         }
 
         &:hover {
           color       : $color-bg;
-          background-color: $color-main;
+          background-color: $color-sec;
         }
 
         &:active {
@@ -223,9 +224,10 @@
   h2 {
 
     display: block;
-
-    color       : $color-text;
-    font: normal normal 100 38pt/40pt $font-one;
+    padding: 4px;
+    color       : $color-bg;
+    background-color: $color-sec;
+    font: normal normal 100 28pt/32pt $font-one;
     font-family : $font-stack-h2;
 
     -webkit-transition: all 100ms ease-in-out;
@@ -236,24 +238,24 @@
     a {
 
       display: block;
-      padding: 8px 5px 0 5px;
+      padding: 0;
 
       &:link {
-        color       : $color-text;
+        color       : $color-bg;
       }
 
       &:visited {
-        color       : $color-text;
+        color       : $color-bg;
       }
 
       &:hover {
-        color       : $color-bg;
-        background-color: $color-main;
+        color       : $color-sec;
+        background-color: $color-bg;
       }
 
       &:active {
         color       : $color-bg;
-        background-color: $color-darkgrey;
+        background-color: $color-main;
       }
     }
   }
@@ -263,30 +265,37 @@
 
     font-weight: bold;
 
-    color       : $color-text;
+    padding: 4px;
+    color       : $color-bg;
+    background-color: $color-main;
     font: normal normal 100 24pt/1.4 $font-one;
     font-family : $font-stack-h3;
 
     @include text-selected;
 
     a {
+
+      display: block;
       padding: 0 4px;
-      display: inline-block;
 
       &:link {
-        color       : $color-text;
+        background-color       : $color-main;
+        color       : $color-bg;
       }
 
       &:visited {
-        color       : $color-text;
+        background-color       : $color-main;
+        color       : $color-bg;
       }
 
       &:hover {
-        color       : $color-bg;
+        color       : $color-main;
+        background-color: $color-bg;
       }
 
       &:active {
         color       : $color-bg;
+        background-color: $color-main;
       }
     }
   }
@@ -294,6 +303,7 @@
   h4 {
     display: block;
 
+    padding: 4px;
     color       : $color-text;
     font: normal normal 100 18pt/1.4 $font-one;
     font-family : $font-stack-h4;
@@ -449,7 +459,7 @@
     background: $color-grey;
 
     width: 100%;
-		margin: 50px 0;
+		margin: 20px 0;
 
     float: none;
     clear: both;
@@ -485,8 +495,10 @@
 
       margin: 0;
 
-      h2 a {
-        padding: 10px 10px 0 10px;
+      h2 {
+        a {
+          padding: 7px 7px  0 10px;
+        }
       }
 
       .tags {
@@ -557,9 +569,10 @@
       header {
         margin: 0;
         padding: 0;
+
         h2 {
-          color       : $color-black;
-          font-size: 40pt;
+          color       : $color-bg;
+          font-size: 36pt;
           padding: 8px 5px 0 5px;
         }
 
@@ -881,7 +894,8 @@
       font: normal normal 300 20pt/30pt $font-one;
       font-family: $font-stack-primary;
 
-      color: $color-darkgrey;
+      color: $color-bg;
+      background-color: $color-sec;
 
 
       a {
@@ -892,14 +906,14 @@
           text-decoration:  none;
           font-weight:      normal;
           background-color: transparent;
-          color:            $color-darkgrey;
+          color:            $color-bg;
         }
 
         &:visited {
           text-decoration:  none;
           font-weight:      normal;
           background-color: transparent;
-          color:            $color-darkgrey;
+          color:            $color-bg;
         }
 
         &:hover {
@@ -1031,62 +1045,68 @@
 /* #Statuses
 ================================================== */
 
-
+.status-header {
+  background-color: $color-bg;
+  padding: 0;
+}
 
 .status {
 
   &.complete, &.green {
-    color: #27ae60;
+    background-color: #27ae60;
+    color: $color-bg;
   }
 
   &.in-progress, &.yellow {
-    color: #f39c12;
+    background-color: #f39c12;
+    color: $color-bg;
   }
 
   &.upcoming, &.red {
-    color: #c0392b;
+    background-color: #c0392b;
+    color: $color-bg;
   }
 
   &.abandoned, &.grey {
-    color: #7f8c8d;
+    background-color: #7f8c8d;
+    color: $color-bg;
   }
 }
 
 a.status {
 
   &.complete, &.green {
-    color: #27ae60;
+    color: $color-bg;
 
     &:hover {
-      background-color: #27ae60;
-      color: $color-bg;
+      background-color: $color-bg;
+      color: #27ae60;
     }
   }
 
   &.in-progress, &.yellow {
-    color: #f39c12;
+    color: $color-bg;
 
     &:hover {
-      background-color: #f39c12;
-      color: $color-bg;
+      background-color: $color-bg;
+      color: #f39c12;
     }
   }
 
   &.upcoming, &.red {
-    color: #c0392b;
+    color: $color-bg;
 
     &:hover {
-      background-color: #c0392b;
-      color: $color-bg;
+      color: #c0392b;
     }
   }
 
   &.abandoned, &.grey {
-    color: #7f8c8d;
+    color: $color-bg;
 
     &:hover {
-      background-color: #7f8c8d;
-      color: $color-bg;
+      background-color: $color-bg;
+      color: #7f8c8d;
     }
   }
 

@@ -531,7 +531,7 @@
           background-color: $color-darkgrey;
           border: none;
           font: normal normal 300 14pt/30pt $font-one;
-          font-family : $font-stack-import;
+          font-family : $font-stack-primary;
           padding: 0;
           margin: 0;
 
@@ -661,7 +661,7 @@
 
     .more-info {
       font: normal normal 300 10pt/12pt $font-one;
-      font-family: $font-stack-discuss;
+      font-family: $font-stack-primary;
       color: $color-text;
 
       text-transform: uppercase;
@@ -879,7 +879,7 @@
       padding: 0;
 
       font: normal normal 300 20pt/30pt $font-one;
-      font-family: $font-stack-list;
+      font-family: $font-stack-primary;
 
       color: $color-darkgrey;
 

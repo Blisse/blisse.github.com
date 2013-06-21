@@ -771,37 +771,37 @@ code, code > .highlight {
   padding: 0; }
 
 .status.complete, .status.green {
-  background-color: #27ae60;
+  background-color: #00b16a;
   color: white; }
 .status.in-progress, .status.yellow {
-  background-color: #f39c12;
+  background-color: #ffe800;
   color: white; }
 .status.upcoming, .status.red {
-  background-color: #c0392b;
+  background-color: #e98d70;
   color: white; }
 .status.abandoned, .status.grey {
-  background-color: #7f8c8d;
+  background-color: rgba(0, 82, 156, 0.2);
   color: white; }
 
 a.status.complete, a.status.green {
   color: white; }
   a.status.complete:hover, a.status.green:hover {
     background-color: white;
-    color: #27ae60; }
+    color: #00b16a; }
 a.status.in-progress, a.status.yellow {
   color: white; }
   a.status.in-progress:hover, a.status.yellow:hover {
     background-color: white;
-    color: #f39c12; }
+    color: #ffe800; }
 a.status.upcoming, a.status.red {
   color: white; }
   a.status.upcoming:hover, a.status.red:hover {
-    color: #c0392b; }
+    color: #e98d70; }
 a.status.abandoned, a.status.grey {
   color: white; }
   a.status.abandoned:hover, a.status.grey:hover {
     background-color: white;
-    color: #7f8c8d; }
+    color: rgba(0, 82, 156, 0.2); }
 
 .icon {
   font-size: 75%; }

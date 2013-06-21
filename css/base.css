@@ -137,7 +137,8 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro";
-  margin: 4px 0;
+  padding: 5px;
+  margin: 5px 0;
   text-align: left;
   text-decoration: none;
   vertical-align: bottom;
@@ -175,32 +176,35 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   display: block;
-  color: #2b2b2b;
-  font: normal normal 100 56pt/1.2 "Source Sans Pro";
+  color: white;
+  background-color: #1abc9c;
+  font: normal normal 100 50pt/50pt "Source Sans Pro";
   font-family: "Source Sans Pro", "Open Sans"; }
   h1 a:hover {
     color: white; }
   h1 a:active {
     color: white;
     display: block;
-    line-height: 56pt;
-    border-left: 56pt solid transparent;
+    line-height: 50pt;
+    border-left: 50pt solid transparent;
     padding: 0 10px; }
     h1 a:active:link {
-      color: #2b2b2b; }
+      color: white; }
     h1 a:active:visited {
-      color: #2b2b2b; }
+      color: white; }
     h1 a:active:hover {
       color: white;
-      background-color: #1abc9c; }
+      background-color: #16a085; }
     h1 a:active:active {
       color: white;
       background-color: #1abc9c; }
 
 h2 {
   display: block;
-  color: #2b2b2b;
-  font: normal normal 100 38pt/40pt "Source Sans Pro";
+  padding: 4px;
+  color: white;
+  background-color: #16a085;
+  font: normal normal 100 28pt/32pt "Source Sans Pro";
   font-family: "Source Sans Pro", "Open Sans";
   -webkit-transition: all 100ms ease-in-out;
   -moz-transition: all 100ms ease-in-out;
@@ -208,22 +212,24 @@ h2 {
   transition: all 100ms ease-in-out; }
   h2 a {
     display: block;
-    padding: 8px 5px 0 5px; }
+    padding: 0; }
     h2 a:link {
-      color: #2b2b2b; }
+      color: white; }
     h2 a:visited {
-      color: #2b2b2b; }
+      color: white; }
     h2 a:hover {
-      color: white;
-      background-color: #1abc9c; }
+      color: #16a085;
+      background-color: white; }
     h2 a:active {
       color: white;
-      background-color: #4a4a4a; }
+      background-color: #1abc9c; }
 
 h3 {
   display: block;
   font-weight: bold;
-  color: #2b2b2b;
+  padding: 4px;
+  color: white;
+  background-color: #1abc9c;
   font: normal normal 100 24pt/1.4 "Source Sans Pro";
   font-family: "Source Sans Pro", "Open Sans"; }
   h3 a:hover {
@@ -233,19 +239,24 @@ h3 {
     color: white;
     background-color: #1abc9c; }
   h3 a {
-    padding: 0 4px;
-    display: inline-block; }
+    display: block;
+    padding: 0 4px; }
     h3 a:link {
-      color: #2b2b2b; }
+      background-color: #1abc9c;
+      color: white; }
     h3 a:visited {
-      color: #2b2b2b; }
+      background-color: #1abc9c;
+      color: white; }
     h3 a:hover {
-      color: white; }
+      color: #1abc9c;
+      background-color: white; }
     h3 a:active {
-      color: white; }
+      color: white;
+      background-color: #1abc9c; }
 
 h4 {
   display: block;
+  padding: 4px;
   color: #2b2b2b;
   font: normal normal 100 18pt/1.4 "Source Sans Pro";
   font-family: "Source Sans Pro", "Open Sans"; }
@@ -339,11 +350,7 @@ blockquote {
     font-family: "Source Sans Pro", "Source Sans Pro", "Open Sans", "Myriad Pro", "Frutiger", "Dejavu Sans", sans-serif;
     color: #2b2b2b;
     padding: 0 2px;
-    margin: 20px 2px;
-    font-style: italic; }
-    blockquote p strong {
-      font-style: normal;
-      font-weight: normal; }
+    margin: 20px 2px; }
   blockquote cite {
     font: normal normal 300 11pt/20pt "Source Sans Pro";
     font-family: "Source Sans Pro", "Source Sans Pro", "Open Sans", "Myriad Pro", "Frutiger", "Dejavu Sans", sans-serif;
@@ -362,7 +369,7 @@ hr {
   color: #797979;
   background: #797979;
   width: 100%;
-  margin: 50px 0;
+  margin: 20px 0;
   float: none;
   clear: both; }
   hr.line {
@@ -384,7 +391,7 @@ section {
   section header {
     margin: 0; }
     section header h2 a {
-      padding: 10px 10px 0 10px; }
+      padding: 7px 7px 0 10px; }
     section header .tags {
       font: normal normal 300 11pt/1.5 "Source Sans Pro";
       font-family: "Source Sans Pro", "Open Sans", sans-serif;
@@ -435,8 +442,8 @@ section {
     margin: 0;
     padding: 0; }
     section.branch header h2 {
-      color: #2b2b2b;
-      font-size: 40pt;
+      color: white;
+      font-size: 36pt;
       padding: 8px 5px 0 5px; }
     section.branch header .caption p {
       padding: 0 5px 5px 5px;
@@ -650,19 +657,20 @@ ul.simple-large {
     padding: 0;
     font: normal normal 300 20pt/30pt "Source Sans Pro";
     font-family: "Source Sans Pro", "Open Sans", sans-serif;
-    color: #4a4a4a; }
+    color: white;
+    background-color: #16a085; }
     ul.simple-large li a {
       display: block; }
       ul.simple-large li a:link {
         text-decoration: none;
         font-weight: normal;
         background-color: transparent;
-        color: #4a4a4a; }
+        color: white; }
       ul.simple-large li a:visited {
         text-decoration: none;
         font-weight: normal;
         background-color: transparent;
-        color: #4a4a4a; }
+        color: white; }
       ul.simple-large li a:hover {
         text-decoration: none;
         font-weight: normal;
@@ -758,35 +766,42 @@ code, code > .highlight {
 ================================================== */
 /* #Statuses
 ================================================== */
+.status-header {
+  background-color: white;
+  padding: 0; }
+
 .status.complete, .status.green {
-  color: #27ae60; }
+  background-color: #27ae60;
+  color: white; }
 .status.in-progress, .status.yellow {
-  color: #f39c12; }
+  background-color: #f39c12;
+  color: white; }
 .status.upcoming, .status.red {
-  color: #c0392b; }
+  background-color: #c0392b;
+  color: white; }
 .status.abandoned, .status.grey {
-  color: #7f8c8d; }
+  background-color: #7f8c8d;
+  color: white; }
 
 a.status.complete, a.status.green {
-  color: #27ae60; }
+  color: white; }
   a.status.complete:hover, a.status.green:hover {
-    background-color: #27ae60;
-    color: white; }
+    background-color: white;
+    color: #27ae60; }
 a.status.in-progress, a.status.yellow {
-  color: #f39c12; }
+  color: white; }
   a.status.in-progress:hover, a.status.yellow:hover {
-    background-color: #f39c12;
-    color: white; }
+    background-color: white;
+    color: #f39c12; }
 a.status.upcoming, a.status.red {
-  color: #c0392b; }
+  color: white; }
   a.status.upcoming:hover, a.status.red:hover {
-    background-color: #c0392b;
-    color: white; }
+    color: #c0392b; }
 a.status.abandoned, a.status.grey {
-  color: #7f8c8d; }
+  color: white; }
   a.status.abandoned:hover, a.status.grey:hover {
-    background-color: #7f8c8d;
-    color: white; }
+    background-color: white;
+    color: #7f8c8d; }
 
 .icon {
   font-size: 75%; }

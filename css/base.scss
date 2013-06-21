@@ -1048,12 +1048,12 @@
 .status {
 
   &.complete, &.green {
-    background-color: rgb(0,177,106);
+    background-color: rgb(20,162,212);
     color: $color-bg;
   }
 
   &.in-progress, &.yellow {
-    background-color: rgba(255,232,0,1.0);
+    background-color: rgb(243,112,33);
     color: $color-bg;
   }
 
@@ -1075,7 +1075,7 @@ a.status {
 
     &:hover {
       background-color: $color-bg;
-      color: rgb(0,177,106);
+      color: rgb(20,162,212);
     }
   }
 
@@ -1084,7 +1084,7 @@ a.status {
 
     &:hover {
       background-color: $color-bg;
-      color: rgba(255,232,0,1.0);
+      color: rgb(243,112,33);
     }
   }
 

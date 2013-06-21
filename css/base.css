@@ -771,10 +771,10 @@ code, code > .highlight {
   padding: 0; }
 
 .status.complete, .status.green {
-  background-color: #00b16a;
+  background-color: #14a2d4;
   color: white; }
 .status.in-progress, .status.yellow {
-  background-color: #ffe800;
+  background-color: #f37021;
   color: white; }
 .status.upcoming, .status.red {
   background-color: #e98d70;
@@ -787,12 +787,12 @@ a.status.complete, a.status.green {
   color: white; }
   a.status.complete:hover, a.status.green:hover {
     background-color: white;
-    color: #00b16a; }
+    color: #14a2d4; }
 a.status.in-progress, a.status.yellow {
   color: white; }
   a.status.in-progress:hover, a.status.yellow:hover {
     background-color: white;
-    color: #ffe800; }
+    color: #f37021; }
 a.status.upcoming, a.status.red {
   color: white; }
   a.status.upcoming:hover, a.status.red:hover {

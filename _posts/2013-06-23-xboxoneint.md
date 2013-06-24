@@ -58,3 +58,27 @@ Of course, Microsoft is completely to blame here for completely failing to actua
 However, when talking about the Xbox One and looking at all the Internet noise it created, it's not really that astounding anymore how stubborn people on the Internet can be, and how the Internet is shaping our patterns of thought. It's disheartening to see people completely destroy a company that seriously looked like it was producing a nice product, just for failed marketing.
 
 As I'm growing, I'm aiming to identify these similar weaknesses in me to see when I'm holding on to an idea that makes no sense - whether it had made sense at one point or not doesn't matter. I would not like to one day do the same thing because of my own ignorance.
+
+
+
+
+
+
+Edit: Added a response.
+
+> "The fault of Microsoft is that they off on a bad foot"... lol, that is a pretty sad excuse and defense of Microsoft. I just love how the defense of Microsoft by people now seems to put the blame on the consumer base. Perhaps it is a distortion of reality or something but it is getting to be pretty sad.
+
+> The reason why they had a bad start was because they did an atrocious job of giving us information, they did an atrocious job of explaining that information, and they did an atrocious job of screwing over thousands of it tens-of-thousands of people with their new policy. This is not about people merely complaining, Microsoft was doing horribly when it comes to preorders in comparison to Sony. Like I have said before and will say now, this is entirely and wholeheartedly Microsoft's fault, period.
+
+> <cite>Nilrem</cite>
+
+
+Well the point is when given ambiguous information, inquire more about it instead of making the worst-case assumptions which a large number of very vocal people then, which then exacerbated the ambiguity beyond repair, prompting Microsoft to remove the features that could have also held some promise. I'm not justifying the behavior of Microsoft's failure to market the product since that was actually fucking bad, but again with understanding people it's more wait for things to settle down and clear, instead of jumping right to "Microsoft is screwing us in the ass."
+
+Everything that Microsoft has done with the Xbox One has been justified, as I've been commenting on since the beginning of the reveal. There isn't really anything that doesn't have some possible logical reasoning behind it. Perhaps you're just not a fan of Kinect. Then okay, but there are potential use cases for it, as there is for SmartGlass, and used games restrictions. It's just that a huge number of people just didn't want to listen to it at the beginning, and in the last week or so, the actual "more-informed" opinions aren't being drowned out over and over again by the swarms of console gamers.
+
+My biggest issue is that actually as consumers we act so entitled as to in some cases actually believe we know much better what to do than a multi-billion dollar company. For the most part, most of us all follow market trends. It is companies that try to predict and promote newer market trends in order to capitalize on that. I'm not advocating blind change, but when it's pretty clear that a lot of companies have this integration/motion development in mind, it's annoying to see people so resistant to the newer ideas. Not only that, it's also frustrating that as a consumer, when you don't like a product it ends up being a huge bashing party instead of accepting its flaws and moving on. Take a look at a lot of "Razer" haters and you see a similar pattern. When you're criticizing a product, you look at the mutual benefits and deficits of both and compare them based on that, but the vast majority of consumer attitudes towards the Xbox One since the reveal was not of criticism, but of ridicule, because as gamers we felt so entitled as to personally attack a product for not being exactly like we wanted it to be, instead of accepting it and moving on. I suppose I shouldn't be surprised at this, but I'm only just realizing how deep this kind of behavior goes in many different areas and it's actually really frustrating, especially when there are some things about the product that you like, and other people drown out your thoughts in ridicule and contempt. Yes, it's a big product released by a big name and you would like them to get on a good vibe with consumers, but at the end of the day the amount of pure hatred for Microsoft is a bit baffling and frustrating to me (and Microsoft very likely).
+
+This is the reasoning behind why "consumers are stupid", if that makes sense. People justifying their pure hatred and contempt by saying, "they deserve it". It's just... really?
+
+/rant

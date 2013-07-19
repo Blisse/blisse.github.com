@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get your shit together Microsoft
-date: 2013-07-22
+date: 2013-07-12
 tags: [technology]
 comments: true
 

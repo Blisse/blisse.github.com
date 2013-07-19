@@ -404,6 +404,11 @@
 	},
 	"file_history":
 	[
+		"/D/Root/Air/Git/site/work/site/index.html",
+		"/D/Root/Air/Git/site/_posts/2013-07-19-littlethings.md",
+		"/D/Root/Air/Git/site/_posts/2013-07-12-windowsphone.md",
+		"/D/Root/Air/Git/site/index.html",
+		"/C/Users/Victor/Links/site.lnk",
 		"/D/Root/Air/Dropbox/School/2B/CS240/a1.tex",
 		"/D/Root/Air/Dropbox/School/2B/CS240/report.cpp",
 		"/D/Root/Air/Dropbox/School/2B/CS240/test",
@@ -526,12 +531,7 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header/header.scss",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer/footer.scss",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer/footer.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/scss/base.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/compiled/base.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header/header.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/ie.css",
-		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap"
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer/footer.css"
 	],
 	"find":
 	{
@@ -549,6 +549,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"hoJ989W",
+			"<hr>",
+			"[",
+			"</center>",
+			"[/center]",
+			"[center]",
+			"[/img]",
+			"[img]",
+			"[hr]",
+			"&amp;",
+			"&",
 			"lg",
 			"heap",
 			"cin",
@@ -665,17 +676,6 @@
 			"255",
 			"grey",
 			"bg",
-			"main",
-			"dotted",
-			"bg",
-			"29",
-			"text",
-			"span",
-			"rgba",
-			"15px",
-			"webkit",
-			"15px -4px",
-			"rgba(31, 73, 125, 0.8)",
 			"main"
 		],
 		"highlight": true,

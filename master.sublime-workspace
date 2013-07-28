@@ -404,6 +404,10 @@
 	},
 	"file_history":
 	[
+		"/D/Root/Air/Git/site/css/base.css",
+		"/D/Root/Air/Git/site/css/base.scss",
+		"/D/Root/Air/Dropbox/save.txt",
+		"/D/Root/Air/Dropbox/School/2B/CS240/A5/kdpartition.cpp",
 		"/D/Root/Air/Git/site/work/site/index.html",
 		"/D/Root/Air/Git/site/_posts/2013-07-19-littlethings.md",
 		"/D/Root/Air/Git/site/_posts/2013-07-12-windowsphone.md",
@@ -489,7 +493,6 @@
 		"/E/__flac-files.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/atom.xml",
 		"/C/Users/Victor/Desktop/f2ksdk/foobar2000/helpers/create_directory_helper.cpp",
-		"/D/Root/Air/Dropbox/save.txt",
 		"/C/Users/Victor/.bashrc",
 		"/C/Users/Victor/.gitconfig",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/setp/index.html",
@@ -528,10 +531,7 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/resume.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/css/footer.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header/header.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer/footer.scss",
-		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer/footer.css"
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header/header.scss"
 	],
 	"find":
 	{

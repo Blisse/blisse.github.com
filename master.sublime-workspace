@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ma",
+				"main	main()"
+			],
+			[
 				"pu",
 				"push_back"
 			],
@@ -404,6 +408,51 @@
 	},
 	"file_history":
 	[
+		"/D/Root/Air/Git/site/_includes/googlefonts.html",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Victor/Desktop/Weather/Weather/MainPage.xaml",
+		"/C/Users/Victor/Desktop/Weather/Weather/MainPage.xaml.cs",
+		"/C/Users/Victor/Desktop/Weather/Weather/Bin/Debug/Microsoft.Phone.Controls.xml",
+		"/C/Users/Victor/Desktop/test.cc",
+		"/C/Program Files (x86)/Microsoft SDKs/Windows Phone/v8.0/Design/ThemeResources.xaml",
+		"/C/Program Files (x86)/Microsoft SDKs/Windows Phone/v8.0/Design/Dark/ThemeResources.xaml",
+		"/C/Users/Victor/Desktop/test.py",
+		"/E/__m4a-files.txt",
+		"/E/__ogg-files.txt",
+		"/E/__mp3-files.txt",
+		"/E/__flac-files.txt",
+		"/E/__py-files.txt",
+		"/E/__ffp-files.txt",
+		"/D/Root/Air/Dropbox/Backup/dad",
+		"/C/Users/Victor/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/G1I2QPG3/C__Users_Victor_AppData_Local_Packages_microsoft.microsoftskydrive_8wekyb3d8bbwe_LocalState_fc_C4FD890803AEBBF0!750_post[1].txt",
+		"/D/Root/Air/Dropbox/Backup/ideas.txt",
+		"/D/Root/Air/Dropbox/Backup/random.txt",
+		"/C/Users/Victor/Desktop/Weather/Weather/SettingsPage.xaml.cs",
+		"/D/Root/Air/SkyDrive/post",
+		"/C/Users/Victor/Desktop/Weather/Weather/SettingsPage.xaml",
+		"/D/Root/Air/Git/NWeather/NWeather/Pages/SettingsPage.xaml",
+		"/D/Root/Air/Git/NWeather/NWeather/Pages/MainPage.xaml.cs",
+		"/D/Root/Air/Git/NWeather/NWeather/Pages/SettingsPage.xaml.cs",
+		"/D/Root/Air/Git/NWeather/NWeather/Pages/MainPage.xaml",
+		"/D/Root/Air/Git/NWeather/NWeather/Classes/WeatherInfo.cs",
+		"/D/Root/Air/Git/NWeather/NWeather/Classes/OpenWeatherURL.cs",
+		"/D/Root/Air/Git/NWeather/NWeather/Classes/LocalizedStrings.cs",
+		"/D/Root/Air/Git/NWeather/NWeather/MainPage.xaml.cs",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/src/World.cpp",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/inc/World.h",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/inc/BabyHuman.h",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/inc/HumanFactoryInitializer.h",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/inc/AdultHuman.h",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/src/HumanFactoryInitializer.cpp",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/inc/SuperHuman.h",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/inc/HumanFactory.h",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/inc/IFactory.h",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/src/SuperHuman.cpp",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/inc/IHuman.h",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/inc/AdultFactory.h",
+		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/src/main.cpp",
+		"/C/Users/Victor/Downloads/hangman.cpp",
+		"/D/Root/Air/Git/site/index.html",
 		"/D/Root/Air/Git/site/css/base.css",
 		"/D/Root/Air/Git/site/css/base.scss",
 		"/D/Root/Air/Dropbox/save.txt",
@@ -411,7 +460,6 @@
 		"/D/Root/Air/Git/site/work/site/index.html",
 		"/D/Root/Air/Git/site/_posts/2013-07-19-littlethings.md",
 		"/D/Root/Air/Git/site/_posts/2013-07-12-windowsphone.md",
-		"/D/Root/Air/Git/site/index.html",
 		"/C/Users/Victor/Links/site.lnk",
 		"/D/Root/Air/Dropbox/School/2B/CS240/a1.tex",
 		"/D/Root/Air/Dropbox/School/2B/CS240/report.cpp",
@@ -482,56 +530,12 @@
 		"/D/Root/Air/Dropbox/Site/master/.gitignore",
 		"/J/Documents/howto.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-06-meditation.md",
-		"/E/__ffp-files.txt",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/reset.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-02-25-helloworld.md",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/2013/04/01/thenword.html",
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-03-21-anewbeginning.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/trackers/index.html",
-		"/E/__flac-files.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/atom.xml",
-		"/C/Users/Victor/Desktop/f2ksdk/foobar2000/helpers/create_directory_helper.cpp",
-		"/C/Users/Victor/.bashrc",
-		"/C/Users/Victor/.gitconfig",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/setp/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/site/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/archive/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-10-05-wordscores.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-11-12-teamliquidattack.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-09-22-dataurls.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-22-html5valid.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_plugins/jekyll-sass.rb",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_plugins/pagination.rb",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/blog/page-2/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-19-tetris.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/404.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/blog/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/archive/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/page5/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-07-20-justgoforit.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-12-31-stufftodo.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-11-13-youarebadsodealwithit.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-10-25-merllinker.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-10-14-chairsate5.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-09-15-gamingprofessionalism.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-20-tetrisbasics.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-11-reallynicecables.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-09-08-codersblock.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-07-26-dropbox.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-08-03-dexpot.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-07-11-counter-memories.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-04-14-failinterview.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/page2/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/highlights/index.html",
-		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/project.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/css/base.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/resume.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/css/footer.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header/header.scss"
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.css"
 	],
 	"find":
 	{
@@ -542,6 +546,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -549,6 +554,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"header",
+			"Header",
+			"getLocation",
+			"latitude",
+			"locationConsentEnabled",
+			"LocationConsentEnabled",
+			"locationConsentEnabled",
+			"forecasted",
+			"listBox1",
+			"Factory",
 			"hoJ989W",
 			"<hr>",
 			"[",
@@ -666,17 +681,7 @@
 			"Museo Sans 500",
 			"white",
 			"h3",
-			"h2",
-			"grey",
-			"h1",
-			"$color-bg",
-			"grey",
-			"white",
-			"h5",
-			"255",
-			"grey",
-			"bg",
-			"main"
+			"h2"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -746,6 +751,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"adulthu",
+				"inc/AdultHuman.h"
+			],
+			[
+				"humanfacoi",
+				"inc/HumanFactoryInitializer.h"
+			],
+			[
+				"babyh",
+				"inc/BabyHuman.h"
+			],
 			[
 				"head",
 				"css/header.scss"
@@ -829,6 +846,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 197.0,
+	"side_bar_width": 182.0,
 	"status_bar_visible": true
 }

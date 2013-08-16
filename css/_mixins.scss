@@ -1,0 +1,53 @@
+@mixin text-caption {
+  font: normal normal 300 11pt/1.5 $font-one;
+  font-family: $font-stack-primary;
+  color: $color-text;
+}
+
+@mixin text-tags {
+  font: normal normal 300 11pt/1.5 $font-one;
+  font-family: $font-stack-primary;
+  color: $color-text;
+}
+
+@mixin text-blockquote-p {
+  font: normal normal 300 16pt/22pt $font-one;
+  font-family: $font-stack-text;
+  color: $color-text;
+}
+
+@mixin text-selected {
+
+  a {
+    &:hover {
+      color: $color-bg;
+      background-color: $color-main;
+    }
+
+    &:active {
+      color: $color-bg;
+      background-color: $color-main;
+    }
+  }
+}
+
+@mixin clear-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin transition-ease ( $num-in ){
+    -webkit-transition: all $num-in ease-in-out;
+    -moz-transition: all $num-in ease-in-out;
+    -o-transition: all $num-in ease-in-out;
+    transition: all $num-in ease-in-out;
+}
+
+
+@mixin texts ( $border, $bg-colour, $txt-colour ) {
+    text-decoration:  none;
+    font-weight:      normal;
+    border:           $border;
+    background-color: $bg-colour;
+    color:            $txt-colour;
+}

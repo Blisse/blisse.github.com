@@ -3,16 +3,15 @@ url: http://www.laivictor.com
 atom: http://www.laivictor.com/atom.xml
 
 title: lai.victor
-description: Personal website - blog and randomness.
+description: Personal blog
 author: Victor Lai
-
 
 email: lai.victor.vl@gmail.com
 github: blisse
 twitter: laivictorvl
 linkedin: laivictor
 
-paginate: 1000
+paginate: 6
 paginate_path: "/blog/page-:num"
 
 exclude: ['README.markdown', 'Gemfile.lock', 'Gemfile']

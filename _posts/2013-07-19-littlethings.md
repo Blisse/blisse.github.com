@@ -28,9 +28,7 @@ Similarly, you can see the change in the Likes bar. Before it used to be a mix o
 
 As a side note, also notice that the Like button is twice as big as the Dislike button. Subtle de-emphasis on the Dislike.
 
-<div class="center"> <img src="http://i.imgur.com/XEx4kpf.png" class="scale-with-grid"> <br/>
-Designing to downplay negatives.
-</div>
+* Designing to downplay negatives.
 
 <hr class="line">
 <div class="center">
@@ -41,8 +39,7 @@ Designing to downplay negatives.
 
 These two are hard to emphasize without a gif. Go take a look at them for yourself. I just found them today. In the Steam Sales, and I'm guessing in a fair bit of Steam's UI, you'll notice that pressing the "Next XX" button will scroll the page sideways. But the navigation buttons have up and down icons next. This is an example of sloppy design. They should really be left and right icons to match the scrolling.
 
-<div class="center"> <img src="http://i.imgur.com/YtWcgtI.png" class="scale-with-grid"> <br/>
-Action does not match visuals. </div>
+* Action does not match visuals.
 
 <hr class="line">
 <div class="center">
@@ -53,9 +50,7 @@ Action does not match visuals. </div>
 
 Here's another good design decision. Inline calendar adds. It's reasonably complex to add and I've no idea when it was added, but it was a nice addition to see. I wonder how many different combinations of dates it shows up for. In any case, it was nice to see that someone at Google asked, "wouldn't it be nice if you could add calendar events directly in your emails?". Just little things that some places coughOutlookcough don't do.
 
-<div class="center"> <img src="http://i.imgur.com/XEx4kpf.png" class="scale-with-grid"> <br/>
-Useful and unobtrusive function.
-</div>
+* Useful and unobtrusive function.
 
 <hr class="line">
 <div class="center">
@@ -68,9 +63,7 @@ In Microsoft Outlook, you can make Rules that help you filter out incoming email
 
 Unfortunately, they decided to make this screen a completely separate screen in the Settings menu. Why? Not sure, because how are you supposed to make these rules without also seeing the emails you're making the rules for? This should be done in the main email screen as a movable pop-up or sidebar extension. Really bad design here, and Microsoft is at fault these days for a lot of these.
 
-<div class="center"> <img src="http://i.imgur.com/YtWcgtI.png" class="scale-with-grid"> <br/>
-Function is difficult to use.
-</div>
+* Function is difficult to use.
 
 <hr class="line">
 <div class="center">
@@ -85,9 +78,7 @@ That's good, except that it's fullscreen, and it disables every other feature wh
 
 I'm being a little harsh because it doesn't really show up for that long, but then, why have the user disoriented by the fullscreen-ness of it?
 
-<div class="center"> <img src="http://i.imgur.com/YtWcgtI.png" class="scale-with-grid"> <br/>
-Function status too intrusive.
-</div>
+* Function status too intrusive.
 
 <hr class="line">
 Just some nice and not-so-nice little things I noticed. Hopefully this will make you open your eyes a little bit to the little nuances you pass by everyday. Have a good day!
@@ -96,7 +87,7 @@ Just some nice and not-so-nice little things I noticed. Hopefully this will make
 
 Update::20130719
 
-So someone told me they finally fixed the icons on the Steam page. :D Success! A good day for designers!
+So someone told me they finally fixed the icons on the Steam page. :D Success!
 <div class="center">
   <a href="http://i.imgur.com/UxnDPCW.png" title="Steam fixed it!" rel="littlethings" class="fancybox">
     <img src="http://i.imgur.com/UxnDPCW.png" class="scale-with-grid">

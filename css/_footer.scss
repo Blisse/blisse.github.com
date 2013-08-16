@@ -1,0 +1,61 @@
+
+footer {
+  position: relative;
+  height: 200px;
+  clear: both;
+  margin-top: -200px;
+
+  bottom:0;
+  width:100%;
+
+  padding: 30px 0;
+
+  text-align: center;
+
+  p {
+    margin: 15px 0;
+
+    &#social-icons {
+      font: normal normal 300 32px/34px $font-one;
+      padding: 4px;
+
+      a {
+        display           : inline-block;
+        padding: 2px;
+
+        &:link    {
+          text-decoration : none;
+          font-weight     : normal;
+          border          : none;
+          background-color: transparent;
+          color           : $color-bg;
+        }
+
+        &:visited {
+          text-decoration : none;
+          font-weight     : normal;
+          border          : none;
+          background-color: transparent;
+          color           : $color-bg;
+        }
+
+        &:hover   {
+          text-decoration : none;
+          font-weight     : normal;
+          border          : none;
+          background-color: transparent;
+          color           : $color-main;
+        }
+
+        &:active  {
+          text-decoration : none;
+          font-weight     : normal;
+          border          : none;
+          background-color: transparent;
+          color           : $color-main;
+        }
+      }
+    }
+  }
+}
+

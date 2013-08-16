@@ -1,0 +1,267 @@
+@import "mixins";
+
+/* #Font-Face
+================================================== */
+/*  This is the proper syntax for an @font-face file
+    Just create a "fonts" folder at the root,
+    copy your FontName into code below and remove
+    comment brackets */
+
+/*  @font-face {
+      font-family: 'FontName';
+      src: url('../fonts/FontName.eot');
+      src: url('../fonts/FontName.eot?iefix') format('eot'),
+           url('../fonts/FontName.woff') format('woff'),
+           url('../fonts/FontName.ttf') format('truetype'),
+           url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+      font-weight: normal;
+      font-style: normal; }
+*/
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('/fonts/Nexa Bold.eot');
+    src: url('/fonts/Nexa Bold.eot?#iefix') format('eot'),
+         url('/fonts/Nexa Bold.svg#nexa_lightregular') format('svg'),
+         url('/fonts/Nexa Bold.woff') format('woff'),
+         url('/fonts/Nexa Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('/fonts/nexa_light-webfont.eot');
+    src: url('/fonts/nexa_light-webfont.eot?#iefix') format('eot'),
+         url('/fonts/nexa_light-webfont.svg#nexa_boldregular') format('svg'),
+         url('/fonts/nexa_light-webfont.woff') format('woff'),
+         url('/fonts/nexa_light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-stack-monospace: "Consolas", "Lucida Console", "Monaco", monospace !important;
+
+$font-one: "Open Sans";
+
+$font-stack-name: "Nexa Bold", "Open Sans", "Raleway", sans-serif;
+$font-stack-nav: "Raleway", "Open Sans", sans-serif;
+$font-stack-navtop: "Open Sans", "Myriad Pro", "Dejavu Sans";
+$font-stack-navbottom: "Open Sans", "Myriad Pro", "Dejavu Sans";
+
+$font-stack-primary: "Open Sans";
+$font-stack-branch: "Open Sans";
+$font-stack-text: "Open Sans", "Myriad Pro";
+
+$font-stack-h1: $font-one;
+$font-stack-h2: $font-one;
+$font-stack-h3: $font-one;
+$font-stack-h4: $font-one;
+$font-stack-h5: $font-one;
+$font-stack-h6: $font-one;
+
+p {
+  display : block;
+  margin  : 0;
+  padding : 0;
+
+  font    : normal normal 300 14pt/1.6 $font-one;
+
+  color   : $color-text;
+
+  a {
+    display: inline-block;
+
+    &:link {
+      @include texts( none, transparent, $color-main);
+      border-bottom   : 1px dotted $color-main;
+    }
+
+    &:visited {
+      @include texts( none, transparent, $color-main);
+      border-bottom   : 1px dotted $color-main;
+    }
+
+    &:hover {
+      @include texts( none, $color-main, $color-main);
+      border-bottom   : 1px dotted $color-main;
+    }
+
+    &:active {
+      @include texts( none, $color-main, $color-main);
+      border-bottom   : 1px dotted $color-main;
+    }
+
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family     : $font-one;
+  font-weight: normal;
+  color: $color-text;
+
+  padding         : 5px;
+  margin          : 5px 0;
+  text-align      : left;
+  text-decoration : none;
+  vertical-align  : bottom;
+  border          : none;
+
+  background-color: transparent;
+  a {
+    @include transition-ease(500ms);
+    &:link {
+      @include texts( none, transparent, $color-main);
+    }
+    &:visited {
+      @include texts( none, transparent, $color-main);
+    }
+    &:hover {
+      @include texts( none, transparent, $color-main);
+    }
+    &:active {
+      @include texts( none, transparent, $color-main);
+    }
+  }
+}
+
+
+ul.simple-small {
+  list-style-type: none;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+
+    font: normal normal 300 12pt/18pt $font-one;
+
+    padding: 0;
+    margin: 0;
+
+    color: $color-darkgrey;
+
+    @include text-selected;
+
+    a {
+
+      display: block;
+
+      padding: 1px 4px;
+
+      &:link {
+        text-decoration:  none;
+        font-weight:      normal;
+        background-color: transparent;
+        color:            $color-darkgrey;
+      }
+
+      &:visited {
+        text-decoration:  none;
+        font-weight:      normal;
+        background-color: transparent;
+        color:            $color-darkgrey;
+      }
+
+      &:hover {
+        text-decoration:  none;
+        font-weight:      normal;
+        color:            $color-bg;
+        background-color: $color-main;
+      }
+
+      &:active {
+        text-decoration:  none;
+        font-weight:      normal;
+        color:            $color-bg;
+        background-color: $color-main;
+      }
+    }
+  }
+}
+
+
+.simple-large {
+
+  text-align: center;
+
+  a {
+  position: relative;
+  display: inline-block;
+  margin: 15px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  font-size: 1.35em;
+
+  }
+
+  a:hover,
+  a:focus {
+    outline: none;
+    background-color: transparent;
+  }
+
+  a {
+
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    padding    : 12px 10px 10px;
+    color      : #566473;
+    text-shadow: none;
+    font-weight: 700;
+  }
+
+  a::before,
+  a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #566473;
+    content: '';
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+
+  a::after {
+    opacity: 0;
+    -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: top 0.3s, opacity 0.3s, transform 0.3s;
+  }
+
+  a:hover::before,
+  a:hover::after,
+  a:focus::before,
+  a:focus::after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+
+  a:hover::after,
+  a:focus::after {
+    top: 0%;
+    opacity: 1;
+  }
+
+}

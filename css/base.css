@@ -1,16 +1,389 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
+/* #Font-Face
+================================================== */
+/*  This is the proper syntax for an @font-face file
+    Just create a "fonts" folder at the root,
+    copy your FontName into code below and remove
+    comment brackets */
+/*  @font-face {
+      font-family: 'FontName';
+      src: url('../fonts/FontName.eot');
+      src: url('../fonts/FontName.eot?iefix') format('eot'),
+           url('../fonts/FontName.woff') format('woff'),
+           url('../fonts/FontName.ttf') format('truetype'),
+           url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+      font-weight: normal;
+      font-style: normal; }
 */
-/* $font-stack-subheader: Light", "Open Sans", sans-serif;
-$font-stack-item: , "Open Sans", sans-serif;
-$font-stack-import: , "Open Sans", sans-serif;
- */
-/* import reset - normalise.css */
+@font-face {
+  font-family: 'Nexa Bold';
+  src: url("/fonts/Nexa Bold.eot");
+  src: url("/fonts/Nexa Bold.eot?#iefix") format("eot"), url("/fonts/Nexa Bold.svg#nexa_lightregular") format("svg"), url("/fonts/Nexa Bold.woff") format("woff"), url("/fonts/Nexa Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nexa Light';
+  src: url("/fonts/nexa_light-webfont.eot");
+  src: url("/fonts/nexa_light-webfont.eot?#iefix") format("eot"), url("/fonts/nexa_light-webfont.svg#nexa_boldregular") format("svg"), url("/fonts/nexa_light-webfont.woff") format("woff"), url("/fonts/nexa_light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font: normal normal 300 14pt/1.6 "Open Sans";
+  color: #2b2b2b; }
+  p a {
+    display: inline-block; }
+    p a:link {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #597aad;
+      border-bottom: 1px dotted #597aad; }
+    p a:visited {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #597aad;
+      border-bottom: 1px dotted #597aad; }
+    p a:hover {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: #597aad;
+      color: #597aad;
+      border-bottom: 1px dotted #597aad; }
+    p a:active {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: #597aad;
+      color: #597aad;
+      border-bottom: 1px dotted #597aad; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans";
+  padding: 5px;
+  margin: 5px 0;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: bottom;
+  border: none;
+  background-color: transparent; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out; }
+    h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #597aad; }
+    h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #597aad; }
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #597aad; }
+    h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #597aad; }
+
+h1 {
+  display: block;
+  color: #d4cdda;
+  background-color: #597aad;
+  font: normal normal 100 50pt/50pt "Open Sans";
+  font-family: "Open Sans"; }
+
+/* Effect 7: second border slides up */
+.cl-effect-7 a {
+  padding: 12px 10px 10px;
+  color: #566473;
+  text-shadow: none;
+  font-weight: 700; }
+
+.cl-effect-7 a::before,
+.cl-effect-7 a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #566473;
+  content: '';
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  transform: scale(0.85); }
+
+.cl-effect-7 a::after {
+  opacity: 0;
+  -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: top 0.3s, opacity 0.3s, transform 0.3s; }
+
+.cl-effect-7 a:hover::before,
+.cl-effect-7 a:hover::after,
+.cl-effect-7 a:focus::before,
+.cl-effect-7 a:focus::after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1); }
+
+.cl-effect-7 a:hover::after,
+.cl-effect-7 a:focus::after {
+  top: 0%;
+  opacity: 1; }
+
+header.page {
+  text-align: center;
+  margin: 0 0 35px 0;
+  padding: 0; }
+  header.page a {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; }
+    header.page a:link {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #4a4a4a; }
+    header.page a:visited {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #4a4a4a; }
+    header.page a:hover {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #4a4a4a; }
+    header.page a:active {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #4a4a4a; }
+  header.page #name {
+    margin: 5px 0 15px 0; }
+  header.page #name a {
+    font-size: 40pt;
+    line-height: 40pt;
+    white-space: nowrap; }
+    header.page #name a #last-name {
+      font-family: "Nexa Bold", "Open Sans", "Raleway", sans-serif; }
+    header.page #name a #first-name {
+      font-family: "Nexa Bold", "Open Sans", "Raleway", sans-serif; }
+    header.page #name a:link #last-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #3c5781; }
+    header.page #name a:visited #last-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #3c5781; }
+    header.page #name a:hover #last-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #3c5781; }
+    header.page #name a:active #last-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #3c5781; }
+    header.page #name a:link #first-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #2b2b2b; }
+    header.page #name a:visited #first-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #2b2b2b; }
+    header.page #name a:hover #first-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #3c5781; }
+    header.page #name a:active #first-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #3c5781; }
+    header.page #name a.currentpage:link #last-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #3c5781; }
+    header.page #name a.currentpage:visited #last-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #3c5781; }
+    header.page #name a.currentpage:hover #first-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #3c5781; }
+    header.page #name a.currentpage:active #first-name {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #3c5781; }
+header nav.page {
+  text-align: center;
+  margin: 0 auto; }
+  header nav.page ul {
+    margin: 0;
+    padding: 0 4px;
+    list-style-type: none;
+    white-space: nowrap;
+    font-size: 0;
+    height: 24px; }
+    header nav.page ul li {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      text-align: left; }
+    header nav.page ul#nav-top li a {
+      margin: 0 4px;
+      font-variant: normal;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 13pt;
+      line-height: 24px;
+      font-family: "Open Sans", "Myriad Pro", "Dejavu Sans"; }
+      header nav.page ul#nav-top li a:link {
+        color: #2b2b2b; }
+      header nav.page ul#nav-top li a:visited {
+        color: #2b2b2b; }
+      header nav.page ul#nav-top li a:hover {
+        color: #3c5781; }
+      header nav.page ul#nav-top li a:active {
+        color: #2b2b2b; }
+    header nav.page ul#nav-top li.currentpage a:link {
+      color: #597aad; }
+    header nav.page ul#nav-top li.currentpage a:visited {
+      color: #597aad; }
+    header nav.page ul#nav-top li.currentpage a:hover {
+      color: #3c5781; }
+    header nav.page ul#nav-top li.currentpage a:active {
+      color: #597aad; }
+
+footer {
+  position: relative;
+  height: 200px;
+  clear: both;
+  margin-top: -200px;
+  bottom: 0;
+  width: 100%;
+  background: #636c7a;
+  padding: 30px 0;
+  border-bottom: 4px solid #597aad;
+  text-align: center; }
+  footer .footer-about {
+    text-align: left; }
+  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    font-weight: bold;
+    color: #d4cdda; }
+  footer p {
+    color: #797979;
+    margin: 15px 0;
+    font: normal normal 300 12px/18px "Open Sans"; }
+    footer p a:link {
+      text-decoration: none;
+      font-weight: normal;
+      border-bottom: 1px dotted #2b2b2b;
+      background-color: transparent;
+      color: #2b2b2b; }
+    footer p a:visited {
+      text-decoration: none;
+      font-weight: normal;
+      border-bottom: 1px dotted #2b2b2b;
+      background-color: transparent;
+      color: #2b2b2b; }
+    footer p a:hover {
+      text-decoration: none;
+      font-weight: normal;
+      border-bottom: 1px solid #597aad;
+      background-color: transparent;
+      color: #597aad; }
+    footer p a:active {
+      text-decoration: none;
+      font-weight: normal;
+      border-bottom: 1px solid #597aad;
+      background-color: transparent;
+      color: #597aad; }
+    footer p#social-icons {
+      font: normal normal 300 32px/34px "Open Sans";
+      padding: 4px; }
+      footer p#social-icons a {
+        display: inline-block;
+        padding: 2px; }
+        footer p#social-icons a:link {
+          text-decoration: none;
+          font-weight: normal;
+          border: none;
+          background-color: transparent;
+          color: #d4cdda; }
+        footer p#social-icons a:visited {
+          text-decoration: none;
+          font-weight: normal;
+          border: none;
+          background-color: transparent;
+          color: #d4cdda; }
+        footer p#social-icons a:hover {
+          text-decoration: none;
+          font-weight: normal;
+          border: none;
+          background-color: transparent;
+          color: #597aad; }
+        footer p#social-icons a:active {
+          text-decoration: none;
+          font-weight: normal;
+          border: none;
+          background-color: transparent;
+          color: #597aad; }
+
+/* import reset */
 /* #Media Queries
 ================================================== */
 /* Smaller than standard 960 (devices and browsers) */
@@ -30,7 +403,7 @@ html {
 body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  background-color: white; }
+  background-color: #d4cdda; }
 
 html, body {
   height: 100%;
@@ -95,248 +468,6 @@ html, body {
 .bold {
   font-weight: bold; }
 
-/* #Typography
-================================================== */
-p {
-  display: block;
-  margin: 0px;
-  padding: 0px;
-  font: normal normal 300 13pt/1.5 "Source Sans Pro";
-  font-family: "Source Sans Pro", "Source Sans Pro", "Open Sans", "Myriad Pro", "Frutiger", "Dejavu Sans", sans-serif;
-  color: #2b2b2b; }
-  p a {
-    display: inline-block; }
-    p a:link {
-      text-decoration: none;
-      font-weight: normal;
-      border: none;
-      border-bottom: 1px dotted #1abc9c;
-      background-color: transparent;
-      color: #1abc9c; }
-    p a:visited {
-      text-decoration: none;
-      font-weight: normal;
-      border: none;
-      border-bottom: 1px dotted #1abc9c;
-      background-color: transparent;
-      color: #1abc9c; }
-    p a:hover {
-      text-decoration: none;
-      font-weight: normal;
-      border: none;
-      border-bottom: 1px solid #1abc9c;
-      background-color: #1abc9c;
-      color: #FFFFFF; }
-    p a:active {
-      text-decoration: none;
-      font-weight: normal;
-      border: none;
-      border-bottom: 1px solid #1abc9c;
-      background-color: transparent;
-      color: #1abc9c; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Sans Pro";
-  padding: 5px;
-  margin: 5px 0;
-  text-align: left;
-  text-decoration: none;
-  vertical-align: bottom;
-  border: none;
-  background-color: transparent; }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out; }
-    h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link {
-      text-decoration: none;
-      font-weight: normal;
-      border: none;
-      background-color: transparent;
-      color: #1abc9c; }
-    h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
-      text-decoration: none;
-      font-weight: normal;
-      border: none;
-      background-color: transparent;
-      color: #1abc9c; }
-    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-      text-decoration: none;
-      font-weight: normal;
-      border: none;
-      background-color: transparent;
-      color: #1abc9c; }
-    h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
-      text-decoration: none;
-      font-weight: normal;
-      border: none;
-      background-color: transparent;
-      color: #1abc9c; }
-
-h1 {
-  display: block;
-  color: white;
-  background-color: #1abc9c;
-  font: normal normal 100 50pt/50pt "Source Sans Pro";
-  font-family: "Source Sans Pro", "Open Sans"; }
-  h1 a:hover {
-    color: white; }
-  h1 a:active {
-    color: white;
-    display: block;
-    line-height: 50pt;
-    border-left: 50pt solid transparent;
-    padding: 0 10px; }
-    h1 a:active:link {
-      color: white; }
-    h1 a:active:visited {
-      color: white; }
-    h1 a:active:hover {
-      color: white;
-      background-color: #16a085; }
-    h1 a:active:active {
-      color: white;
-      background-color: #1abc9c; }
-
-h2 {
-  display: block;
-  padding: 4px;
-  color: white;
-  background-color: #16a085;
-  font: normal normal 100 28pt/32pt "Source Sans Pro";
-  font-family: "Source Sans Pro", "Open Sans";
-  -webkit-transition: all 100ms ease-in-out;
-  -moz-transition: all 100ms ease-in-out;
-  -o-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out; }
-  h2 a {
-    display: block;
-    padding: 0; }
-    h2 a:link {
-      color: white; }
-    h2 a:visited {
-      color: white; }
-    h2 a:hover {
-      color: #16a085;
-      background-color: white; }
-    h2 a:active {
-      color: white;
-      background-color: #1abc9c; }
-
-h3 {
-  display: block;
-  font-weight: bold;
-  padding: 4px;
-  color: white;
-  background-color: #1abc9c;
-  font: normal normal 100 24pt/1.4 "Source Sans Pro";
-  font-family: "Source Sans Pro", "Open Sans"; }
-  h3 a:hover {
-    color: white;
-    background-color: #1abc9c; }
-  h3 a:active {
-    color: white;
-    background-color: #1abc9c; }
-  h3 a {
-    display: block;
-    padding: 0 4px; }
-    h3 a:link {
-      background-color: #1abc9c;
-      color: white; }
-    h3 a:visited {
-      background-color: #1abc9c;
-      color: white; }
-    h3 a:hover {
-      color: #1abc9c;
-      background-color: white; }
-    h3 a:active {
-      color: white;
-      background-color: #1abc9c; }
-
-h4 {
-  display: block;
-  padding: 4px;
-  color: #2b2b2b;
-  font: normal normal 100 18pt/1.4 "Source Sans Pro";
-  font-family: "Source Sans Pro", "Open Sans"; }
-  h4 a:hover {
-    color: white;
-    background-color: #1abc9c; }
-  h4 a:active {
-    color: white;
-    background-color: #1abc9c; }
-  h4 a {
-    padding: 0 4px;
-    display: inline-block; }
-    h4 a:link {
-      border-bottom: 1.5px dotted #2b2b2b;
-      color: #2b2b2b; }
-    h4 a:visited {
-      border-bottom: 1.5px dotted #2b2b2b;
-      color: #2b2b2b; }
-    h4 a:hover {
-      border-bottom: 1.5px dotted #1abc9c;
-      color: white; }
-    h4 a:active {
-      border-bottom: 1.5px dotted #1abc9c;
-      color: white; }
-
-h5 {
-  display: block;
-  color: #2b2b2b;
-  font: normal normal 100 11pt/1.4 "Source Sans Pro";
-  font-family: "Source Sans Pro", "Open Sans"; }
-  h5 a:hover {
-    color: white;
-    background-color: #1abc9c; }
-  h5 a:active {
-    color: white;
-    background-color: #1abc9c; }
-  h5 a {
-    padding: 0 3px;
-    display: inline-block; }
-    h5 a:link {
-      color: #2b2b2b;
-      text-decoration: underline; }
-    h5 a:visited {
-      color: #2b2b2b;
-      text-decoration: underline; }
-    h5 a:hover {
-      color: white;
-      text-decoration: none; }
-    h5 a:active {
-      color: white;
-      text-decoration: none; }
-
-h6 {
-  display: block;
-  color: #2b2b2b;
-  font: normal normal 100 9pt/1.4 "Source Sans Pro";
-  font-family: "Source Sans Pro", "Open Sans";
-  text-transform: uppercase; }
-  h6 a:hover {
-    color: white;
-    background-color: #1abc9c; }
-  h6 a:active {
-    color: white;
-    background-color: #1abc9c; }
-  h6 a {
-    padding: 0 2px;
-    display: inline-block; }
-    h6 a:link {
-      color: #2b2b2b;
-      border-left: 1px solid #2b2b2b; }
-    h6 a:visited {
-      color: #2b2b2b;
-      border-left: 1px solid #2b2b2b; }
-    h6 a:hover {
-      color: white;
-      border-left: 1px solid #1abc9c; }
-    h6 a:active {
-      color: white;
-      border-left: 1px solid #1abc9c; }
-
 /* #Quotes
 ================================================== */
 blockquote {
@@ -346,14 +477,14 @@ blockquote {
   margin: 40px 0 40px 5px;
   padding: 10px 15px; }
   blockquote p {
-    font: normal normal 300 16pt/22pt "Source Sans Pro";
-    font-family: "Source Sans Pro", "Source Sans Pro", "Open Sans", "Myriad Pro", "Frutiger", "Dejavu Sans", sans-serif;
+    font: normal normal 300 16pt/22pt "Open Sans";
+    font-family: "Open Sans", "Myriad Pro";
     color: #2b2b2b;
     padding: 0 2px;
     margin: 20px 2px; }
   blockquote cite {
-    font: normal normal 300 11pt/20pt "Source Sans Pro";
-    font-family: "Source Sans Pro", "Source Sans Pro", "Open Sans", "Myriad Pro", "Frutiger", "Dejavu Sans", sans-serif;
+    font: normal normal 300 11pt/20pt "Open Sans";
+    font-family: "Open Sans", "Myriad Pro";
     color: #2b2b2b;
     padding: 0 2px;
     text-transform: uppercase; }
@@ -374,13 +505,13 @@ hr {
   clear: both; }
   hr.line {
     height: 2px;
-    color: #1abc9c;
-    background: #1abc9c;
+    color: #597aad;
+    background: #597aad;
     margin-left: auto;
     margin-right: auto; }
   hr.space {
-    color: white;
-    background: white;
+    color: #d4cdda;
+    background: #d4cdda;
     visibility: hidden; }
 
 /* #Section
@@ -391,18 +522,18 @@ section {
   section header {
     margin: 0; }
     section header h2 a {
-      padding: 7px 7px 0 10px; }
+      padding: 7px 7px  0 10px; }
     section header .tags {
-      font: normal normal 300 11pt/1.5 "Source Sans Pro";
-      font-family: "Source Sans Pro", "Open Sans", sans-serif;
+      font: normal normal 300 11pt/1.5 "Open Sans";
+      font-family: "Open Sans";
       color: #2b2b2b;
       color: #2b2b2b;
       text-transform: uppercase;
       text-align: right; }
     section header .caption p {
       padding: 0 5px 5px 5px;
-      font: normal normal 300 11pt/1.5 "Source Sans Pro";
-      font-family: "Source Sans Pro", "Open Sans", sans-serif;
+      font: normal normal 300 11pt/1.5 "Open Sans";
+      font-family: "Open Sans";
       color: #2b2b2b;
       color: #2b2b2b; }
   section .content {
@@ -410,31 +541,28 @@ section {
     padding: 0; }
     section .content p {
       margin: 10px 0;
-      padding: 5px 0;
-      font: normal normal 300 13pt/1.5 "Source Sans Pro";
-      font-family: "Source Sans Pro", "Source Sans Pro", "Open Sans", "Myriad Pro", "Frutiger", "Dejavu Sans", sans-serif;
-      color: #2b2b2b; }
+      padding: 5px 0; }
   section.archives header {
     border-bottom: 1px solid #797979; }
     section.archives header h3 {
-      color: white;
+      color: #d4cdda;
       background-color: #4a4a4a;
       border: none;
-      font: normal normal 300 14pt/30pt "Source Sans Pro";
-      font-family: "Source Sans Pro", "Open Sans", sans-serif;
+      font: normal normal 300 14pt/30pt "Open Sans";
+      font-family: "Open Sans";
       padding: 0;
       margin: 0;
       text-transform: uppercase; }
       section.archives header h3 a:hover {
-        color: white;
-        background-color: #1abc9c; }
+        color: #d4cdda;
+        background-color: #597aad; }
       section.archives header h3 a:active {
-        color: white;
-        background-color: #1abc9c; }
+        color: #d4cdda;
+        background-color: #597aad; }
       section.archives header h3 a {
         padding-left: 4px;
         border: none;
-        color: white;
+        color: #d4cdda;
         line-height: 30pt; }
     section.archives header .tags {
       font-size: 11pt; }
@@ -442,13 +570,13 @@ section {
     margin: 0;
     padding: 0; }
     section.branch header h2 {
-      color: white;
+      color: #d4cdda;
       font-size: 36pt;
       padding: 8px 5px 0 5px; }
     section.branch header .caption p {
       padding: 0 5px 5px 5px;
-      font: normal normal 300 11pt/1.5 "Source Sans Pro";
-      font-family: "Source Sans Pro", "Open Sans", sans-serif;
+      font: normal normal 300 11pt/1.5 "Open Sans";
+      font-family: "Open Sans";
       color: #2b2b2b;
       color: #2b2b2b; }
       section.branch header .caption p:before {
@@ -465,8 +593,8 @@ section {
     -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out; }
     section.branch:hover header h2 {
-      background-color: #1abc9c;
-      color: white; }
+      background-color: #597aad;
+      color: #d4cdda; }
 
 /* #Article
 ================================================== */
@@ -482,8 +610,8 @@ article {
     article header .icon {
       font-size: 75%; }
     article header .tags {
-      font: normal normal 300 11pt/1.5 "Source Sans Pro";
-      font-family: "Source Sans Pro", "Open Sans", sans-serif;
+      font: normal normal 300 11pt/1.5 "Open Sans";
+      font-family: "Open Sans";
       color: #2b2b2b;
       color: #4a4a4a;
       text-align: left;
@@ -495,12 +623,9 @@ article {
     padding: 2px 0; }
     article .content p {
       margin: 10px 0;
-      padding: 5px 0;
-      font: normal normal 300 13pt/1.5 "Source Sans Pro";
-      font-family: "Source Sans Pro", "Source Sans Pro", "Open Sans", "Myriad Pro", "Frutiger", "Dejavu Sans", sans-serif;
-      color: #2b2b2b; }
+      padding: 5px 0; }
     article .content li {
-      font: normal normal 300 11pt/13pt "Source Sans Pro"; }
+      font: normal normal 300 11pt/13pt "Open Sans"; }
     article .content h1, article .content h2, article .content h3, article .content h4, article .content h5, article .content h6,
     article .content h1 a, article .content h2 a, article .content h3 a, article .content h4 a, article .content h5 a, article .content h6 a {
       border: 0;
@@ -508,8 +633,8 @@ article {
       color: #2b2b2b;
       text-transform: none; }
   article .more-info {
-    font: normal normal 300 10pt/12pt "Source Sans Pro";
-    font-family: "Source Sans Pro", "Open Sans", sans-serif;
+    font: normal normal 300 10pt/12pt "Open Sans";
+    font-family: "Open Sans";
     color: #2b2b2b;
     text-transform: uppercase; }
     article .more-info a:link {
@@ -528,14 +653,14 @@ article {
       text-decoration: none;
       font-weight: normal;
       background-color: transparent;
-      color: #1abc9c;
-      border-bottom: 1px solid #1abc9c; }
+      color: #597aad;
+      border-bottom: 1px solid #597aad; }
     article .more-info a:active {
       text-decoration: none;
       font-weight: normal;
       background-color: transparent;
-      color: #1abc9c;
-      border-bottom: 1px solid #1abc9c; }
+      color: #597aad;
+      border-bottom: 1px solid #597aad; }
     article .more-info a.discuss {
       float: right; }
     article .more-info a.read-more {
@@ -587,25 +712,25 @@ ul {
         font-weight: normal;
         border: none;
         background-color: transparent;
-        color: #1abc9c; }
+        color: #597aad; }
       ul li a:visited {
         text-decoration: none;
         font-weight: normal;
         border: none;
         background-color: transparent;
-        color: #1abc9c; }
+        color: #597aad; }
       ul li a:hover {
         text-decoration: none;
         font-weight: normal;
         border: none;
-        background-color: #1abc9c;
+        background-color: #597aad;
         color: #FFFFFF; }
       ul li a:active {
         text-decoration: none;
         font-weight: normal;
         border: none;
         background-color: transparent;
-        color: #1abc9c; }
+        color: #597aad; }
 
 ul.simple-small {
   list-style-type: none;
@@ -613,16 +738,16 @@ ul.simple-small {
   margin: 0;
   padding: 0; }
   ul.simple-small li {
-    font: normal normal 300 12pt/18pt "Source Sans Pro";
+    font: normal normal 300 12pt/18pt "Open Sans";
     padding: 0;
     margin: 0;
     color: #4a4a4a; }
     ul.simple-small li a:hover {
-      color: white;
-      background-color: #1abc9c; }
+      color: #d4cdda;
+      background-color: #597aad; }
     ul.simple-small li a:active {
-      color: white;
-      background-color: #1abc9c; }
+      color: #d4cdda;
+      background-color: #597aad; }
     ul.simple-small li a {
       display: block;
       padding: 1px 4px; }
@@ -639,13 +764,13 @@ ul.simple-small {
       ul.simple-small li a:hover {
         text-decoration: none;
         font-weight: normal;
-        color: white;
-        background-color: #1abc9c; }
+        color: #d4cdda;
+        background-color: #597aad; }
       ul.simple-small li a:active {
         text-decoration: none;
         font-weight: normal;
-        color: white;
-        background-color: #1abc9c; }
+        color: #d4cdda;
+        background-color: #597aad; }
 
 ul.simple-large {
   list-style-type: none;
@@ -655,32 +780,32 @@ ul.simple-large {
   ul.simple-large li {
     margin: 0;
     padding: 0;
-    font: normal normal 300 20pt/30pt "Source Sans Pro";
-    font-family: "Source Sans Pro", "Open Sans", sans-serif;
-    color: white;
-    background-color: #16a085; }
+    font: normal normal 300 20pt/30pt "Open Sans";
+    font-family: "Open Sans";
+    color: #d4cdda;
+    background-color: #3c5781; }
     ul.simple-large li a {
       display: block; }
       ul.simple-large li a:link {
         text-decoration: none;
         font-weight: normal;
         background-color: transparent;
-        color: white; }
+        color: #d4cdda; }
       ul.simple-large li a:visited {
         text-decoration: none;
         font-weight: normal;
         background-color: transparent;
-        color: white; }
+        color: #d4cdda; }
       ul.simple-large li a:hover {
         text-decoration: none;
         font-weight: normal;
-        color: white;
-        background-color: #1abc9c; }
+        color: #d4cdda;
+        background-color: #597aad; }
       ul.simple-large li a:active {
         text-decoration: none;
         font-weight: normal;
-        color: white;
-        background-color: #1abc9c; }
+        color: #d4cdda;
+        background-color: #597aad; }
 
 dl {
   margin: 20px 0;
@@ -689,9 +814,9 @@ dl {
     border-width: 2px;
     border-style: solid;
     border-color: #4a4a4a;
-    background-color: #1abc9c;
+    background-color: #597aad;
     color: #FFFFFF;
-    font: normal normal 300 14pt/18pt "Source Sans Pro";
+    font: normal normal 300 14pt/18pt "Open Sans";
     padding: 2px;
     margin: 4px;
     float: left; }
@@ -701,7 +826,7 @@ dl {
     padding: 0 5px;
     clear: both; }
     dl dd p {
-      font: normal normal 300 12pt/16pt "Source Sans Pro"; }
+      font: normal normal 300 12pt/16pt "Open Sans"; }
 
 /* #Images
 ================================================== */
@@ -761,47 +886,3 @@ code, code > .highlight {
   border-top-left-radius: 7px 7px;
   border-top-right-radius: 7px 7px;
   */ }
-
-/* #Figures
-================================================== */
-/* #Statuses
-================================================== */
-.status-header {
-  background-color: white;
-  padding: 0; }
-
-.status.complete, .status.green {
-  background-color: #14a2d4;
-  color: white; }
-.status.in-progress, .status.yellow {
-  background-color: #f37021;
-  color: white; }
-.status.upcoming, .status.red {
-  background-color: #e98d70;
-  color: white; }
-.status.abandoned, .status.grey {
-  background-color: rgba(0, 82, 156, 0.2);
-  color: white; }
-
-a.status.complete, a.status.green {
-  color: white; }
-  a.status.complete:hover, a.status.green:hover {
-    background-color: white;
-    color: #14a2d4; }
-a.status.in-progress, a.status.yellow {
-  color: white; }
-  a.status.in-progress:hover, a.status.yellow:hover {
-    background-color: white;
-    color: #f37021; }
-a.status.upcoming, a.status.red {
-  color: white; }
-  a.status.upcoming:hover, a.status.red:hover {
-    color: #e98d70; }
-a.status.abandoned, a.status.grey {
-  color: white; }
-  a.status.abandoned:hover, a.status.grey:hover {
-    background-color: white;
-    color: rgba(0, 82, 156, 0.2); }
-
-.icon {
-  font-size: 75%; }

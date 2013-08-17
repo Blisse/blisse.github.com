@@ -424,6 +424,9 @@
 	},
 	"file_history":
 	[
+		"/D/Root/Air/Git/site/README.markdown",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Victor/Links/site.lnk",
 		"/D/Root/Air/Git/site/css/base.scss",
 		"/D/Root/Air/Git/site/css/_mixins.scss",
 		"/D/Root/Air/Git/site/css/_typography.scss",
@@ -473,10 +476,8 @@
 		"/D/Root/Air/Git/site/css/typography.scss",
 		"/D/Root/Air/Git/site/css/colors.scss",
 		"/D/Root/Air/Git/site/css/layout.scss",
-		"/D/Root/Air/Git/site/README.markdown",
 		"/D/Root/Air/Git/site/atom.xml",
 		"/D/Root/Air/Git/site/_site/atom.xml",
-		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Victor/Desktop/Weather/Weather/MainPage.xaml",
 		"/C/Users/Victor/Desktop/Weather/Weather/MainPage.xaml.cs",
 		"/C/Users/Victor/Desktop/Weather/Weather/Bin/Debug/Microsoft.Phone.Controls.xml",
@@ -524,7 +525,6 @@
 		"/D/Root/Air/Dropbox/School/2B/CS240/A5/kdpartition.cpp",
 		"/D/Root/Air/Git/site/work/site/index.html",
 		"/D/Root/Air/Git/site/_posts/2013-07-12-windowsphone.md",
-		"/C/Users/Victor/Links/site.lnk",
 		"/D/Root/Air/Dropbox/School/2B/CS240/a1.tex",
 		"/D/Root/Air/Dropbox/School/2B/CS240/report.cpp",
 		"/D/Root/Air/Dropbox/School/2B/CS240/test",
@@ -559,7 +559,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 91.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -570,6 +570,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"(",
 			"tert",
 			"sec",
 			"lightgrey",
@@ -696,8 +697,7 @@
 			"lg",
 			"heap",
 			"cin",
-			"cout",
-			"'"
+			"cout"
 		],
 		"highlight": true,
 		"in_selection": false,

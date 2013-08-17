@@ -2,7 +2,6 @@
 @import "mixins";
 @import "typography";
 @import "header";
-@import "footer";
 
 /* import reset */
 
@@ -52,8 +51,6 @@
 
   .whole-page {
     height: auto;
-    min-height: 100%;
-    padding-bottom: 200px;
   }
 
 	*, *:before, *:after {
@@ -95,8 +92,8 @@
 ================================================== */
 
 	blockquote {
-    border-left: 1px solid $color-text;
-    border-right: 1px solid transparent;
+    border-left: 3px solid $color-main;
+    border-right: 3px solid transparent;
 
     text-align: center;
 
@@ -173,10 +170,63 @@
 
     header {
       margin: 0;
+      padding: 0;
+
+      h1 {
+
+      }
+
+      p.caption {
+
+      }
     }
 
     .content {
 
+    }
+  }
+
+  section.archives {
+    margin: 25px 0;
+    padding : 0;
+
+    header {
+      margin: 0;
+      padding: 0;
+
+      h3 {
+        margin: 0;
+        padding: 0;
+
+        a {
+          display: block;
+          padding: 1px 4px;
+
+          &:link {
+            @include texts( none, transparent, $color-main);
+            border: 1px solid $color-lightgrey;
+          }
+          &:visited {
+            @include texts( none, transparent, $color-main);
+            border: 1px solid $color-lightgrey;
+          }
+          &:hover {
+            @include texts( none, $color-main, $color-bg);
+            border: 1px solid $color-main;
+          }
+          &:active {
+            @include texts( none, $color-main, $color-bg);
+            border: 1px solid $color-main;
+          }
+        }
+      }
+
+      p.caption {
+        margin: 0;
+        padding: 0;
+
+        color: $color-tert;
+      }
     }
   }
 
@@ -186,8 +236,11 @@
 ================================================== */
 
 
-  article {
+  article.post {
     display: block;
+
+    margin: 20px 0;
+    padding: 2px 0;
 
     header {
       .date {
@@ -199,9 +252,37 @@
 
     }
 
+    hr.line {
+      color: $color-text;
+      background: $color-text;
+    }
+
+    .more-info {
+      margin: 10px 0;
+      padding: 2px 0;
+
+      a {
+        padding: 4px;
+
+        &:link {
+          @include texts( none, transparent, $color-text);
+          border: 1px solid $color-lightgrey;
+        }
+        &:visited {
+          @include texts( none, transparent, $color-text);
+          border: 1px solid $color-lightgrey;
+        }
+        &:hover {
+          @include texts( none, $color-main, $color-bg);
+          border: 1px solid $color-main;
+        }
+        &:active {
+          @include texts( none, $color-main, $color-bg);
+          border: 1px solid $color-main;
+        }
+      }
+    }
   }
-
-
 
 
 /* #Posts
@@ -210,8 +291,33 @@
 	.permalink { float: right; }
 
   .pagination {
-  	.older { float: right; }
-  	.newer { float: left; }
+
+    margin: 25px 0;
+
+  	.previous { float: left; }
+  	.next { float: right; }
+
+    a {
+      padding: 4px;
+
+      &:link {
+        @include texts( none, transparent, $color-text);
+        border: 1px solid $color-lightgrey;
+      }
+      &:visited {
+        @include texts( none, transparent, $color-text);
+        border: 1px solid $color-lightgrey;
+      }
+      &:hover {
+        @include texts( none, $color-main, $color-bg);
+        border: 1px solid $color-main;
+      }
+      &:active {
+        @include texts( none, $color-main, $color-bg);
+        border: 1px solid $color-main;
+      }
+    }
+
   }
 
 /* #Lists

@@ -7,24 +7,24 @@ sub: archives
 
 {% assign posts = site.posts %}
 
-<div class="container">
-	<div class="sixteen columns">
-		{% for post in site.posts %}
-		<section class="archives">
-			<header>
-				<h3>
-					<a href="{{ post.url }}">
-						<span class="date">
-							{{ post.date | date: "%Y%m%d" }}
-						</span>
-						&nbsp;&raquo;&nbsp;{{ post.title }}
-					</a>
-				</h3>
-				<div class="tags">
-					about {{ post.tags | array_to_sentence_string }}.
-				</div>
-			</header>
-		</section>
-		{% endfor %}
+<article class="post">
+	<div class="container">
+		<div class="sixteen columns">
+			{% for post in site.posts %}
+			<section class="archives">
+				<header>
+					<h3>
+						<a href="{{ post.url }}">
+							{{ post.title }}
+						</a>
+					</h3>
+					<p class="caption">
+						posted {{ post.date | date: "%B %d, %Y" }}
+						about {{ post.tags | array_to_sentence_string }}.
+					</p>
+				</header>
+			</section>
+			{% endfor %}
+		</div>
 	</div>
-</div>
+</article>

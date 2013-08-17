@@ -62,8 +62,8 @@ $font-stack-h6: $font-one;
 
 p {
   display : block;
-  margin  : 0;
-  padding : 0;
+  margin  : 21px 0;
+  padding : 2px 0;
 
   font    : normal normal 300 14pt/1.6 $font-one;
 
@@ -83,34 +83,42 @@ p {
     }
 
     &:hover {
-      @include texts( none, $color-main, $color-main);
+      @include texts( none, $color-main, $color-bg);
       border-bottom   : 1px dotted $color-main;
     }
 
     &:active {
-      @include texts( none, $color-main, $color-main);
+      @include texts( none, $color-main, $color-bg);
       border-bottom   : 1px dotted $color-main;
     }
 
+  }
+
+  &.caption {
+    font-weight: 500;
+    font-size: 80%;
+    font-color: $color-grey;
   }
 }
 
 
 h1, h2, h3, h4, h5, h6 {
   font-family     : $font-one;
-  font-weight: normal;
-  color: $color-text;
+  font-weight     : normal;
+  color           : $color-text;
 
-  padding         : 5px;
-  margin          : 5px 0;
+  padding         : 0;
+  margin          : 0;
   text-align      : left;
   text-decoration : none;
   vertical-align  : bottom;
   border          : none;
 
   background-color: transparent;
+
   a {
-    @include transition-ease(500ms);
+    @include transition-ease(300ms);
+
     &:link {
       @include texts( none, transparent, $color-main);
     }
@@ -118,111 +126,64 @@ h1, h2, h3, h4, h5, h6 {
       @include texts( none, transparent, $color-main);
     }
     &:hover {
-      @include texts( none, transparent, $color-main);
+      @include texts( none, transparent, $color-sec);
     }
     &:active {
-      @include texts( none, transparent, $color-main);
+      @include texts( none, transparent, $color-sec);
     }
   }
 }
 
-
-ul.simple-small {
-  list-style-type: none;
-
-  border: none;
-  margin: 0;
-  padding: 0;
-
-  li {
-
-    font: normal normal 300 12pt/18pt $font-one;
-
-    padding: 0;
-    margin: 0;
-
-    color: $color-darkgrey;
-
-    @include text-selected;
-
-    a {
-
-      display: block;
-
-      padding: 1px 4px;
-
-      &:link {
-        text-decoration:  none;
-        font-weight:      normal;
-        background-color: transparent;
-        color:            $color-darkgrey;
-      }
-
-      &:visited {
-        text-decoration:  none;
-        font-weight:      normal;
-        background-color: transparent;
-        color:            $color-darkgrey;
-      }
-
-      &:hover {
-        text-decoration:  none;
-        font-weight:      normal;
-        color:            $color-bg;
-        background-color: $color-main;
-      }
-
-      &:active {
-        text-decoration:  none;
-        font-weight:      normal;
-        color:            $color-bg;
-        background-color: $color-main;
-      }
-    }
-  }
+h1 {
+  font-size: 50pt;
 }
 
+h2 {
+  font-size: 36pt;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 28pt;
+}
+
+h4 {
+  font-size: 24pt;
+}
+
+h5 {
+  font-size: 20pt;
+}
+
+h6 {
+  font-size: 16pt;
+}
 
 .simple-large {
 
   text-align: center;
 
   a {
-  position: relative;
-  display: inline-block;
-  margin: 15px 25px;
-  outline: none;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  text-shadow: 0 0 1px rgba(255,255,255,0.3);
-  font-size: 1.35em;
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.35em;
 
+    padding    : 12px 10px 10px;
+    color      : $color-sec;
   }
 
   a:hover,
   a:focus {
     outline: none;
     background-color: transparent;
-  }
-
-  a {
-
-    position: relative;
-    display: inline-block;
-    margin: 15px 25px;
-    outline: none;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
-    padding    : 12px 10px 10px;
-    color      : #566473;
-    text-shadow: none;
-    font-weight: 700;
+    color: $color-main;
   }
 
   a::before,
@@ -232,7 +193,7 @@ ul.simple-small {
     left: 0;
     width: 100%;
     height: 3px;
-    background: #566473;
+    background: $color-sec;
     content: '';
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
@@ -247,6 +208,7 @@ ul.simple-small {
     -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
     -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
     transition: top 0.3s, opacity 0.3s, transform 0.3s;
+    background: $color-main;
   }
 
   a:hover::before,
@@ -256,12 +218,55 @@ ul.simple-small {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     transform: scale(1);
+    background: $color-main;
   }
 
   a:hover::after,
   a:focus::after {
     top: 0%;
     opacity: 1;
+    background: $color-main;
   }
 
+}
+
+
+
+ul.simple-small {
+  list-style-type: none;
+
+  border: 1px solid $color-lightgrey;
+  margin: 0;
+  padding: 0;
+
+  li {
+    font: normal normal 400 12pt/18pt $font-one;
+
+    padding: 0;
+    margin: 0;
+
+    @include text-selected;
+
+    a {
+      display: block;
+      padding: 1px 4px;
+
+      &:link {
+        @include texts( none, transparent, $color-text);
+        border: 1px solid $color-lightgrey;
+      }
+      &:visited {
+        @include texts( none, transparent, $color-text);
+        border: 1px solid $color-lightgrey;
+      }
+      &:hover {
+        @include texts( none, $color-main, $color-bg);
+        border: 1px solid $color-main;
+      }
+      &:active {
+        @include texts( none, $color-main, $color-bg);
+        border: 1px solid $color-main;
+      }
+    }
+  }
 }

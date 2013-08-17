@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
 				"ma",
 				"main	main()"
 			],
@@ -86,10 +94,6 @@
 			[
 				"color-",
 				"color-main"
-			],
-			[
-				"bac",
-				"background-color"
 			],
 			[
 				"text-",
@@ -287,12 +291,36 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 174.0,
 		"selected_items":
 		[
 			[
+				"alignment",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"alignme",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
 				"findkey",
 				"FindKeyConflicts: All Conflicts"
+			],
+			[
+				"findke",
+				"FindKeyConflicts: Overlap Conflicts"
+			],
+			[
+				"alig",
+				"Preferences: Alignment Key Bindings – User"
 			],
 			[
 				"instal",
@@ -319,20 +347,12 @@
 				"Preferences: Alignment File Settings – User"
 			],
 			[
-				"alignment",
-				"Preferences: Alignment File Settings – Default"
-			],
-			[
 				"keyb",
 				"Preferences: Key Bindings - Default"
 			],
 			[
 				"Alignment",
 				"Preferences: Alignment Key Bindings – Default"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"install",
@@ -349,10 +369,6 @@
 			[
 				"diff",
 				"Set Syntax: Diff"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"INsta",
@@ -408,7 +424,58 @@
 	},
 	"file_history":
 	[
+		"/D/Root/Air/Git/site/css/base.scss",
+		"/D/Root/Air/Git/site/css/_mixins.scss",
+		"/D/Root/Air/Git/site/css/_typography.scss",
+		"/D/Root/Air/Git/site/css/_colors.scss",
+		"/D/Root/Air/Git/site/_layouts/project.html",
+		"/D/Root/Air/Git/site/_layouts/tag.html",
+		"/D/Root/Air/Git/site/archives/index.html",
+		"/D/Root/Air/Git/site/_posts/2013-08-16-ayearinretrospect.md",
+		"/D/Root/Air/Git/site/_config.yml",
+		"/D/Root/Air/Git/site/_posts/2013-07-19-littlethings.md",
+		"/D/Root/Air/Git/site/blog/index.html",
+		"/D/Root/Air/Git/site/_layouts/post.html",
+		"/D/Root/Air/Git/site/index.html",
 		"/D/Root/Air/Git/site/_includes/googlefonts.html",
+		"/D/Root/Air/Git/site/_layouts/default.html",
+		"/D/Root/Air/Git/site/_includes/footer.html",
+		"/D/Root/Air/Git/site/css/_footer.scss",
+		"/D/Root/Air/Git/site/work/index.html",
+		"/C/Users/Victor/Desktop/found/css/component.css",
+		"/D/Root/Air/Git/site/css/_header.scss",
+		"/C/Users/Victor/Desktop/found/js/gnmenu.js",
+		"/C/Users/Victor/Desktop/found/js/classie.js",
+		"/C/Users/Victor/Desktop/found/index.html",
+		"/D/Root/Air/Git/site/css/font-icomoon/icomoon.scss",
+		"/C/Users/Victor/Desktop/found/css/demo.css",
+		"/C/Users/Victor/Downloads/tt/style.css",
+		"/D/Root/Air/Git/site/css/font-icomoon/style.css",
+		"/C/Users/Victor/AppData/Local/Temp/7zE27BD.tmp/style.css",
+		"/C/Users/Victor/AppData/Local/Temp/7zO36D9.tmp/Read Me.txt",
+		"/D/Root/Air/Git/site/js/gn-menu/classie.js",
+		"/D/Root/Air/Git/site/js/gn-menu/gnmenu.js",
+		"/C/Users/Victor/Desktop/CreativeLinkEffects/css/component.css",
+		"/D/Root/Air/Git/site/_includes/standardhead.html",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Root/Air/Git/site/_includes/disqus.html",
+		"/D/Root/Air/Git/site/_includes/discus.html",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
+		"/D/Root/Air/Git/site/_site/blog/page-2/index.html",
+		"/D/Root/Air/Git/site/css/_bases.scss",
+		"/D/Root/Air/Git/site/css/syntax.scss",
+		"/D/Root/Air/Git/site/css/headfoot.scss",
+		"/D/Root/Air/Git/site/_posts/2012-02-25-helloworld.md",
+		"/D/eula.1028.txt",
+		"/D/Root/Air/Git/site/css/typography.scss",
+		"/D/Root/Air/Git/site/css/colors.scss",
+		"/D/Root/Air/Git/site/css/layout.scss",
+		"/D/Root/Air/Git/site/README.markdown",
+		"/D/Root/Air/Git/site/atom.xml",
+		"/D/Root/Air/Git/site/_site/atom.xml",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Victor/Desktop/Weather/Weather/MainPage.xaml",
 		"/C/Users/Victor/Desktop/Weather/Weather/MainPage.xaml.cs",
@@ -452,13 +519,10 @@
 		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/inc/AdultFactory.h",
 		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/src/main.cpp",
 		"/C/Users/Victor/Downloads/hangman.cpp",
-		"/D/Root/Air/Git/site/index.html",
 		"/D/Root/Air/Git/site/css/base.css",
-		"/D/Root/Air/Git/site/css/base.scss",
 		"/D/Root/Air/Dropbox/save.txt",
 		"/D/Root/Air/Dropbox/School/2B/CS240/A5/kdpartition.cpp",
 		"/D/Root/Air/Git/site/work/site/index.html",
-		"/D/Root/Air/Git/site/_posts/2013-07-19-littlethings.md",
 		"/D/Root/Air/Git/site/_posts/2013-07-12-windowsphone.md",
 		"/C/Users/Victor/Links/site.lnk",
 		"/D/Root/Air/Dropbox/School/2B/CS240/a1.tex",
@@ -487,55 +551,7 @@
 		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/default.html",
 		"/C/Users/Victor/Desktop/PageTransitions/README.md",
 		"/C/Users/Victor/Desktop/Sc2gears/Plugins/README.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_config.yml",
-		"/D/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-0.12.1/lib/jekyll/generators/pagination.rb",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/site/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/ogltictactoe/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/about/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/_bases.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/syntax.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/blog/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/layout.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/googlefonts.html",
-		"/C/Users/Victor/Desktop/stylesheet.css",
-		"/C/Users/Victor/Downloads/Source_Sans_Pro_400-Source_Sans_Pro_Semibold_600-Source_Sans_Pro_italic_400-Source_Sans_Pro_italic_600.font.js",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-16-tires.md",
-		"/C/Users/Victor/AppData/Local/Temp/7zE38E6.tmp/stylesheet.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-21-liberation.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-21-feedbackloops.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-icomoon/icomoon.css",
-		"/C/Users/Victor/Desktop/icomoon77412/style.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.css",
-		"/C/Users/Victor/Desktop/style.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/master.sublime-project",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-16-ties.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/footer.html",
-		"/H/Back Up/Movies/The Avengers/READ this before playing the Movie.txt",
-		"/D/Root/Air/Dropbox/Sides/Music Player/Coding4Fun/ReadMe.Coding4Fun.Toolkit.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/README.markdown",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/setup/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/awesome/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/footer.scss",
-		"/C/Users/Victor/Downloads/webfontkit-20130413-204354/stylesheet.css",
-		"/C/Users/Victor/AppData/Local/Temp/7zE6FD2.tmp/stylesheet.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/post.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/archives/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/page.html",
-		"/C/Users/Victor/Desktop/icomoon24515/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/font-awesome/font-awesome.css",
-		"/C/Users/Victor/Desktop/icomoon24515/style.css",
-		"/C/Users/Victor/Desktop/icomoon24515/fonts/icomoon.svg",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitattributes",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/.gitignore",
-		"/D/Root/Air/Dropbox/Site/master/.gitignore",
-		"/J/Documents/howto.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-06-meditation.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/reset.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/skeleton/skeleton.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-02-25-helloworld.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/2013/04/01/thenword.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-03-21-anewbeginning.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.css"
+		"/D/Root/Air/Dropbox/Site/grandmaster/master/_config.yml"
 	],
 	"find":
 	{
@@ -543,7 +559,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 91.0,
 		"where_history":
 		[
 			""
@@ -554,6 +570,108 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tert",
+			"sec",
+			"lightgrey",
+			"r-text",
+			"text",
+			"h3",
+			"h2",
+			"post",
+			"div",
+			"page",
+			"div",
+			"###",
+			"### X",
+			" X ",
+			"\n##",
+			"* ",
+			"div",
+			"h3",
+			"nav",
+			"main",
+			":",
+			"\n			<div class=\"row\">",
+			" class=\"row\"",
+			" class=\"branch\"",
+			"h2",
+			"grey",
+			"main",
+			"grey",
+			"main",
+			"transparent",
+			"566473",
+			"1px",
+			"&#xe014;",
+			"span",
+			"spawn",
+			"<<",
+			"span",
+			"padding: 0",
+			"icon",
+			"span",
+			".no-touch",
+			"no-touch",
+			".gn",
+			"not",
+			"fonts",
+			"font",
+			"5993cd",
+			"nav",
+			"trigger",
+			"navhover",
+			"$color-white",
+			"$color-nav",
+			"color-",
+			"$color-sec",
+			"sec",
+			"EBE7E0",
+			"$color-main",
+			"main",
+			"border",
+			"c6d0da",
+			"border",
+			"white",
+			"color:",
+			"color",
+			"40px",
+			"last",
+			"width: 40",
+			"60px",
+			"height",
+			"width",
+			"font-size",
+			"font-fam",
+			".no-touch ",
+			"no-touch",
+			"no-touc",
+			"#5f6f81",
+			"gn-menu ",
+			"gn-menu",
+			":hover",
+			"hover",
+			"h1",
+			".simple-large",
+			"<li>",
+			"nav",
+			".cl-effect-7",
+			"transparent",
+			"(none,",
+			"none, regular, ",
+			"@include texts",
+			"none, normal, ",
+			"text-body",
+			":",
+			" :",
+			"stack-header",
+			"\"Frutiger Linotype\",",
+			" \"Frutiger\", ",
+			":",
+			": ",
+			":",
+			"<span aria-hidden=\"true\" data-icon=\"&#xe016;\" class=\"icon\"></span>",
+			"text-blockquote-cite",
+			"\"Source Sans Pro\", ",
 			"header",
 			"Header",
 			"getLocation",
@@ -579,109 +697,7 @@
 			"heap",
 			"cin",
 			"cout",
-			"'",
-			"<",
-			" \\leq ",
-			"forall",
-			"$$$",
-			"808080",
-			"h3",
-			"h2",
-			"red",
-			"disabl",
-			"black",
-			"red",
-			"20px",
-			"15px",
-			"\"Frutiger\", \"Frutiger Linotype\",",
-			"section",
-			"5px",
-			"darkblack",
-			"transition-ease",
-			"100ms",
-			"transition",
-			"2px",
-			"span",
-			"\n          border-bottom: 2px solid transparent;",
-			"$color-main",
-			"Light",
-			"16pt",
-			"h1",
-			"20pt",
-			"40pt",
-			"42pt",
-			"40pt",
-			"20pt",
-			"244",
-			"Droid Sans",
-			"solid",
-			"\n        border-left : 20pt solid $color-text;",
-			"\n          border-left : 56pt solid $color-main;",
-			"Source Sans Pro",
-			"url(",
-			"DroidSansRegular",
-			"text-body;",
-			"12pt",
-			"url('",
-			"Source Sans Pro",
-			"\"Nexa Light\", \"Segoe UI\", ",
-			";",
-			"border-bottom: 1px solid $color-main; ",
-			"class=\"sixteen columns\"",
-			"h1",
-			"16pt",
-			"<span aria-hidden=\"true\" ",
-			"\n    padding-left: 4px;",
-			"block",
-			"<span aria-hidden=\"true\" data-icon=\"&#xe016;\"></span> ",
-			"xe014",
-			"<i class=\"icon-stop\"></i>",
-			" twelve columns",
-			" class=\"four columns\"",
-			"<i class=\"icon-star\"></i>",
-			"main",
-			"sec",
-			"darkgrey",
-			"center",
-			"bg",
-			"black",
-			"background-color: $color-bg;",
-			"grey",
-			"bg",
-			"white",
-			"darkgrey",
-			"grey",
-			"white",
-			"darkgrey",
-			"background-color: $color-darkgrey;",
-			"black",
-			"journal",
-			"text",
-			"grey",
-			"white",
-			"30px",
-			"hidden",
-			"h2",
-			"20pt",
-			"24pt",
-			"40pt",
-			"43",
-			"7",
-			"32pt",
-			"main",
-			"40pt",
-			"32pt",
-			"five",
-			"60",
-			"text",
-			"30pt",
-			"45pt",
-			"main",
-			"h2",
-			"Museo Sans 500",
-			"white",
-			"h3",
-			"h2"
+			"'"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -689,6 +705,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\n  display: block;\n  color       : $color-bg;\n  background-color: $color-main;\n  font: normal normal 100 50pt/50pt $font-one;\n  font-family : $font-stack-h1;\n",
 			"\n			{% if page.main == \"blog\" %}\n\n			{% endif %}",
 			"	album 			TALB\n	albumartist 	TPE2\n	artist 			TPE1\n	date			TDAT\n	discnumber		TPOS\n	filename		TOFN\n	filetype		TFLT\n	genre			TCON\n	title			TIT2\n	track			TRCK\n	year			TYER\n"
 		],
@@ -700,6 +717,11 @@
 	},
 	"groups":
 	[
+		{
+			"sheets":
+			[
+			]
+		},
 		{
 			"sheets":
 			[
@@ -723,11 +745,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.549043725325,
 			1.0
 		],
 		"rows":
@@ -751,6 +780,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"footerhtml",
+				"site/_includes/footer.html"
+			],
+			[
+				"headerscss",
+				"site/css/_header.scss"
+			],
 			[
 				"adulthu",
 				"inc/AdultHuman.h"
@@ -846,6 +883,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 182.0,
+	"side_bar_width": 207.0,
 	"status_bar_visible": true
 }

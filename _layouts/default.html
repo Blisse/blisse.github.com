@@ -18,19 +18,31 @@
             <div class="gn-scroller">
               <ul class="gn-menu">
                 <li>
-                  <a class="gn-icon gn-icon-download">Downloads</a>
+                  <a class="gn-icon gn-icon-resume">Resume</a>
                 </li>
-                <li><a class="gn-icon gn-icon-cog">Settings</a></li>
-                <li><a class="gn-icon gn-icon-help">Help</a></li>
                 <li>
-                  <a class="gn-icon gn-icon-archive">Archives</a>
+                  <a class="gn-icon gn-icon-archives" href="/archives/">Archives</a>
+                </li>
+                <li>
+                  <a class="gn-icon gn-icon-github" href="http://www.github.com/{{ site.github }}">Github</a>
+                </li>
+                <li>
+                  <a class="gn-icon gn-icon-twitter" href="http://www.twitter.com/{{ site.twitter }}">Twitter</a>
+                </li>
+                <li>
+                  <a class="gn-icon gn-icon-rss" href="/atom.xml">RSS</a>
+                </li>
+                <li>
+                  <a class="gn-icon gn-icon-mail" href="mailto:{{ site.email }}">Email</a>
                 </li>
               </ul>
             </div><!-- /gn-scroller -->
           </nav>
         </li>
-        <li><a href="http://tympanus.net/codrops">Codrops</a></li>
-        <li><a href="http://tympanus.net/Development/HeaderEffects/"><span>Previous Demo</span></a></li>
+        <li><a href="/">Victor Lai</a></li>
+        <li><a href="/blog/" class="gn-icon gn-icon-journal"><span>Journal</span></a></li>
+        <li><a href="/work/" class="gn-icon gn-icon-work"><span>Work</span></a></li>
+        <li><a href="/about/" class="gn-icon gn-icon-about"><span>About</span></a></li>
       </ul>
       <div class="whole-content">
     	 {{ content }}

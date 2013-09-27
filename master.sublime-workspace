@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"_na",
+				"_name"
+			],
+			[
+				"ist",
+				"istream_iterator"
+			],
+			[
+				"istrea",
+				"istream_iterator"
+			],
+			[
 				"bac",
 				"background"
 			],
@@ -287,13 +299,25 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 15523,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 174.0,
+		"height": 52.0,
 		"selected_items":
 		[
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
 			[
 				"alignment",
 				"Preferences: Alignment Key Bindings – Default"
@@ -407,7 +431,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 514.0
+		"width": 536.0
 	},
 	"console":
 	{
@@ -424,29 +448,61 @@
 	},
 	"file_history":
 	[
-		"/D/Root/Air/Git/site/README.markdown",
-		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Victor/Links/site.lnk",
+		"/D/Root/Air/Dropbox/Backup/songs.txt",
+		"/D/Root/Air/Dropbox/Backup/random.txt",
+		"/C/Users/Victor/Downloads/Backup-codes-lai.victor.vl.txt",
+		"/D/Root/Air/Dropbox/Backup/save.txt",
+		"/D/Root/Air/Dropbox/Backup/hosts",
+		"/D/Root/Air/Dropbox/Backup/backup.html",
+		"/D/Root/Air/Git/android/Test/src/com/example/test/MainActivity.java",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/ui/actionbarcompat/Basic/Basic/src/main/src/com/example/android/actionbarcompat/basic/MainActivity.java",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/ui/actionbarcompat/Basic/Basic/src/main/res/menu/main.xml",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/ui/actionbarcompat/Basic/Basic/src/main/res/layout/activity_main.xml",
+		"/D/Root/Air/Dropbox/save.txt",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/ui/lists/CustomChoiceList/CustomChoiceList/src/main/AndroidManifest.xml",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/ui/lists/CustomChoiceList/CustomChoiceList/src/main/java/com/example/android/customchoicelist/MainActivity.java",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/ui/lists/CustomChoiceList/CustomChoiceList/src/main/res/layout/list_item.xml",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/ui/lists/CustomChoiceList/CustomChoiceList/src/main/res/values/dimens.xml",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/ui/lists/CustomChoiceList/CustomChoiceList/src/main/java/com/example/android/customchoicelist/Cheeses.java",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/ui/lists/CustomChoiceList/CustomChoiceList/src/main/res/layout/activity_main.xml",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/ui/lists/CustomChoiceList/CustomChoiceList/src/main/java/com/example/android/customchoicelist/CheckableLinearLayout.java",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/content/contacts/BasicContactables/BasicContactables/src/main/java/com/example/android/basiccontactables/ContactablesLoaderCallbacks.java",
+		"/C/Users/Victor/Downloads/adt-bundle-windows-x86_64-20130729/sdk/samples/android-18/content/contacts/BasicContactables/BasicContactables/src/main/java/com/example/android/basiccontactables/MainActivity.java",
+		"/D/Root/Air/Git/site/_site/css/font-icomoon/icomoon.css",
+		"/D/Root/Air/Git/site/_site/index.html",
+		"/C/xampp/htdocs/bootcamp/app/view/Main.js",
+		"/C/xampp/htdocs/SenchaTouch/examples/list/app.js",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Victor/Desktop/input",
+		"/C/Users/Victor/Desktop/test.cc",
+		"/c/strawberry/c/lib/gcc/x86_64-w64-mingw32/4.6.3/include/c++/bits/basic_string.tcc",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Root/Air/Git/site/index.html",
+		"/D/Root/Air/Git/site/css/_typography.scss",
+		"/D/Root/Air/Git/site/about/index.html",
+		"/D/Root/Air/Git/site/css/_header.scss",
+		"/C/Users/Victor/Desktop/CreativeLinkEffects/css/component.css",
+		"/D/Root/Air/Git/site/archives/index.html",
+		"/D/Root/Air/Git/site/work/site/index.html",
+		"/D/Root/Air/Git/site/README.markdown",
 		"/D/Root/Air/Git/site/css/base.scss",
 		"/D/Root/Air/Git/site/css/_mixins.scss",
-		"/D/Root/Air/Git/site/css/_typography.scss",
 		"/D/Root/Air/Git/site/css/_colors.scss",
 		"/D/Root/Air/Git/site/_layouts/project.html",
 		"/D/Root/Air/Git/site/_layouts/tag.html",
-		"/D/Root/Air/Git/site/archives/index.html",
 		"/D/Root/Air/Git/site/_posts/2013-08-16-ayearinretrospect.md",
 		"/D/Root/Air/Git/site/_config.yml",
 		"/D/Root/Air/Git/site/_posts/2013-07-19-littlethings.md",
 		"/D/Root/Air/Git/site/blog/index.html",
 		"/D/Root/Air/Git/site/_layouts/post.html",
-		"/D/Root/Air/Git/site/index.html",
 		"/D/Root/Air/Git/site/_includes/googlefonts.html",
 		"/D/Root/Air/Git/site/_layouts/default.html",
 		"/D/Root/Air/Git/site/_includes/footer.html",
 		"/D/Root/Air/Git/site/css/_footer.scss",
 		"/D/Root/Air/Git/site/work/index.html",
 		"/C/Users/Victor/Desktop/found/css/component.css",
-		"/D/Root/Air/Git/site/css/_header.scss",
 		"/C/Users/Victor/Desktop/found/js/gnmenu.js",
 		"/C/Users/Victor/Desktop/found/js/classie.js",
 		"/C/Users/Victor/Desktop/found/index.html",
@@ -458,9 +514,7 @@
 		"/C/Users/Victor/AppData/Local/Temp/7zO36D9.tmp/Read Me.txt",
 		"/D/Root/Air/Git/site/js/gn-menu/classie.js",
 		"/D/Root/Air/Git/site/js/gn-menu/gnmenu.js",
-		"/C/Users/Victor/Desktop/CreativeLinkEffects/css/component.css",
 		"/D/Root/Air/Git/site/_includes/standardhead.html",
-		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/D/Root/Air/Git/site/_includes/disqus.html",
 		"/D/Root/Air/Git/site/_includes/discus.html",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
@@ -481,7 +535,6 @@
 		"/C/Users/Victor/Desktop/Weather/Weather/MainPage.xaml",
 		"/C/Users/Victor/Desktop/Weather/Weather/MainPage.xaml.cs",
 		"/C/Users/Victor/Desktop/Weather/Weather/Bin/Debug/Microsoft.Phone.Controls.xml",
-		"/C/Users/Victor/Desktop/test.cc",
 		"/C/Program Files (x86)/Microsoft SDKs/Windows Phone/v8.0/Design/ThemeResources.xaml",
 		"/C/Program Files (x86)/Microsoft SDKs/Windows Phone/v8.0/Design/Dark/ThemeResources.xaml",
 		"/C/Users/Victor/Desktop/test.py",
@@ -494,7 +547,6 @@
 		"/D/Root/Air/Dropbox/Backup/dad",
 		"/C/Users/Victor/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/G1I2QPG3/C__Users_Victor_AppData_Local_Packages_microsoft.microsoftskydrive_8wekyb3d8bbwe_LocalState_fc_C4FD890803AEBBF0!750_post[1].txt",
 		"/D/Root/Air/Dropbox/Backup/ideas.txt",
-		"/D/Root/Air/Dropbox/Backup/random.txt",
 		"/C/Users/Victor/Desktop/Weather/Weather/SettingsPage.xaml.cs",
 		"/D/Root/Air/SkyDrive/post",
 		"/C/Users/Victor/Desktop/Weather/Weather/SettingsPage.xaml",
@@ -521,37 +573,9 @@
 		"/D/Root/Air/Dropbox/School/2B/CS247/A3/Part1/src/main.cpp",
 		"/C/Users/Victor/Downloads/hangman.cpp",
 		"/D/Root/Air/Git/site/css/base.css",
-		"/D/Root/Air/Dropbox/save.txt",
 		"/D/Root/Air/Dropbox/School/2B/CS240/A5/kdpartition.cpp",
-		"/D/Root/Air/Git/site/work/site/index.html",
 		"/D/Root/Air/Git/site/_posts/2013-07-12-windowsphone.md",
-		"/D/Root/Air/Dropbox/School/2B/CS240/a1.tex",
-		"/D/Root/Air/Dropbox/School/2B/CS240/report.cpp",
-		"/D/Root/Air/Dropbox/School/2B/CS240/test",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/header.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/work/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/special.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/base.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/header.scss",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-05-22-blogging.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-01-thenword.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-12-05-aclockworkwtf.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2012-11-23-depression.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_posts/2013-04-23-pain.md",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/transitions/animations.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/transitions/component.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardfooter.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_includes/standardhead.html",
-		"/C/Users/Victor/Desktop/PageTransitions/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/transitions/multilevelmenu.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_site/index.html",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/js/transitions/pagetransitions.js",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/css/transitions/default.css",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_layouts/default.html",
-		"/C/Users/Victor/Desktop/PageTransitions/README.md",
-		"/C/Users/Victor/Desktop/Sc2gears/Plugins/README.txt",
-		"/D/Root/Air/Dropbox/Site/grandmaster/master/_config.yml"
+		"/D/Root/Air/Dropbox/School/2B/CS240/a1.tex"
 	],
 	"find":
 	{
@@ -570,6 +594,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"int",
+			"div",
+			".cl-effect-8 ",
+			"div",
 			"(",
 			"tert",
 			"sec",
@@ -693,11 +721,7 @@
 			"[img]",
 			"[hr]",
 			"&amp;",
-			"&",
-			"lg",
-			"heap",
-			"cin",
-			"cout"
+			"&"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -720,11 +744,136 @@
 		{
 			"sheets":
 			[
-			]
-		},
-		{
-			"sheets":
-			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 15523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3744,
+								3744
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"sublime_auto_complete": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2058.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -745,18 +894,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.549043725325,
 			1.0
 		],
 		"rows":
@@ -768,7 +910,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 177.0
+		"height": 157.0
 	},
 	"replace":
 	{
@@ -780,6 +922,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"headersc",
+				"site/css/_header.scss"
+			],
+			[
+				"typo",
+				"site/css/_typography.scss"
+			],
 			[
 				"footerhtml",
 				"site/_includes/footer.html"

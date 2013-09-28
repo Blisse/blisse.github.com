@@ -1,6 +1,7 @@
 .whole-page > .whole-content {
   margin: 0 auto;
   padding: 12em 2em;
+  min-width: 394px;
   z-index: 500;
 }
 
@@ -40,6 +41,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    min-width: 394px;
     height: 60px;
     font-size: 13pt;
 }

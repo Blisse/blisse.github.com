@@ -92,8 +92,8 @@
 ================================================== */
 
 	blockquote {
-    border-left: 3px solid $color-main;
-    border-right: 3px solid transparent;
+    border-left: 7px solid $color-main;
+    border-right: 7px solid transparent;
 
     text-align: center;
 
@@ -142,7 +142,7 @@
     clear: both;
 
   	&.line {
-      height: 2px;
+      height: 7px;
       color: $color-main;
       background: $color-main;
 

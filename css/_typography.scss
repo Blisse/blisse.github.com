@@ -45,12 +45,8 @@ $font-stack-monospace: "Consolas", "Lucida Console", "Monaco", monospace !import
 $font-one: "Open Sans";
 
 $font-stack-name: "Nexa Bold", "Open Sans", "Raleway", sans-serif;
-$font-stack-nav: "Raleway", "Open Sans", sans-serif;
-$font-stack-navtop: "Open Sans", "Myriad Pro", "Dejavu Sans";
-$font-stack-navbottom: "Open Sans", "Myriad Pro", "Dejavu Sans";
 
 $font-stack-primary: "Open Sans";
-$font-stack-branch: "Open Sans";
 $font-stack-text: "Open Sans", "Myriad Pro";
 
 $font-stack-h1: $font-one;
@@ -159,73 +155,54 @@ h6 {
   font-size: 16pt;
 }
 
+.display-name {
+  margin: 15px 20px;
+  display: block;
+  text-decoration: none;
+  text-shadow: 0 0 1px rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  font-weight: 4500;
+  font-size: 4em;
+  color: $color-grey;
+}
+
 .simple-large {
 
   text-align: center;
+  border: 1px solid transparent;
 
   a {
     position: relative;
     display: inline-block;
-    margin: 15px 25px;
+    margin: 15px 20px;
     outline: none;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 4500;
     text-shadow: 0 0 1px rgba(255,255,255,0.5);
-    font-size: 1.35em;
+    font-size: 1.3em;
 
-    padding    : 12px 10px 10px;
+    padding    : 8px;
     color      : $color-sec;
-  }
+    border: 1px solid transparent;
 
-  a:hover,
-  a:focus {
-    outline: none;
-    background-color: transparent;
-    color: $color-main;
-  }
-
-  a::before,
-  a::after {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: $color-sec;
-    content: '';
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-    -webkit-transform: scale(0.85);
-    -moz-transform: scale(0.85);
-    transform: scale(0.85);
-  }
-
-  a::after {
-    opacity: 0;
-    -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-    -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
-    transition: top 0.3s, opacity 0.3s, transform 0.3s;
-    background: $color-main;
-  }
-
-  a:hover::before,
-  a:hover::after,
-  a:focus::before,
-  a:focus::after {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    transform: scale(1);
-    background: $color-main;
-  }
-
-  a:hover::after,
-  a:focus::after {
-    top: 0%;
-    opacity: 1;
-    background: $color-main;
+    &:link {
+      @include texts( none, transparent, $color-text);
+      border: 1px solid $color-lightgrey;
+    }
+    &:visited {
+      @include texts( none, transparent, $color-text);
+      border: 1px solid $color-lightgrey;
+    }
+    &:hover {
+      @include texts( none, $color-main, $color-bg);
+      border: 1px solid $color-main;
+    }
+    &:active {
+      @include texts( none, $color-main, $color-bg);
+      border: 1px solid $color-main;
+    }
   }
 
 }
@@ -243,7 +220,15 @@ ul.simple-small {
     padding: 0;
     margin: 0;
 
-    @include text-selected;
+    &:hover {
+      color: $color-bg;
+      background-color: $color-main;
+    }
+
+    &:active {
+      color: $color-bg;
+      background-color: $color-main;
+    }
 
     a {
       display: block;

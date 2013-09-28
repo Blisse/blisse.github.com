@@ -129,60 +129,61 @@ h5 {
 h6 {
   font-size: 16pt; }
 
+.display-name {
+  margin: 15px 20px;
+  display: block;
+  text-decoration: none;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-weight: 4500;
+  font-size: 4em;
+  color: #797979; }
+
 .simple-large {
-  text-align: center; }
+  text-align: center;
+  border: 1px solid transparent; }
   .simple-large a {
     position: relative;
     display: inline-block;
-    margin: 15px 25px;
+    margin: 15px 20px;
     outline: none;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 4500;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-    font-size: 1.35em;
-    padding: 12px 10px 10px;
-    color: #3c5781; }
-  .simple-large a:hover,
-  .simple-large a:focus {
-    outline: none;
-    background-color: transparent;
-    color: #f67280; }
-  .simple-large a::before,
-  .simple-large a::after {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: #3c5781;
-    content: '';
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-    -webkit-transform: scale(0.85);
-    -moz-transform: scale(0.85);
-    transform: scale(0.85); }
-  .simple-large a::after {
-    opacity: 0;
-    -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-    -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
-    transition: top 0.3s, opacity 0.3s, transform 0.3s;
-    background: #f67280; }
-  .simple-large a:hover::before,
-  .simple-large a:hover::after,
-  .simple-large a:focus::before,
-  .simple-large a:focus::after {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    transform: scale(1);
-    background: #f67280; }
-  .simple-large a:hover::after,
-  .simple-large a:focus::after {
-    top: 0%;
-    opacity: 1;
-    background: #f67280; }
+    font-size: 1.3em;
+    padding: 8px;
+    color: #3c5781;
+    border: 1px solid transparent; }
+    .simple-large a:link {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #4a4a4a;
+      border: 1px solid #d9d9d9; }
+    .simple-large a:visited {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: transparent;
+      color: #4a4a4a;
+      border: 1px solid #d9d9d9; }
+    .simple-large a:hover {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: #f67280;
+      color: white;
+      border: 1px solid #f67280; }
+    .simple-large a:active {
+      text-decoration: none;
+      font-weight: normal;
+      border: none;
+      background-color: #f67280;
+      color: white;
+      border: 1px solid #f67280; }
 
 ul.simple-small {
   list-style-type: none;
@@ -193,10 +194,10 @@ ul.simple-small {
     font: normal normal 400 12pt/18pt "Open Sans";
     padding: 0;
     margin: 0; }
-    ul.simple-small li a:hover {
+    ul.simple-small li:hover {
       color: white;
       background-color: #f67280; }
-    ul.simple-small li a:active {
+    ul.simple-small li:active {
       color: white;
       background-color: #f67280; }
     ul.simple-small li a {
@@ -234,6 +235,7 @@ ul.simple-small {
 .whole-page > .whole-content {
   margin: 0 auto;
   padding: 12em 2em;
+  min-width: 394px;
   z-index: 500; }
 
 @media screen and (max-width: 1025px) {
@@ -266,6 +268,7 @@ ul.simple-small {
   top: 0;
   left: 0;
   width: 100%;
+  min-width: 394px;
   height: 60px;
   font-size: 13pt; }
 
@@ -593,8 +596,8 @@ html, body {
 /* #Quotes
 ================================================== */
 blockquote {
-  border-left: 3px solid #f67280;
-  border-right: 3px solid transparent;
+  border-left: 7px solid #f67280;
+  border-right: 7px solid transparent;
   text-align: center;
   margin: 40px 0 40px 5px;
   padding: 10px 15px; }
@@ -624,7 +627,7 @@ hr {
   float: none;
   clear: both; }
   hr.line {
-    height: 2px;
+    height: 7px;
     color: #f67280;
     background: #f67280;
     margin-left: auto;

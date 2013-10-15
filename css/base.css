@@ -31,7 +31,7 @@
 p {
   display: block;
   margin: 21px 0;
-  padding: 2px 0;
+  padding: 0px 0;
   font: normal normal 300 14pt/1.6 "Open Sans";
   color: #4a4a4a; }
   p a {
@@ -129,15 +129,16 @@ h5 {
 h6 {
   font-size: 16pt; }
 
+.display-lead {
+  font-size: 1.2em;
+  color: white; }
+
 .display-name {
   margin: 15px 20px;
   display: block;
-  text-decoration: none;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
-  font-weight: 4500;
   font-size: 4em;
-  color: #797979; }
+  color: white; }
 
 .simple-large {
   text-align: center;
@@ -184,6 +185,9 @@ h6 {
       background-color: #f67280;
       color: white;
       border: 1px solid #f67280; }
+
+.front-page-container .simple-large a {
+  color: white; }
 
 ul.simple-small {
   list-style-type: none;
@@ -539,6 +543,11 @@ html, body {
 
 .whole-page {
   height: auto; }
+
+.front-page-container {
+  background-color: #636c7a;
+  padding: 40px 0 40px 0;
+  margin-bottom: 160px; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;

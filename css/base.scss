@@ -53,6 +53,12 @@
     height: auto;
   }
 
+  .front-page-container {
+    background-color: $color-nav;
+    padding: 40px 0 40px 0;
+    margin-bottom: 160px;
+  }
+
 	*, *:before, *:after {
 	    -webkit-box-sizing: border-box;
 	    -moz-box-sizing: border-box;

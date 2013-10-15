@@ -59,7 +59,7 @@ $font-stack-h6: $font-one;
 p {
   display : block;
   margin  : 21px 0;
-  padding : 2px 0;
+  padding : 0px 0;
 
   font    : normal normal 300 14pt/1.6 $font-one;
 
@@ -155,16 +155,20 @@ h6 {
   font-size: 16pt;
 }
 
+.display-lead {
+  font-size: 1.2em;
+  color: $color-bg;
+}
+
 .display-name {
   margin: 15px 20px;
-  display: block;
-  text-decoration: none;
-  text-shadow: 0 0 1px rgba(255,255,255,0.5);
+  display: block;  
   text-transform: uppercase;
-  font-weight: 4500;
   font-size: 4em;
-  color: $color-grey;
+  color: $color-white;
 }
+
+
 
 .simple-large {
 
@@ -205,6 +209,12 @@ h6 {
     }
   }
 
+}
+
+.front-page-container .simple-large {
+  a {
+    color : $color-bg;
+  }
 }
 
 ul.simple-small {

@@ -28,43 +28,43 @@
   font-weight: normal;
   font-style: normal; }
 
-p {
+p, article li {
   display: block;
   margin: 21px 0;
   padding: 0px 0;
   font: normal normal 300 14pt/1.6 "Open Sans";
   color: #4a4a4a; }
-  p a {
+  p a, article li a {
     display: inline-block; }
-    p a:link {
+    p a:link, article li a:link {
       text-decoration: none;
       font-weight: normal;
       border: none;
       background-color: transparent;
       color: #f67280;
       border-bottom: 1px dotted #f67280; }
-    p a:visited {
+    p a:visited, article li a:visited {
       text-decoration: none;
       font-weight: normal;
       border: none;
       background-color: transparent;
       color: #f67280;
       border-bottom: 1px dotted #f67280; }
-    p a:hover {
+    p a:hover, article li a:hover {
       text-decoration: none;
       font-weight: normal;
       border: none;
       background-color: #f67280;
       color: white;
       border-bottom: 1px dotted #f67280; }
-    p a:active {
+    p a:active, article li a:active {
       text-decoration: none;
       font-weight: normal;
       border: none;
       background-color: #f67280;
       color: white;
       border-bottom: 1px dotted #f67280; }
-  p.caption {
+  p.caption, article li.caption {
     font-weight: 500;
     font-size: 80%;
     font-color: #797979; }
@@ -185,6 +185,10 @@ h6 {
       background-color: #f67280;
       color: white;
       border: 1px solid #f67280; }
+
+.front-page-container {
+  vertical-align: center;
+  padding: 10px; }
 
 .front-page-container .simple-large a {
   color: white; }

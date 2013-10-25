@@ -56,7 +56,7 @@ $font-stack-h4: $font-one;
 $font-stack-h5: $font-one;
 $font-stack-h6: $font-one;
 
-p {
+p, article li {
   display : block;
   margin  : 21px 0;
   padding : 0px 0;

@@ -5,97 +5,74 @@ main: blog
 sub: blog
 ---
 
-<div class="container">
-  <div class="sixteen columns">
-    <h1 class="no-wrap">
-      My <strong>Journal</strong>
-    </h1>
-  </div>
+
+<div class="row">
+    <div class="small-12 columns">
+      <h1 class="no-wrap">
+        My Journal
+      </h1>
+    </div>
 </div>
 
 {% for post in paginator.posts %}
 
 {% if post.archived == false %}
 
-<article class="post">
-  <header class="container">
-    <div class="sixteen columns">
-      <h2>
-    		<a href="{{ post.url }}">
-          {{ post.title }}
-    		</a>
-    	</h2>
+<div class="row">
+    <div class="small-12 columns">
+        <h2>
+            <a href="{{ page.url }}">
+                {{ post.title }}
+            </a>
+        </h2>
     </div>
-    <div class="sixteen columns">
-      <p class="caption">
-          Posted on {{ post.date |  date: "%B %d %Y" }} about {{ post.tags | array_to_sentence_string }}.
-      </p>
+</div>
+    
+<div class="row">
+    <div class="small-12 columns">
+        <p class="tags">
+            about {{ post.tags | array_to_sentence_string }}. posted on {{ post.date | date:'%B %d, %Y' }}
+        </p>
     </div>
-  </header>
+</div>
 
-  <div class="content">
-  {% if post.pure_markdown == false %}
-  	{{ post.content }}
-  {% else %}
-	  <div class="container">
-	  	<div class="sixteen columns">
-        {{ post.content }}
-      </div>
-	  </div>
-  {% endif %}
-  </div>
-
-  <div class="container">
-  	<div class="sixteen columns">
-      <div class="more-info">
-        <a href="{{ post.url }}" class="permalink">
-          <span aria-hidden="true" data-icon="&#xe00d;"></span> Permalink
-        </a>
-        {% if post.comments == true %}
-  			<a href="{{ post.url }}#disqus_thread" class="discuss">
-  				<span aria-hidden="true" data-icon="&#xe005;"></span> Discuss
-  			</a>
-        {% endif %}
-  		</div>
+<div class="row">
+    <div class="small-12 columns">
+        {{ post.content | markdownify }}
     </div>
-	</div>
-
-</article>
+</div>
 
 {% endif %}
 
 {% endfor %}
 
 
-<div class="container">
-  <div class="sixteen columns">
-    <div class="pagination">
-
-      <hr class="line">
-
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
+<div class="row">
+    <div class="small-6 columns">
+    {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
         <h4>
-          <a href="/" title="Previous Page" class="previous">
-            &laquo; Previous
-          </a>
+            <a href="/" title="Previous Page" class="previous">
+                &laquo; Previous
+            </a>
         </h4>
-        {% else %}
+    {% else %}
         <h4>
-          <a href="/blog/page-{{ paginator.previous_page }}/" title="Previous Page" class="previous">
-            &laquo; Previous
-          </a>
+            <a href="/blog/page-{{ paginator.previous_page }}/" title="Previous Page" class="previous">
+                &laquo; Previous
+            </a>
         </h4>
-        {% endif %}
-      {% endif %}
-
-      {% if paginator.next_page %}
-      <h4>
-        <a href="/blog/page-{{ paginator.next_page }}/" title="Next Page" class="next">
-          Next &raquo;
-        </a>
-      </h4>
-      {% endif %}
+    {% endif %}
+    {% endif %}
     </div>
-  </div>
+    <div class="small-6 columns">
+
+    {% if paginator.next_page %}
+        <h4>
+            <a href="/blog/page-{{ paginator.next_page }}/" title="Next Page" class="next">
+                Next &raquo;
+            </a>
+        </h4>
+    {% endif %}
+    </div>
 </div>

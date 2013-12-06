@@ -4,38 +4,34 @@ main: blog
 sub: archives
 ---
 
-<article class="post">
-  <header class="container">
-    <div class="sixteen columns">
-      <h2>
-        <a href="{{ page.url }}">
-        {{ page.title }}
-        <span class="date">
-          // {{ page.date | date:'%Y%m%d' }}
-        </span>
-        </a>
-      </h2>
+<div class="row">
+    <div class="small-12 columns">
+        <h2>
+            <a href="{{ page.url }}">
+                {{ page.title }}
+            </a>
+        </h2>
     </div>
-    <div class="sixteen columns">
-      <p class="tags">
-        about {{ page.tags | array_to_sentence_string }}.
-      </p>
-    </div>
-  </header>
+</div>
 
-  <div class="content">
-  {% if page.pure_markdown == false %}
-    {{ content | markdownify }}
-  {% else %}
-    <div class="container">
-      <div class="sixteen columns">
+<div class="row">
+    <div class="small-12 columns">
+        <p class="tags">
+            about {{ page.tags | array_to_sentence_string }}. posted on {{ page.date | date:'%B %d, %Y' }}
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="small-12 columns">
         {{ content | markdownify }}
-      </div>
     </div>
-  {% endif %}
-  </div>
-
-  {% if page.comments %}
-  {% include disqus.html %}
-  {% endif %}
-</article>
+</div>
+    
+{% if page.comments %}
+<div class="row">
+    <div class="small-12 columns">
+        {% include disqus.html %}
+    </div>
+</div>
+{% endif %}

@@ -1,19 +1,11 @@
-$color-main:#F67280;
-$color-sec:#3C5781;
-$color-tert:#957AAD;
+$color-blue: rgba(50, 153, 187, 1.0);
+$color-yellow: rgba(255, 153, 0, 1.0);
+$color-red: rgba(153, 1, 0, 1.0);
 
+$color-white: rgba(246, 246, 246, 1.0);
+$color-black: rgba(26, 26, 26, 1.0);
+$color-darkgray: rgba(66, 66, 66, 1.0);
+$color-darkgray-inactive: rgba(66, 66, 66, 0.4);
+$color-lightgray: rgba(188, 188, 188, 1.0);
 
-$color-white:#ffffff;
-$color-lightgrey:#D9D9D9;
-$color-grey:rgba(121,121,121,1.0);
-$color-darkgrey:rgba(74,74,74,1.0);
-$color-black:rgba(43,43,43,1.0);
-$color-darkblack:rgba(7,7,7,1.0);
-
-
-$color-bg:#ffffff;
-
-$color-text:$color-darkgrey;
-
-$color-nav:#636C7A;
-$color-navhover:#F67280;
+$color-bg:$color-white;

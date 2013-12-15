@@ -68,6 +68,10 @@
 		height: auto;
 	}
 
+	
+	.footer-padding {
+		margin: -bottom: 4.0rem;
+	}
 
 
 /* #Normal stuff
@@ -78,40 +82,112 @@
 		font-family: $font-open;
 		color: $color-darkgray;
 		font-size: 1.1rem;
+
+		a {
+			display: inline-block;
+
+			-webkit-transition: color 50ms ease 50ms;
+			-moz-transition: color 50ms ease 50ms;
+			-o-transition: color 50ms ease 50ms;
+			transition: color 50ms ease 50ms;
+
+			border-bottom: 2px dotted transparent;
+		}
+
+		a:link, a:visited {
+			color: $color-blue;
+			border-bottom: 2px dotted $color-blue;
+		}
+
+		a:hover {    
+			color: $color-bg;
+			background: $color-blue;
+			border-bottom: 2px dotted transparent;
+		}
+
+		a:active {    
+			color: $color-bg;
+			background: $color-darkgray;
+			border-bottom: 2px dotted transparent;
+		}
 	}
+
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: $font-nexa;
-		color: $color-darkgray;
-	}
-
-	h1, h2, h3, h4 {
+		display: block;
 		text-transform: uppercase;
+
+		color: $color-darkgray;
+
+		&.bg {
+			background: $color-darkgray;
+			color: $color-bg;
+			padding-top: 0.3rem;
+			padding-left: 0.3rem;
+			padding-right: 0.3rem;
+
+			a {
+				background: $color-blue;
+				color: $color-bg;
+			}
+		}
+
+		a {
+			color: $color-blue;
+			display: block;
+		}
 	}
 
-	header h1 {
-		background: $color-darkgray;
-		color: $color-bg;
-		padding-left: 0.3rem;
-		padding-top: 0.3rem;
-	}
 
 	.button {
 		font-family: $font-nexa;
 		text-transform: uppercase;
 	}
 
-	.work-title {
-		.title {
-			color: $color-blue;
+	.work-entry {
+		margin-bottom: 3.0rem;
+
+		.work-title {
+			a, span {
+				white-space: nowrap;
+				display: inline-block;
+			}
+
+			a {
+				padding-top: 0.3rem;
+				padding-left: 0.3rem;
+				padding-right: 0.3rem;
+
+				&.title {
+					color: $color-blue;
+				}
+
+				&.title:hover {
+					color: $color-bg;
+					background: $color-blue;
+				}
+
+				&.company {
+					color: $color-darkgray;
+				}
+
+				&.company:hover {
+					color: $color-bg;
+					background: $color-darkgray;
+				}
+
+			}
 		}
 
-		.company {
-			color: $color-darkgray;
-		}
-
-		span {
+		.work-date {
 			white-space: nowrap;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+		}
+
+		.work-description {
+
 		}
 	}
 
@@ -193,8 +269,9 @@
 		text-align: center;
  
 		p {
-			font-size: 1.4rem;
-			font-style: italic;
-			color: $color-darkgray;
+			font-size: 2.0rem;
+			font-weight: bold;
+			color: $color-bg;
+			background: $color-darkgray;
 		}
 	}

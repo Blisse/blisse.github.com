@@ -8,9 +8,9 @@ sub: blog
 
 <div class="row">
     <div class="small-12 columns">
-      <h1 class="no-wrap">
-        My Journal
-      </h1>
+        <h1 class="bg">
+            My Journal
+        </h1>
     </div>
 </div>
 
@@ -21,7 +21,7 @@ sub: blog
 <div class="row">
     <div class="small-12 columns">
         <h2>
-            <a href="{{ page.url }}">
+            <a href="{{ page.url }}" class="bg">
                 {{ post.title }}
             </a>
         </h2>
@@ -37,7 +37,7 @@ sub: blog
 </div>
 
 <div class="row">
-    <div class="small-12 columns">
+    <div class="small-12 columns post">
         {{ post.content | markdownify }}
     </div>
 </div>
@@ -46,33 +46,31 @@ sub: blog
 
 {% endfor %}
 
-
 <div class="row">
-    <div class="small-6 columns">
     {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-        <h4>
-            <a href="/" title="Previous Page" class="previous">
-                &laquo; Previous
-            </a>
-        </h4>
-    {% else %}
-        <h4>
-            <a href="/blog/page-{{ paginator.previous_page }}/" title="Previous Page" class="previous">
-                &laquo; Previous
-            </a>
-        </h4>
-    {% endif %}
-    {% endif %}
-    </div>
     <div class="small-6 columns">
-
-    {% if paginator.next_page %}
-        <h4>
-            <a href="/blog/page-{{ paginator.next_page }}/" title="Next Page" class="next">
-                Next &raquo;
+        {% if paginator.previous_page == 1 %}
+        <h3>
+            <a href="/blog/" title="Previous Page" class="previous bg">
+                Previous
             </a>
-        </h4>
-    {% endif %}
+        </h3>
+        {% else %}
+        <h3>
+            <a href="/blog/page-{{ paginator.previous_page }}/" title="Previous Page" class="previous bg">
+                Previous
+            </a>
+        </h3>
+        {% endif %}
     </div>
+    {% endif %}
+    {% if paginator.next_page %}
+    <div class="small-6 columns">
+        <h3>
+            <a href="/blog/page-{{ paginator.next_page }}/" class="next bg">
+                Next
+            </a>
+        </h3>
+    </div>
+    {% endif %}
 </div>

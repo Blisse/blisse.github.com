@@ -4,19 +4,33 @@ title: home
 main: home
 ---
 
-<div class="row">
-    <div class="small-12 columns" id="home-social">
-        <a href="http://www.github.com/{{ site.github }}">
-            Github
-        </a>
-        <a href="http://www.twitter.com/{{ site.twitter }}">
-            Twitter
-        </a>
-        <a href="/atom.xml">
-            RSS
-        </a>
-        <a href="mailto:{{ site.email }}">
-            Email
-        </a>
+<div class="row home-social">
+    <div class="small-12 large-3 columns">
+        <h2>
+            <a href="http://www.github.com/{{ site.github }}">      
+                <span aria-hidden="true" data-icon="&#xe000;"></span> Github
+            </a>
+        </h2>
+    </div>
+    <div class="small-12 large-4 columns">
+        <h2>
+            <a href="http://www.twitter.com/{{ site.twitter }}">
+                <span aria-hidden="true" data-icon="&#xe002;"></span> Twitter
+            </a>
+        </h2>
+    </div>
+    <div class="small-12 large-3 columns">
+        <h2>
+            <a href="mailto:{{ site.email }}">
+                <span aria-hidden="true" data-icon="&#xe010;"></span> Email
+            </a>
+        </h2>
+    </div>
+    <div class="small-12 large-2 columns">
+        <h2>
+            <a href="/atom.xml">
+                <span aria-hidden="true" data-icon="&#xe00c;"></span> RSS
+            </a>
+        </h2>
     </div>
 </div>

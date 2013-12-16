@@ -24,11 +24,15 @@
 /* import reset */
 /* #Media Queries
 ================================================== */
-/* Smaller than standard 960 (devices and browsers) */
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-/* All Mobile Sizes (devices and browser) */
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 1025px, large screens */
+/* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xlarge screens */
 /* #Body
 ================================================== */
 html {
@@ -41,7 +45,7 @@ html {
 body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  background-color: white; }
+  background-color: #f6f6f6; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -50,45 +54,8 @@ body {
 
 /* #Common Snippets
 ================================================== */
-.hide {
-  display: none; }
-
-.block, .show {
-  display: block; }
-
-.in-line {
-  display: inline; }
-
-.in-line-block {
-  display: inline-block; }
-
 .no-wrap {
   white-space: nowrap; }
-
-.center {
-  text-align: center; }
-
-.center-wrapper-outer {
-  text-align: center; }
-
-.center-wrapper-inner {
-  display: inline-block; }
-
-.text-left {
-  text-align: left; }
-
-.text-right {
-  text-align: right; }
-
-.float-left {
-  float: left; }
-
-.float-right {
-  float: right; }
-
-.disabled {
-  pointer-events: none;
-  opacity: 0.5; }
 
 .italic {
   font-style: italic; }
@@ -99,3 +66,147 @@ body {
 img.scale-with-grid {
   max-width: 100%;
   height: auto; }
+
+.footer-padding {
+  margin-bottom: 4.0rem; }
+
+/* #Normal stuff
+================================================== */
+p {
+  font-family: "Open Sans";
+  color: #424242;
+  font-size: 1.1rem; }
+  p a {
+    display: inline-block;
+    -webkit-transition: color 50ms ease 50ms;
+    -moz-transition: color 50ms ease 50ms;
+    -o-transition: color 50ms ease 50ms;
+    transition: color 50ms ease 50ms;
+    border-bottom: 2px dotted transparent; }
+  p a:link, p a:visited {
+    color: #3299bb;
+    border-bottom: 2px dotted #3299bb; }
+  p a:hover {
+    color: #f6f6f6;
+    background: #3299bb;
+    border-bottom: 2px dotted transparent; }
+  p a:active {
+    color: #f6f6f6;
+    background: #424242;
+    border-bottom: 2px dotted transparent; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nexa Bold";
+  display: block;
+  text-transform: uppercase;
+  color: #424242; }
+  h1.bg, h2.bg, h3.bg, h4.bg, h5.bg, h6.bg {
+    background: #424242;
+    color: #f6f6f6;
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #3299bb;
+    display: block; }
+    h1 a.bg, h2 a.bg, h3 a.bg, h4 a.bg, h5 a.bg, h6 a.bg {
+      background: #3299bb;
+      color: #f6f6f6;
+      padding-top: 0.3rem;
+      padding-left: 0.3rem;
+      padding-right: 0.3rem; }
+      h1 a.bg:hover, h2 a.bg:hover, h3 a.bg:hover, h4 a.bg:hover, h5 a.bg:hover, h6 a.bg:hover {
+        background: #8a8a8a; }
+      h1 a.bg:active, h2 a.bg:active, h3 a.bg:active, h4 a.bg:active, h5 a.bg:active, h6 a.bg:active {
+        background: #424242;
+        color: #f6f6f6; }
+
+.button {
+  font-family: "Nexa Bold";
+  text-transform: uppercase; }
+
+.work-entry {
+  margin-bottom: 3.0rem; }
+  .work-entry .work-title a, .work-entry .work-title span {
+    white-space: nowrap;
+    display: inline-block; }
+  .work-entry .work-title a {
+    padding-top: 0.3rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem; }
+    .work-entry .work-title a.title {
+      color: #3299bb; }
+    .work-entry .work-title a.title:hover {
+      color: #f6f6f6;
+      background: #3299bb; }
+    .work-entry .work-title a.company {
+      color: #424242; }
+    .work-entry .work-title a.company:hover {
+      color: #f6f6f6;
+      background: #424242; }
+  .work-entry .work-date {
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 0.8rem; }
+
+/* #Main Menu
+================================================== */
+@media only screen {
+  div#nex-menu #nex-menu-lastname {
+    display: none; } }
+/* Define mobile styles */
+@media only screen and (min-width: 32.063em) {
+  div#nex-menu #nex-menu-lastname {
+    display: inline; } }
+/* min-width 641px, medium screens */
+div#nex-menu {
+  font-family: "Nexa Bold";
+  margin-top: 3.0rem;
+  margin-bottom: 5.0rem; }
+  div#nex-menu a {
+    font-size: 5.0rem;
+    text-transform: uppercase;
+    color: rgba(66, 66, 66, 0.4);
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0.6rem 0 0.6rem;
+    -webkit-transition: color 100ms ease 100ms;
+    -moz-transition: color 100ms ease 100ms;
+    -o-transition: color 100ms ease 100ms;
+    transition: color 100ms ease 100ms; }
+  div#nex-menu a.active {
+    color: #f6f6f6;
+    background: #ff9900; }
+  div#nex-menu a:hover {
+    color: #424242; }
+  div#nex-menu a:active {
+    color: #f6f6f6;
+    background: #424242; }
+
+/* #Page Specific CSS */
+/* #Home
+================================================== */
+.home-social a {
+  white-space: nowrap; }
+
+/* #About
+================================================== */
+div#about-title-quote {
+  text-align: center; }
+  div#about-title-quote p {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #f6f6f6;
+    background: #424242; }
+
+/* #Blog
+================================================== */
+.tags {
+  text-transform: uppercase;
+  font-size: 0.8rem; }
+
+.next, .previous {
+  font-family: "Nexa Bold"; }
+
+.post {
+  margin-bottom: 8.0rem; }

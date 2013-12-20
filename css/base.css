@@ -191,9 +191,9 @@ div#nex-menu {
 
 /* #About
 ================================================== */
-div#about-title-quote {
+.about-title-quote {
   text-align: center; }
-  div#about-title-quote p {
+  .about-title-quote p {
     font-size: 2.0rem;
     font-weight: bold;
     color: #f6f6f6;

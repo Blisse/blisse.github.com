@@ -28,6 +28,7 @@ pre, pre code > .highlight {
 
 code, code > .highlight {
   font-family: "Consolas", monospace !important;
+  font-weight: normal;
   background-color: #FAFAFA;
   border: 1px solid #CCCCCC;
   margin: 0;

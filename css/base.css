@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 .work-entry {
-  margin-bottom: 3.0rem; }
+  margin-bottom: 2rem; }
   .work-entry .work-title a, .work-entry .work-title span {
     white-space: nowrap;
     display: inline-block; }
@@ -139,11 +139,17 @@ h1, h2, h3, h4, h5, h6 {
     .work-entry .work-title a.title:hover {
       color: #f6f6f6;
       background: #3299bb; }
+    .work-entry .work-title a.title:active {
+      color: #f6f6f6;
+      background: #424242; }
     .work-entry .work-title a.company {
       color: #424242; }
     .work-entry .work-title a.company:hover {
       color: #f6f6f6;
       background: #424242; }
+    .work-entry .work-title a.company:active {
+      color: #f6f6f6;
+      background: #1a1a1a; }
   .work-entry .work-date {
     white-space: nowrap;
     text-transform: uppercase;

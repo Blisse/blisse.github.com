@@ -159,7 +159,7 @@
 	}
 
 	.work-entry {
-		margin-bottom: 3.0rem;
+		margin-bottom: 2rem;
 
 		.work-title {
 			a, span {
@@ -181,6 +181,11 @@
 					background: $color-blue;
 				}
 
+				&.title:active {
+					color: $color-bg;
+					background: $color-darkgray;
+				}
+
 				&.company {
 					color: $color-darkgray;
 				}
@@ -188,6 +193,11 @@
 				&.company:hover {
 					color: $color-bg;
 					background: $color-darkgray;
+				}
+
+				&.company:active {
+					color: $color-bg;
+					background: $color-black;
 				}
 
 			}

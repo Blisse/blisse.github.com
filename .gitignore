@@ -39,5 +39,5 @@ Thumbs.db
 .git
 *.sublime-project
 *.sublime-workspace
-.sass-cache
+.sass-cache/
 _site/

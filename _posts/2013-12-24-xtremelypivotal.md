@@ -92,4 +92,4 @@ I'm going to steal something from a great person I met recently.
 
 SM:)E !
 
-Smile, and Happy Merry Christmas!
+Smile, and Happy Merry Christmas! And may we all have an even better Christmas next year. :D

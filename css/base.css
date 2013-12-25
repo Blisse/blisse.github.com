@@ -72,6 +72,11 @@ img.scale-with-grid {
 
 /* #Normal stuff
 ================================================== */
+li {
+  font-family: "Open Sans";
+  font-size: 1.1rem;
+  color: #424242; }
+
 p {
   font-family: "Open Sans";
   color: #424242;

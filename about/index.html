@@ -31,9 +31,26 @@ sub: me
 		</p>
 		<p>
 			I love having things .. work, but more importantly I try to push for <a href="http://www.webstock.org.nz/talks/how-designers-destroyed-the-world/">responsible design</a>, and push for the understanding the consequences of development and design. All the while, I enjoy fine-tuning my code to make it all the more usable to the end user (UI/UX), or to other developers (maintainability). I still have a lot to learn. Good thing I love learning.
+		</p
+>		<p>
+			When I'm not neck-deep in random programming activities, I'm off screwing my head back on. Sometimes, that involves working out, running, learning kendo, learning to play the guitar. Other times, it'll be falling asleep with my Kobo on my head, catching up on my tech news, looking for new music (there's too much music out there!), or trying out some other new hobby or pushing some other limit (this month: sleeping early and getting up early).
+		</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-12 columns">
+		<p>
+			I love music too. This is my favourite song.
 		</p>
 		<p>
-			When I'm not neck-deep in random programming activities, I'm off screwing my head back on. Sometimes, that involves working out, running, learning kendo, learning to play the guitar. Other times, it'll be falling asleep with my Kobo on my head, catching up on my tech news, looking for new music (there's too much music out there!), or trying out some other new hobby or pushing some other limit (this month: sleeping early and getting up early).
+			<iframe class="youtube" src="//www.youtube.com/embed/fTXhpIC3img" frameborder="0" allowfullscreen></iframe>
+		</p>
+		<p>
+			And this is my favourite video.
+		</p>
+		<p>
+			<iframe class="youtube" src="//www.youtube.com/embed/fLJsdqxnZb0" frameborder="0" allowfullscreen></iframe>
 		</p>
 	</div>
 </div>
@@ -45,51 +62,21 @@ sub: me
 				Favourite Quotes
 			</a>
 		</h2>
+		{% for quote in site.data.quotes %}
+
 		<blockquote>
+
+			{% for line in quote.lines %}
 			<p>
-				To laugh often and much; to win the respect of intelligent people and the affection of children; to earn the appreciation of honest critics and endure the betrayal of false friends; to appreciate beauty, to find the best in others; to leave the world a bit better, whether by a healthy child, a garden patch or a redeemed social condition; to know even one life has breathed easier because you have lived. This is to have succeeded.
+				{{ line }}
 			</p>
+			{% endfor %}
 			<cite>
-				Ralph Waldo Emerson
+				{{ quote.cite }}
 			</cite>
 		</blockquote>
-		<blockquote>
-			<p>
-				We must not cease from exploration.
-			</p>
-			<p>
-				And the end of all our exploring will be the arrive where we began and to know the place for the first time.
-			</p>
-			<cite>
-				T.S. Eliot
-			</cite>
-		</blockquote>
-		<blockquote>
-			<p>
-				... he that cannot change the very fabric of his thought will never be able to change reality.
-			</p>
-			<cite>
-				Anwar Sadat
-			</cite>
-		</blockquote>
-		<blockquote>
-			<p>
-				And those who were seen dancing were thought to be insane by those who could not hear the music.
-			</p>
-			<cite>Nietzsche</cite>
-		</blockquote>
-		<blockquote>
-			<p>
-				There once was an inflatable boy and an inflatable girl. They went to an inflatable school, where all the teachers were inflatable, all the buildings were inflatable, and all the students were inflatable.
-			</p>
-			<p>
-				One day, the inflatable boy wondered - well, what if the whole world's inflatable? And what if everyone's inflatable and deflatable? And you know when you inflate someone, because they go like this <strong>&ndash;happy face, rises up a bit&ndash;</strong> and you know when you deflate someone, because they go like this <strong>&ndash;sad face, droops down&ndash;</strong>
-			</p>
-			<p>
-				And maybe, if you inflate lots of people - maybe then you know you've lived a good life. And maybe....maybe, if you can still inflate people after you're gone, then you've lived an even better one.
-			</p>
-			<cite>Adam Hills</cite>
-		</blockquote>
+
+		{% endfor %}
 	</div>
 </div>
 
@@ -101,369 +88,16 @@ sub: me
 			</a>
 		</h2>
 		<ul>
-			<!--
-				<li>
-					<a href="url">
-						title
-					</a>
-				</li>
-			-->
+			{% for post in site.data.posts %}
 			<li>
-				<a href="http://pgbovine.net/two-cultures-of-computing.htm">
-					The Two Cultures of Computing
+				<a href="{{ post.link }}">
+					{% if post.starred == true %}
+					<span aria-hidden="true" data-icon="&#xe005;"></span>
+					{% endif %}
+					{{ post.title }}
 				</a>
 			</li>
-			<li>
-				<a href="http://sivers.org/ws">
-					Why was this secret?
-				</a>
-			</li>
-			<li>
-				<a href="https://research.microsoft.com/en-us/people/mickens/thenightwatch.pdf">
-					The Night Watch
-				</a>
-			</li>
-			<li>
-				<a href="http://www.polygon.com/features/2013/12/2/5143856/no-girls-allowed">
-					No Girls Allowed
-				</a>
-			</li>
-			<li>
-				<a href="http://alistapart.com/column/never-heard-of-it">
-					Never Heard of It
-				</a>
-			</li>
-			<li>
-				<a href="https://medium.com/better-humans/5ae6fb285d1">
-					<span aria-hidden="true" data-icon="&#xe005;"></span> Recruiting Advice No One Tells You
-				</a>
-			</li>
-			<li>
-				<a href="http://www.webstock.org.nz/talks/how-designers-destroyed-the-world/">
-					<span aria-hidden="true" data-icon="&#xe005;"></span> [CMV] I see belief in God as a major intellectual weakness. CMV response by 161719.
-				</a>
-			</li>
-			<li>
-				<a href="http://www.reddit.com/r/changemyview/comments/1mku3z/i_see_belief_in_god_as_a_major_intellectual/ccaeioh">
-					<span aria-hidden="true" data-icon="&#xe005;"></span> How Designers Destroyed the World
-				</a>
-			</li>
-			<li>
-				<a href="http://www.micaelwidell.com/p/19/">
-					Life is all about killing the magic
-				</a>
-			</li>
-			<li>
-				<a href="http://www.gamedev.net/blog/355/entry-2258769-advice-to-a-young-programmer/">
-					Advice to a Young Programmer
-				</a>
-			</li>
-			<li>
-				<a href="http://pythontesting.net/community/power-of-thank-you/">
-					The power of “Thank You”
-				</a>
-			</li>
-			<li>
-				<a href="http://blogs.salesforce.com/company/2013/09/the-5-character-traits-of-great-salespeople.html">
-					The 5 Character Traits of Great Salespeople
-				</a>
-			</li>
-			<li>
-				<a href="http://www.defmacro.org/2013/09/26/products.html">
-					How to build great products
-				</a>
-			</li>
-			<li>
-				<a href="http://rocknerd.co.uk/2013/09/13/culture-is-not-about-aesthetics-punk-rock-is-now-enforced-by-law/">
-					Culture is not about aesthetics. Punk rock is now enforced by law.
-				</a>
-			</li>
-			<li>
-				<a href="http://www.reddit.com/r/cscareerquestions/comments/1m7xb0/if_youve_relocated_to_a_high_tech_area_was_it/cc7b7t4?context=3">
-					If you've relocated to a high tech area: Was it worth it?
-				</a>
-			</li>
-			<li>
-				<a href="http://northwesthistory.blogspot.se/2011/11/open-letter-to-my-students-no-you.html">
-					Open Letter to My Students: No, You Cannot be a Professor
-				</a>
-			</li>
-			<li>
-				<a href="http://www.huffingtonpost.com/2013/09/16/happiness-habits-of-exuberant-human-beings_n_3909772.html">
-					The Habits Of Supremely Happy People
-				</a>
-			</li>
-			<li>
-				<a href="http://hackerhmb.tumblr.com/post/61477929414/thebestprogrammerintheworld">
-					The Best Programmer in the World is the One Having the Most Fun
-				</a>
-			</li>
-			<li>
-				<a href="http://www.mobify.com/blog/beginners-guide-to-perceived-performance/">
-					A Beginner's Guide to Perceived Performance
-				</a>
-			</li>
-			<li>
-				<a href="http://www.cringely.com/2013/09/19/the-secret-of-ios-7/">
-					The Secret of iOS 7
-				</a>
-			</li>
-			<li>
-				<a href="https://medium.com/life-hacks/76632b62eb0b">
-					JUST GO HOME.
-				</a>
-			</li>
-			<li>
-				<a href="http://www.lettersofnote.com/2012/10/people-simply-empty-out.html">
-					People simply empty out
-				</a>
-			</li>
-			<li>
-				<a href="https://scoutzie.com/blog/curiosity-makes-the-entrepreneur">
-					Curiosity Makes The Entrepreneur
-				</a>
-			</li>
-			<li>
-				<a href="http://www.slate.com/blogs/future_tense/2013/08/16/sitting_at_computers_all_day_is_killing_us_this_video_could_help_save_your.html">
-					Sitting at Computers Is Killing Us, but This Video Could Help Save Your Life
-				</a>
-			</li>
-			<li>
-				<a href="http://bits.debian.org/2013/08/20-birthday-debian.html">
-					Happy 20th birthday Debian!
-				</a>
-			</li>
-			<li>
-				<a href="http://www.collective-evolution.com/2013/07/01/the-true-size-of-africa-have-our-maps-been-misleading-for-over-500-years/#_">
-					The TRUE Size of Africa – Have Our Maps Been Misleading For Over 500 Years?
-				</a>
-			</li>
-			<li>
-				<a href="http://firstround.com/article/42-Rules-to-Lead-by-from-the-Man-Who-Defined-Googles-Product-Strategy">
-					42 Rules to Lead by from the Man Who Defined Google’s Product Strategy
-				</a>
-			</li>
-			<li>
-				<a href="http://blog.samaltman.com/how-things-get-done">
-					How things get done
-				</a>
-			</li>
-			<li>
-				<a href="http://bijansabet.com/post/44870687156/who-took-a-chance-on-you">
-					WHO TOOK A CHANCE ON YOU?
-				</a>
-			</li>
-			<li>
-				<a href="http://sashmackinnon.com/what-its-like-to-die">
-					What it’s like to die
-				</a>
-			</li>
-			<li>
-				<a href="http://hackerhmb.tumblr.com/post/45169323236/how-i-beat-depression">
-					How I Beat Depression
-				</a>
-			</li>
-			<li>
-				<a href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD03xx/EWD340.html">
-					The Humble Programmer
-				</a>
-			</li>
-			<li>
-				<a href="http://blogs.technet.com/b/inside_microsoft_research/archive/2013/07/16/digital-assistance-for-sign-language-users.aspx">
-					Digital Assistance for Sign-Language Users
-				</a>
-			</li>
-			<li>
-				<a href="http://www.nypost.com/p/news/local/my_hell_as_operator_HYlg05QYm291rqIakgY24J">
-					My hell as a 911 operator
-				</a>
-			</li>
-			<li>
-				<a href="https://speakerdeck.com/giladvdn/ten-things-about-being-a-founder-i-wish-i-knew-two-years-ago?utm_source=buffer&amp;utm_campaign=Buffer&amp;utm_content=buffer1015c&amp;utm_medium=twitter">
-					Ten things about being a founder I wish I knew two years ago.
-				</a>
-			</li>
-			<li>
-				<a href="http://blackhole12.blogspot.ca/2013/04/playing-on-easy-mode.html">
-					<span aria-hidden="true" data-icon="&#xe005;"></span> Playing On Easy Mode
-				</a>
-			</li>
-			</li>
-			<li>
-				<a href="http://chrisbrecheen.blogspot.com.au/2013/07/changing-creepy-guy-narrative.html">
-					Changing The Creepy Guy Narrative
-				</a>
-			</li>
-			<li>
-				<a href="http://tech.xtremelabs.com/practical-android-design/">
-					Practical Android Design by Xtreme Labs
-				</a>
-			</li>
-			<li>
-				<a href="http://blog.samaltman.com/what-happened-to-innovation-1">
-					What happened to innovation?
-				</a>
-			</li>
-			<li>
-				<a href="http://justinjackson.ca/words.html">
-					This is a web page.
-				</a>
-			</li>
-			<li>
-				<a href="http://michaelaz.github.io/">
-					This is also a web page.
-				</a>
-			</li>
-			<li>
-				<a href="http://venturebeat.com/2013/06/20/google-says-tricky-job-interview-brainteasers-were-a-waste-of-time/">
-					Google says tricky job interview brainteasers were ‘a waste of time’
-				</a>
-			</li>
-			<li>
-				<a href="http://ahmetalpbalkan.com/blog/8-months-microsoft/">
-					8 months in Microsoft, I learned these
-				</a>
-			</li>
-			<li>
-				<a href="https://www.focusatwill.com/music/#player">
-					Focus At Will
-				</a>
-			</li>
-			<li>
-				<a href="http://www.paulgraham.com/gba.html">
-					The Word 'Hacker'
-				</a>
-			</li>
-			<li>
-				<a href="http://spencerfry.com/on-writing">
-					Spencer Fry On Writing
-				</a>
-			</li>
-			<li>
-				<a href="http://al3x.net/2013/05/23/letter-to-a-young-programmer.html">
-					Letter To A Young Programmer Considering A Startup
-				</a>
-			</li>
-			<li>
-				<a href="https://medium.com/what-i-learned-building/9216e1c9da7d">
-					McDonald's Theory
-				</a>
-			</li>
-			<li>
-				<a href="http://nathanmarz.com/blog/you-should-blog-even-if-you-have-no-readers.html">
-					You should blog even if you have no readers
-				</a>
-			</li>
-			<li>
-				<a href="http://m.guardiannews.com/media/2013/apr/12/news-is-bad-rolf-dobelli#top">
-					News is bad for you &ndash; and giving up reading it will make you happier
-				</a>
-			</li>
-			<li>
-				<a href="http://worldofsu.com/philipsu/goodbye-microsoft-hello-facebook/">
-					Goodbye Microsoft, Hello Facebook!
-				</a>
-			</li>
-			<li>
-				<a href="http://inventor-labs.com/blog/2011/10/12/what-its-really-like-working-with-steve-jobs.html">
-					What it's Really Like Working with Steve Jobs
-				</a>
-			</li>
-			<li>
-				<a href="http://robbwolf.com/2010/12/31/easy-ways-to-be-a-sleep-viking-in-2011/">
-					Easy Ways To Be A Sleep Viking In 2011
-				</a>
-			</li>
-			<li>
-				<a href="http://alexdong.com/ward-cunningham-answered-do-wikis-have-to-be-ugly/">
-					Ward Cunningham answered "Do wikis have to be ugly? "
-				</a>
-			</li>
-			<li>
-				<a href="http://www.jasonshen.com/2012/kevin-gaos-6-rules-of-well-being/">
-					Kevin Gao's 6 Rules of Well-Being
-				</a>
-			</li>
-			<li>
-				<a href="http://sebastianmarshall.com/on-willpower-and-why-its-not-enough">
-					Willpower Isn't Enough
-				</a>
-			</li>
-			<li>
-				<a href="http://sivers.org/my-fault">
-					Everything is my fault
-				</a>
-			</li>
-			<li>
-				<a href="http://al3x.net/2012/11/11/alone-together-again.html">
-					Alone Together, Again
-				</a>
-			</li>
-			<li>
-				<a href="http://www.raptitude.com/2012/07/most-lives-are-lived-by-default/">
-					Most lives are lived by default
-				</a>
-			</li>
-			<li>
-				<a href="http://blog.seangransee.com/post/35254966580/no-studying-after-5pm-using-parkinsons-law-to-kick">
-					No Studying After 5PM ...
-				</a>
-			</li>
-			<li>
-				<a href="http://blog.ejovi.net/people-innovate-in-america-because-they-are-angry/">
-					People Innovate in America because they are Angry
-				</a>
-			</li>
-			<li>
-				<a href="http://99u.com/tips/7223/How-Barack-Obama-Gets-Things-Done">
-					How Barack Obama Gets Things Done
-				</a>
-			</li>
-			<li>
-				<a href="http://lifehacker.com/5944198/president-obamas-productivity-tactics">
-					President Obama's Productivity Tactics
-				</a>
-			</li>
-			<li>
-				<a href="http://www.nerdess.net/waffling/why-it-awesome-be-girl-tech/">
-					Why It's Awesome Being a Girl in Tech.
-				</a>
-			</li>
-			<li>
-				<a href="http://rdegges.com/how-i-learned-to-program">
-					How I Learned to Program
-				</a>
-			</li>
-			<li>
-				<a href="http://www.youtube.com/watch?v=aUaInS6HIGo">
-					<span aria-hidden="true" data-icon="&#xe005;"></span> What is the single best thing we can do for our health
-				</a>
-			</li>
-			<li>
-				<a href="http://www.youtube.com/watch?v=xpi1xKD20dw">
-					Amy hears sound for the first time @ 26 years old
-				</a>
-			</li>
-			<li>
-				<a href="http://www.wimp.com/cultureshock/">
-					Culture shock for Amazon chief's son who left rainforest for New York.
-				</a>
-			</li>
-			<li>
-				<a href="http://www.wimp.com/awesomemotivation/">
-					Awesome Motivation
-				</a>
-			</li>
-			<li>
-				<a href="http://www.wimp.com/amazingpeople/">
-					People are amazing...
-				</a>
-			</li>
-			<li>
-				<a href="http://nowiknow.com/">
-					Now I Know
-				</a>
-			</li>
+			{% endfor %}
 		</ul>
 	</div>
 </div>
@@ -472,65 +106,20 @@ sub: me
 	<div class="small-12 columns">
 		<h2>
 			<a name="talks" class="bg">
-				Favourite Talks
+				Favourite TED Talks
 			</a>
 		</h2>
 		<ul>
+			{% for tedtalk in site.data.tedtalks %}
 			<li>
-				<a href="http://www.ted.com/talks/joel_burns_tells_gay_teens_it_gets_better.html">
-					<span aria-hidden="true" data-icon="&#xe005;"></span> Joel Burns tells gay teens "it gets better"
+				<a href="{{ tedtalk.link }}">
+					{% if tedtalk.starred == true %}
+					<span aria-hidden="true" data-icon="&#xe005;"></span>
+					{% endif %}
+					{{ tedtalk.title }}
 				</a>
 			</li>
-			<li>
-				<a href="http://www.ted.com/talks/shawn_achor_the_happy_secret_to_better_work.html">
-					Shawn Anchor: The happy secret to better work
-				</a>
-			</li>
-			<li>
-				<a href="http://www.ted.com/talks/robert_ballard_on_exploring_the_oceans.html">
-					Robery Ballard on exploring the oceans
-				</a>
-			</li>
-			<li>
-				<a href="http://www.ted.com/talks/benjamin_zander_on_music_and_passion.html">
-					Benjamin Zander: The transformative power of classical music
-				</a>
-			</li>
-			<li>
-				<a href="http://www.ted.com/talks/ken_robinson_says_schools_kill_creativity.html">
-					Ken Robinson says schools kill creativity
-				</a>
-			</li>
-			<li>
-				<a href="http://www.ted.com/talks/andy_puddicombe_all_it_takes_is_10_mindful_minutes.html">
-					Andy Puddicombe: All it takes is 10 mindful minutes
-				</a>
-			</li>
-			<li>
-				<a href="http://www.ted.com/talks/ben_saunders_why_bother_leaving_the_house.html">
-					Ben Saunders: Why bother leaving the house?
-				</a>
-			</li>
-			<li>
-				<a href="http://www.ted.com/talks/steve_jobs_how_to_live_before_you_die.html">
-					Steve Jobs: How to live before you die
-				</a>
-			</li>
-			<li>
-				<a href="http://www.ted.com/talks/joshua_foer_feats_of_memory_anyone_can_do.html">
-					Joshua Foer: Feats of Memory Anyone Can Do
-				</a>
-			</li>
-			<li>
-				<a href="http://www.ted.com/talks/neil_pasricha_the_3_a_s_of_awesome.html">
-					Neil Pasricha: The 3 A's of Awesome
-				</a>
-			</li>
-			<li>
-				<a href="http://al3x.net/2012/11/11/alone-together-again.html">
-					Amy Cuddy: Your body language shapes who you are
-				</a>
-			</li>
+			{% endfor %}
 		</ul>
 	</div>
 </div>
@@ -544,41 +133,13 @@ sub: me
 			</a>
 		</h2>
 		<ul>
+			{% for blogger in site.data.bloggers %}
 			<li>
-				<a href="http://abduzeedo.com/">
-					abduzeedo
+				<a href="{{ post.link }}">
+					{{ blogger.title }}
 				</a>
 			</li>
-			<li>
-				<a href="http://www.jasonshen.com/">
-					Jason Shen
-				</a>
-			</li>
-			<li>
-				<a href="http://zachholman.com/about">
-					Zach Holman
-				</a>
-			</li>
-			<li>
-				<a href="http://alistapart.com/">
-					A List Apart
-				</a>
-			</li>
-			<li>
-				<a href="http://al3x.net/about.html">
-					Alex Payne
-				</a>
-			</li>
-			<li>
-				<a href="http://sebastianmarshall.com/">
-					Sebastian Marshall
-				</a>
-			</li>
-			<li>
-				<a href="http://ctshryock.com/">
-					Clint Shryock
-				</a>
-			</li>
+			{% endfor %}
 		</ul>
 	</div>
 </div>

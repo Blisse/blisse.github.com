@@ -5,7 +5,7 @@ date: 2012-09-15
 tags: [gaming]
 comments: false
 
-pure_markdown: false
+pure_markdown: true
 archived: true
 ---
 

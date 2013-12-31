@@ -7,13 +7,13 @@ sub: archives
 <div class="row">
     <div class="small-12 columns">
         <h2>
-            <a href="{{ page.url }}">
+            <a href="{{ post.url }}" class="bg">
                 {{ page.title }}
             </a>
         </h2>
     </div>
 </div>
-
+    
 <div class="row">
     <div class="small-12 columns">
         <p class="tags">
@@ -22,11 +22,17 @@ sub: archives
     </div>
 </div>
 
+{% if page.pure_markdown == true %}
 <div class="row">
-    <div class="small-12 columns">
+    <div class="small-12 columns post">
         {{ content | markdownify }}
     </div>
 </div>
+{% else %}
+
+{{ content | markdownify }}
+
+{% endif %}
     
 {% if page.comments %}
 <div class="row">

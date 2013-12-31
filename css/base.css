@@ -221,3 +221,13 @@ div#nex-menu {
 
 .post {
   margin-bottom: 8.0rem; }
+
+@media only screen {
+  .youtube {
+    height: 170px;
+    width: 285px; } }
+@media only screen and (min-width: 64.063em) {
+  .youtube {
+    height: 240px;
+    width: 460px; } }
+/* min-width 1025px, large screens */

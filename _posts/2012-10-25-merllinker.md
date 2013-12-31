@@ -5,7 +5,7 @@ date: 2012-10-25
 tags: [school]
 comments: false
 
-pure_markdown: false
+pure_markdown: true
 archived: true
 ---
 

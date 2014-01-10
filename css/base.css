@@ -131,30 +131,27 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 .work-entry {
-  margin-bottom: 2rem; }
-  .work-entry .work-title a, .work-entry .work-title span {
-    white-space: nowrap;
-    display: inline-block; }
-  .work-entry .work-title a {
-    padding-top: 0.3rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem; }
-    .work-entry .work-title a.title {
-      color: #3299bb; }
-    .work-entry .work-title a.title:hover {
-      color: #f6f6f6;
-      background: #3299bb; }
-    .work-entry .work-title a.title:active {
-      color: #f6f6f6;
-      background: #424242; }
-    .work-entry .work-title a.company {
-      color: #424242; }
-    .work-entry .work-title a.company:hover {
-      color: #f6f6f6;
-      background: #424242; }
-    .work-entry .work-title a.company:active {
-      color: #f6f6f6;
-      background: #1a1a1a; }
+  margin-bottom: 1rem; }
+  .work-entry .work-title {
+    /* Define mobile styles */
+    /* min-width 641px, medium screens */ }
+    .work-entry .work-title a, .work-entry .work-title span {
+      font-family: "Open Sans";
+      text-transform: none;
+      font-weight: 500;
+      display: inline-block; }
+    .work-entry .work-title short span, .work-entry .work-title long span {
+      white-space: nowrap; }
+    @media only screen {
+      .work-entry .work-title short {
+        display: inline-block; }
+      .work-entry .work-title long {
+        display: none; } }
+    @media only screen and (min-width: 64.063em) {
+      .work-entry .work-title short {
+        display: none; }
+      .work-entry .work-title long {
+        display: inline-block; } }
   .work-entry .work-date {
     white-space: nowrap;
     text-transform: uppercase;

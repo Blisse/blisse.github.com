@@ -12,8 +12,15 @@ sub: me
 				Never give up.
 			</p>
 		</div>
+		<blockquote>
+			{% for line in site.data.profile.missionstatement %}
+			<h5>
+				{{ line }}
+			</h5>
+			{% endfor %}
+		</blockquote>
 		<p>
-			Hi! My name is Victor Lai. I'm a Software Engineering student at the University of Waterloo.
+			Hi! My name is Victor Lai. I'm a Software Engineering student at the University of Waterloo, and I'm passionate about great experiences backed up by great code.
 		</p>
 	</div>
 </div>
@@ -21,19 +28,13 @@ sub: me
 <div class="row">
 	<div class="small-12 columns">
 		<p>
-			I love learning. 
+			I love learning, and I think everyone does, too. But I'm also learning to love making mistakes and learning from them.
 		</p>
 		<p>
-			No seriously, I do. I'm a huge fan of responsible learning, understanding the responsibilities you have as you receive and use the knowledge you're given.
-		</p>
+			As a programmer and Software Engineering student, I'm peeved by horribly unmaintainable and excessive code. But as a user, I'm just as peeved by poor user experiences. I'm always learning from both, so it's really cool watching my views change as I'm exposed to more code and experiences backed by code.
+ 		</p>
 		<p>
-			Software Engineering makes sense then. I also love making stuff. You can't beat the satisfaction of pounding your head at a missing semicolon. 
-		</p>
-		<p>
-			I love having things .. work, but more importantly I try to push for <a href="http://www.webstock.org.nz/talks/how-designers-destroyed-the-world/">responsible design</a>, and push for the understanding the consequences of development and design. All the while, I enjoy fine-tuning my code to make it all the more usable to the end user (UI/UX), or to other developers (maintainability). I still have a lot to learn. Good thing I love learning.
-		</p
->		<p>
-			When I'm not neck-deep in random programming activities, I'm off screwing my head back on. Sometimes, that involves working out, running, learning kendo, learning to play the guitar. Other times, it'll be falling asleep with my Kobo on my head, catching up on my tech news, looking for new music (there's too much music out there!), or trying out some other new hobby or pushing some other limit (this month: sleeping early and getting up early).
+			Other than that, when I'm not neck-deep dabbling in programming, I'm out learning. At the moment, I'm enjoying learning how to skate, to eventually play hockey. I'm also working out, running, and learning to play the guitar.
 		</p>
 	</div>
 </div>
@@ -44,28 +45,25 @@ sub: me
 			I love music too. This is my favourite song.
 		</p>
 		<p>
-			<iframe class="youtube" src="//www.youtube.com/embed/fTXhpIC3img" frameborder="0" allowfullscreen></iframe>
+			<iframe class="youtube" src="//www.youtube.com/embed/{{ site.data.profile.song }}" frameborder="0" allowfullscreen></iframe>
 		</p>
 		<p>
 			And this is my favourite video.
 		</p>
 		<p>
-			<iframe class="youtube" src="//www.youtube.com/embed/fLJsdqxnZb0" frameborder="0" allowfullscreen></iframe>
+			<iframe class="youtube" src="//www.youtube.com/embed/{{ site.data.profile.video }}" frameborder="0" allowfullscreen></iframe>
 		</p>
 	</div>
 </div>
 
 <div class="row">
 	<div class="small-12 columns">
-		<h2>
-			<a name="quotes" class="bg">
-				Favourite Quotes
-			</a>
+		<h2 class="bg">
+			Favourite Quotes
 		</h2>
 		{% for quote in site.data.quotes %}
 
 		<blockquote>
-
 			{% for line in quote.lines %}
 			<p>
 				{{ line }}
@@ -82,12 +80,10 @@ sub: me
 
 <div class="row">
 	<div class="small-12 columns">
-		<h2>
-			<a name="posts" class="bg">
-				Favourite Posts
-			</a>
+		<h2 class="bg">
+			Favourite Posts
 		</h2>
-		<ul>
+		<ul class="no-bullet">
 			{% for post in site.data.posts %}
 			<li>
 				<a href="{{ post.link }}">
@@ -104,10 +100,8 @@ sub: me
 
 <div class="row">
 	<div class="small-12 columns">
-		<h2>
-			<a name="talks" class="bg">
-				Favourite TED Talks
-			</a>
+		<h2 class="bg">
+			Favourite TED Talks
 		</h2>
 		<ul>
 			{% for tedtalk in site.data.tedtalks %}
@@ -127,15 +121,13 @@ sub: me
 
 <div class="row">
 	<div class="small-12 columns">
-		<h2>
-			<a name="bloggers" class="bg">
-				Favourite Bloggers
-			</a>
+		<h2 class="bg">
+			Favourite Bloggers
 		</h2>
 		<ul>
 			{% for blogger in site.data.bloggers %}
 			<li>
-				<a href="{{ post.link }}">
+				<a href="{{ blogger.link }}">
 					{{ blogger.title }}
 				</a>
 			</li>
@@ -158,15 +150,10 @@ sub: me
 			create this website is publicly available on <a href="http://github.com/Blisse/blisse.github.com">GitHub</a>.
 		</p>
 		<p>
-			All the posts here are Copyright &copy; <a href="{{ site.url }}">{{ site.author }}.</a>
+			All the posts here are Copyright &copy; 2012-2014 <a href="{{ site.url }}">{{ site.author }}.</a>
 			Any thing else is <a href="http://en.wikipedia.org/wiki/Mit_license">MIT licensed</a>.
 			Feel free to reuse the <a href="http://en.wikipedia.org/wiki/Html">HTML</a> and
 			<a href="http://en.wikipedia.org/wiki/Css">CSS</a>.
-		</p>
-		<p>
-			The opinions expressed herein are my own personal opinions and do not represent my employer's view in any way.
-			This website is not responsible for externally hosted material, including linked
-			articles, photos or any other media.
 		</p>
 	</div>
 </div>

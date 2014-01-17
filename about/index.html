@@ -7,13 +7,6 @@ sub: me
 
 <div class="row">
 	<div class="small-12 columns">
-		<blockquote class="about-title-quote">
-			{% for line in site.data.profile.missionstatement %}
-			<p>
-				{{ line }}
-			</p>
-			{% endfor %}
-		</blockquote>
 		<p>
 			Hi! My name is Victor Lai. I'm a Software Engineering student at the University of Waterloo, and I'm passionate about great experiences backed up by great code.
 		</p>
@@ -133,10 +126,8 @@ sub: me
 
 <div class="row">
 	<div class="small-12 columns">
-		<h2>
-			<a name="copyright" class="bg">
-				Copyright
-			</a>
+		<h2 class="bg">
+			Copyright
 		</h2>
 		<p>
 			This website is built using <a href="http://github.com/mojombo/jekyll"
@@ -155,16 +146,38 @@ sub: me
 
 <div class="row">
 	<div class="small-12 columns">
-		<h2>
-			<a name="Contact" class="bg">
-				Contact
-			</a>
+		<h2 class="bg">
+			Contact
 		</h2>
 		
 		<p>
 			If you want to contact me, send me a message at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
 		</p>
 	</div>
+</div>
+
+<div class="row home-social">
+    <div class="small-12 medium-4 columns">
+        <h2>
+            <a href="http://www.github.com/{{ site.github }}">      
+                <span aria-hidden="true" data-icon="&#xe000;"></span> Github
+            </a>
+        </h2>
+    </div>
+    <div class="small-12 medium-4 columns">
+        <h2>
+            <a href="mailto:{{ site.email }}">
+                <span aria-hidden="true" data-icon="&#xe010;"></span> Email
+            </a>
+        </h2>
+    </div>
+    <div class="small-12 medium-4 columns">
+        <h2>
+            <a href="/atom.xml">
+                <span aria-hidden="true" data-icon="&#xe00c;"></span> RSS
+            </a>
+        </h2>
+    </div>
 </div>
 
 <div class="row home-social">

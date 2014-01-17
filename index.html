@@ -4,29 +4,15 @@ title: home
 main: home
 ---
 
-<div class="row home-social">
-    <div class="small-12 medium-4 columns">
-        <h2>
-            <a href="http://www.github.com/{{ site.github }}">      
-                <span aria-hidden="true" data-icon="&#xe000;"></span> Github
-            </a>
-        </h2>
-    </div>
-    <div class="small-12 medium-4 columns">
-        <h2>
-            <a href="mailto:{{ site.email }}">
-                <span aria-hidden="true" data-icon="&#xe010;"></span> Email
-            </a>
-        </h2>
-    </div>
-    <div class="small-12 medium-4 columns">
-        <h2>
-            <a href="/atom.xml">
-                <span aria-hidden="true" data-icon="&#xe00c;"></span> RSS
-            </a>
-        </h2>
-    </div>
-</div>
 
-<div class="row">
+<div class="home-background">
+    <div class="row">
+        <blockquote class="home-title-quote">
+            {% for line in site.data.profile.missionstatement %}
+            <p>
+                {{ line }}
+            </p>
+            {% endfor %}
+        </blockquote>
+    </div>
 </div>

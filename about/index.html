@@ -6,13 +6,8 @@ sub: me
 ---
 
 <div class="row">
-	<div class="small-12 columns">		
-		<div class="about-title-quote">
-			<p>
-				Never give up.
-			</p>
-		</div>
-		<blockquote>
+	<div class="small-12 columns">
+		<blockquote class="about-title-quote">
 			{% for line in site.data.profile.missionstatement %}
 			<p>
 				{{ line }}

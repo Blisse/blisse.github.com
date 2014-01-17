@@ -276,14 +276,18 @@
 ================================================== */
 
 	.about-title-quote {
-		text-align: center;
- 
 		p {
-			font-size: 2.0rem;
-			font-weight: bold;
-			color: $color-bg;
-			background: $color-darkgray;
+			font-family: Lato, sans-serif;
+			font-size: 2.2rem;
+			font-weight: 300;
+		    color: $color-hovergray;
+	    	margin: 1.5rem 0 1rem;
 		}
+
+	    border-top: 1px solid $color-lightgray;
+	    border-bottom: 1px solid $color-lightgray;
+	    border-left: none;
+	    margin: 2rem 0 4rem;
 	}
 
 

@@ -126,7 +126,7 @@
 		color: $color-darkgray;
 
 		&.bg {
-			background: $color-darkgray;
+			background: $color-blue;
 			color: $color-bg;
 
 			padding-top: 0.3rem;
@@ -139,7 +139,7 @@
 			display: block;
 
 			&.bg {
-				background: $color-blue;
+				background: $color-darkgray;
 				color: $color-bg;
 				padding-top: 0.3rem;
 				padding-left: 0.3rem;
@@ -164,50 +164,37 @@
 	}
 
 	.work-entry {
-		margin-bottom: 1rem;
+		margin-bottom: 2.0rem;
 
 		.work-title {
-			a, span {
+			margin-bottom: 0;
+
+			.title, .company {
 				font-family: $font-open;
-				text-transform: none;
-				font-weight: 500;
+				text-transform: uppercase;
+				font-weight: bold;
 				display: inline-block;
 			}
 
-			short span, long span {
-				white-space: nowrap;
+			.company {
+				color: $color-hovergray;
 			}
-
-			// Small screens
-			@media only screen {
-				short {
-					display: inline-block;
-				}
-				long {
-					display: none;
-				}
-			} /* Define mobile styles */
-
-			// Medium screens
-			@media only screen and (min-width: 64.063em) { 
-				short {
-					display: none;
-				}
-				long {
-					display: inline-block;
-				}
-			} /* min-width 641px, medium screens */
-
 		}
 
 		.work-date {
 			white-space: nowrap;
 			text-transform: uppercase;
 			font-size: 0.8rem;
+			margin-top: 0;
+			margin-bottom: 1rem;
 		}
 
 		.work-description {
+			margin-top: 1.0rem;
 
+			li {
+				font-size: 1.0rem;
+			}
 		}
 	}
 

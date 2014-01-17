@@ -14,9 +14,9 @@ sub: me
 		</div>
 		<blockquote>
 			{% for line in site.data.profile.missionstatement %}
-			<h5>
+			<p>
 				{{ line }}
-			</h5>
+			</p>
 			{% endfor %}
 		</blockquote>
 		<p>
@@ -103,7 +103,7 @@ sub: me
 		<h2 class="bg">
 			Favourite TED Talks
 		</h2>
-		<ul>
+		<ul class="no-bullet">
 			{% for tedtalk in site.data.tedtalks %}
 			<li>
 				<a href="{{ tedtalk.link }}">
@@ -124,7 +124,7 @@ sub: me
 		<h2 class="bg">
 			Favourite Bloggers
 		</h2>
-		<ul>
+		<ul class="no-bullet">
 			{% for blogger in site.data.bloggers %}
 			<li>
 				<a href="{{ blogger.link }}">
@@ -170,4 +170,28 @@ sub: me
 			If you want to contact me, send me a message at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
 		</p>
 	</div>
+</div>
+
+<div class="row home-social">
+    <div class="small-12 large-4 columns">
+        <h2>
+            <a href="http://ca.linkedin.com/in/{{ site.linkedin }}/">
+                <span aria-hidden="true" data-icon="&#xe020;"></span> LinkedIn
+            </a>
+        </h2>
+    </div>
+    <div class="small-12 large-4 columns">
+        <h2>
+            <a href="http://www.last.fm/user/{{ site.lastfm }}">
+                <span aria-hidden="true" data-icon="&#xe021;"></span> Last.fm
+            </a>
+        </h2>
+    </div>
+    <div class="small-12 large-4 columns">
+        <h2>
+            <a href="http://www.twitter.com/{{ site.twitter }}">
+                <span aria-hidden="true" data-icon="&#xe002;"></span> Twitter
+            </a>
+        </h2>
+    </div>
 </div>

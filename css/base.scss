@@ -298,6 +298,28 @@
 /* #About
 ================================================== */
 
+	.about-quotes {
+
+		blockquote {
+			border-left: 2px solid $color-red;
+			background: $color-ultralightgray;
+
+			padding: 1.6rem;
+			margin: 3.2rem 0;
+
+			p {
+				font-size: 1.2rem;
+				color: $color-darkgray;
+				padding: 0.6rem 1.6rem;
+			}
+
+			cite {
+				color: $color-darkgray;
+				float: right;
+				margin-bottom: 0.6rem;
+			}
+		}
+	}
 
 /* #Blog
 ================================================== */

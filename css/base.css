@@ -213,6 +213,20 @@ div#nex-menu {
 
 /* #About
 ================================================== */
+.about-quotes blockquote {
+  border-left: 2px solid #990100;
+  background: #eeeeee;
+  padding: 1.6rem;
+  margin: 3.2rem 0; }
+  .about-quotes blockquote p {
+    font-size: 1.2rem;
+    color: #424242;
+    padding: 0.6rem 1.6rem; }
+  .about-quotes blockquote cite {
+    color: #424242;
+    float: right;
+    margin-bottom: 0.6rem; }
+
 /* #Blog
 ================================================== */
 .tags {

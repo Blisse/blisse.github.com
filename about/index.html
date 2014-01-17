@@ -49,20 +49,22 @@ sub: me
 		<h2 class="bg">
 			Favourite Quotes
 		</h2>
-		{% for quote in site.data.quotes %}
 
-		<blockquote>
-			{% for line in quote.lines %}
-			<p>
-				{{ line }}
-			</p>
-			{% endfor %}
-			<cite>
-				{{ quote.cite }}
-			</cite>
-		</blockquote>
+        <div class="about-quotes">
+            {% for quote in site.data.quotes %}
+            <blockquote>
+                {% for line in quote.lines %}
+                <p>
+                    {{ line }}
+                </p>
+                {% endfor %}
+                <cite>
+                    {{ quote.cite }}
+                </cite>
+            </blockquote>
+            {% endfor %}
+        </div>
 
-		{% endfor %}
 	</div>
 </div>
 

@@ -214,8 +214,8 @@ div#nex-menu {
 /* #About
 ================================================== */
 .about-quotes blockquote {
-  border-left: 2px solid #990100;
-  background: #eeeeee;
+  border-left: 2px solid #3299bb;
+  background: #f0f0f0;
   padding: 1.6rem;
   margin: 3.2rem 0; }
   .about-quotes blockquote p {

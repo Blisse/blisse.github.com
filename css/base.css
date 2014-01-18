@@ -190,14 +190,14 @@ div#nex-menu {
   white-space: nowrap; }
 
 .home-background {
-  background: url(/images/nebula_bg.jpg) no-repeat center center fixed;
+  background: url(/assets/img/background_0.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 100%;
   width: 100%;
-  height: 1080px; }
+  height: 100%; }
 
 .home-title-quote {
   border-left: none;

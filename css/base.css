@@ -186,32 +186,47 @@ div#nex-menu {
 /* #Page Specific CSS */
 /* #Home
 ================================================== */
-.home-social a {
-  white-space: nowrap; }
-
 .home-background {
   background: url(/assets/img/background_0.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-box-shadow: inset 0 35px 35px -15px #000;
-  -moz-box-shadow: inset 0 35px 35px -15px #000;
-  box-shadow: inset 0 35px 35px -15px #000;
+  -webkit-box-shadow: inset 0 -35px 35px -20px #000, inset 0 35px 35px -20px #000;
+  -moz-box-shadow: inset 0 -35px 35px -20px #000, inset 0 35px 35px -20px #000;
+  box-shadow: inset 0 -35px 35px -20px #000, inset 0 35px 35px -20px #000;
   min-height: 100%;
   width: 100%;
   height: 100%; }
+  .home-background .home-title-quote {
+    border-left: none;
+    margin: 2rem 0 4rem;
+    padding-bottom: 1rem; }
+    .home-background .home-title-quote p {
+      font-family: Lato, sans-serif;
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: #f6f6f6;
+      margin: 1rem 0; }
 
-.home-title-quote {
-  border-left: none;
+.home-posts {
   margin: 2rem 0 4rem;
   padding-bottom: 1rem; }
-  .home-title-quote p {
-    font-family: Lato, sans-serif;
-    font-size: 2.2rem;
-    font-weight: 300;
-    color: #f6f6f6;
-    margin: 1rem 0; }
+  .home-posts p {
+    font-size: 1.0rem; }
+  .home-posts h2 {
+    font-size: 1.4rem; }
+  .home-posts li {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #3299bb;
+    margin: 0.2rem 1.6rem; }
+    .home-posts li a {
+      border-bottom: 1px dotted #3299bb; }
+      .home-posts li a:hover {
+        background: #3299bb;
+        color: #f6f6f6;
+        border-bottom: 1px solid #3299bb; }
 
 /* #About
 ================================================== */
@@ -228,6 +243,9 @@ div#nex-menu {
     color: #424242;
     float: right;
     margin-bottom: 0.6rem; }
+
+.about-social a {
+  white-space: nowrap; }
 
 /* #Blog
 ================================================== */

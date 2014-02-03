@@ -45,7 +45,7 @@ html {
 body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  background-color: #f6f6f6; }
+  background-color: white; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -72,11 +72,11 @@ img.scale-with-grid {
 li {
   font-family: "Open Sans";
   font-size: 1.1rem;
-  color: #424242; }
+  color: #1a1a1a; }
 
 p {
   font-family: "Open Sans";
-  color: #424242;
+  color: #1a1a1a;
   font-size: 1.1rem; }
   p a {
     display: inline-block;
@@ -86,42 +86,42 @@ p {
     transition: color 50ms ease 50ms;
     border-bottom: 2px dotted transparent; }
   p a:link, p a:visited {
-    color: #3299bb;
-    border-bottom: 2px dotted #3299bb; }
+    color: #cb687b;
+    border-bottom: 2px dotted #cb687b; }
   p a:hover {
-    color: #f6f6f6;
-    background: #3299bb;
+    color: white;
+    background: #cb687b;
     border-bottom: 2px dotted transparent; }
   p a:active {
-    color: #f6f6f6;
-    background: #424242;
+    color: white;
+    background: #bcbcbc;
     border-bottom: 2px dotted transparent; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Nexa Bold";
   display: block;
   text-transform: uppercase;
-  color: #424242; }
+  color: #1a1a1a; }
   h1.bg, h2.bg, h3.bg, h4.bg, h5.bg, h6.bg {
     background: #3299bb;
-    color: #f6f6f6;
+    color: white;
     padding-top: 0.3rem;
     padding-left: 0.3rem;
     padding-right: 0.3rem; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: #3299bb;
+    color: white;
     display: block; }
     h1 a.bg, h2 a.bg, h3 a.bg, h4 a.bg, h5 a.bg, h6 a.bg {
-      background: #424242;
-      color: #f6f6f6;
+      background: #cb687b;
+      color: white;
       padding-top: 0.3rem;
       padding-left: 0.3rem;
       padding-right: 0.3rem; }
       h1 a.bg:hover, h2 a.bg:hover, h3 a.bg:hover, h4 a.bg:hover, h5 a.bg:hover, h6 a.bg:hover {
-        background: #8a8a8a; }
+        background: #eaeaea; }
       h1 a.bg:active, h2 a.bg:active, h3 a.bg:active, h4 a.bg:active, h5 a.bg:active, h6 a.bg:active {
-        background: #424242;
-        color: #f6f6f6; }
+        background: #1a1a1a;
+        color: white; }
 
 .button {
   font-family: "Nexa Bold";
@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: bold;
       display: inline-block; }
     .work-entry .work-title .company {
-      color: #8a8a8a; }
+      color: #eaeaea; }
   .work-entry .work-date {
     white-space: nowrap;
     text-transform: uppercase;
@@ -166,7 +166,7 @@ div#nex-menu {
   div#nex-menu a {
     font-size: 5.0rem;
     text-transform: uppercase;
-    color: rgba(66, 66, 66, 0.4);
+    color: #eaeaea;
     display: block;
     width: 100%;
     padding: 0.6rem 0.6rem 0 0.6rem;
@@ -175,13 +175,13 @@ div#nex-menu {
     -o-transition: color 100ms ease 100ms;
     transition: color 100ms ease 100ms; }
   div#nex-menu a.active {
-    color: #f6f6f6;
+    color: white;
     background: #ff9900; }
   div#nex-menu a:hover {
-    color: #424242; }
+    color: #8a8a8a; }
   div#nex-menu a:active {
-    color: #f6f6f6;
-    background: #424242; }
+    color: white;
+    background: #8a8a8a; }
 
 /* #Page Specific CSS */
 /* #Home
@@ -206,7 +206,7 @@ div#nex-menu {
       font-family: Lato, sans-serif;
       font-size: 2.2rem;
       font-weight: 300;
-      color: #f6f6f6;
+      color: white;
       margin: 1rem 0; }
 
 .home-posts {
@@ -225,22 +225,22 @@ div#nex-menu {
       border-bottom: 1px dotted #3299bb; }
       .home-posts li a:hover {
         background: #3299bb;
-        color: #f6f6f6;
+        color: white;
         border-bottom: 1px solid #3299bb; }
 
 /* #About
 ================================================== */
 .about-quotes blockquote {
   border-left: 2px solid #3299bb;
-  background: #f0f0f0;
+  background: #f6f6f6;
   padding: 1.6rem;
   margin: 3.2rem 0; }
   .about-quotes blockquote p {
     font-size: 1.2rem;
-    color: #424242;
+    color: #8a8a8a;
     padding: 0.6rem 1.6rem; }
   .about-quotes blockquote cite {
-    color: #424242;
+    color: #8a8a8a;
     float: right;
     margin-bottom: 0.6rem; }
 

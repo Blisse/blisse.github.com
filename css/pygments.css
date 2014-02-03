@@ -38,7 +38,7 @@ code, code > .highlight {
 
 .highlight pre code {
   background-color: #111111;
-  border: 1px solid #424242;
+  border: 1px solid #1a1a1a;
   color: #FFFFFF;
   display: block;
   font-family: "Consolas", monospace !important;

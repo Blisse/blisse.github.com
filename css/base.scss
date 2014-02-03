@@ -1,6 +1,18 @@
 @import "colors";
 @import "typography";
 
+$color-bg:$color-pure-white;
+
+$color-text: $color-ultra-dark-gray;
+
+$color-link: $color-soft-red;
+
+$color-header: $color-gray;
+$color-header-bg: $color-gray;
+
+$color-header-link: $color-bg;
+$color-header-link-bg: $color-soft-red;
+
 /* import reset */
 
 /* #Media Queries
@@ -75,12 +87,12 @@
 	li {
 		font-family: $font-open;
 		font-size: 1.1rem;
-		color: $color-darkgray;
+		color: $color-text;
 	}
 
 	p {
 		font-family: $font-open;
-		color: $color-darkgray;
+		color: $color-text;
 		font-size: 1.1rem;
 
 		a {
@@ -95,19 +107,19 @@
 		}
 
 		a:link, a:visited {
-			color: $color-blue;
-			border-bottom: 2px dotted $color-blue;
+			color: $color-link;
+			border-bottom: 2px dotted $color-link;
 		}
 
 		a:hover {    
 			color: $color-bg;
-			background: $color-blue;
+			background: $color-link;
 			border-bottom: 2px dotted transparent;
 		}
 
 		a:active {    
 			color: $color-bg;
-			background: $color-darkgray;
+			background: $color-gray;
 			border-bottom: 2px dotted transparent;
 		}
 	}
@@ -118,7 +130,7 @@
 		display: block;
 		text-transform: uppercase;
 
-		color: $color-darkgray;
+		color: $color-text;
 
 		&.bg {
 			background: $color-blue;
@@ -130,22 +142,22 @@
 		}
 
 		a {
-			color: $color-blue;
+			color: $color-header-link;
 			display: block;
 
 			&.bg {
-				background: $color-darkgray;
-				color: $color-bg;
+				background: $color-header-link-bg;
+				color: $color-header-link;
 				padding-top: 0.3rem;
 				padding-left: 0.3rem;
 				padding-right: 0.3rem;
 
 				&:hover {
-					background: $color-hovergray;
+					background: $color-light-gray;
 				}
 
 				&:active {
-					background: $color-darkgray;
+					background: $color-text;
 					color: $color-bg;
 				}
 			}
@@ -172,7 +184,7 @@
 			}
 
 			.company {
-				color: $color-hovergray;
+				color: $color-light-gray;
 			}
 		}
 
@@ -224,7 +236,7 @@
 		a {
 			font-size: 5.0rem;
 			text-transform: uppercase;
-			color: $color-darkgray-inactive;
+			color: $color-light-gray;
 			display: block;
 			width: 100%;
 			padding: 0.6rem 0.6rem 0 0.6rem;
@@ -241,12 +253,12 @@
 		}
 
 		a:hover {    
-			color: $color-darkgray;
+			color: $color-dark-gray;
 		}
 
 		a:active {    
 			color: $color-bg;
-			background: $color-darkgray;
+			background: $color-dark-gray;
 		}
 
 	}
@@ -280,7 +292,7 @@
 				font-family: Lato, sans-serif;
 				font-size: 2.2rem;
 				font-weight: 300;
-			    color: $color-white;
+			    color: $color-pure-white;
 		    	margin: 1rem 0;
 			}
 
@@ -330,19 +342,19 @@
 
 		blockquote {
 			border-left: 2px solid $color-blue;
-			background: $color-ultralightgray;
+			background: $color-ultra-light-gray;
 
 			padding: 1.6rem;
 			margin: 3.2rem 0;
 
 			p {
 				font-size: 1.2rem;
-				color: $color-darkgray;
+				color: $color-dark-gray;
 				padding: 0.6rem 1.6rem;
 			}
 
 			cite {
-				color: $color-darkgray;
+				color: $color-dark-gray;
 				float: right;
 				margin-bottom: 0.6rem;
 			}

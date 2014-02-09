@@ -69,75 +69,90 @@ img.scale-with-grid {
 
 /* #Normal stuff
 ================================================== */
-li {
-  font-family: "Open Sans";
-  font-size: 1.1rem;
-  color: #1a1a1a; }
-
-p {
+p, li {
   font-family: "Open Sans";
   color: #1a1a1a;
-  font-size: 1.1rem; }
-  p a {
+  font-size: 1.1rem;
+  font-weight: 400; }
+  p a, li a {
     display: inline-block;
     -webkit-transition: color 50ms ease 50ms;
     -moz-transition: color 50ms ease 50ms;
     -o-transition: color 50ms ease 50ms;
     transition: color 50ms ease 50ms;
     border-bottom: 2px dotted transparent; }
-  p a:link, p a:visited {
-    color: #cb687b;
-    border-bottom: 2px dotted #cb687b; }
-  p a:hover {
+  p a:link, p a:visited, li a:link, li a:visited {
+    color: #a53f45;
+    border-bottom: 2px dotted #a53f45; }
+  p a:hover, li a:hover {
     color: white;
-    background: #cb687b;
+    background: #a53f45;
     border-bottom: 2px dotted transparent; }
-  p a:active {
+  p a:active, li a:active {
     color: white;
-    background: #bcbcbc;
+    background: #990100;
     border-bottom: 2px dotted transparent; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nexa Bold";
+  font-family: "Raleway";
   display: block;
   text-transform: uppercase;
-  color: #1a1a1a; }
-  h1.bg, h2.bg, h3.bg, h4.bg, h5.bg, h6.bg {
-    background: #3299bb;
-    color: white;
-    padding-top: 0.3rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem; }
+  color: #1a1a1a;
+  margin-top: 2rem; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: white;
+    color: #1a1a1a;
     display: block; }
     h1 a.bg, h2 a.bg, h3 a.bg, h4 a.bg, h5 a.bg, h6 a.bg {
-      background: #cb687b;
+      background: #a53f45;
       color: white;
       padding-top: 0.3rem;
       padding-left: 0.3rem;
       padding-right: 0.3rem; }
       h1 a.bg:hover, h2 a.bg:hover, h3 a.bg:hover, h4 a.bg:hover, h5 a.bg:hover, h6 a.bg:hover {
-        background: #eaeaea; }
+        background: #8a8a8a; }
       h1 a.bg:active, h2 a.bg:active, h3 a.bg:active, h4 a.bg:active, h5 a.bg:active, h6 a.bg:active {
-        background: #1a1a1a;
-        color: white; }
+        background: #1a1a1a; }
+
+ul.square li {
+  color: #8a8a8a; }
 
 .button {
   font-family: "Nexa Bold";
   text-transform: uppercase; }
 
+.work-resume {
+  text-align: center; }
+  .work-resume a {
+    font-size: 4rem;
+    display: inline-block; }
+    .work-resume a span {
+      color: #a53f45; }
+      .work-resume a span:hover {
+        color: #1a1a1a; }
+      .work-resume a span:active {
+        color: #8a8a8a; }
+
 .work-entry {
-  margin-bottom: 2.0rem; }
+  margin-bottom: 1.0rem;
+  margin-top: 0rem; }
   .work-entry .work-title {
-    margin-bottom: 0; }
-    .work-entry .work-title .title, .work-entry .work-title .company {
-      font-family: "Open Sans";
-      text-transform: uppercase;
-      font-weight: bold;
-      display: inline-block; }
+    margin-bottom: 0;
+    display: inline-block;
+    font-family: "Raleway";
+    font-weight: 400; }
+    .work-entry .work-title .link {
+      font-size: 1.3rem;
+      display: inline-block;
+      vertical-align: middle; }
     .work-entry .work-title .company {
-      color: #eaeaea; }
+      color: #8a8a8a; }
+    .work-entry .work-title a {
+      color: #a53f45;
+      display: block; }
+      .work-entry .work-title a:hover {
+        color: #1a1a1a; }
+      .work-entry .work-title a:active {
+        color: #8a8a8a; }
   .work-entry .work-date {
     white-space: nowrap;
     text-transform: uppercase;
@@ -147,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   .work-entry .work-description {
     margin-top: 1.0rem; }
     .work-entry .work-description li {
+      color: #1a1a1a;
       font-size: 1.0rem; }
 
 /* #Main Menu
@@ -166,7 +182,7 @@ div#nex-menu {
   div#nex-menu a {
     font-size: 5.0rem;
     text-transform: uppercase;
-    color: #eaeaea;
+    color: #8a8a8a;
     display: block;
     width: 100%;
     padding: 0.6rem 0.6rem 0 0.6rem;
@@ -176,18 +192,18 @@ div#nex-menu {
     transition: color 100ms ease 100ms; }
   div#nex-menu a.active {
     color: white;
-    background: #ff9900; }
+    background: #990100; }
   div#nex-menu a:hover {
-    color: #8a8a8a; }
+    color: #1a1a1a; }
   div#nex-menu a:active {
     color: white;
-    background: #8a8a8a; }
+    background: #1a1a1a; }
 
 /* #Page Specific CSS */
 /* #Home
 ================================================== */
 .home-background {
-  background: url(/assets/img/background_0.jpg) no-repeat center center fixed;
+  background: url(/assets/img/background_5.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -203,11 +219,12 @@ div#nex-menu {
     margin: 2rem 0 4rem;
     padding-bottom: 1rem; }
     .home-background .home-title-quote p {
-      font-family: Lato, sans-serif;
+      font-family: "Raleway";
       font-size: 2.2rem;
       font-weight: 300;
       color: white;
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      text-shadow: 1px 1px 1px black; }
 
 .home-posts {
   margin: 2rem 0 4rem;
@@ -215,37 +232,44 @@ div#nex-menu {
   .home-posts p {
     font-size: 1.0rem; }
   .home-posts h2 {
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 1rem; }
   .home-posts li {
     font-weight: 400;
     font-size: 1rem;
-    color: #3299bb;
+    color: #a53f45;
     margin: 0.2rem 1.6rem; }
     .home-posts li a {
-      border-bottom: 1px dotted #3299bb; }
+      border-bottom: 1px dotted #a53f45; }
       .home-posts li a:hover {
-        background: #3299bb;
+        background: #a53f45;
         color: white;
-        border-bottom: 1px solid #3299bb; }
+        border-bottom: 1px solid #a53f45; }
 
 /* #About
 ================================================== */
 .about-quotes blockquote {
-  border-left: 2px solid #3299bb;
-  background: #f6f6f6;
-  padding: 1.6rem;
-  margin: 3.2rem 0; }
+  border-left: 5px solid #990100;
+  padding: 1.2rem;
+  margin: 2.4rem 0; }
   .about-quotes blockquote p {
     font-size: 1.2rem;
-    color: #8a8a8a;
+    color: #1a1a1a;
     padding: 0.6rem 1.6rem; }
   .about-quotes blockquote cite {
-    color: #8a8a8a;
-    float: right;
+    color: #1a1a1a;
     margin-bottom: 0.6rem; }
 
-.about-social a {
-  white-space: nowrap; }
+.about-social {
+  margin-bottom: 4rem; }
+  .about-social a {
+    white-space: nowrap;
+    text-align: center;
+    margin: 0 0.6rem; }
+    .about-social a span {
+      color: #990100;
+      font-size: 2.4rem; }
 
 /* #Blog
 ================================================== */
@@ -254,17 +278,12 @@ div#nex-menu {
   font-size: 0.8rem; }
 
 .next, .previous {
-  font-family: "Nexa Bold"; }
+  font-family: "Raleway"; }
+
+.paginator .next, .paginator .previous {
+  min-height: 100px;
+  font-size: 1.6rem;
+  background: #a53f45; }
 
 .post {
   margin-bottom: 8.0rem; }
-
-@media only screen {
-  .youtube {
-    height: 170px;
-    width: 285px; } }
-@media only screen and (min-width: 64.063em) {
-  .youtube {
-    height: 240px;
-    width: 460px; } }
-/* min-width 1025px, large screens */

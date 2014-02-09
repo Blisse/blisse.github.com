@@ -5,6 +5,29 @@ main: about
 sub: me
 ---
 
+<div class="row about-social">
+    <div class="small-12 small-centered columns">
+        <a href="http://www.github.com/{{ site.github }}">
+            <span aria-hidden="true" data-icon="&#xe60b;"></span>
+        </a>
+        <a href="http://ca.linkedin.com/in/{{ site.linkedin }}/">
+            <span aria-hidden="true" data-icon="&#xe614;"></span>
+        </a>
+        <a href="http://www.twitter.com/{{ site.twitter }}">
+            <span aria-hidden="true" data-icon="&#xe608;"></span>
+        </a>
+        <a href="mailto:{{ site.email }}">
+            <span aria-hidden="true" data-icon="&#xe611;"></span>
+        </a>
+        <a href="http://www.last.fm/user/{{ site.lastfm }}">
+            <span aria-hidden="true" data-icon="&#xe617;"></span>
+        </a>
+        <a href="/atom.xml">
+            <span aria-hidden="true" data-icon="&#xe60a;"></span>
+        </a>
+    </div>
+</div>
+
 <div class="row">
 	<div class="small-12 columns">
 		<p>
@@ -28,18 +51,20 @@ sub: me
 </div>
 
 <div class="row">
-	<div class="small-12 columns">
-		<p>
-			I love music too. This is my favourite song.
-		</p>
-		<p>
-			<iframe class="youtube" src="//www.youtube.com/embed/{{ site.data.profile.song }}" frameborder="0" allowfullscreen></iframe>
-		</p>
+    <div class="small-12 medium-6 columns panel">
+        <p>
+            I love music too. This is my favourite song.
+        </p>
+        <p class="flex-video">
+            <iframe src="//www.youtube.com/embed/{{ site.data.profile.song }}" width="420" height="315" frameborder="0" allowfullscreen></iframe>
+        </p>
+    </div>
+	<div class="small-12 medium-6 columns panel">
 		<p>
 			And this is my favourite video.
 		</p>
-		<p>
-			<iframe class="youtube" src="//www.youtube.com/embed/{{ site.data.profile.video }}" frameborder="0" allowfullscreen></iframe>
+		<p class="flex-video">
+			<iframe src="//www.youtube.com/embed/{{ site.data.profile.video }}" width="420" height="315" frameborder="0" allowfullscreen></iframe>
 		</p>
 	</div>
 </div>
@@ -51,7 +76,7 @@ sub: me
 		</h2>
 
         <div class="about-quotes">
-            {% for quote in site.data.quotes %}
+            {% for quote in site.data.quotes limit:30 %}
             <blockquote>
                 {% for line in quote.lines %}
                 <p>
@@ -73,12 +98,12 @@ sub: me
 		<h2 class="bg">
 			Favourite Posts
 		</h2>
-		<ul class="no-bullet">
-			{% for post in site.data.posts %}
+		<ul class="square">
+			{% for post in site.data.posts limit:30 %}
 			<li>
 				<a href="{{ post.link }}">
 					{% if post.starred == true %}
-					<span aria-hidden="true" data-icon="&#xe005;"></span>
+					<span aria-hidden="true" data-icon="&#xe613;"></span>
 					{% endif %}
 					{{ post.title }}
 				</a>
@@ -93,12 +118,12 @@ sub: me
 		<h2 class="bg">
 			Favourite TED Talks
 		</h2>
-		<ul class="no-bullet">
-			{% for tedtalk in site.data.tedtalks %}
+		<ul class="square">
+			{% for tedtalk in site.data.tedtalks limit:30 %}
 			<li>
 				<a href="{{ tedtalk.link }}">
 					{% if tedtalk.starred == true %}
-					<span aria-hidden="true" data-icon="&#xe005;"></span>
+					<span aria-hidden="true" data-icon="&#xe613;"></span>
 					{% endif %}
 					{{ tedtalk.title }}
 				</a>
@@ -114,8 +139,8 @@ sub: me
 		<h2 class="bg">
 			Favourite Bloggers
 		</h2>
-		<ul class="no-bullet">
-			{% for blogger in site.data.bloggers %}
+		<ul class="square">
+			{% for blogger in site.data.bloggers limit:30 %}
 			<li>
 				<a href="{{ blogger.link }}">
 					{{ blogger.title }}
@@ -156,52 +181,4 @@ sub: me
 			If you want to contact me, send me a message at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
 		</p>
 	</div>
-</div>
-
-<div class="row home-social">
-    <div class="small-12 large-4 columns">
-        <h2>
-            <a href="http://www.github.com/{{ site.github }}">      
-                <span aria-hidden="true" data-icon="&#xe000;"></span> Github
-            </a>
-        </h2>
-    </div>
-    <div class="small-12 large-4 columns">
-        <h2>
-            <a href="mailto:{{ site.email }}">
-                <span aria-hidden="true" data-icon="&#xe010;"></span> Email
-            </a>
-        </h2>
-    </div>
-    <div class="small-12 large-4 columns">
-        <h2>
-            <a href="/atom.xml">
-                <span aria-hidden="true" data-icon="&#xe00c;"></span> RSS
-            </a>
-        </h2>
-    </div>
-</div>
-
-<div class="row about-social">
-    <div class="small-12 large-4 columns">
-        <h2>
-            <a href="http://ca.linkedin.com/in/{{ site.linkedin }}/">
-                <span aria-hidden="true" data-icon="&#xe020;"></span> LinkedIn
-            </a>
-        </h2>
-    </div>
-    <div class="small-12 large-4 columns">
-        <h2>
-            <a href="http://www.last.fm/user/{{ site.lastfm }}">
-                <span aria-hidden="true" data-icon="&#xe021;"></span> Last.fm
-            </a>
-        </h2>
-    </div>
-    <div class="small-12 large-4 columns">
-        <h2>
-            <a href="http://www.twitter.com/{{ site.twitter }}">
-                <span aria-hidden="true" data-icon="&#xe002;"></span> Twitter
-            </a>
-        </h2>
-    </div>
 </div>

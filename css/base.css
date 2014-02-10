@@ -203,8 +203,7 @@ div#nex-menu {
 /* #Home
 ================================================== */
 .home-background {
-  background: url(/assets/img/background_5.jpg) no-repeat center center fixed;
-  background-position: center center;
+  background: url(/assets/img/background_5.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

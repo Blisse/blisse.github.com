@@ -65,8 +65,15 @@ main: home
 </div>
         
 <script>
+    $(document).load(function() {
+        var speed = 6.0;
+        var bgpos = -window.pageXOffset / speed + "px " + (-window.pageYOffset / speed) + "px";
+        
+        $('.home-background').css('background-position', bgpos);
+    });
+
     $(document).scroll(function() {
-        var speed = 8.0;
+        var speed = 6.0;
         var bgpos = -window.pageXOffset / speed + "px " + (-window.pageYOffset / speed) + "px";
         
         $('.home-background').css('background-position', bgpos);

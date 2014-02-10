@@ -295,7 +295,8 @@
 ================================================== */
 
     .home-background {
-        background: url(/assets/img/background_5.jpg) no-repeat center center fixed; 
+        background: url(/assets/img/background_5.jpg) no-repeat center center fixed;
+        background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

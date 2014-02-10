@@ -63,3 +63,12 @@ main: home
         </div>
     </div>
 </div>
+        
+<script>
+    $(document).scroll(function() {
+        var speed = 8.0;
+        var bgpos = -window.pageXOffset / speed + "px " + (-window.pageYOffset / speed) + "px";
+        
+        $('.home-background').css('background-position', bgpos);
+    });
+</script>

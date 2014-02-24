@@ -253,6 +253,7 @@
         margin-bottom: 5.0rem;
 
         .row {
+
         }
 
         a {
@@ -269,23 +270,29 @@
             transition: color 100ms ease 100ms;
         }
 
-        a.active {
-            color: $color-white;
-            background: $color-red;
-        }
-
         a:hover {    
-            color: $color-dark-gray;
-        }
-
-        a:active {    
             color: $color-white;
             background: $color-dark-gray;
         }
 
+        a:active {    
+            color: $color-white;
+            background: $color-gray;
+        }
+
+        a.active {
+            color: $color-white;
+            background: $color-red;
+
+            &:hover {
+                background: $color-dark-gray;
+            }
+            &:active {    
+                color: $color-white;
+                background: $color-gray;
+            }
+        }
     }
-
-
 
 
 
@@ -394,9 +401,27 @@
             margin: 0 0.6rem;
 
             span {
-                color: $color-red;
                 font-size: 2.4rem;
             }
+
+            &:link, &:visited {
+                span {
+                    color: $color-red;
+                }
+            }
+
+            &:hover {    
+                span {
+                    color: $color-dark-gray;
+                }
+            }
+
+            &:active {
+                span {
+                    color: $color-gray;
+                }
+            }
+
         }
     }
 

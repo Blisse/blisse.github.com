@@ -190,14 +190,20 @@ div#nex-menu {
     -moz-transition: color 100ms ease 100ms;
     -o-transition: color 100ms ease 100ms;
     transition: color 100ms ease 100ms; }
+  div#nex-menu a:hover {
+    color: white;
+    background: #1a1a1a; }
+  div#nex-menu a:active {
+    color: white;
+    background: #8a8a8a; }
   div#nex-menu a.active {
     color: white;
     background: #990100; }
-  div#nex-menu a:hover {
-    color: #1a1a1a; }
-  div#nex-menu a:active {
-    color: white;
-    background: #1a1a1a; }
+    div#nex-menu a.active:hover {
+      background: #1a1a1a; }
+    div#nex-menu a.active:active {
+      color: white;
+      background: #8a8a8a; }
 
 /* #Page Specific CSS */
 /* #Home
@@ -268,8 +274,13 @@ div#nex-menu {
     text-align: center;
     margin: 0 0.6rem; }
     .about-social a span {
-      color: #990100;
       font-size: 2.4rem; }
+    .about-social a:link span, .about-social a:visited span {
+      color: #990100; }
+    .about-social a:hover span {
+      color: #1a1a1a; }
+    .about-social a:active span {
+      color: #8a8a8a; }
 
 /* #Blog
 ================================================== */

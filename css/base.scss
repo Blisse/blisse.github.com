@@ -272,12 +272,12 @@
 
         a:hover {    
             color: $color-white;
-            background: $color-dark-gray;
+            background: $color-gray;
         }
 
         a:active {    
             color: $color-white;
-            background: $color-gray;
+            background: $color-light-red;
         }
 
         a.active {
@@ -285,11 +285,12 @@
             background: $color-red;
 
             &:hover {
-                background: $color-dark-gray;
+                background: $color-gray;
             }
+
             &:active {    
                 color: $color-white;
-                background: $color-gray;
+                background: $color-light-red;
             }
         }
     }

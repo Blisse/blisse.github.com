@@ -19,9 +19,9 @@ main: home
 
 <div class="home-posts">
     <div class="row">
-        <div class="small-12 medium-6 columns">
+        <div class="small-12 medium-4 columns">
             <h2>
-                Hi! I'm Victor Lai. 
+                Hi! I'm Victor Lai.
             </h2>
             <p>
                 I'm a student studying Software Engineering at the University of Waterloo.
@@ -34,9 +34,28 @@ main: home
             </p>
         </div>
 
-        <div class="small-12 medium-6 columns">    
+        <div class="small-12 medium-4 columns">
             <h2>
-                New Posts
+                Latest Favourites
+            </h2>
+
+            <ul class="square">
+                {% for post in site.data.posts limit:5 %}
+                <li>
+                    <a href="{{ post.link }}">
+                        {% if post.starred == true %}
+                        <span aria-hidden="true" data-icon="&#xe613;"></span>
+                        {% endif %}
+                        {{ post.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="small-12 medium-4 columns">
+            <h2>
+                Latest Posts
             </h2>
 
                 <a href="{{ post.link }}">
@@ -58,31 +77,12 @@ main: home
                 {% endfor %}
             </ul>
         </div>
-
-        <div class="small-12 medium-6 columns">    
-            <h2>
-                New Favourites
-            </h2>
-
-            <ul class="square">
-                {% for post in site.data.posts limit:5 %}
-                <li>
-                    <a href="{{ post.link }}">
-                        {% if post.starred == true %}
-                        <span aria-hidden="true" data-icon="&#xe613;"></span>
-                        {% endif %}
-                        {{ post.title }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
     </div>
 </div>
-        
+
 <div class="row">
     <div class="small-12 medium-6 medium-centered columns panel">
-        <p> 
+        <p>
             <img src="http://i.imgur.com/03Rp7fm.jpg" alt="Snowman"/>
         </p>
     </div>
@@ -92,14 +92,14 @@ main: home
     $(document).load(function() {
         var speed = 6.0;
         var bgpos = -window.pageXOffset / speed + "px " + (-window.pageYOffset / speed) + "px";
-        
+
         $('.home-background').css('background-position', bgpos);
     });
 
     $(document).scroll(function() {
         var speed = 6.0;
         var bgpos = -window.pageXOffset / speed + "px " + (-window.pageYOffset / speed) + "px";
-        
+
         $('.home-background').css('background-position', bgpos);
     });
 </script>

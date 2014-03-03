@@ -109,12 +109,12 @@ h1, h2, h3, h4, h5, h6 {
       padding-left: 0.3rem;
       padding-right: 0.3rem; }
       h1 a.bg:hover, h2 a.bg:hover, h3 a.bg:hover, h4 a.bg:hover, h5 a.bg:hover, h6 a.bg:hover {
-        background: #dddddd; }
+        background: #a8a8a8; }
       h1 a.bg:active, h2 a.bg:active, h3 a.bg:active, h4 a.bg:active, h5 a.bg:active, h6 a.bg:active {
         background: #1a1a1a; }
 
 ul.square li {
-  color: #dddddd; }
+  color: #a8a8a8; }
 
 .button {
   font-family: "Nexa Bold";
@@ -123,14 +123,13 @@ ul.square li {
 .work-resume {
   text-align: center; }
   .work-resume a {
-    font-size: 4rem;
-    display: inline-block; }
+    font-size: 3.6rem; }
     .work-resume a span {
       color: #8c0d0d; }
       .work-resume a span:hover {
         color: #1a1a1a; }
       .work-resume a span:active {
-        color: #dddddd; }
+        color: #a8a8a8; }
 
 .work-entry {
   margin-bottom: 1.0rem;
@@ -145,14 +144,14 @@ ul.square li {
       display: inline-block;
       vertical-align: middle; }
     .work-entry .work-title .company {
-      color: #dddddd; }
+      color: #a8a8a8; }
     .work-entry .work-title a {
       color: #8c0d0d;
       display: block; }
       .work-entry .work-title a:hover {
         color: #1a1a1a; }
       .work-entry .work-title a:active {
-        color: #dddddd; }
+        color: #a8a8a8; }
   .work-entry .work-date {
     white-space: nowrap;
     text-transform: uppercase;
@@ -182,7 +181,7 @@ div#nex-menu {
   div#nex-menu a {
     font-size: 5.0rem;
     text-transform: uppercase;
-    color: #dddddd;
+    color: #a8a8a8;
     display: block;
     width: 100%;
     padding: 0.6rem 0.6rem 0 0.6rem;
@@ -192,7 +191,7 @@ div#nex-menu {
     transition: color 100ms ease 100ms; }
   div#nex-menu a:hover {
     color: white;
-    background: #dddddd; }
+    background: #a8a8a8; }
   div#nex-menu a:active {
     color: white;
     background: #8c0d0d; }
@@ -200,7 +199,7 @@ div#nex-menu {
     color: white;
     background: #990100; }
     div#nex-menu a.active:hover {
-      background: #dddddd; }
+      background: #a8a8a8; }
     div#nex-menu a.active:active {
       color: white;
       background: #8c0d0d; }
@@ -280,7 +279,7 @@ div#nex-menu {
     .about-social a:hover span {
       color: #1a1a1a; }
     .about-social a:active span {
-      color: #dddddd; }
+      color: #a8a8a8; }
 
 /* #Blog
 ================================================== */

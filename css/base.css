@@ -82,11 +82,11 @@ p, li {
     transition: color 50ms ease 50ms;
     border-bottom: 2px dotted transparent; }
   p a:link, p a:visited, li a:link, li a:visited {
-    color: #b52524;
-    border-bottom: 2px dotted #b52524; }
+    color: #8c0d0d;
+    border-bottom: 2px dotted #8c0d0d; }
   p a:hover, li a:hover {
     color: white;
-    background: #b52524;
+    background: #8c0d0d;
     border-bottom: 2px dotted transparent; }
   p a:active, li a:active {
     color: white;
@@ -103,18 +103,18 @@ h1, h2, h3, h4, h5, h6 {
     color: #1a1a1a;
     display: block; }
     h1 a.bg, h2 a.bg, h3 a.bg, h4 a.bg, h5 a.bg, h6 a.bg {
-      background: #b52524;
+      background: #8c0d0d;
       color: white;
       padding-top: 0.3rem;
       padding-left: 0.3rem;
       padding-right: 0.3rem; }
       h1 a.bg:hover, h2 a.bg:hover, h3 a.bg:hover, h4 a.bg:hover, h5 a.bg:hover, h6 a.bg:hover {
-        background: #8a8a8a; }
+        background: #dddddd; }
       h1 a.bg:active, h2 a.bg:active, h3 a.bg:active, h4 a.bg:active, h5 a.bg:active, h6 a.bg:active {
         background: #1a1a1a; }
 
 ul.square li {
-  color: #8a8a8a; }
+  color: #dddddd; }
 
 .button {
   font-family: "Nexa Bold";
@@ -126,11 +126,11 @@ ul.square li {
     font-size: 4rem;
     display: inline-block; }
     .work-resume a span {
-      color: #b52524; }
+      color: #8c0d0d; }
       .work-resume a span:hover {
         color: #1a1a1a; }
       .work-resume a span:active {
-        color: #8a8a8a; }
+        color: #dddddd; }
 
 .work-entry {
   margin-bottom: 1.0rem;
@@ -145,14 +145,14 @@ ul.square li {
       display: inline-block;
       vertical-align: middle; }
     .work-entry .work-title .company {
-      color: #8a8a8a; }
+      color: #dddddd; }
     .work-entry .work-title a {
-      color: #b52524;
+      color: #8c0d0d;
       display: block; }
       .work-entry .work-title a:hover {
         color: #1a1a1a; }
       .work-entry .work-title a:active {
-        color: #8a8a8a; }
+        color: #dddddd; }
   .work-entry .work-date {
     white-space: nowrap;
     text-transform: uppercase;
@@ -182,7 +182,7 @@ div#nex-menu {
   div#nex-menu a {
     font-size: 5.0rem;
     text-transform: uppercase;
-    color: #8a8a8a;
+    color: #dddddd;
     display: block;
     width: 100%;
     padding: 0.6rem 0.6rem 0 0.6rem;
@@ -192,18 +192,18 @@ div#nex-menu {
     transition: color 100ms ease 100ms; }
   div#nex-menu a:hover {
     color: white;
-    background: #8a8a8a; }
+    background: #dddddd; }
   div#nex-menu a:active {
     color: white;
-    background: #b52524; }
+    background: #8c0d0d; }
   div#nex-menu a.active {
     color: white;
     background: #990100; }
     div#nex-menu a.active:hover {
-      background: #8a8a8a; }
+      background: #dddddd; }
     div#nex-menu a.active:active {
       color: white;
-      background: #b52524; }
+      background: #8c0d0d; }
 
 /* #Page Specific CSS */
 /* #Home
@@ -244,14 +244,14 @@ div#nex-menu {
   .home-posts li {
     font-weight: 400;
     font-size: 1rem;
-    color: #b52524;
+    color: #8c0d0d;
     margin: 0.2rem 1.6rem; }
     .home-posts li a {
-      border-bottom: 1px dotted #b52524; }
+      border-bottom: 1px dotted #8c0d0d; }
       .home-posts li a:hover {
-        background: #b52524;
+        background: #8c0d0d;
         color: white;
-        border-bottom: 1px solid #b52524; }
+        border-bottom: 1px solid #8c0d0d; }
 
 /* #About
 ================================================== */
@@ -280,7 +280,7 @@ div#nex-menu {
     .about-social a:hover span {
       color: #1a1a1a; }
     .about-social a:active span {
-      color: #8a8a8a; }
+      color: #dddddd; }
 
 /* #Blog
 ================================================== */
@@ -294,7 +294,7 @@ div#nex-menu {
 .paginator .next, .paginator .previous {
   min-height: 100px;
   font-size: 1.6rem;
-  background: #b52524; }
+  background: #8c0d0d; }
 
 .post {
   margin-bottom: 8.0rem; }

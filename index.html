@@ -21,7 +21,9 @@ main: home
     <div class="row">
         <div class="small-12 medium-4 columns">
             <h2>
-                Hi! I'm Victor Lai.
+                <a href="/about/" class="bg">
+                    Hi! I'm Victor Lai.
+                </a>
             </h2>
             <p>
                 I'm a student studying Software Engineering at the University of Waterloo.
@@ -36,7 +38,9 @@ main: home
 
         <div class="small-12 medium-4 columns">
             <h2>
-                Latest Favourites
+                <a href="/about#posts" class="bg">
+                    Latest Favourites
+                </a>
             </h2>
 
             <ul class="square">
@@ -55,14 +59,10 @@ main: home
 
         <div class="small-12 medium-4 columns">
             <h2>
-                Latest Posts
+                <a href="/blog/" class="bg">
+                    Latest Posts
+                </a>
             </h2>
-
-                <a href="{{ post.link }}">
-                    {% if post.starred == true %}
-                    <span aria-hidden="true" data-icon="&#xe613;"></span>
-                    {% endif %}
-                    {{ post.title }}
 
             <ul class="square">
                 {% for post in site.posts limit:5 %}
@@ -87,6 +87,10 @@ main: home
         </p>
     </div>
 </div>
+
+<br/>
+<br/>
+<br/>
 
 <script>
     $(document).load(function() {

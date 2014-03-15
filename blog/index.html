@@ -5,15 +5,6 @@ main: blog
 sub: blog
 ---
 
-
-<div class="row">
-    <div class="small-12 columns">
-        <h1 class="bg">
-            My Journal
-        </h1>
-    </div>
-</div>
-
 {% for post in paginator.posts %}
 
 {% if post.archived == false %}
@@ -48,7 +39,7 @@ sub: blog
 
 <div class="row paginator">
     {% if paginator.previous_page %}
-    <div class="small-6 columns">
+    <div class="small-12 medium-6 columns">
         {% if paginator.previous_page == 1 %}
         <h3>
             <a href="/blog/" title="Previous Page" class="previous bg">
@@ -65,7 +56,7 @@ sub: blog
     </div>
     {% endif %}
     {% if paginator.next_page %}
-    <div class="small-6 columns">
+    <div class="small-12 medium-6 columns">
         <h3>
             <a href="/blog/page-{{ paginator.next_page }}/" class="next bg">
                 Next
@@ -74,3 +65,8 @@ sub: blog
     </div>
     {% endif %}
 </div>
+
+<br/>
+<br/>
+<br/>
+<br/>

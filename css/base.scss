@@ -97,13 +97,13 @@
         a:hover {
             color: $color-white;
             background: $color-light-red;
-            border-bottom: 2px dotted transparent;
+            border-bottom: 2px dotted $color-light-red;
         }
 
         a:active {
             color: $color-white;
-            background: $color-red;
-            border-bottom: 2px dotted transparent;
+            background: $color-gray;
+            border-bottom: 2px dotted $color-gray;
         }
     }
 
@@ -115,6 +115,14 @@
         color: $color-dark-gray;
 
         margin-top: 2rem;
+        
+        &.bg {
+            background: $color-gray;
+            color: $color-white;
+            padding-top: 0.2rem;
+            padding-left: 0.2rem;
+            padding-right: 0.2rem;
+        }
 
         a {
             color: $color-dark-gray;
@@ -163,11 +171,11 @@
                 color: $color-light-red;
 
                 &:hover {
-                    color: $color-dark-gray;
+                    color: $color-gray;
                 }
 
                 &:active {
-                    color: $color-gray;
+                    color: $color-dark-gray;
                 }
             }
         }
@@ -199,11 +207,11 @@
                 display: block;
 
                 &:hover {
-                    color: $color-dark-gray;
+                    color: $color-gray;
                 }
 
                 &:active {
-                    color: $color-gray;
+                    color: $color-dark-gray;
                 }
             }
         }
@@ -258,7 +266,7 @@
         a {
             font-size: 5.0rem;
             text-transform: uppercase;
-            color: $color-gray;
+            color: $color-light-gray;
             display: block;
             width: 100%;
             padding: 0.6rem 0.6rem 0 0.6rem;
@@ -271,12 +279,12 @@
 
         a:hover {
             color: $color-white;
-            background: $color-gray;
+            background: $color-light-red;
         }
 
         a:active {
             color: $color-white;
-            background: $color-light-red;
+            background: $color-gray;
         }
 
         a.active {
@@ -284,12 +292,12 @@
             background: $color-red;
 
             &:hover {
-                background: $color-gray;
+                background: $color-light-red;
             }
 
             &:active {
                 color: $color-white;
-                background: $color-light-red;
+                background: $color-gray;
             }
         }
     }
@@ -334,31 +342,18 @@
     }
 
     .home-posts {
-        p {
+        p, li {
             font-size: 1.0rem;
+        }
+
+        li {
+            margin: 0.4rem 0;
         }
 
         h2 {
             font-size: 1.4rem;
             margin: 0;
             margin-bottom: 1rem;
-        }
-
-        li {
-            font-weight: 400;
-            font-size: 1rem;
-            color: $color-light-red;
-            margin: 0.2rem 1.6rem;
-
-            a {
-                border-bottom: 1px dotted $color-light-red;
-
-                &:hover {
-                    background: $color-light-red;
-                    color: $color-white;
-                    border-bottom: 1px solid $color-light-red;
-                }
-            }
         }
 
         margin: 2rem 0 4rem;
@@ -406,19 +401,19 @@
 
             &:link, &:visited {
                 span {
-                    color: $color-red;
+                    color: $color-light-red;
                 }
             }
 
             &:hover {
                 span {
-                    color: $color-dark-gray;
+                    color: $color-gray;
                 }
             }
 
             &:active {
                 span {
-                    color: $color-gray;
+                    color: $color-dark-gray;
                 }
             }
 
@@ -441,9 +436,18 @@
     .paginator {
         .next, .previous {
             min-height: 100px;
-            font-size: 1.6rem;
+            font-size: 2.8rem;
+            font-family: $font-nexa;
+            vertical-align: middle;
+            text-align: center;
 
             background: $color-light-red;
+
+            margin: 0;
+        }
+
+        .float-right {
+            float: right;
         }
     }
 

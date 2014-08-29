@@ -7,259 +7,90 @@ sub: projects
 
 <div class="row">
     <div class="small-12 small-centered columns work-resume">
-		<a href="/work/resume/victor-lai-resume.pdf" class="work-resume-icon">
-			<span aria-hidden="true" data-icon="&#xe623;" data-tooltip class="has-tip"title="Resume"></span>
-		</a>
-	</div>
-</div>
-
-<div class="row">
-    <div class="small-12 columns">
-		<div class="row">
-			<div class="small-12 columns work-entry">
-				<h1 class="bg">
-					Work
-				</h1>
-				<h3 class="work-title">
-					<span class="title">
-						Agile Engineer<!--
-						--></span>,
-					<span class="company">
-						Pivotal Labs
-					</span>
-				</h3>
-				<p class="work-date">
-					Sept &ndash; Dec 2013
-				</p>
-				<div class="row work-description">
-					<div class="small-12 medium-11 medium-offset-1 columns">
-
-						<ul class="square">
-							<li>
-								Agile Windows Phone 8 development &ndash; mockup to release in under 3 months
-							</li>
-							<li>
-								Collaborated with Microsoft to implement custom version of HTTP Live Streaming SDK
-							</li>
-							<li>
-								Implemented barcode detection routine for iOS7 mobile wallet app
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="small-12 columns work-entry">
-				<h3 class="work-title">
-					<span class="title">
-						Application Developer<!--
-						--></span>,
-					<span class="company">
-						NexJ Systems
-					</span>
-				</h3>
-				<p class="work-date">
-					Jan &ndash; Apr 2013
-				</p>
-				<div class="row work-description">
-					<div class="small-12 medium-11 medium-offset-1 columns">
-						<ul class="square">
-							<li>
-								Front-end, cloud-based enterprise CRM development &ndash; beta deployed to 1000+ patients
-							</li>
-							<li>
-								Improve code quality by leading effort to document and update obsolete technical designs
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="small-12 columns work-entry">
-				<h3 class="work-title">
-					<span class="title">
-						Quality Assurance Analyst<!--
-						--></span>,
-					<span class="company">
-						NexJ Systems
-					</span>
-				</h3>
-				<p class="work-date">
-					May &ndash; Aug 2012
-				</p>
-				<div class="row work-description">
-					<div class="small-12 medium-11 medium-offset-1 columns">
-						<ul class="square">
-							<li>
-								Tested and signed off beta deployment to over 3,000 users
-							</li>
-							<li>
-								Assumed QA lead duties during teammate vacation leave
-							</li>
-							<li>
-								Developed Python application to automate regression testing PDF files &ndash; improved speeds up to 10x
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="small-12 columns work-entry">
-				<h3 class="work-title">
-					<span class="title">
-						Math Assistant<!--
-						--></span>,
-					<span class="company">
-						Kumon
-					</span>
-				</h3>
-				<p class="work-date">
-					2009 &ndash; 2011
-				</p>
-				<div class="row work-description">
-					<div class="small-12 medium-11 medium-offset-1 columns">
-						<ul class="square">
-							<li>
-								Mentored and graded homework of up to 8 children at a time
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        <a href="/work/resume/victor-lai-resume.pdf" class="work-resume-icon">
+            <span aria-hidden="true" data-icon="&#xe623;" data-tooltip class="has-tip"title="Resume"></span>
+        </a>
+    </div>
 </div>
 
 <div class="row">
     <div class="small-12 columns">
 
-		<div class="row">
-			<div class="small-12 columns work-entry">
-				<h1 class="bg">
-					Play
-				</h1>
-				<h3 class="work-title">
-					21 Day Advantage
-					<a href="http://www.windowsphone.com/en-us/store/app/21-day-advantage/19cc9347-88a3-4358-a2f7-065a01679145" class="link">
-						<span aria-hidden="true" data-icon="&#xe62e;"></span>
-					</a>
-				</h3>
-				<div class="row work-description">
-					<div class="small-12 medium-11 medium-offset-1 columns">
-						<ul class="no-bullet">
-							<li>
-								Windows Phone 8 app based off of <a href="http://youtu.be/fLJsdqxnZb0">Shawn Achor</a>'s TEDx Talk &ndash; 600+ downloads
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="row">
+            <div class="small-12 columns work-entry">
+                <h1 class="bg">
+                    Work
+                </h1>
+            </div>
+        </div>
 
-		<div class="row">
-			<div class="small-12 columns work-entry">
-				<h3 class="work-title">
-					UWaterloo OpenData Library
-					<a href="https://github.com/Blisse/UWOpenDataLib" class="link">
-						<span aria-hidden="true" data-icon="&#xe62e;"></span>
-					</a>
-				</h3>
-				<div class="row work-description">
-					<div class="small-12 medium-11 medium-offset-1 columns">
-						<ul class="no-bullet">
-							<li>
-								C# Portable Class Library wrapping asynchronous methods to retrieve JSON data from <a href="https://github.com/uWaterloo/api-documentation">UWaterloo's Open Data API</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+        {% for work in site.data.work %}
+        <div class="row">
+            <div class="small-12 columns work-entry">
+                <h3 class="work-title">
+                    <span class="title">
+                        {{ work.title }}<!--
+                        --></span>,
+                    <span class="company">
+                        {{ work.company }}
+                    </span>
+                </h3>
+                <p class="work-date">
+                    {{ work.date }}
+                </p>
+                <div class="row work-description">
+                    <div class="small-12 medium-11 medium-offset-1 columns">
 
-		<div class="row">
-			<div class="small-12 columns work-entry">
-				<h3 class="work-title">
-					Youtube Subscriber
-					<a href="/work/ytsubscriber" class="link">
-						<span aria-hidden="true" data-icon="&#xe62e;"></span>
-					</a>
-				</h3>
-				<div class="row work-description">
-					<div class="small-12 medium-11 medium-offset-1 columns">
-						<ul class="no-bullet">
-							<li>
-								Desktop WPF application to parse, display and filter Youtube subscriptions HTML page sources
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+                        <ul class="square">
+                            {% for description in work.description %}
+                            <li>
+                                {{ description }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 
-		<div class="row">
-			<div class="small-12 columns work-entry">
-				<h3 class="work-title">
-					OpenGL Tic-Tac-Toe
-					<a href="/work/ogltictactoe" class="link">
-						<span aria-hidden="true" data-icon="&#xe62e;"></span>
-					</a>
-				</h3>
-				<div class="row work-description">
-					<div class="small-12 medium-11 medium-offset-1 columns">
-						<ul class="no-bullet">
-							<li>
-								2D OpenGLUT implementation of Tic-Tac-Toe with unbeatable expert level difficulty
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+<div class="row">
+    <div class="small-12 columns">
 
-		<div class="row">
-			<div class="small-12 columns work-entry">
-				<h3 class="work-title">
-						Beyond Compare 3 Launcher
-					<a href="https://github.com/Blisse/BC3Launcher" class="link">
-						<span aria-hidden="true" data-icon="&#xe62e;"></span>
-					</a>
-				</h3>
-				<div class="row work-description">
-					<div class="small-12 medium-11 medium-offset-1 columns">
-						<ul class="no-bullet">
-							<li>
-								PDF comparison utility integrated with Beyond Compare 3
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="row">
+            <div class="small-12 columns work-entry">
+                <h1 class="bg">
+                    Play
+                </h1>
+            </div>
+        </div>
 
-		<div class="row">
-			<div class="small-12 columns work-entry">
-				<h3 class="work-title">
-					This Website
-					<a href="/work/site" class="link">
-						<span aria-hidden="true" data-icon="&#xe62e;"></span>
-					</a>
-				</h3>
-				<div class="row work-description">
-					<div class="small-12 medium-11 medium-offset-1 columns">
-						<ul class="no-bullet">
-							<li>
-								Fun Jekyll-based exploration of web development using SASS and JavaScript
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        {% for play in site.data.play %}
+        <div class="row">
+            <div class="small-12 columns work-entry">
+                <h3 class="work-title">
+                    {{ play.title }}
+                    {% if play.link %}
+                    <a href="{{ play.link }}" class="link">
+                        <span aria-hidden="true" data-icon="&#xe62e;"></span>
+                    </a>
+                    {% endif %}
+                </h3>
+                <div class="row work-description">
+                    <div class="small-12 medium-11 medium-offset-1 columns">
+                        <ul class="no-bullet">
+                            {% for description in play.description %}
+                            <li>
+                                {{ description }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>

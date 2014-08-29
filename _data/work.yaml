@@ -1,0 +1,27 @@
+-
+    title: "Software Engineer"
+    company: "Microsoft"
+    date: "May &ndash; Aug 2014"
+    description: ["Full-stack Windows Phone 8 development with Azure", "Mobile platform research"]
+-
+    title: "Agile Engineer"
+    company: "Pivotal Labs"
+    date: "Sept &ndash; Dec 2013"
+    description: ["Agile Windows Phone 8 development - released in 3 months", "Collaborated with Microsoft representative to implement custom media player using HTTP Live Streaming SDK", "Front-end iOS7 development including barcode detection"]
+-
+    title: "Application Developer"
+    shorttitle: "App Dev"
+    company: "NexJ Systems"
+    date: "Jan &ndash; Apr 2013"
+    description: ["Front-end, enterprise cloud CRM development &ndash; deployed beta to 1000+ patients", "Improved code quality by leading effort to update obsolete technical designs"]
+-
+    title: "Quality Assurance Analyst"
+    shorttitle: "QA"
+    company: "NexJ Systems"
+    date: "May &ndash; Aug 2012"
+    description: ["Tested and signed off on beta deployment to 3000+ users", "Assumed QA lead duties during teammate vacation leave", "Developed Python application to automate regression testing PDF files &ndash; improved speeds up to 10x"]
+-
+    title: "Math Assistant"
+    company: "Kumon"
+    date: "2009 &ndash; 2012"
+    description: ["Mentored and graded homework of up to 8 students at a time"]

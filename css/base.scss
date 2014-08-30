@@ -135,6 +135,10 @@
                 padding-left: 0.3rem;
                 padding-right: 0.3rem;
 
+                &.highlight {
+                    background: $color-red;
+                }
+
                 &:hover {
                     background: $color-gray;
                 }
@@ -401,7 +405,7 @@
 
             &:link, &:visited {
                 span {
-                    color: $color-light-red;
+                    color: $color-red;
                 }
             }
 

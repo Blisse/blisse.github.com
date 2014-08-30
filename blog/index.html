@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: archive
 title: blog
 main: blog
 sub: blog
 ---
 
 {% for post in paginator.posts %}
-
 {% if post.archived == false %}
 
 <div class="row">
@@ -34,7 +33,6 @@ sub: blog
 </div>
 
 {% endif %}
-
 {% endfor %}
 
 <div class="row paginator">

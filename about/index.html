@@ -4,6 +4,7 @@ title: about
 main: about
 sub: me
 ---
+
 <div class="row about-social">
     <div class="small-12 medium-4 small-uncentered columns">
         <a href="http://www.github.com/blisse">
@@ -64,7 +65,7 @@ sub: me
         </h2>
 
         <div class="about-quotes">
-            {% for quote in site.data.quotes limit:30 %}
+            {% for quote in site.data.quotes %}
             <blockquote>
                 {% for line in quote.lines %}
                 <p>
@@ -88,7 +89,7 @@ sub: me
             Favourite Posts
         </h2>
         <ul class="square">
-            {% for post in site.data.posts limit:30 %}
+            {% for post in site.data.posts limit:20 %}
             <li>
                 <a href="{{ post.link }}">
                     {% if post.starred == true %}
@@ -109,7 +110,7 @@ sub: me
             Favourite TED Talks
         </h2>
         <ul class="square">
-            {% for tedtalk in site.data.tedtalks limit:30 %}
+            {% for tedtalk in site.data.tedtalks limit:20 %}
             <li>
                 <a href="{{ tedtalk.link }}">
                     {% if tedtalk.starred == true %}
@@ -131,7 +132,7 @@ sub: me
             Favourite Bloggers
         </h2>
         <ul class="square">
-            {% for blogger in site.data.bloggers limit:30 %}
+            {% for blogger in site.data.bloggers limit:20 %}
             <li>
                 <a href="{{ blogger.link }}">
                     {{ blogger.title }}

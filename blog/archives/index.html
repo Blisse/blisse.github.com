@@ -1,0 +1,32 @@
+---
+layout: archive
+title: archive
+main: blog
+sub: archive
+---
+
+{% for post in site.posts %}
+
+{% if post.archived == false %}
+
+<div class="row">
+    <div class="small-12 columns">
+        <h2>
+            <a href="{{ post.url }}" class="bg">
+                {{ post.title }}
+            </a>
+        </h2>
+    </div>
+</div>
+    
+<div class="row">
+    <div class="small-12 columns">
+        <p class="tags">
+            about {{ post.tags | array_to_sentence_string }}. posted on {{ post.date | date:'%B %d, %Y' }}
+        </p>
+    </div>
+</div>
+
+{% endif %}
+
+{% endfor %}

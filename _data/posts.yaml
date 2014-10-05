@@ -22,6 +22,15 @@
     title: "You Are Not Late"
     starred: true
 -
+    link: "http://blog.flinto.com/how-potato-chips-inspire-magical-software.html"
+    title: "How Potato Chips Inspire Magical Software"
+-
+    link: "http://www.reddit.com/r/ProtectAndServe/comments/1xj3hi/onperson_selfprotection_in_nyc_for_nonleos/cfbwdgf?context=3"
+    title: "On-person self-protection in NYC for non-leos?"
+-
+    link: "http://www.gamefromscratch.com/post/2013/08/01/Just-starting-out-what-games-should-I-make.aspx"
+    title: "Just starting out, what games should I make?"
+-
     link: "http://mitadmissions.org/blogs/entry/50_things"
     title: "50 Things"
     starred: true
@@ -54,7 +63,7 @@
     title: "Your syntax highlighter is wrong"
 -
     link: "http://www.quora.com/What-can-businesses-learn-from-the-military"
-    title: "Quora - What can businesses learn from the military?"
+    title: "What can businesses learn from the military?"
 -
     link: "http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/"
     title: "As We May Think"

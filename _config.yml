@@ -17,10 +17,12 @@ paginate_path: "/blog/page-:num"
 
 exclude: ['README.markdown', 'Gemfile.lock', 'Gemfile']
 
-# defaults
+# settings
 sass:
   syntax: scss        # scss|sass
   style:  compressed  # nested|expanded|compact|compressed
 
-markdown: rdiscount
-pygments: true
+markdown:       redcarpet
+highlighter:    nil
+
+encoding: utf-8

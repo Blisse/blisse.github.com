@@ -1,14 +1,11 @@
 ---
-layout: default
 title: home
-main: home
 ---
-
 
 <div class="home-background">
     <div class="row">
         <blockquote class="home-title-quote">
-            {% for line in site.data.profile.missionstatement %}
+            {% for line in site.data.profile.about.mission_statement %}
             <p>
                 {{ line }}
             </p>
@@ -22,15 +19,14 @@ main: home
         <div class="small-12 medium-4 columns">
             <h2>
                 <a href="/about/" class="bg">
-                    Hi! I'm Victor Lai.
+                    {{ site.data.profile.about.about_intro }}
                 </a>
             </h2>
+            {% for line in site.data.profile.about.about_short %}
             <p>
-                I'm a Software Engineering student at the University of Waterloo. I'm passionate about experience, interaction, engineering, gaming, and productivity. I love making things work well.
+                {{ line }}
             </p>
-            <p>
-                My main goal this year is getting into hockey, so that means a lot of learning how to skate. In my remaining spare time, I run, work out, help out, game, explore, and code.
-            </p>
+            {% endfor %}
         </div>
 
         <div class="small-12 medium-4 columns">
@@ -39,9 +35,8 @@ main: home
                     Latest Favourites
                 </a>
             </h2>
-
             <ul class="square">
-                {% for post in site.data.posts limit:5 %}
+                {% for post in site.data.content.favourites limit:5 %}
                 <li>
                     <a href="{{ post.link }}">
                         {% if post.starred == true %}
@@ -77,28 +72,9 @@ main: home
     </div>
 </div>
 
-<div class="row">
-    <div class="small-12 medium-6 medium-centered columns panel">
-        <p>
-            <img src="http://i.imgur.com/Jnx3egg.jpg" alt="Hi"/>
-        </p>
-    </div>
-</div>
-
-<br/>
-<br/>
-<br/>
-
 <script>
     $(document).load(function() {
-        var speed = 6.0;
-        var bgpos = -window.pageXOffset / speed + "px " + (-window.pageYOffset / speed) + "px";
-
-        $('.home-background').css('background-position', bgpos);
-    });
-
-    $(document).scroll(function() {
-        var speed = 6.0;
+        var speed = 100.0;
         var bgpos = -window.pageXOffset / speed + "px " + (-window.pageYOffset / speed) + "px";
 
         $('.home-background').css('background-position', bgpos);

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <META HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT">
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <title>
+            {{ data.site.settings.title }}{% if page.title %} - {{ page.title }}{% endif %}
+        </title>
+        {% include standardhead.html %}
+    </head>
+    <body>
+        {{ content }}
+        {% include standardfoot.html %}
+    </body>
+</html>

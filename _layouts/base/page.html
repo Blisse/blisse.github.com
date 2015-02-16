@@ -1,0 +1,34 @@
+---
+layout: base/default
+headers:
+    -
+        link: "/"
+        highlight: "home"
+        title: "Victor"
+    -
+        link: "/blog/"
+        highlight: "blog"
+        title: "Blog"
+    -
+        link: "/portfolio/"
+        highlight: "portfolio"
+        title: "Portfolio"
+    -
+        link: "/about/"
+        highlight: "about"
+        title: "About"
+---
+<div class="row" id="nex-menu">
+    <div class="small-12 columns">
+        {% for header in page.headers %}
+        <div class="row">
+            <div class="small-12 columns">
+                <a href="{{ header.link }}" {% if page.navigationhighlight == header.highlight %}class="active"{% endif %}>
+                    {{ header.title }}
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{{ content }}

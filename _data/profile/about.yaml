@@ -1,5 +1,6 @@
 mission_statement: ["Never give up.", "Be authentic. Speak up and speak out.", "Do good. Be happy. Bring happiness to others.", "Change the world.", "Smile."]
 favourite_video: "https://www.youtube.com/watch?v=11s60makdoU"
+hello_picture: "http://i.imgur.com/Jnx3egg.jpg"
 
 profile_professionalemail: "contact@laivictor.com"
 profile_personalemail: "lai.victor.vl@gmail.com"
@@ -7,6 +8,12 @@ profile_github: "blisse"
 profile_linkedin: "laivictor"
 profile_lastfm: "dBlisse"
 profile_facebook: "lai.victor.vl"
-profile_twitter: dblisse
+profile_twitter: "dblisse"
 
-profile_name: victor lai
+profile_name: "victor lai"
+
+about_intro: "Hi! I'm Victor Lai (pronounced lie)."
+about_short: ["I'm a Software Engineering student at the University of Waterloo. I'm passionate about experience, interaction, engineering, gaming, and productivity. I love making things work well.", "My main goal this year is getting into hockey, so that means a lot of learning how to skate. In my remaining spare time, I run, work out, help out, game, explore, and code."]
+about_long: [""]
+
+site_title: "lai.victor"

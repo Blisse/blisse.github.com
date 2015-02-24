@@ -1,13 +1,9 @@
 ---
-layout: archive
 title: blog
-main: blog
-sub: blog
 ---
 
 {% for post in paginator.posts %}
 {% if post.archived == false %}
-
 <div class="row">
     <div class="small-12 columns">
         <h2>
@@ -31,7 +27,6 @@ sub: blog
         {{ post.content | markdownify }}
     </div>
 </div>
-
 {% endif %}
 {% endfor %}
 

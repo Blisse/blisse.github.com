@@ -28,6 +28,13 @@ headers:
                 </a>
             </div>
         </div>
+        {% if page.navigationhighlight == header.highlight %}
+        <div class="row">
+            <div class="small-12 columns">
+            secondary
+            </div>
+        </div>
+        {% endif %}
         {% endfor %}
     </div>
 </div>

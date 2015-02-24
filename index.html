@@ -12,11 +12,8 @@ title: home
             {% endfor %}
         </blockquote>
     </div>
-</div>
-
-<div class="home-posts">
-    <div class="row">
-        <div class="small-12 medium-4 columns">
+    <div class="row" id="bubbles1">
+        <div class="small-12 columns">
             <h2>
                 <a href="/about/" class="bg">
                     {{ site.data.profile.about.about_intro }}
@@ -24,12 +21,12 @@ title: home
             </h2>
             {% for line in site.data.profile.about.about_short %}
             <p>
-                {{ line }}
+                {{ line | markdownify }}
             </p>
             {% endfor %}
         </div>
 
-        <div class="small-12 medium-4 columns">
+        <div class="small-12 columns">
             <h2>
                 <a href="/about#posts" class="bg">
                     Latest Favourites
@@ -49,7 +46,7 @@ title: home
             </ul>
         </div>
 
-        <div class="small-12 medium-4 columns">
+        <div class="small-12 columns">
             <h2>
                 <a href="/blog/" class="bg">
                     Latest Posts
@@ -73,10 +70,22 @@ title: home
 </div>
 
 <script>
-    $(document).load(function() {
-        var speed = 100.0;
-        var bgpos = -window.pageXOffset / speed + "px " + (-window.pageYOffset / speed) + "px";
+// Create cross browser requestAnimationFrame method: 
+window.requestAnimationFrame = window.requestAnimationFrame
+ || window.mozRequestAnimationFrame
+ || window.webkitRequestAnimationFrame
+ || window.msRequestAnimationFrame 
+ || function(f){setTimeout(f, 1000/60)}
 
-        $('.home-background').css('background-position', bgpos);
-    });
+var bubble1 = document.getElementById('bubbles1');
+
+function parallaxbubbles(){
+    var scrolltop = window.pageYOffset;
+    bubble1.style.top = -scrolltop * .5 + 'px' ;
+}
+
+window.addEventListener('scroll', function(){ // on page scroll
+    requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
+}, false)
 </script>
+

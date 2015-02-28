@@ -1,0 +1,54 @@
+@import "base";
+
+.work-entry {
+    margin-bottom: 1.0rem;
+    margin-top: 0rem;
+
+    .work-title {
+        margin-bottom: 0;
+        display: inline-block;
+
+        font-family: $font-rale;
+        font-weight: 400;
+
+        .link {
+            font-size: 1.3rem;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .company {
+            color: $color-gray;
+        }
+
+        a {
+            color: $color-light-red;
+            display: block;
+
+            &:hover {
+                color: $color-gray;
+            }
+
+            &:active {
+                color: $color-dark-gray;
+            }
+        }
+    }
+
+    .work-date {
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .work-description {
+        margin-top: 1.0rem;
+
+        li {
+            color: $color-dark-gray;
+            font-size: 1.0rem;
+        }
+    }
+}

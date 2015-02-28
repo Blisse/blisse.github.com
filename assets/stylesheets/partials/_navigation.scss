@@ -1,0 +1,68 @@
+@import "base";
+
+/* #Main Menu
+================================================== */
+
+// Small screens
+@media only screen {
+    div#nex-menu #nex-menu-lastname {
+        display: none;
+    }
+} /* Define mobile styles */
+
+// Medium screens
+@media only screen and (min-width: 32.063em) {
+    div#nex-menu #nex-menu-lastname {
+        display: inline;
+    }
+} /* min-width 641px, medium screens */
+
+
+div#nex-menu {
+
+    font-family: $font-nexa;
+    margin-top: 3.0rem;
+    margin-bottom: 5.0rem;
+
+    .row {
+
+    }
+
+    a {
+        font-size: 5.0rem;
+        text-transform: uppercase;
+        color: $color-light-gray;
+        display: block;
+        width: 100%;
+        padding: 0.6rem 0.6rem 0 0.6rem;
+
+        -webkit-transition: color 100ms ease 100ms;
+        -moz-transition: color 100ms ease 100ms;
+        -o-transition: color 100ms ease 100ms;
+        transition: color 100ms ease 100ms;
+    }
+
+    a:hover {
+        color: $color-white;
+        background: $color-light-red;
+    }
+
+    a:active {
+        color: $color-white;
+        background: $color-gray;
+    }
+
+    a.active {
+        color: $color-white;
+        background: $color-red;
+
+        &:hover {
+            background: $color-light-red;
+        }
+
+        &:active {
+            color: $color-white;
+            background: $color-gray;
+        }
+    }
+}

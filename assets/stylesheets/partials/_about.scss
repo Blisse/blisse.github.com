@@ -1,0 +1,55 @@
+@import "base";
+
+.about-quotes {
+
+    blockquote {
+        border-left: 5px solid $color-red;
+
+        padding: 1.2rem;
+        margin: 2.4rem 0;
+
+        p {
+            font-size: 1.2rem;
+            color: $color-dark-gray;
+            padding: 0.6rem 1.6rem;
+        }
+
+        cite {
+            color: $color-dark-gray;
+            margin-bottom: 0.6rem;
+        }
+    }
+}
+
+.about-social {
+    margin-bottom: 4rem;
+
+    a {
+        white-space: nowrap;
+        text-align: center;
+        margin: 0 0.6rem;
+
+        span {
+            font-size: 2.4rem;
+        }
+
+        &:link, &:visited {
+            span {
+                color: $color-red;
+            }
+        }
+
+        &:hover {
+            span {
+                color: $color-gray;
+            }
+        }
+
+        &:active {
+            span {
+                color: $color-dark-gray;
+            }
+        }
+
+    }
+}

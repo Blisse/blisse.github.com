@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 /* #Font-Face
 ================================================== */
 /*  This is the proper syntax for an @font-face file
@@ -16,19 +18,11 @@
       font-style: normal; }
 */
 
-@font-face {
-    font-family: 'Nexa Bold';
-    src: url('/assets/fonts/Nexa Bold.eot');
-    src: url('/assets/fonts/Nexa Bold.eot?#iefix') format('eot'),
-         url('/assets/fonts/Nexa Bold.svg#nexa_lightregular') format('svg'),
-         url('/assets/fonts/Nexa Bold.woff') format('woff'),
-         url('/assets/fonts/Nexa Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-$font-monospace: "Consolas", monospace !important;
-
-$font-open: "Open Sans";
-$font-nexa: "Nexa Bold";
-$font-rale: "Raleway";
+@include font-face("Nexa Bold",
+    font-files(
+        "Nexa Bold.svg#nexa_lightregular",
+        "Nexa Bold.woff",
+        "Nexa Bold.ttf"
+    ),
+    "Nexa Bold.eot", normal
+);

@@ -1,18 +1,22 @@
 ---
 title: home
 ---
-
-<div class="home-background">
-    <div class="row">
-        <blockquote class="home-title-quote">
-            {% for line in site.data.profile.about.mission_statement %}
-            <p>
-                {{ line }}
-            </p>
-            {% endfor %}
-        </blockquote>
+<div id="home-page">
+    <div id="home-page-quote-with-background" data-stellar-ratio="1.5">
+        <div class="row">
+            <div class="small-12 columns">
+                <blockquote id="home-page-mission-statement-quote">
+                    {% for line in site.data.profile.about.mission_statement %}
+                    <p>
+                        {{ line }}
+                    </p>
+                    {% endfor %}
+                </blockquote>
+            </div>
+        </div>
     </div>
-    <div class="row" id="bubbles1">
+
+    <div class="row">
         <div class="small-12 columns">
             <h2>
                 <a href="/about/" class="bg">
@@ -29,7 +33,7 @@ title: home
         <div class="small-12 columns">
             <h2>
                 <a href="/about#posts" class="bg">
-                    Latest Favourites
+                    {{ site.data.content.pages.home_latest_favourites_title }}
                 </a>
             </h2>
             <ul class="square">
@@ -49,7 +53,7 @@ title: home
         <div class="small-12 columns">
             <h2>
                 <a href="/blog/" class="bg">
-                    Latest Posts
+                    {{ site.data.content.pages.home_latest_posts_title }}
                 </a>
             </h2>
 
@@ -68,24 +72,4 @@ title: home
         </div>
     </div>
 </div>
-
-<script>
-// Create cross browser requestAnimationFrame method: 
-window.requestAnimationFrame = window.requestAnimationFrame
- || window.mozRequestAnimationFrame
- || window.webkitRequestAnimationFrame
- || window.msRequestAnimationFrame 
- || function(f){setTimeout(f, 1000/60)}
-
-var bubble1 = document.getElementById('bubbles1');
-
-function parallaxbubbles(){
-    var scrolltop = window.pageYOffset;
-    bubble1.style.top = -scrolltop * .5 + 'px' ;
-}
-
-window.addEventListener('scroll', function(){ // on page scroll
-    requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
-}, false)
-</script>
-
+{% include extensions/load_stellar.html %}

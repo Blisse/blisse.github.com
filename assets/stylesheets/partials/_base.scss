@@ -1,0 +1,27 @@
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Fonts
+$font-monospace: "Consolas", monospace !important;
+$font-open: "Open Sans", Arial;
+$font-nexa: "Nexa Bold", Arial;
+$font-rale: "Raleway", Arial;
+
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 14px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-weight: $bold;
+
+@import "modules/all";

@@ -1,11 +1,13 @@
-@import "partials/about";
-@import "partials/blog";
-@import "partials/home-page";
+@import "partials/page";
+@import "partials/typography";
 @import "partials/navigation";
-@import "partials/portfolio";
 @import "partials/pygments";
 @import "partials/syntax";
-@import "partials/typography";
+
+@import "partials/home-page";
+@import "partials/blog-page";
+@import "partials/portfolio-page";
+@import "partials/about-page";
 
 @import "vendor/font-icomoon/icomoon";
 @import "vendor/foundation/foundation.min";

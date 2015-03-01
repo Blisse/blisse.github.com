@@ -3,11 +3,16 @@ $color-yellow: rgba(249,205,173, 1.0);
 $color-green: rgba(131,175,155, 1.0);
 $color-light-green: rgba(200,200,169, 1.0);
 
-$color-red: rgba(254,67,101, 1.0);
-$color-light-red: rgba(252,157,154, 1.0);
+$color-red: rgb(0,180,255);
+$color-light-red: rgb(255,153,0);
 
-$color-black: rgba(23,23,23, 1.0);
-$color-dark-gray: rgba(81,81,81, 1.0);
+$color-black: rgba(0,0,0,1.0);
+$color-dark-gray: rgba(0,0,0,0.8);
 $color-gray: rgba(169,167,174, 1.0);
-$color-light-gray: rgba(238,238,238, 1.0);
+$color-light-gray: rgba(0,0,0, 0.15);
 $color-white: rgba(255,255,255, 1.0);
+
+$color-metro-blue: rgb(0,180,255);
+$color-vitamin-c: rgb(255,153,0);
+$color-red-state: rgb(177,22,35);
+$color-redder-state: rgb(159,17,27);

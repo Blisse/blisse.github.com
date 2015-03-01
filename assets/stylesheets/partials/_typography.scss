@@ -3,8 +3,11 @@
 p, li {
     font-family: $font-open;
     color: $color-dark-gray;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 400;
+    line-height: 2.2rem;
+    word-break: normal;
+    word-wrap: break-word;
 
     a {
         display: inline-block;
@@ -25,7 +28,7 @@ p, li {
     a:hover {
         color: $color-white;
         background: $color-light-red;
-        border-bottom: 2px dotted $color-light-red;
+        border-bottom: 2px solid $color-light-red;
     }
 
     a:active {
@@ -43,37 +46,9 @@ h1, h2, h3, h4, h5, h6 {
     color: $color-dark-gray;
 
     margin-top: 2rem;
-    
-    &.bg {
-        background: $color-gray;
-        color: $color-white;
-        padding-top: 0.2rem;
-        padding-left: 0.2rem;
-        padding-right: 0.2rem;
-    }
 
     a {
         color: $color-dark-gray;
         display: block;
-
-        &.bg {
-            background: $color-light-red;
-            color: $color-white;
-            padding-top: 0.3rem;
-            padding-left: 0.3rem;
-            padding-right: 0.3rem;
-
-            &.highlight {
-                background: $color-red;
-            }
-
-            &:hover {
-                background: $color-gray;
-            }
-
-            &:active {
-                background: $color-dark-gray;
-            }
-        }
     }
 }

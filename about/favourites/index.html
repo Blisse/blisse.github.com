@@ -1,3 +1,28 @@
 ---
 title: favourites
 ---
+<div class="row">
+    <div class="small-12 columns">
+        <h2>
+            {{ site.data.content.pages.about_favourites_page_title }}
+        </h2>
+        {% for description in site.data.profile.about.favourites_description %}
+        <p>
+            {{ description | markdownify }}
+        </p>
+        {% endfor %}
+    </div>
+</div>
+{% for favourite in site.data.content.favourites %}
+<div class="row">
+    <div class="small-12 columns">
+        <ul class="square">
+            <li>
+                <a href="{{ favourite.link }}">
+                    {{ favourite.title }}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endfor %}

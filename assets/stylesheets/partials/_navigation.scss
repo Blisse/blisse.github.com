@@ -1,68 +1,126 @@
-@import "base";
-
-/* #Main Menu
-================================================== */
+@import "partials/base";
 
 // Small screens
 @media only screen {
-    div#nex-menu #nex-menu-lastname {
+    #navigation-menu #navigation-menu-lastname {
         display: none;
     }
-} /* Define mobile styles */
+}
 
 // Medium screens
 @media only screen and (min-width: 32.063em) {
-    div#nex-menu #nex-menu-lastname {
+    #navigation-menu #navigation-menu-lastname {
         display: inline;
     }
-} /* min-width 641px, medium screens */
+}
 
 
-div#nex-menu {
+#navigation-menu {
+    margin: 2.0rem 0;
 
-    font-family: $font-nexa;
-    margin-top: 3.0rem;
-    margin-bottom: 5.0rem;
+    #navigation-menu-header {
 
-    .row {
+        a {
+            display: block;
+            color: $color-light-gray;
+            font-family: $font-nexa;
+            font-size: 3.8rem;
+            text-transform: uppercase;
+            width: 100%;
+            margin: 0rem;
+            padding: 0.6rem 0.6rem 0 0.6rem;
 
-    }
+            -webkit-transition: color 50ms ease 50ms;
+            -moz-transition: color 50ms ease 50ms;
+            -o-transition: color 50ms ease 50ms;
+            transition: color 50ms ease 50ms;
 
-    a {
-        font-size: 5.0rem;
-        text-transform: uppercase;
-        color: $color-light-gray;
-        display: block;
-        width: 100%;
-        padding: 0.6rem 0.6rem 0 0.6rem;
+            &:link, &:visited {
+                color: $color-light-gray;
+                background: none;
+            }
 
-        -webkit-transition: color 100ms ease 100ms;
-        -moz-transition: color 100ms ease 100ms;
-        -o-transition: color 100ms ease 100ms;
-        transition: color 100ms ease 100ms;
-    }
+            &:hover {
+                color: $color-white;
+                background: $color-slate-blue;
+            }
 
-    a:hover {
-        color: $color-white;
-        background: $color-light-red;
-    }
+            &:active {
+                color: $color-white;
+                background: $color-crystal-green;
+            }
 
-    a:active {
-        color: $color-white;
-        background: $color-gray;
-    }
+            &.active {
+                color: $color-white;
 
-    a.active {
-        color: $color-white;
-        background: $color-red;
+                &:link, &:visited {
+                    background: $color-pacifica-blue;
+                }
 
-        &:hover {
-            background: $color-light-red;
+                &:hover {
+                    background: $color-slate-blue;
+                }
+
+                &:active {
+                    background: $color-crystal-green;
+                }
+            }
         }
+    }
 
-        &:active {
-            color: $color-white;
-            background: $color-gray;
+    #navigation-menu-active-directories {
+        display: block;
+        margin-top: 1.6rem;
+        color: $color-white;
+        background: $color-slate-blue;
+
+        a {
+            font-family: $font-rale;
+            font-weight: $font-weight-regular;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            text-align: left;
+            margin: 0rem;
+            padding: 0.3rem 0.7rem;
+            line-height: 2.0rem;
+
+            -webkit-transition: color 50ms ease 50ms;
+            -moz-transition: color 50ms ease 50ms;
+            -o-transition: color 50ms ease 50ms;
+            transition: color 50ms ease 50ms;
+            border-bottom: none;
+
+            &:link, &:visited {
+                color: $color-white;
+                background: $color-slate-blue;
+            }
+
+            &:hover {
+                color: $color-pacifica-blue;
+                background: $color-white;
+            }
+
+            &:active {
+                color: $color-pacifica-green;
+                background: $color-white;
+            }
+
+            &.active {
+                &:link, &:visited {
+                    color: $color-pacifica-blue;
+                    background: $color-white;
+                }
+
+                &:hover {
+                    color: $color-pacifica-green;
+                    background: $color-white;
+                }
+
+                &:active {
+                    color: $color-pacifica-green;
+                    background: $color-white;
+                }
+            }
         }
     }
 }

@@ -1,0 +1,26 @@
+---
+title: videos
+---
+<div class="row">
+    <div class="small-12 columns">
+        <h2>
+            {{ site.data.content.pages.about_videos_page_title }}
+        </h2>
+        {% for description in site.data.profile.about.videos_description %}
+        <p>
+            {{ description | markdownify }}
+        </p>
+        {% endfor %}
+    </div>
+</div>
+{% for video in site.data.content.videos %}
+<div class="row">
+    <div class="small-12 columns">
+        <p>
+            <a href="{{ video.link }}">
+                {{ video.title }}
+            </a>
+        </p>
+    </div>
+</div>
+{% endfor %}

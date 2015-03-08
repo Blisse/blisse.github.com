@@ -4,38 +4,80 @@ headers:
     -
         link: "/"
         highlight: "home"
-        title: "Victor"
+        name: "Victor"
     -
         link: "/blog/"
         highlight: "blog"
-        title: "Blog"
+        name: "Blog"
+        dirs:
+            -
+                link: "/blog/"
+                highlight: "latest"
+                name: "latest"
+            -
+                link: "/blog/archives/"
+                highlight: "archives"
+                name: "archives"
     -
         link: "/portfolio/"
         highlight: "portfolio"
-        title: "Portfolio"
+        name: "Portfolio"
     -
         link: "/about/"
         highlight: "about"
-        title: "About"
+        name: "About"
+        dirs:
+            -
+                link: "/about/"
+                highlight: "profile"
+                name: "profile"
+            -
+                link: "/about/favourites/"
+                highlight: "favourites"
+                name: "favourites"
+            -
+                link: "/about/videos/"
+                highlight: "videos"
+                name: "videos"
+            -
+                link: "/about/blogs/"
+                highlight: "blogs"
+                name: "blogs"
 ---
-<div class="row" id="nex-menu">
-    <div class="small-12 columns">
-        {% for header in page.headers %}
-        <div class="row">
-            <div class="small-12 columns">
-                <a href="{{ header.link }}" {% if page.navigationhighlight == header.highlight %}class="active"{% endif %}>
-                    {{ header.title }}
-                </a>
+<div id="navigation-menu">
+    <div class="row" >
+        <div class="small-12 columns">
+            {% assign hashighlight = false %}
+            {% for header in page.headers %}
+            <div class="row" id="navigation-menu-header">
+                <div class="small-12 columns">
+                    {% if page.navigationhighlight == header.highlight %}
+                    {% assign hashighlight = true %}
+                    <a href="{{ header.link }}" class="active">
+                        {{ header.name }}
+                    </a>
+                    {% else %}
+                    <a href="{{ header.link }}">
+                        {{ header.name }}
+                    </a>
+                    {% endif %}
+                </div>
             </div>
+            {% endfor %}
         </div>
-        {% if page.navigationhighlight == header.highlight %}
-        <div class="row">
-            <div class="small-12 columns">
-            secondary
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns">
+            {% for header in page.headers %}
+            {% if page.navigationhighlight == header.highlight %}
+            {% if header.dirs %}
+            <div id="navigation-menu-active-directories">{% for subdir in header.dirs %}{% if page.navigationsubhighlight == subdir.highlight %}<a href="{{ subdir.link }}" class="active">{{ subdir.name }}</a>{% else %}<a href="{{ subdir.link }}">{{ subdir.name }}</a>{% endif %}{% endfor %}
             </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
         </div>
-        {% endif %}
-        {% endfor %}
     </div>
 </div>
 {{ content }}

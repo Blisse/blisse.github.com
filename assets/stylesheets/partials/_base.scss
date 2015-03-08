@@ -1,28 +1,37 @@
+@import "modules/all";
+
 // Font weights
-$light: 100;
-$regular: 400;
-$bold: 600;
+$font-weight-light: 200;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
 
 // Fonts
 $font-monospace: "Consolas", monospace !important;
-$font-open: "Open Sans", Arial;
-$font-nexa: "Nexa Bold", Arial;
-$font-rale: "Raleway", Arial;
-$font-ques: "Questrial", Arial;
-$font-mont: "Montserrat", Arial;
+$font-open: "Open Sans";
+$font-nexa: "Nexa Bold";
+$font-rale: "Raleway";
+$font-merr: "Merriweather", "Georgia", "Times", "Times New Roman", serif;
+
+// Colors
+$color-text: $color-dark-gray;
+$color-link: $color-pacifica-green;
+$color-link-hover: $color-pacifica-green;
+$color-header-link: $color-pacifica-green;
+$color-header-link-hover: $color-pacifica-green;
+$color-active: $color-crystal-green;
 
 // Base Font
-$base-font-family: sans-serif;
-$base-font-weight: $regular;
-$base-font-size: 14px;
-$base-line-height: 1.4;
+$base-font-family: $font-merr;
+$base-font-weight: 300;
+$base-font-size: 1.2rem;
+$base-line-height: 2.2rem;
+$base-link-underline-width: 2px;
 
 // Fixed Font
 $fixed-font-family: monospace;
 $fixed-font-size: 85%;
 $fixed-line-height: $base-line-height;
 
-// Headings
-$header-font-weight: $bold;
-
-@import "modules/all";
+// Header Font
+$header-font-family: $font-rale;
+$header-font-weight: $font-weight-regular;

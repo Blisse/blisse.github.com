@@ -1,11 +1,8 @@
 ---
-layout: post
 title: gaming professionalism
 date: 2012-09-15
 tags: [gaming]
 comments: false
-
-pure_markdown: true
 archived: true
 ---
 

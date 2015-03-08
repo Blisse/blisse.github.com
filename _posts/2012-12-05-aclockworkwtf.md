@@ -1,10 +1,7 @@
 ---
-layout: post
 title: a clockwork wtf
 date: 2012-12-05
 tags: [thinking]
-comments: true
-
 pure_markdown: false
 archived: true
 ---

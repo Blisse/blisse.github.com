@@ -1,12 +1,8 @@
 ---
-layout: post
 title: word scores
 date: 2012-10-05
 tags: [programming]
-comments: true
-
 pure_markdown: false
-archived: false
 ---
 
 <div class="container">

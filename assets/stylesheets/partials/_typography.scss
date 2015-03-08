@@ -1,54 +1,94 @@
-@import "base";
+@import "partials/base";
 
 p, li {
-    font-family: $font-open;
-    color: $color-dark-gray;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 2.2rem;
+    color: $color-text;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
     word-break: normal;
     word-wrap: break-word;
 
     a {
+        -webkit-transition: color 20ms ease;
+        -moz-transition: color 20ms ease;
+        -o-transition: color 20ms ease;
+        transition: color 20ms ease;
+
         display: inline-block;
+        color: $color-link;
+        border-bottom: $base-link-underline-width dashed $color-link;
 
-        -webkit-transition: color 50ms ease 50ms;
-        -moz-transition: color 50ms ease 50ms;
-        -o-transition: color 50ms ease 50ms;
-        transition: color 50ms ease 50ms;
+        &:link, &:visited {
+            color: $color-link;
+            border-bottom: $base-link-underline-width dashed $color-link;
+        }
 
-        border-bottom: 2px dotted transparent;
+        &:hover {
+            color: $color-link-hover;
+            border-bottom: $base-link-underline-width solid $color-link-hover;
+        }
+
+        &:active {
+            color: $color-active;
+            border-bottom: $base-link-underline-width dashed $color-active;
+        }
+    }
+}
+
+
+ul, ol {
+    color: $color-text;
+    list-style-position: outside;
+    vertical-align: middle;
+
+    li {
+        a {
+            vertical-align: top;
+            display: inline-block;
+        }
     }
 
-    a:link, a:visited {
-        color: $color-light-red;
-        border-bottom: 2px dotted $color-light-red;
+    &.no-bullets {
+        list-style-type: none;
     }
 
-    a:hover {
-        color: $color-white;
-        background: $color-light-red;
-        border-bottom: 2px solid $color-light-red;
+    &.circle {
+        list-style-type: circle;
     }
 
-    a:active {
-        color: $color-white;
-        background: $color-gray;
-        border-bottom: 2px dotted $color-gray;
+    &.square {
+        list-style-type: square;
     }
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-rale;
+    margin-top: 2.4rem;
     display: block;
-    text-transform: uppercase;
-    color: $color-dark-gray;
-
-    margin-top: 2rem;
+    color: $color-text;
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    text-transform: lowercase;
 
     a {
-        color: $color-dark-gray;
         display: block;
+        color: $color-header-link;
+        text-transform: lowercase;
+
+        &:link, &:visited {
+            color: $color-header-link;
+            border-bottom: $base-link-underline-width dashed $color-header-link;
+        }
+
+        &:hover {
+            color: $color-header-link-hover;
+            border-bottom: $base-link-underline-width solid $color-header-link-hover;
+        }
+
+        &:active {
+            color: $color-active;
+            border-bottom: $base-link-underline-width dashed $color-active;
+        }
     }
 }

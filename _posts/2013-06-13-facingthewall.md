@@ -1,12 +1,7 @@
 ---
-layout: post
 title: Face the challenges
 date: 2013-06-13
 tags: [life, school]
-comments: true
-
-pure_markdown: true
-archived: false
 ---
 
 This is one of my roughest school terms in my life.

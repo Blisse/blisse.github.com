@@ -2,176 +2,145 @@
 title: about
 ---
 
-<div class="row about-social">
-    <div class="small-12 medium-4 small-uncentered columns">
-        <a href="http://www.github.com/blisse">
-            <span aria-hidden="true" data-icon="&#xe60b;"></span>
-        </a>
-        <a href="http://ca.linkedin.com/in/{{ site.linkedin }}/">
-            <span aria-hidden="true" data-icon="&#xe614;"></span>
-        </a>
-        <a href="http://www.twitter.com/{{ site.twitter }}">
-            <span aria-hidden="true" data-icon="&#xe608;"></span>
-        </a>
-        <a href="http://www.last.fm/user/{{ site.lastfm }}">
-            <span aria-hidden="true" data-icon="&#xe617;"></span>
-        </a>
-        <a href="/atom.xml">
-            <span aria-hidden="true" data-icon="&#xe60a;"></span>
-        </a>
-        <a href="mailto:{{ site.email }}">
-            <span aria-hidden="true" data-icon="&#xe611;"></span>
-        </a>
+<div id="about-page">
+    <div class="row">
+        <div class="small-12 medium-12 small-centered columns" id="about-page-social-icons">
+            <a href="http://www.github.com/blisse">
+                <span aria-hidden="true" data-icon="&#xe60b;"></span>
+            </a>
+            <a href="http://ca.linkedin.com/in/{{ site.data.profile.about.profile_linkedin }}/">
+                <span aria-hidden="true" data-icon="&#xe614;"></span>
+            </a>
+            <a href="http://www.twitter.com/{{ site.data.profile.about.profile_twitter }}">
+                <span aria-hidden="true" data-icon="&#xe608;"></span>
+            </a>
+            <a href="http://www.last.fm/user/{{ site.data.profile.about.profile_lastfm }}">
+                <span aria-hidden="true" data-icon="&#xe617;"></span>
+            </a>
+            <a href="/atom.xml">
+                <span aria-hidden="true" data-icon="&#xe60a;"></span>
+            </a>
+            <a href="mailto:{{ site.data.profile.about.profile_professionalemail }}">
+                <span aria-hidden="true" data-icon="&#xe611;"></span>
+            </a>
+        </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="small-12 columns">
-        <p>
-            Hi! My name is Victor Lai. I'm a Software Engineering student at the University of Waterloo. I'm passionate about product design, human-device interaction, and gaming.
-        </p>
-        <p>
-            I love learning, especially from my mistakes. I find it an amazing feeling to step back and look at my progress and dive in with a different perspective on how far you've come. Try doing something with your non-dominant hand and see how much work you've accomplished.
-        </p>
-        <p>
-            I enjoy seeing my ideas and views being shaped by my interactions with the world. When I'm not studying, I'm out expanding my abilities. This year I'm learning how to skate on ice, so I can eventually play hockey. Otherwise, I blog, read up on blogs, improve my programming, run, read, play games, and explore.
-        </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="small-12 medium-6 columns panel">
-        <p class="flex-video">
-            <iframe src="//www.youtube.com/embed/{{ site.data.profile.song }}" frameborder="0" allowfullscreen></iframe>
-        </p>
-    </div>
-    <div class="small-12 medium-6 columns panel">
-        <p class="flex-video">
-            <iframe src="//www.youtube.com/embed/{{ site.data.profile.video }}" frameborder="0" allowfullscreen></iframe>
-        </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="small-12 columns">
-        <h2>
-            <a name="quotes"></a>
-            Favourite Quotes
-        </h2>
-
-        <div class="about-quotes">
-            {% for quote in site.data.quotes %}
-            <blockquote>
-                {% for line in quote.lines %}
-                <p>
-                    {{ line }}
-                </p>
-                {% endfor %}
-                <cite>
-                    {{ quote.cite }}
-                </cite>
-            </blockquote>
+    <div class="row">
+        <div class="small-12 columns">
+            {% for line in site.data.profile.about.about_long %}
+            <p>
+                {{ line | markdownify }}
+            </p>
             {% endfor %}
         </div>
-
     </div>
-</div>
 
-<div class="row">
-    <div class="small-12 columns">
-        <h2>
-            <a name="posts"></a>
-            Favourite Posts
-        </h2>
-        <ul class="square">
-            {% for post in site.data.posts limit:20 %}
-            <li>
-                <a href="{{ post.link }}">
-                    {% if post.starred == true %}
-                    <span aria-hidden="true" data-icon="&#xe613;"></span>
-                    {% endif %}
-                    {{ post.title }}
+    <div class="row">
+        <div class="small-12 columns">
+            <h2>
+                <a href="/about/favourites/">
+                    {{ site.data.content.pages.about_favourite_posts_title }}
                 </a>
-            </li>
+            </h2>
+            <ul class="square">
+                {% for post in site.data.content.favourites limit:10 %}
+                <li>
+                    <a href="{{ post.link }}">
+                        {% if post.starred == true %}
+                        <span aria-hidden="true" data-icon="&#xe613;"></span>
+                        {% endif %}
+                        {{ post.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns">
+            <h2>
+                {{ site.data.content.pages.about_favourite_quotes_title }}
+            </h2>
+        </div>
+    </div>
+    <div id="about-page-quotes">
+        <div class="row">
+            <div class="small-12 columns">
+                <div >
+                    {% for quote in site.data.content.quotes %}
+                    <blockquote class="about-page-quote">
+                        {% for line in quote.lines %}
+                        <p>
+                            {{ line | markdownify }}
+                        </p>
+                        {% endfor %}
+                        <cite>
+                            {{ quote.cite }}
+                        </cite>
+                    </blockquote>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 medium-6 columns">
+            <h2>
+                {{ site.data.content.pages.about_favourite_videos_title }}
+            </h2>
+            <ul class="square">
+                {% for tedtalk in site.data.content.videos limit:5 %}
+                <li>
+                    <a href="{{ tedtalk.link }}">
+                        {% if tedtalk.starred == true %}
+                        <span aria-hidden="true" data-icon="&#xe613;"></span>
+                        {% endif %}
+                        {{ tedtalk.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="small-12 medium-6 columns">
+            <h2>
+                {{ site.data.content.pages.about_favourite_bloggers_title }}
+            </h2>
+            <ul class="square">
+                {% for blogger in site.data.content.blogs limit:5 %}
+                <li>
+                    <a href="{{ blogger.link }}">
+                        {{ blogger.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns">
+            <h2>
+                {{ site.data.content.pages.about_copyright_title }}
+            </h2>
+            {% for line in site.data.profile.about.copyright_warning %}
+            <p>
+                {{ line | markdownify }}
+            </p>
             {% endfor %}
-        </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns">
+            <h2>
+                {{ site.data.content.pages.about_contact_title }}
+            </h2>
+            <p>
+                {{ site.data.profile.about.about_contact | markdownify }}
+            </p>
+        </div>
     </div>
 </div>
-
-<div class="row">
-    <div class="small-12 columns">
-        <h2>
-            <a name="talks"></a>
-            Favourite TED Talks
-        </h2>
-        <ul class="square">
-            {% for tedtalk in site.data.tedtalks limit:20 %}
-            <li>
-                <a href="{{ tedtalk.link }}">
-                    {% if tedtalk.starred == true %}
-                    <span aria-hidden="true" data-icon="&#xe613;"></span>
-                    {% endif %}
-                    {{ tedtalk.title }}
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="small-12 columns">
-        <h2>
-            <a name="bloggers"></a>
-            Favourite Bloggers
-        </h2>
-        <ul class="square">
-            {% for blogger in site.data.bloggers limit:20 %}
-            <li>
-                <a href="{{ blogger.link }}">
-                    {{ blogger.title }}
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</div>
-
-<div class="row">
-    <div class="small-12 columns">
-        <h2>
-            <a name="copyright"></a>
-            Copyright
-        </h2>
-        <p>
-            This website is built using <a href="http://github.com/mojombo/jekyll"
-            target="_blank">Jekyll</a>, a blog-aware, static site generator written in Ruby.
-            The <a href="http://en.wikipedia.org/wiki/Source_code">source code</a> used to
-            create this website is publicly available on <a href="http://github.com/Blisse/blisse.github.com">GitHub</a>.
-        </p>
-        <p>
-            All the posts here are Copyright &copy; 2012-2014 <a href="{{ site.url }}">{{ site.author }}.</a>
-            Any thing else is <a href="http://en.wikipedia.org/wiki/Mit_license">MIT licensed</a>.
-            Feel free to reuse the <a href="http://en.wikipedia.org/wiki/Html">HTML</a> and
-            <a href="http://en.wikipedia.org/wiki/Css">CSS</a>.
-        </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="small-12 columns">
-        <h2>
-            Contact
-        </h2>
-
-        <p>
-            If you want to contact me, send me a message at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
-        </p>
-    </div>
-</div>
-
-<br/>
-<br/>
-<br/>
-<br/>

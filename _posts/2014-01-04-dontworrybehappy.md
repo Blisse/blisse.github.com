@@ -1,12 +1,7 @@
 ---
-layout: post
 title: don't worry, be happy
 date: 2014-01-04
 tags: [life]
-comments: true
-
-pure_markdown: true
-archived: false
 ---
 
 Let's start 2014 on a happy note.
@@ -15,15 +10,15 @@ Let's start 2014 on a happy note.
 <iframe class="youtube" src="//www.youtube.com/embed/d-diB65scQU" frameborder="0" allowfullscreen></iframe>
 
 
-I'm going to try to go 365 days without any of the previous baggage. 
+I'm going to try to go 365 days without any of the previous baggage.
 
 This term, I'm going to go cold turkey on as much as possible. I think you've reached a good point when you're happy about always being busy and you always have something planned to do, even if it is just planned downtime. It sucks a bit to waste so much time on trivial stuff like checking Facebook or Reddit or Twitter or whatever. So I'm going to try and cut all of that and replace it with something more meaningful.
 
 First stop, [Stayfocusd](https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji?hl=en) and [Cold Turkey](http://getcoldturkey.com/). These will be used to severely limit distractions like Facebook or Reddit or TeamLiquid. I talked previously about how bad these distractions are for you. They'll be blocked throughout my day so I'm forced to go out more.
 
-I'm going to remove a bunch of apps from my phone as well. 
+I'm going to remove a bunch of apps from my phone as well.
 
-Next stop is going to be scheduling out chunks of my day for the upcoming school term. I want to be more organized, and make sure that I can fill in voids between classes or meals with something meaningful. 
+Next stop is going to be scheduling out chunks of my day for the upcoming school term. I want to be more organized, and make sure that I can fill in voids between classes or meals with something meaningful.
 
 My ultimate goal this term is 90+ average, and on the Dean's Honour List. This is the toughest term in my undergrad, so if I do accomplish this, it'll feel so unbelievably awesome. I have a lot of smaller goals, like meet new people (something which didn't happen much in the past), sleep on time, volunteer somewhere, learn how to skate, start learning how to play hockey, work out a bunch, join some new clubs, start the headphone club and other stuff that should be doable. This term will be fun.
 

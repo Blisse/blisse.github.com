@@ -1,12 +1,14 @@
 mission_statement: [
-    "Never give up.",
-    "Be authentic. Speak up and speak out.",
-    "Do good. Be happy. Bring happiness to others.",
-    "Change the world.",
-    "Smile."
+        "Never give up.",
+        "Be authentic. Speak up and speak out.",
+        "Do good. Be happy. Bring happiness to others.",
+        "Change the world.",
+        "Smile."
     ]
 favourite_video: "https://www.youtube.com/watch?v=11s60makdoU"
 hello_picture: "http://i.imgur.com/Jnx3egg.jpg"
+
+site_title: "victor.lai"
 
 profile_professionalemail: "contact@laivictor.com"
 profile_personalemail: "lai.victor.vl@gmail.com"
@@ -22,14 +24,51 @@ about_intro: "Hi, I'm Victor Lai!"
 about_short: [
     "I'm a Software Engineering student at the University of Waterloo.",
     "I'm passionate about **scalable** and **reusable software engineering**,
-        **immersive** and **intuitive user interface design**,
+        **thoughtful** and **intuitive user interface design**,
         healthy **mental** and **physical well-being**,
         **happiness** and **helping others**,
-        **mindfulness** and being a **good human being**.",
+        **mindfulness** and **standing up**, for yourself and others.",
     "My main priorities this year are learning how to skate and **play hockey**,
-        kicking ass on my team's **capstone project**,
+        having fun **bouldering** and staying active at the **gym**,
+        helping my **capstone project** team kick ass,
         finish delivering my **Windows Store** development libraries,
         and **meeting new people, making new friends and sharing new experiences**."
     ]
-about_long: [""]
 
+about_long: [
+        "Hi! My name is Victor Lai. I'm a Software Engineering student
+            at the University of Waterloo. I'm passionate about product design,
+            human-device interaction, and gaming",
+        "I love learning, especially from my mistakes. I find it an amazing
+            feeling to step back and look at my progress and dive in with a
+            different perspective on how far you've come. Try doing something
+            with your non-dominant hand and see how much work you've accomplished",
+        "I enjoy seeing my ideas and views being shaped by my interactions with the world.
+            When I'm not studying, I'm out expanding my abilities. This year I'm
+            learning how to skate on ice, so I can eventually play hockey.
+            Otherwise, I blog, read up on blogs, improve my programming, run, read,
+            play games, and explore"
+    ]
+
+copyright_warning: [
+    "This website is built using [Jekyll](http://github.com/mojombo/jekyll), a blog-aware, static site generator
+        written in Ruby. The [source code](http://en.wikipedia.org/wiki/Source_code) used to create this website
+        is publicly available on [Github](http://github.com/Blisse/blisse.github.com)",
+    "All content used in this site is copyright their respective owners. If you have any problems with the content here,
+        feel free to contact me.",
+    "All the posts here are Copyright &copy; 2012-2014 [Victor Lai](www.laivictor.com).
+        Any thing else is [MIT licensed](http://en.wikipedia.org/wiki/Mit_license).
+        Feel free to reuse the [HTML](http://en.wikipedia.org/wiki/Html) or [CSS](http://en.wikipedia.org/wiki/Css)."
+    ]
+about_contact: "If you want to contact me, send me a message at [contact@laivictor.com](mailto:contact@laivictor.com)"
+
+favourites_description: [
+    "My collection of all the interesting, thoughtful, entertaining or inspiring articles I've found over the years.
+        I keep them here for reference and to share with others."
+    ]
+videos_description: [
+    "A list of my favourite videos."
+    ]
+blogs_description: [
+    "Some of the blogs I like to keep up with."
+    ]

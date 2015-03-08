@@ -1,55 +1,67 @@
-@import "base";
+@import "partials/base";
 
-.about-quotes {
+#about-page {
 
-    blockquote {
-        border-left: 5px solid $color-red;
+    #about-page-social-icons {
+        margin-bottom: 4rem;
 
-        padding: 1.2rem;
-        margin: 2.4rem 0;
+        a {
+            color: $color-pillow-red;
+            white-space: nowrap;
+            text-align: center;
+            margin: 0 0.6rem;
 
-        p {
-            font-size: 1.2rem;
-            color: $color-dark-gray;
-            padding: 0.6rem 1.6rem;
-        }
+            span {
+                font-size: 2.4rem;
+            }
 
-        cite {
-            color: $color-dark-gray;
-            margin-bottom: 0.6rem;
+            &:link, &:visited {
+                span {
+                    color: $color-turqoise-green;
+                }
+            }
+
+            &:hover {
+                span {
+                    color: $color-pacifica-green;
+                }
+            }
+
+            &:active {
+                span {
+                    color: $color-slate-blue;
+                }
+            }
+
         }
     }
-}
 
-.about-social {
-    margin-bottom: 4rem;
+    #about-page-quotes {
+        background: image-url("background/background_7.jpg", false, false) top center no-repeat fixed;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
 
-    a {
-        white-space: nowrap;
-        text-align: center;
-        margin: 0 0.6rem;
+        .about-page-quote {
+            background: rgba(73,117,124,0.35);
+            border-left: 4px solid $color-white;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
 
-        span {
-            font-size: 2.4rem;
-        }
+            p, cite {
+                text-shadow: 1px 1px 1px #333;
+                color: $color-white;
+            }
 
-        &:link, &:visited {
-            span {
-                color: $color-red;
+            p {
+                padding: 0rem 0.3rem;
+            }
+
+            cite {
+                margin-bottom: 0.6rem;
             }
         }
-
-        &:hover {
-            span {
-                color: $color-gray;
-            }
-        }
-
-        &:active {
-            span {
-                color: $color-dark-gray;
-            }
-        }
-
     }
 }

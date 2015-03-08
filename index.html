@@ -2,9 +2,9 @@
 title: home
 ---
 <div id="home-page">
-    <div id="home-page-quote-with-background" data-stellar-ratio="1.5">
+    <div id="home-page-quote-with-background">
         <div class="row">
-            <div class="small-12 columns">
+            <div class="small-12 columns" id="home-page-mission-statement-block">
                 <blockquote id="home-page-mission-statement-quote">
                     {% for line in site.data.profile.about.mission_statement %}
                     <p>
@@ -32,7 +32,7 @@ title: home
 
         <div class="small-12 columns">
             <h2>
-                <a href="/about#posts">
+                <a href="/about/favourites/">
                     {{ site.data.content.pages.home_latest_favourites_title }}
                 </a>
             </h2>
@@ -56,7 +56,6 @@ title: home
                     {{ site.data.content.pages.home_latest_posts_title }}
                 </a>
             </h2>
-
             <ul class="square">
                 {% for post in site.posts limit:5 %}
                 <li>
@@ -72,4 +71,3 @@ title: home
         </div>
     </div>
 </div>
-{% include extensions/load_stellar.html %}

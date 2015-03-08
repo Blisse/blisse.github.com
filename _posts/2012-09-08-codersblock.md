@@ -1,11 +1,8 @@
 ---
-layout: post
 title: coders' block
 date: 2012-09-08
 tags: [programming]
 comments: false
-
-pure_markdown: true
 archived: true
 ---
 

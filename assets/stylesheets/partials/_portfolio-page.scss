@@ -1,0 +1,187 @@
+@import "partials/base";
+
+#portfolio-page {
+
+    .portfolio-page-title-wrapper {
+        background: $color-pacifica-blue;
+        line-height: 1.85rem;
+
+        .portfolio-page-title {
+
+            a {
+                font-family: $font-rale;
+                font-weight: $font-weight-regular;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                text-align: left;
+                margin: 0rem;
+                padding: 0.3rem 0.7rem;
+                line-height: 2.0rem;
+
+                -webkit-transition: color 50ms ease 50ms;
+                -moz-transition: color 50ms ease 50ms;
+                -o-transition: color 50ms ease 50ms;
+                transition: color 50ms ease 50ms;
+                border-bottom: none;
+
+                &:link, &:visited {
+                    color: $color-white;
+                    background: $color-pacifica-blue;
+                }
+
+                &:hover {
+                    color: $color-pacifica-blue;
+                    background: $color-white;
+                }
+
+                &:active {
+                    color: $color-pacifica-green;
+                    background: $color-white;
+                }
+
+                &.active {
+                    &:link, &:visited {
+                        color: $color-pacifica-blue;
+                        background: $color-white;
+                    }
+
+                    &:hover {
+                        color: $color-pacifica-green;
+                        background: $color-white;
+                    }
+
+                    &:active {
+                        color: $color-pacifica-green;
+                        background: $color-white;
+                    }
+                }
+            }
+        }
+    }
+
+    #portfolio-page-jobs {
+        margin: 0.6rem 0;
+        padding-top: 1.0rem;
+
+        .portfolio-page-job-wrapper {
+            background: image-url("background/background_3.jpg", false, false) top center no-repeat fixed;
+            background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+
+            a.portfolio-page-job {
+                display: block;
+                background: rgba(255,255,255,0.75);
+                margin-bottom: 1.0rem;
+                padding: 1.0rem;
+
+                .portfolio-page-job-company, .portfolio-page-job-title {
+                    font-size: 2.0rem;
+                    font-family: $font-rale;
+                    font-weight: $font-weight-regular;
+                    text-transform: uppercase;
+                    margin: 0.0rem;
+                }
+
+                .portfolio-page-job-company {
+                    color: $color-pacifica-green;
+                }
+
+                .portfolio-page-job-title {
+                    color: $color-dark-gray;
+                    font-weight: $font-weight-light;
+                }
+
+                .portfolio-page-job-date {
+                    color: $color-dark-gray;
+                    font-size: 1.0rem;
+                    font-family: $font-rale;
+                    text-transform: uppercase;
+                    margin-top: 0.3rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .portfolio-page-job-description {
+                    font-size: 1.2rem;
+                    font-family: $font-open;
+                    font-weight: $font-weight-regular;
+                    line-height: 1.6rem;
+                    margin: 0rem;
+                }
+
+                &:link, &:visited {
+                    background: rgba(255,255,255,0.75);
+                }
+
+                &:hover {
+                    background: rgba(255,255,255,0.95);
+                }
+
+                &:active {
+                    background: rgba(255,255,255,0.1);
+
+                    .portfolio-page-job-company, .portfolio-page-job-title,
+                    .portfolio-page-job-date, .portfolio-page-job-description {
+                        color: $color-white;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #portfolio-page-projects {
+        margin: 0.6rem 0;
+        padding-top: 1.0rem;
+
+        .portfolio-page-project-wrapper {
+            background: image-url("background/background_3.jpg", false, false) top center no-repeat fixed;
+            background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+
+            a.portfolio-page-project {
+                display: block;
+                background: rgba(255,255,255,0.75);
+                margin-bottom: 1.0rem;
+                padding: 1.0rem;
+
+                .portfolio-page-project-title {
+                    color: $color-pacifica-green;
+                    font-size: 2.0rem;
+                    font-family: $font-rale;
+                    font-weight: $font-weight-regular;
+                    text-transform: uppercase;
+                    margin-bottom: 1.5rem;
+                }
+
+                .portfolio-page-project-description {
+                    font-size: 1.2rem;
+                    font-family: $font-open;
+                    font-weight: $font-weight-regular;
+                    line-height: 1.6rem;
+                    margin: 0rem;
+                }
+
+                &:link, &:visited {
+                    background: rgba(255,255,255,0.75);
+                }
+
+                &:hover {
+                    background: rgba(255,255,255,0.95);
+                }
+
+                &:active {
+                    background: rgba(255,255,255,0.1);
+
+                    .portfolio-page-job-company, .portfolio-page-job-title,
+                    .portfolio-page-job-date, .portfolio-page-job-description {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,12 +1,7 @@
 ---
-layout: post
 title: A New Beginning
 date: 2013-03-21
 tags: [life]
-comments: true
-
-pure_markdown: true
-archived: false
 ---
 
 

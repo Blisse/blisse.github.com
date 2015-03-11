@@ -1,5 +1,4 @@
 ---
-layout: post
 title: counterstrike & memories
 date: 2012-07-11
 tags: [gaming]

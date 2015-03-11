@@ -1,19 +1,15 @@
 ---
-layout: post
 title: challenge yourself
 date: 2014-10-05
 tags: [life]
 comments: false
-
-pure_markdown: true
-archived: false
 ---
 
 Life is hard. And if it isn't hard, it can get really hard very easily.
 
 Should we shy away from the pains and go down the path of least resistance? Or should we accept that it's hard and crawl through it?
 
-What do I do if I have a grandiose idea that I can't find anyone else interested in? It's my fault really that I haven't established the connections with the type of people in the same boat as me, and it's my fault that I can't convince the half-hearted ones that it's worth doing. 
+What do I do if I have a grandiose idea that I can't find anyone else interested in? It's my fault really that I haven't established the connections with the type of people in the same boat as me, and it's my fault that I can't convince the half-hearted ones that it's worth doing.
 
 But do I give it up and go for something that I'm not at all passionate about or even interested in? What does that say about the type of person I am? Will I be able to look at myself in 2 years and accept the decision? It's ... annoying to think about.
 

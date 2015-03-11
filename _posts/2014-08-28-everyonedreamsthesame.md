@@ -1,17 +1,13 @@
 ---
-layout: post
-title: everyone dreams the same thing
+title: everyone has the same dreams
 tags: [life]
 date: 2014-08-28
 comments: false
-
-pure_markdown: true
-archived: false
 ---
 
 We don't have this discussion enough.
 
-Everyone really dreams about the same things. Everyone has the same ideals. Everyone wants the same things from the world. 
+Everyone really dreams about the same things. Everyone has the same ideals. Everyone wants the same things from the world.
 
 Everyone wants someone fair and unbiased ruling over them. Everyone wants to be fair and unbiased when they deal with others. Everyone wants to be respected by others. Everyone wants to respect their idols. Everyone wants to feel appreciated when they do good. Everyone wants to enjoy their time. Everyone wants to feel safe. Everyone wants to feel like they belong.
 

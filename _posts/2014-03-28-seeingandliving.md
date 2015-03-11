@@ -1,15 +1,10 @@
 ---
-layout: post
 title: Seeing and Living
 date: 2014-03-28
 tags: [life]
-comments: true
-
-pure_markdown: true
-archived: false
 ---
 
-There's been a lot of thought put into the idea of living, but not seeing. It already sounds very weird and like an attempt to be profound, but it makes a lot of sense if you've ever seen it in action. 
+There's been a lot of thought put into the idea of living, but not seeing. It already sounds very weird and like an attempt to be profound, but it makes a lot of sense if you've ever seen it in action.
 
 I really like this quote for this reason.
 
@@ -29,15 +24,15 @@ For the most part, I can understand when people turn a blind eye to it. When som
 
 That's fine. But the real, actual problem brings us back to my first quote. Living, but not seeing. Being oblivious to your own actions and the actions of others.
 
-A great advantage of being in my program (Software Engineering) is the cohort system, which means I see a lot of my classmates over our 5 years together as a class. 
+A great advantage of being in my program (Software Engineering) is the cohort system, which means I see a lot of my classmates over our 5 years together as a class.
 
 This system has also meant it's easy for me to see how people have changed in my eyes over the years, since I see them daily every other term. I can't remember much about what happened in 1A and 1B. I don't think I answered questions much, and I don't think I talked to others much. I had a small group of friends, I had a great girlfriend, I was content. I know there were a group of people who always sat in the front and seemed to know everything about the courses, but I never managed to actually get to know any of them. I didn't join any clubs or meet any new people that whole year. My life was very one-dimensional and my world was very small.
 
-I've made an attempt to get better at the last couple of years, and it's gone well. Probably as a result of the class size shrinking, people at the very least know that I exist, which is nice. 
+I've made an attempt to get better at the last couple of years, and it's gone well. Probably as a result of the class size shrinking, people at the very least know that I exist, which is nice.
 
-I've realized that a lot of my first impressions have ended up wrong. A lot of the people I thought were amazing turned out to be regular people like you or I, except they're a bit more tuned than me. People I used to look up to, just regular like you or me, which is very motivational. People that gave me a bad impression turned out to be really decent human beings. 
+I've realized that a lot of my first impressions have ended up wrong. A lot of the people I thought were amazing turned out to be regular people like you or I, except they're a bit more tuned than me. People I used to look up to, just regular like you or me, which is very motivational. People that gave me a bad impression turned out to be really decent human beings.
 
-Some people I thought were great ended up having horribly defining flaws that I can't seem to overlook and overcome. Even some of my friends ended up being people that I didn't want to associate with. 
+Some people I thought were great ended up having horribly defining flaws that I can't seem to overlook and overcome. Even some of my friends ended up being people that I didn't want to associate with.
 
 Hence the living without seeing.
 

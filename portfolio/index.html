@@ -1,0 +1,87 @@
+---
+title: portfolio
+---
+<div id="portfolio-page">
+    <div class="portfolio-page-title-wrapper">
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="portfolio-page-title">
+                    <a href="#jobs" name="jobs" class="active">
+                        {{ site.data.content.pages.portfolio_work_title }}
+                    </a>
+                    <a href="#projects">
+                        {{ site.data.content.pages.portfolio_projects_title }}
+                    </a>
+                    <a href="/work/resume/victor-lai-resume.pdf">
+                        {{ site.data.content.pages.portfolio_resume_title }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio-page-jobs">
+        <div class="row">
+            {% for job in site.data.profile.jobs %}
+            <div class="small-12 columns">
+                <div class="portfolio-page-job-wrapper">
+                    <a class="portfolio-page-job">
+                        <div>
+                            <span class="portfolio-page-job-company">{{ job.company }}, </span>
+                             <span class="portfolio-page-job-title">{{ job.title }}</span>
+                        </div>
+                        <div class="portfolio-page-job-date">
+                            {{ job.date }}
+                        </div>
+                        <ul class="no-bullet">
+                            {% for description in job.description %}
+                            <li class="portfolio-page-job-description">
+                                {{ description }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="portfolio-page-title-wrapper">
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="portfolio-page-title">
+                    <a href="#jobs">
+                        {{ site.data.content.pages.portfolio_work_title }}
+                    </a>
+                    <a href="#projects" name="projects" class="active">
+                        {{ site.data.content.pages.portfolio_projects_title }}
+                    </a>
+                    <a href="/work/resume/victor-lai-resume.pdf">
+                        {{ site.data.content.pages.portfolio_resume_title }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio-page-projects">
+        <div class="row">
+            {% for project in site.data.profile.projects %}
+            <div class="small-12 columns">
+                <div class="portfolio-page-project-wrapper">
+                    <a class="portfolio-page-project" href="{{ project.link }}">
+                        <div>
+                             <span class="portfolio-page-project-title">{{ project.title }}</span>
+                        </div>
+                        <ul class="no-bullet">
+                            {% for description in project.description %}
+                            <li class="portfolio-page-project-description">
+                                {{ description }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

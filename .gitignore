@@ -41,3 +41,4 @@ Thumbs.db
 *.sublime-workspace
 .sass-cache/
 _site/
+%PSMODULEPATH%/

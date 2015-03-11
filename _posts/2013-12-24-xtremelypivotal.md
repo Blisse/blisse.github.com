@@ -1,12 +1,7 @@
 ---
-layout: post
 title: xtremely pivotal
 date: 2013-12-24
 tags: life
-comments: true
-
-pure_markdown: true
-archived: false
 ---
 
 I just finished a 4 month coop term at Xtreme/Pivotal Labs in Toronto, a mobile tech company. Here's a short list of things I did:
@@ -37,26 +32,26 @@ I just finished a 4 month coop term at Xtreme/Pivotal Labs in Toronto, a mobile 
 	* Squat 150lbs.
 	* Lateral pull-down 100lbs.
 	* Seated row 2x50lbs.
-	* Gained 20lbs in weight 
+	* Gained 20lbs in weight
 * Met lots of new friends
 
-It feels nice to be conscious of changes like these. 
+It feels nice to be conscious of changes like these.
 
-It's also Christmas Eve so I guess it's time to reminisce a bit. 
+It's also Christmas Eve so I guess it's time to reminisce a bit.
 
-I distinctly remember telling myself that I would work on being happier last Christmas, and that I wouldn't let myself end up in the same place I was next year. 
+I distinctly remember telling myself that I would work on being happier last Christmas, and that I wouldn't let myself end up in the same place I was next year.
 
-I think this year turned out pretty well. I'm still a bit lost about what I'm doing in life, but I've had some great experiences with great people to point me in the right direction. I'm still trying to change my attitude and break free of some really broken thought patterns, but I'll have to wait some time before I really see the results that I want. 
+I think this year turned out pretty well. I'm still a bit lost about what I'm doing in life, but I've had some great experiences with great people to point me in the right direction. I'm still trying to change my attitude and break free of some really broken thought patterns, but I'll have to wait some time before I really see the results that I want.
 
 Hopefully they're the ones I want to see at least. It's nice that at least with this new mentality, I can see that even if it's not, I can go find something to fix it. The world is limitless yo. Well, more like, the Internet is limitless, and you can find lots and lots of help from thousands of strangers around the world who want to help. It's magical.
 
-I like joking with some of my friends that I wasn't even conscious of my own existence until a year ago. 
+I like joking with some of my friends that I wasn't even conscious of my own existence until a year ago.
 
 "Didn't you have a childhood?"
 
 "Yo I wasn't even aware of my existence until a couple of months ago."
 
-It's kind of true. I'm almost at the point where I'm not even sure what I was like before university. I can try to extrapolate my personality from some of my memories, but I cannot actually remember what my thinking was like. I have no clue what other thoughts I had when I had an idea. 
+It's kind of true. I'm almost at the point where I'm not even sure what I was like before university. I can try to extrapolate my personality from some of my memories, but I cannot actually remember what my thinking was like. I have no clue what other thoughts I had when I had an idea.
 
 Did I think about what effect my actions would have around me? What sort of factors did my rational thinking side of the brain consider when I made decisions? I have no clue.
 
@@ -64,15 +59,15 @@ But I guess those things are in the past. I do meet people from my past time and
 
 Consciousness. This feels like consciousness. It feels like actually *thinking*, if not *understanding* your place and your role in the world. It feels like actually realizing who you are and what your decisions influence and why you even make those decisions. It feels like empowering yourself to make changes in your life.
 
-I'm sad that this happened to me. Life would be such a better place if I would just auto-pilot through it. 
+I'm sad that this happened to me. Life would be such a better place if I would just auto-pilot through it.
 
-But then a voice in the back of my head asks me, would it? Did I like life before more than I do now, even though there's so much strange, unknown pain? 
+But then a voice in the back of my head asks me, would it? Did I like life before more than I do now, even though there's so much strange, unknown pain?
 
 ...
 
 I guess not really. There's a lot of strange pain, but there's a lot of strange happiness. And I guess I wasn't really aware of much of this until it happened.
 
-When I was little, I chose the nickname "Bliss" as my online handle. I've kept that over the years, nearing 8 years now probably, because it's meant so much to me. 
+When I was little, I chose the nickname "Bliss" as my online handle. I've kept that over the years, nearing 8 years now probably, because it's meant so much to me.
 
 It was the name of one of my favourite songs from my favourite band.
 

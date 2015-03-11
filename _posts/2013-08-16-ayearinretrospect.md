@@ -1,12 +1,7 @@
 ---
-layout: post
 title: a year in retrospect
 date: 2013-08-16
 tags: [life]
-comments: true
-
-pure_markdown: true
-archived: false
 ---
 
 

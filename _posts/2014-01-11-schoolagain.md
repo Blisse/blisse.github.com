@@ -1,12 +1,7 @@
 ---
-layout: post
 title: school again
 date: 2014-01-11
 tags: [school]
-comments: true
-
-pure_markdown: true
-archived: false
 ---
 
 First week of school over. Damn. This year is going to be insaneee.
@@ -17,7 +12,7 @@ Yeah, the content.
 
 The worst course is really our Feedback Control class. I'm honestly not sure what I'm supposed to be learning from this class. The professor seems to be writing down diagrams and notes on the board, and I can follow along decently, but I can't seem to understand the reasoning behind some of the concepts, and I think that's very critical for this class. Apparently Feedback is probably the hardest class in the curriculum. It's starting to feel that way as well.
 
-I've learning that I love skating, except for the part where your feet absolutely *kill* during your time on the ice. 
+I've learning that I love skating, except for the part where your feet absolutely *kill* during your time on the ice.
 
 I registered for skating lessons for several months with KWSC (Kitchener-Waterloo Skating Club). The first one was just Wednesday, and it's really different actually having someone who knows what they're doing teach you (if only in a group). As long as you understand the concepts, you can make yourself apply them while you're skating, and with more experience you'll start to form habits around them.
 
@@ -31,6 +26,6 @@ Back to school, apparently I'm now both my class's MathSoc and WEEF rep. Hopeful
 
 Also going to do more volunteering and helping out with the first-years if possible. I've had some bad experiences with the upper-years so I want to not leave the same impression on the next generation. It's kinda silly that this would even be a reason.
 
-Next week, helping out critiquing resumes and meeting the first years, as well as MathSoc meetings and more skating. 
+Next week, helping out critiquing resumes and meeting the first years, as well as MathSoc meetings and more skating.
 
 I wanted more work. I've got it. Time to make the most of it. go go go

@@ -1,0 +1,36 @@
+@import "partials/base";
+
+$background_image_url: "background/background_2.jpg";
+
+#home-page {
+    margin-top: 2.0rem;
+
+    #home-page-quote-with-background {
+
+        background: image-url($background_image_url, false, false) top left no-repeat fixed;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        margin: 0 0 2rem 0;
+
+        #home-page-mission-statement-quote {
+
+            p {
+                font-family: $font-rale;
+                font-size: 2.4rem;
+                font-weight: $font-weight-regular;
+                color: $color-white;
+                margin: 1rem 0;
+                text-shadow: 1px 1px 1px #000;
+            }
+
+            background: rgba(1,108,124,0.3);
+            border-left: none;
+            margin: 2rem 0;
+            padding-bottom: 1rem;
+        }
+    }
+
+    margin-bottom: 4rem;
+}

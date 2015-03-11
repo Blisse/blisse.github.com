@@ -1,12 +1,7 @@
 ---
-layout: post
 title: a lesson in racism and happiness
 date: 2013-12-19
 tags: life
-comments: true
-
-pure_markdown: true
-archived: false
 ---
 
 Sometimes, things just hit you like a brick.
@@ -39,15 +34,15 @@ The subway car passed another station when I opened my mouth.
 
 "Yeah"
 
-Then, we laughed together. 
+Then, we laughed together.
 
 "Well, if it's any help, I think you belong in this country more than he does."
 
 "Thanks"
 
-And he smiled. 
+And he smiled.
 
-I noticed an available seat further away and sat down. 
+I noticed an available seat further away and sat down.
 
 When it was time for his stop, he waved that kind of wave that guys do to acknowledge someone. I waved back, and he left.
 

@@ -1,47 +1,43 @@
 ---
-layout: default
 title: home
-main: home
 ---
+<div id="home-page">
+    <div id="home-page-quote-with-background">
+        <div class="row">
+            <div class="small-12 columns" id="home-page-mission-statement-block">
+                <blockquote id="home-page-mission-statement-quote">
+                    {% for line in site.data.profile.about.mission_statement %}
+                    <p>
+                        {{ line }}
+                    </p>
+                    {% endfor %}
+                </blockquote>
+            </div>
+        </div>
+    </div>
 
-
-<div class="home-background">
     <div class="row">
-        <blockquote class="home-title-quote">
-            {% for line in site.data.profile.missionstatement %}
+        <div class="small-12 columns">
+            <h2 >
+                <a href="/about/" class="home-page-content-header">
+                    {{ site.data.profile.about.about_intro }}
+                </a>
+            </h2>
+            {% for line in site.data.profile.about.about_short %}
             <p>
-                {{ line }}
+                {{ line | markdownify }}
             </p>
             {% endfor %}
-        </blockquote>
-    </div>
-</div>
-
-<div class="home-posts">
-    <div class="row">
-        <div class="small-12 medium-4 columns">
-            <h2>
-                <a href="/about/" class="bg">
-                    Hi! I'm Victor Lai.
-                </a>
-            </h2>
-            <p>
-                I'm a Software Engineering student at the University of Waterloo. I'm passionate about experience, interaction, engineering, gaming, and productivity. I love making things work well.
-            </p>
-            <p>
-                My main goal this year is getting into hockey, so that means a lot of learning how to skate. In my remaining spare time, I run, work out, help out, game, explore, and code.
-            </p>
         </div>
 
-        <div class="small-12 medium-4 columns">
+        <div class="small-12 columns">
             <h2>
-                <a href="/about#posts" class="bg">
-                    Latest Favourites
+                <a href="/about/favourites/">
+                    {{ site.data.content.pages.home_latest_favourites_title }}
                 </a>
             </h2>
-
             <ul class="square">
-                {% for post in site.data.posts limit:5 %}
+                {% for post in site.data.content.favourites limit:5 %}
                 <li>
                     <a href="{{ post.link }}">
                         {% if post.starred == true %}
@@ -54,13 +50,12 @@ main: home
             </ul>
         </div>
 
-        <div class="small-12 medium-4 columns">
+        <div class="small-12 columns">
             <h2>
-                <a href="/blog/" class="bg">
-                    Latest Posts
+                <a href="/blog/">
+                    {{ site.data.content.pages.home_latest_posts_title }}
                 </a>
             </h2>
-
             <ul class="square">
                 {% for post in site.posts limit:5 %}
                 <li>
@@ -76,31 +71,3 @@ main: home
         </div>
     </div>
 </div>
-
-<div class="row">
-    <div class="small-12 medium-6 medium-centered columns panel">
-        <p>
-            <img src="http://i.imgur.com/Jnx3egg.jpg" alt="Hi"/>
-        </p>
-    </div>
-</div>
-
-<br/>
-<br/>
-<br/>
-
-<script>
-    $(document).load(function() {
-        var speed = 6.0;
-        var bgpos = -window.pageXOffset / speed + "px " + (-window.pageYOffset / speed) + "px";
-
-        $('.home-background').css('background-position', bgpos);
-    });
-
-    $(document).scroll(function() {
-        var speed = 6.0;
-        var bgpos = -window.pageXOffset / speed + "px " + (-window.pageYOffset / speed) + "px";
-
-        $('.home-background').css('background-position', bgpos);
-    });
-</script>

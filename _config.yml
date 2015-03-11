@@ -1,28 +1,76 @@
-url: http://www.laivictor.com
-atom: http://www.laivictor.com/atom.xml
-
-title: lai.victor
-description: personal blog
-author: victor lai
-
-email: contact@laivictor.com
-github: blisse
-twitter: dblisse
-linkedin: laivictor
-lastfm: dBlisse
-facebook: lai.victor.vl
+url:    http://www.laivictor.com
+feed:   http://www.laivictor.com/atom.xml
 
 paginate: 5
 paginate_path: "/blog/page-:num"
 
-exclude: ['README.markdown', 'Gemfile.lock', 'Gemfile']
+exclude: ['README.markdown', 'Gemfile.lock', 'Gemfile', 'config']
 
-# settings
 sass:
-  syntax: scss        # scss|sass
-  style:  compressed  # nested|expanded|compact|compressed
+    syntax: scss        # scss|sass
+    style:  compressed  # nested|expanded|compact|compressed
 
 markdown:       redcarpet
-highlighter:    nil
+highlighter:    rouge
 
 encoding: utf-8
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: "pages"
+        values:
+            layout: "base/page"
+            navigationhighlight: "home"
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            layout: "custom/post"
+            navigationhighlight: "blog"
+            navigationsubhighlight: "archives"
+            archived: false
+            comments: true
+            pure_markdown: true
+    -
+        scope:
+            path: "about"
+        values:
+            layout: "custom/about"
+            navigationhighlight: "about"
+            navigationsubhighlight: "profile"
+    -
+        scope:
+            path: "about/favourites"
+        values:
+            navigationsubhighlight: "favourites"
+    -
+        scope:
+            path: "about/videos"
+        values:
+            navigationsubhighlight: "videos"
+    -
+        scope:
+            path: "about/blogs"
+        values:
+            navigationsubhighlight: "blogs"
+    -
+        scope:
+            path: "portfolio"
+        values:
+            layout: "custom/portfolio"
+            navigationhighlight: "portfolio"
+    -
+        scope:
+            path: "blog"
+        values:
+            layout: "custom/blog"
+            navigationhighlight: "blog"
+            navigationsubhighlight: "latest"
+    -
+        scope:
+            path: "blog/archives"
+        values:
+            navigationsubhighlight: "archives"

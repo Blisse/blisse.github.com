@@ -1,0 +1,47 @@
+-
+    title: "Desktop Shell Engineer"
+    company: "Microsoft"
+    date: "Jan &ndash; Present"
+    description: [
+        "Building Windows, one pane at a time."
+    ]
+-
+    title: "Outlook Services Engineer"
+    company: "Microsoft"
+    date: "May &ndash; Aug 2014"
+    description: [
+        "Prototyped cross-platform text transforms messaging app on WP8.1, Android and iOS"
+    ]
+-
+    title: "Agile Engineer"
+    company: "Pivotal Labs"
+    date: "Sept &ndash; Dec 2013"
+    description: [
+        "Delivered WP8 and WinRT media streaming apps to client from scratch in 3 months (team of 6).",
+        "Front-end iOS development on wallet app."
+    ]
+-
+    title: "App Dev"
+    shorttitle: "App Dev"
+    company: "NexJ Systems"
+    date: "Jan &ndash; Apr 2013"
+    description: [
+        "Front-end, enterprise web CRM development &ndash; help deploy beta to 1000+ patients"
+    ]
+-
+    title: "QA Analyst"
+    shorttitle: "QA"
+    company: "NexJ Systems"
+    date: "May &ndash; Aug 2012"
+    description: [
+        "Tested and signed off on beta enterprise CRM deployment to 3000+ users",
+        "Assumed QA lead duties during teammate vacation leave",
+        "Developed Python application to automate regression testing PDF files &ndash; improved speeds up to 10x"
+    ]
+-
+    title: "Math Assistant"
+    company: "Kumon"
+    date: "2009 &ndash; 2012"
+    description: [
+        "Homework marker and student helper"
+    ]

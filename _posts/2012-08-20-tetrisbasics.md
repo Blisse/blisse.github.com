@@ -1,11 +1,8 @@
 ---
-layout: post
 title: tetris basics
 tags: [gaming, life]
 date: 2012-08-20
 comments: false
-
-pure_markdown: true
 archived: true
 ---
 

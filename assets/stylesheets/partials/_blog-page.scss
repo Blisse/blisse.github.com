@@ -1,0 +1,20 @@
+@import "partials/base";
+
+#blog-page {
+    .blog-page-post {
+        margin-bottom: 6.0rem;
+    }
+
+    #blog-page-navigation {
+        margin-bottom: 6.0rem;
+
+        #blog-page-previous-post, #blog-page-all, #blog-page-next-post {
+            a {
+                font-family: $font-rale;
+                font-size: 2.0rem;
+                text-transform: lowercase;
+                margin-right: 2.0rem;
+            }
+        }
+    }
+}

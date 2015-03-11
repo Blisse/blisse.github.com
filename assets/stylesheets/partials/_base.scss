@@ -1,0 +1,37 @@
+@import "modules/all";
+
+// Font weights
+$font-weight-light: 200;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+// Fonts
+$font-monospace: "Consolas", monospace !important;
+$font-open: "Open Sans", sans-serif;
+$font-nexa: "Nexa Bold", sans-serif;
+$font-rale: "Raleway", sans-serif;
+$font-merr: "Merriweather", "Georgia", "Times", "Times New Roman", serif;
+
+// Colors
+$color-text: $color-dark-gray;
+$color-link: $color-pacifica-green;
+$color-link-hover: $color-pacifica-green;
+$color-header-link: $color-pacifica-green;
+$color-header-link-hover: $color-pacifica-green;
+$color-active: $color-crystal-green;
+
+// Base Font
+$base-font-family: $font-merr;
+$base-font-weight: 400;
+$base-font-size: 1.2rem;
+$base-line-height: 2.2rem;
+$base-link-underline-width: 2px;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Header Font
+$header-font-family: $font-rale;
+$header-font-weight: $font-weight-regular;

@@ -1,17 +1,12 @@
 ---
-layout: post
 title: Draw Your Own Conclusions
 date: 2014-02-09
 tags: [life]
-comments: true
-
-pure_markdown: true
-archived: false
 ---
 
 I recently found out that I hate giving advice.
 
-It's fine when the advice is black and white. "Oh, you're missing a } over here." "That error comes up because you didn't override the virtual function properly." 
+It's fine when the advice is black and white. "Oh, you're missing a } over here." "That error comes up because you didn't override the virtual function properly."
 
 It isn't so great when the advice isn't as straight-forward.
 
@@ -19,9 +14,9 @@ First off, you're not really so certain as to how much of an impact your advice 
 
 If you give bad advice you have to potential to change someone's life, for the good or for the worse, and often time, you have no clue what you did. Couple that with a deep sense of insecurity (see [imposter syndrome](Impostor syndrome))and a lot of self-reflection about yourself and a lot of growing up to be done, and you suddenly realize that, "Holy shit I'm looking back and I could've said this and that and all of this other stuff, instead of that stupid comment before." And that's painful to live with.
 
-On the other hand, it's so easy to just give and give and give advice without regard to the consequences of your interpretation. When you give advice so freely, you belittle the person by saying you don't believe they were smart enough to come up with this themselves. You tell them that your advice is the right way because you did something similar and now, you think it's right. You elevate yourself above them &ndash; you become an asshole. 
+On the other hand, it's so easy to just give and give and give advice without regard to the consequences of your interpretation. When you give advice so freely, you belittle the person by saying you don't believe they were smart enough to come up with this themselves. You tell them that your advice is the right way because you did something similar and now, you think it's right. You elevate yourself above them &ndash; you become an asshole.
 
-I think the best that you can do as an advice-giver is not to give advice. My responsibility should be to listen, ask questions, and talk about what I have done myself. Let other people draw their own conclusions and make their own decisions from my experiences. Don't try to warp my unique experiences as solutions to their unique problems. 
+I think the best that you can do as an advice-giver is not to give advice. My responsibility should be to listen, ask questions, and talk about what I have done myself. Let other people draw their own conclusions and make their own decisions from my experiences. Don't try to warp my unique experiences as solutions to their unique problems.
 
 Obviously, this isn't new. Apparently it's called the [Gestalt Protocol](http://chiefoptimizer.com/357/entrepreneur/gestalt-protocol/#axzz2sfUTXeWF).
 

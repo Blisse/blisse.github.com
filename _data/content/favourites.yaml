@@ -1,9 +1,31 @@
 -
+    link: "http://nautil.us/issue/22/slow/how-music-hijacks-our-perception-of-time-rp"
+    title: "How Music Hijacks Our Perception of Time"
+    starred: true
+-
+    link: "http://www.theawl.com/2012/06/how-silence-works-trappist-monks"
+    title: "How Silence Works: Emailed Conversations With Four Trappist Monks"
+    starred: true
+-
+    link: "http://blog.ellenchisa.com/2014/04/13/stuff-ive-screwed-up-while-interviewing/"
+    title: "Stuff I’ve Messed Up While Interviewing"
+-
+    link: "http://steve-yegge.blogspot.com/2006/03/truth-about-interviewing.html"
+    title: "The Truth About Interviewing "
+-
+    link: "http://www.zdnet.com/article/why-ssds-are-obsolete/"
+    title: "Why SSDs are obsolete"
+-
+    link: "http://www.jasonshen.com/2013/17-essential-best-practices-for-making-things-happen/"
+    title: "17 Essential Best Practices for Making Things Happen"
+-
     link: "http://calnewport.com/blog/2013/12/21/deep-habits-the-importance-of-planning-every-minute-of-your-work-day/"
     title: "Deep Habits: The Importance of Planning Every Minute of Your Work Day"
+    starred: true
 -
     link: "http://thoughtcatalog.com/bianca-sparacino/2014/11/how-to-ruin-your-life-without-even-noticing-that-you-are/"
     title: "How To Ruin Your Life (Without Even Noticing That You Are)"
+    starred: true
 -
     link: "https://www.atlassian.com/git/tutorials/comparing-workflows/"
     title: "Comparing Workflows"
@@ -13,12 +35,14 @@
 -
     link: "http://www.daedtech.com/be-the-we"
     title: "Be the We"
+    starred: true
 -
     link: "http://worrydream.com/LadderOfAbstraction/"
     title: "Ladder Of Abstraction"
 -
     link: "http://paulgraham.com/todo.html"
     title: "The Top of My Todo List"
+    starred: true
 -
     link: "http://venturebeat.com/2014/09/25/how-the-tech-elite-teach-stanford-students-to-build-billion-dollar-companies-in-11-quotes/"
     title: "How the tech elite teach Stanford students to build billion-dollar companies"

@@ -1,13 +1,5 @@
-# Home
-
 home_latest_favourites_title: "New Favourites"
 home_latest_posts_title: "New Posts"
-
-# Blog
-
-# Portfolio
-
-# About
 
 about_favourite_quotes_title: "Favourite Quotes"
 about_favourite_posts_title: "Favourite Posts"
@@ -19,3 +11,7 @@ about_contact_title: "Contact"
 about_favourites_page_title: "Favourite Posts"
 about_videos_page_title: "Favourite Videos"
 about_blogs_page_title: "Favourite Blogs"
+
+portfolio_work_title: "Work"
+portfolio_projects_title: "Projects"
+portfolio_resume_title: "Resume"

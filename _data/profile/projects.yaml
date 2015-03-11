@@ -1,15 +1,22 @@
 -
+    title: "MASA Windows Store App Base"
+    link: "https://github.com/Blisse/Windows8MASA"
+    description: [
+        "Windows Store app base-layer to support code re-use across projects.",
+        "Heavily uses MVVM abstractions to clarify ViewModel architecture."
+    ]
+-
     title: "21 Day Advantage"
     link: "http://www.windowsphone.com/en-us/store/app/21-day-advantage/19cc9347-88a3-4358-a2f7-065a01679145"
-    description: ["Windows Phone 8 app based off of <a href='http://youtu.be/fLJsdqxnZb0'>Shawn Achor</a>'s TEDx Talk &ndash; 1000+ downloads"]
+    description: ["WP8 app based off of Shawn Achor's TEDx Talk; 1000+ downloads"]
 -
     title: "UWaterloo OpenData Library"
     link: "https://github.com/Blisse/UWOpenDataLib"
-    description: ["C# Portable Class Library wrapping asynchronous methods to retrieve JSON data from <a href='https://github.com/uWaterloo/api-documentation'>UWaterloo's Open Data API</a>"]
+    description: ["Async C# JSON wrapper around UWaterloo's Open Data API"]
 -
     title: "Youtube Subscriber"
     link: "/work/ytsubscriber"
-    description: ["Desktop WPF application to parse, display and filter Youtube subscriptions HTML page sources"]
+    description: ["Desktop WPF application to parse, display and filter Youtube subscription page sources"]
 -
     title: "OpenGL Tic-Tac-Toe"
     link: "/work/ogltictactoe"
@@ -17,8 +24,8 @@
 -
     title: "Beyond Compare 3 Launcher"
     link: "https://github.com/Blisse/BC3Launcher"
-    description: ["PDF comparison utility integrated with Beyond Compare 3"]
+    description: ["Automating PDF comparison using Beyond Compare 3"]
 -
     title: "This Website"
     link: "/work/site"
-    description: ["Fun Jekyll-based exploration of web development using SASS and JavaScript"]
+    description: ["Fun exploration of web development via Jekyll"]

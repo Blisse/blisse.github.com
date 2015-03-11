@@ -18,6 +18,9 @@ title: videos
     <div class="small-12 columns">
         <p>
             <a href="{{ video.link }}">
+                {% if video.starred %}
+                <span aria-hidden="true" data-icon="&#xe613;"></span>
+                {% endif %}
                 {{ video.title }}
             </a>
         </p>

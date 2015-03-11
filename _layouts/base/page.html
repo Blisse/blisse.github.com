@@ -67,16 +67,18 @@ headers:
         </div>
     </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            {% for header in page.headers %}
-            {% if page.navigationhighlight == header.highlight %}
-            {% if header.dirs %}
-            <div id="navigation-menu-active-directories">{% for subdir in header.dirs %}{% if page.navigationsubhighlight == subdir.highlight %}<a href="{{ subdir.link }}" class="active">{{ subdir.name }}</a>{% else %}<a href="{{ subdir.link }}">{{ subdir.name }}</a>{% endif %}{% endfor %}
+    <div id="navigation-menu-active-directories-wrapper">
+        <div class="row">
+            <div class="small-12 columns">
+                {% for header in page.headers %}
+                {% if page.navigationhighlight == header.highlight %}
+                {% if header.dirs %}
+                <div id="navigation-menu-active-directories">{% for subdir in header.dirs %}{% if page.navigationsubhighlight == subdir.highlight %}<a href="{{ subdir.link }}" class="active">{{ subdir.name }}</a>{% else %}<a href="{{ subdir.link }}">{{ subdir.name }}</a>{% endif %}{% endfor %}
+                </div>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
             </div>
-            {% endif %}
-            {% endif %}
-            {% endfor %}
         </div>
     </div>
 </div>

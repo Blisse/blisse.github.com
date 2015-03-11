@@ -1,32 +1,20 @@
-@import "base";
+@import "partials/base";
 
-.tags {
-    text-transform: uppercase;
-    font-size: 0.8rem;
-}
-
-.next, .previous {
-    font-family: $font-rale;
-}
-
-.paginator {
-    .next, .previous {
-        min-height: 100px;
-        font-size: 2.8rem;
-        font-family: $font-nexa;
-        vertical-align: middle;
-        text-align: center;
-
-        background: $color-link;
-
-        margin: 0;
+#blog-page {
+    .blog-page-post {
+        margin-bottom: 6.0rem;
     }
 
-    .float-right {
-        float: right;
-    }
-}
+    #blog-page-navigation {
+        margin-bottom: 6.0rem;
 
-.post {
-    margin-bottom: 8.0rem;
+        #blog-page-previous-post, #blog-page-all, #blog-page-next-post {
+            a {
+                font-family: $font-rale;
+                font-size: 2.0rem;
+                text-transform: lowercase;
+                margin-right: 2.0rem;
+            }
+        }
+    }
 }

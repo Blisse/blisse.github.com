@@ -16,7 +16,7 @@
 
 
 #navigation-menu {
-    margin: 2.0rem 0;
+    margin-top: 2.0rem;
 
     #navigation-menu-header {
 
@@ -42,12 +42,12 @@
 
             &:hover {
                 color: $color-white;
-                background: $color-slate-blue;
+                background: $color-crystal-green;
             }
 
             &:active {
-                color: $color-white;
-                background: $color-crystal-green;
+                color: $color-crystal-green;
+                background: $color-white;
             }
 
             &.active {
@@ -58,21 +58,27 @@
                 }
 
                 &:hover {
-                    background: $color-slate-blue;
+                    background: $color-crystal-green;
                 }
 
                 &:active {
-                    background: $color-crystal-green;
+                    color: $color-crystal-green;
+                    background: $color-white;
                 }
             }
         }
     }
 
-    #navigation-menu-active-directories {
+    #navigation-menu-active-directories-wrapper {
+        margin-top: 2.0rem;
+        line-height: 1.9rem;
+        border-bottom: none;
+        background: $color-pacifica-blue;
         display: block;
-        margin-top: 1.6rem;
-        color: $color-white;
-        background: $color-slate-blue;
+    }
+
+    #navigation-menu-active-directories {
+        vertical-align: center;
 
         a {
             font-family: $font-rale;
@@ -92,7 +98,7 @@
 
             &:link, &:visited {
                 color: $color-white;
-                background: $color-slate-blue;
+                background: $color-pacifica-blue;
             }
 
             &:hover {

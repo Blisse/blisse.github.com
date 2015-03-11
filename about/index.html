@@ -89,7 +89,9 @@ title: about
     <div class="row">
         <div class="small-12 medium-6 columns">
             <h2>
-                {{ site.data.content.pages.about_favourite_videos_title }}
+                <a href="/about/videos/">
+                    {{ site.data.content.pages.about_favourite_videos_title }}
+                </a>
             </h2>
             <ul class="square">
                 {% for tedtalk in site.data.content.videos limit:5 %}
@@ -106,7 +108,9 @@ title: about
         </div>
         <div class="small-12 medium-6 columns">
             <h2>
-                {{ site.data.content.pages.about_favourite_bloggers_title }}
+                <a href="/about/blogs/">
+                    {{ site.data.content.pages.about_favourite_bloggers_title }}
+                </a>
             </h2>
             <ul class="square">
                 {% for blogger in site.data.content.blogs limit:5 %}

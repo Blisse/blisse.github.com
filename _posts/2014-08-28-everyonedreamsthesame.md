@@ -1,5 +1,5 @@
 ---
-title: everyone dreams the same thing
+title: everyone has the same dreams
 tags: [life]
 date: 2014-08-28
 comments: false

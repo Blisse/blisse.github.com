@@ -19,6 +19,9 @@ title: favourites
         <ul class="square">
             <li>
                 <a href="{{ favourite.link }}">
+                    {% if favourite.starred %}
+                    <span aria-hidden="true" data-icon="&#xe613;"></span>
+                    {% endif %}
                     {{ favourite.title }}
                 </a>
             </li>

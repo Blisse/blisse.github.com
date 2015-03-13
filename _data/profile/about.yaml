@@ -36,18 +36,20 @@ about_short: [
     ]
 
 about_long: [
-        "Hi! My name is Victor Lai. I'm a Software Engineering student
-            at the University of Waterloo. I'm passionate about product design,
-            human-device interaction, and gaming",
-        "I love learning, especially from my mistakes. I find it an amazing
-            feeling to step back and look at my progress and dive in with a
-            different perspective on how far you've come. Try doing something
-            with your non-dominant hand and see how much work you've accomplished",
-        "I enjoy seeing my ideas and views being shaped by my interactions with the world.
-            When I'm not studying, I'm out expanding my abilities. This year I'm
-            learning how to skate on ice, so I can eventually play hockey.
-            Otherwise, I blog, read up on blogs, improve my programming, run, read,
-            play games, and explore"
+    "Hello! I'm Victor Lai. I'm a Software Engineering student
+        at the University of Waterloo. I'm passionate about engineering, design,
+        well-being and hard work.",
+    "I love learning. I find it an amazing feeling to step back to look at my progress so far,
+        and dive right back in with a new perspective. Try doing something with your non-dominant hand,
+        and really see how much better you've become.",
+    "I enjoy seeing my ideas and views being shaped by my interactions with the world.
+        When I'm not studying, I'm out finding more stuff to do. This year I'm
+        learning how to skate on ice, so I can eventually play hockey. I'm learning
+        bouldering to stay fit. I blog, read up on blogs, work on some side projects, run,
+        read, play games, and explore. I'm always up to learn new and fun activities.",
+    "I made this blog to document and share some of my thoughts, so that I can look back and see
+        the progress I've made. I update it with some of my new experiences, and new posts that I've found
+        especially interesting. Hopefully you'll find something useful as well."
     ]
 
 copyright_warning: [

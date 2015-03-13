@@ -1,31 +1,33 @@
 ---
 layout: base/page
 ---
-<div class="row">
-    <div class="small-12 columns">
-        <h2>
-            <a href="{{ post.url }}">
-                {{ page.title }}
-            </a>
-        </h2>
-        <p class="tags">
-            about {{ page.tags | array_to_sentence_string }}. posted on {{ page.date | date:'%B %d, %Y' }}
-        </p>
+<div class="blog-page-post">
+    <div class="row">
+        <div class="small-12 columns">
+            <h2>
+                <a href="{{ post.url }}">
+                    {{ page.title }}
+                </a>
+            </h2>
+            <p class="tags">
+                about {{ page.tags | array_to_sentence_string }}. posted on {{ page.date | date:'%B %d, %Y' }}
+            </p>
+        </div>
     </div>
-</div>
-{% if page.pure_markdown == true %}
-<div class="row">
-    <div class="small-12 columns post">
-        {{ page.content | markdownify }}
+    {% if page.pure_markdown == true %}
+    <div class="row">
+        <div class="small-12 columns">
+            {{ page.content | markdownify }}
+        </div>
     </div>
-</div>
-{% else %}
-{{ page.content | markdownify }}
-{% endif %}
-{% if page.comments %}
-<div class="row">
-    <div class="small-12 columns">
-        {% include extensions/disqus.html %}
+    {% else %}
+    {{ page.content | markdownify }}
+    {% endif %}
+    {% if page.comments %}
+    <div class="row">
+        <div class="small-12 columns">
+            {% include extensions/disqus.html %}
+        </div>
     </div>
+    {% endif %}
 </div>
-{% endif %}

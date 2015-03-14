@@ -1,5 +1,5 @@
 ---
-title: hello world!
+title: "hello world!"
 date: 2012-02-25
 tags: [this site, milestones]
 comments: false

@@ -10,7 +10,7 @@ sass:
     syntax: scss        # scss|sass
     style:  compressed  # nested|expanded|compact|compressed
 
-markdown:       redcarpet
+markdown:       kramdown
 highlighter:    rouge
 
 encoding: utf-8

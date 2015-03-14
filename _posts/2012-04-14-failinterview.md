@@ -6,10 +6,6 @@ tags:
         life
     -
         school
-comments: true
-
-pure_markdown: true
-archived: false
 ---
 
 

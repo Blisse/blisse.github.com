@@ -1,6 +1,8 @@
 ---
 title: sorries fade
-tags: [life]
+tags:
+    -
+        life
 date: 2015-01-27
 ---
 

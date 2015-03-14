@@ -1,7 +1,9 @@
 ---
 title: counterstrike & memories
 date: 2012-07-11
-tags: [gaming]
+tags:
+    -
+        gaming
 comments: true
 
 pure_markdown: true

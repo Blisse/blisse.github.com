@@ -1,7 +1,9 @@
 ---
 title: Draw Your Own Conclusions
 date: 2014-02-09
-tags: [life]
+tags:
+    -
+        life
 ---
 
 I recently found out that I hate giving advice.

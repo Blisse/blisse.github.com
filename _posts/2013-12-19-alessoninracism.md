@@ -1,7 +1,9 @@
 ---
 title: a lesson in racism and happiness
 date: 2013-12-19
-tags: life
+tags:
+    -
+        life
 ---
 
 Sometimes, things just hit you like a brick.

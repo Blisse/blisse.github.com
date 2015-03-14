@@ -1,7 +1,9 @@
 ---
 title: Seeing and Living
 date: 2014-03-28
-tags: [life]
+tags:
+    -
+        life
 ---
 
 There's been a lot of thought put into the idea of living, but not seeing. It already sounds very weird and like an attempt to be profound, but it makes a lot of sense if you've ever seen it in action.

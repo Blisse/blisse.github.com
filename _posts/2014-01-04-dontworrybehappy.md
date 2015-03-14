@@ -1,7 +1,9 @@
 ---
 title: don't worry, be happy
 date: 2014-01-04
-tags: [life]
+tags:
+    -
+        life
 ---
 
 Let's start 2014 on a happy note.

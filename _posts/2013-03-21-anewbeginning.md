@@ -1,7 +1,9 @@
 ---
 title: A New Beginning
 date: 2013-03-21
-tags: [life]
+tags:
+    -
+        life
 ---
 
 

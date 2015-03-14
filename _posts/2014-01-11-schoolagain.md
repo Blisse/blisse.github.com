@@ -1,7 +1,9 @@
 ---
 title: school again
 date: 2014-01-11
-tags: [school]
+tags:
+    -
+        school
 ---
 
 First week of school over. Damn. This year is going to be insaneee.

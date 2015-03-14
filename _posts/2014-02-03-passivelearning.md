@@ -1,7 +1,9 @@
 ---
 title: passive learning
 date: 2014-02-03
-tags: [life]
+tags:
+    -
+        life
 ---
 
 Do you sit down and let knowledge come to you? Or do you actively work to improve yourself?

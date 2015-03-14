@@ -1,7 +1,9 @@
 ---
 title: Get your shit together Microsoft
 date: 2013-07-12
-tags: [technology]
+tags:
+    -
+        technology
 ---
 
 No one from Microsoft is ever going to read this but I'm going to vent for a little bit.

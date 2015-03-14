@@ -1,7 +1,9 @@
 ---
 title: a year in retrospect
 date: 2013-08-16
-tags: [life]
+tags:
+    -
+        life
 ---
 
 

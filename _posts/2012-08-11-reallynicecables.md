@@ -1,7 +1,9 @@
 ---
 title: some cables feel really nice
 date: 2012-08-11
-tags: [music]
+tags:
+    -
+        music
 ---
 
 I recently gained possession of a really nice pair of cables. 1/4" male to 1/4" male. Nothing special really, except the cable feels really nice.

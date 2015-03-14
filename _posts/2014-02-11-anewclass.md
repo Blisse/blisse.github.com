@@ -1,7 +1,9 @@
 ---
 title: A New Class of Jokes
 date: 2014-02-11
-tags: [life]
+tags:
+    -
+        life
 ---
 
 I remember back in the 12th grade, I was talking to a friend about how basically every single joke makes fun of someone in someway (like laughing at a mistake or doing something stupid yet funny). She mentioned puns and I couldn't find any argument against that except that puns made people cringe. In retrospective that should've been enough, but at least now, I think it's time to admit I was wrong. Thankfully.

@@ -1,7 +1,11 @@
 ---
 title: first coding interview
 date: 2012-04-14
-tags: [life, school]
+tags:
+    -
+        life
+    -
+        school
 comments: true
 
 pure_markdown: true
@@ -39,10 +43,10 @@ line = original
 newline = ""
 
 for i in line:
-	if ord(i) != (ord(' ')):
-		newline += i
-	else:
-		pass
+    if ord(i) != (ord(' ')):
+        newline += i
+    else:
+        pass
 
 print newline
 
@@ -56,23 +60,23 @@ first = 1
 newline = []
 
 for word in line.split():
-	for letter in word:
-		if first != 1:
-			newword += letter
-		else:
-			first = 0
+    for letter in word:
+        if first != 1:
+            newword += letter
+        else:
+            first = 0
 
-	first = 1
-	newline.append(newword)
-	newword = ""
+    first = 1
+    newline.append(newword)
+    newword = ""
 
 output = []
 
 for word in newline:
-	if word == '' or word == ' ':
-		pass
-	else:
-		output.append(word)
+    if word == '' or word == ' ':
+        pass
+    else:
+        output.append(word)
 
 newline = " ".join(output)
 print newline
@@ -90,10 +94,10 @@ come up with. Honest.
 {% highlight python %}
 
 def removefirstletter( sentence ):
-	tokens = sentence.split()
-	for word in range(len(tokens)):
-		tokens[word] = "".join(list(tokens[word])[1:])
-	return " ".join(tokens)
+    tokens = sentence.split()
+    for word in range(len(tokens)):
+        tokens[word] = "".join(list(tokens[word])[1:])
+    return " ".join(tokens)
 
 {% endhighlight %}
 

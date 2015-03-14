@@ -1,7 +1,9 @@
 ---
 title: gaming professionalism
 date: 2012-09-15
-tags: [gaming]
+tags:
+  -
+    gaming
 comments: false
 archived: true
 ---

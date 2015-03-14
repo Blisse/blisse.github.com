@@ -1,7 +1,11 @@
 ---
 title: Xbox One and the Internet
 date: 2013-06-23
-tags: [life, gaming]
+tags:
+    -
+        life
+    -
+        gaming
 ---
 
 I tend to think of myself as rather rational since I have nothing invested in the matter. I'm a PC gamer, my previous console was a PS2 that I last played maybe 5 years ago, and my previous console will probably be a PS3 so I can play The Last of Us.

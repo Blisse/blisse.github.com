@@ -1,7 +1,9 @@
 ---
 title: the final year
 date: 2015-01-25
-tags: [life]
+tags:
+    -
+        life
 ---
 
 I hate the kind of finality that's slowly creeping up. It's a new year, 2015, so that means we're entering our final years of university. And that's frickin' scary.

@@ -1,6 +1,8 @@
 ---
 title: everyone has the same dreams
-tags: [life]
+tags:
+    -
+        life
 date: 2014-08-28
 comments: false
 ---

@@ -1,6 +1,8 @@
 ---
 title: negativity is not welcome
-tags: [life]
+tags:
+    -
+        life
 date: 2014-12-03
 comments: false
 ---

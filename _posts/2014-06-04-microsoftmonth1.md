@@ -1,7 +1,9 @@
 ---
 title: microsoft month one
 date: 2014-06-04
-tags: [work]
+tags:
+    -
+        work
 ---
 
 Microsoft doesn't seem to know how to cater to its audiences that well.

@@ -1,7 +1,9 @@
 ---
 title: Cold Showers
 date: 2013-10-24
-tags: life
+tags:
+    -
+        life
 ---
 
 There's a surprising amount of research into cold showers. It makes absolutely no sense to anyone who loves a hot shower, but there's plenty of people backing it up.

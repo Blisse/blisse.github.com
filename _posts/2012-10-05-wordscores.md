@@ -1,7 +1,9 @@
 ---
 title: word scores
 date: 2012-10-05
-tags: [programming]
+tags:
+  -
+    programming
 pure_markdown: false
 ---
 

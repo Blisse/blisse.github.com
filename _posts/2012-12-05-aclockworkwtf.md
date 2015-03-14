@@ -1,7 +1,9 @@
 ---
 title: a clockwork wtf
 date: 2012-12-05
-tags: [thinking]
+tags:
+  -
+    thinking
 pure_markdown: false
 archived: true
 ---

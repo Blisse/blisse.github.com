@@ -1,6 +1,10 @@
 ---
 title: tetris basics
-tags: [gaming, life]
+tags:
+  -
+    gaming
+  -
+    life
 date: 2012-08-20
 comments: false
 archived: true

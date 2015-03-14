@@ -1,7 +1,9 @@
 ---
 title: it's the little things (and also the big things)
 date: 2013-07-19
-tags: [technology]
+tags:
+  -
+    technology
 ---
 
 After you go after the big things in design, you go after the little ones. And you'll notice the people/companies that succeed the most do the best with the little things. This is true for most developed fields, but I like design so here's a small set of things I've noticed.

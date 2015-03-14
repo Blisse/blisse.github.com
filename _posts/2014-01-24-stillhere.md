@@ -1,7 +1,9 @@
 ---
 title: am i being overworked?
 date: 2014-01-24
-tags: [school]
+tags:
+    -
+        school
 ---
 
 Here's something interesting.

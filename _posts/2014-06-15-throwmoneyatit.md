@@ -1,7 +1,9 @@
 ---
 title: throwing money at it
 date: 2014-06-15
-tags: [life]
+tags:
+    -
+        life
 ---
 
 Remove barriers between yourself and your target. Whenever you do something new and different, there's always a hill or bump to get over in order to start doing it. The ultimate goal is to make that hill part of your routine, but while it's new, you have to actively fight against it. hill can be physical, like being really far away, or mental, like thinking it won't be fun, but you inevitably have to get over it before you can start.

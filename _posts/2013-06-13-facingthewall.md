@@ -1,7 +1,11 @@
 ---
 title: Face the challenges
 date: 2013-06-13
-tags: [life, school]
+tags:
+    -
+        life
+    -
+        school
 ---
 
 This is one of my roughest school terms in my life.

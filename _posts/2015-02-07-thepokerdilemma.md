@@ -1,7 +1,9 @@
 ---
 title: the poker dilemma
 date: 2015-02-07
-tags: [life]
+tags:
+    -
+        life
 ---
 
 *preface: I wrote the first half of this a month ago, left it in my drafts because I didn't think it was relevant, and then I got first place in a tournament. It was a new experience for me, and kinda unreal, but drives home the fun about poker a bit more and made me think about this blog again, so I finished it up.*

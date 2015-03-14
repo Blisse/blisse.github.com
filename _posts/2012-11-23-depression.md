@@ -1,7 +1,9 @@
 ---
 title: depression
 date: 2012-11-23
-tags: [life]
+tags:
+  -
+    life
 comments: false
 pure_markdown: false
 archived: true

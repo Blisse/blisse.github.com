@@ -1,7 +1,9 @@
 ---
 title: challenge yourself
 date: 2014-10-05
-tags: [life]
+tags:
+    -
+        life
 comments: false
 ---
 

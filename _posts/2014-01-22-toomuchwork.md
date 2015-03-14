@@ -1,7 +1,9 @@
 ---
 title: almost too much
 date: 2014-01-22
-tags: [school]
+tags:
+    -
+        school
 ---
 
 So it's been 2 weeks. I think I'm already overworked. I thought I had a weekend to catch up but I was stuck on one assignment, and now multiple (>3) things are due per week, plus a couple large projects and sizable quizzes that are kind of scaring me.

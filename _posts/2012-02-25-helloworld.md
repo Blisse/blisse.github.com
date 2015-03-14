@@ -1,5 +1,5 @@
 ---
-title: hello world!
+title: "hello world"
 date: 2012-02-25
 tags:
     -
@@ -11,7 +11,6 @@ comments: false
 
 
 This is my first post. So, an obligatory
-
 
 def main():
   print "Hello world!"

@@ -53,7 +53,7 @@ newword = ""
 
 first = 1
 
-newline = []
+newline =
 
 for word in line.split():
     for letter in word:

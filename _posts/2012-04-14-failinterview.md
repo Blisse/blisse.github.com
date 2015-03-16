@@ -20,18 +20,18 @@ The question was (I think):
 
 
 
-{% highlight console %}
+``` console
 
 Remove the first letter from each word in the string:
 > "asdf das f po"
 
-{% endhighlight %}
+```
 
 
-EDIT[2012-07-16]: This was my March attempt.
+EDIT 2012-07-16: This was my March attempt.
 
 
-{% highlight python %}
+``` python
 
 # removes spaces from string
 
@@ -77,17 +77,17 @@ for word in newline:
 newline = " ".join(output)
 print newline
 
-{% endhighlight %}
+```
 
 
 
-EDIT [20120716]: How did I not realize how bad this was back when I wrote it?
+EDIT 20120716: How did I not realize how bad this was back when I wrote it?
 Wow. Just wow. I don't know how I made it this far programming if that was the best I could
 come up with. Honest.
 
 
 
-{% highlight python %}
+``` python
 
 def removefirstletter( sentence ):
     tokens = sentence.split()
@@ -95,7 +95,7 @@ def removefirstletter( sentence ):
         tokens[word] = "".join(list(tokens[word])[1:])
     return " ".join(tokens)
 
-{% endhighlight %}
+```
 
 
 Easily handles any issue with spacing when you remove the word with one letter.
@@ -103,11 +103,11 @@ Easily handles any issue with spacing when you remove the word with one letter.
 The output should be
 
 
-{% highlight console %}
+``` console
 
 > "df as o"
 
-{% endhighlight %}
+```
 
 
 I'd like to think I made progress, but this could be done a lot better still.

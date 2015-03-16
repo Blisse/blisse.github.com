@@ -59,128 +59,71 @@
         }
     }
 
-    #portfolio-page-jobs {
+    #portfolio-page-jobs, #portfolio-page-projects {
         margin: 0.6rem 0;
         padding-top: 1.0rem;
 
-        .portfolio-page-job-wrapper {
+        .portfolio-page-job-wrapper, .portfolio-page-project-wrapper {
             background: image-url("background/background_3.jpg", false, false) top center no-repeat fixed;
             background-size: cover;
             -o-background-size: cover;
             -moz-background-size: cover;
             -webkit-background-size: cover;
 
-            a.portfolio-page-job {
+            a.portfolio-page-job, a.portfolio-page-project {
                 display: block;
-                background: rgba(255,255,255,0.85);
+                background: rgba(61,60,59,0.4);
                 margin-bottom: 1.0rem;
                 padding: 1.0rem;
+                min-height: 6.0rem;
 
-                .portfolio-page-job-company, .portfolio-page-job-title {
+                .portfolio-page-job-company, .portfolio-page-job-title,
+                .portfolio-page-job-date, .portfolio-page-job-description,
+                .portfolio-page-project-title, .portfolio-page-project-description {
                     font-family: $font-rale;
-                    font-weight: $font-weight-regular;
+                    font-weight: $font-weight-light;
+                    text-shadow: 1px 1px 1px #333;
+                    color: $color-white;
                     margin: 0.0rem;
                 }
 
                 .portfolio-page-job-company {
-                    font-size: 1.0rem;
-                    color: $color-pacifica-green;
+                    font-size: 1.4rem;
                     text-transform: uppercase;
                 }
 
-                .portfolio-page-job-title {
-                    font-size: 2.1rem;
-                    color: $color-dark-gray;
+                .portfolio-page-job-title, .portfolio-page-project-title {
+                    font-size: 2.4rem;
                     font-weight: $font-weight-regular;
                     text-transform: uppercase;
-                    margin: 0.5rem 0 1.2rem;
+                    margin: 0.5rem 0 0rem;
+                }
+
+                .portfolio-page-project-title {
+                    margin-bottom: 0.8rem;
                 }
 
                 .portfolio-page-job-date {
-                    color: $color-dark-gray;
                     font-size: 1.0rem;
-                    font-family: $font-rale;
-                    text-transform: uppercase;
-                }
-
-                .portfolio-page-job-description {
-                    font-size: 1.2rem;
-                    font-family: $font-open;
-                    font-weight: $font-weight-regular;
-                    line-height: 1.6rem;
-                    margin: 0rem;
-                }
-
-                &:link, &:visited {
-                    background: rgba(255,255,255,0.85);
-                }
-
-                &:hover {
-                    background: rgba(255,255,255,0.95);
-                }
-
-                &:active {
-                    background: rgba(255,255,255,0.2);
-
-                    .portfolio-page-job-company, .portfolio-page-job-title,
-                    .portfolio-page-job-date, .portfolio-page-job-description {
-                        color: $color-white;
-                    }
-                }
-            }
-
-        }
-    }
-
-    #portfolio-page-projects {
-        margin: 0.6rem 0;
-        padding-top: 1.0rem;
-
-        .portfolio-page-project-wrapper {
-            background: image-url("background/background_3.jpg", false, false) top center no-repeat fixed;
-            background-size: cover;
-            -o-background-size: cover;
-            -moz-background-size: cover;
-            -webkit-background-size: cover;
-
-            a.portfolio-page-project {
-                display: block;
-                background: rgba(255,255,255,0.85);
-                margin-bottom: 1.0rem;
-                padding: 1.0rem;
-
-                .portfolio-page-project-title {
-                    color: $color-pacifica-green;
-                    font-size: 2.1rem;
-                    font-family: $font-rale;
                     font-weight: $font-weight-light;
                     text-transform: uppercase;
-                    margin-bottom: 1.2rem;
+                    color: $color-light-gray;
+                    margin: 0.2rem 0 1.6rem;
                 }
 
-                .portfolio-page-project-description {
-                    font-size: 1.2rem;
+                .portfolio-page-job-description, .portfolio-page-project-description {
+                    font-size: 1.1rem;
                     font-family: $font-open;
                     font-weight: $font-weight-regular;
-                    line-height: 1.6rem;
-                    margin: 0rem;
-                }
-
-                &:link, &:visited {
-                    background: rgba(255,255,255,0.85);
+                    line-height: 1.5rem;
                 }
 
                 &:hover {
-                    background: rgba(255,255,255,0.95);
+                    background: rgba(61,60,59,0.7);
                 }
 
                 &:active {
-                    background: rgba(255,255,255,0.2);
-
-                    .portfolio-page-job-company, .portfolio-page-job-title,
-                    .portfolio-page-job-date, .portfolio-page-job-description {
-                        color: $color-white;
-                    }
+                    background: rgba(0,0,0,0.1);
                 }
             }
         }

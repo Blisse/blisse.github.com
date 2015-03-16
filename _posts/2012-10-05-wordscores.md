@@ -22,10 +22,10 @@ pure_markdown: false
     </p>
 
     <p>
-    {% highlight python %}
+    ``` python
       def chars = map ( [char for char in word], range(1,26+1))
       def word_score = sum ( char for char in chars )
-    {% endhighlight %}
+    ```
     </p>
 
     <p>
@@ -33,7 +33,7 @@ pure_markdown: false
     </p>
 
     <p>
-    {% highlight python %}
+    ``` python
 
     import os, inspect, string
     write_file = "output.txt"
@@ -77,7 +77,7 @@ pure_markdown: false
     if __name__ == "__main__":
       main()
 
-    {% endhighlight %}
+    ```
     </p>
 
     <p>

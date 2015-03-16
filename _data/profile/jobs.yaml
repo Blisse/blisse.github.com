@@ -3,25 +3,25 @@
     company: "Microsoft"
     date: "Jan &ndash; Present"
     description: [
-        "Building Windows, one pane at a time."
+        "Currently helping build Windows 10 :D"
     ]
 -
     title: "Outlook Services Engineer"
     company: "Microsoft"
     date: "May &ndash; Aug 2014"
     description: [
-        "Prototyped cross-platform text transforms messaging app on WP8.1, Android and iOS"
+        "Prototyped cross-platform text-transform messaging on WP, Android and iOS"
     ]
 -
     title: "Agile Engineer"
     company: "Pivotal Labs"
     date: "Sept &ndash; Dec 2013"
     description: [
-        "Delivered WP8 and WinRT media streaming apps to client from scratch in 3 months (team of 6).",
-        "Front-end iOS development on wallet app."
+        "Delivered WP8 and WinRT media streaming apps to client from scratch in 3 months; team of 6.",
+        "Front-end iOS development for wallet app."
     ]
 -
-    title: "App Dev"
+    title: "Application Developer"
     shorttitle: "App Dev"
     company: "NexJ Systems"
     date: "Jan &ndash; Apr 2013"
@@ -29,7 +29,7 @@
         "Front-end, enterprise web CRM development &ndash; help deploy beta to 1000+ patients"
     ]
 -
-    title: "QA Analyst"
+    title: "Quality Assurance Analyst"
     shorttitle: "QA"
     company: "NexJ Systems"
     date: "May &ndash; Aug 2012"

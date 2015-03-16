@@ -6,7 +6,7 @@ tags:
         life
 ---
 
-*preface: I wrote the first half of this a month ago, left it in my drafts because I didn't think it was relevant, and then I got first place in a tournament. It was a new experience for me, and kinda unreal, but drives home the fun about poker a bit more and made me think about this blog again, so I finished it up.*
+*preface: I wrote the first half of this a month ago, left it in my drafts because I didn't think it was relevant, and then I got first place in a tournament... It was a new experience for me, and kinda unreal, but drives home the fun about poker a bit more and made me think about this blog again, so I finished it up.*
 
 I've loved poker since I was a kid. Mainly because I loved playing cards as a kid (lots of Big 2, Go Fish, Uno, Crazy Eights, Bridge), but also because I watched a lot of tv and somehow ended up watching poker whenever it was on ESPN or Sportsnet.
 

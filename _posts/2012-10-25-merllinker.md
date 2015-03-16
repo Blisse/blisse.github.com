@@ -21,11 +21,11 @@ archived: true
 </p>
 
 <p>
-{% highlight console %}
+``` console
 xxd -c 4 file1.merl > file1.xxd
 xxd -c 4 file2.merl > file2.xxd
 python linker.py file1.xxd file2.xxd output.txt
-{% endhighlight %}
+```
 </p>
 
 <p>

@@ -25,16 +25,14 @@ title: portfolio
             <div class="small-12 columns">
                 <div class="portfolio-page-job-wrapper">
                     <a class="portfolio-page-job">
-                        <div>
-                            <span class="portfolio-page-job-company">
-                                {{ job.company }}
-                            </span>
-                            <span class="portfolio-page-job-date">
-                                {{ job.date }}
-                            </span>
+                        <div class="portfolio-page-job-company">
+                            {{ job.company }}
                         </div>
                         <div class="portfolio-page-job-title">
                              {{ job.title }}
+                        </div>
+                        <div class="portfolio-page-job-date">
+                            {{ job.date }}
                         </div>
                         <ul class="no-bullet">
                             {% for description in job.description %}

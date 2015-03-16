@@ -10,8 +10,10 @@ sass:
     syntax: scss        # scss|sass
     style:  compressed  # nested|expanded|compact|compressed
 
-markdown:       redcarpet
-highlighter:    rouge
+markdown:       kramdown
+
+redcarpet:
+    highlighter:    rouge
 
 encoding: "utf-8"
 excerpt_separator: ""

@@ -105,10 +105,9 @@
 
                 .portfolio-page-job-date {
                     font-size: 1.0rem;
-                    font-weight: $font-weight-light;
+                    font-weight: $font-weight-regular;
                     text-transform: uppercase;
-                    color: $color-light-gray;
-                    margin: 0.2rem 0 1.6rem;
+                    margin: 0.1rem 0 1.6rem;
                 }
 
                 .portfolio-page-job-description, .portfolio-page-project-description {
@@ -119,7 +118,7 @@
                 }
 
                 &:hover {
-                    background: rgba(61,60,59,0.7);
+                    background: rgba(30,112,104,0.3);
                 }
 
                 &:active {

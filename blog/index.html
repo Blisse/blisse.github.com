@@ -19,7 +19,12 @@ title: blog
                 </p>
             </div>
             <div class="small-12 columns">
-                {{ post.content | markdownify }}
+                {{ post.content | truncatewords: 120 | markdownify }}
+            </div>
+            <div class="small-12 columns">
+                <p class="tags">
+                    <a href="{{ post.url }}">continue reading</a>
+                </p>
             </div>
         </div>
     </div>

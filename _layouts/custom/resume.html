@@ -9,14 +9,10 @@
         <title>
             {{ site.data.profile.about.site_title }}{% if page.title %} - {{ page.title }}{% endif %}
         </title>
-
-{% include standardhead.html %}
-
+        {% include standardhead.html %}
     </head>
     <body>
-
         {{ content }}
         {% include standardfoot.html %}
-
     </body>
 </html>

@@ -1,0 +1,197 @@
+---
+title: "resume"
+layout: "custom/resume"
+---
+<div id="resume-page">
+    <div class="resume-page-title-wrapper">
+        <div class="row">
+            <div class="small-6 columns">
+                <div class="resume-page-title">
+                    <p>
+                        {{ site.data.profile.resume.name_title }}
+                    </p>
+                </div>
+            </div>
+            <div class="small-6 columns">
+                <div class="resume-page-contact">
+                    <p>
+                        <a href="http://{{ site.data.profile.resume.website }}">
+                            {{ site.data.profile.resume.website }}
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:{{ site.data.profile.resume.email }}">
+                            {{ site.data.profile.resume.email }}
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://{{ site.data.profile.resume.github }}">
+                            {{ site.data.profile.resume.github }}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resume-page-header-wrapper">
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="resume-page-header">
+                    <a href="#skills" name="skills" class="active">
+                        {{ site.data.profile.resume.skills_title }}
+                    </a>
+                    <a href="#jobs">
+                        {{ site.data.profile.resume.job_title }}
+                    </a>
+                    <a href="#projects">
+                        {{ site.data.profile.resume.project_title }}
+                    </a>
+                    <a href="#projects">
+                        {{ site.data.profile.resume.education_title }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resume-page-skills">
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="resume-page-skill-wrapper">
+                    <a class="resume-page-skill">
+                        <ul class="no-bullets resume-page-skill-description-list">
+                            {% for skill in site.data.profile.resume.skills %}
+                            <li class="resume-page-skill-description">
+                                &ndash; {{ skill }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resume-page-header-wrapper">
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="resume-page-header">
+                    <a href="#jobs" name="jobs" class="active">
+                        {{ site.data.profile.resume.job_title }}
+                    </a>
+                    <a href="#projects">
+                        {{ site.data.profile.resume.project_title }}
+                    </a>
+                    <a href="#projects">
+                        {{ site.data.profile.resume.education_title }}
+                    </a>
+                    <a href="#skills">
+                        {{ site.data.profile.resume.skills_title }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resume-page-jobs">
+        <div class="row">
+            <div class="small-12 columns">
+                {% for job in site.data.profile.resume.jobs %}
+                <div class="resume-page-job-wrapper">
+                    <a class="resume-page-job">
+                        <span class="resume-page-job-title">
+                             {{ job.title }},
+                        </span>
+                        <span class="resume-page-job-company">
+                            {{ job.company }}
+                        </span>
+                        <span class="resume-page-job-date">
+                            &ndash; {{ job.date_year }}
+                        </span>
+                        <ul class="no-bullets resume-page-job-description-list">
+                            {% for description in job.description %}
+                            <li class="resume-page-job-description">
+                                &ndash; {{ description }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="resume-page-header-wrapper">
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="resume-page-header">
+                    <a href="#projects" name="projects" class="active">
+                        {{ site.data.profile.resume.project_title }}
+                    </a>
+                    <a href="#education">
+                        {{ site.data.profile.resume.education_title }}
+                    </a>
+                    <a href="#skills">
+                        {{ site.data.profile.resume.skills_title }}
+                    </a>
+                    <a href="#jobs">
+                        {{ site.data.profile.resume.job_title }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resume-page-projects">
+        <div class="row">
+            <div class="small-12 columns">
+                {% for project in site.data.profile.resume.projects %}
+                <div class="resume-page-project-wrapper">
+                    <a class="resume-page-project">
+                        <span class="resume-page-project-title">
+                             {{ project.title }}
+                        </span>
+                        <ul class="no-bullets resume-page-project-description-list">
+                            {% for description in project.description %}
+                            <li class="resume-page-project-description">
+                                &ndash; {{ description }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="resume-page-header-wrapper">
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="resume-page-header">
+                    <a href="#education" name="education" class="active">
+                        {{ site.data.profile.resume.education_title }}
+                    </a>
+                    <a href="#skills">
+                        {{ site.data.profile.resume.skills_title }}
+                    </a>
+                    <a href="#jobs">
+                        {{ site.data.profile.resume.job_title }}
+                    </a>
+                    <a href="#projects">
+                        {{ site.data.profile.resume.project_title }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resume-page-education">
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="resume-page-education-wrapper">
+                    <div class="resume-page-education-degree">
+                        {{ site.data.profile.resume.degree }}
+                    </div>
+                    <div class="resume-page-education-school">
+                        &ndash; {{ site.data.profile.resume.school }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

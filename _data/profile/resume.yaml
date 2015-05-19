@@ -1,0 +1,75 @@
+name_title: "victor lai"
+
+website: "www.laivictor.com"
+email: "hello@laivictor.com"
+github: "www.github.com/blisse"
+
+skills_title: "skills"
+job_title: "work experience"
+project_title: "side projects"
+education_title: "education"
+
+skills:
+-   "Technical work and project experience using C#, C/C++, C++/CX, Python, and Java"
+-   "Flexible development experiences by various SDL/GLFW, GTK+/wxWidgets, .NET WPF/Windows Store apps"
+-   "Passionate about technology, audio, gaming, graphics, and happiness, mental and physical well-being"
+
+jobs:
+-   title: "SDE Intern &ndash; Windows Desktop Shell"
+    company: "Microsoft"
+    date: "Jan &ndash; Apr 2015"
+    date_year: "2015"
+    description:
+        -   "Initiated first 1440p Windows Mobile builds by adding missing dependencies to Windows Mobile builds"
+        -   "Integrated multi-monitor scaling on Windows Mobile with Windows desktop"
+        -   "Added multi-monitor settings to Displays Settings page on Windows Mobile"
+
+-   title: "SDE Intern &ndash; Outlook Services"
+    company: "Microsoft"
+    date: "May &ndash; Aug 2014"
+    date_year: "2014"
+    description:
+        -   "Prototyped creative text messaging with native text transforms on Windows Phone, Android and iOS"
+
+-   title: "Agile Engineer"
+    company: "Pivotal Labs"
+    date: "Sept &ndash; Dec 2013"
+    date_year: "2013"
+    description:
+        -   "Completed MTV media streaming apps on Windows Phone 8 and Windows RT from scratch"
+        -   "Implemented the QR scanner for the CurrentC iOS wallet app"
+
+-   title: "Application Developer"
+    company: "NexJ Systems"
+    date: "Jan &ndash; Apr 2013"
+    date_year: "2013"
+    description:
+        -   "Implemented features for custom health CRM &ndash; helped deploy beta to 1000 patients"
+
+-   title: "QA Analyst"
+    company: "NexJ Systems"
+    date: "May &ndash; Aug 2012"
+    date_year: "2012"
+    description:
+        -   "Assumed QA lead for ATB Investor Services CRM; signed off on beta deployment to 3000 users"
+        -   "Developed Python application to automate regression testing PDF files &ndash; improved speeds up to 10x"
+
+projects:
+-   title: "Kinect Voice Controller"
+    description:
+        -   "PC controller using Kinect voice recognition"
+
+-   title: "21 Day Advantage"
+    description:
+        -   "Windows Phone 8 app based off of Shawn Achor's TEDx Talk; 1000+ downloads."
+
+-   title: "UWaterloo OpenData Library"
+    description:
+        -   "C# wrapper for UWaterloo's Open Data API"
+
+-   title: "Youtube Playlist Manager"
+    description:
+        -   "Desktop WPF application to manage Youtube subscriptions and playlists"
+
+school: "University of Waterloo"
+degree: "Candidate for Bachelors of Software Engineering"

@@ -13,3 +13,26 @@
 @import "partials/portfolio-page";
 @import "partials/about-page";
 @import "partials/resume-page";
+
+@media print {
+    body {
+        font-size: 8pt;
+        -webkit-print-color-adjust: exact;
+    }
+
+    p a, a {
+        text-decoration: none;
+    }
+
+    a[href]:after {
+        content: none !important;
+    }
+
+    .resume-page-contact {
+        margin-top: -5.0rem;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+}

@@ -10,26 +10,26 @@ project_title: "side projects"
 education_title: "education"
 
 skills:
--   "Technical work and project experience using C#, C/C++, C++/CX, Python, and Java"
--   "Flexible development experiences by various SDL/GLFW, GTK+/wxWidgets, .NET WPF/Windows Store apps"
--   "Passionate about technology, audio, gaming, graphics, and happiness, mental and physical well-being"
+-   "Proficient using C#, C/C++, Python, HTML/CSS"
+-   "Experienced in .NET WPF, Windows Store application development"
+-   "Comfortable with variety of technologies: Git, Make, Android, iOS, OpenGL, Sass"
 
 jobs:
--   title: "SDE Intern &ndash; Windows Desktop Shell"
+-   title: "Windows Shell Engineer Intern"
     company: "Microsoft"
     date: "Jan &ndash; Apr 2015"
     date_year: "2015"
     description:
-        -   "Initiated first 1440p Windows Mobile builds by adding missing dependencies to Windows Mobile builds"
-        -   "Integrated multi-monitor scaling on Windows Mobile with Windows desktop"
-        -   "Added multi-monitor settings to Displays Settings page on Windows Mobile"
+        -   "Initiated first 1440p Windows 10 Mobile builds by adding missing build dependencies"
+        -   "Integrated multi-monitor scaling on Windows 10 Mobile with Windows desktop implementation"
+        -   "Rewrote Display page in Windows 10 Mobile Settings to support multi-monitor controls"
 
--   title: "SDE Intern &ndash; Outlook Services"
+-   title: "Outlook Services Engineer Intern"
     company: "Microsoft"
     date: "May &ndash; Aug 2014"
     date_year: "2014"
     description:
-        -   "Prototyped creative text messaging with native text transforms on Windows Phone, Android and iOS"
+        -   "Prototyped creative text messaging with native text transforms on Windows Phone, Android, and iOS"
 
 -   title: "Agile Engineer"
     company: "Pivotal Labs"
@@ -44,7 +44,7 @@ jobs:
     date: "Jan &ndash; Apr 2013"
     date_year: "2013"
     description:
-        -   "Implemented features for custom health CRM &ndash; helped deploy beta to 1000 patients"
+        -   "Implemented features for custom health CRM, and deploying beta to 1000 patients"
 
 -   title: "QA Analyst"
     company: "NexJ Systems"
@@ -52,24 +52,28 @@ jobs:
     date_year: "2012"
     description:
         -   "Assumed QA lead for ATB Investor Services CRM; signed off on beta deployment to 3000 users"
-        -   "Developed Python application to automate regression testing PDF files &ndash; improved speeds up to 10x"
+        -   "Developed Python application to automate regression testing PDF files, improving speeds up to 10x"
 
 projects:
--   title: "Kinect Voice Controller"
-    description:
-        -   "PC controller using Kinect voice recognition"
-
 -   title: "21 Day Advantage"
     description:
-        -   "Windows Phone 8 app based off of Shawn Achor's TEDx Talk; 1000+ downloads."
+        -   "Windows Phone 8 app based off of Shawn Achor's TEDx Talk with 1000+ downloads"
 
--   title: "UWaterloo OpenData Library"
+-   title: "Kinect Voice Controller"
     description:
-        -   "C# wrapper for UWaterloo's Open Data API"
+        -   "Windows WPF application enabling voice activated commands with the Kinect 2.0"
 
--   title: "Youtube Playlist Manager"
+-   title: "UWaterloo Open Data Library"
     description:
-        -   "Desktop WPF application to manage Youtube subscriptions and playlists"
+        -   "C# wrapper library for UWaterloo's Open Data API"
 
+-   title: "YouTube Playlist Manager"
+    description:
+        -   "Windows WPF application to manage YouTube subscriptions and playlists using YouTube API"
+
+degree: "Candidate for Bachelor of Software Engineering"
 school: "University of Waterloo"
-degree: "Candidate for Bachelors of Software Engineering"
+classes:
+-   "&ndash; Expected to graduate April 2016"
+-   "Created an operating system for an ARM Cortex-M3 processor in C"
+-   "Created a MIPS compiler and assembler for subset of C"

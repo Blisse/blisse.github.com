@@ -2,6 +2,7 @@
 title: "resume"
 layout: "custom/resume"
 ---
+
 <div id="resume-page">
     <div class="resume-page-title-wrapper">
         <div class="row">
@@ -61,7 +62,7 @@ layout: "custom/resume"
                         <ul class="no-bullets resume-page-skill-description-list">
                             {% for skill in site.data.profile.resume.skills %}
                             <li class="resume-page-skill-description">
-                                &ndash; {{ skill }}
+                                {{ skill }}
                             </li>
                             {% endfor %}
                         </ul>
@@ -108,7 +109,7 @@ layout: "custom/resume"
                         <ul class="no-bullets resume-page-job-description-list">
                             {% for description in job.description %}
                             <li class="resume-page-job-description">
-                                &ndash; {{ description }}
+                                {{ description }}
                             </li>
                             {% endfor %}
                         </ul>
@@ -150,7 +151,7 @@ layout: "custom/resume"
                         <ul class="no-bullets resume-page-project-description-list">
                             {% for description in project.description %}
                             <li class="resume-page-project-description">
-                                &ndash; {{ description }}
+                                {{ description }}
                             </li>
                             {% endfor %}
                         </ul>
@@ -184,12 +185,22 @@ layout: "custom/resume"
         <div class="row">
             <div class="small-12 columns">
                 <div class="resume-page-education-wrapper">
-                    <div class="resume-page-education-degree">
-                        {{ site.data.profile.resume.degree }}
-                    </div>
-                    <div class="resume-page-education-school">
-                        &ndash; {{ site.data.profile.resume.school }}
-                    </div>
+                    <a class="resume-page-education">
+                        <span class="resume-page-education-degree">
+                            {{ site.data.profile.resume.degree }},
+                        </span>
+                        <span class="resume-page-education-school">
+                            {{ site.data.profile.resume.school }}
+                        </span>
+
+                        <ul class="no-bullets resume-page-education-description-list">
+                            {% for class in site.data.profile.resume.classes %}
+                            <li class="resume-page-education-description">
+                                {{ class }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </a>
                 </div>
             </div>
         </div>

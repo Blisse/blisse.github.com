@@ -26,7 +26,7 @@
         }
 
         .resume-page-contact {
-            margin-top: -1.0rem;
+            margin-top: -4.2rem;
 
             // uncomment to print
             // margin-top: -5.0rem;
@@ -50,18 +50,18 @@
     }
 
     .resume-page-header-wrapper {
-        margin: 1.2rem 0 0.9rem;
+        margin: 1.0rem 0 0.5rem;
 
         .resume-page-header {
             a {
-                padding: 0.4rem 0.4rem;
+                padding: 0.3rem 0 0.2rem;
                 font-family: $font-rale;
-                font-size: 1.0em;
+                font-size: 1.2rem;
                 font-weight: 400;
-                color: #aaa !important;
+                color: transparent !important;
 
                 &.active {
-                    font-weight: 600;
+                    font-weight: 400;
                     color: #333 !important;
                     border-bottom: 1px solid #333;
                 }
@@ -71,20 +71,26 @@
 
     #resume-page-skills {
         .resume-page-skill-wrapper {
-            margin-bottom: 0.6em;
+            margin-bottom: 0.5rem;
 
             .resume-page-skill {
                 .resume-page-skill-description-list {
                     margin-left: 0;
+                    margin-top: 0;
                     margin-bottom: 0;
-                    padding-left: 0.1rem;
+                    padding-left: 0.05rem;
 
                     .resume-page-skill-description {
                         font-family: $font-open;
                         font-size: 1.0rem;
                         color: #333 !important;
-                        margin: 0 0;
+                        margin: 0;
                         line-height: 1.4rem;
+
+                        strong {
+                            font-weight: 400;
+                            color: $color-print-green !important;
+                        }
                     }
                 }
             }
@@ -93,7 +99,7 @@
 
     #resume-page-jobs {
         .resume-page-job-wrapper {
-            margin-bottom: 0.6em;
+            margin-bottom: 0.5em;
 
             .resume-page-job {
                 .resume-page-job-company {
@@ -121,13 +127,13 @@
                 .resume-page-job-description-list {
                     margin-left: 0;
                     margin-bottom: 0;
-                    padding-left: 0.1rem;
+                    padding-left: 0.05rem;
 
                     .resume-page-job-description {
                         font-family: $font-open;
                         font-size: 1.0rem;
                         color: #333 !important;
-                        margin: 0 0;
+                        margin: 0;
                         line-height: 1.4rem;
                     }
                 }
@@ -137,7 +143,7 @@
 
     #resume-page-projects {
         .resume-page-project-wrapper {
-            margin-bottom: 0.6em;
+            margin-bottom: 0.5em;
 
             .resume-page-project {
                 .resume-page-project-title {
@@ -151,13 +157,13 @@
                 .resume-page-project-description-list {
                     margin-left: 0;
                     margin-bottom: 0;
-                    padding-left: 0.1rem;
+                    padding-left: 0.05rem;
 
                     .resume-page-project-description {
                         font-family: $font-open;
                         font-size: 1.0rem;
                         color: #333 !important;
-                        margin: 0 0;
+                        margin: 0;
                         line-height: 1.4rem;
                     }
                 }
@@ -167,36 +173,37 @@
 
     #resume-page-education {
         .resume-page-education-wrapper {
-            .resume-page-education-degree {
-                margin-bottom: 0.2rem;
-                font-family: $font-ques;
-                font-size: 1.2rem;
-                font-weight: 400;
-                color: $color-print-green !important;
-                text-transform: uppercase;
-            }
+            .resume-page-education {
+                .resume-page-education-degree {
+                    margin-bottom: 0.2rem;
+                    font-family: $font-ques;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    color: $color-print-green !important;
+                    text-transform: uppercase;
+                }
 
-            .resume-page-education-school {
-                padding-left: 0.4rem;
-                font-family: $font-open;
-                font-size: 1.0rem;
+                .resume-page-education-school {
+                    font-family: $font-ques;
+                    font-size: 1.2rem;
+                    color: #666 !important;
+                }
+
+                .resume-page-education-description-list {
+                    margin-left: 0;
+                    margin-bottom: 0;
+                    padding-left: 0.05rem;
+
+                    .resume-page-education-description {
+                        font-family: $font-open;
+                        font-size: 1.0rem;
+                        color: #333 !important;
+                        margin: 0;
+                        line-height: 1.4rem;
+                    }
+                }
             }
         }
-    }
-}
-
-@media print {
-    body {
-        font-size: 8pt;
-        -webkit-print-color-adjust: exact;
-    }
-
-    p a, a {
-        text-decoration: none;
-    }
-
-    a[href]:after {
-        content: none !important;
     }
 
     .resume-page-contact {

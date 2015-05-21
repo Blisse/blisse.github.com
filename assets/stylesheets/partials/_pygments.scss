@@ -2,39 +2,3 @@
 
 /* #Pygments
 ================================================== */
-
-pre, pre code > .highlight {
-	margin: 2px;
-}
-
-code, code > .highlight{
-  font-family: $font-monospace;
-  font-weight: normal;
-  background-color: #FAFAFA;
-  border: 1px solid #CCCCCC;
-  margin: 0;
-  padding: 1px 3px;
-  white-space: pre;
-  overflow: auto;
-}
-
-.highlight pre code {
-  background-color: #111111;
-  border: 1px solid $color-dark-gray;
-  color: #FFFFFF;
-  display: block;
-  font-family: $font-monospace;
-  font-size: 11pt;
-  line-height: 1.6em;
-  margin: 0 0 1.5em;
-  padding: 0.7em;
-  white-space: pre;
-  overflow: auto;
-  /*
-  -moz-border-radius: 7px 7px 7px 7px;
-  border-bottom-left-radius: 7px 7px;
-  border-bottom-right-radius: 7px 7px;
-  border-top-left-radius: 7px 7px;
-  border-top-right-radius: 7px 7px;
-  */
-}

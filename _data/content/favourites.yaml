@@ -1,3 +1,71 @@
+# -
+#     link: ""
+#     title: ""
+#     starred: false
+-
+    link: "http://markmanson.net/fuck-yes"
+    title: "Fuck Yes Or No"
+    starred: true
+-
+    link: "http://kelukelu.me/interview/questions.html"
+    title: "Interview Questions"
+    starred: false
+-
+    link: "http://www.raphkoster.com/gaming/laws.shtml"
+    title: "The Laws of Online World Design"http://kelukelu.me/interview/questions.html
+    starred: false
+-
+    link: "http://www.jwz.org/gruntle/nomo.html"
+    title: "resignation and postmortem."
+    starred: true
+-
+    link: "http://www.raptitude.com/2013/10/the-elegant-secret-to-self-discipline/"
+    title: "The elegant secret to self-discipline"
+    starred: false
+-
+    link: "http://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html"
+    title: "Why Procrastinators Procrastinate"
+    starred: false
+-
+    link: "http://waitbutwhy.com/2013/11/how-to-beat-procrastination.html"
+    title: "How to Beat Procrastination"
+    starred: false
+-
+    link: "http://www.qbrundage.com/michaelb/pubs/essays/working_at_microsoft.html"
+    title: "Working at Microsoft"
+    starred: false
+-
+    link: "http://www.nytimes.com/2015/06/12/opinion/david-brooks-how-adulthood-happens.html"
+    title: "How Adulthood Happens"
+    starred: false
+-
+    link: "http://www.japantimes.co.jp/news/2015/05/23/reference/change-trays/#.VaI0PvlVikr"
+    title: "Change trays"
+    starred: false
+-
+    link: "https://medium.com/@kyleve/15-things-i-wish-id-learned-earlier-about-software-engineering-c9a4b16d36de"
+    title: "15 things I wish I’d learned earlier about software engineering"
+    starred: true
+-
+    link: "http://www.aerogrammestudio.com/2013/03/07/pixars-22-rules-of-storytelling/"
+    title: "Pixar’s 22 Rules of Storytelling"
+    starred: false
+-
+    link: "http://fourlightyears.blogspot.ca/2015/05/in-linux-world-your-core-skill-is.html"
+    title: "For Linux, your core skill is navigating broken stuff, which is everything."
+    starred: false
+-
+    link: "http://kevinlondon.com/2015/05/05/code-review-best-practices.html"
+    title: "Code Review Best Practices"
+    starred: false
+-
+    link: "http://blog.geoffralston.com/the-magic-thread"
+    title: "The Magic Thread"
+    starred: false
+-
+    link: "http://www.theage.com.au/federal-politics/losing-my-religion-for-equality-20090714-dk0v.html"
+    title: "Losing my religion for equality"
+    starred: false
 -
     link: "http://zachholman.com/posts/0x-engineers/"
     title: "Just Don’t Hire 0x Engineers"

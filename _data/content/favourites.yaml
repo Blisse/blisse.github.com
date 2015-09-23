@@ -3,6 +3,10 @@
 #     title: ""
 #     starred: false
 -
+    link: "https://blog.udemy.com/git-tutorial-a-comprehensive-guide/"
+    title: "Git Tutorial: A Comprehensive Guide"
+    starred: false
+-
     link: "http://markmanson.net/fuck-yes"
     title: "Fuck Yes Or No"
     starred: true

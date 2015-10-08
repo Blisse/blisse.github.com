@@ -3,6 +3,78 @@
 #     title: ""
 #     starred: false
 -
+    link: "http://aaronbleyaert.tumblr.com/post/109959086957"
+    title: "HOW TO LOSE WEIGHT IN 4 EASY STEPS"
+    starred: true
+-
+    link: "https://www.brainpickings.org/index.php/2013/11/04/hunter-s-thomspon-letters-of-note-advice/"
+    title: "20-Year-Old Hunter S. Thompson's Superb Advice on How to Find Your Purpose and Live a Meaningful Life"
+    starred: false
+-
+    link: "http://tink.uk/losing-sight/"
+    title: "Losing sight"
+    starred: false
+-
+    link: "Tech nerds are smart. But they can't seem to get their heads around politics."
+    title: "http://www.vox.com/2015/8/27/9214015/tech-nerds-politics"
+    starred: false
+-
+    link: "http://kamalmarhubi.com/blog/2015/09/15/eliminating-branches-in-rust-for-fun-but-not-much-profit/"
+    title: "Eliminating branches in Rust for fun... but not much profit"
+    starred: false
+-
+    link: "https://blogs.uw.edu/ajko/2012/08/22/john-carmack-discusses-the-art-and-science-of-software-engineering/"
+    title: "John Carmack discusses the art and science of software engineering"
+    starred: false
+-
+    link: "http://danluu.com/new-cpu-features/"
+    title: "What's New in CPUs Since the 80s and How Does It Affect Programmers?"
+    starred: false
+-
+    link: "http://nautil.us/issue/27/dark-matter/ingenious-nicholas-epley"
+    title: "Can we ever really know another person?"
+    starred: true
+-
+    link: "http://journal.stuffwithstuff.com/2015/09/08/the-hardest-program-ive-ever-written/#1-note"
+    title: "The Hardest Program I've Ever Written"
+    starred: false
+-
+    link: "https://medium.com/swlh/the-one-method-to-eliminate-bad-tech-hires-630d539b2e1d"
+    title: "The One Method I've Used to Eliminate Bad Tech Hires"
+    starred: false
+-
+    link: "http://undocumentedmatlab.com/blog/matlabs-internal-memory-representation"
+    title: "Matlab's internal memory representation"
+    starred: false
+-
+    link: "http://jrs.sagepub.com/content/101/6/290.full"
+    title: "Genetically modified plants and human health"
+    starred: false
+-
+    link: "http://www.joelonsoftware.com/items/2007/12/04.html"
+    title: "Talk at Yale: Part 2 of 3"
+    starred: false
+-
+    link: "http://www.joelonsoftware.com/items/2007/12/03.html"
+    title: "Talk at Yale: Part 1 of 3"
+    starred: false
+-
+    link: "http://www.schwarzenegger.com/fitness/post/six-years-to-six-hundred-pounds"
+    title: "Six Years to Six Hundred Pounds"
+    starred: false
+-
+    link: "https://www.getdonedone.com/an-homage-to-strict-coding/"
+    title: "An Homage To Strict Coding"
+    starred: false
+-
+    link: "http://www.talkingquickly.co.uk/2015/04/what-id-tell-myself-about-startups/"
+    title: "What I'd tell myself about startups if I could go back 5 years."
+    starred: false
+-
+    link: "http://www.newyorker.com/magazine/2015/07/20/the-really-big-one"
+    title: "The Really Big One"
+    starred: false
+-
     link: "https://blog.udemy.com/git-tutorial-a-comprehensive-guide/"
     title: "Git Tutorial: A Comprehensive Guide"
     starred: false
@@ -41,7 +113,7 @@
 -
     link: "http://www.nytimes.com/2015/06/12/opinion/david-brooks-how-adulthood-happens.html"
     title: "How Adulthood Happens"
-    starred: false
+    starred: true
 -
     link: "http://www.japantimes.co.jp/news/2015/05/23/reference/change-trays/#.VaI0PvlVikr"
     title: "Change trays"

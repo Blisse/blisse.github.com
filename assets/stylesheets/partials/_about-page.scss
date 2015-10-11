@@ -1,16 +1,12 @@
-@import "partials/base";
-
 #about-page {
-    margin-top: 2.0rem;
 
     #about-page-social-icons {
-        margin-bottom: 4rem;
 
         a {
             color: $color-pillow-red;
             white-space: nowrap;
             text-align: center;
-            margin: 0 0.6rem;
+            margin: 0 0.5rem;
 
             span {
                 font-size: 2.4rem;
@@ -18,13 +14,13 @@
 
             &:link, &:visited {
                 span {
-                    color: $color-turqoise-green;
+                    color: $color-pillow-red;
                 }
             }
 
             &:hover {
                 span {
-                    color: $color-pacifica-green;
+                    color: $color-coral-red;
                 }
             }
 
@@ -46,7 +42,6 @@
 
         .about-page-quote {
             background: rgba(73,117,124,0.35);
-            border-left: 4px solid $color-white;
             padding: 1rem;
             margin-top: 1.5rem;
             margin-bottom: 1.5rem;
@@ -58,6 +53,7 @@
 
             p {
                 padding: 0rem 0.3rem;
+                border: none;
             }
 
             cite {

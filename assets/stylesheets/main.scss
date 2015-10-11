@@ -1,11 +1,17 @@
-@import "modules/normalize";
 @import "vendor/font-icomoon/icomoon";
-@import "vendor/foundation/foundation.min";
+
+@import "base/reset";
+@import "base/fonts";
+@import "base/colors";
+@import "base/variables";
+@import "base/modular-scale";
+@import "base/mixins";
+@import "base/typography";
+@import "base/layouts";
 
 @import "partials/page";
-@import "partials/typography";
-@import "partials/pygments";
 @import "partials/syntax";
+@import "partials/typography";
 @import "partials/navigation";
 
 @import "partials/home-page";
@@ -13,26 +19,3 @@
 @import "partials/portfolio-page";
 @import "partials/about-page";
 @import "partials/resume-page";
-
-@media print {
-    body {
-        font-size: 8pt;
-        -webkit-print-color-adjust: exact;
-    }
-
-    p a, a {
-        text-decoration: none;
-    }
-
-    a[href]:after {
-        content: none !important;
-    }
-
-    .resume-page-contact {
-        margin-top: -5.0rem;
-    }
-
-    * {
-        -webkit-print-color-adjust: exact;
-    }
-}

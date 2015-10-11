@@ -1,69 +1,60 @@
 ---
 title: blog
 ---
-<div id="blog-page">
+<div id="blog-page" class="section typeset">
     {% for post in paginator.posts %}
     {% if post.archived == false %}
-    <div class="blog-page-post">
-        <div class="row">
-            <div class="small-12 columns">
-                <h2>
-                    <a href="{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h2>
-            </div>
-            <div class="small-12 columns">
-                <p class="tags">
-                    about {{ post.tags | array_to_sentence_string }}. posted on {{ post.date | date:'%B %d, %Y' }}
-                </p>
-            </div>
-            <div class="small-12 columns">
-                {{ post.content | truncatewords: 120 | markdownify }}
-            </div>
-            <div class="small-12 columns">
-                <p class="tags">
-                    <a href="{{ post.url }}">continue reading</a>
-                </p>
-            </div>
+    <div class="blog-page-post-short single-measure">
+        <h2 class="blog-page-post-short-title">
+            <a href="{{ post.url }}">
+                {{ post.title }}
+            </a>
+        </h2>
+        <span class="blog-page-post-short-tags">
+            about {{ post.tags | array_to_sentence_string }}.
+        </span>
+        <span class="blog-page-post-short-date">
+            posted on {{ post.date | date:'%B %d, %Y' }}.
+        </span>
+        <div class="blog-page-post-short-content">
+            {{ post.content | truncatewords: 120 | markdownify }}
         </div>
+        <div class="blog-page-post-short-more">
+            <a href="{{ post.url }}">read more...</a>
+        </div>
+    <hr/>
     </div>
     {% endif %}
     {% endfor %}
-    <div id="blog-page-navigation">
-        <div class="row">
-            <div class="small-12 columns">
-            <p>
-                {% if paginator.previous_page %}
-                    {% if paginator.previous_page == 1 %}
-                    <span id="blog-page-previous-post">
-                        <a href="/blog/">
-                            Previous
-                        </a>
-                    </span>
-                    {% else %}
-                    <span id="blog-page-previous-post">
-                        <a href="/blog/page-{{ paginator.previous_page }}/">
-                            Previous
-                        </a>
-                    </span>
-                    {% endif %}
-                {% endif %}
-                <span id="blog-page-all">
-                    <a href="/blog/archives/">
-                        All
-                    </a>
-                </span>
-                {% if paginator.next_page %}
-                    <span id="blog-page-next-post">
-                        <a href="/blog/page-{{ paginator.next_page }}/">
-                            Next
-                        </a>
-                    </span>
-                </div>
-                {% endif %}
-            </p>
+    <div id="blog-page-navigation" class="single-measure">
+        {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <span id="blog-page-previous-post">
+            <a href="/blog/">
+                Previous
+            </a>
+        </span>
+        {% else %}
+        <span id="blog-page-previous-post">
+            <a href="/blog/page-{{ paginator.previous_page }}/">
+                Previous
+            </a>
+        </span>
+        {% endif %}
+        {% endif %}
+        <span id="blog-page-all">
+            <a href="/blog/archives/">
+                All
+            </a>
+        </span>
+        {% if paginator.next_page %}
+            <span id="blog-page-next-post">
+                <a href="/blog/page-{{ paginator.next_page }}/">
+                    Next
+                </a>
+            </span>
         </div>
+        {% endif %}
     </div>
 
 </div>

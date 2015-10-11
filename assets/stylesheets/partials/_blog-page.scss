@@ -1,19 +1,56 @@
-@import "partials/base";
-
 #blog-page {
-    .blog-page-post {
+    .blog-page-post, .blog-page-post-short {
         margin-bottom: 6.0rem;
+
+        .blog-page-post-title,
+        .blog-page-post-archived-title,
+        .blog-page-post-short-title {
+            text-transform: uppercase;
+            color: $color-pillow-red;
+            font-weight: bold;
+            @include sassline(36, $headingtype, 4, 0, all);
+        }
+
+        .blog-page-post-tags,
+        .blog-page-post-archived-tags,
+        .blog-page-post-short-tags {
+            @include sassline(16, $headingtype, 2, 0, all);
+        }
+
+        .blog-page-post-date,
+        .blog-page-post-archived-date,
+        .blog-page-post-short-date {
+            @include sassline(16, $headingtype, 2, 0, all);
+        }
+
+        .blog-page-post-content,
+        .blog-page-post-short-content {
+            @include sassline(20, $bodytype, 2, 0, all);
+        }
+
+        .blog-page-post-more,
+        .blog-page-post-short-more {
+            @include sassline(20, $bodytype, 2, 0, all);
+        }
     }
 
     #blog-page-navigation {
-        margin-bottom: 6.0rem;
-
         #blog-page-previous-post, #blog-page-all, #blog-page-next-post {
             a {
-                font-family: $font-rale;
-                font-size: 2.0rem;
-                text-transform: lowercase;
-                margin-right: 2.0rem;
+                text-transform: uppercase;
+                font-family: "Raleway";
+
+                &:link, &:visited {
+                    color: $color-gray;
+                }
+
+                &:hover {
+                    color: $color-pillow-red;
+                }
+
+                &:active {
+                    color: $color-light-gray;
+                }
             }
         }
     }

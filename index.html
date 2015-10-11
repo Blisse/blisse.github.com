@@ -1,73 +1,68 @@
 ---
 title: home
 ---
-<div id="home-page">
+<div id="home-page" class="section typeset">
     <div id="home-page-quote-with-background">
-        <div class="row">
-            <div class="small-12 columns" id="home-page-mission-statement-block">
-                <blockquote id="home-page-mission-statement-quote">
-                    {% for line in site.data.profile.about.mission_statement %}
-                    <p>
-                        {{ line }}
-                    </p>
-                    {% endfor %}
-                </blockquote>
-            </div>
+        <div class="single-measure" id="home-page-mission-statement-block">
+            <blockquote id="home-page-mission-statement-quote">
+                {% for line in site.data.profile.about.mission_statement %}
+                <p>
+                    {{ line }}
+                </p>
+                {% endfor %}
+            </blockquote>
         </div>
     </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <h2 >
-                <a href="/about/" class="home-page-content-header">
-                    {{ site.data.profile.about.about_intro }}
+    <div class="single-measure">
+        <h1>
+            <a href="/about/" class="home-page-content-header">
+                {{ site.data.profile.about.about_intro }}
+            </a>
+        </h1>
+
+        {% for line in site.data.profile.about.about_short %}
+        <p>
+            {{ line | markdownify }}
+        </p>
+        {% endfor %}
+
+        <h2>
+            <a href="/about/favourites/">
+                {{ site.data.content.pages.home_latest_favourites_title }}
+            </a>
+        </h2>
+
+        <ul>
+            {% for post in site.data.content.favourites limit:5 %}
+            <li>
+                <a href="{{ post.link }}">
+                    {% if post.starred == true %}
+                    <span aria-hidden="true" data-icon="&#xe613;"></span>
+                    {% endif %}
+                    {{ post.title }}
                 </a>
-            </h2>
-            {% for line in site.data.profile.about.about_short %}
-            <p>
-                {{ line | markdownify }}
-            </p>
+            </li>
             {% endfor %}
-        </div>
+        </ul>
 
-        <div class="small-12 columns">
-            <h2>
-                <a href="/about/favourites/">
-                    {{ site.data.content.pages.home_latest_favourites_title }}
-                </a>
-            </h2>
-            <ul class="square">
-                {% for post in site.data.content.favourites limit:5 %}
-                <li>
-                    <a href="{{ post.link }}">
-                        {% if post.starred == true %}
-                        <span aria-hidden="true" data-icon="&#xe613;"></span>
-                        {% endif %}
-                        {{ post.title }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+        <h2>
+            <a href="/blog/">
+                {{ site.data.content.pages.home_latest_posts_title }}
+            </a>
+        </h2>
 
-        <div class="small-12 columns">
-            <h2>
-                <a href="/blog/">
-                    {{ site.data.content.pages.home_latest_posts_title }}
+        <ul>
+            {% for post in site.posts limit:5 %}
+            <li>
+                <a href="{{ post.url }}">
+                    {% if post.starred == true %}
+                    <span aria-hidden="true" data-icon="&#xe613;"></span>
+                    {% endif %}
+                    {{ post.title }}
                 </a>
-            </h2>
-            <ul class="square">
-                {% for post in site.posts limit:5 %}
-                <li>
-                    <a href="{{ post.url }}">
-                        {% if post.starred == true %}
-                        <span aria-hidden="true" data-icon="&#xe613;"></span>
-                        {% endif %}
-                        {{ post.title }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 </div>

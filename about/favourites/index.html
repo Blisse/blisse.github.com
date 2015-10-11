@@ -1,8 +1,8 @@
 ---
 title: favourites
 ---
-<div class="row">
-    <div class="small-12 columns">
+<div class="section typeset">
+    <div class="single-measure">
         <h2>
             {{ site.data.content.pages.about_favourites_page_title }}
         </h2>
@@ -12,11 +12,10 @@ title: favourites
         </p>
         {% endfor %}
     </div>
-</div>
-{% for favourite in site.data.content.favourites %}
-<div class="row">
-    <div class="small-12 columns">
-        <ul class="square">
+
+    <div class="single-measure">
+        <ul>
+            {% for favourite in site.data.content.favourites %}
             <li>
                 <a href="{{ favourite.link }}">
                     {% if favourite.starred %}
@@ -25,7 +24,60 @@ title: favourites
                     {{ favourite.title }}
                 </a>
             </li>
+            {% endfor %}
         </ul>
     </div>
 </div>
-{% endfor %}
+
+<div class="section typeset">
+    <div class="single-measure">
+        <h2>
+            {{ site.data.content.pages.about_videos_page_title }}
+        </h2>
+        {% for description in site.data.profile.about.videos_description %}
+        <p>
+            {{ description | markdownify }}
+        </p>
+        {% endfor %}
+    </div>
+
+    <div class="single-measure">
+        <ul>
+            {% for video in site.data.content.videos %}
+            <li>
+                <a href="{{ video.link }}">
+                    {% if video.starred %}
+                    <span aria-hidden="true" data-icon="&#xe613;"></span>
+                    {% endif %}
+                    {{ video.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div class="section typeset">
+    <div class="single-measure">
+        <h2>
+            {{ site.data.content.pages.about_blogs_page_title }}
+        </h2>
+        {% for description in site.data.profile.about.blogs_description %}
+        <p>
+            {{ description | markdownify }}
+        </p>
+        {% endfor %}
+    </div>
+
+    <div class="single-measure">
+        <ul>
+            {% for blog in site.data.content.blogs %}
+            <li>
+                <a href="{{ blog.link }}">
+                    {{ blog.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

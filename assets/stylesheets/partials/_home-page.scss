@@ -1,9 +1,6 @@
-@import "partials/base";
-
-$background_image_url: "background/background_2.jpg";
+$background_image_url: "background/crosses.jpg";
 
 #home-page {
-    margin-top: 2.0rem;
 
     #home-page-quote-with-background {
 
@@ -12,25 +9,21 @@ $background_image_url: "background/background_2.jpg";
         -o-background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
-        margin: 0 0 2rem 0;
 
         #home-page-mission-statement-quote {
 
             p {
-                font-family: $font-rale;
-                font-size: 2.4rem;
-                font-weight: $font-weight-regular;
                 color: $color-white;
-                margin: 1rem 0;
+                border: none;
+                padding-left: 0;
                 text-shadow: 1px 1px 1px #000;
+
+                @include sassline($fontsize: delta, $font: $quotetype, $lineheight: 2, $below: 1, $breakpoint: all);
             }
 
-            background: rgba(1,108,124,0.3);
             border-left: none;
-            margin: 2rem 0;
-            padding-bottom: 1rem;
+            margin: 1rem 0;
+            padding: 2rem 0;
         }
     }
-
-    margin-bottom: 4rem;
 }

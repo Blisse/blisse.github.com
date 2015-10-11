@@ -1,208 +1,131 @@
-@import "partials/base";
+@media print {
+    body {
+        background-color: #FFFFFF;
+        color: $color-dark-gray;
+    }
+
+    ul {
+        list-style-type: none;
+        list-style: none;
+    }
+}
 
 #resume-page {
-    margin: 2.0rem 0;
+    padding-bottom: 0;
 
-    p, a, li {
-        font-family: $font-open;
-        font-size: 1.6rem;
-        color: $color-print-green !important;
-        line-height: 1.8rem;
-
-        &:link, &:visited, &:hover, &:active {
-            color: $color-print-green !important;
-        }
+    .single-measure {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
-    .resume-page-title-wrapper {
-        .resume-page-title {
+    hr {
+        padding: 0.2rem;
+    }
+
+    ul {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .resume-page-title {
+        color: $color-dark-gray;
+        text-transform: uppercase;
+        @include sassline(42, $resumetype, 1, 0, all);
+        font-family: "Nexa Bold";
+    }
+
+    .resume-page-contact {
+        @include sassline(12, $resumetype, 1, 0, all);
+        color: $color-pillow-red;
+
+        a {
             margin: 0;
-
-            p {
-                font-family: $font-nexa;
-                font-size: 4.7rem;
-                color: #333 !important;
-            }
-        }
-
-        .resume-page-contact {
-            margin-top: -4.2rem;
-
-            // uncomment to print
-            // margin-top: -5.0rem;
-
-            p, a, p a {
-                margin: 0;
-                padding: 0;
-                font-family: $font-ques;
-                font-size: 1.0rem;
-                line-height: 1.3rem;
-                color: #333 !important;
-                text-decoration: none;
-                text-align: right;
-
-                &:link, &:visited, &:hover, &:active {
-                    color: #333 !important;
-                    border: none;
-                }
-            }
+            padding: 0;
         }
     }
 
-    .resume-page-header-wrapper {
-        margin: 1.0rem 0 0.5rem;
+    .resume-page-header {
+        display: block;
+        color: $color-pillow-red;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include sassline(16, $headingtype, 1, 0, all);
 
-        .resume-page-header {
-            a {
-                padding: 0.3rem 0 0.2rem;
-                font-family: $font-rale;
-                font-size: 1.2rem;
-                font-weight: 400;
-                color: transparent !important;
-
-                &.active {
-                    font-weight: 400;
-                    color: #333 !important;
-                    border-bottom: 1px solid #333;
-                }
-            }
-        }
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid $color-pillow-red;
     }
 
-    #resume-page-skills {
-        .resume-page-skill-wrapper {
-            margin-bottom: 0.5rem;
-
-            .resume-page-skill {
-                .resume-page-skill-description-list {
-                    margin-left: 0;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    padding-left: 0.05rem;
-
-                    .resume-page-skill-description {
-                        font-family: $font-open;
-                        font-size: 1.0rem;
-                        color: #333 !important;
-                        margin: 0;
-                        line-height: 1.4rem;
-
-                        strong {
-                            font-weight: 400;
-                            color: $color-print-green !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    #resume-page-jobs {
-        .resume-page-job-wrapper {
-            margin-bottom: 0.5em;
-
-            .resume-page-job {
-                .resume-page-job-company {
-                    font-family: $font-ques;
-                    font-size: 1.2rem;
-                    font-weight: 400;
-                    color: #666 !important;
-                }
-
-                .resume-page-job-title {
-                    font-family: $font-ques;
-                    font-size: 1.2rem;
-                    font-weight: 400;
-                    color: $color-print-green !important;
-                    text-transform: uppercase;
-                }
-
-                .resume-page-job-date {
-                    font-family: $font-ques;
-                    font-size: 1.2rem;
-                    font-weight: 400;
-                    color: #666 !important;
-                }
-
-                .resume-page-job-description-list {
-                    margin-left: 0;
-                    margin-bottom: 0;
-                    padding-left: 0.05rem;
-
-                    .resume-page-job-description {
-                        font-family: $font-open;
-                        font-size: 1.0rem;
-                        color: #333 !important;
-                        margin: 0;
-                        line-height: 1.4rem;
-                    }
-                }
-            }
-        }
-    }
-
+    #resume-page-skills,
+    #resume-page-jobs,
     #resume-page-projects {
-        .resume-page-project-wrapper {
-            margin-bottom: 0.5em;
 
-            .resume-page-project {
-                .resume-page-project-title {
-                    font-family: $font-ques;
-                    font-size: 1.2rem;
-                    font-weight: 400;
-                    color: $color-print-green !important;
-                    text-transform: uppercase;
+        .resume-page-skill-descriptions {
+            .resume-page-skill-description {
+                @include sassline(12, $resumetype, 1.4, 0, all);
+            }
+        }
+
+        .resume-page-job,
+        .resume-page-project {
+            margin-bottom: 0;
+            padding-bottom: 0;
+
+            .resume-page-job-title,
+            .resume-page-project-title {
+                font-weight: bold;
+                @include sassline(12, $resumetype, 1, 0, all);
+            }
+
+            .resume-page-job-company {
+                color: $color-pillow-red;
+                text-transform: uppercase;
+                @include sassline(12, $resumetype, 1, 0, all);
+            }
+
+            .resume-page-job-date {
+                text-transform: uppercase;
+                @include sassline(12, $resumetype, 1, 0, all);
+            }
+
+            .resume-page-job-descriptions,
+            .resume-page-project-descriptions {
+                margin-bottom: 1.2rem;
+                padding-bottom: 0;
+
+                .resume-page-job-description,
+                .resume-page-project-description {
+                    @include sassline(12, $resumetype, 1.4, 0, all);
                 }
+            }
 
-                .resume-page-project-description-list {
-                    margin-left: 0;
-                    margin-bottom: 0;
-                    padding-left: 0.05rem;
-
-                    .resume-page-project-description {
-                        font-family: $font-open;
-                        font-size: 1.0rem;
-                        color: #333 !important;
-                        margin: 0;
-                        line-height: 1.4rem;
-                    }
-                }
+            .resume-page-job-descriptions {
+                margin-top: -0.5rem;
             }
         }
     }
 
     #resume-page-education {
-        .resume-page-education-wrapper {
-            .resume-page-education {
-                .resume-page-education-degree {
-                    margin-bottom: 0.2rem;
-                    font-family: $font-ques;
-                    font-size: 1.2rem;
-                    font-weight: 400;
-                    color: $color-print-green !important;
-                    text-transform: uppercase;
-                }
+        .resume-page-education-degree {
+            color: $color-pillow-red;
+            @include sassline(12, $resumetype, 1, 0, all);
+        }
 
-                .resume-page-education-school {
-                    font-family: $font-ques;
-                    font-size: 1.2rem;
-                    color: #666 !important;
-                }
+        .resume-page-education-school {
+            @include sassline(12, $resumetype, 1, 0, all);
+        }
 
-                .resume-page-education-description-list {
-                    margin-left: 0;
-                    margin-bottom: 0;
-                    padding-left: 0.05rem;
+        .resume-page-education-descriptions {
+            margin-top: -0.5rem;
 
-                    .resume-page-education-description {
-                        font-family: $font-open;
-                        font-size: 1.0rem;
-                        color: #333 !important;
-                        margin: 0;
-                        line-height: 1.4rem;
-                    }
-                }
+            .resume-page-education-description {
+                @include sassline(12, $resumetype, 1.4, 0, all);
             }
         }
+    }
+
+    * {
+        max-width: none;
     }
 }

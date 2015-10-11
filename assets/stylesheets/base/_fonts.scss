@@ -26,3 +26,14 @@
     ),
     "Nexa Bold.eot", normal
 );
+
+@include font-face('Code Bold',
+    font-files(
+        'code_bold-webfont.eot?#iefix',
+        'code_bold-webfont.woff2',
+        'code_bold-webfont.woff',
+        'code_bold-webfont.ttf',
+        'code_bold-webfont.svg#code_boldregular'
+    ),
+    'code_bold-webfont.eot', normal
+);

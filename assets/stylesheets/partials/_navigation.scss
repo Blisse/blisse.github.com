@@ -1,130 +1,87 @@
-@import "partials/base";
-
-// Small screens
-@media only screen {
-    #navigation-menu #navigation-menu-lastname {
-        display: none;
-    }
-}
-
-// Medium screens
-@media only screen and (min-width: 32.063em) {
-    #navigation-menu #navigation-menu-lastname {
-        display: inline;
-    }
-}
-
-
 #navigation-menu {
-    margin-top: 2.0rem;
 
     #navigation-menu-header {
 
-        a {
-            display: block;
-            color: $color-light-gray;
-            font-family: $font-nexa;
-            font-size: 3.8rem;
-            text-transform: uppercase;
-            width: 100%;
-            margin: 0rem;
-            padding: 0.6rem 0.6rem 0 0.6rem;
+        padding-bottom: 0;
 
-            -webkit-transition: color 50ms ease 50ms;
-            -moz-transition: color 50ms ease 50ms;
-            -o-transition: color 50ms ease 50ms;
-            transition: color 50ms ease 50ms;
+        h1 {
+            padding: 0;
+            margin: 0;
 
-            &:link, &:visited {
+            a {
+                display: block;
                 color: $color-light-gray;
-                background: none;
-            }
+                font-size: 4.3rem;
+                line-height: 3.1rem;
+                font-family: "Code Bold", sans-serif;
+                font-weight: bolder;
+                text-transform: uppercase;
 
-            &:hover {
-                color: $color-white;
-                background: $color-crystal-green;
-            }
-
-            &:active {
-                color: $color-crystal-green;
-                background: $color-white;
-            }
-
-            &.active {
-                color: $color-white;
+                padding: 0;
+                margin: 0;
 
                 &:link, &:visited {
-                    background: $color-pacifica-blue;
+                    color: $color-light-gray;
                 }
 
                 &:hover {
-                    background: $color-crystal-green;
+                    color: $color-radio-purple;
                 }
 
                 &:active {
-                    color: $color-crystal-green;
-                    background: $color-white;
+                    color: $color-light-gray;
+                }
+
+                &.active {
+                    &:link, &:visited {
+                        color: $color-pillow-red;
+                    }
+
+                    &:hover {
+                        color: $color-coral-red;
+                    }
+
+                    &:active {
+                        color: $color-light-gray;
+                    }
                 }
             }
         }
     }
 
     #navigation-menu-active-directories-wrapper {
-        margin-top: 2.0rem;
-        line-height: 1.9rem;
-        border-bottom: none;
-        background: $color-pacifica-blue;
         display: block;
     }
 
     #navigation-menu-active-directories {
-        vertical-align: center;
 
         a {
-            font-family: $font-rale;
-            font-weight: $font-weight-regular;
-            font-size: 1.2rem;
+            font-family: "Raleway";
             text-transform: uppercase;
-            text-align: left;
-            margin: 0rem;
-            padding: 0.3rem 0.7rem;
-            line-height: 2.0rem;
-
-            -webkit-transition: color 50ms ease 50ms;
-            -moz-transition: color 50ms ease 50ms;
-            -o-transition: color 50ms ease 50ms;
-            transition: color 50ms ease 50ms;
-            border-bottom: none;
 
             &:link, &:visited {
-                color: $color-white;
-                background: $color-pacifica-blue;
+                color: $color-gray;
             }
 
             &:hover {
-                color: $color-pacifica-blue;
-                background: $color-white;
+                color: $color-radio-purple;
             }
 
             &:active {
-                color: $color-pacifica-green;
-                background: $color-white;
+                color: $color-light-gray;
             }
 
             &.active {
                 &:link, &:visited {
-                    color: $color-pacifica-blue;
-                    background: $color-white;
+                    color: $color-pillow-red;
                 }
 
                 &:hover {
-                    color: $color-pacifica-green;
-                    background: $color-white;
+                    color: $color-coral-red;
                 }
 
                 &:active {
-                    color: $color-pacifica-green;
-                    background: $color-white;
+                    color: $color-light-gray;
                 }
             }
         }

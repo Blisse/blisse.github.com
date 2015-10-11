@@ -2,146 +2,96 @@
 title: about
 ---
 
-<div id="about-page">
-    <div class="row">
-        <div class="small-12 medium-12 small-centered columns" id="about-page-social-icons">
-            <a href="http://www.github.com/blisse">
-                <span aria-hidden="true" data-icon="&#xe60b;"></span>
-            </a>
-            <a href="http://ca.linkedin.com/in/{{ site.data.profile.about.profile_linkedin }}/">
-                <span aria-hidden="true" data-icon="&#xe614;"></span>
-            </a>
-            <a href="http://www.twitter.com/{{ site.data.profile.about.profile_twitter }}">
-                <span aria-hidden="true" data-icon="&#xe608;"></span>
-            </a>
-            <a href="/atom.xml">
-                <span aria-hidden="true" data-icon="&#xe60a;"></span>
-            </a>
-            <a href="mailto:{{ site.data.profile.about.profile_professionalemail }}">
-                <span aria-hidden="true" data-icon="&#xe611;"></span>
-            </a>
-        </div>
+<div id="about-page" class="section typeset">
+    <div class="single-measure" id="about-page-social-icons">
+        <a href="http://www.github.com/blisse">
+            <span aria-hidden="true" data-icon="&#xe60b;"></span>
+        </a>
+        <a href="http://ca.linkedin.com/in/{{ site.data.profile.about.profile_linkedin }}/">
+            <span aria-hidden="true" data-icon="&#xe614;"></span>
+        </a>
+        <a href="http://www.twitter.com/{{ site.data.profile.about.profile_twitter }}">
+            <span aria-hidden="true" data-icon="&#xe608;"></span>
+        </a>
+        <a href="/atom.xml">
+            <span aria-hidden="true" data-icon="&#xe60a;"></span>
+        </a>
+        <a href="mailto:{{ site.data.profile.about.profile_professionalemail }}">
+            <span aria-hidden="true" data-icon="&#xe611;"></span>
+        </a>
     </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            {% for line in site.data.profile.about.about_long %}
-            <p>
-                {{ line | markdownify }}
-            </p>
+    <div class="single-measure">
+        {% for line in site.data.profile.about.about_long %}
+        {% if line %}
+        <p>
+            {{ line | markdownify }}
+        </p>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="single-measure">
+        <h2>
+            <a href="/about/favourites/">
+                {{ site.data.content.pages.about_favourite_posts_title }}
+            </a>
+        </h2>
+        <ul class="square">
+            {% for post in site.data.content.favourites limit:10 %}
+            <li>
+                <a href="{{ post.link }}">
+                    {% if post.starred == true %}
+                    <span aria-hidden="true" data-icon="&#xe613;"></span>
+                    {% endif %}
+                    {{ post.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="single-measure">
+        <h2>
+            {{ site.data.content.pages.about_favourite_quotes_title }}
+        </h2>
+    </div>
+
+    <div class="section typeset" id="about-page-quotes">
+        <div class="single-measure">
+            {% for quote in site.data.content.quotes %}
+            <blockquote class="about-page-quote">
+                {% for line in quote.lines %}
+                <p>
+                    {{ line | markdownify }}
+                </p>
+                {% endfor %}
+                <cite>
+                    {{ quote.cite }}
+                </cite>
+            </blockquote>
             {% endfor %}
         </div>
     </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <h2>
-                <a href="/about/favourites/">
-                    {{ site.data.content.pages.about_favourite_posts_title }}
-                </a>
-            </h2>
-            <ul class="square">
-                {% for post in site.data.content.favourites limit:10 %}
-                <li>
-                    <a href="{{ post.link }}">
-                        {% if post.starred == true %}
-                        <span aria-hidden="true" data-icon="&#xe613;"></span>
-                        {% endif %}
-                        {{ post.title }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+
+    <div class="single-measure">
+        <h2>
+            {{ site.data.content.pages.about_copyright_title }}
+        </h2>
+        {% for line in site.data.profile.about.copyright_warning %}
+        <p>
+            {{ line | markdownify }}
+        </p>
+        {% endfor %}
     </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <h2>
-                {{ site.data.content.pages.about_favourite_quotes_title }}
-            </h2>
-        </div>
-    </div>
-    <div id="about-page-quotes">
-        <div class="row">
-            <div class="small-12 columns">
-                <div >
-                    {% for quote in site.data.content.quotes %}
-                    <blockquote class="about-page-quote">
-                        {% for line in quote.lines %}
-                        <p>
-                            {{ line | markdownify }}
-                        </p>
-                        {% endfor %}
-                        <cite>
-                            {{ quote.cite }}
-                        </cite>
-                    </blockquote>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="small-12 medium-6 columns">
-            <h2>
-                <a href="/about/videos/">
-                    {{ site.data.content.pages.about_favourite_videos_title }}
-                </a>
-            </h2>
-            <ul class="square">
-                {% for tedtalk in site.data.content.videos limit:5 %}
-                <li>
-                    <a href="{{ tedtalk.link }}">
-                        {% if tedtalk.starred == true %}
-                        <span aria-hidden="true" data-icon="&#xe613;"></span>
-                        {% endif %}
-                        {{ tedtalk.title }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="small-12 medium-6 columns">
-            <h2>
-                <a href="/about/blogs/">
-                    {{ site.data.content.pages.about_favourite_bloggers_title }}
-                </a>
-            </h2>
-            <ul class="square">
-                {% for blogger in site.data.content.blogs limit:5 %}
-                <li>
-                    <a href="{{ blogger.link }}">
-                        {{ blogger.title }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="small-12 columns">
-            <h2>
-                {{ site.data.content.pages.about_copyright_title }}
-            </h2>
-            {% for line in site.data.profile.about.copyright_warning %}
-            <p>
-                {{ line | markdownify }}
-            </p>
-            {% endfor %}
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="small-12 columns">
-            <h2>
-                {{ site.data.content.pages.about_contact_title }}
-            </h2>
-            <p>
-                {{ site.data.profile.about.about_contact | markdownify }}
-            </p>
-        </div>
+    <div class="single-measure">
+        <h2>
+            {{ site.data.content.pages.about_contact_title }}
+        </h2>
+        <p>
+            {{ site.data.profile.about.about_contact | markdownify }}
+        </p>
     </div>
 </div>

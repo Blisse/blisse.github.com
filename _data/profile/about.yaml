@@ -5,7 +5,7 @@ mission_statement: [
         "Change the world.",
         "Smile."
     ]
-favourite_video: "https://www.youtube.com/watch?v=11s60makdoU"
+favourite_video: "https://www.youtube.com/watch?v=x2UyRS5cPJk"
 hello_picture: "http://i.imgur.com/Jnx3egg.jpg"
 
 site_title: "victor.lai"
@@ -28,39 +28,42 @@ about_short: [
         healthy **mental** and **physical well-being**,
         **happiness** and **helping others**,
         **mindfulness** and **standing up**, for yourself and others.",
-    "My main priorities this year are learning how to skate and **play hockey**,
+    "My main priorities this year are learning how to **skate** and **play hockey**,
         having fun **bouldering** and staying active at the **gym**,
         helping my **capstone project** team kick ass,
-        finish delivering my **Windows Store** development libraries,
+        being a more active **Windows Store** developer,
         and **meeting new people, making new friends and sharing new experiences**."
     ]
 
 about_long: [
-    "Hello! I'm Victor Lai, a (4A) Software Engineering student
+    "Hello! I'm Victor Lai, a (4B) Software Engineering student
         at the University of Waterloo. I love the contrasting world of engineering and design, and bridging the
-        two worlds. I love futurism, and being excited about the new technologies we may see in our lives soon.
+        two worlds. I love thinking about the future, and being excited about the new technologies we may see in our lives soon.
+        I'm a crazy tech geek - I love all sorts of gadgets and computers and accessories.
         I also love paying attention to our well-being, and how we can become better versions of ourselves,
         technically, and as humans.",
     "Most of all, I love learning.  I find it an amazing feeling to step back to look at my progress so far,
         and dive right back in with a new perspective. Try doing something with your non-dominant hand,
         like playing the guitar or using your mouse, and really see how much better you've become.",
     "I enjoy seeing my ideas and views being shaped by my the world. To that end,
-        when I'm not studying, I try to find new things to do. This year I'm
+        when I'm not studying, I keep on trying to find new things to do. This year I'm
         learning how to skate on ice, so I can eventually play hockey. I'm learning
-        bouldering to stay fit. I blog, read up on blogs, work on some side projects, run,
-        read (Game of Thrones!), play games (Starcraft!), and explore. I'm always looking for new and fun activities.",
+        bouldering to stay fit. I blog, read up on blogs, work on my side projects, run, work out,
+        read (Game of Thrones!), play games (Starcraft!), and explore. I'm always looking for new activities to join,
+        or old activities to enjoy with new friends.",
     "I made this blog to document and share some of my thoughts, so that I can look back and see
-        the progress I've made. I update it with some of my new experiences, and new posts that I've found
-        especially interesting. Hopefully you'll find something useful as well. Feel free to let me know what you think,
-        or ask me any questions."
+        the progress I've made. I update it with some of my new experiences, and bookmark some online content that I've found
+        especially interesting. Hopefully you'll find something useful as well.
+        Feel free to let me know what you think, or ask me any questions."
     ]
 
 copyright_warning: [
     "This website is built using [Jekyll](http://github.com/mojombo/jekyll), a blog-aware, static site generator
         written in Ruby. The [source code](http://en.wikipedia.org/wiki/Source_code) used to create this website
-        is publicly available on [Github](http://github.com/Blisse/blisse.github.com)",
-    "All content used in this site is copyright their respective owners. If you have any problems with the content here,
-        feel free to contact me.",
+        is publicly available on [Github](http://github.com/Blisse/blisse.github.com). My favourite part about my blog is that the
+        content is decoupled from the view - all the text are in YAML files, and written to the HTML files during the Jekyll build." ,
+    "All content and resources used in this site are copyright their respective owners (which I may have lost...). If you have any problems with the content here,
+        feel free to contact me and I'll get back to you as soon as possible.",
     "All the posts here are Copyright &copy; 2012-2015 [Victor Lai](www.laivictor.com).
         Any thing else is [MIT licensed](http://en.wikipedia.org/wiki/Mit_license).
         Feel free to reuse the [HTML](http://en.wikipedia.org/wiki/Html) or [CSS](http://en.wikipedia.org/wiki/Css)."

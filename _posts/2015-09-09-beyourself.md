@@ -7,9 +7,9 @@ tags:
 
 I've never understood what people meant when they say, "be yourself". Obviously I am being myself and still stuck, so how does being myself even more change anything?
 
-Obviously I'm wrong. Here's a better way of thinking about it.
+Also obviously, I'm wrong. I've thought of a better way of thinking about it.
 
-"Be yourself" makes a lot of sense actually. "Be yourself" is actually just a reminder that you are human - that you are responsible for yourself, and you are going to have to make the decisions that count, by yourself.
+"Be yourself" should make a lot of sense. "Be yourself" is actually just a reminder that you are human - that you are responsible for yourself, and you are going to have to make the decisions that count, by yourself.
 
 Every single person in this world has a completely different set of experiences. From the moment you are born, from the parents that raise you, from the friends you make in school, from the teachers that push you forward, from the schools you go to, from the jobs you choose, from the people you meet on the street, from the attitudes you live with in each and every second of every day you've ever lived, you form a completely unique person that has never existed ever before.
 

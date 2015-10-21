@@ -2,10 +2,8 @@
 title: first coding interview
 date: 2012-04-14
 tags:
-    -
-        life
-    -
-        school
+    - life
+    - school
 ---
 
 

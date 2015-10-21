@@ -73,7 +73,7 @@ projects:
 
 -   title: "UWaterloo Open Data Library"
     description:
-        -   "C# wrapper library for UWaterloo's Open Data API"
+        -   "C# library for UWaterloo's Open Data API"
 
 -   title: "YouTube Playlist Manager"
     description:
@@ -81,17 +81,13 @@ projects:
 
 all_projects:
 -
-    title: "MASA Windows Store App Base"
-    link: "https://github.com/Blisse/Windows8MASA"
-    description: ["Project abstractions underlying my random universal apps, glued together by MVVM."]
--
     title: "21 Day Advantage"
     link: "http://www.windowsphone.com/en-us/store/app/21-day-advantage/19cc9347-88a3-4358-a2f7-065a01679145"
     description: ["WP8 app based off of Shawn Achor's TEDx Talk; 1000+ downloads."]
 -
     title: "UWaterloo OpenData Library"
-    link: "https://github.com/Blisse/UWOpenDataLib"
-    description: ["Async C# JSON wrapper around UWaterloo's Open Data API."]
+    link: "https://github.com/Blisse/UWAPI"
+    description: ["C# library for UWaterloo's Open Data API."]
 -
     title: "Youtube Subscriber"
     link: "/work/ytsubscriber"

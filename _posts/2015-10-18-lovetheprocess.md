@@ -1,5 +1,5 @@
 ---
-title: Love the Process
+title: Never Give Up
 date: 2015-10-18
 tags:
     - life
@@ -25,17 +25,9 @@ We got to the ramp - wow it wasn't what we expected, much wider. From the top, t
 
 I don't remember what happened after that. It was awful.
 
----
-
-The most important thing we can do, is love what we do.
-
-> "If you're never afraid of winning or losing, how can you ever be defeated?"
-
-When you love the journey, the sting of failure can never erase the beauty of the steps leading up to it. When we place too much value in the end result, we forget about all the value poured into getting to the end in the first place. When we value winning too much, we leave a void only satisfied by uncertain, fleeting success. But if we fill that void every step of the way by treasuring each and every step, we can never fail to fill that void, and thus we can never truly be defeated.
+I have no clue how well we did. We were too embarrassed to hear the results. And that was that.
 
 ---
-
-So we finished the day not knowing how we did. We were too embarrassed to hear the results. And that was that.
 
 One year later, we tried again. Grade 12. We wanted to avenge our failure from last year and make it down the ramp this time. We didn't want to make the same mistakes as last time.
 
@@ -63,8 +55,6 @@ We left feeling really proud of ourselves, and stood outside watching a couple o
 
 Later that day, we managed to find some other teams at our school and headed back to where they would announce the winners. The Paper Boat team got 4th place again.
 
-"Mechanical Transporter. First place: West Hill Colleg-"
+"Mechanical Transporter event. First place: West Hill Colleg-"
 
-All I can remember is screaming with everyone else from my school. I don't think I've ever screamed as hard and happily before. The announcer had to ask us to calm down so they could announce the rest of the results. The 4 of us high-fived the hell out of our hands. Our physics professor had a crazy smile on his face, and gave us the hardest handshake we've had. And then we high-fived the rest of our class. A year of failure redeemed, and a huge sigh of relief. It was over.
-
-All of our failures led to all of our improvements, making it so much more worthwhile. After failing last year, we had nothing to lose, and trusted our ability to fix our problems and our failures. And we did it.
+All I can remember is screaming with everyone else from my school. I don't think I've ever screamed as hard and happily before. The announcer had to ask us to calm down so they could announce the 2nd and 3rd place winners. The 4 of us high-fived. Our physics professor had a crazy smile on his face, and gave us all the hardest handshake I've felt. And then we high-fived the rest of our class. A year of failure redeemed. And a huge sigh of relief. We did it.

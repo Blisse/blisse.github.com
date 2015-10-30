@@ -30,17 +30,17 @@
                 .portfolio-page-job-company {
                     text-transform: uppercase;
                     color: $color-pillow-red;
-                    @include sassline(20, $resumetype, 2, 0, all);
+                    @include sassline(20, $resumetype, 2, 0.5, all);
                 }
 
                 .portfolio-page-job-title, .portfolio-page-project-title {
                     font-weight: bold;
-                    @include sassline(22, $resumetype, 2, 0, all);
+                    @include sassline(22, $resumetype, 2, 0.5, all);
                 }
 
                 .portfolio-page-job-date {
                     text-transform: uppercase;
-                    @include sassline(20, $resumetype, 2, 0, all);
+                    @include sassline(20, $resumetype, 2, 0.5, all);
                 }
 
                 .portfolio-page-job-descriptions, .portfolio-page-project-descriptions {
@@ -48,7 +48,7 @@
                     padding-top: 0;
 
                     .portfolio-page-job-description, .portfolio-page-project-description {
-                        @include sassline(15, $resumetype, 1.2, 0, all);
+                        @include sassline(15, $resumetype, 1.2, 0.5, all);
                     }
                 }
             }

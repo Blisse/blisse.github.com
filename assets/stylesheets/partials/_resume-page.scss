@@ -3,11 +3,6 @@
         background-color: #FFFFFF;
         color: $color-dark-gray;
     }
-
-    ul {
-        list-style-type: none;
-        list-style: none;
-    }
 }
 
 #resume-page {
@@ -19,10 +14,6 @@
         margin-right: 2rem;
     }
 
-    hr {
-        padding: 0.2rem;
-    }
-
     ul {
         margin-top: 0;
         padding-top: 0;
@@ -30,18 +21,20 @@
 
     .resume-page-title {
         color: $color-dark-gray;
+        font-size: 2.4rem;
+        font-family: "Nexa Bold", sans-serif;
+        font-weight: bolder;
         text-transform: uppercase;
-        @include sassline(42, $resumetype, 1, 0, all);
-        font-family: "Nexa Bold";
     }
 
     .resume-page-contact {
-        @include sassline(12, $resumetype, 1, 0, all);
         color: $color-pillow-red;
 
         a {
             margin: 0;
             padding: 0;
+
+            @include sassline(11, $resumetype, 1.2, 0.5, all);
         }
     }
 
@@ -50,24 +43,27 @@
         color: $color-pillow-red;
         font-weight: bold;
         text-transform: uppercase;
-        @include sassline(16, $headingtype, 1, 0, all);
 
-        margin-top: 1.5rem;
-        margin-bottom: 0.5rem;
-        padding-bottom: 0.2rem;
-        border-bottom: 1px solid $color-pillow-red;
+        h4 {
+            @include sassline(13, $headingtype, 1.2, 0.2, all);
+
+            margin: 0;
+            margin-top: 0.5rem;
+            margin-bottom: 0.4rem;
+            padding: 0;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+
+            border-top: 1px solid $color-pillow-red;
+            border-bottom: 1px solid $color-pillow-red;
+        }
     }
 
     #resume-page-skills,
     #resume-page-jobs,
     #resume-page-projects {
 
-        .resume-page-skill-descriptions {
-            .resume-page-skill-description {
-                @include sassline(12, $resumetype, 1.4, 0, all);
-            }
-        }
-
+        .resume-page-skill,
         .resume-page-job,
         .resume-page-project {
             margin-bottom: 0;
@@ -76,32 +72,38 @@
             .resume-page-job-title,
             .resume-page-project-title {
                 font-weight: bold;
-                @include sassline(12, $resumetype, 1, 0, all);
+                @include sassline(13, $resumetype, 2, 0.2, all);
+
+                padding-top: 0;
             }
 
             .resume-page-job-company {
                 color: $color-pillow-red;
                 text-transform: uppercase;
-                @include sassline(12, $resumetype, 1, 0, all);
+                @include sassline(13, $resumetype, 2, 0.2, all);
             }
 
             .resume-page-job-date {
                 text-transform: uppercase;
-                @include sassline(12, $resumetype, 1, 0, all);
+                @include sassline(13, $resumetype, 2, 0.2, all);
+            }
+
+            .resume-page-skill-descriptions,
+            .resume-page-job-descriptions,
+            .resume-page-project-descriptions {
+                margin-bottom: 0.5rem;
+                padding-top: 0;
+                padding-bottom: 0;
+
+                .resume-page-skill-description,
+                .resume-page-job-description,
+                .resume-page-project-description {
+                    @include sassline(11, $resumetype, 1.2, 0.2, all);
+                }
             }
 
             .resume-page-job-descriptions,
             .resume-page-project-descriptions {
-                margin-bottom: 1.2rem;
-                padding-bottom: 0;
-
-                .resume-page-job-description,
-                .resume-page-project-description {
-                    @include sassline(12, $resumetype, 1.4, 0, all);
-                }
-            }
-
-            .resume-page-job-descriptions {
                 margin-top: -0.5rem;
             }
         }
@@ -110,18 +112,20 @@
     #resume-page-education {
         .resume-page-education-degree {
             color: $color-pillow-red;
-            @include sassline(12, $resumetype, 1, 0, all);
+            text-transform: uppercase;
+            @include sassline(13, $resumetype, 2, 0.2, all);
         }
 
         .resume-page-education-school {
-            @include sassline(12, $resumetype, 1, 0, all);
+            text-transform: uppercase;
+            @include sassline(13, $resumetype, 2, 0.2, all);
         }
 
         .resume-page-education-descriptions {
             margin-top: -0.5rem;
 
             .resume-page-education-description {
-                @include sassline(12, $resumetype, 1.4, 0, all);
+                @include sassline(11, $resumetype, 1.2, 0.2, all);
             }
         }
     }

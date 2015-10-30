@@ -20,19 +20,25 @@ layout: "custom/resume"
         </a>
     </div>
     <div class="single-measure resume-page-header">
-        {{ site.data.profile.resume.skills_title }}
+        <h4>
+            {{ site.data.profile.resume.skills_title }}
+        </h4>
     </div>
     <div class="single-measure" id="resume-page-skills">
-        <ul class="resume-page-skill-descriptions">
-            {% for skill in site.data.profile.resume.skills %}
-            <li class="resume-page-skill-description">
-                {{ skill }}
-            </li>
-            {% endfor %}
-        </ul>
+        <div class="resume-page-skill">
+            <ul class="resume-page-skill-descriptions">
+                {% for skill in site.data.profile.resume.skills %}
+                <li class="resume-page-skill-description">
+                    {{ skill }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
     <div class="single-measure resume-page-header">
-        {{ site.data.profile.resume.job_title }}
+        <h4>
+            {{ site.data.profile.resume.job_title }}
+        </h4>
     </div>
     <div class="single-measure" id="resume-page-jobs">
         {% for job in site.data.profile.resume.jobs %}
@@ -59,7 +65,9 @@ layout: "custom/resume"
         {% endfor %}
     </div>
     <div class="single-measure resume-page-header">
-        {{ site.data.profile.resume.project_title }}
+        <h4>
+            {{ site.data.profile.resume.project_title }}
+        </h4>
     </div>
     <div class="single-measure" id="resume-page-projects">
         {% for project in site.data.profile.resume.projects %}
@@ -78,7 +86,9 @@ layout: "custom/resume"
         {% endfor %}
     </div>
     <div class="single-measure resume-page-header">
-        {{ site.data.profile.resume.education_title }}
+        <h4>
+            {{ site.data.profile.resume.education_title }}
+        </h4>
     </div>
     <div class="single-measure" id="resume-page-education">
         <span class="resume-page-education-degree">

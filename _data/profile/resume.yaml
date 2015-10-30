@@ -10,20 +10,19 @@ project_title: "side projects"
 education_title: "education"
 
 skills:
--   "Proficient using <strong>C/C++</strong>, <strong>C#</strong>, <strong>Python</strong>, <strong>Java</strong>, <strong>HTML/CSS</strong>."
--   "Experienced in <strong>.NET WPF</strong>, <strong>Windows Store</strong> application development."
--   "Comfortable with variety of technologies: <strong>Git</strong>, <strong>Make</strong>, <strong>Android</strong>, <strong>iOS</strong>, <strong>OpenGL</strong>, <strong>Sass</strong>."
--   "Passionate about <strong>technology</strong>, <strong>engineering</strong>, <strong>audio</strong>, <strong>physical</strong> and <strong>mental well-being</strong>."
+-   "Proficient using <strong>C/C++</strong>, <strong>C#</strong>, <strong>Java</strong>, <strong>Python</strong>, <strong>HTML/CSS</strong>."
+-   "Experienced with variety of technologies: <strong>.NET</strong>, <strong>Android</strong>, <strong>iOS</strong>, <strong>Git</strong>, <strong>Make</strong>, <strong>Sass</strong>."
+-   "Passionate about <strong>technology</strong>, <strong>engineering</strong>, <strong>audio</strong>, and <strong>well-being</strong>."
 
 jobs:
--   title: "Software Engineer Intern"
+-   title: "Software Engineer"
     company: "Thalmic Labs"
     date: "Sept &ndash; Dec 2015"
     date_year: "2015"
     description:
         -   "Android application development for the Myo armband"
 
--   title: "Windows Shell Engineer Intern"
+-   title: "Windows Shell Engineer"
     company: "Microsoft"
     date: "Jan &ndash; Apr 2015"
     date_year: "2015"
@@ -32,7 +31,7 @@ jobs:
         -   "Integrated multi-monitor scaling on Windows 10 Mobile with Windows desktop implementation"
         -   "Rewrote Display page in Windows 10 Mobile Settings to support multi-monitor controls"
 
--   title: "Outlook Services Engineer Intern"
+-   title: "Outlook Services Engineer"
     company: "Microsoft"
     date: "May &ndash; Aug 2014"
     date_year: "2014"
@@ -64,6 +63,7 @@ jobs:
 
 projects:
 -   title: "21 Day Advantage"
+    link: "http://www.windowsphone.com/en-us/store/app/21-day-advantage/19cc9347-88a3-4358-a2f7-065a01679145"
     description:
         -   "Windows Phone 8 app based off of Shawn Achor's TEDx Talk with 1000+ downloads"
 
@@ -72,38 +72,13 @@ projects:
         -   "Windows WPF application enabling voice-activated commands with the Kinect 2.0"
 
 -   title: "UWaterloo Open Data Library"
+    link: "https://github.com/Blisse/UWAPI"
     description:
         -   "C# library for UWaterloo's Open Data API"
 
 -   title: "YouTube Playlist Manager"
     description:
         -   "Windows WPF application to manage YouTube subscriptions and playlists using YouTube API"
-
-all_projects:
--
-    title: "21 Day Advantage"
-    link: "http://www.windowsphone.com/en-us/store/app/21-day-advantage/19cc9347-88a3-4358-a2f7-065a01679145"
-    description: ["WP8 app based off of Shawn Achor's TEDx Talk; 1000+ downloads."]
--
-    title: "UWaterloo OpenData Library"
-    link: "https://github.com/Blisse/UWAPI"
-    description: ["C# library for UWaterloo's Open Data API."]
--
-    title: "Youtube Subscriber"
-    link: "/work/ytsubscriber"
-    description: ["Desktop WPF application to parse, display and filter Youtube subscription pages"]
--
-    title: "OpenGL Tic-Tac-Toe"
-    link: "/work/ogltictactoe"
-    description: ["2D OpenGLUT implementation of Tic-Tac-Toe with unbeatable expert level difficulty"]
--
-    title: "Beyond Compare 3 Launcher"
-    link: "https://github.com/Blisse/BC3Launcher"
-    description: ["Automating PDF comparison using Beyond Compare 3"]
--
-    title: "This Website"
-    link: "/work/site"
-    description: ["Fun exploration of web development via Jekyll"]
 
 
 degree: "Candidate for Bachelor of Software Engineering"

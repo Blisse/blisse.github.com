@@ -6,7 +6,7 @@ github: "www.github.com/blisse"
 
 skills_title: "skills"
 job_title: "work experience"
-project_title: "side projects"
+project_title: "projects"
 education_title: "education"
 
 skills:
@@ -20,7 +20,8 @@ jobs:
     date: "Sept &ndash; Dec 2015"
     date_year: "2015"
     description:
-        -   "Android application development for the Myo armband"
+        -   "Developed features and product demo for undisclosed project"
+        -   "Fixed Bluetooth bugs in the Myo Android armband SDK and Myo applications"
 
 -   title: "Windows Shell Engineer"
     company: "Microsoft"

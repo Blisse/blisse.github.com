@@ -43,6 +43,14 @@
   }
 }
 
+// Single column (based on measure for typeset content).
+.column--full {
+  @include breakpoint(break-1) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 // Two columns.
 .column--duo {
   @include breakpoint(break-1) {

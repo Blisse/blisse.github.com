@@ -3,6 +3,7 @@ title: There's no one like you in the universe
 date: 2015-12-17
 tags:
     - life
+archived: true
 ---
 
 This is written to myself, in the past and in the future, to keep fighting and keep dreaming and keep going on, no matter how things end up, because life is beautiful. Don't forget it.

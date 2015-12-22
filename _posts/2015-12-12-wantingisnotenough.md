@@ -3,6 +3,7 @@ title: wanting is not enough
 date: 2015-12-12
 tags:
     - life
+archived: true
 ---
 
 As kids, we're often told that if we want something enough and we work hard enough at it, we can achieve anything we desire.

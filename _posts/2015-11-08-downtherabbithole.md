@@ -13,4 +13,4 @@ He believes that if you always work your hardest and do your best, you will be g
 
 It's a beautiful story.
 
-It might not always work out in the end, but at the very least you can be proud of the choices you've made. And you might uncover something more beautiful in its place. Work on the things you don't like. Treasure the things you do. Work harder and better. Ever upwards.
+It might not always work out in the end, but at the very least you can be proud of the choices you've made. And you might uncover something more beautiful in its place. Work on the things you don't like. Treasure the things you do. Work harder and better. Ever upwards. Higher and higher.

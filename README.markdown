@@ -2,8 +2,9 @@
 
 I'm Victor Lai. This is the repository for my site.
 
-* [www.laivictor.com](http://www.laivictor.com)
-* [blisse.github.com](http://blisse.github.com)
+* [victorl.ai](http://victorl.ai)
+* [laivictor.com](http://www.laivictor.com)
+* [blisse.github.io](http://blisse.github.io)
 
 # Licensing
 

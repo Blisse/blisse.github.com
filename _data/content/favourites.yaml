@@ -3,6 +3,23 @@
 #     title: ""
 #     starred: false
 -
+    link: "http://jamesclear.com/say-thank-you"
+    title: "Say Thank You"
+    starred: true
+-
+    link: "http://worrydream.com/ClimateChange/"
+    title: "What can a technologist do about climate change?"
+    starred: true
+-
+    link: "http://www.cs.berkeley.edu/~rxin/db-papers/TrustingTrust-Thompson.pdf"
+    title: "Reflections on Trusting Trust"
+-
+    link: "http://www.templetons.com/brad/robocars/transit-ends.html"
+    title: "Transit Ends"
+-
+    link: "http://www.minimallyminimal.com/"
+    title: "Minimally Minimal"
+-
     link: "http://fredrikdeboer.com/2015/09/27/withdraw-into-yourself-forever/"
     title: "withdraw into yourself forever"
     starred: true

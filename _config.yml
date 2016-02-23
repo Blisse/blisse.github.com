@@ -1,5 +1,5 @@
-url:    http://www.laivictor.com
-feed:   http://www.laivictor.com/atom.xml
+url:    http://www.victorl.ai
+feed:   http://www.victorl.ai/atom.xml
 
 paginate: 5
 paginate_path: "/blog/page-:num"

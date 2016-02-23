@@ -36,7 +36,7 @@ about_long: [
 copyright_warning: [
     "This website is built using [Jekyll](http://github.com/mojombo/jekyll), a blog-aware, static site generator written in Ruby. The [source code](http://en.wikipedia.org/wiki/Source_code) used to create this website is publicly available on [Github](http://github.com/Blisse/blisse.github.com). My favourite part about my blog is that the content is decoupled from the view - all the text are in YAML files, and written to the HTML files during the Jekyll build." ,
     "All content and resources used in this site are copyright their respective owners (which I may have lost...). If you have any problems with the content here, feel free to contact me and I'll get back to you as soon as possible.",
-    "All the posts here are Copyright &copy; 2012-2016 [Victor Lai](www.laivictor.com). Any thing else is [MIT licensed](http://en.wikipedia.org/wiki/Mit_license). Feel free to reuse the [HTML](http://en.wikipedia.org/wiki/Html) or [CSS](http://en.wikipedia.org/wiki/Css)."
+    "All the posts here are Copyright &copy; 2012-2016 [Victor Lai](www.victorl.ai). Any thing else is [MIT licensed](http://en.wikipedia.org/wiki/Mit_license). Feel free to reuse the [HTML](http://en.wikipedia.org/wiki/Html) or [CSS](http://en.wikipedia.org/wiki/Css)."
     ]
 about_contact: "If you want to contact me, send me a message at [hello@laivictor.com](mailto:hello@laivictor.com)"
 

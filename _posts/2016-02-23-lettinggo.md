@@ -51,8 +51,9 @@ I went through high school oblivious to life. I thought things would fall on my 
 * I let go of the idea that all it took was hard work to do well. 
 * I let go of the idea that I didn't like spinach, broccoli, olives.
 
-* I started to fall for another girl. She said no. I had to let go of that reality as well. 
-* I thought that going to the gym was for freaks. I let go of that idea. 
+* I thought that going to the gym was only for jocks. I let go of that idea. 
+* I really thought that it mattered whether you were a jock or not. It doesn't. I let go of that idea.
+* I thought that things would one day fall into place for me. I've let go of that idea.
 * I believed that I would never find happiness again. I let go of that, and now I can smile again. 
 * I knew that my path in the world would be clear once I reached my goal (to work at Microsoft). I was wrong. I let go of that. 
 
@@ -60,6 +61,6 @@ I am honestly more confused than I ever was, but overcoming these fake realities
 
 Today, I know that every belief I have about myself and the world means nothing. I know that any of them can change at any moment, and I actively fight to figure out and overcome all the friction I encounter with my beliefs and the world. 
 
-Who knows, maybe tomorrow I'll learn that this is wrong too. 
+Who knows, maybe tomorrow I'll learn that all of this was wrong too. 
 
-For now though, don't let your own reality hold you back.
+For now though, don't let your own realities hold you back.

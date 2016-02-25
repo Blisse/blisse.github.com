@@ -4,62 +4,11 @@ title: portfolio
 <div class="section typeset" id="portfolio-page">
     <div class="single-measure portfolio-page-title-wrapper">
         <hr/>
-        <h4 class="portfolio-page-title">
-            <a name="jobs">
-                {{ site.data.content.pages.portfolio_work_title }}
-            </a>
-        </h4>
-        <hr/>
-    </div>
-    <div class="single-measure" id="portfolio-page-jobs">
-        {% for job in site.data.profile.resume.jobs %}
-        <div class="portfolio-page-job-wrapper">
-            <div class="portfolio-page-job">
-                <div class="portfolio-page-job-title">
-                     {{ job.title }}
-                </div>
-                <span class="portfolio-page-job-company">
-                    {{ job.company }}
-                </span>
-                <span class="portfolio-page-job-date">
-                    {{ job.date }}
-                </span>
-                <ul class="portfolio-page-job-descriptions">
-                    {% for description in job.description %}
-                    <li class="portfolio-page-job-description">
-                        {{ description }}
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    <div class="single-measure portfolio-page-title-wrapper">
-        <hr/>
-        <h4 class="portfolio-page-title">
+        <h1 class="portfolio-page-title">
             <a name="projects">
                 {{ site.data.content.pages.portfolio_projects_title }}
             </a>
-        </h4>
+        </h1>
         <hr/>
-    </div>
-    <div class="single-measure" id="portfolio-page-projects">
-        {% for project in site.data.profile.resume.projects %}
-        <div class="portfolio-page-project-wrapper">
-            <div class="portfolio-page-project">
-                <span class="portfolio-page-project-title">
-                     {{ project.title }}
-                </span>
-                <ul class="portfolio-page-project-descriptions">
-                    {% for description in project.description %}
-                    <li class="portfolio-page-project-description">
-                        {{ description }}
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-        {% endfor %}
     </div>
 </div>

@@ -1,29 +1,8 @@
-$background_image_url: "background/DSC00638.JPG";
+$background_image_url: "background/background_8.jpg";
 
 #home-page {
 
     #home-page-quote-with-background {
 
-        background: image-url($background_image_url, false, false) top left no-repeat fixed;
-        background-size: cover;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-
-        #home-page-mission-statement-quote {
-
-            p {
-                color: $color-white;
-                border: none;
-                padding-left: 0;
-                text-shadow: 1px 1px 1px #000;
-
-                @include sassline($fontsize: delta, $font: $quotetype, $lineheight: 2, $below: 1, $breakpoint: all);
-            }
-
-            border-left: none;
-            margin: 1rem 0;
-            padding: 2rem 0;
-        }
     }
 }

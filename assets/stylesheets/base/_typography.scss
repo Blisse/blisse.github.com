@@ -81,6 +81,7 @@ a {
     font-family: unquote(map-get($headingtype, font-family));
     font-style: normal;
     font-weight: map-get($headingtype, bold);
+    text-transform: uppercase;
   }
 
   // Heading level 1.

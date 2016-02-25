@@ -2,20 +2,126 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <META HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT">
-        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-        <title>
-            {{ site.data.profile.about.site_title }}{% if page.title %} - {{ page.title }}{% endif %}
-        </title>
-        {% include standardhead.html %}
-    </head>
-    <body>
+<head>
 
-        {{ content }}
+    <title>
+        {{ site.data.profile.about.site_title }}{% if page.title %} - {{ page.title }}{% endif %}
+    </title>
 
-        {% include standardfoot.html %}
+    <meta charset="utf-8">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog, accent, {{ site.author }}, {{ site.title }}, jekyll">
+    {% if page.url == "/404.html" %}
+        <meta http-equiv="refresh" content="5; url=/">
+    {% endif %}
 
-    </body>
+    {% if page.description %}
+        {% assign desc = page.description %}
+    {% else %}
+        {% assign desc = site.description %}
+    {% endif %}
+    {% if page.url %}
+        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% else %}
+        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% endif %}
+
+    <meta name="description" content="{{ desc }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
+
+    {% if site.favicon %}
+    <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
+    <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location }}">
+    {% endif %}
+    {% if site.twitter_username %}
+    <link rel="author" href="https://twitter.com/{{ site.twitter_username }}">
+    {% endif %}
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="{{ desc }}">
+    <meta name="og:title" content="{{ site.title }}">
+    <meta name="og:url" content="{{ url }}">
+    <meta name="og:type" content="article">
+    {% if site.og_image %}
+    <meta name="og:image" content="{{ site.og_image }}">
+    {% endif %}
+    {% if site.facebook_id %}
+    <meta name="fb:admins" content="{{ site.facebook_id }}">
+    {% endif %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ desc }}">
+    <meta name="twitter:url" content="{{ url }}">
+    {% if site.twitter_image %}
+    <meta name="twitter:image" content="{{ site.twitter_image }}">
+    {% else %}
+    <meta name="twitter:image" content="{{ site.profile_picture }}">
+    {% endif %}
+
+    <!-- Google Fonts -->
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:200,400,600'>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:200,400,600'>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Merriweather:300,400,600,700'>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700|Ubuntu:400,300,300italic,500,700|Montserrat'>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="/assets/js/vendor/jquery/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="/assets/js/vendor/miscellaneous/custom.modernizr.js"></script>
+
+    <!-- fancyBox -->
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="/assets/vendor/fancybox/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="/assets/vendor/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript" src="/assets/vendor/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="/assets/vendor/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="/assets/vendor/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript" src="/assets/vendor/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <!-- Base CSS -->
+    <link rel='stylesheet' type='text/css' href="/assets/stylesheets/generated/main.css" media="all">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <nav class="navbar">
+                <a href="{{ site.baseurl }}/">
+                    <span class="alignable pull-left back-outer">
+                        <span class="alignable pull-left back-inner">
+                        </span>
+                    </span>
+                </a>
+            </nav>
+
+{{ content }}
+
+        </div>
+    </div>
+
+{% include footer.html %}
+
+{% include extensions/load_foundation.html %}
+{% include extensions/load_fancybox.html %}
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery/jquery-2.0.3.min.js"><\/script>')</script>
+    <script src="/assets/js/vendor/rssb/rssb.min.js"></script>
+
+    {% if page.title %}
+        <script src="/assets/js/vendor/anchor/anchor.min.js"></script>
+        <script>
+        anchors.options.placement = 'right'
+        anchors.options.class = 'hide'
+        anchors.add()
+        anchors.remove('.post-title')
+        </script>
+    {% endif %}
+    {% if site.tracking_id %}
+{% include analytics.html %}
+    {% endif %}
+</body>
 </html>

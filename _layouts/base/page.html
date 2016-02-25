@@ -52,18 +52,15 @@ headers:
             {% for header in page.headers %}
             {% if page.navigationhighlight == header.highlight %}
             {% assign hashighlight = true %}
-            <h1>
-                <a href="{{ header.link }}" class="active">
-                    {{ header.name }}
-                </a>
-            </h1>
+            <a href="{{ header.link }}" class="active">
+                {{ header.name }}
+            </a>
             {% else %}
-            <h1>
-                <a href="{{ header.link }}">
-                    {{ header.name }}
-                </a>
-            </h1>
+            <a href="{{ header.link }}">
+                {{ header.name }}
+            </a>
             {% endif %}
+            <br/>
             {% endfor %}
         </div>
 

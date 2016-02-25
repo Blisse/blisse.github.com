@@ -117,6 +117,7 @@ a {
   // Lists.
   ul, ol {
     @include baseline(zeta, $bodytype, 2, 2, all);
+    font-weight: lighter;
 
     li {
       -webkit-font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
@@ -307,11 +308,16 @@ a {
   // Quotes.
   blockquote {
 
+    border-left: 0.15rem solid $linkColour;
+    padding-left: 1rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 2rem;
+    background: #EAEAEA;
+
     p {
-      border-left: 0.15rem solid $linkColour;
       font-family: unquote(map-get($quotetype, font-family));
       font-style: map-get($quotetype, regular);
-      padding-left: 1rem;
+      padding-right: 1rem;
 
       // Add spacing below blockquote paragraphs to align to baseline grid.
       $get-scale: map-get($modular-scale, scale-0);
@@ -352,8 +358,8 @@ a {
     background-size: 100% 0.15rem;
     border: 0;
     margin: 0;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
   }
 
   // Code block.
@@ -412,4 +418,10 @@ a {
     -o-font-feature-settings: 'onum' 1, 'kern' 1;
     font-feature-settings: 'onum' 1, 'kern' 1;
   }
+
+  .rrssb-buttons li a {
+    background-image: none;
+    text-shadow: none;
+  }
+
 }

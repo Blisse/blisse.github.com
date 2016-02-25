@@ -57,7 +57,7 @@ $gutterwidths: (
 // ! Set cap height to set to the baseline.
 
 $bodytype: (
-  font-family: 'Merriweather, Georgia, serif',
+  font-family: 'Open Sans, Georgia, serif',
   regular: 400,
   bold: 600,
   italic: italic,
@@ -65,7 +65,7 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: 'Open Sans, Verdana, sans-serif',
+  font-family: 'Montserrat, sans-serif',
   regular: 400,
   bold: 600,
   cap-height: 0.66
@@ -81,14 +81,6 @@ $quotetype: (
   font-family: 'Open Sans, Verdana, sans-serif',
   regular: 400,
   bold: 600,
-  cap-height: 0.66
-) !default;
-
-$resumetype: (
-  font-family: 'Open Sans, Verdana, sans-serif',
-  regular: 400,
-  bold: 600,
-  italic: italic,
   cap-height: 0.66
 ) !default;
 
@@ -110,3 +102,20 @@ $white: $color-white !default;
 // Background colours.
 $backgroundColour: #EFEFEF !default;
 $codeBackgroundColour: #F5F4F2 !default;
+
+$code-font: 'Menlo', 'Roboto Mono', 'Roboto', 'Consolas';
+
+// Spacing and Sizes
+$base-font-size: 1.2em;
+$base-line-height: 1.5;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$max-width: 800px;
+
+$break-small: 480px;
+$break-medium: 700px;
+$break-large: 980px;
+
+$big-circle-size: 30px;
+$footer-size: 230px;
+$about-image-size: 100px;

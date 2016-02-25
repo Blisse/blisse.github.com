@@ -1,7 +1,6 @@
 ---
 title: about
 ---
-
 <div id="about-page" class="section typeset">
     <div class="single-measure" id="about-page-social-icons">
         <a href="http://www.github.com/blisse">
@@ -13,7 +12,7 @@ title: about
         <a href="http://www.twitter.com/{{ site.data.profile.about.profile_twitter }}">
             <span aria-hidden="true" data-icon="&#xe608;"></span>
         </a>
-        <a href="/atom.xml">
+        <a href="/feed.xml">
             <span aria-hidden="true" data-icon="&#xe60a;"></span>
         </a>
         <a href="mailto:{{ site.data.profile.about.profile_professionalemail }}">
@@ -63,7 +62,7 @@ title: about
             <blockquote class="about-page-quote">
                 {% for line in quote.lines %}
                 <p>
-                    {{ line | markdownify }}
+                    {{ line }}
                 </p>
                 {% endfor %}
                 <cite>

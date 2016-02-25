@@ -5,15 +5,15 @@ title: archives
     {% for post in site.posts %}
     {% if post.archived == false %}
     <div class="blog-page-post-archived single-measure">
-        <h2 class="blog-page-post-archived-title">
+        <div class="blog-page-post-archived-title">
             <a href="{{ post.url }}">
                 {{ post.title }}
             </a>
-        </h2>
-        <span class="blog-page-post-archived-tags">
+        </div>
+        <span class="button">
             about {{ post.tags | array_to_sentence_string }}.
         </span>
-        <span class="blog-page-post-archived-date">
+        <span class="button">
             posted on {{ post.date | date:'%B %d, %Y' }}.
         </span>
     </div>

@@ -1,8 +1,12 @@
-@import "vendor/font-icomoon/icomoon";
+@charset "utf-8";
 
 @import "base/reset";
-@import "base/fonts";
+
+@import "vendor/font-icomoon/icomoon";
+@import "vendor/rssb/rssb";
+
 @import "base/colors";
+@import "base/fonts";
 @import "base/variables";
 @import "base/modular-scale";
 @import "base/mixins";
@@ -10,12 +14,10 @@
 @import "base/layouts";
 
 @import "partials/page";
+@import "partials/table";
 @import "partials/syntax";
-@import "partials/typography";
 @import "partials/navigation";
 
 @import "partials/home-page";
 @import "partials/blog-page";
-@import "partials/portfolio-page";
 @import "partials/about-page";
-@import "partials/resume-page";

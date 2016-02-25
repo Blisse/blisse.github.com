@@ -21,17 +21,17 @@ profile_twitter: "dblisse"
 profile_name: "victor lai"
 
 about_intro: "Hi, I'm Victor Lai!"
-about_short: [
-    "I'm a Software Engineering student at the University of Waterloo.",
-    "I'm passionate about healthy **mental** and **physical well-being**, **happiness** and **helping others**, **mindfulness** and **standing up**, for yourself and others."
-    ]
+about_short:
+    - "I'm a Software Engineering student at the University of Waterloo."
+    - "I'm passionate about healthy **mental** and **physical health**, **happiness** and **helping others**, **mindfulness** and **standing up**, for yourself and others."
+    - "I don't know what I'm doing in life or where I end up. But I do know that I have to find **what makes my heart tick**."
+    - "I hope you join me along the way."
 
-about_long: [
-    "Hello there! Thanks for visiting my blog. If not obvious by the URL or my name being plastered in big letters at the top, my name is Victor and this is my website.",
-    "Right now, I am a Software Engineering student at the University of Waterloo. I love thinking about the future, and being excited about the new technologies we may see in our lives soon. I'm a crazy tech geek - I love all sorts of gadgets and computers and accessories. I love paying attention to our well-being, and how we can become better versions of ourselves in every way possible.",
-    "Most of all, I love learning. I find it an amazing feeling to step back to look at my progress so far, and dive right back in with a new perspective. Try doing something with your non-dominant hand, like playing the guitar or using your mouse, and really see how much better you've become.", "I enjoy seeing my ideas and views being shaped by my the world. To that end, when I'm not studying, I keep on trying to find new things to do. This year I'm learning how to skate on ice, so I can play hockey one day. I'm boulder to stay fit and to have fun. I write, read blogs, work on my side projects, run, work out, read books (Game of Thrones!), play games (Starcraft!), and explore the world. I'm always looking for new activities to join, or old activities to enjoy with new friends.",
-    "I made this blog to document and share some of my thoughts, so that I can look back and see the progress I've made. I update it with some of my new experiences, and bookmark content that I find interesting. Hopefully you'll find something useful as well. Feel free to let me know what you think, or ask me any questions."
-    ]
+about_long:
+    - "Hello there! Thank you for visiting my blog. If not obvious by the URL or my name being plastered at the top, my name is Victor and this is my website."
+    - "I'm a Software Engineering student at the University of Waterloo, trying to find his place in this world."
+    - "I love learning. I find it an amazing feeling to step back in awe of my progress so far. Try doing something with your non-dominant hand, like playing the guitar or using your mouse, and really see how much you've grown. I enjoy seeing my ideas and views being shaped by my the world. To that end, I'm always trying to find new things to do, or old things to enjoy with new friends."
+    - "I made this blog to document and share some of my thoughts, so that I can look back and see the progress I've made. I update it with some of my new experiences, and bookmark content that I find interesting. Hopefully you'll find something useful as well. Feel free to let me know what you think, or ask me any questions."
 
 copyright_warning: [
     "This website is built using [Jekyll](http://github.com/mojombo/jekyll), a blog-aware, static site generator written in Ruby. The [source code](http://en.wikipedia.org/wiki/Source_code) used to create this website is publicly available on [Github](http://github.com/Blisse/blisse.github.com). My favourite part about my blog is that the content is decoupled from the view - all the text are in YAML files, and written to the HTML files during the Jekyll build." ,

@@ -1,0 +1,31 @@
+<footer class="section typeset">
+    {% include suggestion.html %}
+    <hr />
+    <div class="user-footer">
+        <div class="copyright alignable pull-left">
+            {% if site.copyright %}
+                <span> &copy; {{ site.copyright }}</span>
+            {% else %}
+                <span> &copy; {{ site.title }}</span>
+            {% endif %}
+        </div>
+        <div class="alignable pull-right">
+            <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}" class="button">
+                @{{ site.twitter_username }}
+            </a>
+            <a href="mailto:{{ site.email }}" class="button">
+                mail
+            </a>
+            <a target="_blank" href="{{ site.url }}{{ site.baseurl }}/feed.xml" class="button">
+                rss
+            </a>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <hr />
+    <div class="theme-footer">
+        <p class="alignable pull-left" style="display: inline-block">
+            Built with <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://ankitsultana.me/accent/">accent</a>
+        </p>
+    </div>
+</footer>

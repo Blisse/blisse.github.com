@@ -1,19 +1,23 @@
 -
     lines:
+        - "How lucky I am to have something that makes saying goodbye so hard"
+    cite: "A. A. Milne"
+-
+    lines:
         - "In the depths of winter, I finally learned that within me there lay an invincible summer."
-    cite: Albert Camus
+    cite: "Albert Camus"
 -
     lines:
-        - "To laugh often and much; to win the respect of intelligent people and the affection of children;
-            to earn the appreciation of honest critics and endure the betrayal of false friends; to appreciate beauty,
-            to find the best in others; to leave the world a bit better, whether by a healthy child, a garden patch or
-            a redeemed social condition; to know even one life has breathed easier because you have lived. This is to have succeeded."
-    cite: Ralph Waldo Emerson
+        - "Forgiveness means giving up all hope for a better past."
+    cite: Unknown
 -
     lines:
-        - "We must not cease from exploration."
-        - "And the end of all our exploring will be to arrive where we began and to know the place for the first time."
-    cite: T. S. Eliot
+        - "Don't worry about finding the right person. Focus on becoming the right person."
+    cite: Unknown
+-
+    lines:
+        - "Man cannot remake himself without suffering, for he is both the marble and the sculptor."
+    cite: "Alexis Carrel"
 -
     lines:
         - "... he that cannot change the very fabric of his thought will never be able to change reality."
@@ -21,8 +25,6 @@
 -
     lines:
         - "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do."
-        - "So throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails."
-        - "Explore, Dream, Discover."
     cite: "Mark Twain"
 -
     lines:
@@ -30,8 +32,8 @@
             teachers were inflatable, all the buildings were inflatable, and all the students were inflatable."
         - "One day, the inflatable boy wondered - well, what if the whole world's inflatable? And what if everyone's
             inflatable and deflatable? And you know when you inflate someone, because they go like this
-            **&ndash;happy face, rises up a bit&ndash;** and you know when you deflate someone, because they
-            go like this **&ndash;sad face, droops down&ndash;**"
+            **-happy face, rises up a bit-** and you know when you deflate someone, because they
+            go like this **-sad face, droops down-**"
         - "And maybe, if you inflate lots of people - maybe then you know you've lived a good life. And maybe....maybe,
             if you can still inflate people after you're gone, then you've lived an even better one."
     cite: Adam Hills

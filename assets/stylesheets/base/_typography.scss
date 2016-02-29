@@ -343,6 +343,10 @@ a {
       }
     }
 
+    cite {
+      font-weight: bold;
+    }
+
     @include breakpoint(break-1) {
       margin-left: -1rem;
     }

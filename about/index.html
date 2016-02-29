@@ -62,7 +62,7 @@ title: about
             <blockquote class="about-page-quote">
                 {% for line in quote.lines %}
                 <p>
-                    {{ line }}
+                    {{ line | markdownify }}
                 </p>
                 {% endfor %}
                 <cite>

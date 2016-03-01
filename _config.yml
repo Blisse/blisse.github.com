@@ -128,5 +128,5 @@ profile_picture: "/assets/images/profile/scan.jpg"
 tracking_id: UA-33478809-1 # GA Tracking ID
 
 # Social Stuff | open graph and twitter cards
-og_image: "images/accent.png" # This will show in facebook thumbnails
-twitter_image: "http://ankitsultana.me/images/accent.png" # This will show in twitter cards
+og_image: "/assets/images/profile/scan.jpg" # This will show in facebook thumbnails
+twitter_image: "/assets/images/profile/scan.jpg" # This will show in twitter cards

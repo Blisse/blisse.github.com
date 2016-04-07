@@ -23,15 +23,15 @@ We talked for a while. I can see why I fell for her. It's another new experience
 
 She's changed a lot. So have I. But when we think of each other, we still think of the person we knew 4 years ago. And we just can't relate anymore. We don't actually know the person we're now sitting next to, and it feels weird to talk to them with that previous image in our mind. It's a bit sad. 
 
-We talked about our lives. Our new lives. Our new hobbies. Our old hobbies. Our old goals. Our new ones. The old us. The new you. The new me.
+We talked about our lives. Our new lives. Our new hobbies. Our old hobbies. Our old goals. Our new ones. The old us. The new you. The new me. 
 
 There's an awkward tension. We can't talk about the things we used to talk about. There's a trust you can only develop after being in a relationship. It's not there anymore. We can talk, and talk, and talk, but we can never talk... Maybe it's better this way.
 
 I'm so happy and sad to have met and known her. 
 
----
+She said that she remembered my hair and all the effort with it.
 
-Today, I cut my bangs. To be honest, he cut my hair a bit too short. I think I may have pointed at the wrong picture. But it's fine. It'll grow out. Life moves on. 
+So today, I cut my bangs. To be honest, my barber cut it a bit too short. I think I may have pointed at the wrong picture. But it's fine. It'll grow out. Life moves on. 
 
 We have to live with our decisions.
 

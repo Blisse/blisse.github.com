@@ -8,8 +8,8 @@ I'm Victor Lai. This is the repository for my site.
 
 # Licensing
 
-Everything is free to use under the MIT License, except my opinions. Enjoy!
+Everything is free to use under the MIT License, except my blogs and opinions. Enjoy!
 
 # Disclaimer
 
-All thoughts and ideas presented in this blog are my own.
+Opinions expressed are solely my own and do not express the views or opinions of my employer.

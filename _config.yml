@@ -1,132 +1,106 @@
-title: victorl.ai
-url: "http://victorl.ai"
-feed: "http://www.victorl.ai/feed.xml"
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  _plugins
+layouts_dir:  _layouts
+data_dir:     _data
+includes_dir: _includes
+collections:
+  posts:
+    output:   true
 
-paginate: 5
-paginate_path: "/blog/page-:num"
+# Handling Reading
+safe:                 false
+include:              [".htaccess"]
+exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "README.md", "CNAME"]
+keep_files:           [".git", ".svn"]
+encoding:             "utf-8"
+markdown_ext:         "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter: true
 
-exclude: ['README.markdown', 'Gemfile.lock', 'Gemfile', 'config']
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
 
-gems:
-    - jekyll-paginate
+# Plugins
+whitelist: []
+plugins:   []
 
-sass:
-    syntax: scss        # scss|sass
-    style:  compressed  # nested|expanded|compact|compressed
+# Conversion
+markdown:    kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
 
-markdown:       kramdown
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+show_dir_listing: false
+
+# Outputting
+permalink:     blog/:year/:month/:day/:title.html
+paginate_path: /blog/page-:num
+paginate:      5
+timezone:      "US/Pacific"
+
+quiet:    false
+verbose:  false
+defaults: []
+
+liquid:
+  error_mode: warn
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
 
 kramdown:
-    syntax_highlighter:    rouge
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1
 
-encoding: "utf-8"
-excerpt_separator: ""
+# Build settings
+gems:
+  - jekyll-feed
+  - jekyll-compass
 
+# Custom scopes
 defaults:
-    -
-        scope:
-            path: ""
-            type: "pages"
-        values:
-            layout: "base/page"
-            navigationhighlight: "home"
-    -
-        scope:
-            path: ""
-            type: "posts"
-        values:
-            layout: "custom/post"
-            navigationhighlight: "blog"
-            navigationsubhighlight: "archives"
-            archived: false
-            comments: true
-            pure_markdown: true
-    -
-        scope:
-            path: "about"
-        values:
-            layout: "custom/about"
-            navigationhighlight: "about"
-            navigationsubhighlight: "profile"
-    -
-        scope:
-            path: "about/favourites"
-        values:
-            navigationsubhighlight: "favourites"
-    -
-        scope:
-            path: "about/videos"
-        values:
-            navigationsubhighlight: "videos"
-    -
-        scope:
-            path: "about/blogs"
-        values:
-            navigationsubhighlight: "blogs"
-    -
-        scope:
-            path: "portfolio"
-        values:
-            layout: "custom/portfolio"
-            navigationhighlight: "portfolio"
-    -
-        scope:
-            path: "blog"
-        values:
-            layout: "custom/blog"
-            navigationhighlight: "blog"
-            navigationsubhighlight: "latest"
-    -
-        scope:
-            path: "blog/archives"
-        values:
-            navigationsubhighlight: "archives"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
+# Site settings
 
-# User Settings | Edit there as per required
-
-# This will show up at the top of index page
-site_heading: >
-    foo <span class="faded">'s blog</span>
-
-email: hello@laivictor.com
-author: "Victor Lai"
-# This description will show up in google search results
-# (for index page) etc.
-description: "Victor's Blog"
-
-# This will what will show against &copy; in the footer
-copyright: victor lai
-# Toggle your short bio, which will displayed on your index page
-# Just toggle it and run jekyll again to see
-intro: false
-# Tip: Remove the span from site_heading if intro is set to true
-# This will be displayed in your intro
-short_bio: "UW SE2016. Shiba Inu disguised as a human"
-
-# permalink: /:title.html
-
-# Comments are powered by disqus
-comments: true
-
-# keep about_stub roughly 12 words long for best results
-# This will show up at the bottom of each post
-# Note that about_footer should be true if you want
-# to see author information at the bottom of each post
-about_stub: "Shiba Inu in disguise"
-
-about_footer: true
-
-twitter_username: dblisse
-github_username: blisse
-facebook_id: lai.victor.vl
-
-favicon: true
-favicon_location: "/assets/favicon.ico"
-
-profile_picture: "/assets/images/profile/scan.jpg"
-tracking_id: UA-33478809-1 # GA Tracking ID
-
-# Social Stuff | open graph and twitter cards
-og_image: "/assets/images/profile/scan.jpg" # This will show in facebook thumbnails
-twitter_image: "/assets/images/profile/scan.jpg" # This will show in twitter cards
+url: "http://victorl.ai"
+feed: "http://www.victorl.ai/feed.xml"
+title: "victorl.ai"

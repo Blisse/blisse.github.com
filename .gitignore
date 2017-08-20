@@ -42,3 +42,4 @@ Thumbs.db
 .sass-cache/
 _site/
 %PSMODULEPATH%/
+.jekyll-metadata

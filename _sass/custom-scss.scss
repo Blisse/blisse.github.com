@@ -1,0 +1,22 @@
+// Add your own custom CSS here.
+@import "pygments-tomorrow";
+
+.post-content table,
+.post-excerpt-home table,
+.post-nav table {
+  @extend .table;
+  @extend .table-bordered;
+}
+
+.post-title-home {
+  margin: 0;
+  a {
+    color: inherit;
+  }
+}
+.post-excerpt-home {
+  margin-bottom: $space-md;
+}
+.home-read-more {
+  margin-bottom: 40px;
+}

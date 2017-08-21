@@ -1,0 +1,23 @@
+---
+title: About
+---
+<div class="page-about">
+  <p>
+    <img src="{{ site.data.profile.profile_picture | prepend:site.baseurl }}" class="rounded mx-auto d-block img-rounded" style="width:200px;height:auto;"/>
+  </p>
+
+  <h2>Hello!</h2>
+  {% for line in site.data.profile.about %}
+  <p>{{ line | markdownify }}</p>
+  {% endfor %}
+
+  <h2>Quotes</h2>
+  {% for quote in site.data.quotes %}
+  <blockquote>
+    {% for line in quote.lines %}
+      <p>{{ line | markdownify }}</p>
+    {% endfor %}
+    <cite> - {{ quote.cite }}</cite>
+  </blockquote>
+  {% endfor %}
+</div>

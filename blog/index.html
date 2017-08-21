@@ -1,6 +1,5 @@
 ---
-title: About
-permalink: "about/index.html"
+title: Blog
 ---
 <div class="page-archive">
 {% for post in site.posts %}
@@ -12,7 +11,7 @@ permalink: "about/index.html"
     </h3>
   {% endif %}
   <p>
-    <a href="{{ post.url | prepend:site.baseurl}}" class="post-title-archive">{{ post.title }}</a>
+    <a href="{{ post.url | prepend:site.baseurl}}" class="post-title-archive">{{ post.title }} ></a>
     <small class="text-muted">{{ post.date | date_to_string }}</small>
   </p>
 {% endfor %}

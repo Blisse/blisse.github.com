@@ -1,6 +1,17 @@
 ---
 ---
 
+<div class="post-header-intro">
+  <h2 class="section-header">
+    Hello!
+  </h2>
+  {% for line in site.data.profile.home %}
+  <p>{{ line | markdownify }}</p>
+  {% endfor %}
+</div>
+
+<hr>
+
 <div class="post-header-mission">
   <h2 class="section-header">
     Mission
@@ -14,11 +25,15 @@
 
 <hr>
 
+<h2 class="section-header">
+  Recent Posts
+</h2>
+
 {% for post in site.posts limit:site.data.theme.num_home_posts %}
 <div class="post-header-home">
-  <h2 class="post-title-home">
-    <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-  </h2>
+  <h3 class="post-title-home">
+    <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }} > </a>
+  </h3>
   {% include post-header-home.html %}
 </div>
 <div class="post-excerpt-home">
@@ -28,5 +43,5 @@
 {% endfor %}
 <hr>
 <div class="home-read-more">
-  <a href="{{ "/archive" | prepend:site.baseurl }}" class="btn btn-primary btn-block btn-lg">View All {{ site.posts | size }} Articles →</a>
+  <a href="{{ "/blog" | prepend:site.baseurl }}" class="btn btn-primary btn-block btn-lg">View All {{ site.posts | size }} Articles →</a>
 </div>

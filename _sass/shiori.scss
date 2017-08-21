@@ -65,6 +65,9 @@ h3 {
   text-transform: uppercase;
   margin-bottom: $line-height-computed * 0.25;
 }
+h4 {
+  margin-bottom: $line-height-computed * 0.25;
+}
 
 .lead {
   @media (min-width: $screen-sm-min) {
@@ -78,12 +81,6 @@ h3 {
 
 .section-header {
   margin-top: 0;
-}
-.section-header-archive {
-  margin-top: 0;
-}
-.section-header-archive ~ .section-header-archive {
-  margin-top: $space-md;
 }
 
 .post-header {
@@ -104,6 +101,12 @@ h3 {
 .post-excerpt-home img,
 .post-nav img {
   @extend .img-responsive;
+}
+.post-content table,
+.post-excerpt-home table,
+.post-nav table {
+  @extend .table;
+  @extend .table-bordered;
 }
 .post-footer {
   border-top: 1px solid $gray-lighter;
@@ -129,11 +132,6 @@ h3 {
 .navbar-static-top {
   margin-bottom: $space-md;
 }
-
-.page-archive {
-  margin-bottom: $space-md;
-}
-
 .footer {
   margin: $space-sm 0 $space-sm;
   font-size: $font-size-small;

@@ -137,6 +137,12 @@ h4 {
   font-size: $font-size-small;
   color: $gray-light;
 }
+.section-header-archive ~ .section-header-archive {
+  margin-top: $space-md;
+}
+.post-excerpt-home {
+  margin-bottom: $space-md;
+}
 
 .gist {
   table {

@@ -10,31 +10,12 @@
 .section-header-archive {
   margin-top: 0;
 }
-.section-header-archive ~ .section-header-archive {
-  margin-top: $space-md;
-}
 .post-title-home {
   margin: 0;
   a {
     color: inherit;
   }
 }
-.post-excerpt-home {
-  margin-bottom: $space-md;
-}
 .home-read-more {
   margin-bottom: 40px;
-}
-
-.post-header-intro {
-  margin: 0;
-  a {
-    color: inherit;
-  }
-}
-.post-header-mission {
-  margin: 0;
-  a {
-    color: inherit;
-  }
 }

@@ -1,12 +1,6 @@
 // Add your own custom CSS here.
 @import "pygments-tomorrow";
 
-.post-content table,
-.post-excerpt-home table,
-.post-nav table {
-  @extend .table;
-  @extend .table-bordered;
-}
 .section-header-archive {
   margin-top: 0;
 }

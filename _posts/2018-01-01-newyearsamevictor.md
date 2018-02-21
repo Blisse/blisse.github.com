@@ -1,6 +1,6 @@
 ---
 title: New Year Same Me
-date: '2018-01-01'
+date: 2018-01-01 00:00
 ---
 
 It's 2018!

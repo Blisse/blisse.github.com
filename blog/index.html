@@ -9,20 +9,17 @@ title: Blog
       <h1>{{ page.title }}</h1>
     </header>
 
-{% assign posts = site.posts | where:'archived', !true %}
-{% for post in posts %}
-  {% assign post_month_year = post.date | date: "%B %Y" %}
-  {% assign next = posts[forloop.index + 1] %}
-  {% assign newer_post_month_year = next.date | date: "%B %Y" %}
-  {% if post_month_year != newer_post_month_year %}
-    <h3 class="section-header-archive">
-      {{ post_month_year }}
-    </h3>
-  {% endif %}
+{% assign show_posts = site.posts | where_exp:"post", "post.archived != true" %}
+{% assign group_posts = show_posts | group_by_exp:"post", "post.date | date: '%B %Y'"  %}
+
+{% for group in group_posts %}
+  <h3>{{ group.name }}</h3>
+  {% for post in group.items %}
   <p>
     <a href="{{ post.url | prepend:site.baseurl }}" class="post-title-archive">{{ post.title }}</a>
     <small class="text-muted">{{ post.date | date_to_string }}</small>
   </p>
+  {% endfor %}
 {% endfor %}
 
 </div>

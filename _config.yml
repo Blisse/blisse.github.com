@@ -90,9 +90,7 @@ kramdown:
 sass:
   style: compressed
 
-gems:
-  - jekyll-feed
-  - jekyll-compass
+plugins:
   - jekyll-paginate
 
 # Custom scopes

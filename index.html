@@ -33,7 +33,7 @@
 </section>
 
 <section id="posts" class="tiles">
-  {% assign posts = site.posts | where:'archived', !true %}
+  {% assign posts = site.posts | where_exp:"post", "post.archived != true" %}
   {% for post in posts limit:site.data.forty.posts-tiles-count %}
   <article>
     <span class="image">

@@ -87,6 +87,9 @@ kramdown:
   footnote_nr:    1
 
 # Build settings
+sass:
+  style: compressed
+
 gems:
   - jekyll-feed
   - jekyll-compass

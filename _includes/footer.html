@@ -1,5 +1,69 @@
-<div>
-&copy;{{ site.time | date:"%Y" }}.
-Built with <a href="http://jekyllrb.com/">Jekyll</a> and
-<a href="https://github.com/ellekasai/shiori">Shiori Theme</a>.
-</div>
+<!-- Contact -->
+<section id="contact">
+    <div class="inner">
+        <section>
+            <section>
+                <div class="contact-method">
+                    <span class="icon alt fa-envelope"></span>
+                    <h3>Email</h3>
+                    Contact me at <a href="#">{{ site.data.forty.email }}</a>.
+                </div>
+            </section>
+        </section>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <ul class="icons">
+            {% if site.data.forty.twitter_url %}
+            <li><a href="{{ site.data.forty.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+            {% endif %}
+            {% if site.data.forty.googleplus_url %}
+            <li><a href="{{ site.data.forty.googleplus_url }}" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+            {% endif %}
+            {% if site.data.forty.facebook_url %}
+            <li><a href="{{ site.data.forty.facebook_url }}" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+            {% endif %}
+            {% if site.data.forty.instagram_url %}
+            <li><a href="{{ site.data.forty.instagram_url }}" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+            {% endif %}
+            {% if site.data.forty.pinterest_url %}
+            <li><a href="{{ site.data.forty.pinterest_url }}" class="icon alt fa-pinterest" target="_blank"><span class="label">Pinterest</span></a></li>
+            {% endif %}
+            {% if site.data.forty.500px_url %}
+            <li><a href="{{ site.data.forty.500px_url }}" class="icon alt fa-500px" target="_blank"><span class="label">500px</span></a></li>
+            {% endif %}
+            {% if site.data.forty.gitlab_url %}
+            <li><a href="{{ site.data.forty.gitlab_url }}" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
+            {% endif %}
+            {% if site.data.forty.github_url %}
+            <li><a href="{{ site.data.forty.github_url }}" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+            {% endif %}
+            {% if site.data.forty.slack_url %}
+            <li><a href="{{ site.data.forty.slack_url }}" class="icon alt fa-slack" target="_blank"><span class="label">Slack</span></a></li>
+            {% endif %}
+            {% if site.data.forty.linkedin_url %}
+            <li><a href="{{ site.data.forty.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+            {% endif %}
+            {% if site.data.forty.lastfm_url %}
+            <li><a href="{{ site.data.forty.lastfm_url }}" class="icon alt fa-lastfm" target="_blank"><span class="label">last.fm</span></a></li>
+            {% endif %}
+        </ul>
+        <ul class="copyright">
+            <li>&copy; {{ site.data.forty.copy_title }} {{ site.data.forty.copy_subtitle }}</li>
+            <li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Jekyll integration: <a href="{{ site.data.forty.copy_url }}" target="_blank">{{ site.data.forty.copy_name }}</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="{{ "/assets/js/jquery.min.js" | prepend:site.baseurl }}"></script>
+<script src="{{ "/assets/js/jquery.scrolly.min.js" | prepend:site.baseurl }}"></script>
+<script src="{{ "/assets/js/jquery.scrollex.min.js" | prepend:site.baseurl }}"></script>
+<script src="{{ "/assets/js/skel.min.js" | prepend:site.baseurl }}"></script>
+<script src="{{ "/assets/js/util.js" | prepend:site.baseurl }}"></script>
+<!--[if lte IE 8]><script src="{{ "/assets/js/ie/respond.min.js" | prepend:site.baseurl }}"></script><![endif]-->
+<script src="{{ "/assets/js/main.js" | prepend:site.baseurl }}"></script>

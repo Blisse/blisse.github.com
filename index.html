@@ -1,47 +1,49 @@
 ---
 ---
 
-<div class="post-header-intro">
-  <h2 class="section-header">
-    Hello!
-  </h2>
-  {% for line in site.data.profile.home %}
-  <p>{{ line | markdownify }}</p>
+<!-- Banner -->
+<section id="banner" class="major">
+    <div class="inner">
+        <header class="major">
+            <h1>{{ site.data.profile.home_landing }}</h1>
+        </header>
+        <div class="content">
+            <p>{{ site.data.profile.home_landing_text | markdownify }}</p>
+        </div>
+    </div>
+</section>
+
+<section id="quotes">
+    <div class="inner">
+        <header class="major">
+            <h2>Mission</h2>
+        </header>
+        <blockquote>
+          {% for line in site.data.profile.mission_statement %}
+            <p>{{ line | markdownify }}</p>
+          {% endfor %}
+        </blockquote>
+        <header class="major">
+            <h2>Posts</h2>
+        </header>
+        <ul class="actions">
+            <li><a href="landing.html" class="button next">All</a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="posts" class="tiles">
+  {% assign posts = site.posts | where:'archived', !true %}
+  {% for post in posts limit:site.data.forty.posts-tiles-count %}
+  <article>
+    <span class="image">
+      <img src="{{ post.image }}" alt="" />
+    </span>
+    <header class="major">
+      <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
+      <p>{{ post.date | date_to_string }}</p>
+      <p>{{ post.description }}</p>
+    </header>
+  </article>
   {% endfor %}
-</div>
-
-<hr>
-
-<div class="post-header-mission">
-  <h2 class="section-header">
-    Mission
-  </h2>
-  <blockquote>
-  {% for mission in site.data.profile.mission_statement %}
-    <p>{{ mission }}</p>
-  {% endfor %}
-  </blockquote>
-</div>
-
-<hr>
-
-<h2 class="section-header">
-  Recent Posts
-</h2>
-
-{% for post in site.posts limit:site.data.theme.num_home_posts %}
-<div class="post-header-home">
-  <h3 class="post-title-home">
-    <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }} > </a>
-  </h3>
-  {% include post-header-home.html %}
-</div>
-<div class="post-excerpt-home">
-  {{ post.excerpt }}
-  <p class="text-right"><a href="{{ post.url | prepend:site.baseurl }}">Continue Reading &rarr;</a></p>
-</div>
-{% endfor %}
-<hr>
-<div class="home-read-more">
-  <a href="{{ "/blog" | prepend:site.baseurl }}" class="btn btn-primary btn-block btn-lg">View All {{ site.posts | size }} Articles →</a>
-</div>
+</section>

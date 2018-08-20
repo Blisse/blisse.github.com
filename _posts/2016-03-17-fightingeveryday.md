@@ -3,6 +3,7 @@ title: Fight the Fight
 date: 2016-03-17 00:00
 tags:
     - life
+archived: true
 ---
 
 I've been thinking about this moment for half a year.

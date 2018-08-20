@@ -1,13 +1,12 @@
 
+title: Victor Lai
+subtitle: Subtitle
+description: Description
+name: Victor Lai
+url: "https://victorl.ai"
+
 profile_professionalemail: "hello@laivictor.com"
 profile_personalemail: "lai.victor.vl@gmail.com"
-profile_github: "blisse"
-profile_linkedin: "laivictor"
-profile_lastfm: "dBlisse"
-profile_facebook: "lai.victor.vl"
-profile_twitter: "dblisse"
-
-profile_name: "victor lai"
 
 favicon_location: "/images/favicon.ico"
 profile_picture: "/images/profile/photo.jpg"
@@ -22,14 +21,13 @@ mission_statement:
     - "Be authentic. Do good. Speak up and speak out."
     - "Be your own happiness. Bring happiness to others."
     - "Change yourself. Change the world."
-    - "Take a deep breath. Smile."
+    - "Smile."
 
-home:
-    - "Hi! I'm Victor, and this is my website. I like to write my thoughts here."
-    - "I'm a [Waterloo Software Engineer](https://uwaterloo.ca/software-engineering/) working on Android at [Square](https://squareup.com/)."
-    - "I'm also a fan of perpetual self-improvement in every faucet of life - one step at a time. I love learning, and all the pains along with it."
-    - "Otherwise I also love Muse, music, audio, games, zombies, shibes, food, boba, critical thinking, self-awareness, and self-reflection."
-
+home_landing: Hi! I'm Victor
+home_landing_text: |
+    I work on Android things at [Square](https://squareup.com/hardware/register).
+    I'm a fan of perpetual self-improvement in all parts of life. I love learning, and all the pains along with it.
+    I'm a graduate of the [University of Waterloo Software Engineering program](https://uwaterloo.ca/software-engineering/).
 
 about:
     - "Hi! My name is Victor Lai, and this is my site."

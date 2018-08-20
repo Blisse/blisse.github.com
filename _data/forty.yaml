@@ -1,0 +1,28 @@
+# homepage tiles
+pages-tiles-count: 6
+posts-tiles-count: 4
+
+# social settings
+email: lai.victor.vl@gmail.com
+500px_url:
+facebook_url:
+github_url: https://github.com/blisse/
+gitlab_url:
+googleplus_url:
+instagram_url: https://www.instagram.com/dblisse/
+linkedin_url: https://www.linkedin.com/in/laivictor
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/dblisse
+lastfm_url: https://www.last.fm/user/dblisse
+
+# site settings
+title: victorl
+subtitle: .ai
+
+# copy
+copy_title: victorl.ai
+copy_subtitle: by Victor
+copy_url: https://github.com/blisse/blisse.github.com
+copy_name: Victor Lai
+

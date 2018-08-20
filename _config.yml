@@ -93,6 +93,7 @@ sass:
 gems:
   - jekyll-feed
   - jekyll-compass
+  - jekyll-paginate
 
 # Custom scopes
 defaults:

@@ -7,7 +7,7 @@ comments: false
 
 This is my first post. So, an obligatory
 
-{% highlight python %}
+```python
 
 def main():
   print "Hello world!"
@@ -15,6 +15,6 @@ def main():
 if __name__ == "__main__":
   main()
 
-{% endhighlight %}
+```
 
 Thanks for visiting~

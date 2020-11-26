@@ -21,7 +21,7 @@ github_username: blisse
 social_link: twitter
 social_username: dblisse
 
-remote_theme: broccolini/swiss
+remote_theme: "broccolini/swiss"
 # Set theme color here
 # Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
 theme_color: red
@@ -39,48 +39,11 @@ collections:
 
 # Handling Reading
 safe:                 false
-include:              [
-  ".htaccess"
-]
-exclude:              [
-  "Gemfile",
-  "Gemfile.lock",
-  "node_modules",
-  "vendor/bundle/",
-  "vendor/cache/",
-  "vendor/gems/",
-  "vendor/ruby/",
-  "README.md",
-  "CNAME",
-  ".compass",
-  ".sass-cache"
-]
-keep_files:           [".git", ".svn"]
-encoding:             "utf-8"
-markdown_ext:         "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter: true
-
-# Filtering Content
-show_drafts: null
-limit_posts: 0
-future:      false
-unpublished: false
-
-# Plugins
-whitelist: []
-plugins:   []
 
 # Conversion
 markdown:    kramdown
 highlighter: rouge
-
-
-# Serving
-detach:  false
-port:    4000
-host:    127.0.0.1
-baseurl: "" # does not include hostname
-show_dir_listing: false
 
 # Outputting
 permalink:     blog/:year/:month/:day/:title.html
@@ -88,15 +51,10 @@ paginate_path: /blog/page-:num
 paginate:      10
 timezone:      "US/Pacific"
 
-quiet:    false
-verbose:  false
-
-liquid:
-  error_mode: warn
-
 # Build settings
 plugins:
   - jekyll-paginate
+  - jekyll-remote-theme
 
 # Custom scopes
 defaults:

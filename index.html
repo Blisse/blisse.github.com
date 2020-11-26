@@ -1,49 +1,15 @@
 ---
+layout: home
 ---
 
-<!-- Banner -->
-<section id="banner" class="major">
-    <div class="inner">
-        <header class="major">
-            <h1>{{ site.data.profile.home_landing }}</h1>
-        </header>
-        <div class="content">
-            <p>{{ site.data.profile.home_landing_text | markdownify }}</p>
-        </div>
-    </div>
-</section>
+<h1>{{ site.data.profile.home_landing }}</h1>
+<div class="content">
+    <p>{{ site.data.profile.home_landing_text | markdownify }}</p>
+</div>
 
-<section id="quotes">
-    <div class="inner">
-        <header class="major">
-            <h2>Mission</h2>
-        </header>
-        <blockquote>
-          {% for line in site.data.profile.mission_statement %}
-            <p>{{ line | markdownify }}</p>
-          {% endfor %}
-        </blockquote>
-        <header class="major">
-            <h2>Posts</h2>
-        </header>
-        <ul class="actions">
-            <li><a href="{{ '/blog/' | absolute_url }}" class="button next">All</a></li>
-        </ul>
-    </div>
-</section>
-
-<section id="posts" class="tiles">
-  {% assign posts = site.posts | where_exp:"post", "post.archived != true" %}
-  {% for post in posts limit:site.data.forty.posts-tiles-count %}
-  <article>
-    <span class="image">
-      <img src="{{ post.image }}" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
-      <p>{{ post.date | date_to_string }}</p>
-      <p>{{ post.description }}</p>
-    </header>
-  </article>
+<h1>Mission</h2>
+<blockquote>
+  {% for line in site.data.profile.mission_statement %}
+    <p>{{ line | markdownify }}</p>
   {% endfor %}
-</section>
+</blockquote>

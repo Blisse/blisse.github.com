@@ -1,3 +1,31 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+github_repo: blisse.github.com
+github_username: blisse
+
+# Optional social link, you can choose from the following options:
+# twitter (default), instagram, medium, or dribbble
+social_link: twitter
+social_username: dblisse
+
+remote_theme: broccolini/swiss
+# Set theme color here
+# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
+theme_color: red
+
 # Where things are
 source:       .
 destination:  ./_site
@@ -44,12 +72,8 @@ plugins:   []
 
 # Conversion
 markdown:    kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-incremental: false
+highlighter: rouge
+
 
 # Serving
 detach:  false
@@ -61,7 +85,7 @@ show_dir_listing: false
 # Outputting
 permalink:     blog/:year/:month/:day/:title.html
 paginate_path: /blog/page-:num
-paginate:      5
+paginate:      10
 timezone:      "US/Pacific"
 
 quiet:    false
@@ -70,26 +94,7 @@ verbose:  false
 liquid:
   error_mode: warn
 
-# Markdown Processors
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids:       true
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  input:          GFM
-  hard_wrap:      false
-  footnote_nr:    1
-
 # Build settings
-sass:
-  style: compressed
-
 plugins:
   - jekyll-paginate
 
@@ -119,3 +124,4 @@ defaults:
 url: "http://victorl.ai"
 feed: "http://www.victorl.ai/feed.xml"
 title: "victorl.ai"
+description: ""

@@ -1,20 +1,14 @@
-
 title: Victor Lai
 subtitle: Subtitle
 description: Description
 name: Victor Lai
 url: "https://victorl.ai"
 
-profile_professionalemail: "hello@laivictor.com"
 profile_personalemail: "lai.victor.vl@gmail.com"
 
-favicon_location: "/images/favicon.ico"
-profile_picture: "/images/profile/photo.jpg"
+favicon_location: "/assets/images/favicon.ico"
+profile_picture: "/assets/images/profile/photo.jpg"
 tracking_id: "UA-33478809-1" # GA Tracking ID
-
-# Social Stuff
-og_image: "/images/profile/photo.jpg" # This will show in facebook thumbnails
-twitter_image: "/images/profile/photo.jpg" # This will show in twitter cards
 
 mission_statement:
     - "Never give up."
